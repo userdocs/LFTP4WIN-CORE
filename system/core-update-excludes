@@ -1,0 +1,11 @@
+LFTP4WIN-CORE-master/home
+LFTP4WIN-CORE-master/system/applications/conemu/ConEmu.xml
+LFTP4WIN-CORE-master/system/applications/kitty/kitty.ini
+LFTP4WIN-CORE-master/system/applications/kitty/Sessions/Default%20Settings
+LFTP4WIN-CORE-master/system/applications/notepad/config.xml
+LFTP4WIN-CORE-master/system/applications/winscp/WinSCP.ini
+LFTP4WIN-CORE-master/system/etc/notifications
+LFTP4WIN-CORE-master/system/etc/lftp.conf
+LFTP4WIN-CORE-master/system/scripts/queue
+LFTP4WIN-CORE-master/system/scripts/lftp-conf-override.sh
+LFTP4WIN-CORE-master/system/scripts/lftpsync-config.sh

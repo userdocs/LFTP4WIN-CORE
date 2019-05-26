@@ -1,0 +1,8 @@
+# @name mirror-to-local
+# @command cmd /c start "" "%WINSCP_PATH%\..\conemu\ConEmu64.exe" -run {Bash::bash} "%WINSCP_PATH%\..\..\scripts\lftp-winscp-mirror.sh" "!U" "!@" "!#" "!S" "!/!" "!\" "!P"
+# @side Local
+# @flag RemoteFiles
+# @description LFTP mirror selected remote directory to local window.
+# @author userdocs
+# @version 1.0
+# @homepage https://github.com/userdocs/LFTP4WIN-CORE

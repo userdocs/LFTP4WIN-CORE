@@ -1,0 +1,12 @@
+# You need to have created an API key. Once you have one set it here.
+#
+# https://github.com/userdocs/lftp-windows#notifications
+#
+# Set your Pushbullet API key here for notifications.
+pushbullet_api_key=''
+#
+# Enter your pushover user key here.
+pushover_user_key=''
+#
+# Enter your pushover application API token here.
+pushover_api_token=''

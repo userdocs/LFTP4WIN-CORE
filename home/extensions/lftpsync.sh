@@ -1,0 +1,2 @@
+# lftpsync post processing extension
+#
