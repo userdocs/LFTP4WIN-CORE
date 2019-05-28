@@ -26,7 +26,7 @@ then
 	read -ep "Do you want to queue this download, enter [y] to queue or [n] to skip: " -i "y" queuestatus
 	echo
 	if [[ "$queuestatus" =~ ^[Yy]$ ]]; then
-		echo "lftp -p '$port' -u '$username,$queued_password' '$protocol://$hostname' -e 'set pget:default-n \"$pget_default_n\"; pget $pget_args \"$queued_remote_dir\" -o \"$queued_local_dir\"; quit';source \"$HOME/extensions/pget-to-local.sh\"" >> "/scripts/queue/jobs.sh"
+		echo "lftp -p '$port' -u '$username,$queued_password' '$protocol://$hostname' -e 'set pget:default-n \"$pget_default_n\"; pget $pget_args \"$queued_remote_dir\" -o \"$queued_local_dir\"; quit'; local_dir='$queued_local_dir'; remote_dir='$queued_remote_dir'; source \"$HOME/extensions/pget-to-local.sh\"" >> "/scripts/queue/jobs.sh"
 		echo 'This download has been queued. Use the Winscp Command "Queued Jobs" to view the queued jobs.'
 		sleep 2
 	fi
