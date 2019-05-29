@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-05-26 09:16:52" build="190331">
+		<key name=".Vanilla" modified="2019-05-28 10:31:45" build="190331">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -258,12 +258,12 @@
 			</key>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="00000047"/>
-			<value name="ConWnd Height" type="dword" data="0000000e"/>
+			<value name="ConWnd Width" type="dword" data="0000008c"/>
+			<value name="ConWnd Height" type="dword" data="0000001a"/>
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
-			<value name="ConWnd X" type="long" data="845"/>
-			<value name="ConWnd Y" type="long" data="783"/>
+			<value name="ConWnd X" type="long" data="801"/>
+			<value name="ConWnd Y" type="long" data="321"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
@@ -279,7 +279,7 @@
 			<value name="ClipboardEOL" type="hex" data="00"/>
 			<value name="ClipboardArrowStart" type="hex" data="01"/>
 			<value name="ClipboardAllLines" type="hex" data="01"/>
-			<value name="ClipboardFirstLine" type="hex" data="01"/>
+			<value name="ClipboardFirstLine" type="hex" data="02"/>
 			<value name="ClipboardClickPromptPosition" type="hex" data="02"/>
 			<value name="ClipboardDeleteLeftWord" type="hex" data="02"/>
 			<value name="TrueColorerSupport" type="hex" data="01"/>
@@ -597,7 +597,7 @@
 			<key name="Colors" modified="2017-05-03 01:02:19" build="170402">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<value name="LastMonitor" type="string" data="0,0,3840,2160"/>
+			<value name="LastMonitor" type="string" data="0,0,1920,1040"/>
 			<value name="VividColors" type="hex" data="01"/>
 			<value name="AnsiExecution" type="hex" data="01"/>
 			<value name="AnsiAllowedCommands" type="multi">
@@ -625,7 +625,7 @@
 			<value name="Language" type="string" data="en"/>
 			<value name="RestoreInactive" type="hex" data="00"/>
 			<value name="AnsiLogCodes" type="hex" data="00"/>
-			<value name="AutoTrimSingleLine" type="hex" data="01"/>
+			<value name="AutoTrimSingleLine" type="hex" data="00"/>
 		</key>
 	</key>
 </key>
