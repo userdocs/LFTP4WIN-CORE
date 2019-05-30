@@ -25,7 +25,7 @@
 #
 #! /usr/bin/env bash
 #
-if [[ "$4" = 'reset' || "$5" = 'reset' ]]; then
+if [[ "$4" = 'reset' ]]; then
 	sed -ri "s|^pushover_user_key='(.*)'$|pushover_user_key=''|g" /etc/notifications
 	sed -ri "s|^pushover_api_token='(.*)'$|pushover_api_token=''|g" /etc/notifications
 	sed -ri "s|pushbullet_api_key='(.*)'$|pushbullet_api_key=''|g" /etc/notifications
@@ -41,7 +41,7 @@ else
 	sleep 2
 fi
 #
-if [[ "$4" = 'openotifications' || "$5" = 'openotifications' ]]; then
+if [[ "$5" = 'openotifications' ]]; then
 	"/applications/notepad/notepad++.exe" "$(cygpath -m /etc/notifications)"
 fi
 #

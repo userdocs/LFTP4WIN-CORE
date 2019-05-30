@@ -23,7 +23,7 @@
 #
 #! /usr/bin/env bash
 #
-if [[ "$6" = 'reset' || "$7" = 'reset' ]]; then
+if [[ "$6" = 'reset' ]]; then
 	sed -ri "s|^pget_args='(.*)'$|pget_args='-c'|g" /scripts/lftp-conf-override.sh
 	sed -ri "s|^pget_default_n='(.*)'$|pget_default_n='0'|g" /scripts/lftp-conf-override.sh
 	#
@@ -45,7 +45,7 @@ else
 	sleep 2
 fi
 #
-if [[ "$6" = 'openlftpconfoverride' || "$7" = 'openlftpconfoverride' ]]; then
+if [[ "$7" = 'openlftpconfoverride' ]]; then
 	"/applications/notepad/notepad++.exe" "$(cygpath -m /scripts/lftp-conf-override.sh)"
 fi
 #
