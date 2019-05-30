@@ -1,5 +1,5 @@
 # @name pget-to-local
-# @command cmd /c start "" "%WINSCP_PATH%\..\conemu\ConEmu64.exe" -run {Bash::bash} "%WINSCP_PATH%\..\..\scripts\lftp-winscp-pget.sh" "!U" "!@" "!#" "!S" "!/!" "!\" "!P"  "%skipqueue%
+# @command cmd /c start "" "%WINSCP_PATH%\..\conemu\ConEmu64.exe" -run {Bash::bash} "%WINSCP_PATH%\..\..\scripts\lftp-winscp-pget.sh" "!U" "!@" "!#" "!S" "!/!" "!\" "!P" "%skipqueue%
 # @side Local
 # @flag RemoteFiles
 # @description LFTP pget selected remote file to local window.
