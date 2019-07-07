@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-05-28 10:31:45" build="190331">
+		<key name=".Vanilla" modified="2019-07-07 09:57:53" build="190331">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -576,7 +576,7 @@
 			<value name="Update.ProxyPassword" type="string" data=""/>
 			<value name="Update.ExeCmdLine" type="string" data=""/>
 			<value name="Update.ArcCmdLine" type="string" data='"%ConEmuDir%\..\..\usr\local\bin\7za.exe" x -y "%1"'/>
-			<value name="Update.DownloadPath" type="string" data='"%ConEmuDir%\..\..\tmp\ConEmu"'/>
+			<value name="Update.DownloadPath" type="string" data="%ConEmuDir%\..\..\tmp\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
 			<key name="Tasks" modified="2019-05-16 07:25:35" build="190331">
@@ -597,7 +597,7 @@
 			<key name="Colors" modified="2017-05-03 01:02:19" build="170402">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<value name="LastMonitor" type="string" data="0,0,1920,1040"/>
+			<value name="LastMonitor" type="string" data="0,0,3840,2160"/>
 			<value name="VividColors" type="hex" data="01"/>
 			<value name="AnsiExecution" type="hex" data="01"/>
 			<value name="AnsiAllowedCommands" type="multi">
