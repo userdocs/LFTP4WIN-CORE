@@ -576,7 +576,7 @@
 			<value name="Update.ProxyPassword" type="string" data=""/>
 			<value name="Update.ExeCmdLine" type="string" data=""/>
 			<value name="Update.ArcCmdLine" type="string" data='"%ConEmuDir%\..\..\usr\local\bin\7za.exe" x -y "%1"'/>
-			<value name="Update.DownloadPath" type="string" data="%ConEmuDir%\..\..\tmp\ConEmu"/>
+			<value name="Update.DownloadPath" type="string" data="%ConEmuDir%\..\..\tmp"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
 			<key name="Tasks" modified="2019-05-16 07:25:35" build="190331">
