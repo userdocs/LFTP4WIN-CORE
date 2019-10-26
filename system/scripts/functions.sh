@@ -2,6 +2,15 @@
 #
 ssh_pageant_random=$RANDOM
 #
+function openssh_known_hosts {
+    # Create a blank known_hosts files to prevent errors.
+    [[ ! -f ~/.ssh/known_hosts ]] && touch ~/.ssh/known_hosts || :
+    # Compare the remote known host to those stored in the local known_hosts file. If the match fails then add the keys to the file.
+    [[ -n $(diff <(ssh-keyscan -4p "$1" "$2" 2> /dev/null | sort -h) <(ssh-keygen -F "$2" | sed '/^# Host/ d' | sort -h )) ]] && ssh-keyscan -4p "$1" "$2" >> ~/.ssh/known_hosts 2> /dev/null || :
+    # Since it adds multiple keys and may introduce duplicates, sort the file, remove duplicates and then save it.
+    echo "$(sort ~/.ssh/known_hosts | uniq)" > ~/.ssh/known_hosts
+}
+#
 function finish {
 	# Kills the ssh-pageant process for this session using the built in kill switch.
 	ssh-pageant -q -k > /dev/null 2>&1 || :

@@ -11,6 +11,8 @@
 #
 winscp_to_bash "$1" "$2" "$3" "$4" "$5" "$6" "$7"
 #
+openssh_known_hosts "$port" "$hostname"
+#
 cd "$local_dir"
 #
 lftp -p "$port" -u "$username,$password" "$protocol://$hostname" -e "cd \"$remote_dir\"; cls -1aB"

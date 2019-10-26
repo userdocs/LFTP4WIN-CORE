@@ -12,6 +12,8 @@ source /scripts/lftpsync-config.sh
 # This check is to set debugging to test a connection.
 [[ -n "$1" && "$1" == 'debug' ]] && debug='debug 10' || debug=''
 #
+openssh_known_hosts "$port" "$hostname"
+#
 lftp_conf_override
 #
 # Defines the lock file used per session - hard coded to be the same name in all scripts so that only one lftp job instance will run.
