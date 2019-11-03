@@ -3,6 +3,8 @@
 ssh_pageant_random=$RANDOM
 #
 function openssh_known_hosts {
+    # Make sure this folder exists. If it does not, then create it to prevent errors in the function.
+    [[ ! -d ~/.ssh ]] && mkdir ~/.ssh || :
     # Create a blank known_hosts files to prevent errors.
     [[ ! -f ~/.ssh/known_hosts ]] && touch ~/.ssh/known_hosts || :
     # Compare the remote known host to those stored in the local known_hosts file. If the match fails then add the keys to the file.
