@@ -11,6 +11,8 @@
 #
 winscp_to_bash "$1" "$2" "$3" "$4" "$5" "$6" "$7"
 #
+openssh_known_hosts "$port" "$hostname"
+#
 sleep 10
 #
 lftp -p "$port" -u "$username,$password" "$protocol://$hostname" <<-EOF
