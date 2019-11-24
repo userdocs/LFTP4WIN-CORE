@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <NotepadPlus>
-    <Native-Langue name="Français" filename="french.xml" version="7.7.2">
+    <Native-Langue name="Français" filename="french.xml" version="7.8.1">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -313,6 +313,9 @@
                     <Item id="50000" name="Complétion de fonction"/>
                     <Item id="50001" name="Complétion de mot"/>
                     <Item id="50002" name="Infobulle des paramètres de fonctions"/>
+					<Item id="50003" name="Document précédent"/>
+                    <Item id="50004" name="Document suivant"/>
+                    <Item id="50005" name="Commencer/Arrêter enregistrement d'une macro"/>
                     <Item id="50006" name="Complétion de chemin d'accès du fichier"/>
                 </Commands>
             </Main>
@@ -771,6 +774,7 @@
                     <Item id="6302" name="Insérer des espaces"/>
                     <Item id="6303" name="Taille : "/>
                     <Item id="6510" name="Valeur par défaut"/>
+                    <Item id="6335" name="Contre-oblique : caractère d'échappement pour SQL"/>
                 </Language>
                 <Highlighting title="Coloration">
                     <Item id="6333" name="Sélectionner et montrer tout"/>
@@ -916,7 +920,7 @@
                     <Item id="6325" name="Aller à la dernière ligne après mise à jour"/>
                     <Item id="6331" name="Afficher seulement le nom du fichier dans la barre de titre"/>
                     <Item id="6334" name="Détecter l'encodage automatiquement"/>
-                    <Item id="6335" name="Contre-oblique : caractère d'échappement pour SQL"/>
+                    <Item id="6314" name="Activer la police à espacement fixe dans la boîte de dialogue Rechercher (Nécessité de redémarrage)"/>
                     <Item id="6337" name="Ext. fichier espace de travail :"/>
                     <Item id="6344" name="Aperçu du document"/>
                     <Item id="6345" name="Aperçu à onglet"/>

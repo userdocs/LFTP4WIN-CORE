@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NotepadPlus>
-    <Native-Langue name="繁體中文/正體中文" filename="chinese.xml" version="7.7.2">
+    <Native-Langue name="繁體中文/正體中文" filename="chinese.xml" version="7.8.1">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -311,7 +311,10 @@
                     <Item id="49000" name="執行(&amp;R)..."/>
                     <Item id="50000" name="函數自動完成"/>
                     <Item id="50001" name="字詞自動完成"/>
-                    <Item id="50002" name="功能參數提示"/>
+                    <Item id="50002" name="功能參數提示"/>                    
+					<Item id="50003" name="切換到上一文件"/>
+                    <Item id="50004" name="切換到下一文件"/>
+                    <Item id="50005" name="啟動/停止巨集錄製"/>
                     <Item id="50006" name="自動完成文件路徑"/>
                     <Item id="44042" name="隱藏此行"/>
                     <Item id="42040" name="開啟所有最近使用的檔案"/>
@@ -786,6 +789,7 @@
                     <Item id="6302" name="使用空格"/>
                     <Item id="6303" name="縮排大小："/>
                     <Item id="6510" name="使用預設值"/>
+                    <Item id="6335" name="在 SQL 中視「\」為逸出字元"/>
                 </Language>
 
                 <Highlighting title="醒目提示">
@@ -929,7 +933,7 @@
                     <Item id="6324" name="文件切換器（Ctrl + TAB）"/>
                     <Item id="6331" name="在標題列僅顯示檔案名稱（隱藏資料夾路徑）"/>
                     <Item id="6334" name="自動偵測檔案編碼"/>
-                    <Item id="6335" name="在 SQL 中視「\」為逸出字元"/>
+                    <Item id="6314" name="在尋找與取代對話方塊中使用等寬字型（需要重新啟動 Notepad++）"/>
                     <Item id="6337" name="資料夾工作區檔案副檔名："/>
                     <Item id="6114" name="啟動"/>
                     <Item id="6115" name="自動縮排"/>
