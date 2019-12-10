@@ -63,9 +63,10 @@
                     <Item subMenuId="encoding-turkish" name="Turkish"/>
                     <Item subMenuId="encoding-westernEuropean" name="Western European"/>
                     <Item subMenuId="encoding-vietnamese" name="Vietnamese"/>
-                    <Item subMenuId="settings-import"  name="Import"/>
-                    <Item subMenuId="tools-md5"  name="MD5"/>
-                    <Item subMenuId="tools-sha256"  name="SHA-256"/>
+                    <Item subMenuId="language-userDefinedLanguage" name="User Defined Language"/>
+                    <Item subMenuId="settings-import" name="Import"/>
+                    <Item subMenuId="tools-md5" name="MD5"/>
+                    <Item subMenuId="tools-sha256" name="SHA-256"/>
                 </SubEntries>
 
                 <!-- all menu item -->
@@ -281,6 +282,7 @@
 
                     <Item id="46001" name="Style Configurator..."/>
                     <Item id="46250" name="Define your language..."/>
+                    <Item id="46300" name="Open User Defined Language folder..."/>
                     <Item id="46180" name="User-Defined"/>
                     <Item id="47000" name="About Notepad++"/>
                     <Item id="47010" name="Command Line Arguments..."/>
@@ -989,11 +991,11 @@
             </FindInFinder>
             <DoSaveOrNot title="Save"> 
                 <Item id="1761" name="Save file &quot;$STR_REPLACE$&quot; ?"/>
-                <Item id="6" name="Yes"/>
-                <Item id="7" name="No"/>
-                <Item id="2" name="Cancel"/>
-                <Item id="4" name="Yes to all"/>
-                <Item id="5" name="No to all"/>
+                <Item id="6" name="&amp;Yes"/>
+                <Item id="7" name="&amp;No"/>
+                <Item id="2" name="&amp;Cancel"/>
+                <Item id="4" name="Yes to &amp;all"/>
+                <Item id="5" name="N&amp;o to all"/>
             </DoSaveOrNot>
         </Dialog>
         <MessageBox> <!-- $INT_REPLACE$ is a place holder, don't translate it -->
@@ -1193,6 +1195,11 @@ Continue?"/>
             <cloud-select-folder value="Select a folder from/to where Notepad++ reads/writes its settings"/>
             <shift-change-direction-tip value="Use Shift+Enter to search in the opposite direction"/>
             <two-find-buttons-tip value="2 find buttons mode"/>
+            <find-in-files-filter-tip value="Find in cpp, cxx, h, hxx &amp;&amp; hpp:
+*.cpp *.cxx *.h *.hxx *.hpp
+
+Find in all files except exe, obj &amp;&amp; log:
+*.* !*.exe !*.obj !*.log"/>
             <find-status-top-reached value="Find: Found the 1st occurrence from the bottom. The beginning of the document has been reached."/>
             <find-status-end-reached value="Find: Found the 1st occurrence from the top. The end of the document has been reached."/>
             <find-status-replaceinfiles-1-replaced value="Replace in Files: 1 occurrence was replaced"/>

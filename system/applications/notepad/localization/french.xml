@@ -63,6 +63,7 @@
                     <Item subMenuId="encoding-turkish" name="Turc"/>
                     <Item subMenuId="encoding-westernEuropean" name="Langues d’Europe occidentale"/>
                     <Item subMenuId="encoding-vietnamese" name="Vietnamien"/>
+                    <Item subMenuId="language-userDefinedLanguage" name="Langage utilisateur"/>
                     <Item subMenuId="settings-import"  name="Importer"/>
                     <Item subMenuId="tools-md5"  name="MD5"/>
                     <Item subMenuId="tools-sha256"  name="SHA-256"/>
@@ -282,6 +283,7 @@
                     <Item id="45013" name="Convertir en UCS-2 LE BOM"/>
                     <Item id="46001" name="Configurateur de coloration syntaxique..."/>
                     <Item id="46250" name="Définir votre langage..."/>
+                    <Item id="46300" name="Ovrir le dossier des Langages utilisateur..."/>
                     <Item id="46180" name="Langage utilisateur"/>
                     <Item id="47000" name="À propos de Notepad++..."/>
                     <Item id="47001" name="Site officiel Notepad++"/>
@@ -313,7 +315,7 @@
                     <Item id="50000" name="Complétion de fonction"/>
                     <Item id="50001" name="Complétion de mot"/>
                     <Item id="50002" name="Infobulle des paramètres de fonctions"/>
-					<Item id="50003" name="Document précédent"/>
+                    <Item id="50003" name="Document précédent"/>
                     <Item id="50004" name="Document suivant"/>
                     <Item id="50005" name="Commencer/Arrêter enregistrement d'une macro"/>
                     <Item id="50006" name="Complétion de chemin d'accès du fichier"/>
@@ -972,11 +974,11 @@
             </FindInFinder>
             <DoSaveOrNot title="Sauvegarder">
                 <Item id="1761" name="Sauvegarder le fichier &quot;$STR_REPLACE$&quot; ?"/>
-                <Item id="6" name="Oui"/>
-                <Item id="7" name="Non"/>
-                <Item id="2" name="Annuler"/>
-                <Item id="4" name="Oui pour tout"/>
-                <Item id="5" name="Non pour tout"/>
+                <Item id="6" name="&amp;Oui"/>
+                <Item id="7" name="&amp;Non"/>
+                <Item id="2" name="&amp;Annuler"/>
+                <Item id="4" name="Oui pour &amp;tout"/>
+                <Item id="5" name="Non &amp;pour tout"/>
             </DoSaveOrNot>
         </Dialog>
         <MessageBox>
@@ -1168,6 +1170,11 @@ Voulez-vous les poursuivez ?"/>
             <cloud-restart-warning value="Veuillez redémarrer Notepad++ afin que le changement prenne effet."/>
             <shift-change-direction-tip value="Utilisez Shift + Entrée pour rechercher dans le sens inverse"/>
             <two-find-buttons-tip value="2 boutons Recherche"/>
+            <find-in-files-filter-tip value="Rechercher dans cpp, cxx, h, hxx &amp;&amp; hpp:
+*.cpp *.cxx *.h *.hxx *.hpp
+
+Rechercher dans tous les fichiers sauf exe, obj &amp;&amp; log:
+*.* !*.exe !*.obj !*.log"/>
             <cloud-select-folder value="Sélectionner un répertoire où Notepad++ lit ou écrit ses paramètres"/>
             <find-status-top-reached value="Rechercher : La 1ère occurrence a été trouvée depuis le bas. Le début du document a été atteint"/>
             <find-status-end-reached value="Rechercher : La 1ère occurrence a été trouvée depuis le haut. La fin du document a été atteinte"/>
