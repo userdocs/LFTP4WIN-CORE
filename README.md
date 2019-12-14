@@ -1,4 +1,4 @@
-# Lftp for Windows - LFTPWIN-CORE
+# Lftp for Windows - LFTP4WIN-CORE
 
 Copyright 2019 by userdocs and contributors for LFTP4WIN-CORE
 
