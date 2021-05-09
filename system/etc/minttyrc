@@ -1,0 +1,10 @@
+FontHeight=10
+FontSmoothing=full
+Locale=C
+Charset=UTF-8
+Columns=120
+Rows=30
+Language=@
+ThemeFile=mintty
+Term=xterm-256color
+ClicksPlaceCursor=yes

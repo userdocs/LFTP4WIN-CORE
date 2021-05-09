@@ -1,0 +1,1 @@
+Extract VSCode portable to this directory and it will work as an internal editor.

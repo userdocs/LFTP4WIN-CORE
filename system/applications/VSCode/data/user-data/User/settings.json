@@ -1,0 +1,82 @@
+{
+    "extensions.ignoreRecommendations": false,
+    "terminal.integrated.cwd": "${fileDirname}",
+    "telemetry.enableTelemetry": false,
+    "shellformat.flag": "-ci -sr -i 0",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.detectIndentation": false,
+    "workbench.iconTheme": "vscode-icons",
+    "shellcheck.useWorkspaceRootAsCwd": true,
+    "shellcheck.enableQuickFix": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.colorTheme": "Monokai Dimmed",
+    "telemetry.enableCrashReporter": false,
+    "git.enableSmartCommit": true,
+    "terminal.integrated.defaultProfile.windows": "bash",
+    "githubPullRequests.telemetry.enabled": false,
+    "github.gitCommand": "${execPath}\\..\\..\\git\\bin\\git.exe",
+    "git-graph.integratedTerminalShell": "${execPath}\\..\\..\\git\\bin\\bash",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell -NoProfile": {
+            "source": "PowerShell",
+            "args": [
+                "-NoProfile"
+            ]
+        },
+        "git bash": {
+            "path": "${execPath}\\..\\..\\git\\bin\\bash.exe",
+        },
+        "bash": {
+            "path": "${execPath}\\..\\..\\..\\bin\\bash.exe",
+            "args": [
+                "--login",
+                "-i"
+            ]
+        }
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "files.defaultLanguage": "shellscript",
+    "[plaintext]": {
+        "files.eol": "\n",
+        "editor.tabSize": 4
+    },
+    "[shellscript]": {
+        "files.eol": "\n",
+        "editor.tabSize": 4
+    },
+    "[batch]": {
+        "files.eol": "\r\n"
+    },
+    "[markdown]": {
+        "files.eol": "\n",
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[yaml]": {
+        "files.eol": "\n",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[html]": {
+        "files.eol": "\n",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+}

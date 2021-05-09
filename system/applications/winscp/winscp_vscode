@@ -1,0 +1,25 @@
+# @name vscode-env
+# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "!U" "!@" "!#" "!S" "!/" "!\"
+# @side Local
+# @flag
+# @description Start a VSCode session
+# @author userdocs
+# @version 1.0
+# @homepage https://github.com/userdocs/LFTP4WIN-CORE
+#
+# @option - -config group "Terminal Settings"
+#
+# @option TERMINAL -config checkbox "Use ConEMU instead of MinTTY" """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title "vscode-env" -e /bin/bash -li" """%WINSCP_PATH%\..\conemu\ConEmu64.exe"" -title LFTP4WIN -run {Bash::bash} -new_console:t:""%TITLE%""" """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title "vscode-env" -e /bin/bash -li"
+#
+winscp_to_bash "${@}"
+#
+openssh_known_hosts "${port}" "${hostname}"
+#
+export set CHERE_INVOKING=1
+#
+filename='vscode_env'
+#
+echo "export username='${username}'" > "$HOME/.${filename}"
+echo "export hostname='${hostname}'" >> "$HOME/.${filename}"
+echo "export port='${port}'" >> "$HOME/.${filename}"
+echo "export PASSH='${password_hardcode}'" >> "$HOME/.${filename}"

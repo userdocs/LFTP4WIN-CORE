@@ -1,0 +1,39 @@
+_rm_if_exists() {
+	if [[ -e "${1}" ]]; then
+		rm -rf "${1}"
+	fi
+}
+#
+_rm_if_exists '../LFTP4WIN-conemu.cmd'
+_rm_if_exists '../.gitattributes'
+_rm_if_exists '../LICENSE.txt'
+_rm_if_exists '../README.md'
+_rm_if_exists '../docs'
+#
+_rm_if_exists "/initialize.sh"
+_rm_if_exists "/Cygwin.bat"
+_rm_if_exists "/Cygwin.bat.disabled"
+_rm_if_exists "/Cygwin.ico"
+_rm_if_exists "/Cygwin-Terminal.ico"
+_rm_if_exists "/setup-x86.exe"
+_rm_if_exists "/setup-x86_64.exe"
+#
+_rm_if_exists "/applications/winscp/winscp-conemu.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-mirror-to-local.WinSCPextension"
+_rm_if_exists "/applications/winscp/winscp-pget-to-local.WinSCPextension"
+#
+_rm_if_exists "/applications/winscp/winscp-edit-lftp-conf.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-iperf3.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-lftp-conf-override.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-lftp.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-lftpsync-setup.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-mirror-to-local.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-notifications.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-openssh.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-pget-to-local.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-queued-jobs.WinSCPextension.sh"
+_rm_if_exists "/applications/winscp/winscp-terminal.WinSCPextension.sh"
+#
+_rm_if_exists "/scripts/lftp-winscp-mirror.sh"
+_rm_if_exists "/scripts/lftp-winscp-pget.sh"
+_rm_if_exists "/scripts/install.iperf.sh"

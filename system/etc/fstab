@@ -1,0 +1,8 @@
+# /etc/fstab
+# IMPORTANT: this files is recreated on each start by LFTP4WIN-conemu.cmd
+#
+#    This file is read once by the first process in a Cygwin process tree.
+#    To pick up changes, restart all Cygwin processes.  For a description
+#    see https://cygwin.com/cygwin-ug-net/using.html#mount-table
+#
+none /cygdrive cygdrive binary,noacl,posix=0,sparse,user 0 0

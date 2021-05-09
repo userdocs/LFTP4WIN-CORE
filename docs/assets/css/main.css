@@ -1,0 +1,14 @@
+:root {
+    --content-max-width                 : 90%;
+    /* Tab blocks */
+    --docsifytabs-border-color          : #ededed;
+
+    /* Code */
+    --code-inline-background            : #e9e9e9fb;
+    --code-inline-color                 : #1a001a;
+    --code-block-padding                : 0.5em 0.5em 0.5em 0.5em;
+
+    --link-color                        : rgb(44, 44, 172);
+    --link-color--hover                 : rgb(83, 156, 83);
+
+}
