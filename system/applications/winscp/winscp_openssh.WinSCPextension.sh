@@ -38,10 +38,10 @@ remote_shell="$(sshpass -e ssh -qt ${DYNAMIC} -p "${port}" -T "${username}@${hos
 remote_shell_test="${remote_shell##*/}" # remove paths and just test the shell name.
 #
 case "${remote_shell_test}" in
-	sh | bash | ash | dash)
+	sh | bash | ash | dash | ksh)
 		remote_shell="${remote_shell} -l -i"
 		;;
-	csh)
+	tcsh | csh)
 		remote_shell="${remote_shell} -l"
 		;;
 	zsh)
