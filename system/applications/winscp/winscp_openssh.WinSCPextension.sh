@@ -33,6 +33,22 @@ export SSHPASS="${password}"
 cd "${local_dir}"
 #
 [[ -n "${7}" && "${7}" = 'yes' && -n "${8}" ]] && DYNAMIC="-D ${8}" || DYNAMIC=""
-[[ -n "${9}" && "${9}" = 'yes' ]] && REMOTE_CMD="cd '${remote_dir}';[[ \"\$SHELL\" == '/bin/ash' ]] && ash -i || bash -li" || REMOTE_CMD="[[ \"\$SHELL\" == '/bin/ash' ]] && ash -i || bash -li"
+#
+remote_shell="$(sshpass -e ssh -qt ${DYNAMIC} -p "${port}" -T "${username}@${hostname}" 'printf ${SHELL}')"
+remote_shell_test="${remote_shell##*/}" # remove paths and just test the shell name.
+#
+case "${remote_shell_test}" in
+	sh | bash | ash | dash)
+		remote_shell="${remote_shell} -l -i"
+		;;
+	csh)
+		remote_shell="${remote_shell} -l"
+		;;
+	zsh)
+		remote_shell="${remote_shell} --login --interactive"
+		;;
+esac
+#
+[[ -n "${9}" && "${9}" = 'yes' ]] && REMOTE_CMD="cd '${remote_dir}' && ${remote_shell}" || REMOTE_CMD="${remote_shell}"
 #
 sshpass -e ssh -qt ${DYNAMIC} -p "${port}" "${username}@${hostname}" "${REMOTE_CMD}"
