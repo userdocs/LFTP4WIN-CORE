@@ -38,12 +38,14 @@
             ]
         }
     },
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "remark.format": {
+        "rules": {
+            "listItemIndent": "mixed"
         }
-    ],
+    },
     "files.defaultLanguage": "shellscript",
     "[plaintext]": {
         "files.eol": "\n",
@@ -59,7 +61,7 @@
     "[markdown]": {
         "files.eol": "\n",
         "editor.tabSize": 4,
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     },
     "[yaml]": {
         "files.eol": "\n",
@@ -79,4 +81,6 @@
         "latex",
         "plaintext"
     ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "security.workspace.trust.untrustedFiles": "open"
 }
