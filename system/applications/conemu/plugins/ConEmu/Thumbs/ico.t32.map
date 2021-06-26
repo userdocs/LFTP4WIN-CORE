@@ -1,6 +1,6 @@
  ico
 
- Timestamp is 6081f300 (Fri Apr 23 00:04:48 2021)
+ Timestamp is 60d4f461 (Thu Jun 24 23:08:49 2021)
 
  Preferred load address is 10000000
 
@@ -25,22 +25,22 @@
  0002:00000190 00005828H .rdata                  DATA
  0002:000059b8 00000238H .rdata$r                DATA
  0002:00005bf0 0000000cH .rdata$sxdata           DATA
- 0002:00005bfc 0000031cH .rdata$zzzdbg           DATA
- 0002:00005f18 00000004H .rtc$IAA                DATA
- 0002:00005f1c 00000004H .rtc$IZZ                DATA
- 0002:00005f20 00000004H .rtc$TAA                DATA
- 0002:00005f24 00000004H .rtc$TZZ                DATA
- 0002:00005f28 00000398H .xdata$x                DATA
- 0002:000062c0 00000094H .edata                  DATA
- 0002:00006354 0000003cH .idata$2                DATA
- 0002:00006390 00000014H .idata$3                DATA
- 0002:000063a4 00000150H .idata$4                DATA
- 0002:000064f4 00000614H .idata$6                DATA
+ 0002:00005bfc 00000304H .rdata$zzzdbg           DATA
+ 0002:00005f00 00000004H .rtc$IAA                DATA
+ 0002:00005f04 00000004H .rtc$IZZ                DATA
+ 0002:00005f08 00000004H .rtc$TAA                DATA
+ 0002:00005f0c 00000004H .rtc$TZZ                DATA
+ 0002:00005f10 00000390H .xdata$x                DATA
+ 0002:000062a0 00000094H .edata                  DATA
+ 0002:00006334 0000003cH .idata$2                DATA
+ 0002:00006370 00000014H .idata$3                DATA
+ 0002:00006384 00000150H .idata$4                DATA
+ 0002:000064d4 00000614H .idata$6                DATA
  0003:00000000 00000760H .data                   DATA
  0003:00000760 000000e0H .data$r                 DATA
  0003:00000840 00000a28H .bss                    DATA
  0004:00000000 000000a0H .rsrc$01                DATA
- 0004:000000a0 00000488H .rsrc$02                DATA
+ 0004:000000a0 00000480H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
@@ -63,9 +63,9 @@
  0001:00000000       ??$swprintf_c@$0IA@@@YAHAAY0IA@_WPB_WZZ 10001000 f i ico.obj
  0001:00000019       ??0Bitmap@Gdiplus@@QAE@PAUIStream@@H@Z 10001019 f i ico.obj
  0001:00000053       ??1MStream@@UAE@XZ         10001053 f i ico.obj
+ 0001:0000008a       ??_GImage@Gdiplus@@UAEPAXI@Z 1000108a f i ico.obj
  0001:0000008a       ??_GBitmap@Gdiplus@@UAEPAXI@Z 1000108a f i ico.obj
  0001:0000008a       ??_EBitmap@Gdiplus@@UAEPAXI@Z 1000108a f i ico.obj
- 0001:0000008a       ??_GImage@Gdiplus@@UAEPAXI@Z 1000108a f i ico.obj
  0001:0000008a       ??_EImage@Gdiplus@@UAEPAXI@Z 1000108a f i ico.obj
  0001:000000c3       ??_GMStream@@UAEPAXI@Z     100010c3 f i ico.obj
  0001:000000c3       ??_EMStream@@UAEPAXI@Z     100010c3 f i ico.obj
@@ -80,9 +80,9 @@
  0001:0000036c       ?Close@ICODecoder@@QAEXXZ  1000136c f i ico.obj
  0001:000003a3       ?Close@ICOImage@@QAEXXZ    100013a3 f i ico.obj
  0001:000003f1       ?Commit@MStream@@UAGJK@Z   100013f1 f i ico.obj
- 0001:00000403       ?UnlockRegion@MStream@@UAGJT_ULARGE_INTEGER@@0K@Z 10001403 f i ico.obj
- 0001:00000403       ?LockRegion@MStream@@UAGJT_ULARGE_INTEGER@@0K@Z 10001403 f i ico.obj
  0001:00000403       ?CopyTo@MStream@@UAGJPAUIStream@@T_ULARGE_INTEGER@@PAT3@2@Z 10001403 f i ico.obj
+ 0001:00000403       ?LockRegion@MStream@@UAGJT_ULARGE_INTEGER@@0K@Z 10001403 f i ico.obj
+ 0001:00000403       ?UnlockRegion@MStream@@UAGJT_ULARGE_INTEGER@@0K@Z 10001403 f i ico.obj
  0001:0000040b       ?Decode1BPP@@YAPAEIIPAUtagRGBQUAD@@PAE1AAK@Z 1000140b f   ico.obj
  0001:000004cc       ?Decode24BPP@@YAPAEAAIIPAE1AAK@Z 100014cc f   ico.obj
  0001:00000680       ?Decode32BPP@@YAPAEAAIIPAE1AAK@Z 10001680 f   ico.obj
@@ -94,69 +94,69 @@
  0001:00000aa5       ?GetPixelFormat@Image@Gdiplus@@QAEHXZ 10001aa5 f i ico.obj
  0001:00000ac5       ?Init@ICODecoder@@QAEHPAUCET_Init@@@Z 10001ac5 f i ico.obj
  0001:00000b26       ?LoadPageInfo@@YAKPAUICONCONTEXT@@HAAI111PAPB_W@Z 10001b26 f   ico.obj
- 0001:00000c65       ?Open@ICOImage@@QAEH_NPB_WPBEKU_COORD@@@Z 10001c65 f i ico.obj
- 0001:00000e19       ?PageDecode@ICOImage@@QAEHPAUCET_LoadInfo@@@Z 10001e19 f i ico.obj
- 0001:0000118d       ?QueryInterface@MStream@@UAGJABU_GUID@@PAPAX@Z 1000218d f i ico.obj
- 0001:000011f5       ?Read@MStream@@UAGJPAXKPAK@Z 100021f5 f i ico.obj
- 0001:0000124a       ?Release@MStream@@UAGKXZ   1000224a f i ico.obj
- 0001:00001271       ?Revert@MStream@@UAGJXZ    10002271 f i ico.obj
- 0001:00001279       ?Seek@MStream@@UAGJT_LARGE_INTEGER@@KPAT_ULARGE_INTEGER@@@Z 10002279 f i ico.obj
- 0001:000012f3       ?SetData@MStream@@QAEXPBXK@Z 100022f3 f i ico.obj
- 0001:00001332       ?SetSize@MStream@@UAGJT_ULARGE_INTEGER@@@Z 10002332 f i ico.obj
- 0001:000013a5       ?Stat@MStream@@UAGJPAUtagSTATSTG@@K@Z 100023a5 f i ico.obj
- 0001:0000141d       ?StringCchVPrintfW@@YGJPA_WIPB_WPAD@Z 1000241d f i ico.obj
- 0001:00001474       ?Write@MStream@@UAGJPBXKPAK@Z 10002474 f i ico.obj
- 0001:00001511       ?__empty_global_delete@@YAXPAXI@Z 10002511 f i ico.obj
- 0001:00001511       @_guard_check_icall_nop@4  10002511 f i LIBCMT:guard_support.obj
- 0001:00001511       ?__global_delete@@YAXPAXI@Z 10002511 f i ico.obj
- 0001:00001512       ___local_stdio_printf_options 10002512 f i ico.obj
- 0001:00001518       __vsnwprintf_l             10002518 f i ico.obj
- 0001:0000154a       ??3@YAXPAX@Z               1000254a f   common-kernel32:Memory.obj
- 0001:0000154f       ?HeapDeinitialize@@YAXXZ   1000254f f   common-kernel32:Memory.obj
- 0001:000015a5       ?HeapInitialize@@YA_NXZ    100025a5 f   common-kernel32:Memory.obj
- 0001:000015d3       ?xf_free@@YAXPAX@Z         100025d3 f   common-kernel32:Memory.obj
- 0001:00001613       _GdipAlloc@4               10002613 f   gdiplus:gdiplus.dll
- 0001:00001619       _GdipFree@4                10002619 f   gdiplus:gdiplus.dll
- 0001:0000161f       _GdiplusStartup@12         1000261f f   gdiplus:gdiplus.dll
- 0001:00001625       _GdiplusShutdown@4         10002625 f   gdiplus:gdiplus.dll
- 0001:0000162b       _GdipCloneImage@8          1000262b f   gdiplus:gdiplus.dll
- 0001:00001631       _GdipDisposeImage@4        10002631 f   gdiplus:gdiplus.dll
- 0001:00001637       _GdipGetImagePixelFormat@8 10002637 f   gdiplus:gdiplus.dll
- 0001:0000163d       _GdipCreateBitmapFromStream@8 1000263d f   gdiplus:gdiplus.dll
- 0001:00001643       _GdipCreateBitmapFromStreamICM@8 10002643 f   gdiplus:gdiplus.dll
- 0001:00001649       _GdipBitmapLockBits@20     10002649 f   gdiplus:gdiplus.dll
- 0001:0000164f       _GdipBitmapUnlockBits@8    1000264f f   gdiplus:gdiplus.dll
- 0001:00001655       ??3@YAXPAXI@Z              10002655 f   LIBCMT:delete_scalar_size.obj
- 0001:00001663       @__security_check_cookie@4 10002663 f   LIBCMT:secchk.obj
- 0001:00001674       ??_Etype_info@@UAEPAXI@Z   10002674 f i LIBCMT:std_type_info_static.obj
- 0001:00001674       ??_Gtype_info@@UAEPAXI@Z   10002674 f i LIBCMT:std_type_info_static.obj
- 0001:000019b7       __DllMainCRTStartup@12     100029b7 f   LIBCMT:dll_dllmain.obj
- 0001:000019da       ___raise_securityfailure   100029da f   LIBCMT:gs_report.obj
- 0001:00001a02       ___report_gsfailure        10002a02 f   LIBCMT:gs_report.obj
- 0001:00001b48       ___security_init_cookie    10002b48 f   LIBCMT:gs_support.obj
- 0001:00001b93       _DllMain@12                10002b93 f   LIBCMT:dll_dllmain_stub.obj
- 0001:00001b99       ?__scrt_initialize_type_info@@YAXXZ 10002b99 f   LIBCMT:tncleanup.obj
- 0001:00001ba5       ?__scrt_uninitialize_type_info@@YAXXZ 10002ba5 f   LIBCMT:tncleanup.obj
- 0001:00001bb1       ___local_stdio_scanf_options 10002bb1 f i LIBCMT:default_local_stdio_options.obj
- 0001:00001bb7       ___scrt_initialize_default_local_stdio_options 10002bb7 f   LIBCMT:default_local_stdio_options.obj
- 0001:00001c18       ___scrt_acquire_startup_lock 10002c18 f   LIBCMT:utility.obj
- 0001:00001c4a       ___scrt_dllmain_after_initialize_c 10002c4a f   LIBCMT:utility.obj
- 0001:00001c75       ___scrt_dllmain_before_initialize_c 10002c75 f   LIBCMT:utility.obj
- 0001:00001c83       ___scrt_dllmain_crt_thread_attach 10002c83 f   LIBCMT:utility.obj
- 0001:00001ca2       ___scrt_dllmain_crt_thread_detach 10002ca2 f   LIBCMT:utility.obj
- 0001:00001caf       ___scrt_dllmain_exception_filter 10002caf f   LIBCMT:utility.obj
- 0001:00001ce3       ___scrt_dllmain_uninitialize_c 10002ce3 f   LIBCMT:utility.obj
- 0001:00001d06       ___scrt_dllmain_uninitialize_critical 10002d06 f   LIBCMT:utility.obj
- 0001:00001d13       ___scrt_initialize_crt     10002d13 f   LIBCMT:utility.obj
- 0001:00001d4c       ___scrt_initialize_onexit_tables 10002d4c f   LIBCMT:utility.obj
- 0001:00001df1       ___scrt_is_nonwritable_in_current_image 10002df1 f   LIBCMT:utility.obj
- 0001:00001e85       ___scrt_release_startup_lock 10002e85 f   LIBCMT:utility.obj
- 0001:00001ea2       ___scrt_uninitialize_crt   10002ea2 f   LIBCMT:utility.obj
- 0001:00001eca       ___scrt_get_dyn_tls_init_callback 10002eca f   LIBCMT:dyn_tls_init.obj
- 0001:00001ed0       ___scrt_fastfail           10002ed0 f   LIBCMT:utility_desktop.obj
- 0001:00001fea       __crt_debugger_hook        10002fea f   LIBCMT:utility_desktop.obj
- 0001:00001ff2       __RTC_Initialize           10002ff2 f   LIBCMT:initsect.obj
- 0001:0000201e       __RTC_Terminate            1000301e f   LIBCMT:initsect.obj
+ 0001:00000c62       ?Open@ICOImage@@QAEH_NPB_WPBEKU_COORD@@@Z 10001c62 f i ico.obj
+ 0001:00000e16       ?PageDecode@ICOImage@@QAEHPAUCET_LoadInfo@@@Z 10001e16 f i ico.obj
+ 0001:0000118a       ?QueryInterface@MStream@@UAGJABU_GUID@@PAPAX@Z 1000218a f i ico.obj
+ 0001:000011f2       ?Read@MStream@@UAGJPAXKPAK@Z 100021f2 f i ico.obj
+ 0001:00001247       ?Release@MStream@@UAGKXZ   10002247 f i ico.obj
+ 0001:0000126e       ?Revert@MStream@@UAGJXZ    1000226e f i ico.obj
+ 0001:00001276       ?Seek@MStream@@UAGJT_LARGE_INTEGER@@KPAT_ULARGE_INTEGER@@@Z 10002276 f i ico.obj
+ 0001:000012f0       ?SetData@MStream@@QAEXPBXK@Z 100022f0 f i ico.obj
+ 0001:0000132f       ?SetSize@MStream@@UAGJT_ULARGE_INTEGER@@@Z 1000232f f i ico.obj
+ 0001:000013a2       ?Stat@MStream@@UAGJPAUtagSTATSTG@@K@Z 100023a2 f i ico.obj
+ 0001:0000141a       ?StringCchVPrintfW@@YGJPA_WIPB_WPAD@Z 1000241a f i ico.obj
+ 0001:00001471       ?Write@MStream@@UAGJPBXKPAK@Z 10002471 f i ico.obj
+ 0001:0000150e       ?__global_delete@@YAXPAXI@Z 1000250e f i ico.obj
+ 0001:0000150e       ?__empty_global_delete@@YAXPAXI@Z 1000250e f i ico.obj
+ 0001:0000150e       @_guard_check_icall_nop@4  1000250e f i LIBCMT:guard_support.obj
+ 0001:0000150f       ___local_stdio_printf_options 1000250f f i ico.obj
+ 0001:00001515       __vsnwprintf_l             10002515 f i ico.obj
+ 0001:00001547       ??3@YAXPAX@Z               10002547 f   common-kernel32:Memory.obj
+ 0001:0000154c       ?HeapDeinitialize@@YAXXZ   1000254c f   common-kernel32:Memory.obj
+ 0001:000015a2       ?HeapInitialize@@YA_NXZ    100025a2 f   common-kernel32:Memory.obj
+ 0001:000015d0       ?xf_free@@YAXPAX@Z         100025d0 f   common-kernel32:Memory.obj
+ 0001:00001610       _GdipAlloc@4               10002610 f   gdiplus:gdiplus.dll
+ 0001:00001616       _GdipFree@4                10002616 f   gdiplus:gdiplus.dll
+ 0001:0000161c       _GdiplusStartup@12         1000261c f   gdiplus:gdiplus.dll
+ 0001:00001622       _GdiplusShutdown@4         10002622 f   gdiplus:gdiplus.dll
+ 0001:00001628       _GdipCloneImage@8          10002628 f   gdiplus:gdiplus.dll
+ 0001:0000162e       _GdipDisposeImage@4        1000262e f   gdiplus:gdiplus.dll
+ 0001:00001634       _GdipGetImagePixelFormat@8 10002634 f   gdiplus:gdiplus.dll
+ 0001:0000163a       _GdipCreateBitmapFromStream@8 1000263a f   gdiplus:gdiplus.dll
+ 0001:00001640       _GdipCreateBitmapFromStreamICM@8 10002640 f   gdiplus:gdiplus.dll
+ 0001:00001646       _GdipBitmapLockBits@20     10002646 f   gdiplus:gdiplus.dll
+ 0001:0000164c       _GdipBitmapUnlockBits@8    1000264c f   gdiplus:gdiplus.dll
+ 0001:00001652       ??3@YAXPAXI@Z              10002652 f   LIBCMT:delete_scalar_size.obj
+ 0001:00001660       @__security_check_cookie@4 10002660 f   LIBCMT:secchk.obj
+ 0001:00001671       ??_Etype_info@@UAEPAXI@Z   10002671 f i LIBCMT:std_type_info_static.obj
+ 0001:00001671       ??_Gtype_info@@UAEPAXI@Z   10002671 f i LIBCMT:std_type_info_static.obj
+ 0001:000019b4       __DllMainCRTStartup@12     100029b4 f   LIBCMT:dll_dllmain.obj
+ 0001:000019d7       ___raise_securityfailure   100029d7 f   LIBCMT:gs_report.obj
+ 0001:000019ff       ___report_gsfailure        100029ff f   LIBCMT:gs_report.obj
+ 0001:00001b45       ___security_init_cookie    10002b45 f   LIBCMT:gs_support.obj
+ 0001:00001b90       _DllMain@12                10002b90 f   LIBCMT:dll_dllmain_stub.obj
+ 0001:00001b96       ?__scrt_initialize_type_info@@YAXXZ 10002b96 f   LIBCMT:tncleanup.obj
+ 0001:00001ba2       ?__scrt_uninitialize_type_info@@YAXXZ 10002ba2 f   LIBCMT:tncleanup.obj
+ 0001:00001bae       ___local_stdio_scanf_options 10002bae f i LIBCMT:default_local_stdio_options.obj
+ 0001:00001bb4       ___scrt_initialize_default_local_stdio_options 10002bb4 f   LIBCMT:default_local_stdio_options.obj
+ 0001:00001c15       ___scrt_acquire_startup_lock 10002c15 f   LIBCMT:utility.obj
+ 0001:00001c47       ___scrt_dllmain_after_initialize_c 10002c47 f   LIBCMT:utility.obj
+ 0001:00001c72       ___scrt_dllmain_before_initialize_c 10002c72 f   LIBCMT:utility.obj
+ 0001:00001c80       ___scrt_dllmain_crt_thread_attach 10002c80 f   LIBCMT:utility.obj
+ 0001:00001c9f       ___scrt_dllmain_crt_thread_detach 10002c9f f   LIBCMT:utility.obj
+ 0001:00001cac       ___scrt_dllmain_exception_filter 10002cac f   LIBCMT:utility.obj
+ 0001:00001ce0       ___scrt_dllmain_uninitialize_c 10002ce0 f   LIBCMT:utility.obj
+ 0001:00001d03       ___scrt_dllmain_uninitialize_critical 10002d03 f   LIBCMT:utility.obj
+ 0001:00001d10       ___scrt_initialize_crt     10002d10 f   LIBCMT:utility.obj
+ 0001:00001d49       ___scrt_initialize_onexit_tables 10002d49 f   LIBCMT:utility.obj
+ 0001:00001dee       ___scrt_is_nonwritable_in_current_image 10002dee f   LIBCMT:utility.obj
+ 0001:00001e82       ___scrt_release_startup_lock 10002e82 f   LIBCMT:utility.obj
+ 0001:00001e9f       ___scrt_uninitialize_crt   10002e9f f   LIBCMT:utility.obj
+ 0001:00001ec7       ___scrt_get_dyn_tls_init_callback 10002ec7 f   LIBCMT:dyn_tls_init.obj
+ 0001:00001ecd       ___scrt_fastfail           10002ecd f   LIBCMT:utility_desktop.obj
+ 0001:00001fe7       __crt_debugger_hook        10002fe7 f   LIBCMT:utility_desktop.obj
+ 0001:00001fef       __RTC_Initialize           10002fef f   LIBCMT:initsect.obj
+ 0001:0000201b       __RTC_Terminate            1000301b f   LIBCMT:initsect.obj
  0001:00002050       __SEH_prolog4              10003050 f   LIBCMT:sehprolg4.obj
  0001:00002096       __SEH_epilog4              10003096 f   LIBCMT:sehprolg4.obj
  0001:000020ab       ___isa_available_init      100030ab f   LIBCMT:cpu_disp.obj
@@ -262,12 +262,12 @@
  0001:00005441       __configure_narrow_argv    10006441 f   libucrt:argv_parsing.obj
  0001:000055a5       ??$uninitialize@A6AXAAPAPAD@Z@?$dual_state_global@PAPAD@__crt_state_management@@QAEXA6AXAAPAPAD@Z@Z 100065a5 f i libucrt:environment_initialization.obj
  0001:000055a5       ??$uninitialize@A6AXAAPAPA_W@Z@?$dual_state_global@PAPA_W@__crt_state_management@@QAEXA6AXAAPAPA_W@Z@Z 100065a5 f i libucrt:environment_initialization.obj
- 0001:0000561b       ?initialize@?$dual_state_global@PAPAD@__crt_state_management@@QAEXQAPAD@Z 1000661b f i libucrt:environment_initialization.obj
+ 0001:0000561b       ?initialize@?$dual_state_global@PAU__crt_locale_data@@@__crt_state_management@@QAEXQAU__crt_locale_data@@@Z 1000661b f i libucrt:initialization.obj
  0001:0000561b       ?initialize@?$dual_state_global@P6AHI@Z@__crt_state_management@@QAEXQ6AHI@Z@Z 1000661b f i libucrt:new_handler.obj
- 0001:0000561b       ?initialize@?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@QAEXQ6AHPAU_exception@@@Z@Z 1000661b f i libucrt:matherr.obj
+ 0001:0000561b       ?initialize@?$dual_state_global@PAPAD@__crt_state_management@@QAEXQAPAD@Z 1000661b f i libucrt:environment_initialization.obj
  0001:0000561b       ?initialize@?$dual_state_global@P6AXH@Z@__crt_state_management@@QAEXQ6AXH@Z@Z 1000661b f i libucrt:signal.obj
  0001:0000561b       ?initialize@?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@QAEXQ6AXPB_W00II@Z@Z 1000661b f i libucrt:invalid_parameter.obj
- 0001:0000561b       ?initialize@?$dual_state_global@PAU__crt_locale_data@@@__crt_state_management@@QAEXQAU__crt_locale_data@@@Z 1000661b f i libucrt:initialization.obj
+ 0001:0000561b       ?initialize@?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@QAEXQ6AHPAU_exception@@@Z@Z 1000661b f i libucrt:matherr.obj
  0001:0000564c       ___dcrt_uninitialize_environments_nolock 1000664c f   libucrt:environment_initialization.obj
  0001:00005683       __initialize_narrow_environment 10006683 f   libucrt:environment_initialization.obj
  0001:00005688       ??$?RV<lambda_995298e7d72eb4c2aab26c0585b3abe5>@@AAV<lambda_275893d493268fdec8709772e3fcec0e>@@V<lambda_293819299cbf9a7022e18b56a874bb5c>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_995298e7d72eb4c2aab26c0585b3abe5>@@AAV<lambda_275893d493268fdec8709772e3fcec0e>@@$$QAV<lambda_293819299cbf9a7022e18b56a874bb5c>@@@Z 10006688 f i libucrt:onexit.obj
@@ -542,8 +542,8 @@
  0001:0000fbb9       __ftol2_pentium4           10010bb9 f   LIBCMT:ftol2.obj
  0001:0000fbcc       __ftol2_sse_excpt          10010bcc f   LIBCMT:ftol2.obj
  0001:0000fbf0       __ftol2                    10010bf0 f   LIBCMT:ftol2.obj
- 0001:0000fc70       __chkstk                   10010c70 f   LIBCMT:chkstk.obj
  0001:0000fc70       __alloca_probe             10010c70 f   LIBCMT:chkstk.obj
+ 0001:0000fc70       __chkstk                   10010c70 f   LIBCMT:chkstk.obj
  0001:0000fca0       _strrchr                   10010ca0 f   libvcruntime:strrchr.obj
  0001:0000fde0       _strchr                    10010de0 f   libvcruntime:strchr.obj
  0001:0000fe4e       ___from_strstr_to_strchr   10010e4e     libvcruntime:strchr.obj
@@ -660,8 +660,8 @@
  0002:00000270       _IID_ISequentialStream     10011270     uuid:objidl_i.obj
  0002:00000280       _IID_IStream               10011280     uuid:objidl_i.obj
  0002:00000294       ??_7type_info@@6B@         10011294     LIBCMT:std_type_info_static.obj
- 0002:00000298       __pDefaultRawDllMain       10011298     LIBCMT:dll_dllmain.obj
  0002:00000298       __pRawDllMain              10011298     LIBCMT:dll_dllmain.obj
+ 0002:00000298       __pDefaultRawDllMain       10011298     LIBCMT:dll_dllmain.obj
  0002:00000444       ??_C@_08EHJDFFNH@__based?$CI@ 10011444     libvcruntime:undname.obj
  0002:00000450       ??_C@_07KOLFKCDI@__cdecl@  10011450     libvcruntime:undname.obj
  0002:00000458       ??_C@_08GHMPAG@__pascal@   10011458     libvcruntime:undname.obj
@@ -1384,14 +1384,14 @@
  0002:00005bc4       ??_R2type_info@@8          10016bc4     LIBCMT:std_type_info_static.obj
  0002:00005bcc       ??_R1A@?0A@EA@type_info@@8 10016bcc     LIBCMT:std_type_info_static.obj
  0002:00005bf0       ___safe_se_handler_table   10016bf0     <linker-defined>
- 0002:00005f18       ___rtc_iaa                 10016f18     LIBCMT:initsect.obj
- 0002:00005f1c       ___rtc_izz                 10016f1c     LIBCMT:initsect.obj
- 0002:00005f20       ___rtc_taa                 10016f20     LIBCMT:initsect.obj
- 0002:00005f24       ___rtc_tzz                 10016f24     LIBCMT:initsect.obj
- 0002:00006354       __IMPORT_DESCRIPTOR_KERNEL32 10017354     kernel32:KERNEL32.dll
- 0002:00006368       __IMPORT_DESCRIPTOR_ole32  10017368     ole32:ole32.dll
- 0002:0000637c       __IMPORT_DESCRIPTOR_gdiplus 1001737c     gdiplus:gdiplus.dll
- 0002:00006390       __NULL_IMPORT_DESCRIPTOR   10017390     kernel32:KERNEL32.dll
+ 0002:00005f00       ___rtc_iaa                 10016f00     LIBCMT:initsect.obj
+ 0002:00005f04       ___rtc_izz                 10016f04     LIBCMT:initsect.obj
+ 0002:00005f08       ___rtc_taa                 10016f08     LIBCMT:initsect.obj
+ 0002:00005f0c       ___rtc_tzz                 10016f0c     LIBCMT:initsect.obj
+ 0002:00006334       __IMPORT_DESCRIPTOR_KERNEL32 10017334     kernel32:KERNEL32.dll
+ 0002:00006348       __IMPORT_DESCRIPTOR_ole32  10017348     ole32:ole32.dll
+ 0002:0000635c       __IMPORT_DESCRIPTOR_gdiplus 1001735c     gdiplus:gdiplus.dll
+ 0002:00006370       __NULL_IMPORT_DESCRIPTOR   10017370     kernel32:KERNEL32.dll
  0003:00000000       ___security_cookie_complement 10018000     LIBCMT:gs_cookie.obj
  0003:00000004       ___security_cookie         10018004     LIBCMT:gs_cookie.obj
  0003:00000008       ___scrt_native_dllmain_reason 10018008     LIBCMT:utility.obj
@@ -1425,7 +1425,7 @@
  0003:00000844       ?ghModule@@3PAUHINSTANCE__@@A 10018844     ico.obj
  0003:00000848       ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 10018848     ico.obj
  0003:00000850       ?g_LastDeletePtr@@3PAXA    10018850     common-kernel32:Memory.obj
- 0003:00000854       ?ghHeap@?A0x333b15f0@@3PAXA 10018854     common-kernel32:Memory.obj
+ 0003:00000854       ?ghHeap@?A0x8f3601b8@@3PAXA 10018854     common-kernel32:Memory.obj
  0003:00000b88       ?__type_info_root_node@@3U__type_info_node@@A 10018b88     LIBCMT:tncleanup.obj
  0003:00000b90       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 10018b90     LIBCMT:default_local_stdio_options.obj
  0003:00000b98       ___scrt_current_native_startup_state 10018b98     LIBCMT:utility.obj
@@ -1479,7 +1479,7 @@
  0003:00001260       __pmatherr                 10019260     <common>
  0003:00001264       ___use_sse2_mathfcns       10019264     <common>
 
- entry point at        0001:000019b7
+ entry point at        0001:000019b4
 
  Static symbols
 
@@ -1585,14 +1585,14 @@
  0000:fffe4000       .debug$S                   10000000     kernel32:KERNEL32.dll
  0000:fffe4000       .debug$S                   10000000     kernel32:KERNEL32.dll
  0000:fffe4000       .debug$S                   10000000     ole32:ole32.dll
- 0001:00001576       ?HeapDeinitializeImpl@@YAXXZ 10002576 f   common-kernel32:Memory.obj
- 0001:00001697       ?dllmain_crt_dispatch@@YGHQAUHINSTANCE__@@KQAX@Z 10002697 f   LIBCMT:dll_dllmain.obj
- 0001:000016ea       ?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 100026ea f   LIBCMT:dll_dllmain.obj
- 0001:000017f4       ?dllmain_crt_process_detach@@YAH_N@Z 100027f4 f   LIBCMT:dll_dllmain.obj
- 0001:00001886       ?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10002886 f   LIBCMT:dll_dllmain.obj
- 0001:0000198c       ?dllmain_raw@@YGHQAUHINSTANCE__@@KQAX@Z 1000298c f   LIBCMT:dll_dllmain.obj
- 0001:00001afb       ___get_entropy             10002afb f   LIBCMT:gs_support.obj
- 0001:00001bd4       ?find_pe_section@@YAPAU_IMAGE_SECTION_HEADER@@QAEI@Z 10002bd4 f   LIBCMT:utility.obj
+ 0001:00001573       ?HeapDeinitializeImpl@@YAXXZ 10002573 f   common-kernel32:Memory.obj
+ 0001:00001694       ?dllmain_crt_dispatch@@YGHQAUHINSTANCE__@@KQAX@Z 10002694 f   LIBCMT:dll_dllmain.obj
+ 0001:000016e7       ?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 100026e7 f   LIBCMT:dll_dllmain.obj
+ 0001:000017f1       ?dllmain_crt_process_detach@@YAH_N@Z 100027f1 f   LIBCMT:dll_dllmain.obj
+ 0001:00001883       ?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10002883 f   LIBCMT:dll_dllmain.obj
+ 0001:00001989       ?dllmain_raw@@YGHQAUHINSTANCE__@@KQAX@Z 10002989 f   LIBCMT:dll_dllmain.obj
+ 0001:00001af8       ___get_entropy             10002af8 f   LIBCMT:gs_support.obj
+ 0001:00001bd1       ?find_pe_section@@YAPAU_IMAGE_SECTION_HEADER@@QAEI@Z 10002bd1 f   LIBCMT:utility.obj
  0001:00002050       $$000000                   10003050     LIBCMT:sehprolg4.obj
  0001:00002260       $$000000                   10003260     libvcruntime:memmove.obj
  0001:000024c4       TrailingUpVec              100034c4     libvcruntime:memmove.obj
@@ -1771,55 +1771,55 @@
  0002:00004ec8       _over                      10015ec8     libucrt:fpctrl.obj
  0002:00004ed4       _under                     10015ed4     libucrt:fpctrl.obj
  0002:00005798       ?_names@?1??_get_fname@@9@9 10016798     libucrt:fpexcept.obj
- 0002:00005f28       __sehtable$?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 10016f28     LIBCMT:dll_dllmain.obj
- 0002:00005f48       __sehtable$?dllmain_crt_process_detach@@YAH_N@Z 10016f48     LIBCMT:dll_dllmain.obj
- 0002:00005f68       __sehtable$?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10016f68     LIBCMT:dll_dllmain.obj
- 0002:00005f88       __sehtable$___scrt_is_nonwritable_in_current_image 10016f88     LIBCMT:utility.obj
- 0002:00005fa8       __sehtable$___DestructExceptionObject 10016fa8     libvcruntime:ehhelpers.obj
- 0002:00005fc8       __sehtable$?common_exit@@YAXHW4_crt_exit_cleanup_mode@@W4_crt_exit_return_mode@@@Z 10016fc8     libucrt:exit.obj
- 0002:00005ff0       __sehtable$??$?RV<lambda_995298e7d72eb4c2aab26c0585b3abe5>@@AAV<lambda_275893d493268fdec8709772e3fcec0e>@@V<lambda_293819299cbf9a7022e18b56a874bb5c>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_995298e7d72eb4c2aab26c0585b3abe5>@@AAV<lambda_275893d493268fdec8709772e3fcec0e>@@$$QAV<lambda_293819299cbf9a7022e18b56a874bb5c>@@@Z 10016ff0     libucrt:onexit.obj
- 0002:00006010       __sehtable$_terminate      10017010     libucrt:terminate.obj
- 0002:00006030       __sehtable$??$?RV<lambda_9df27f884b057bc3edfc946cb5b7cf47>@@AAV<lambda_e69574bed617af4e071282c136b37893>@@V<lambda_cc0d902bcbbeb830f749456577db4721>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_9df27f884b057bc3edfc946cb5b7cf47>@@AAV<lambda_e69574bed617af4e071282c136b37893>@@$$QAV<lambda_cc0d902bcbbeb830f749456577db4721>@@@Z 10017030     libucrt:per_thread_data.obj
- 0002:00006050       __sehtable$??$?RV<lambda_3518db117f0e7cdb002338c5d3c47b6c>@@AAV<lambda_b2ea41f6bbb362cd97d94c6828d90b61>@@V<lambda_abdedf541bb04549bc734292b4a045d4>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_3518db117f0e7cdb002338c5d3c47b6c>@@AAV<lambda_b2ea41f6bbb362cd97d94c6828d90b61>@@$$QAV<lambda_abdedf541bb04549bc734292b4a045d4>@@@Z 10017050     libucrt:per_thread_data.obj
- 0002:00006070       __sehtable$??$?RV<lambda_51b6e8b1eb166f2a3faf91f424b38130>@@AAV<lambda_6250bd4b2a391816dd638c3bf72b0bcb>@@V<lambda_0b5a4a3e68152e1d9b943535f5f47bed>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_51b6e8b1eb166f2a3faf91f424b38130>@@AAV<lambda_6250bd4b2a391816dd638c3bf72b0bcb>@@$$QAV<lambda_0b5a4a3e68152e1d9b943535f5f47bed>@@@Z 10017070     libucrt:per_thread_data.obj
- 0002:00006090       __sehtable$??$?RV<lambda_5b71d36f03204c0beab531769a5b5694>@@AAV<lambda_be2b3da3f62db62e9dad5dc70221a656>@@V<lambda_8f9ce462984622f9bf76b59e2aaaf805>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_5b71d36f03204c0beab531769a5b5694>@@AAV<lambda_be2b3da3f62db62e9dad5dc70221a656>@@$$QAV<lambda_8f9ce462984622f9bf76b59e2aaaf805>@@@Z 10017090     libucrt:per_thread_data.obj
- 0002:000060b0       __sehtable$___acrt_uninitialize_locale 100170b0     libucrt:wsetlocale.obj
- 0002:000060d0       __sehtable$___acrt_initialize_lowio 100170d0     libucrt:ioinit.obj
- 0002:000060f0       __sehtable$___acrt_update_thread_multibyte_data 100170f0     libucrt:mbctype.obj
- 0002:00006110       __sehtable$??$?RV<lambda_978dc153c237d78434369da87b74ff60>@@AAV<lambda_ad1ced32f4ac17aa236e5ef05d6b3b7c>@@V<lambda_4a8533e2866a575feecb8298ce776b0d>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_978dc153c237d78434369da87b74ff60>@@AAV<lambda_ad1ced32f4ac17aa236e5ef05d6b3b7c>@@$$QAV<lambda_4a8533e2866a575feecb8298ce776b0d>@@@Z 10017110     libucrt:mbctype.obj
- 0002:00006130       __sehtable$__query_new_handler 10017130     libucrt:new_handler.obj
- 0002:00006150       __sehtable$_raise          10017150     libucrt:signal.obj
- 0002:00006170       __sehtable$??$?RV<lambda_a048d3beccc847880fc8490e18b82769>@@AAV<lambda_ec61778202f4f5fc7e7711acc23c3bca>@@V<lambda_f7496a158712204296dd6628a163878e>@@@?$__crt_seh_guarded_call@P6AXH@Z@@QAEP6AXH@Z$$QAV<lambda_a048d3beccc847880fc8490e18b82769>@@AAV<lambda_ec61778202f4f5fc7e7711acc23c3bca>@@$$QAV<lambda_f7496a158712204296dd6628a163878e>@@@Z 10017170     libucrt:signal.obj
- 0002:00006190       __sehtable$___acrt_update_thread_locale_data 10017190     libucrt:locale_refcounting.obj
- 0002:000061b0       __sehtable$__fcloseall     100171b0     libucrt:closeall.obj
- 0002:000061d0       __sehtable$_common_flush_all 100171d0     libucrt:fflush.obj
- 0002:000061f8       __sehtable$___acrt_lowio_ensure_fh_exists 100171f8     libucrt:osfinfo.obj
- 0002:00006218       __sehtable$__write         10017218     libucrt:write.obj
- 0002:00006238       __sehtable$_fclose         10017238     libucrt:fclose.obj
- 0002:00006258       __sehtable$??$?RV<lambda_61cee617f5178ae960314fd4d05640a0>@@AAV<lambda_6978c1fb23f02e42e1d9e99668cc68aa>@@V<lambda_9cd88cf8ad10232537feb2133f08c833>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_61cee617f5178ae960314fd4d05640a0>@@AAV<lambda_6978c1fb23f02e42e1d9e99668cc68aa>@@$$QAV<lambda_9cd88cf8ad10232537feb2133f08c833>@@@Z 10017258     libucrt:commit.obj
- 0002:00006278       __sehtable$??$?RV<lambda_123407a5e2ac06da108355a851863b7a>@@AAV<lambda_2fe9b910cf3cbf4a0ab98a02ba45b3ec>@@V<lambda_ae55bdf541ad94d75914d381c370e64d>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_123407a5e2ac06da108355a851863b7a>@@AAV<lambda_2fe9b910cf3cbf4a0ab98a02ba45b3ec>@@$$QAV<lambda_ae55bdf541ad94d75914d381c370e64d>@@@Z 10017278     libucrt:close.obj
- 0002:00006298       __sehtable$__IsNonwritableInCurrentImage 10017298     LIBCMT:pesect.obj
- 0002:000062c0       .edata                     100172c0     ico.exp
- 0002:000062e8       rgpv                       100172e8     ico.exp
- 0002:000062fc       rgszName                   100172fc     ico.exp
- 0002:00006310       rgwOrd                     10017310     ico.exp
- 0002:0000631a       szName                     1001731a     ico.exp
- 0002:00006322       $N00001                    10017322     ico.exp
- 0002:0000632d       $N00002                    1001732d     ico.exp
- 0002:00006336       $N00003                    10017336     ico.exp
- 0002:0000633f       $N00004                    1001733f     ico.exp
- 0002:00006348       $N00005                    10017348     ico.exp
- 0002:00006554       .idata$6                   10017554     kernel32:KERNEL32.dll
- 0002:00006586       .idata$6                   10017586     ole32:ole32.dll
- 0002:00006678       .idata$6                   10017678     gdiplus:gdiplus.dll
+ 0002:00005f10       __sehtable$?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 10016f10     LIBCMT:dll_dllmain.obj
+ 0002:00005f30       __sehtable$?dllmain_crt_process_detach@@YAH_N@Z 10016f30     LIBCMT:dll_dllmain.obj
+ 0002:00005f50       __sehtable$?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10016f50     LIBCMT:dll_dllmain.obj
+ 0002:00005f70       __sehtable$___scrt_is_nonwritable_in_current_image 10016f70     LIBCMT:utility.obj
+ 0002:00005f90       __sehtable$___DestructExceptionObject 10016f90     libvcruntime:ehhelpers.obj
+ 0002:00005fb0       __sehtable$?common_exit@@YAXHW4_crt_exit_cleanup_mode@@W4_crt_exit_return_mode@@@Z 10016fb0     libucrt:exit.obj
+ 0002:00005fd8       __sehtable$??$?RV<lambda_995298e7d72eb4c2aab26c0585b3abe5>@@AAV<lambda_275893d493268fdec8709772e3fcec0e>@@V<lambda_293819299cbf9a7022e18b56a874bb5c>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_995298e7d72eb4c2aab26c0585b3abe5>@@AAV<lambda_275893d493268fdec8709772e3fcec0e>@@$$QAV<lambda_293819299cbf9a7022e18b56a874bb5c>@@@Z 10016fd8     libucrt:onexit.obj
+ 0002:00005ff8       __sehtable$_terminate      10016ff8     libucrt:terminate.obj
+ 0002:00006018       __sehtable$??$?RV<lambda_9df27f884b057bc3edfc946cb5b7cf47>@@AAV<lambda_e69574bed617af4e071282c136b37893>@@V<lambda_cc0d902bcbbeb830f749456577db4721>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_9df27f884b057bc3edfc946cb5b7cf47>@@AAV<lambda_e69574bed617af4e071282c136b37893>@@$$QAV<lambda_cc0d902bcbbeb830f749456577db4721>@@@Z 10017018     libucrt:per_thread_data.obj
+ 0002:00006038       __sehtable$??$?RV<lambda_3518db117f0e7cdb002338c5d3c47b6c>@@AAV<lambda_b2ea41f6bbb362cd97d94c6828d90b61>@@V<lambda_abdedf541bb04549bc734292b4a045d4>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_3518db117f0e7cdb002338c5d3c47b6c>@@AAV<lambda_b2ea41f6bbb362cd97d94c6828d90b61>@@$$QAV<lambda_abdedf541bb04549bc734292b4a045d4>@@@Z 10017038     libucrt:per_thread_data.obj
+ 0002:00006058       __sehtable$??$?RV<lambda_51b6e8b1eb166f2a3faf91f424b38130>@@AAV<lambda_6250bd4b2a391816dd638c3bf72b0bcb>@@V<lambda_0b5a4a3e68152e1d9b943535f5f47bed>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_51b6e8b1eb166f2a3faf91f424b38130>@@AAV<lambda_6250bd4b2a391816dd638c3bf72b0bcb>@@$$QAV<lambda_0b5a4a3e68152e1d9b943535f5f47bed>@@@Z 10017058     libucrt:per_thread_data.obj
+ 0002:00006078       __sehtable$??$?RV<lambda_5b71d36f03204c0beab531769a5b5694>@@AAV<lambda_be2b3da3f62db62e9dad5dc70221a656>@@V<lambda_8f9ce462984622f9bf76b59e2aaaf805>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_5b71d36f03204c0beab531769a5b5694>@@AAV<lambda_be2b3da3f62db62e9dad5dc70221a656>@@$$QAV<lambda_8f9ce462984622f9bf76b59e2aaaf805>@@@Z 10017078     libucrt:per_thread_data.obj
+ 0002:00006098       __sehtable$___acrt_uninitialize_locale 10017098     libucrt:wsetlocale.obj
+ 0002:000060b8       __sehtable$___acrt_initialize_lowio 100170b8     libucrt:ioinit.obj
+ 0002:000060d8       __sehtable$___acrt_update_thread_multibyte_data 100170d8     libucrt:mbctype.obj
+ 0002:000060f8       __sehtable$??$?RV<lambda_978dc153c237d78434369da87b74ff60>@@AAV<lambda_ad1ced32f4ac17aa236e5ef05d6b3b7c>@@V<lambda_4a8533e2866a575feecb8298ce776b0d>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_978dc153c237d78434369da87b74ff60>@@AAV<lambda_ad1ced32f4ac17aa236e5ef05d6b3b7c>@@$$QAV<lambda_4a8533e2866a575feecb8298ce776b0d>@@@Z 100170f8     libucrt:mbctype.obj
+ 0002:00006118       __sehtable$__query_new_handler 10017118     libucrt:new_handler.obj
+ 0002:00006138       __sehtable$_raise          10017138     libucrt:signal.obj
+ 0002:00006158       __sehtable$??$?RV<lambda_a048d3beccc847880fc8490e18b82769>@@AAV<lambda_ec61778202f4f5fc7e7711acc23c3bca>@@V<lambda_f7496a158712204296dd6628a163878e>@@@?$__crt_seh_guarded_call@P6AXH@Z@@QAEP6AXH@Z$$QAV<lambda_a048d3beccc847880fc8490e18b82769>@@AAV<lambda_ec61778202f4f5fc7e7711acc23c3bca>@@$$QAV<lambda_f7496a158712204296dd6628a163878e>@@@Z 10017158     libucrt:signal.obj
+ 0002:00006178       __sehtable$___acrt_update_thread_locale_data 10017178     libucrt:locale_refcounting.obj
+ 0002:00006198       __sehtable$__fcloseall     10017198     libucrt:closeall.obj
+ 0002:000061b8       __sehtable$_common_flush_all 100171b8     libucrt:fflush.obj
+ 0002:000061e0       __sehtable$___acrt_lowio_ensure_fh_exists 100171e0     libucrt:osfinfo.obj
+ 0002:00006200       __sehtable$__write         10017200     libucrt:write.obj
+ 0002:00006220       __sehtable$_fclose         10017220     libucrt:fclose.obj
+ 0002:00006240       __sehtable$??$?RV<lambda_61cee617f5178ae960314fd4d05640a0>@@AAV<lambda_6978c1fb23f02e42e1d9e99668cc68aa>@@V<lambda_9cd88cf8ad10232537feb2133f08c833>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_61cee617f5178ae960314fd4d05640a0>@@AAV<lambda_6978c1fb23f02e42e1d9e99668cc68aa>@@$$QAV<lambda_9cd88cf8ad10232537feb2133f08c833>@@@Z 10017240     libucrt:commit.obj
+ 0002:00006260       __sehtable$??$?RV<lambda_123407a5e2ac06da108355a851863b7a>@@AAV<lambda_2fe9b910cf3cbf4a0ab98a02ba45b3ec>@@V<lambda_ae55bdf541ad94d75914d381c370e64d>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_123407a5e2ac06da108355a851863b7a>@@AAV<lambda_2fe9b910cf3cbf4a0ab98a02ba45b3ec>@@$$QAV<lambda_ae55bdf541ad94d75914d381c370e64d>@@@Z 10017260     libucrt:close.obj
+ 0002:00006280       __sehtable$__IsNonwritableInCurrentImage 10017280     LIBCMT:pesect.obj
+ 0002:000062a0       .edata                     100172a0     ico.exp
+ 0002:000062c8       rgpv                       100172c8     ico.exp
+ 0002:000062dc       rgszName                   100172dc     ico.exp
+ 0002:000062f0       rgwOrd                     100172f0     ico.exp
+ 0002:000062fa       szName                     100172fa     ico.exp
+ 0002:00006302       $N00001                    10017302     ico.exp
+ 0002:0000630d       $N00002                    1001730d     ico.exp
+ 0002:00006316       $N00003                    10017316     ico.exp
+ 0002:0000631f       $N00004                    1001731f     ico.exp
+ 0002:00006328       $N00005                    10017328     ico.exp
+ 0002:00006534       .idata$6                   10017534     kernel32:KERNEL32.dll
+ 0002:00006566       .idata$6                   10017566     ole32:ole32.dll
+ 0002:00006658       .idata$6                   10017658     gdiplus:gdiplus.dll
  0003:00000020       ?__vcrt_flsindex@@3KA      10018020     libvcruntime:per_thread_data.obj
  0003:00000044       _errno_no_memory           10018044     libucrt:errno.obj
  0003:00000048       _doserrno_no_memory        10018048     libucrt:errno.obj
  0003:0000004c       ___acrt_flsindex           1001804c     libucrt:per_thread_data.obj
  0003:000001bc       ___rgctypeflag             100181bc     libucrt:mbctype.obj
  0003:000001c0       ___rgcode_page_info        100181c0     libucrt:mbctype.obj
- 0003:00000858       ?gHeapInit@?A0x333b15f0@@3U?$atomic@H@std@@A 10018858     common-kernel32:Memory.obj
- 0003:0000085c       ?gHeapCounter@?A0x333b15f0@@3U?$atomic@H@std@@A 1001885c     common-kernel32:Memory.obj
+ 0003:00000858       ?gHeapInit@?A0x8f3601b8@@3U?$atomic@H@std@@A 10018858     common-kernel32:Memory.obj
+ 0003:0000085c       ?gHeapCounter@?A0x8f3601b8@@3U?$atomic@H@std@@A 1001885c     common-kernel32:Memory.obj
  0003:00000860       ?__proc_attached@@3HA      10018860     LIBCMT:dll_dllmain.obj
  0003:00000868       _GS_ExceptionRecord        10018868     LIBCMT:gs_report.obj
  0003:000008b8       _GS_ContextRecord          100188b8     LIBCMT:gs_report.obj
@@ -1856,4 +1856,4 @@
  0003:0000124c       ___acrt_app_type           1001924c     libucrt:report_runtime_error.obj
  0003:00001254       __pmatherr_set             10019254     libucrt:libm_error.obj
  0004:000000a0       $R000000                   1001a0a0     ico.res
- 0004:000003a8       $R000308                   1001a3a8     ico.res
+ 0004:000003a0       $R000300                   1001a3a0     ico.res
