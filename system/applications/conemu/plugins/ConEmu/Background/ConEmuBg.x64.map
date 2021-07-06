@@ -1,6 +1,6 @@
  ConEmuBg.x64
 
- Timestamp is 60d4f4d4 (Thu Jun 24 23:10:44 2021)
+ Timestamp is 60d8ddc1 (Sun Jun 27 22:21:21 2021)
 
  Preferred load address is 0000000180000000
 
@@ -83,23 +83,23 @@
  0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
  0000:00000100       __guard_flags              0000000000000100     <absolute>
  0000:00000000       __ImageBase                0000000180000000     <linker-defined>
- 0001:00000000       ?ExitFARW3@@YAXPEAX@Z      0000000180001000 f   ConEmuBg.obj
  0001:00000000       ExitFARW                   0000000180001000 f   ConEmuBg.obj
+ 0001:00000000       ?ExitFARW3@@YAXPEAX@Z      0000000180001000 f   ConEmuBg.obj
  0001:00000038       ?ConfigureW3@@YAHPEAX@Z    0000000180001038 f   ConEmuBg.obj
  0001:00000068       ConfigureW                 0000000180001068 f   ConEmuBg.obj
  0001:00000098       ??$SafeDelete@UMSectionSimple@@@@YAXAEAPEAUMSectionSimple@@@Z 0000000180001098 f i ConEmuBg.obj
  0001:000000e0       ??$swprintf_c@$0IA@@@YAHAEAY0IA@_WPEB_WZZ 00000001800010e0 f i ConEmuBg.obj
  0001:0000010c       ??$wcscpy_c@$0BAE@@@YAHAEAY0BAE@_WPEB_W@Z 000000018000110c f i ConEmuBg.obj
  0001:00000158       ??1MStream@@UEAA@XZ        0000000180001158 f i ConEmuBg.obj
- 0001:000001b0       ??_GMStream@@UEAAPEAXI@Z   00000001800011b0 f i ConEmuBg.obj
  0001:000001b0       ??_EMStream@@UEAAPEAXI@Z   00000001800011b0 f i ConEmuBg.obj
+ 0001:000001b0       ??_GMStream@@UEAAPEAXI@Z   00000001800011b0 f i ConEmuBg.obj
  0001:00000228       ?AddRef@MStream@@UEAAKXZ   0000000180001228 f i ConEmuBg.obj
  0001:000003a4       ?CheckXmlFile@@YA_N_N@Z    00000001800013a4 f   ConEmuBg.obj
+ 0001:00000854       ?CopyTo@MStream@@UEAAJPEAUIStream@@T_ULARGE_INTEGER@@PEAT3@2@Z 0000000180001854 f i ConEmuBg.obj
  0001:00000854       ?Revert@MStream@@UEAAJXZ   0000000180001854 f i ConEmuBg.obj
  0001:00000854       ?UnlockRegion@MStream@@UEAAJT_ULARGE_INTEGER@@0K@Z 0000000180001854 f i ConEmuBg.obj
  0001:00000854       ?Clone@MStream@@UEAAJPEAPEAUIStream@@@Z 0000000180001854 f i ConEmuBg.obj
  0001:00000854       ?LockRegion@MStream@@UEAAJT_ULARGE_INTEGER@@0K@Z 0000000180001854 f i ConEmuBg.obj
- 0001:00000854       ?CopyTo@MStream@@UEAAJPEAUIStream@@T_ULARGE_INTEGER@@PEAT3@2@Z 0000000180001854 f i ConEmuBg.obj
  0001:0000085c       ?Close@CachedImage@@QEAAXXZ 000000018000185c f i ConEmuBg.obj
  0001:000008ec       ?Close@GDIPlusDecoder@@QEAAXXZ 00000001800018ec f i ConEmuBg.obj
  0001:000009c8       ?Commit@MStream@@UEAAJK@Z  00000001800019c8 f i ConEmuBg.obj
@@ -213,9 +213,9 @@
  0001:00007934       ?apiTerminateThreadEx@@YAHPEAXKPEBDH@Z 0000000180008934 f   common-kernel64:WThreads.obj
  0001:00007a3c       ?apiThreadHelper@@YAKPEAX@Z 0000000180008a3c f   common-kernel64:WThreads.obj
  0001:00007c48       ??0exception@std@@QEAA@AEBV01@@Z 0000000180008c48 f i libcpmt:xthrow.obj
+ 0001:00007c7c       ??_Gbad_exception@std@@UEAAPEAXI@Z 0000000180008c7c f i libvcruntime:frame.obj
  0001:00007c7c       ??_Ebad_exception@std@@UEAAPEAXI@Z 0000000180008c7c f i libvcruntime:frame.obj
  0001:00007c7c       ??_Gexception@std@@UEAAPEAXI@Z 0000000180008c7c f i libcpmt:xthrow.obj
- 0001:00007c7c       ??_Gbad_exception@std@@UEAAPEAXI@Z 0000000180008c7c f i libvcruntime:frame.obj
  0001:00007c7c       ??_Eexception@std@@UEAAPEAXI@Z 0000000180008c7c f i libcpmt:xthrow.obj
  0001:00007cc0       ?what@exception@std@@UEBAPEBDXZ 0000000180008cc0 f i libcpmt:xthrow.obj
  0001:00007cd4       ??3@YAXPEAX_K@Z            0000000180008cd4 f   LIBCMT:delete_scalar_size.obj
@@ -368,8 +368,8 @@
  0001:0000eabc       ?type_case_c_tchar@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$standard_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_N_W@Z 000000018000fabc f i libucrt:output.obj
  0001:0000eb64       ?type_case_integer@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_NI_N@Z 000000018000fb64 f i libucrt:output.obj
  0001:0000ece4       ?type_case_integer@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$standard_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_NI_N@Z 000000018000fce4 f i libucrt:output.obj
- 0001:0000ee6c       ?type_case_n@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$standard_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_NXZ 000000018000fe6c f i libucrt:output.obj
  0001:0000ee6c       ?type_case_n@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_NXZ 000000018000fe6c f i libucrt:output.obj
+ 0001:0000ee6c       ?type_case_n@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$standard_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_NXZ 000000018000fe6c f i libucrt:output.obj
  0001:0000eef4       ?type_case_s@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_NXZ 000000018000fef4 f i libucrt:output.obj
  0001:0000ef8c       ?type_case_s@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$standard_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_NXZ 000000018000ff8c f i libucrt:output.obj
  0001:0000f054       ?write_stored_string_tchar@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AEAA_ND@Z 0000000180010054 f i libucrt:output.obj
@@ -587,8 +587,8 @@
  0001:0001bce0       _IsNonwritableInCurrentImage 000000018001cce0 f   LIBCMT:pesect.obj
  0001:0001bd30       _ValidateImageBase         000000018001cd30 f   LIBCMT:pesect.obj
  0001:0001bd60       __GSHandlerCheck_SEH       000000018001cd60 f   LIBCMT:gshandlerseh.obj
- 0001:0001be00       _alloca_probe              000000018001ce00 f   LIBCMT:chkstk.obj
  0001:0001be00       __chkstk                   000000018001ce00 f   LIBCMT:chkstk.obj
+ 0001:0001be00       _alloca_probe              000000018001ce00 f   LIBCMT:chkstk.obj
  0001:0001be60       memcmp                     000000018001ce60 f   libvcruntime:memcmp.obj
  0001:0001bf40       _guard_dispatch_icall_nop  000000018001cf40 f   LIBCMT:guard_dispatch.obj
  0001:0001bf60       _guard_xfg_dispatch_icall_nop 000000018001cf60 f   LIBCMT:guard_xfg_dispatch.obj

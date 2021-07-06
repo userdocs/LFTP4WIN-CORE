@@ -1,6 +1,6 @@
  gdi+
 
- Timestamp is 60d4f465 (Thu Jun 24 23:08:53 2021)
+ Timestamp is 60d8de2b (Sun Jun 27 22:23:07 2021)
 
  Preferred load address is 10000000
 
@@ -40,7 +40,7 @@
  0003:00000770 00000000H .data$r                 DATA
  0003:00000770 00008228H .bss                    DATA
  0004:00000000 000000a0H .rsrc$01                DATA
- 0004:000000a0 00000488H .rsrc$02                DATA
+ 0004:000000a0 00000490H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
@@ -78,8 +78,8 @@
  0001:000010b8       ?OpenBitmapFromFile@GDIPlusImage@@QAEPAVGpImage@Gdiplus@@PB_WU_COORD@@@Z 100020b8 f i gdip.obj
  0001:000010fe       ?SelectPage@GDIPlusImage@@QAE_NI@Z 100020fe f i gdip.obj
  0001:0000119f       ??2@YAPAXI@Z               1000219f f   common-kernel32:Memory.obj
- 0001:000011c0       ??3@YAXPAX@Z               100021c0 f   common-kernel32:Memory.obj
  0001:000011c0       ??_V@YAXPAX@Z              100021c0 f   common-kernel32:Memory.obj
+ 0001:000011c0       ??3@YAXPAX@Z               100021c0 f   common-kernel32:Memory.obj
  0001:000011c5       ??_U@YAPAXI@Z              100021c5 f   common-kernel32:Memory.obj
  0001:000011ce       ?HeapDeinitialize@@YAXXZ   100021ce f   common-kernel32:Memory.obj
  0001:00001224       ?HeapInitialize@@YA_NXZ    10002224 f   common-kernel32:Memory.obj
@@ -176,8 +176,8 @@
  0001:0000389a       __abnormal_termination     1000489a f   libvcruntime:exsup.obj
  0001:000038c0       __NLG_Notify1              100048c0 f   libvcruntime:exsup.obj
  0001:000038cc       __NLG_Notify               100048cc f   libvcruntime:exsup.obj
- 0001:000038e3       __NLG_Dispatch             100048e3     libvcruntime:exsup.obj
  0001:000038e3       __NLG_Dispatch2            100048e3     libvcruntime:exsup.obj
+ 0001:000038e3       __NLG_Dispatch             100048e3     libvcruntime:exsup.obj
  0001:000038eb       __NLG_Call                 100048eb f   libvcruntime:exsup.obj
  0001:000038ed       __NLG_Return2              100048ed     libvcruntime:exsup.obj
  0001:000038f0       _memcpy                    100048f0 f   libvcruntime:memcpy.obj
@@ -220,19 +220,19 @@
  0001:00005019       ?type_case_o@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_NXZ 10006019 f i libucrt:output.obj
  0001:00005038       ?type_case_p@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_NXZ 10006038 f i libucrt:output.obj
  0001:00005050       ?type_case_s@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_NXZ 10006050 f i libucrt:output.obj
- 0001:000050c3       ?validate@?$string_output_adapter@D@__crt_stdio_output@@QBE_NXZ 100060c3 f i libucrt:output.obj
  0001:000050c3       ?validate@?$c_string_character_source@D@__crt_strtox@@QBE_NXZ 100060c3 f i libucrt:atox.obj
+ 0001:000050c3       ?validate@?$string_output_adapter@D@__crt_stdio_output@@QBE_NXZ 100060c3 f i libucrt:output.obj
  0001:000050de       ?write_character@?$string_output_adapter@D@__crt_stdio_output@@QBE_NDQAH@Z 100060de f i libucrt:output.obj
  0001:00005120       ?write_stored_string_tchar@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_ND@Z 10006120 f i libucrt:output.obj
  0001:000051c7       ?write_string@?$string_output_adapter@D@__crt_stdio_output@@QBEXQBDHQAH1@Z 100061c7 f i libucrt:output.obj
  0001:0000525a       ___stdio_common_vsprintf   1000625a f   libucrt:output.obj
  0001:0000527e       _wcsncmp                   1000627e f   libucrt:wcsncmp.obj
+ 0001:000052b8       ?initialize@?$dual_state_global@PAU__crt_locale_data@@@__crt_state_management@@QAEXQAU__crt_locale_data@@@Z 100062b8 f i libucrt:initialization.obj
  0001:000052b8       ?initialize@?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@QAEXQ6AXPB_W00II@Z@Z 100062b8 f i libucrt:invalid_parameter.obj
  0001:000052b8       ?initialize@?$dual_state_global@P6AHI@Z@__crt_state_management@@QAEXQ6AHI@Z@Z 100062b8 f i libucrt:new_handler.obj
  0001:000052b8       ?initialize@?$dual_state_global@P6AXH@Z@__crt_state_management@@QAEXQ6AXH@Z@Z 100062b8 f i libucrt:signal.obj
- 0001:000052b8       ?initialize@?$dual_state_global@PAU__crt_locale_data@@@__crt_state_management@@QAEXQAU__crt_locale_data@@@Z 100062b8 f i libucrt:initialization.obj
- 0001:000052b8       ?initialize@?$dual_state_global@PAPAD@__crt_state_management@@QAEXQAPAD@Z 100062b8 f i libucrt:environment_initialization.obj
  0001:000052b8       ?initialize@?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@QAEXQ6AHPAU_exception@@@Z@Z 100062b8 f i libucrt:matherr.obj
+ 0001:000052b8       ?initialize@?$dual_state_global@PAPAD@__crt_state_management@@QAEXQAPAD@Z 100062b8 f i libucrt:environment_initialization.obj
  0001:000052e9       ___acrt_call_reportfault   100062e9 f   libucrt:invalid_parameter.obj
  0001:00005424       ___acrt_initialize_invalid_parameter_handler 10006424 f   libucrt:invalid_parameter.obj
  0001:00005438       __invalid_parameter        10006438 f   libucrt:invalid_parameter.obj
@@ -669,8 +669,8 @@
  0002:0000044c       ??_C@_13HOIJIPNN@?$AA?5@   1001144c     gdip.obj
  0002:00000450       ??_C@_05LCABBMOG@?$CFs?3?$CFi@ 10011450     common-kernel32:WThreads.obj
  0002:00000456       ??_C@_00CNPNBAHC@@         10011456     common-kernel32:MStrDup.obj
- 0002:00000460       __pRawDllMain              10011460     LIBCMT:dll_dllmain.obj
  0002:00000460       __pDefaultRawDllMain       10011460     LIBCMT:dll_dllmain.obj
+ 0002:00000460       __pRawDllMain              10011460     LIBCMT:dll_dllmain.obj
  0002:00000604       ??_C@_08EHJDFFNH@__based?$CI@ 10011604     libvcruntime:undname.obj
  0002:00000610       ??_C@_07KOLFKCDI@__cdecl@  10011610     libvcruntime:undname.obj
  0002:00000618       ??_C@_08GHMPAG@__pascal@   10011618     libvcruntime:undname.obj
@@ -1849,4 +1849,4 @@
  0003:0000897c       ___acrt_app_type           1002097c     libucrt:report_runtime_error.obj
  0003:00008984       __pmatherr_set             10020984     libucrt:libm_error.obj
  0004:000000a0       $R000000                   100210a0     gdip.res
- 0004:000003a8       $R000308                   100213a8     gdip.res
+ 0004:000003b0       $R000310                   100213b0     gdip.res

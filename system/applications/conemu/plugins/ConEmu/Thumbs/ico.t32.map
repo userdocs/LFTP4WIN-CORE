@@ -1,6 +1,6 @@
  ico
 
- Timestamp is 60d4f461 (Thu Jun 24 23:08:49 2021)
+ Timestamp is 60d8de29 (Sun Jun 27 22:23:05 2021)
 
  Preferred load address is 10000000
 
@@ -40,7 +40,7 @@
  0003:00000760 000000e0H .data$r                 DATA
  0003:00000840 00000a28H .bss                    DATA
  0004:00000000 000000a0H .rsrc$01                DATA
- 0004:000000a0 00000480H .rsrc$02                DATA
+ 0004:000000a0 00000488H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
@@ -1856,4 +1856,4 @@
  0003:0000124c       ___acrt_app_type           1001924c     libucrt:report_runtime_error.obj
  0003:00001254       __pmatherr_set             10019254     libucrt:libm_error.obj
  0004:000000a0       $R000000                   1001a0a0     ico.res
- 0004:000003a0       $R000300                   1001a3a0     ico.res
+ 0004:000003a8       $R000308                   1001a3a8     ico.res

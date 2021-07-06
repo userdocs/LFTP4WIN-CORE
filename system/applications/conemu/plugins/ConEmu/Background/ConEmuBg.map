@@ -1,6 +1,6 @@
  ConEmuBg
 
- Timestamp is 60d4f4a0 (Thu Jun 24 23:09:52 2021)
+ Timestamp is 60d8de6b (Sun Jun 27 22:24:11 2021)
 
  Preferred load address is 10000000
 
@@ -75,8 +75,8 @@
  0001:000000fd       ??$swprintf_c@$0IA@@@YAHAAY0IA@_WPB_WZZ 100010fd f i ConEmuBg.obj
  0001:00000116       ??$wcscpy_c@$0BAE@@@YAHAAY0BAE@_WPB_W@Z 10001116 f i ConEmuBg.obj
  0001:0000012b       ??1MStream@@UAE@XZ         1000112b f i ConEmuBg.obj
- 0001:00000162       ??_GMStream@@UAEPAXI@Z     10001162 f i ConEmuBg.obj
  0001:00000162       ??_EMStream@@UAEPAXI@Z     10001162 f i ConEmuBg.obj
+ 0001:00000162       ??_GMStream@@UAEPAXI@Z     10001162 f i ConEmuBg.obj
  0001:00000184       ?AddRef@MStream@@UAGKXZ    10001184 f i ConEmuBg.obj
  0001:000002cf       ?CheckXmlFile@@YA_N_N@Z    100012cf f   ConEmuBg.obj
  0001:0000072e       ?Clone@MStream@@UAGJPAPAUIStream@@@Z 1000172e f i ConEmuBg.obj
@@ -85,9 +85,9 @@
  0001:0000085b       ?ClrPart@@YAEH@Z           1000185b f i ConEmuBg.obj
  0001:00000882       ?Commit@MStream@@UAGJK@Z   10001882 f i ConEmuBg.obj
  0001:00000894       ?CompareNames@@YA_NPB_WPA_W@Z 10001894 f   ConEmuBg.obj
+ 0001:000009a7       ?UnlockRegion@MStream@@UAGJT_ULARGE_INTEGER@@0K@Z 100019a7 f i ConEmuBg.obj
  0001:000009a7       ?CopyTo@MStream@@UAGJPAUIStream@@T_ULARGE_INTEGER@@PAT3@2@Z 100019a7 f i ConEmuBg.obj
  0001:000009a7       ?LockRegion@MStream@@UAGJT_ULARGE_INTEGER@@0K@Z 100019a7 f i ConEmuBg.obj
- 0001:000009a7       ?UnlockRegion@MStream@@UAGJT_ULARGE_INTEGER@@0K@Z 100019a7 f i ConEmuBg.obj
  0001:000009af       ?ExitPlugin@@YAXXZ         100019af f   ConEmuBg.obj
  0001:000009f5       ?FMatch@@YA_NPB_WPA_W@Z    100019f5 f   ConEmuBg.obj
  0001:00000afc       ?FillPanelParams@@YAHPAUPaintBackgroundArg@@PAUBkPanelInfo@@PAUDrawInfo@@@Z 10001afc f   ConEmuBg.obj
@@ -175,8 +175,8 @@
  0001:0000631f       _GetFileVersionInfoW@16    1000731f f   version:VERSION.dll
  0001:00006325       _VerQueryValueW@16         10007325 f   version:VERSION.dll
  0001:0000632b       ??2@YAPAXI@Z               1000732b f   common-kernel32:Memory.obj
- 0001:0000634c       ??3@YAXPAX@Z               1000734c f   common-kernel32:Memory.obj
  0001:0000634c       ??_V@YAXPAX@Z              1000734c f   common-kernel32:Memory.obj
+ 0001:0000634c       ??3@YAXPAX@Z               1000734c f   common-kernel32:Memory.obj
  0001:00006351       ??_U@YAPAXI@Z              10007351 f   common-kernel32:Memory.obj
  0001:0000635a       ?HeapDeinitialize@@YAXXZ   1000735a f   common-kernel32:Memory.obj
  0001:000063b0       ?HeapInitialize@@YA_NXZ    100073b0 f   common-kernel32:Memory.obj
@@ -205,9 +205,9 @@
  0001:000069ce       ?apiThreadHelper@@YGKPAX@Z 100079ce f   common-kernel32:WThreads.obj
  0001:00006b5a       ??0exception@std@@QAE@ABV01@@Z 10007b5a f i libcpmt:xthrow.obj
  0001:00006b86       ??_Ebad_exception@std@@UAEPAXI@Z 10007b86 f i libvcruntime:frame.obj
- 0001:00006b86       ??_Gbad_exception@std@@UAEPAXI@Z 10007b86 f i libvcruntime:frame.obj
  0001:00006b86       ??_Gexception@std@@UAEPAXI@Z 10007b86 f i libcpmt:xthrow.obj
  0001:00006b86       ??_Eexception@std@@UAEPAXI@Z 10007b86 f i libcpmt:xthrow.obj
+ 0001:00006b86       ??_Gbad_exception@std@@UAEPAXI@Z 10007b86 f i libvcruntime:frame.obj
  0001:00006bb3       ?what@exception@std@@UBEPBDXZ 10007bb3 f i libcpmt:xthrow.obj
  0001:00006bc0       ??3@YAXPAXI@Z              10007bc0 f   LIBCMT:delete_scalar_size.obj
  0001:00006bce       ___raise_securityfailure   10007bce f   LIBCMT:gs_report.obj
@@ -224,10 +224,10 @@
  0001:00006ef0       __aulldiv                  10007ef0 f   LIBCMT:ulldiv.obj
  0001:00006f58       ??_Etype_info@@UAEPAXI@Z   10007f58 f i LIBCMT:std_type_info_static.obj
  0001:00006f58       ??_Gtype_info@@UAEPAXI@Z   10007f58 f i LIBCMT:std_type_info_static.obj
- 0001:00006fa2       ??$__crt_fast_encode_pointer@P6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@Z@@YAP6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@ZQ6GH01K@Z@Z 10007fa2 f i LIBCMT:thread_safe_statics.obj
  0001:00006fa2       ??$__crt_fast_encode_pointer@PAP6AXXZ@@YAPAP6AXXZQAP6AXXZ@Z 10007fa2 f i LIBCMT:utility.obj
- 0001:00006fa2       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 10007fa2 f i libvcruntime:winapi_downlevel.obj
  0001:00006fa2       ??$__crt_fast_encode_pointer@P6GXPAU_RTL_CONDITION_VARIABLE@@@Z@@YAP6GXPAU_RTL_CONDITION_VARIABLE@@@ZQ6GX0@Z@Z 10007fa2 f i LIBCMT:thread_safe_statics.obj
+ 0001:00006fa2       ??$__crt_fast_encode_pointer@P6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@Z@@YAP6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@ZQ6GH01K@Z@Z 10007fa2 f i LIBCMT:thread_safe_statics.obj
+ 0001:00006fa2       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 10007fa2 f i libvcruntime:winapi_downlevel.obj
  0001:000070ca       __Init_thread_footer       100080ca f   LIBCMT:thread_safe_statics.obj
  0001:00007114       __Init_thread_header       10008114 f   LIBCMT:thread_safe_statics.obj
  0001:00007166       __Init_thread_notify       10008166 f   LIBCMT:thread_safe_statics.obj
@@ -343,23 +343,23 @@
  0001:0000a72a       __abnormal_termination     1000b72a f   libvcruntime:exsup.obj
  0001:0000a750       __NLG_Notify1              1000b750 f   libvcruntime:exsup.obj
  0001:0000a75c       __NLG_Notify               1000b75c f   libvcruntime:exsup.obj
- 0001:0000a773       __NLG_Dispatch             1000b773     libvcruntime:exsup.obj
  0001:0000a773       __NLG_Dispatch2            1000b773     libvcruntime:exsup.obj
+ 0001:0000a773       __NLG_Dispatch             1000b773     libvcruntime:exsup.obj
  0001:0000a77b       __NLG_Call                 1000b77b f   libvcruntime:exsup.obj
  0001:0000a77d       __NLG_Return2              1000b77d     libvcruntime:exsup.obj
  0001:0000a780       _memcpy                    1000b780 f   libvcruntime:memcpy.obj
  0001:0000acf4       ??$is_overflow_condition@K@__crt_strtox@@YA_NIK@Z 1000bcf4 f i libucrt:strtox.obj
- 0001:0000ad27       ??$make_c_string_character_source@_WPAPA_W@__crt_strtox@@YA?AV?$c_string_character_source@_W@0@QB_WQAPA_W@Z 1000bd27 f i libucrt:strtox.obj
  0001:0000ad27       ??$make_c_string_character_source@DPAPAD@__crt_strtox@@YA?AV?$c_string_character_source@D@0@QBDQAPAD@Z 1000bd27 f i libucrt:strtox.obj
+ 0001:0000ad27       ??$make_c_string_character_source@_WPAPA_W@__crt_strtox@@YA?AV?$c_string_character_source@_W@0@QB_WQAPA_W@Z 1000bd27 f i libucrt:strtox.obj
  0001:0000ad42       ??$parse_integer@KV?$c_string_character_source@D@__crt_strtox@@@__crt_strtox@@YAKQAU__crt_locale_pointers@@V?$c_string_character_source@D@0@H_N@Z 1000bd42 f i libucrt:strtox.obj
  0001:0000af6a       ??$parse_integer@KV?$c_string_character_source@_W@__crt_strtox@@@__crt_strtox@@YAKQAU__crt_locale_pointers@@V?$c_string_character_source@_W@0@H_N@Z 1000bf6a f i libucrt:strtox.obj
  0001:0000b64f       ??0_LocaleUpdate@@QAE@QAU__crt_locale_pointers@@@Z 1000c64f f i libucrt:strtox.obj
  0001:0000b6d2       ?unget@?$c_string_character_source@D@__crt_strtox@@QAEXD@Z 1000c6d2 f i libucrt:strtox.obj
  0001:0000b6fa       ?unget@?$c_string_character_source@_W@__crt_strtox@@QAEX_W@Z 1000c6fa f i libucrt:strtox.obj
+ 0001:0000b726       ?validate@?$c_string_character_source@D@__crt_strtox@@QBE_NXZ 1000c726 f i libucrt:strtox.obj
+ 0001:0000b726       ?validate@?$string_output_adapter@_W@__crt_stdio_output@@QBE_NXZ 1000c726 f i libucrt:output.obj
  0001:0000b726       ?validate@?$string_output_adapter@D@__crt_stdio_output@@QBE_NXZ 1000c726 f i libucrt:output.obj
  0001:0000b726       ?validate@?$c_string_character_source@_W@__crt_strtox@@QBE_NXZ 1000c726 f i libucrt:strtox.obj
- 0001:0000b726       ?validate@?$string_output_adapter@_W@__crt_stdio_output@@QBE_NXZ 1000c726 f i libucrt:output.obj
- 0001:0000b726       ?validate@?$c_string_character_source@D@__crt_strtox@@QBE_NXZ 1000c726 f i libucrt:strtox.obj
  0001:0000b741       __chvalidchk_l             1000c741 f i libucrt:strtox.obj
  0001:0000b76b       __ischartype_l             1000c76b f i libucrt:strtox.obj
  0001:0000b79e       _strtol                    1000c79e f   libucrt:strtox.obj
@@ -434,12 +434,12 @@
  0001:0000d819       ___stdio_common_vsprintf   1000e819 f   libucrt:output.obj
  0001:0000d83d       ___stdio_common_vswprintf  1000e83d f   libucrt:output.obj
  0001:0000d861       _wcsncmp                   1000e861 f   libucrt:wcsncmp.obj
- 0001:0000d89b       ?initialize@?$dual_state_global@PAPAD@__crt_state_management@@QAEXQAPAD@Z 1000e89b f i libucrt:environment_initialization.obj
- 0001:0000d89b       ?initialize@?$dual_state_global@P6AXH@Z@__crt_state_management@@QAEXQ6AXH@Z@Z 1000e89b f i libucrt:signal.obj
- 0001:0000d89b       ?initialize@?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@QAEXQ6AXPB_W00II@Z@Z 1000e89b f i libucrt:invalid_parameter.obj
  0001:0000d89b       ?initialize@?$dual_state_global@P6AHI@Z@__crt_state_management@@QAEXQ6AHI@Z@Z 1000e89b f i libucrt:new_handler.obj
  0001:0000d89b       ?initialize@?$dual_state_global@PAU__crt_locale_data@@@__crt_state_management@@QAEXQAU__crt_locale_data@@@Z 1000e89b f i libucrt:initialization.obj
+ 0001:0000d89b       ?initialize@?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@QAEXQ6AXPB_W00II@Z@Z 1000e89b f i libucrt:invalid_parameter.obj
+ 0001:0000d89b       ?initialize@?$dual_state_global@PAPAD@__crt_state_management@@QAEXQAPAD@Z 1000e89b f i libucrt:environment_initialization.obj
  0001:0000d89b       ?initialize@?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@QAEXQ6AHPAU_exception@@@Z@Z 1000e89b f i libucrt:matherr.obj
+ 0001:0000d89b       ?initialize@?$dual_state_global@P6AXH@Z@__crt_state_management@@QAEXQ6AXH@Z@Z 1000e89b f i libucrt:signal.obj
  0001:0000d8cc       ___acrt_call_reportfault   1000e8cc f   libucrt:invalid_parameter.obj
  0001:0000da07       ___acrt_initialize_invalid_parameter_handler 1000ea07 f   libucrt:invalid_parameter.obj
  0001:0000da1b       __invalid_parameter        1000ea1b f   libucrt:invalid_parameter.obj

@@ -1,6 +1,6 @@
  gdi+
 
- Timestamp is 60d4f45c (Thu Jun 24 23:08:44 2021)
+ Timestamp is 60d8ddbc (Sun Jun 27 22:21:16 2021)
 
  Preferred load address is 0000000180000000
 
@@ -47,7 +47,7 @@
  0004:00000000 00001074H .pdata                  DATA
  0005:00000000 000000f4H _RDATA                  DATA
  0006:00000000 000000a0H .rsrc$01                DATA
- 0006:000000a0 00000488H .rsrc$02                DATA
+ 0006:000000a0 00000490H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
@@ -94,8 +94,8 @@
  0001:00001038       ?Open@GDIPlusImage@@QEAA_N_NPEB_WPEBE_JU_COORD@@@Z 0000000180002038 f i gdip.obj
  0001:00001400       ?SelectPage@GDIPlusImage@@QEAA_NI@Z 0000000180002400 f i gdip.obj
  0001:000014c8       ??2@YAPEAX_K@Z             00000001800024c8 f   common-kernel64:Memory.obj
- 0001:000014f0       ??_V@YAXPEAX@Z             00000001800024f0 f   common-kernel64:Memory.obj
  0001:000014f0       ??3@YAXPEAX@Z              00000001800024f0 f   common-kernel64:Memory.obj
+ 0001:000014f0       ??_V@YAXPEAX@Z             00000001800024f0 f   common-kernel64:Memory.obj
  0001:000014f8       ??_U@YAPEAX_K@Z            00000001800024f8 f   common-kernel64:Memory.obj
  0001:00001500       ?HeapDeinitialize@@YAXXZ   0000000180002500 f   common-kernel64:Memory.obj
  0001:00001564       ?HeapInitialize@@YA_NXZ    0000000180002564 f   common-kernel64:Memory.obj
@@ -119,8 +119,8 @@
  0001:00002260       _DllMainCRTStartup         0000000180003260 f   LIBCMT:dll_dllmain.obj
  0001:000022a0       ??3@YAXPEAX_K@Z            00000001800032a0 f   LIBCMT:delete_scalar_size.obj
  0001:000022a8       __security_init_cookie     00000001800032a8 f   LIBCMT:gs_support.obj
- 0001:00002354       DllMain                    0000000180003354 f   LIBCMT:dll_dllmain_stub.obj
  0001:00002354       _get_startup_argv_mode     0000000180003354 f   LIBCMT:argv_mode.obj
+ 0001:00002354       DllMain                    0000000180003354 f   LIBCMT:dll_dllmain_stub.obj
  0001:0000235c       ?__scrt_initialize_type_info@@YAXXZ 000000018000335c f   LIBCMT:tncleanup.obj
  0001:0000236c       ?__scrt_uninitialize_type_info@@YAXXZ 000000018000336c f   LIBCMT:tncleanup.obj
  0001:00002378       __local_stdio_scanf_options 0000000180003378 f i LIBCMT:default_local_stdio_options.obj
@@ -409,8 +409,8 @@
  0001:00011550       _FindPESection             0000000180012550 f   LIBCMT:pesect.obj
  0001:000115a0       _IsNonwritableInCurrentImage 00000001800125a0 f   LIBCMT:pesect.obj
  0001:000115f0       _ValidateImageBase         00000001800125f0 f   LIBCMT:pesect.obj
- 0001:00011630       _alloca_probe              0000000180012630 f   LIBCMT:chkstk.obj
  0001:00011630       __chkstk                   0000000180012630 f   LIBCMT:chkstk.obj
+ 0001:00011630       _alloca_probe              0000000180012630 f   LIBCMT:chkstk.obj
  0001:00011690       memcmp                     0000000180012690 f   libvcruntime:memcmp.obj
  0001:00011770       _guard_dispatch_icall_nop  0000000180012770 f   LIBCMT:guard_dispatch.obj
  0001:00011790       _guard_xfg_dispatch_icall_nop 0000000180012790 f   LIBCMT:guard_xfg_dispatch.obj
@@ -563,8 +563,8 @@
  0002:00000640       ??_C@_05LCABBMOG@?$CFs?3?$CFi@ 0000000180013640     common-kernel64:WThreads.obj
  0002:00000648       ??_C@_11LOCGONAA@@         0000000180013648     common-kernel64:CEStr.obj
  0002:0000064a       ??_C@_00CNPNBAHC@@         000000018001364a     common-kernel64:MStrDup.obj
- 0002:00000660       _pRawDllMain               0000000180013660     LIBCMT:dll_dllmain.obj
  0002:00000660       _pDefaultRawDllMain        0000000180013660     LIBCMT:dll_dllmain.obj
+ 0002:00000660       _pRawDllMain               0000000180013660     LIBCMT:dll_dllmain.obj
  0002:00000670       __xmm@ffffffffffffffffffffffffffffffff 0000000180013670     LIBCMT:utility.obj
  0002:00000680       _pDestructExceptionObject  0000000180013680     libvcruntime:ehhelpers.obj
  0002:00000d90       ??_C@_08EHJDFFNH@__based?$CI@ 0000000180013d90     libvcruntime:undname.obj
@@ -2045,4 +2045,4 @@
  0005:00000088       MoveSmallXmm               000000018002b088     libvcruntime:memcpy.obj
  0005:000000b0       MsetTab                    000000018002b0b0     libvcruntime:memset.obj
  0006:000000a0       $R000000                   000000018002c0a0     gdip.res
- 0006:000003a8       $R000308                   000000018002c3a8     gdip.res
+ 0006:000003b0       $R000310                   000000018002c3b0     gdip.res

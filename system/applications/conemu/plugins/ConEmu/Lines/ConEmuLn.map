@@ -1,6 +1,6 @@
  ConEmuLn
 
- Timestamp is 60d4f497 (Thu Jun 24 23:09:43 2021)
+ Timestamp is 60d8de32 (Sun Jun 27 22:23:14 2021)
 
  Preferred load address is 10000000
 
@@ -88,8 +88,8 @@
  0001:00001736       ?ExitFARW1900@@YAXXZ       10002736 f   ConEmuLn1900.obj
  0001:00001765       ?GetMsgW1900@@YAPB_WH@Z    10002765 f   ConEmuLn1900.obj
  0001:0000178b       ?GetPluginInfoW1900@@YAXPAX@Z 1000278b f   ConEmuLn1900.obj
- 0001:000017ef       ?OpenW2800@@YGPAXPBX@Z     100027ef f   ConEmuLn2800.obj
  0001:000017ef       ?OpenW1900@@YGPAXPBX@Z     100027ef f   ConEmuLn1900.obj
+ 0001:000017ef       ?OpenW2800@@YGPAXPBX@Z     100027ef f   ConEmuLn2800.obj
  0001:00001813       ?SetStartupInfoW1900@@YAXPAX@Z 10002813 f   ConEmuLn1900.obj
  0001:0000190a       ?SettingsLoadW1900@@YAXXZ  1000290a f   ConEmuLn1900.obj
  0001:00001a06       ?SettingsSaveW1900@@YAXXZ  10002a06 f   ConEmuLn1900.obj
@@ -218,9 +218,9 @@
  0001:00006a44       ??0_LocaleUpdate@@QAE@QAU__crt_locale_pointers@@@Z 10007a44 f i libucrt:strtox.obj
  0001:00006ac7       ?unget@?$c_string_character_source@D@__crt_strtox@@QAEXD@Z 10007ac7 f i libucrt:strtox.obj
  0001:00006aef       ?unget@?$c_string_character_source@_W@__crt_strtox@@QAEX_W@Z 10007aef f i libucrt:strtox.obj
- 0001:00006b1b       ?validate@?$c_string_character_source@D@__crt_strtox@@QBE_NXZ 10007b1b f i libucrt:strtox.obj
  0001:00006b1b       ?validate@?$c_string_character_source@_W@__crt_strtox@@QBE_NXZ 10007b1b f i libucrt:strtox.obj
  0001:00006b1b       ?validate@?$string_output_adapter@_W@__crt_stdio_output@@QBE_NXZ 10007b1b f i libucrt:output.obj
+ 0001:00006b1b       ?validate@?$c_string_character_source@D@__crt_strtox@@QBE_NXZ 10007b1b f i libucrt:strtox.obj
  0001:00006b36       __chvalidchk_l             10007b36 f i libucrt:strtox.obj
  0001:00006b60       __ischartype_l             10007b60 f i libucrt:strtox.obj
  0001:00006b93       _strtoul                   10007b93 f   libucrt:strtox.obj
@@ -266,11 +266,11 @@
  0001:00007eb6       ___stdio_common_vswprintf  10008eb6 f   libucrt:output.obj
  0001:00007eda       _wcsncmp                   10008eda f   libucrt:wcsncmp.obj
  0001:00007f14       ?initialize@?$dual_state_global@P6AHI@Z@__crt_state_management@@QAEXQ6AHI@Z@Z 10008f14 f i libucrt:new_handler.obj
+ 0001:00007f14       ?initialize@?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@QAEXQ6AXPB_W00II@Z@Z 10008f14 f i libucrt:invalid_parameter.obj
+ 0001:00007f14       ?initialize@?$dual_state_global@P6AXH@Z@__crt_state_management@@QAEXQ6AXH@Z@Z 10008f14 f i libucrt:signal.obj
  0001:00007f14       ?initialize@?$dual_state_global@PAPAD@__crt_state_management@@QAEXQAPAD@Z 10008f14 f i libucrt:environment_initialization.obj
  0001:00007f14       ?initialize@?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@QAEXQ6AHPAU_exception@@@Z@Z 10008f14 f i libucrt:matherr.obj
- 0001:00007f14       ?initialize@?$dual_state_global@P6AXH@Z@__crt_state_management@@QAEXQ6AXH@Z@Z 10008f14 f i libucrt:signal.obj
  0001:00007f14       ?initialize@?$dual_state_global@PAU__crt_locale_data@@@__crt_state_management@@QAEXQAU__crt_locale_data@@@Z 10008f14 f i libucrt:initialization.obj
- 0001:00007f14       ?initialize@?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@QAEXQ6AXPB_W00II@Z@Z 10008f14 f i libucrt:invalid_parameter.obj
  0001:00007f45       ___acrt_call_reportfault   10008f45 f   libucrt:invalid_parameter.obj
  0001:00008080       ___acrt_initialize_invalid_parameter_handler 10009080 f   libucrt:invalid_parameter.obj
  0001:00008094       __invalid_parameter        10009094 f   libucrt:invalid_parameter.obj

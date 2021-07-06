@@ -1,6 +1,6 @@
  pe
 
- Timestamp is 60d4f468 (Thu Jun 24 23:08:56 2021)
+ Timestamp is 60d8de27 (Sun Jun 27 22:23:03 2021)
 
  Preferred load address is 10000000
 
@@ -40,7 +40,7 @@
  0003:00000760 00000000H .data$r                 DATA
  0003:00000760 00000a20H .bss                    DATA
  0004:00000000 000000a0H .rsrc$01                DATA
- 0004:000000a0 00000488H .rsrc$02                DATA
+ 0004:000000a0 00000490H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
@@ -1797,4 +1797,4 @@
  0003:00001164       ___acrt_app_type           1001a164     libucrt:report_runtime_error.obj
  0003:0000116c       __pmatherr_set             1001a16c     libucrt:libm_error.obj
  0004:000000a0       $R000000                   1001b0a0     pe.res
- 0004:000003a8       $R000308                   1001b3a8     pe.res
+ 0004:000003b0       $R000310                   1001b3b0     pe.res

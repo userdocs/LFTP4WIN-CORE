@@ -1,6 +1,6 @@
  pe
 
- Timestamp is 60d4f43f (Thu Jun 24 23:08:15 2021)
+ Timestamp is 60d8ddbc (Sun Jun 27 22:21:16 2021)
 
  Preferred load address is 0000000180000000
 
@@ -47,7 +47,7 @@
  0004:00000000 00001080H .pdata                  DATA
  0005:00000000 000000fcH _RDATA                  DATA
  0006:00000000 000000a0H .rsrc$01                DATA
- 0006:000000a0 00000488H .rsrc$02                DATA
+ 0006:000000a0 00000490H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
@@ -2001,4 +2001,4 @@
  0005:000000b4       MoveSmallYmmNT             00000001800220b4     libvcruntime:memcpy.obj
  0005:000000d8       MoveSmallXmm               00000001800220d8     libvcruntime:memcpy.obj
  0006:000000a0       $R000000                   00000001800230a0     pe.res
- 0006:000003a8       $R000308                   00000001800233a8     pe.res
+ 0006:000003b0       $R000310                   00000001800233b0     pe.res

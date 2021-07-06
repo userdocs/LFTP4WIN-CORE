@@ -1,6 +1,6 @@
  ico
 
- Timestamp is 60d4f457 (Thu Jun 24 23:08:39 2021)
+ Timestamp is 60d8ddc1 (Sun Jun 27 22:21:21 2021)
 
  Preferred load address is 0000000180000000
 
@@ -47,7 +47,7 @@
  0004:00000000 00001098H .pdata                  DATA
  0005:00000000 000000f4H _RDATA                  DATA
  0006:00000000 000000a0H .rsrc$01                DATA
- 0006:000000a0 00000480H .rsrc$02                DATA
+ 0006:000000a0 00000488H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
@@ -2059,4 +2059,4 @@
  0005:00000088       MoveSmallXmm               0000000180022088     libvcruntime:memcpy.obj
  0005:000000b0       MsetTab                    00000001800220b0     libvcruntime:memset.obj
  0006:000000a0       $R000000                   00000001800230a0     ico.res
- 0006:000003a0       $R000300                   00000001800233a0     ico.res
+ 0006:000003a8       $R000308                   00000001800233a8     ico.res
