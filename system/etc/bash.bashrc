@@ -81,7 +81,13 @@ install_git() {
 	echo "Downloading git portable"
 	echo
 	git_version_1="$(curl -s https://github.com/git-for-windows/git/releases/latest | grep -oP "v(.*)\.windows\.[0-9]")"
-	git_version_2="${git_version_1#v}" && git_version_2="${git_version_2/\.windows\.1/-64-bit}"
+	#
+	if [[ "${git_version_1}" =~ ^v(.*)windows.1$ ]]; then
+		git_version_2="${git_version_1#v}" && git_version_2="${git_version_2/\.windows\.1/}-64-bit"
+	else
+		git_version_2="${git_version_1#v}" && git_version_2="${git_version_2/\.windows/}-64-bit"
+	fi
+	#
 	git_url="https://github.com/git-for-windows/git/releases/download/${git_version_1}/PortableGit-${git_version_2}.7z.exe"
 	#
 	if curl -sNL "${git_url}" > "$HOME/git.7z.exe"; then
