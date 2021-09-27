@@ -1,6 +1,6 @@
  ConEmuLn.x64
 
- Timestamp is 60d8dee5 (Sun Jun 27 22:26:13 2021)
+ Timestamp is 613e7379 (Sun Sep 12 23:39:05 2021)
 
  Preferred load address is 0000000180000000
 
@@ -106,8 +106,8 @@
  0001:00001ae0       ?ExitFARW1900@@YAXXZ       0000000180002ae0 f   ConEmuLn1900.obj
  0001:00001b1c       ?GetMsgW1900@@YAPEB_WH@Z   0000000180002b1c f   ConEmuLn1900.obj
  0001:00001b48       ?GetPluginInfoW1900@@YAXPEAX@Z 0000000180002b48 f   ConEmuLn1900.obj
- 0001:00001bd0       ?OpenW1900@@YAPEAXPEBX@Z   0000000180002bd0 f   ConEmuLn1900.obj
  0001:00001bd0       ?OpenW2800@@YAPEAXPEBX@Z   0000000180002bd0 f   ConEmuLn2800.obj
+ 0001:00001bd0       ?OpenW1900@@YAPEAXPEBX@Z   0000000180002bd0 f   ConEmuLn1900.obj
  0001:00001be8       ?SetStartupInfoW1900@@YAXPEAX@Z 0000000180002be8 f   ConEmuLn1900.obj
  0001:00001d34       ?SettingsLoadW1900@@YAXXZ  0000000180002d34 f   ConEmuLn1900.obj
  0001:00001e8c       ?SettingsSaveW1900@@YAXXZ  0000000180002e8c f   ConEmuLn1900.obj
@@ -148,8 +148,8 @@
  0001:00004bdc       __GSHandlerCheck           0000000180005bdc f   LIBCMT:gshandler.obj
  0001:00004bfc       __GSHandlerCheckCommon     0000000180005bfc f   LIBCMT:gshandler.obj
  0001:00004c70       __security_check_cookie    0000000180005c70 f   LIBCMT:amdsecgs.obj
- 0001:00004ca0       __chkstk                   0000000180005ca0 f   LIBCMT:chkstk.obj
  0001:00004ca0       _alloca_probe              0000000180005ca0 f   LIBCMT:chkstk.obj
+ 0001:00004ca0       __chkstk                   0000000180005ca0 f   LIBCMT:chkstk.obj
  0001:00005010       _DllMainCRTStartup         0000000180006010 f   LIBCMT:dll_dllmain.obj
  0001:00005050       __raise_securityfailure    0000000180006050 f   LIBCMT:gs_report.obj
  0001:00005084       __report_gsfailure         0000000180006084 f   LIBCMT:gs_report.obj
@@ -476,57 +476,57 @@
  0002:000000c8       __imp_GetLastError         00000001800160c8     kernel32:KERNEL32.dll
  0002:000000d0       __imp_CreateFileW          00000001800160d0     kernel32:KERNEL32.dll
  0002:000000d8       __imp_WriteConsoleW        00000001800160d8     kernel32:KERNEL32.dll
- 0002:000000e0       __imp_RaiseException       00000001800160e0     kernel32:KERNEL32.dll
+ 0002:000000e0       __imp_RtlUnwindEx          00000001800160e0     kernel32:KERNEL32.dll
  0002:000000e8       __imp_DebugBreak           00000001800160e8     kernel32:KERNEL32.dll
  0002:000000f0       __imp_HeapCreate           00000001800160f0     kernel32:KERNEL32.dll
  0002:000000f8       __imp_HeapDestroy          00000001800160f8     kernel32:KERNEL32.dll
  0002:00000100       __imp_HeapAlloc            0000000180016100     kernel32:KERNEL32.dll
  0002:00000108       __imp_HeapReAlloc          0000000180016108     kernel32:KERNEL32.dll
  0002:00000110       __imp_HeapFree             0000000180016110     kernel32:KERNEL32.dll
- 0002:00000118       __imp_WideCharToMultiByte  0000000180016118     kernel32:KERNEL32.dll
- 0002:00000120       __imp_RtlCaptureContext    0000000180016120     kernel32:KERNEL32.dll
- 0002:00000128       __imp_RtlLookupFunctionEntry 0000000180016128     kernel32:KERNEL32.dll
- 0002:00000130       __imp_RtlVirtualUnwind     0000000180016130     kernel32:KERNEL32.dll
- 0002:00000138       __imp_UnhandledExceptionFilter 0000000180016138     kernel32:KERNEL32.dll
- 0002:00000140       __imp_SetUnhandledExceptionFilter 0000000180016140     kernel32:KERNEL32.dll
- 0002:00000148       __imp_GetCurrentProcess    0000000180016148     kernel32:KERNEL32.dll
- 0002:00000150       __imp_TerminateProcess     0000000180016150     kernel32:KERNEL32.dll
- 0002:00000158       __imp_IsProcessorFeaturePresent 0000000180016158     kernel32:KERNEL32.dll
- 0002:00000160       __imp_QueryPerformanceCounter 0000000180016160     kernel32:KERNEL32.dll
- 0002:00000168       __imp_GetCurrentProcessId  0000000180016168     kernel32:KERNEL32.dll
- 0002:00000170       __imp_GetCurrentThreadId   0000000180016170     kernel32:KERNEL32.dll
- 0002:00000178       __imp_GetSystemTimeAsFileTime 0000000180016178     kernel32:KERNEL32.dll
- 0002:00000180       __imp_InitializeSListHead  0000000180016180     kernel32:KERNEL32.dll
- 0002:00000188       __imp_IsDebuggerPresent    0000000180016188     kernel32:KERNEL32.dll
- 0002:00000190       __imp_GetStartupInfoW      0000000180016190     kernel32:KERNEL32.dll
- 0002:00000198       __imp_GetModuleHandleW     0000000180016198     kernel32:KERNEL32.dll
- 0002:000001a0       __imp_RtlUnwindEx          00000001800161a0     kernel32:KERNEL32.dll
- 0002:000001a8       __imp_InterlockedFlushSList 00000001800161a8     kernel32:KERNEL32.dll
- 0002:000001b0       __imp_SetLastError         00000001800161b0     kernel32:KERNEL32.dll
- 0002:000001b8       __imp_EnterCriticalSection 00000001800161b8     kernel32:KERNEL32.dll
- 0002:000001c0       __imp_LeaveCriticalSection 00000001800161c0     kernel32:KERNEL32.dll
- 0002:000001c8       __imp_DeleteCriticalSection 00000001800161c8     kernel32:KERNEL32.dll
- 0002:000001d0       __imp_InitializeCriticalSectionAndSpinCount 00000001800161d0     kernel32:KERNEL32.dll
- 0002:000001d8       __imp_TlsAlloc             00000001800161d8     kernel32:KERNEL32.dll
- 0002:000001e0       __imp_TlsGetValue          00000001800161e0     kernel32:KERNEL32.dll
- 0002:000001e8       __imp_TlsSetValue          00000001800161e8     kernel32:KERNEL32.dll
- 0002:000001f0       __imp_TlsFree              00000001800161f0     kernel32:KERNEL32.dll
- 0002:000001f8       __imp_FreeLibrary          00000001800161f8     kernel32:KERNEL32.dll
- 0002:00000200       __imp_GetProcAddress       0000000180016200     kernel32:KERNEL32.dll
- 0002:00000208       __imp_LoadLibraryExW       0000000180016208     kernel32:KERNEL32.dll
- 0002:00000210       __imp_ExitProcess          0000000180016210     kernel32:KERNEL32.dll
- 0002:00000218       __imp_GetModuleHandleExW   0000000180016218     kernel32:KERNEL32.dll
- 0002:00000220       __imp_GetStdHandle         0000000180016220     kernel32:KERNEL32.dll
- 0002:00000228       __imp_GetFileType          0000000180016228     kernel32:KERNEL32.dll
- 0002:00000230       __imp_FindClose            0000000180016230     kernel32:KERNEL32.dll
- 0002:00000238       __imp_FindFirstFileExW     0000000180016238     kernel32:KERNEL32.dll
- 0002:00000240       __imp_FindNextFileW        0000000180016240     kernel32:KERNEL32.dll
- 0002:00000248       __imp_IsValidCodePage      0000000180016248     kernel32:KERNEL32.dll
- 0002:00000250       __imp_GetACP               0000000180016250     kernel32:KERNEL32.dll
- 0002:00000258       __imp_GetOEMCP             0000000180016258     kernel32:KERNEL32.dll
- 0002:00000260       __imp_GetCPInfo            0000000180016260     kernel32:KERNEL32.dll
- 0002:00000268       __imp_GetCommandLineA      0000000180016268     kernel32:KERNEL32.dll
- 0002:00000270       __imp_GetCommandLineW      0000000180016270     kernel32:KERNEL32.dll
+ 0002:00000118       __imp_RtlCaptureContext    0000000180016118     kernel32:KERNEL32.dll
+ 0002:00000120       __imp_RtlLookupFunctionEntry 0000000180016120     kernel32:KERNEL32.dll
+ 0002:00000128       __imp_RtlVirtualUnwind     0000000180016128     kernel32:KERNEL32.dll
+ 0002:00000130       __imp_UnhandledExceptionFilter 0000000180016130     kernel32:KERNEL32.dll
+ 0002:00000138       __imp_SetUnhandledExceptionFilter 0000000180016138     kernel32:KERNEL32.dll
+ 0002:00000140       __imp_GetCurrentProcess    0000000180016140     kernel32:KERNEL32.dll
+ 0002:00000148       __imp_TerminateProcess     0000000180016148     kernel32:KERNEL32.dll
+ 0002:00000150       __imp_IsProcessorFeaturePresent 0000000180016150     kernel32:KERNEL32.dll
+ 0002:00000158       __imp_QueryPerformanceCounter 0000000180016158     kernel32:KERNEL32.dll
+ 0002:00000160       __imp_GetCurrentProcessId  0000000180016160     kernel32:KERNEL32.dll
+ 0002:00000168       __imp_GetCurrentThreadId   0000000180016168     kernel32:KERNEL32.dll
+ 0002:00000170       __imp_GetSystemTimeAsFileTime 0000000180016170     kernel32:KERNEL32.dll
+ 0002:00000178       __imp_InitializeSListHead  0000000180016178     kernel32:KERNEL32.dll
+ 0002:00000180       __imp_IsDebuggerPresent    0000000180016180     kernel32:KERNEL32.dll
+ 0002:00000188       __imp_GetStartupInfoW      0000000180016188     kernel32:KERNEL32.dll
+ 0002:00000190       __imp_GetModuleHandleW     0000000180016190     kernel32:KERNEL32.dll
+ 0002:00000198       __imp_RaiseException       0000000180016198     kernel32:KERNEL32.dll
+ 0002:000001a0       __imp_InterlockedFlushSList 00000001800161a0     kernel32:KERNEL32.dll
+ 0002:000001a8       __imp_SetLastError         00000001800161a8     kernel32:KERNEL32.dll
+ 0002:000001b0       __imp_EnterCriticalSection 00000001800161b0     kernel32:KERNEL32.dll
+ 0002:000001b8       __imp_LeaveCriticalSection 00000001800161b8     kernel32:KERNEL32.dll
+ 0002:000001c0       __imp_DeleteCriticalSection 00000001800161c0     kernel32:KERNEL32.dll
+ 0002:000001c8       __imp_InitializeCriticalSectionAndSpinCount 00000001800161c8     kernel32:KERNEL32.dll
+ 0002:000001d0       __imp_TlsAlloc             00000001800161d0     kernel32:KERNEL32.dll
+ 0002:000001d8       __imp_TlsGetValue          00000001800161d8     kernel32:KERNEL32.dll
+ 0002:000001e0       __imp_TlsSetValue          00000001800161e0     kernel32:KERNEL32.dll
+ 0002:000001e8       __imp_TlsFree              00000001800161e8     kernel32:KERNEL32.dll
+ 0002:000001f0       __imp_FreeLibrary          00000001800161f0     kernel32:KERNEL32.dll
+ 0002:000001f8       __imp_GetProcAddress       00000001800161f8     kernel32:KERNEL32.dll
+ 0002:00000200       __imp_LoadLibraryExW       0000000180016200     kernel32:KERNEL32.dll
+ 0002:00000208       __imp_ExitProcess          0000000180016208     kernel32:KERNEL32.dll
+ 0002:00000210       __imp_GetModuleHandleExW   0000000180016210     kernel32:KERNEL32.dll
+ 0002:00000218       __imp_GetStdHandle         0000000180016218     kernel32:KERNEL32.dll
+ 0002:00000220       __imp_GetFileType          0000000180016220     kernel32:KERNEL32.dll
+ 0002:00000228       __imp_FindClose            0000000180016228     kernel32:KERNEL32.dll
+ 0002:00000230       __imp_FindFirstFileExW     0000000180016230     kernel32:KERNEL32.dll
+ 0002:00000238       __imp_FindNextFileW        0000000180016238     kernel32:KERNEL32.dll
+ 0002:00000240       __imp_IsValidCodePage      0000000180016240     kernel32:KERNEL32.dll
+ 0002:00000248       __imp_GetACP               0000000180016248     kernel32:KERNEL32.dll
+ 0002:00000250       __imp_GetOEMCP             0000000180016250     kernel32:KERNEL32.dll
+ 0002:00000258       __imp_GetCPInfo            0000000180016258     kernel32:KERNEL32.dll
+ 0002:00000260       __imp_GetCommandLineA      0000000180016260     kernel32:KERNEL32.dll
+ 0002:00000268       __imp_GetCommandLineW      0000000180016268     kernel32:KERNEL32.dll
+ 0002:00000270       __imp_WideCharToMultiByte  0000000180016270     kernel32:KERNEL32.dll
  0002:00000278       __imp_GetEnvironmentStringsW 0000000180016278     kernel32:KERNEL32.dll
  0002:00000280       __imp_FreeEnvironmentStringsW 0000000180016280     kernel32:KERNEL32.dll
  0002:00000288       __imp_LCMapStringW         0000000180016288     kernel32:KERNEL32.dll
@@ -626,7 +626,6 @@
  0002:00000a70       __xmm@00000001000000000000000000000003 0000000180016a70     ConEmuLn995.obj
  0002:00000a80       ??_C@_08KOICIHPP@0xXXXXXX@ 0000000180016a80     ConEmuLnA.obj
  0002:00000a8c       ??_C@_04JCFDBOEJ@?$CF06X@  0000000180016a8c     ConEmuLnA.obj
- 0002:00000a91       ??_C@_00CNPNBAHC@@         0000000180016a91     common-kernel64:MStrDup.obj
  0002:00000a98       _pDefaultRawDllMain        0000000180016a98     LIBCMT:dll_dllmain.obj
  0002:00000a98       _pRawDllMain               0000000180016a98     LIBCMT:dll_dllmain.obj
  0002:00000ab0       __xmm@ffffffffffffffffffffffffffffffff 0000000180016ab0     LIBCMT:utility.obj
@@ -646,6 +645,7 @@
  0002:00001278       ??_C@_0L@PILCLIHE@__restrict@ 0000000180017278     libvcruntime:undname.obj
  0002:00001288       ??_C@_0M@GFIIJFMG@__unaligned@ 0000000180017288     libvcruntime:undname.obj
  0002:00001298       ??_C@_09DHDLOLLB@restrict?$CI@ 0000000180017298     libvcruntime:undname.obj
+ 0002:000012a2       ??_C@_00CNPNBAHC@@         00000001800172a2     libvcruntime:undname.obj
  0002:000012a4       ??_C@_04NIHEBCM@?5new@     00000001800172a4     libvcruntime:undname.obj
  0002:000012b0       ??_C@_07FPCDHGMM@?5delete@ 00000001800172b0     libvcruntime:undname.obj
  0002:000012b8       ??_C@_01NEMOKFLO@?$DN@     00000001800172b8     libvcruntime:undname.obj
@@ -1530,7 +1530,7 @@
  0001:00005aa0       $$000000                   0000000180006aa0     libvcruntime:memcpy.obj
  0001:00006150       $$000000                   0000000180007150     libvcruntime:memset.obj
  0001:00006640       $$000000                   0000000180007640     libvcruntime:notify.obj
- 0001:000068e0       ?try_get_function@@YAPEAXW4function_id@?A0x61a31dd3@@QEBDQEBW4module_id@2@2@Z 00000001800078e0 f   libvcruntime:winapi_downlevel.obj
+ 0001:000068e0       ?try_get_function@@YAPEAXW4function_id@?A0x6b2bd6b2@@QEBDQEBW4module_id@2@2@Z 00000001800078e0 f   libvcruntime:winapi_downlevel.obj
  0001:00006bc0       $$000000                   0000000180007bc0     libvcruntime:handlers.obj
  0001:0000780c       ??$common_vsprintf@Vstandard_base@__crt_stdio_output@@_W@@YAH_KQEA_W0QEB_WQEAU__crt_locale_pointers@@QEAD@Z 000000018000880c f   libucrt:output.obj
  0001:00008608       $LN17                      0000000180009608     libucrt:output.obj
@@ -1657,12 +1657,12 @@
  0002:00001100       ?rttiTable@@3QBUStringLiteral@@B 0000000180017100     libvcruntime:undname.obj
  0002:00001150       ?IndirectionName@@3QBUStringLiteral@@B 0000000180017150     libvcruntime:undname.obj
  0002:000011b0       ?PrefixName@@3QBUStringLiteral@@B 00000001800171b0     libvcruntime:undname.obj
- 0002:00001888       ?module_names@?A0x61a31dd3@@3QBQEB_WB 0000000180017888     libvcruntime:winapi_downlevel.obj
- 0002:00001948       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6AKP6AXPEAX@Z@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 0000000180017948     libvcruntime:winapi_downlevel.obj
- 0002:00001960       ?candidate_modules@?1??try_get_FlsFree@@YAP6AHK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 0000000180017960     libvcruntime:winapi_downlevel.obj
- 0002:00001970       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6APEAXK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 0000000180017970     libvcruntime:winapi_downlevel.obj
- 0002:00001988       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6AHKPEAX@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 0000000180017988     libvcruntime:winapi_downlevel.obj
- 0002:000019a0       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6AHPEAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 00000001800179a0     libvcruntime:winapi_downlevel.obj
+ 0002:00001888       ?module_names@?A0x6b2bd6b2@@3QBQEB_WB 0000000180017888     libvcruntime:winapi_downlevel.obj
+ 0002:00001948       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6AKP6AXPEAX@Z@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 0000000180017948     libvcruntime:winapi_downlevel.obj
+ 0002:00001960       ?candidate_modules@?1??try_get_FlsFree@@YAP6AHK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 0000000180017960     libvcruntime:winapi_downlevel.obj
+ 0002:00001970       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6APEAXK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 0000000180017970     libvcruntime:winapi_downlevel.obj
+ 0002:00001988       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6AHKPEAX@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 0000000180017988     libvcruntime:winapi_downlevel.obj
+ 0002:000019a0       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6AHPEAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 00000001800179a0     libvcruntime:winapi_downlevel.obj
  0002:00001ef0       __acrt_initializers        0000000180017ef0     libucrt:initialization.obj
  0002:00002800       ?errtable@@3QBUerrentry@?A0x31fdb9ec@@B 0000000180018800     libucrt:errno.obj
  0002:00002ff0       ?strings@?1??fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z@4QAY03QEBDA 0000000180018ff0     libucrt:cvt.obj
@@ -1969,7 +1969,7 @@
  0002:000098fc       $unwind$__DestructExceptionObject 000000018001f8fc     libvcruntime:ehhelpers.obj
  0002:0000991c       $unwind$__DestructExceptionObject$filt$0 000000018001f91c     libvcruntime:ehhelpers.obj
  0002:00009928       $xdatasym                  000000018001f928     libvcruntime:notify.obj
- 0002:00009934       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x61a31dd3@@QEBDQEBW4module_id@2@2@Z 000000018001f934     libvcruntime:winapi_downlevel.obj
+ 0002:00009934       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x6b2bd6b2@@QEBDQEBW4module_id@2@2@Z 000000018001f934     libvcruntime:winapi_downlevel.obj
  0002:00009934       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x391cf84c@@QEBDQEBW4module_id@2@2@Z 000000018001f934     libucrt:winapi_thunks.obj
  0002:00009950       $xdatasym                  000000018001f950     libvcruntime:handlers.obj
  0002:00009970       $unwind$strtoul            000000018001f970     libucrt:strtox.obj

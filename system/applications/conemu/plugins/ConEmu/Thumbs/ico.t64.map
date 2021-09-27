@@ -1,6 +1,6 @@
  ico
 
- Timestamp is 60d8ddc1 (Sun Jun 27 22:21:21 2021)
+ Timestamp is 613e7367 (Sun Sep 12 23:38:47 2021)
 
  Preferred load address is 0000000180000000
 
@@ -1442,7 +1442,7 @@
  0001:000028d0       $$000000                   00000001800038d0     libvcruntime:memcpy.obj
  0001:00002f80       $$000000                   0000000180003f80     libvcruntime:memset.obj
  0001:00003470       $$000000                   0000000180004470     libvcruntime:notify.obj
- 0001:00003710       ?try_get_function@@YAPEAXW4function_id@?A0x61a31dd3@@QEBDQEBW4module_id@2@2@Z 0000000180004710 f   libvcruntime:winapi_downlevel.obj
+ 0001:00003710       ?try_get_function@@YAPEAXW4function_id@?A0x6b2bd6b2@@QEBDQEBW4module_id@2@2@Z 0000000180004710 f   libvcruntime:winapi_downlevel.obj
  0001:000039f0       $$000000                   00000001800049f0     libvcruntime:handlers.obj
  0001:00003af8       ??$common_vsprintf@Vstandard_base@__crt_stdio_output@@_W@@YAH_KQEA_W0QEB_WQEAU__crt_locale_pointers@@QEAD@Z 0000000180004af8 f   libucrt:output.obj
  0001:00004988       $LN17                      0000000180005988     libucrt:output.obj
@@ -1570,12 +1570,12 @@
  0002:00000b20       ?rttiTable@@3QBUStringLiteral@@B 0000000180013b20     libvcruntime:undname.obj
  0002:00000b70       ?IndirectionName@@3QBUStringLiteral@@B 0000000180013b70     libvcruntime:undname.obj
  0002:00000bd0       ?PrefixName@@3QBUStringLiteral@@B 0000000180013bd0     libvcruntime:undname.obj
- 0002:000012a8       ?module_names@?A0x61a31dd3@@3QBQEB_WB 00000001800142a8     libvcruntime:winapi_downlevel.obj
- 0002:00001368       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6AKP6AXPEAX@Z@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 0000000180014368     libvcruntime:winapi_downlevel.obj
- 0002:00001380       ?candidate_modules@?1??try_get_FlsFree@@YAP6AHK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 0000000180014380     libvcruntime:winapi_downlevel.obj
- 0002:00001390       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6APEAXK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 0000000180014390     libvcruntime:winapi_downlevel.obj
- 0002:000013a8       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6AHKPEAX@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 00000001800143a8     libvcruntime:winapi_downlevel.obj
- 0002:000013c0       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6AHPEAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 00000001800143c0     libvcruntime:winapi_downlevel.obj
+ 0002:000012a8       ?module_names@?A0x6b2bd6b2@@3QBQEB_WB 00000001800142a8     libvcruntime:winapi_downlevel.obj
+ 0002:00001368       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6AKP6AXPEAX@Z@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 0000000180014368     libvcruntime:winapi_downlevel.obj
+ 0002:00001380       ?candidate_modules@?1??try_get_FlsFree@@YAP6AHK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 0000000180014380     libvcruntime:winapi_downlevel.obj
+ 0002:00001390       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6APEAXK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 0000000180014390     libvcruntime:winapi_downlevel.obj
+ 0002:000013a8       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6AHKPEAX@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 00000001800143a8     libvcruntime:winapi_downlevel.obj
+ 0002:000013c0       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6AHPEAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 00000001800143c0     libvcruntime:winapi_downlevel.obj
  0002:00001910       __acrt_initializers        0000000180014910     libucrt:initialization.obj
  0002:00001a10       ?errtable@@3QBUerrentry@?A0x31fdb9ec@@B 0000000180014a10     libucrt:errno.obj
  0002:00001b80       ?strings@?1??fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z@4QAY03QEBDA 0000000180014b80     libucrt:cvt.obj
@@ -1796,7 +1796,7 @@
  0002:000092f0       $unwind$?Stat@MStream@@UEAAJPEAUtagSTATSTG@@K@Z 000000018001c2f0     ico.obj
  0002:00009300       $unwind$?LoadPageInfo@@YAKPEAUICONCONTEXT@@HAEAI111PEAPEB_W@Z 000000018001c300     ico.obj
  0002:00009310       $unwind$?Decode1BPP@@YAPEAEIIPEAUtagRGBQUAD@@PEAE1AEAK@Z 000000018001c310     ico.obj
- 0002:00009310       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x61a31dd3@@QEBDQEBW4module_id@2@2@Z 000000018001c310     libvcruntime:winapi_downlevel.obj
+ 0002:00009310       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x6b2bd6b2@@QEBDQEBW4module_id@2@2@Z 000000018001c310     libvcruntime:winapi_downlevel.obj
  0002:00009310       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x391cf84c@@QEBDQEBW4module_id@2@2@Z 000000018001c310     libucrt:winapi_thunks.obj
  0002:0000932c       $unwind$?Decode4BPP@@YAPEAEIIPEAUtagRGBQUAD@@PEAE1AEAK@Z 000000018001c32c     ico.obj
  0002:0000932c       $unwind$?Decode8BPP@@YAPEAEAEAIIPEAUtagRGBQUAD@@PEAE2AEAK@Z 000000018001c32c     ico.obj

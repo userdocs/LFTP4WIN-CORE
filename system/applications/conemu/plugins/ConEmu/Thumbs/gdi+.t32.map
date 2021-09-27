@@ -1,6 +1,6 @@
  gdi+
 
- Timestamp is 60d8de2b (Sun Jun 27 22:23:07 2021)
+ Timestamp is 613e72b7 (Sun Sep 12 23:35:51 2021)
 
  Preferred load address is 10000000
 
@@ -78,8 +78,8 @@
  0001:000010b8       ?OpenBitmapFromFile@GDIPlusImage@@QAEPAVGpImage@Gdiplus@@PB_WU_COORD@@@Z 100020b8 f i gdip.obj
  0001:000010fe       ?SelectPage@GDIPlusImage@@QAE_NI@Z 100020fe f i gdip.obj
  0001:0000119f       ??2@YAPAXI@Z               1000219f f   common-kernel32:Memory.obj
- 0001:000011c0       ??_V@YAXPAX@Z              100021c0 f   common-kernel32:Memory.obj
  0001:000011c0       ??3@YAXPAX@Z               100021c0 f   common-kernel32:Memory.obj
+ 0001:000011c0       ??_V@YAXPAX@Z              100021c0 f   common-kernel32:Memory.obj
  0001:000011c5       ??_U@YAPAXI@Z              100021c5 f   common-kernel32:Memory.obj
  0001:000011ce       ?HeapDeinitialize@@YAXXZ   100021ce f   common-kernel32:Memory.obj
  0001:00001224       ?HeapInitialize@@YA_NXZ    10002224 f   common-kernel32:Memory.obj
@@ -220,19 +220,19 @@
  0001:00005019       ?type_case_o@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_NXZ 10006019 f i libucrt:output.obj
  0001:00005038       ?type_case_p@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_NXZ 10006038 f i libucrt:output.obj
  0001:00005050       ?type_case_s@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_NXZ 10006050 f i libucrt:output.obj
- 0001:000050c3       ?validate@?$c_string_character_source@D@__crt_strtox@@QBE_NXZ 100060c3 f i libucrt:atox.obj
  0001:000050c3       ?validate@?$string_output_adapter@D@__crt_stdio_output@@QBE_NXZ 100060c3 f i libucrt:output.obj
+ 0001:000050c3       ?validate@?$c_string_character_source@D@__crt_strtox@@QBE_NXZ 100060c3 f i libucrt:atox.obj
  0001:000050de       ?write_character@?$string_output_adapter@D@__crt_stdio_output@@QBE_NDQAH@Z 100060de f i libucrt:output.obj
  0001:00005120       ?write_stored_string_tchar@?$output_processor@DV?$string_output_adapter@D@__crt_stdio_output@@V?$standard_base@DV?$string_output_adapter@D@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_ND@Z 10006120 f i libucrt:output.obj
  0001:000051c7       ?write_string@?$string_output_adapter@D@__crt_stdio_output@@QBEXQBDHQAH1@Z 100061c7 f i libucrt:output.obj
  0001:0000525a       ___stdio_common_vsprintf   1000625a f   libucrt:output.obj
  0001:0000527e       _wcsncmp                   1000627e f   libucrt:wcsncmp.obj
- 0001:000052b8       ?initialize@?$dual_state_global@PAU__crt_locale_data@@@__crt_state_management@@QAEXQAU__crt_locale_data@@@Z 100062b8 f i libucrt:initialization.obj
  0001:000052b8       ?initialize@?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@QAEXQ6AXPB_W00II@Z@Z 100062b8 f i libucrt:invalid_parameter.obj
+ 0001:000052b8       ?initialize@?$dual_state_global@PAU__crt_locale_data@@@__crt_state_management@@QAEXQAU__crt_locale_data@@@Z 100062b8 f i libucrt:initialization.obj
  0001:000052b8       ?initialize@?$dual_state_global@P6AHI@Z@__crt_state_management@@QAEXQ6AHI@Z@Z 100062b8 f i libucrt:new_handler.obj
- 0001:000052b8       ?initialize@?$dual_state_global@P6AXH@Z@__crt_state_management@@QAEXQ6AXH@Z@Z 100062b8 f i libucrt:signal.obj
  0001:000052b8       ?initialize@?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@QAEXQ6AHPAU_exception@@@Z@Z 100062b8 f i libucrt:matherr.obj
  0001:000052b8       ?initialize@?$dual_state_global@PAPAD@__crt_state_management@@QAEXQAPAD@Z 100062b8 f i libucrt:environment_initialization.obj
+ 0001:000052b8       ?initialize@?$dual_state_global@P6AXH@Z@__crt_state_management@@QAEXQ6AXH@Z@Z 100062b8 f i libucrt:signal.obj
  0001:000052e9       ___acrt_call_reportfault   100062e9 f   libucrt:invalid_parameter.obj
  0001:00005424       ___acrt_initialize_invalid_parameter_handler 10006424 f   libucrt:invalid_parameter.obj
  0001:00005438       __invalid_parameter        10006438 f   libucrt:invalid_parameter.obj
@@ -519,8 +519,8 @@
  0001:0000fe69       __ftol2_pentium4           10010e69 f   LIBCMT:ftol2.obj
  0001:0000fe7c       __ftol2_sse_excpt          10010e7c f   LIBCMT:ftol2.obj
  0001:0000fea0       __ftol2                    10010ea0 f   LIBCMT:ftol2.obj
- 0001:0000ff20       __alloca_probe             10010f20 f   LIBCMT:chkstk.obj
  0001:0000ff20       __chkstk                   10010f20 f   LIBCMT:chkstk.obj
+ 0001:0000ff20       __alloca_probe             10010f20 f   LIBCMT:chkstk.obj
  0002:00000000       __imp__SelectObject@8      10011000     gdi32:GDI32.dll
  0002:00000004       __imp__DeleteObject@4      10011004     gdi32:GDI32.dll
  0002:00000008       __imp__DeleteDC@4          10011008     gdi32:GDI32.dll
@@ -565,33 +565,33 @@
  0002:000000a4       __imp__GetTickCount@0      100110a4     kernel32:KERNEL32.dll
  0002:000000a8       __imp__lstrcpynA@12        100110a8     kernel32:KERNEL32.dll
  0002:000000ac       __imp__DebugBreak@0        100110ac     kernel32:KERNEL32.dll
- 0002:000000b0       __imp__MultiByteToWideChar@24 100110b0     kernel32:KERNEL32.dll
- 0002:000000b4       __imp__WideCharToMultiByte@32 100110b4     kernel32:KERNEL32.dll
- 0002:000000b8       __imp__UnhandledExceptionFilter@4 100110b8     kernel32:KERNEL32.dll
- 0002:000000bc       __imp__SetUnhandledExceptionFilter@4 100110bc     kernel32:KERNEL32.dll
- 0002:000000c0       __imp__GetCurrentProcess@0 100110c0     kernel32:KERNEL32.dll
- 0002:000000c4       __imp__TerminateProcess@8  100110c4     kernel32:KERNEL32.dll
- 0002:000000c8       __imp__IsProcessorFeaturePresent@4 100110c8     kernel32:KERNEL32.dll
- 0002:000000cc       __imp__QueryPerformanceCounter@4 100110cc     kernel32:KERNEL32.dll
- 0002:000000d0       __imp__GetCurrentProcessId@0 100110d0     kernel32:KERNEL32.dll
- 0002:000000d4       __imp__GetSystemTimeAsFileTime@4 100110d4     kernel32:KERNEL32.dll
- 0002:000000d8       __imp__InitializeSListHead@4 100110d8     kernel32:KERNEL32.dll
- 0002:000000dc       __imp__GetStartupInfoW@4   100110dc     kernel32:KERNEL32.dll
- 0002:000000e0       __imp__GetModuleHandleW@4  100110e0     kernel32:KERNEL32.dll
- 0002:000000e4       __imp__InterlockedFlushSList@4 100110e4     kernel32:KERNEL32.dll
- 0002:000000e8       __imp__RtlUnwind@16        100110e8     kernel32:KERNEL32.dll
- 0002:000000ec       __imp__EnterCriticalSection@4 100110ec     kernel32:KERNEL32.dll
- 0002:000000f0       __imp__LeaveCriticalSection@4 100110f0     kernel32:KERNEL32.dll
- 0002:000000f4       __imp__DeleteCriticalSection@4 100110f4     kernel32:KERNEL32.dll
- 0002:000000f8       __imp__InitializeCriticalSectionAndSpinCount@8 100110f8     kernel32:KERNEL32.dll
- 0002:000000fc       __imp__TlsAlloc@0          100110fc     kernel32:KERNEL32.dll
- 0002:00000100       __imp__TlsGetValue@4       10011100     kernel32:KERNEL32.dll
- 0002:00000104       __imp__TlsSetValue@8       10011104     kernel32:KERNEL32.dll
- 0002:00000108       __imp__TlsFree@4           10011108     kernel32:KERNEL32.dll
- 0002:0000010c       __imp__LoadLibraryExW@12   1001110c     kernel32:KERNEL32.dll
- 0002:00000110       __imp__ExitProcess@4       10011110     kernel32:KERNEL32.dll
- 0002:00000114       __imp__GetModuleHandleExW@12 10011114     kernel32:KERNEL32.dll
- 0002:00000118       __imp__GetModuleFileNameA@12 10011118     kernel32:KERNEL32.dll
+ 0002:000000b0       __imp__UnhandledExceptionFilter@4 100110b0     kernel32:KERNEL32.dll
+ 0002:000000b4       __imp__SetUnhandledExceptionFilter@4 100110b4     kernel32:KERNEL32.dll
+ 0002:000000b8       __imp__GetCurrentProcess@0 100110b8     kernel32:KERNEL32.dll
+ 0002:000000bc       __imp__TerminateProcess@8  100110bc     kernel32:KERNEL32.dll
+ 0002:000000c0       __imp__IsProcessorFeaturePresent@4 100110c0     kernel32:KERNEL32.dll
+ 0002:000000c4       __imp__QueryPerformanceCounter@4 100110c4     kernel32:KERNEL32.dll
+ 0002:000000c8       __imp__GetCurrentProcessId@0 100110c8     kernel32:KERNEL32.dll
+ 0002:000000cc       __imp__GetSystemTimeAsFileTime@4 100110cc     kernel32:KERNEL32.dll
+ 0002:000000d0       __imp__InitializeSListHead@4 100110d0     kernel32:KERNEL32.dll
+ 0002:000000d4       __imp__GetStartupInfoW@4   100110d4     kernel32:KERNEL32.dll
+ 0002:000000d8       __imp__GetModuleHandleW@4  100110d8     kernel32:KERNEL32.dll
+ 0002:000000dc       __imp__InterlockedFlushSList@4 100110dc     kernel32:KERNEL32.dll
+ 0002:000000e0       __imp__RtlUnwind@16        100110e0     kernel32:KERNEL32.dll
+ 0002:000000e4       __imp__EnterCriticalSection@4 100110e4     kernel32:KERNEL32.dll
+ 0002:000000e8       __imp__LeaveCriticalSection@4 100110e8     kernel32:KERNEL32.dll
+ 0002:000000ec       __imp__DeleteCriticalSection@4 100110ec     kernel32:KERNEL32.dll
+ 0002:000000f0       __imp__InitializeCriticalSectionAndSpinCount@8 100110f0     kernel32:KERNEL32.dll
+ 0002:000000f4       __imp__TlsAlloc@0          100110f4     kernel32:KERNEL32.dll
+ 0002:000000f8       __imp__TlsGetValue@4       100110f8     kernel32:KERNEL32.dll
+ 0002:000000fc       __imp__TlsSetValue@8       100110fc     kernel32:KERNEL32.dll
+ 0002:00000100       __imp__TlsFree@4           10011100     kernel32:KERNEL32.dll
+ 0002:00000104       __imp__LoadLibraryExW@12   10011104     kernel32:KERNEL32.dll
+ 0002:00000108       __imp__ExitProcess@4       10011108     kernel32:KERNEL32.dll
+ 0002:0000010c       __imp__GetModuleHandleExW@12 1001110c     kernel32:KERNEL32.dll
+ 0002:00000110       __imp__GetModuleFileNameA@12 10011110     kernel32:KERNEL32.dll
+ 0002:00000114       __imp__MultiByteToWideChar@24 10011114     kernel32:KERNEL32.dll
+ 0002:00000118       __imp__WideCharToMultiByte@32 10011118     kernel32:KERNEL32.dll
  0002:0000011c       __imp__GetACP@0            1001111c     kernel32:KERNEL32.dll
  0002:00000120       __imp__GetStdHandle@4      10011120     kernel32:KERNEL32.dll
  0002:00000124       __imp__GetFileType@4       10011124     kernel32:KERNEL32.dll
@@ -668,7 +668,6 @@
  0002:00000440       ??_C@_1M@HKOFHKAI@?$AA?5?$AA?$FL?$AA?$CF?$AAi?$AA?$FN@ 10011440     gdip.obj
  0002:0000044c       ??_C@_13HOIJIPNN@?$AA?5@   1001144c     gdip.obj
  0002:00000450       ??_C@_05LCABBMOG@?$CFs?3?$CFi@ 10011450     common-kernel32:WThreads.obj
- 0002:00000456       ??_C@_00CNPNBAHC@@         10011456     common-kernel32:MStrDup.obj
  0002:00000460       __pDefaultRawDllMain       10011460     LIBCMT:dll_dllmain.obj
  0002:00000460       __pRawDllMain              10011460     LIBCMT:dll_dllmain.obj
  0002:00000604       ??_C@_08EHJDFFNH@__based?$CI@ 10011604     libvcruntime:undname.obj
@@ -686,6 +685,7 @@
  0002:0000068c       ??_C@_0L@PILCLIHE@__restrict@ 1001168c     libvcruntime:undname.obj
  0002:00000698       ??_C@_0M@GFIIJFMG@__unaligned@ 10011698     libvcruntime:undname.obj
  0002:000006a4       ??_C@_09DHDLOLLB@restrict?$CI@ 100116a4     libvcruntime:undname.obj
+ 0002:000006ae       ??_C@_00CNPNBAHC@@         100116ae     libvcruntime:undname.obj
  0002:000006b0       ??_C@_04NIHEBCM@?5new@     100116b0     libvcruntime:undname.obj
  0002:000006b8       ??_C@_07FPCDHGMM@?5delete@ 100116b8     libvcruntime:undname.obj
  0002:000006c0       ??_C@_01NEMOKFLO@?$DN@     100116c0     libvcruntime:undname.obj
@@ -1470,108 +1470,107 @@
  0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
  0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
  0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
  0000:fffdc000       .debug$S                   10000000     user32:USER32.dll
  0000:fffdc000       .debug$S                   10000000     user32:USER32.dll
+ 0000:fffdc000       .debug$S                   10000000     user32:USER32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
+ 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
+ 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
+ 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
+ 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
+ 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
+ 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
  0000:fffdc000       .debug$S                   10000000     ole32:ole32.dll
  0000:fffdc000       .debug$S                   10000000     ole32:ole32.dll
- 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
- 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
- 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
- 0000:fffdc000       .debug$S                   10000000     user32:USER32.dll
- 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
- 0000:fffdc000       .debug$S                   10000000     gdi32:GDI32.dll
- 0000:fffdc000       .debug$S                   10000000     kernel32:KERNEL32.dll
  0001:000011f5       ?HeapDeinitializeImpl@@YAXXZ 100021f5 f   common-kernel32:Memory.obj
  0001:00001940       $$000000                   10002940     LIBCMT:lldiv.obj
  0001:000019f0       $$000000                   100029f0     LIBCMT:llmul.obj
@@ -1613,18 +1612,18 @@
  0001:00005aa3       ??$parse_command_line@D@@YAXPADPAPAD0PAI2@Z 10006aa3 f   libucrt:argv_parsing.obj
  0001:00005c78       ??$common_initialize_environment_nolock@D@@YAHXZ 10006c78 f   libucrt:environment_initialization.obj
  0001:00005cd1       ??$create_environment@D@@YAQAPADQAD@Z 10006cd1 f   libucrt:environment_initialization.obj
- 0001:00005da2       ??$free_environment@_W@@YAXQAPA_W@Z 10006da2 f   libucrt:environment_initialization.obj
  0001:00005da2       ??$free_environment@D@@YAXQAPAD@Z 10006da2 f   libucrt:environment_initialization.obj
+ 0001:00005da2       ??$free_environment@_W@@YAXQAPA_W@Z 10006da2 f   libucrt:environment_initialization.obj
  0001:00005e11       ??$uninitialize_environment_internal@D@@YAXAAPAPAD@Z 10006e11 f   libucrt:environment_initialization.obj
  0001:00005e2c       ??$uninitialize_environment_internal@_W@@YAXAAPAPA_W@Z 10006e2c f   libucrt:environment_initialization.obj
  0001:00005efc       ??R<lambda_275893d493268fdec8709772e3fcec0e>@@QBEHXZ 10006efc f   libucrt:onexit.obj
  0001:00006076       _initialize_global_variables 10007076 f   libucrt:initialization.obj
  0001:00006088       _initialize_c              10007088 f   libucrt:initialization.obj
- 0001:000060a2       _report_memory_leaks       100070a2 f   libucrt:initialization.obj
- 0001:000060a2       _uninitialize_global_state_isolation 100070a2 f   libucrt:initialization.obj
- 0001:000060a2       _initialize_global_state_isolation 100070a2 f   libucrt:initialization.obj
  0001:000060a2       _uninitialize_c            100070a2 f   libucrt:initialization.obj
  0001:000060a2       _initialize_environment    100070a2 f   libucrt:initialization.obj
+ 0001:000060a2       _uninitialize_global_state_isolation 100070a2 f   libucrt:initialization.obj
+ 0001:000060a2       _initialize_global_state_isolation 100070a2 f   libucrt:initialization.obj
+ 0001:000060a2       _report_memory_leaks       100070a2 f   libucrt:initialization.obj
  0001:000060a5       _uninitialize_environment  100070a5 f   libucrt:initialization.obj
  0001:000060ad       _initialize_pointers       100070ad f   libucrt:initialization.obj
  0001:000060ea       _uninitialize_vcruntime    100070ea f   libucrt:initialization.obj

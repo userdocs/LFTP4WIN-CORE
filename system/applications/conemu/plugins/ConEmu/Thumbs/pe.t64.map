@@ -1,6 +1,6 @@
  pe
 
- Timestamp is 60d8ddbc (Sun Jun 27 22:21:16 2021)
+ Timestamp is 613e7369 (Sun Sep 12 23:38:49 2021)
 
  Preferred load address is 0000000180000000
 
@@ -1387,7 +1387,7 @@
  0001:00002d80       $$000000                   0000000180003d80     libvcruntime:memset.obj
  0001:00002f40       $$000000                   0000000180003f40     libvcruntime:notify.obj
  0001:000031e0       $$000000                   00000001800041e0     libvcruntime:memcpy.obj
- 0001:00003888       ?try_get_function@@YAPEAXW4function_id@?A0x61a31dd3@@QEBDQEBW4module_id@2@2@Z 0000000180004888 f   libvcruntime:winapi_downlevel.obj
+ 0001:00003888       ?try_get_function@@YAPEAXW4function_id@?A0x6b2bd6b2@@QEBDQEBW4module_id@2@2@Z 0000000180004888 f   libvcruntime:winapi_downlevel.obj
  0001:00003b70       $$000000                   0000000180004b70     libvcruntime:handlers.obj
  0001:00003c78       ??$common_vsprintf@Vstandard_base@__crt_stdio_output@@_W@@YAH_KQEA_W0QEB_WQEAU__crt_locale_pointers@@QEAD@Z 0000000180004c78 f   libucrt:output.obj
  0001:00004b08       $LN17                      0000000180005b08     libucrt:output.obj
@@ -1515,12 +1515,12 @@
  0002:00000b40       ?rttiTable@@3QBUStringLiteral@@B 0000000180013b40     libvcruntime:undname.obj
  0002:00000b90       ?IndirectionName@@3QBUStringLiteral@@B 0000000180013b90     libvcruntime:undname.obj
  0002:00000bf0       ?PrefixName@@3QBUStringLiteral@@B 0000000180013bf0     libvcruntime:undname.obj
- 0002:000012c8       ?module_names@?A0x61a31dd3@@3QBQEB_WB 00000001800142c8     libvcruntime:winapi_downlevel.obj
- 0002:00001388       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6AKP6AXPEAX@Z@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 0000000180014388     libvcruntime:winapi_downlevel.obj
- 0002:000013a0       ?candidate_modules@?1??try_get_FlsFree@@YAP6AHK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 00000001800143a0     libvcruntime:winapi_downlevel.obj
- 0002:000013b0       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6APEAXK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 00000001800143b0     libvcruntime:winapi_downlevel.obj
- 0002:000013c8       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6AHKPEAX@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 00000001800143c8     libvcruntime:winapi_downlevel.obj
- 0002:000013e0       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6AHPEAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0x61a31dd3@@B 00000001800143e0     libvcruntime:winapi_downlevel.obj
+ 0002:000012c8       ?module_names@?A0x6b2bd6b2@@3QBQEB_WB 00000001800142c8     libvcruntime:winapi_downlevel.obj
+ 0002:00001388       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6AKP6AXPEAX@Z@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 0000000180014388     libvcruntime:winapi_downlevel.obj
+ 0002:000013a0       ?candidate_modules@?1??try_get_FlsFree@@YAP6AHK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 00000001800143a0     libvcruntime:winapi_downlevel.obj
+ 0002:000013b0       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6APEAXK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 00000001800143b0     libvcruntime:winapi_downlevel.obj
+ 0002:000013c8       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6AHKPEAX@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 00000001800143c8     libvcruntime:winapi_downlevel.obj
+ 0002:000013e0       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6AHPEAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0x6b2bd6b2@@B 00000001800143e0     libvcruntime:winapi_downlevel.obj
  0002:00001930       __acrt_initializers        0000000180014930     libucrt:initialization.obj
  0002:00001a30       ?errtable@@3QBUerrentry@?A0x31fdb9ec@@B 0000000180014a30     libucrt:errno.obj
  0002:00001ba0       ?strings@?1??fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z@4QAY03QEBDA 0000000180014ba0     libucrt:cvt.obj
@@ -1817,7 +1817,7 @@
  0002:000091c8       $xdatasym                  000000018001c1c8     libvcruntime:memset.obj
  0002:000091d8       $xdatasym                  000000018001c1d8     libvcruntime:notify.obj
  0002:000091e8       $xdatasym                  000000018001c1e8     libvcruntime:memcpy.obj
- 0002:000091f8       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x61a31dd3@@QEBDQEBW4module_id@2@2@Z 000000018001c1f8     libvcruntime:winapi_downlevel.obj
+ 0002:000091f8       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x6b2bd6b2@@QEBDQEBW4module_id@2@2@Z 000000018001c1f8     libvcruntime:winapi_downlevel.obj
  0002:000091f8       $unwind$?try_get_function@@YAPEAXW4function_id@?A0x391cf84c@@QEBDQEBW4module_id@2@2@Z 000000018001c1f8     libucrt:winapi_thunks.obj
  0002:00009218       $xdatasym                  000000018001c218     libvcruntime:handlers.obj
  0002:00009238       $unwind$??$common_vsprintf@Vstandard_base@__crt_stdio_output@@_W@@YAH_KQEA_W0QEB_WQEAU__crt_locale_pointers@@QEAD@Z 000000018001c238     libucrt:output.obj
