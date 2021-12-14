@@ -1,64 +1,69 @@
-Notepad++ v8.1.1 bug-fixes:
+Notepad++ v8.1.9.3 bug-fixes and enhancement:
 
-1. Fix edit zone not being applied to dark mode issue on another user account in the same machine.
-2. Enhance dark mode (make user interface more dark-modable).
-
-
-Notepad++ v8.1 bug-fixes & enhancements:
-
-1.  Fix regression of auto-completion performance issue.
-2.  Fix Open dialog with "Save" label for "Open" button.
-3.  Fix Notepad++ crash on dark mode while starting up.
-4.  Improve look & feel in dark mode.
-5.  Adapt Tooltips in dark mode.
-6.  Remove white line under menubar in dark mode.
-7.  Make multiline and vertical tabs work in dark mode.
+1.  Fix regression: detection of backup file restored back problem. 
+2.  Fix saving file and false alert on network drive issues.
+3.  Fix dockable panels lose background color issue when switching back Notepad++.
+4.  Fix dirty status persisting issue after reloading file.
+5.  Add Lua function list capacity.
 
 
-Notepad++ v8 new features, enhancements & bug-fixes:
+Notepad++ v8.1.9.2 bug-fixes:
 
-1.  Add Dark Mode.
-2.  ARM64 build is available.
-3.  One button to build them all - build Notepad++ with Scintilla static lib and Boost RegExpr headers.
-4.  Add new Fluent UI icons for toolbar.
-5.  Add new feature "Distraction Free Mode" (Menu "View->Distraction Free Mode").
-6.  Add new API NPPM_ADDTOOLBARICON_FORDARKMODE for dark mode.
-7.  Add 1 click action (SHIFT-click) on close button to close all tabs in dockable panel.
-8.  Add ability of changing select text foreground color (optional).
-9.  Allow Replace to stop after replacement (optional).
-10. Fix append extension feature not working in save dialog.
-11. Add ability to reverse line order.
-12. Add ability to style only current instance of text.
-13. Fix duplicated entries in Auto-Completion pop-up window.
-14. Fix Python Function List not showing functions in some circumstance.
-15. Enhance Folder as Workspace performance while adding/removing files in bulk.
-16. Add Ada, Fortran, Fortran77 & Haskell in function lists.
-17. Improve performance of "Open all" command in Search results.
-18. Add "Copy Pathnames" command to Search results context menu.
-19. Catch regex search exceptions and show exception message.
-20. Add MarkAll Preference settings for case and word.
-21. Fix regression: Handle "Default Directory" setting correctly in Open/Save File Dialog.
-22. Fix a special character in UTF16 file crash issue
-23. Add "Append extension" checkbox to Save As dialog.
-24. Fix Copy command in Search result is available as there's no selection.
-25. Add padding ability in the edit zone.
-26. Make new tab name translatable.
-27. Improve character case handling in RegEx.
-28. Fix dragged out UDL file is not applied to UDL in the new instance.
-29. Add command line parameter for adding specified string to app title bar.
-30. Fix Auto-Completion ignoring case issue.
-31. Fix "Match Whole Word" option being enabled in RegEx Search.
-32. Fix sort with column key selection that appears after tab characters.
-33. Fix "Reload Workspace" menu command not working issue.
-34. Fix view file in Edge browser failure issue if name contains spaces.
-35. Add ability to avoid accumulating multiple search results.
-36. Fix UTF-16 decoding/encoding for code points above U+FFFF.
-37. Fix "Save As" command removing original path from recent files history issue.
-38. Fix function List button tool tips mixed up issue.
-39. Remove Microsoft Bing from search engines for Search on Internet command.
+1.  Fix failure of erasing & saving server logs (of network drive) regression.
+2.  Fix dark mode not working on Windows 10 21H2.
+3.  Fix crash in regex search.
+4.  Fix UDL folding breaking with delimiters issue if UNIX EOL applied.
+5.  Fix UDL generic dark mode via UDL UI not working issue.
+6.  Fix disabling alternative icons on tab in dark mode issue.
+
+
+Notepad++ v8.1.9.1 bug-fixes and new enhancement:
+
+1.  Fix a regression of saving problem.
+2.  Fix a regression of reloading false alarm from the network drive.
+3.  Make Function list/Project panel/Folder as Workspace icon display correct under high DPI.
+4.  Make UDL generic dark mode (working for all dark theme) possible via UDL UI.
+5.  Fix phantom docked panels issue after restoring from systray.
+6.  Enable backup on save (simple) feature by default (only for the new installation).
+
+
+Notepad++ v8.1.9 bug-fixes:
+
+1.  Fix empty file with non-Unicode encoding cannot be saved issue.
+2.  Fix language list in Style Configurator not being reloaded issue.
+
+
+Notepad++ v8.1.8 bug-fixes:
+
+1.  Fix config files (XML) saving performance regression.
+2.  Workaround Microsoft dark mode API bug of Windows 11.
+
+
+Notepad++ v8.1.7 bug-fixes:
+
+1.  Fix empty file not being saved regression.
+2.  Fix white flash in dark mode on CMD launch with position parameters.
+3.  Enhance dark themes for some programming languages (JSON, Python & Makefile).
+4.  Fix "Run macro until the end of file" command skipping the last line issue.
+5.  Fix tooltip layout and position in RTL mode.
+6.  Fix docking problem for dockable panel in RTL mode.
+
+
+Notepad++ v8.1.6 bug-fixes:
+
+1.  Fix NUL file-corruption issue after system shutting down brutally (power cuts).
+2.  Fix session lost issue after MS update restarting Windows.
+3.  Make Markdown UDL work in every dark theme.
+4.  Fix file can be marked as saved even it's been deleted outside. 
+5.  Fix white flash on Notepad++ startup in dark mode issue.
+6.  Fix status bar text display glitchy in dark mode.
+7.  Fix docked window sizing problem in RTL mode.
+8.  Fix floating panel movement problem in RTL mode.
+9.  Fix Print GUI bug in Preferences dialog.
+
 
 More fixes & implementations detail:
-https://notepad-plus-plus.org/downloads/v8.1/
+https://notepad-plus-plus.org/downloads/v8.1.9.3/
 
 
 Included plugins:
@@ -70,4 +75,4 @@ Included plugins:
 
 Updater (Installer only):
 
-* WinGup (for Notepad++) v5.2
+* WinGup (for Notepad++) v5.2.2

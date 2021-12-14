@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- Russian translation for Notepad++
-Updated to v8.0.1:
-- added new lines
+Updated to v8.1.9:
 - minor fix
 -->
 <NotepadPlus>
-	<Native-Langue name="Русский" filename="russian.xml" version="8.0.1">
+	<Native-Langue name="Русский" filename="russian.xml" version="8.1.9">
 		<Menu>
 			<Main>
 				<!-- Главное Меню -->
@@ -27,6 +26,7 @@ Updated to v8.0.1:
 					<Item subMenuId="file-openFolder"           name="&amp;Открыть папку документа"/>
 					<Item subMenuId="file-closeMore"            name="Управление вкладками..."/>
 					<Item subMenuId="file-recentFiles"          name="Последние файлы"/>
+					<Item subMenuId="edit-insert"               name="Вставка"/>
 					<Item subMenuId="edit-copyToClipboard"      name="Копировать в &amp;Буфер..."/>
 					<Item subMenuId="edit-indent"               name="Отступы (табуляция)"/>
 					<Item subMenuId="edit-convertCaseTo"        name="Преобразование Регистра"/>
@@ -109,6 +109,10 @@ Updated to v8.0.1:
 					<Item id="42041" name="Очистить список недавних файлов"/>
 
 					<Item id="41011" name="Выход"/>
+
+					<Item id="42084" name="Дата и Время (короткое)"/>
+					<Item id="42085" name="Дата и Время (длинное)"/>
+					<Item id="42086" name="Дата и Время (польз.)"/>
 
 					<Item id="42003" name="Отмена"/>
 					<Item id="42004" name="Повтор"/>
@@ -322,6 +326,7 @@ Updated to v8.0.1:
 
 					<Item id="44085" name="Папка как Проект"/>
 					<Item id="44080" name="Карта Документа"/>
+					<Item id="44070" name="Список Документов"/>
 					<Item id="44084" name="Список Функций"/>
 					<Item id="44035" name="Синхрониз. вертикальную прокрутку"/>
 					<Item id="44036" name="Синхрониз. горизонтальную прокрутку"/>
@@ -386,7 +391,7 @@ Updated to v8.0.1:
 					<Item id="47010" name="Параметры командной строки"/>
 					<Item id="47001" name="Сайт проекта Notepad++"/>
 					<Item id="47002" name="Страница проекта Notepad++"/>
-					<Item id="47003" name="Документация Онлайн"/>
+					<Item id="47003" name="Руководство онлайн"/>
 					<Item id="47004" name="Форум"/>
 					<Item id="47006" name="Обновить Notepad++"/>
 					<Item id="47009" name="Задать прокси обновления..."/>
@@ -470,6 +475,11 @@ Updated to v8.0.1:
 				<Item id="1723" name="▼"/>
 				<Item id="1725" name="Коп. Помеченный Текст"/>
 			</Find>
+			<IncrementalFind title="">
+				<Item id="1681" name="Найти"/>
+				<Item id="1685" name="Учитывать регистр"/>
+				<Item id="1690" name="Подсветка всех"/>
+			</IncrementalFind>
 			<FindCharsInRange title = "Найти символы в диапазоне....">
 				<Item id="2"    name="Закрыть"/>
 				<Item id="2901" name="Не-ASCII символы (128-255)"/>
@@ -645,6 +655,7 @@ Updated to v8.0.1:
 					<Item id="44083" name="Вкл./Выкл. Проект-панель 3"/>
 					<Item id="44085" name="Вкл./Выкл. Папка как Проект"/>
 					<Item id="44080" name="Вкл./Выкл. Карты Документа"/>
+					<Item id="44070" name="Вкл./Выкл. Список Документов"/>
 					<Item id="44084" name="Вкл./Выкл. Список Функций"/>
 					<Item id="50005" name="Запись Макроса  (старт/стоп)"/>
 					<Item id="44104" name="Перекл. на Проект-панель 1"/>
@@ -652,6 +663,7 @@ Updated to v8.0.1:
 					<Item id="44106" name="Перекл. на Проект-панель 3"/>
 					<Item id="44107" name="Перекл. на Папка как Проект"/>
 					<Item id="44108" name="Перекл. на Список Функций"/>
+					<Item id="44109" name="Перекл. на Список Документов"/>
 				</MainCommandNames>
 			</ShortcutMapper>
 			<ShortcutMapperSubDialg title="Назначение Клавиш Быстрого Доступа">
@@ -709,6 +721,8 @@ Updated to v8.0.1:
 					<Item id="25026" name="Оператор 1"/>
 					<Item id="25027" name="Оператор 2"/>
 					<Item id="25028" name="Числа"/>
+					<Item id="25033" name="Прозрачный"/>
+					<Item id="25034" name="Прозрачный"/>
 				</StylerDialog>
 				<Folder title="Стандартный">
 					<Item id="21101" name="Стиль по-умолчанию"/>
@@ -865,10 +879,9 @@ Updated to v8.0.1:
 					<Item id="6121" name="Выходить при закр. послед. вкладки"/>
 					<Item id="6122" name="Скрыть Главное Меню (Alt или F10 для выбора)"/>
 					<Item id="6123" name="Язык интерфейса"/>
-					<Item id="6125" name="Панель Списка Документов"/>
-					<Item id="6126" name="Отображать"/>
-					<Item id="6127" name="Отключить колонку расширения"/>
 					<Item id="6128" name="Альтернативные иконки"/>
+				<!-- 	<Item id="6125" name="Панель со Списком Документов"/>
+					<Item id="6127" name="Отключить колонку расширения"/> -->
 				</Global>
 				<Scintillas title = "Правка">
 					<Item id="6214" name="Подсветка текущей строки"/>
@@ -889,8 +902,27 @@ Updated to v8.0.1:
 				</Scintillas>
 
 				<DarkMode title="Тёмный Режим">
-					<Item id="7101" name="Включить 'Тёмный Режим'"/>
-					<Item id="7106" name="* Для корректной работы, необходимо перезапустить Notepad++"/>
+					<Item id="7101" name="Включить Тёмный Режим"/>
+					<Item id="7102" name="Чёрная тема"/>
+					<Item id="7103" name="Красная тема"/>
+					<Item id="7104" name="Зелёная тема"/>
+					<Item id="7105" name="Синяя тема"/>
+					<Item id="7107" name="Фиолетовая тема"/>
+					<Item id="7108" name="Голубая тема"/>
+					<Item id="7109" name="Оливковая тема"/>
+
+					<Item id="7115" name="Настраиваемая тема"/>
+					<Item id="7116" name="Панель"/>
+					<Item id="7117" name="Текущий выбор"/>
+					<Item id="7118" name="Вкладки"/>
+					<Item id="7119" name="Основа"/>
+					<Item id="7120" name="Ошибки"/>
+					<Item id="7121" name="Текст"/>
+					<Item id="7122" name="Текст 2"/>
+					<Item id="7123" name="Неактивное"/>
+					<Item id="7124" name="Разделители"/>
+					<Item id="7125" name="Ссылки"/>
+					<Item id="7130" name="Сбросить"/>
 				</DarkMode>
 
 				<MarginsBorderEdge title="Блоки / Рамки / Поля">
@@ -971,7 +1003,7 @@ Updated to v8.0.1:
 					<Item id="6728" name="Колонтитулы"/>
 				</Print>
 				<Searching title="Поиск">
-					<Item id="6901" name="Не заполнять поле в окне Поиска выделенным текстом"/>
+					<Item id="6901" name="Не заполнять поле выделенным текстом в окне Поиска"/>
 					<Item id="6902" name="Моноширинный шрифт в окне поиска (требуется перезапуск Notepad++)"/>
 					<Item id="6903" name="Оставлять окно Поиска открытым после окончания поиска"/>
 					<Item id="6904" name="Запрашивать подтверждение операции &quot;Заменить все во Всех Открытых Документах&quot;"/>
@@ -1037,13 +1069,17 @@ Updated to v8.0.1:
 					<Item id="6346" name="Отображать в Карте Документа"/>
 					<Item id="6349" name="Использ. DirectWrite (это может улучшить отображение спецсимволов, требуется перезапуск)"/>
 					<Item id="6360" name="Отключить все звуки"/>
+					<Item id="6361" name="Включить запрос подтверждения Сохранить Все"/>
 				</MISC>
-				<MultiInstance title = "Режимы Запуска">
+				<MultiInstance title = "Режим Откр. и Дата">
 					<Item id="6151" name="Режим Открытия Файлов"/>
 					<Item id="6152" name="Только сессии открываются в новом окне"/>
 					<Item id="6153" name="Каждый файл открывается в новом окне"/>
 					<Item id="6154" name="Все файлы открываются в одном окне"/>
 					<Item id="6155" name="* Изменения вступят в силу после перезапуска Notepad++"/>
+					<Item id="6171" name="Настроить дату и время вставки"/>
+					<Item id="6175" name="Обратный порядок даты и времени (короткий и длинный формат)"/>
+					<Item id="6172" name="Польз. формат:"/>
 				</MultiInstance>
 				<Delimiter title = "Разделитель">
 					<Item id="6251" name="Параметры разделителя  (Ctrl + 2 щелчка Мыши)"/>
@@ -1114,7 +1150,7 @@ Updated to v8.0.1:
 			</Preference>
 				<MultiMacro title = "Многократный запуск ...">
 				<Item id="1"    name="Запуск"/>
-				<Item id="2"    name="Отмена"/>
+				<Item id="2"    name="Закрыть"/>
 				<Item id="8006" name="Макрос:"/>
 				<Item id="8001" name="Выполнить"/>
 				<Item id="8005" name="раз(а)"/>
@@ -1163,6 +1199,12 @@ Updated to v8.0.1:
 				<Item id="4"    name="Д&amp;а, для всех"/>
 				<Item id="5"    name="Н&amp;ет, для всех"/>
 			</DoSaveOrNot>
+			<DoSaveAll title="Подтверждение - Сохранить Все">
+				<Item id="1766" name="Вы уверены, что хотите сохранить все изменённые файлы?&#x0A;&#x0A;Выберите &quot;Всегда Да&quot; если вы больше не хотите видеть это окно.&#x0A;Вы можете повторно активировать это окно позже в Настройках."/>
+				<Item id="6" name="&amp;Да"/>
+				<Item id="7" name="&amp;Нет"/>
+				<Item id="4" name="Всегда Да"/>
+			</DoSaveAll>
 		</Dialog>
 		<MessageBox>
 			<ContextMenuXmlEditWarning  title="Редактирование contextMenu"            message="Редактирование contextMenu.xml позволяет настроить свое всплывающее контекстное меню в Notepad++.&#x0A;Вы должны перезапустить Notepad++, чтобы изменения вступили в силу."/>
@@ -1227,17 +1269,20 @@ Updated to v8.0.1:
 		<ClipboardHistory>
 			<PanelTitle name="История Буфера"/>
 		</ClipboardHistory>
-		<DocSwitcher>
-			<PanelTitle name="Документы"/>
+		<DocList>
+			<PanelTitle name="Список Документов"/>
 			<ColumnName name="Имя"/>
 			<ColumnExt  name="Расш."/>
-		</DocSwitcher>
+			<ColumnPath name="Путь"/>
+		</DocList>
 		<WindowsDlg>
-			<ColumnName  name="Имя"/>
-			<ColumnPath  name="Путь"/>
-			<ColumnType  name="Тип"/>
-			<ColumnSize  name="Размер"/>
-			<NbDocsTotal name="всего :"/>
+			<ColumnName   name="Имя"/>
+			<ColumnPath   name="Путь"/>
+			<ColumnType   name="Тип"/>
+			<ColumnSize   name="Размер"/>
+			<NbDocsTotal  name="всего :"/>
+			<MenuCopyName name="Имя Файла в буфер"/>
+			<MenuCopyPath name="Путь и Имя в буфер"/>
 		</WindowsDlg>
 		<AsciiInsertion>
 			<PanelTitle       name="Таблица символов ASCII"/>
@@ -1275,7 +1320,7 @@ Updated to v8.0.1:
 			</Menus>
 		</FolderAsWorkspace>
 		<ProjectManager>
-			<PanelTitle name="Проект"/>
+			<PanelTitle        name="Проект"/>
 			<WorkspaceRootName name="Рабочая область"/>
 			<NewProjectName    name="Имя проекта"/>
 			<NewFolderName     name="Имя папки"/>
@@ -1372,9 +1417,9 @@ Updated to v8.0.1:
 			<finder-uncollapse-all       value="Развернуть всё"/>
 			<finder-copy                 value="Копировать (выбранные строки)"/>
 			<finder-copy-verbatim        value="Копировать"/>
-			<finder-copy-paths           value="Копировать путь(и)"/>
+			<finder-copy-paths           value="Путь и Имя файла (в буфер)"/>
 			<finder-select-all           value="Выделить всё"/>
-			<finder-clear-all            value="Очистить всё"/>
+			<finder-clear-all            value="Очистить всё найденное"/>
 			<finder-open-all             value="Открыть все файлы"/>
 			<finder-wrap-long-lines      value="Перенос слов длинных строк"/>
 			<common-ok                   value="ОК"/>
@@ -1424,6 +1469,12 @@ Updated to v8.0.1:
 			<session-save-folder-as-workspace     value="Сохранить Папку как Проект"/>
 			<tab-untitled-string                  value="новый "/>
 			<file-save-assign-type                value="&amp;Добавлять расширение"/>
+			<file-rename-title                    value="Переименовать"/>
+			<close-panel-tip                      value="Закрыть"/>
+			<IncrementalFind-FSFound              value="$INT_REPLACE$ совпадений" />
+			<IncrementalFind-FSNotFound           value="Фраза не найдена" />
+			<IncrementalFind-FSTopReached         value="Выше совпадений нет, продолжено снизу" />
+			<IncrementalFind-FSEndReached         value="Ниже совпадений нет, продолжено сверху" />
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>
