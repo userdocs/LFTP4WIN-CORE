@@ -26,7 +26,7 @@ source "/scripts/lftp-conf-override.sh"
 #
 winscp_to_bash "${@}"
 #
-openssh_known_hosts "${port}" "${hostname}"
+[[ "${protocol:?}" == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
 #
 lftp_conf_override
 #

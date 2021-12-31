@@ -13,7 +13,7 @@
 #
 winscp_to_bash "${@}"
 #
-openssh_known_hosts "${port}" "${hostname}"
+[[ "${protocol:?}" == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
 #
 cd "${local_dir}"
 #
