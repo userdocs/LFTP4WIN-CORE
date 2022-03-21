@@ -54,7 +54,7 @@ install_vscode() {
 	echo
 	echo "Downloading VSCode portable"
 	echo
-	if curl -sNL "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive" > "$HOME/vscode.zip"; then
+	if curl -skNL "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive" > "$HOME/vscode.zip"; then
 		echo "Extracting VSCode portable to /applications/VSCode"
 		echo
 		if ! 7za -y x "$(cygpath -m $HOME/vscode.zip)" -o"$(cygpath -m "/applications/VSCode")" &> /dev/null; then
@@ -91,7 +91,7 @@ install_git() {
 	#
 	git_url="https://github.com/git-for-windows/git/releases/download/${git_version_1}/PortableGit-${git_version_2}.7z.exe"
 	#
-	if curl -sNL "${git_url}" > "$HOME/git.7z.exe"; then
+	if curl -skNL "${git_url}" > "$HOME/git.7z.exe"; then
 		echo "Extracting git portable to /applications/git"
 		echo
 		if ! "$HOME/git.7z.exe" -y -o"$(cygpath -m "/applications/git")" &> /dev/null; then
