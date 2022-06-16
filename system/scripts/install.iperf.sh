@@ -12,7 +12,7 @@ if [[ $(echo "$LD_LIBRARY_PATH" | grep -oc "$HOME/lib") -eq "0" && $(cat ~/.bash
 	export LD_LIBRARY_PATH="$HOME/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 fi
 #
-wget -q4O ~/bin/iperf3 "https://github.com/userdocs/iperf3-static/releases/latest/download/iperf3-${REMOTE_ARCH}" && chmod 700 ~/bin/iperf3
+wget -q4O ~/bin/iperf3 "https://github.com/userdocs/iperf3-static/releases/latest/download/iperf3-${REMOTEARCH}" && chmod 700 ~/bin/iperf3
 #
 if [[ -z "$IPERF3PORT" ]]; then
 	IPERF3PORT="$(shuf -i 10001-32001 -n 1)" && while [[ "$(ss -ln | grep -co ''"$IPERF3PORT"'')" -ge "1" ]]; do IPERF3PORT="$(shuf -i 10001-32001 -n 1)"; done
