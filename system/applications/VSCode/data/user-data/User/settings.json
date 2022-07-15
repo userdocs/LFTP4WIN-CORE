@@ -19,7 +19,7 @@
     "terminal.integrated.defaultProfile.windows": "bash",
     "githubPullRequests.telemetry.enabled": false,
     "github.gitCommand": "${execPath}\\..\\..\\git\\bin\\git.exe",
-    "git-graph.integratedTerminalShell": "${execPath}\\..\\..\\git\\bin\\bash",
+    "git-graph.integratedTerminalShell": "${execPath}\\..\\..\\git\\bin\\bash.exe",
     "terminal.integrated.profiles.windows": {
         "PowerShell -NoProfile": {
             "source": "PowerShell",
@@ -82,5 +82,16 @@
         "plaintext"
     ],
     "diffEditor.ignoreTrimWhitespace": false,
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "cmake.configureOnOpen": true,
+    "redhat.telemetry.enabled": false,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "git.path": "${execPath}\\..\\..\\git\\bin\\git.exe",
+    "workbench.editor.enablePreview": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false
 }
