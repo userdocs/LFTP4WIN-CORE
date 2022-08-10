@@ -25,4 +25,4 @@ winscp_to_bash "${@}"
 #
 export set CHERE_INVOKING=1
 #
-bash -li
+exec "${SHELL}"
