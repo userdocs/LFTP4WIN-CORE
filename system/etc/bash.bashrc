@@ -41,7 +41,7 @@ if [[ -d "${HOME}/bin" ]]; then
 	PATH="${HOME}/bin${PATH:+:${PATH}}"
 fi
 #
-export HISTCONTROL=$HISTCONTROL:ignoredups
+export HISTCONTROL=$HISTCONTROL:ignoreboth
 #
 # Our custom PS1 prompt
 PS1="\[\033[0;36m\][\[\033[0;31m\]\w\[\033[0;36m\]] \[\033[0m\]"
