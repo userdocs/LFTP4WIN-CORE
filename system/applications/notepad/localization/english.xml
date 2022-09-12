@@ -356,6 +356,8 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="50000" name="Function Completion"/>
                     <Item id="50001" name="Word Completion"/>
                     <Item id="50002" name="Function Parameters Hint"/>
+                    <Item id="50010" name="Function Parameters Previous Hint"/>
+                    <Item id="50011" name="Function Parameters Next Hint"/>
                     <Item id="50005" name="Toggle macro record"/>
                     <Item id="50006" name="Path Completion"/>
                     <Item id="44042" name="Hide Lines"/>
@@ -548,6 +550,7 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="2230" name="Enable global bold font style"/>
                     <Item id="2231" name="Enable global italic font style"/>
                     <Item id="2232" name="Enable global underline font style"/>
+                    <Item id="2234" name="Go to settings"/>
                 </SubDialog>
             </StyleConfig>
 
@@ -863,7 +866,9 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="6120" name="Vertical"/>
                     <Item id="6121" name="Exit on close the last tab"/>
 
+                    <Item id="6131" name="Menu"/>
                     <Item id="6122" name="Hide menu bar (use Alt or F10 key to toggle)"/>
+                    <Item id="6132" name="Hide right shortcuts ＋ ▼ ✕ from the menu bar (Need to restart Notepad++)"/>
                     <Item id="6123" name="Localization"/>
 
                     <Item id="6128" name="Alternate icons"/>
@@ -890,6 +895,10 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="6653" name="Highlight Background"/>
                     <Item id="6654" name="Frame"/>
                     <Item id="6655" name="Width"/>
+                    <Item id="6247" name="EOL (CRLF)"/> <!-- Don't translate "(CRLF)" -->
+                    <Item id="6248" name="Default"/>
+                    <Item id="6249" name="Plain Text"/>
+                    <Item id="6250" name="Custom Color"/>
                 </Scintillas>
 
                 <DarkMode title="Dark Mode">
@@ -913,6 +922,7 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="7124" name="Edge"/>
                     <Item id="7125" name="Link"/>
                     <Item id="7126" name="Edge highlight"/>
+                    <Item id="7127" name="Edge disabled"/>
                     <Item id="7130" name="Reset"/>
                     <Item id="7135" name="Tones"/>
                 </DarkMode>
@@ -1038,11 +1048,14 @@ You can define several column markers by using white space to separate the diffe
                 </Print>
 
                 <Searching title="Searching">
-                    <Item id="6901" name="Don't fill find field in Find dialog with selected word"/>
                     <Item id="6902" name="Use monospaced font in Find dialog (Need to restart Notepad++)"/>
                     <Item id="6903" name="Find dialog remains open after search that outputs to results window"/>
                     <Item id="6904" name="Confirm Replace All in All Opened Documents"/>
                     <Item id="6905" name="Replace: Don't move to the following occurrence"/>
+                    <Item id="6906" name="Search Result window: show only one entry per found line"/>
+                    <Item id="6907" name="When Find Dialog is Invoked"/>
+                    <Item id="6908" name="Fill Find Field with Selected Text"/>
+                    <Item id="6909" name="Select Word Under Caret when Nothing Selected"/>
                 </Searching>
 
                 <RecentFilesHistory title="Recent Files History">
@@ -1429,6 +1442,9 @@ Continue?"/>
         <MiscStrings>
             <!-- $INT_REPLACE$  and $STR_REPLACE$ are a place holders, don't translate these place holders -->
             <word-chars-list-tip value="This allows you to include additional character into current word characters while double clicking for selection or searching with &quot;Match whole word only&quot; option checked."/> <!-- HowToReproduce: In "Delimiter" section of Preferences dialog, hover your mouse on the "?" button. -->
+
+            <!-- Don't translate "(&quot;EOL custom color&quot;)" -->
+            <eol-custom-color-tip value="Go to Style Configurator to change the default EOL custom color (&quot;EOL custom color&quot;).."/>
 
             <word-chars-list-warning-begin value="Be aware: "/>
             <word-chars-list-space-warning value="$INT_REPLACE$ space(s)"/>

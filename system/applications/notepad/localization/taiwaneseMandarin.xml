@@ -535,6 +535,7 @@
                     <Item id="2230" name="開啟共用粗體"/>
                     <Item id="2231" name="開啟共用斜體"/>
                     <Item id="2232" name="開啟共用底線"/>
+                    <Item id="2234" name="至相關的偏好設定"/>
                 </SubDialog>
             </StyleConfig>
             <ShortcutMapper title="管理快捷鍵">
@@ -853,7 +854,9 @@
                     <Item id="6119" name="多行"/>
                     <Item id="6120" name="直式"/>
                     <Item id="6121" name="關閉最後一個文件時關閉程式"/>
+                    <Item id="6131" name="選單"/>
                     <Item id="6122" name="隱藏（用 Alt 或 F10 切換）"/>
+                    <Item id="6132" name="隱藏選單中右邊的 ＋ ▼ ✕ 捷徑（需要重新啟動 Notepad++）"/>
                     <Item id="6123" name="語言"/>
                     <Item id="6125" name="文件切換器"/>
                     <Item id="6127" name="停用副檔名欄"/>
@@ -875,11 +878,16 @@
                     <Item id="6215" name="啟用平滑字體"/>
                     <Item id="6236" name="允許捲動至超出最後一行"/>
                     <Item id="6239" name="在選擇範圍之外點擊滑鼠右鍵時仍保留選擇範圍"/>
+                    <Item id="6245" name="啟用虛擬空間"/>
                     <Item id="6651" name="游標行設定"/>
                     <Item id="6652" name="無"/>
                     <Item id="6653" name="加上背景顏色"/>
                     <Item id="6654" name="加上邊緣線"/>
                     <Item id="6655" name="粗細度："/>
+                    <Item id="6247" name="換行字符（CRLF）"/>
+                    <Item id="6248" name="內定"/>
+                    <Item id="6249" name="純文字"/>
+                    <Item id="6250" name="使用自訂顏色"/>
                 </Scintillas>
 
                 <DarkMode title="黑暗模式">
@@ -1030,6 +1038,8 @@
                     <Item id="6902" name="在尋找與取代對話方塊中使用等寬字型（需要重新啟動 Notepad++）"/>
                     <Item id="6903" name="搜尋結果輸出到結果視窗後，尋找與取代對話方塊繼續保持打開狀態"/>
                     <Item id="6904" name="確認「在所有開啟的文件中取代」"/>
+                    <Item id="6905" name="替換：不要移動到下一個匹配項"/>
+                    <Item id="6906" name="搜尋結果視窗：每個找到的行只顯示一個條目"/>
                 </Searching>
 
                 <RecentFilesHistory title="最近使用的檔案">
@@ -1382,6 +1392,7 @@
         </ProjectManager>
         <MiscStrings>
             <word-chars-list-tip value="這允許你在目前單字字元集中附加字元，當滑鼠雙擊以進行選擇或以「僅符合整個單字」選項進行搜尋。"/>
+            <eol-custom-color-tip value="至語法樣式配置器以自訂換行字符顏色 (&quot;EOL custom color&quot;).."/>
             <word-chars-list-warning-begin value="警告："/>
             <word-chars-list-space-warning value="$INT_REPLACE$ 個空格"/>
             <word-chars-list-tab-warning value="$INT_REPLACE$ 個 TAB"/>

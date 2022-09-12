@@ -5,10 +5,10 @@ Modifications until 2018-03-26 by Klaas Nekeman (knekeman(at)gmail.com).
 Modifications until 2020-05-26 by xylographe <wr86420@gmail.com>.
 Modifications from 2021-01-28 and onwards by Thomas De Rocker (RockyTDR, notepadplusplus(at)rockytdr.33mail.com)
 
-Last modified on 2022-03-02 by Thomas De Rocker (RockyTDR).
+Last modified on 2022-06-01 by Thomas De Rocker (RockyTDR).
 -->
 <NotepadPlus>
-    <Native-Langue name="Nederlands" filename="dutch.xml" version="8.3">
+    <Native-Langue name="Nederlands" filename="dutch.xml" version="8.4.1">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -553,6 +553,7 @@ Last modified on 2022-03-02 by Thomas De Rocker (RockyTDR).
                     <Item id="2230" name="Vet lettertype vervangen"/>
                     <Item id="2231" name="Cursief lettertype vervangen"/>
                     <Item id="2232" name="Onderstreept lettertype vervangen"/>
+                    <Item id="2234" name="Naar instellingen gaan"/>
                 </SubDialog>
             </StyleConfig>
 
@@ -868,7 +869,9 @@ Last modified on 2022-03-02 by Thomas De Rocker (RockyTDR).
                     <Item id="6120" name="Verticale tabs"/>
                     <Item id="6121" name="Afsluiten bij sluiten van laatste tab"/>
 
+                    <Item id="6131" name="Menu"/>
                     <Item id="6122" name="Menubalk verbergen (tonen met Alt of F10)"/>
+                    <Item id="6132" name="Snelkoppelingen ＋ ▼ ✕ rechts in menubalk verbergen (Notepad++ moet opnieuw worden gestart)"/>
                     <Item id="6123" name="Taal"/>
 
                     <Item id="6128" name="Alternatieve pictogrammen"/>
@@ -879,28 +882,38 @@ Last modified on 2022-03-02 by Thomas De Rocker (RockyTDR).
                     <Item id="6219" name="Knippersnelheid:"/>
                     <Item id="6221" name="100"/>
                     <Item id="6222" name="0"/>
+                    <Item id="6246" name="Opdrachten voor in-/uitvouwen van huidig niveau omschakelbaar maken"/>
                     <Item id="6225" name="Meervoudig bewerken inschakelen (Ctrl + klikken/selecteren)"/>
                     <Item id="6227" name="Automatische terugloop"/>
                     <Item id="6228" name="Standaard"/>
                     <Item id="6229" name="Uitgelijnd"/>
                     <Item id="6230" name="Ingesprongen"/>
                     <Item id="6234" name="Geavanceerd scrollen uitschakelen (ivm eventuele touchpadproblemen)"/>
-                    <Item id="6214" name="Markeren van huidige regel inschakelen"/>
                     <Item id="6215" name="ClearType-lettertype inschakelen"/>
                     <Item id="6236" name="Scrollen voorbij laatste regel inschakelen"/>
                     <Item id="6239" name="Selectie behouden bij rechtsklikken buiten selectie"/>
+                    <Item id="6245" name="Virtuele ruimte inschakelen"/>
+                    <Item id="6651" name="Indicator voor huidige regel"/>
+                    <Item id="6652" name="Geen"/>
+                    <Item id="6653" name="Achtergrond markeren"/>
+                    <Item id="6654" name="Frame"/>
+                    <Item id="6655" name="Breedte"/>
+                    <Item id="6247" name="Regeleinde (CRLF)"/> <!-- Don't translate "(CRLF)" -->
+                    <Item id="6248" name="Standaard"/>
+                    <Item id="6249" name="Platte tekst"/>
+                    <Item id="6250" name="Aangepaste kleur"/>
                 </Scintillas>
 
                 <DarkMode title="Donkere modus">
                     <Item id="7101" name="Donkere modus inschakelen"/>
-                    <Item id="7102" name="Zwarte tint"/>
-                    <Item id="7103" name="Rode tint"/>
-                    <Item id="7104" name="Groene tint"/>
-                    <Item id="7105" name="Blauwe tint"/>
-                    <Item id="7107" name="Paarse tint"/>
-                    <Item id="7108" name="Cyaan tint"/>
-                    <Item id="7109" name="Olijf tint"/>
-                    <Item id="7115" name="Aangepaste tint"/>
+                    <Item id="7102" name="Zwart"/>
+                    <Item id="7103" name="Rood"/>
+                    <Item id="7104" name="Groen"/>
+                    <Item id="7105" name="Blauw"/>
+                    <Item id="7107" name="Paars"/>
+                    <Item id="7108" name="Cyaan"/>
+                    <Item id="7109" name="Olijf"/>
+                    <Item id="7115" name="Aangepast"/>
                     <Item id="7116" name="Bovenkant"/>
                     <Item id="7117" name="Opgelicht menu (hot-track)"/>
                     <Item id="7118" name="Actief"/>
@@ -908,10 +921,13 @@ Last modified on 2022-03-02 by Thomas De Rocker (RockyTDR).
                     <Item id="7120" name="Fout"/>
                     <Item id="7121" name="Tekst"/>
                     <Item id="7122" name="Donkerdere tekst"/>
-                    <Item id="7123" name="Uitgeschakelde text"/>
+                    <Item id="7123" name="Uitgeschakelde tekst"/>
                     <Item id="7124" name="Rand"/>
                     <Item id="7125" name="Koppeling"/>
+                    <Item id="7126" name="Randmarkering"/>
+                    <Item id="7127" name="Rand uitgeschakeld"/>
                     <Item id="7130" name="Herstellen"/>
+                    <Item id="7135" name="Tinten"/>
                 </DarkMode>
 
                 <MarginsBorderEdge title="Marges/grens/rand">
@@ -1040,6 +1056,7 @@ U kunt verschillende kolommarkeringen vastleggen door gebruik te maken van spati
                     <Item id="6903" name="Zoekvenster blijft open na zoekopdracht die naar het resultaatvenster uitvoert"/>
                     <Item id="6904" name="Alles vervangen in alle geopende documenten bevestigen"/>
                     <Item id="6905" name="Vervangen: niet naar de volgende overeenkomst gaan"/>
+                    <Item id="6906" name="Zoekresultaatvenster: slechts een item per gevonden regel weergeven"/>
                 </Searching>
 
                 <RecentFilesHistory title="Recente bestanden">
@@ -1354,6 +1371,8 @@ Doorgaan?"/>
             <PanelTitle name="Functielijst"/>
             <SortTip name="Sorteren"/>
             <ReloadTip name="Opnieuw laden"/>
+            <PreferencesTip name="Voorkeuren"/>
+            <PreferencesInitialSort name="Functies automatisch (van A naar Z) sorteren"/>
         </FunctionList>
         <FolderAsWorkspace>
             <PanelTitle name="Map als Werkruimte"/>
@@ -1424,6 +1443,9 @@ Doorgaan?"/>
         <MiscStrings>
             <!-- $INT_REPLACE$  and $STR_REPLACE$ are place holders, don't translate these place holders -->
             <word-chars-list-tip value="Hiermee kan een extra teken aan de huidige woordtekenlijst worden toegevoegd. Deze lijst bepaalt wat als woord wordt gezien bij dubbelklikken op een selectie en bij het zoeken met de optie &quot;volledige woorden&quot; aangevinkt."/> <!-- HowToReproduce: In "Delimiter" section of Preferences dialog, hover your mouse on the "?" button. -->
+
+            <!-- Don't translate "(&quot;EOL custom color&quot;)" -->
+            <eol-custom-color-tip value="Ga naar  de stijlconfigurator om de standaard aangepaste regeleindekleur te wijzigen (&quot;EOL custom color&quot;).."/>
 
             <word-chars-list-warning-begin value="Let op: "/>
             <word-chars-list-space-warning value="$INT_REPLACE$ spatie(s)"/>

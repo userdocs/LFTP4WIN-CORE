@@ -1,0 +1,14 @@
+# @name Terminal_q
+# @command cmd /c start "" "%WINSCP_PATH%\..\..\bin\mintty.exe" --Title LFTP4WIN -e /bin/bash -li
+# @side Local
+# @flag
+# @description Start a terminal session in the home directory. Default is MinTTy. You can select ConEMU from the custom command preferences.
+# @author userdocs
+# @version 1.0
+# @homepage https://github.com/userdocs/LFTP4WIN-CORE
+#
+winscp_to_bash "${@}"
+#
+export set CHERE_INVOKING=1
+#
+exec "${SHELL}"

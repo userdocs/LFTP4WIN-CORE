@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
     Croatian localization for Notepad++
-    Updated 2 May 2022 by Elvis Gambiraža (el.gambo@gmail.com)
-
-    The most recent version of this file:
-    https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/PowerEditor/installer/nativeLang/croatian.xml
+    Updated 1 September 2022 by Elvis Gambiraža (el.gambo@gmail.com)
 
     The comments are here for explanation, it's not necessary to translate them.
+    Komentari su ovdje radi objašnjenja, nije ih potrebno prevoditi.
 -->
 <NotepadPlus>
-        <Native-Langue name="Hrvatski" filename="croatian.xml" version="8.4.1">
+        <Native-Langue name="Hrvatski" filename="croatian.xml" version="8.4.5">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -216,8 +214,8 @@
                     <Item id="43010" name="Pronađi pret&amp;hodno"/>
                     <Item id="43011" name="Inkre&amp;mentalno pretraživanje..."/>
                     <Item id="43013" name="Pronađi &amp;u datotekama..."/>
-                    <Item id="43014" name="Pronađi (ozn&amp;ačeno) sljedeće"/>
-                    <Item id="43015" name="Pronađi (označ&amp;eno) prethodno"/>
+                    <Item id="43014" name="Pronađi ozn&amp;ačeno sljedeće (nepostojano)"/>
+                    <Item id="43015" name="Pronađi označ&amp;eno prethodno (nepostojano)"/>
                     <Item id="43022" name="Koristi &amp;1. stil"/>
                     <Item id="43023" name="Očisti &amp;1. stil"/>
                     <Item id="43024" name="Koristi &amp;2. stil"/>
@@ -371,6 +369,8 @@
                     <Item id="50000" name="Dopuna &amp;funkcija"/>
                     <Item id="50001" name="Dopuna &amp;riječi"/>
                     <Item id="50002" name="&amp;Podsjetnik funkcijskih parametara"/>
+                    <Item id="50010" name="Prethodni savjet o parametrima funkcije"/>
+                    <Item id="50011" name="Sljedeći savjet o parametrima funkcije"/>
                     <Item id="50005" name="Uključi/isključi snimanje makroa"/>
                     <Item id="50006" name="&amp;Dopuna puta"/>
                     <Item id="44042" name="Sakri&amp;j retke"/>
@@ -564,6 +564,7 @@
                     <Item id="2230" name="Uključi podebljani font kao zadano"/>
                     <Item id="2231" name="Uključi kurzivni font kao zadano"/>
                     <Item id="2232" name="Uključi podcrtani font kao zadano"/>
+                    <Item id="2234" name="Idi na postavke"/>
                 </SubDialog>
             </StyleConfig>
 
@@ -879,7 +880,9 @@
                     <Item id="6120" name="Okomito"/>
                     <Item id="6121" name="Izlaz iz programa pri zatvaranju zadnje kartice"/>
 
+                    <Item id="6131" name="Izbornik"/>
                     <Item id="6122" name="Sakrij izborničku vrpcu (za prikaz koristite Alt ili F10)"/>
+                    <Item id="6132" name="Sakrij prečace ＋ ▼ ✕ s desne strane izborničke vrpce (potreban je restart Notepada++)"/>
                     <Item id="6123" name="Jezik sučelja:"/>
                     <Item id="6125" name="Popis dokumenata"/>
                     <Item id="6126" name="Prikaži"/>
@@ -892,6 +895,7 @@
                     <Item id="6219" name="Žmiganje:"/>
                     <Item id="6221" name="brz"/>
                     <Item id="6222" name="spo"/>
+                    <Item id="6246" name="Učini naredbe za motanje/razmotavanje trenutne razine preklopnim"/>
                     <Item id="6225" name="Omogući višestruko uređivanje (Ctrl + klik ili označavanje mišem)"/>
                     <Item id="6227" name="Prijelom teksta"/>
                     <Item id="6228" name="Zadano"/>
@@ -908,18 +912,22 @@
                     <Item id="6653" name="Istaknuta pozadina"/>
                     <Item id="6654" name="Okvir"/>
                     <Item id="6655" name="Širina"/>
+                    <Item id="6247" name="Kraj retka (CRLF)"/> <!-- Don't translate "(CRLF)" -->
+                    <Item id="6248" name="Zadano"/>
+                    <Item id="6249" name="Obični tekst"/>
+                    <Item id="6250" name="Prilagođena boja"/>
                 </Scintillas>
 
                 <DarkMode title="Tamni način">
                     <Item id="7101" name="Omogući tamni način"/>
-                    <Item id="7102" name="Crni ton"/>
-                    <Item id="7103" name="Crveni ton"/>
-                    <Item id="7104" name="Zeleni ton"/>
-                    <Item id="7105" name="Plavi ton"/>
-                    <Item id="7107" name="Purpurni ton"/>
-                    <Item id="7108" name="Cijan ton"/>
-                    <Item id="7109" name="Maslinasti ton"/>
-                    <Item id="7115" name="Prilagođeni ton"/>
+                    <Item id="7102" name="Crno"/>
+                    <Item id="7103" name="Crveno"/>
+                    <Item id="7104" name="Zeleno"/>
+                    <Item id="7105" name="Plavo"/>
+                    <Item id="7107" name="Purpurno"/>
+                    <Item id="7108" name="Cijan"/>
+                    <Item id="7109" name="Maslinasto"/>
+                    <Item id="7115" name="Prilagođeno"/>
                     <Item id="7116" name="Vrh"/>
                     <Item id="7117" name="Vruća linija izbornika"/>
                     <Item id="7118" name="Aktivno"/>
@@ -930,7 +938,10 @@
                     <Item id="7123" name="Onemogućeni tekst"/>
                     <Item id="7124" name="Rub"/>
                     <Item id="7125" name="Poveznica"/>
+                    <Item id="7126" name="Isticanje ruba"/>
+                    <Item id="7127" name="Rubovi isključeni"/>
                     <Item id="7130" name="Resetiranje"/>
+                    <Item id="7135" name="Tonovi"/>
                 </DarkMode>
 
                 <MarginsBorderEdge title="Margine i rubovi">
@@ -1061,6 +1072,10 @@ Vidi Notepad++ online priručnik (Preferences)."/>
                     <Item id="6903" name="Dijalog pretraživanja ostaje otvoren nakon pretraživanja koje otvara prozor s rezultatima"/>
                     <Item id="6904" name="Potvrdi Zamijeni sve u svim otvorenim dokumentima"/>
                     <Item id="6905" name="Zamijeni: Ne prelazi na sljedeće pojavljivanje"/>
+                    <Item id="6906" name="Prozor rezultata pretraživanja: prikaži samo jedan rezultat po pronađenom retku"/>
+                    <Item id="6907" name="Kada se pozove dijaloški okvir za traženje"/>
+                    <Item id="6908" name="Ispunite polje za traženje odabranim tekstom"/>
+                    <Item id="6909" name="Odaberite riječ pod kursorom kada ništa nije odabrano"/>
                 </Searching>
 
                 <RecentFilesHistory title="Povijest datoteka">
@@ -1456,6 +1471,9 @@ Ovaj dijalog možete kasnije ponovo aktivirati u Postavkama."/> <!-- HowToReprod
         <MiscStrings>
             <!-- $INT_REPLACE$  and $STR_REPLACE$ are a place holders, don't translate these place holders -->
             <word-chars-list-tip value="Ovo omogućuje da uključite dodatni znak u sadašnje znakove riječi, s dvostrukim klikom na izbor ili označenom opcijom pretrage &quot;Traži samo cijele riječi&quot;."/> <!-- HowToReproduce: In "Delimiter" section of Preferences dialog, hover your mouse on the "?" button. -->
+
+            <!-- Don't translate "(&quot;EOL custom color&quot;)" -->
+            <eol-custom-color-tip value="Idite na Konfigurator stila kako bi promijenili zadanu prilagođenu boju kraja retka (&quot;EOL custom color&quot;).."/>
 
             <word-chars-list-warning-begin value="Budite upozoreni: "/>
             <word-chars-list-space-warning value="$INT_REPLACE$ razmak/razmaci"/>
