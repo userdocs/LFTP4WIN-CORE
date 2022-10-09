@@ -3,7 +3,7 @@
 The comments are here for explanation, it's not necessary to translate them.
 -->
 <NotepadPlus>
-    <Native-Langue name="English" filename="english.xml" version="8.4.1">
+    <Native-Langue name="English" filename="english.xml" version="8.4.6">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -24,7 +24,7 @@ The comments are here for explanation, it's not necessary to translate them.
                 <!-- Sub Menu Entries -->
                 <SubEntries>
                     <Item subMenuId="file-openFolder" name="Open Containing &amp;Folder"/>
-                    <Item subMenuId="file-closeMore" name="Close &amp;More"/>
+                    <Item subMenuId="file-closeMore" name="Close &amp;Multiple Documents"/>
                     <Item subMenuId="file-recentFiles" name="&amp;Recent Files"/>
                     <Item subMenuId="edit-insert" name="Insert"/>
                     <Item subMenuId="edit-copyToClipboard" name="Cop&amp;y to Clipboard"/>
@@ -49,8 +49,8 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item subMenuId="view-zoom"  name="Zoom"/>
                     <Item subMenuId="view-moveCloneDocument"  name="Move/Clone Current Document"/>
                     <Item subMenuId="view-tab"  name="Tab"/>
-                    <Item subMenuId="view-collapseLevel" name="Collapse Level"/>
-                    <Item subMenuId="view-uncollapseLevel" name="Uncollapse Level"/>
+                    <Item subMenuId="view-collapseLevel" name="Fold Level"/>
+                    <Item subMenuId="view-uncollapseLevel" name="Unfold Level"/>
                     <Item subMenuId="view-project" name="Project"/>
                     <Item subMenuId="encoding-characterSets"  name="Character Set"/>
                     <Item subMenuId="encoding-arabic"  name="Arabic"/>
@@ -176,11 +176,11 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="42026" name="Text Direction RTL"/>
                     <Item id="42027" name="Text Direction LTR"/>
                     <Item id="42028" name="&amp;Set Read-Only"/>
-                    <Item id="42029" name="Current File Path to Clipboard"/>
-                    <Item id="42030" name="Current Filename to Clipboard"/>
-                    <Item id="42031" name="Current Dir. Path to Clipboard"/>
-                    <Item id="42087" name="All Filenames to Clipboard"/>
-                    <Item id="42088" name="All File Paths to Clipboard"/>
+                    <Item id="42029" name="Copy Current File Path"/>
+                    <Item id="42030" name="Copy Current Filename"/>
+                    <Item id="42031" name="Copy Current Dir. Path"/>
+                    <Item id="42087" name="Copy All Filenames"/>
+                    <Item id="42088" name="Copy All File Paths"/>
                     <Item id="42032" name="&amp;Run a Macro Multiple Times..."/>
                     <Item id="42033" name="Clear Read-Only Flag"/>
                     <Item id="42035" name="Single Line Comment"/>
@@ -267,8 +267,8 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="44025" name="Show White Space and TAB"/>
                     <Item id="44026" name="Show End of Line"/>
                     <Item id="44029" name="Unfold All"/>
-                    <Item id="44030" name="Collapse Current Level"/>
-                    <Item id="44031" name="Uncollapse Current Level"/>
+                    <Item id="44030" name="Fold Current Level"/>
+                    <Item id="44031" name="Unfold Current Level"/>
                     <Item id="44049" name="Summary..."/>
                     <Item id="44080" name="Document Map"/>
                     <Item id="44070" name="Document List"/>
@@ -288,6 +288,12 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="44097" name="Monitoring (tail -f)"/>
                     <Item id="44098" name="Move Tab Forward"/>
                     <Item id="44099" name="Move Tab Backward"/>
+                    <Item id="44110" name="Remove Color"/>
+                    <Item id="44111" name="Apply Color 1"/>
+                    <Item id="44112" name="Apply Color 2"/>
+                    <Item id="44113" name="Apply Color 3"/>
+                    <Item id="44114" name="Apply Color 4"/>
+                    <Item id="44115" name="Apply Color 5"/>
                     <Item id="44032" name="Toggle Full Screen Mode"/>
                     <Item id="44033" name="Restore Default Zoom"/>
                     <Item id="44034" name="Always on Top"/>
@@ -387,9 +393,9 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item CMID="4" name="Print..."/>
                     <Item CMID="5" name="Move to Other View"/>
                     <Item CMID="6" name="Clone to Other View"/>
-                    <Item CMID="7" name="Full File Path to Clipboard"/>
-                    <Item CMID="8" name="Filename to Clipboard"/>
-                    <Item CMID="9" name="Current Dir. Path to Clipboard"/>
+                    <Item CMID="7" name="Copy Full File Path"/>
+                    <Item CMID="8" name="Copy Filename"/>
+                    <Item CMID="9" name="Copy Current Dir. Path"/>
                     <Item CMID="10" name="Rename..."/>
                     <Item CMID="11" name="Move to Recycle Bin"/>
                     <Item CMID="12" name="Read-Only"/>
@@ -404,6 +410,17 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item CMID="21" name="Open in Default Viewer"/>
                     <Item CMID="22" name="Close All Unchanged"/>
                     <Item CMID="23" name="Open Containing Folder as Workspace"/>
+                    <Item CMID="24" name="Apply Color 1"/>
+                    <Item CMID="25" name="Apply Color 2"/>
+                    <Item CMID="26" name="Apply Color 3"/>
+                    <Item CMID="27" name="Apply Color 4"/>
+                    <Item CMID="28" name="Apply Color 5"/>
+                    <Item CMID="29" name="Remove Color"/>
+                    <Item CMID="30" name="Close Multiple Tabs"/>
+                    <Item CMID="31" name="Open into"/>
+                    <Item CMID="32" name="Copy to Clipboard"/>
+                    <Item CMID="33" name="Move Document"/>
+                    <Item CMID="34" name="Apply Color to Tab"/>
             </TabBar>
         </Menu>
 
@@ -511,7 +528,7 @@ The comments are here for explanation, it's not necessary to translate them.
                 <Item id="2"    name="Close"/>
             </SHA256FromTextDlg>
 
-            <PluginsAdminDlg title="Plugins Admin" titleAvailable = "Available" titleUpdates = "Updates" titleInstalled = "Installed">
+            <PluginsAdminDlg title="Plugins Admin" titleAvailable="Available" titleUpdates="Updates" titleInstalled="Installed" titleIncompatible="Incompatible">
                 <ColumnPlugin   name="Plugin"/>
                 <ColumnVersion  name="Version"/>
                 <Item id="5501" name="Search:"/>
@@ -519,6 +536,8 @@ The comments are here for explanation, it's not necessary to translate them.
                 <Item id="5504" name="Update"/>
                 <Item id="5505" name="Remove"/>
                 <Item id="5508" name="Next"/>
+                <Item id="5509" name="Plugin list version: "/>
+                <Item id="5511" name="Plugin list repository"/>
                 <Item id="2"    name="Close"/>
             </PluginsAdminDlg>
 
@@ -619,22 +638,22 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="44102" name="View current file in Edge"/>
                     <Item id="50003" name="Switch to previous document"/>
                     <Item id="50004" name="Switch to next document"/>
-                    <Item id="44051" name="Collapse Level 1"/>
-                    <Item id="44052" name="Collapse Level 2"/>
-                    <Item id="44053" name="Collapse Level 3"/>
-                    <Item id="44054" name="Collapse Level 4"/>
-                    <Item id="44055" name="Collapse Level 5"/>
-                    <Item id="44056" name="Collapse Level 6"/>
-                    <Item id="44057" name="Collapse Level 7"/>
-                    <Item id="44058" name="Collapse Level 8"/>
-                    <Item id="44061" name="Uncollapse Level 1"/>
-                    <Item id="44062" name="Uncollapse Level 2"/>
-                    <Item id="44063" name="Uncollapse Level 3"/>
-                    <Item id="44064" name="Uncollapse Level 4"/>
-                    <Item id="44065" name="Uncollapse Level 5"/>
-                    <Item id="44066" name="Uncollapse Level 6"/>
-                    <Item id="44067" name="Uncollapse Level 7"/>
-                    <Item id="44068" name="Uncollapse Level 8"/>
+                    <Item id="44051" name="Fold Level 1"/>
+                    <Item id="44052" name="Fold Level 2"/>
+                    <Item id="44053" name="Fold Level 3"/>
+                    <Item id="44054" name="Fold Level 4"/>
+                    <Item id="44055" name="Fold Level 5"/>
+                    <Item id="44056" name="Fold Level 6"/>
+                    <Item id="44057" name="Fold Level 7"/>
+                    <Item id="44058" name="Fold Level 8"/>
+                    <Item id="44061" name="Unfold Level 1"/>
+                    <Item id="44062" name="Unfold Level 2"/>
+                    <Item id="44063" name="Unfold Level 3"/>
+                    <Item id="44064" name="Unfold Level 4"/>
+                    <Item id="44065" name="Unfold Level 5"/>
+                    <Item id="44066" name="Unfold Level 6"/>
+                    <Item id="44067" name="Unfold Level 7"/>
+                    <Item id="44068" name="Unfold Level 8"/>
                     <Item id="44081" name="Toggle Project Panel 1"/>
                     <Item id="44082" name="Toggle Project Panel 2"/>
                     <Item id="44083" name="Toggle Project Panel 3"/>
@@ -649,6 +668,12 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="44107" name="Switch to Folder as Workspace"/>
                     <Item id="44109" name="Switch to Document List"/>
                     <Item id="44108" name="Switch to Function List"/>
+                    <Item id="44110" name="Remove Tab Colour"/>
+                    <Item id="44111" name="Apply Tab Colour 1"/>
+                    <Item id="44112" name="Apply Tab Colour 2"/>
+                    <Item id="44113" name="Apply Tab Colour 3"/>
+                    <Item id="44114" name="Apply Tab Colour 4"/>
+                    <Item id="44115" name="Apply Tab Colour 5"/>
                     <Item id="11002" name="Sort By Name A to Z"/>
                     <Item id="11003" name="Sort By Name Z to A"/>
                     <Item id="11004" name="Sort By Path A to Z"/>
@@ -928,7 +953,7 @@ The comments are here for explanation, it's not necessary to translate them.
                 </DarkMode>
 
                 <MarginsBorderEdge title="Margins/Border/Edge">
-                    <Item id="6201" name="Folder Margin Style"/>
+                    <Item id="6201" name="Fold Margin Style"/>
                     <Item id="6202" name="Simple"/>
                     <Item id="6203" name="Arrow"/>
                     <Item id="6204" name="Circle tree"/>
@@ -939,6 +964,7 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="6292" name="Dynamic width"/>
                     <Item id="6293" name="Constant width"/>
                     <Item id="6207" name="Display bookmark"/>
+                    <Item id="6223" name="Display Change History"/>
                     <Item id="6211" name="Vertical Edge Settings"/>
                     <Item id="6213" name="Background mode"/>
                     <Item id="6237" name="Add your column marker by indicating its position with a decimal number.
@@ -1336,6 +1362,7 @@ Do you want to launch Notepad++ in Administrator mode?"/>
 Notepad++ will be restarted after all the operations are terminated.
 Continue?"/>
             <NeedToRestartToLoadPlugins title="Notepad++ need to be relaunched" message="You have to restart Notepad++ to load plugins you installed."/> <!-- HowToReproduce: Import a plugin via menu "Settings->Import->Import Plugin(s)...". -->
+            <ChangeHistoryEnabledWarning title="Notepad++ need to be relaunched" message="You have to restart Notepad++ to enable Change History."/> <!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
         </MessageBox>
         <ClipboardHistory>
             <PanelTitle name="Clipboard History"/>
@@ -1376,8 +1403,8 @@ Continue?"/>
         <FolderAsWorkspace>
             <PanelTitle name="Folder as Workspace"/>
             <SelectFolderFromBrowserString name="Select a folder to add in Folder as Workspace panel"/>
-            <ExpandAllFoldersTip name="Expand all folders"/>
-            <CollapseAllFoldersTip name="Collapse all folders"/>
+            <ExpandAllFoldersTip name="Unfold all"/>
+            <CollapseAllFoldersTip name="Fold all"/>
             <LocateCurrentFileTip name="Locate current file"/>
             <Menus>
                 <Item id="3511" name="Remove"/>
@@ -1503,8 +1530,8 @@ Find in all files but exclude all folders log or logs recursively:
             <find-status-scope-forward value="from caret to end-of-file"/>
             <finder-find-in-finder value="Find in these search results..."/>
             <finder-close-this value="Close these search results"/>
-            <finder-collapse-all value="Collapse all"/>
-            <finder-uncollapse-all value="Uncollapse all"/>
+            <finder-collapse-all value="Fold all"/>
+            <finder-uncollapse-all value="Unfold all"/>
             <finder-copy value="Copy Selected Line(s)"/>
             <finder-copy-verbatim value="Copy"/>
             <finder-copy-paths value="Copy Pathname(s)"/>
