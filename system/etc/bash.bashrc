@@ -69,7 +69,6 @@ install_vscode() {
 		/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
 		/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
 		/applications/VSCode/bin/code --force --install-extension vscode-icons-team.vscode-icons 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension unifiedjs.vscode-remark 2> /dev/null
 		# /applications/VSCode/bin/code --force --install-extension EXT_NAME  2> /dev/null
 		rm -f "$HOME/vscode.zip"
 	else
