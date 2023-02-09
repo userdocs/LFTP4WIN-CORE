@@ -3,7 +3,7 @@
 The comments are here for explanation, it's not necessary to translate them.
 -->
 <NotepadPlus>
-    <Native-Langue name="Portuguese Portugal" filename="portuguese.xml" version="8.4.6">
+    <Native-Langue name="Portuguese Portugal" filename="portuguese.xml" version="8.4.8">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -154,11 +154,11 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="42022" name="Alternar comentário de linha"/>
                     <Item id="42023" name="Bloquear comentário"/>
                     <Item id="42047" name="Bloquear descomentar"/>
-                    <Item id="42024" name="Remover o espaço do fim da linha"/>
-                    <Item id="42042" name="Remover espaço no início da linha"/>
-                    <Item id="42043" name="Remover o espaço no início e no fim da linha"/>
-                    <Item id="42044" name="Fim da linha do espaço"/>
-                    <Item id="42045" name="Remover o espaço em branco e do fim da linha"/>
+                    <Item id="42024" name="Remover espaços em branco no fim da linha"/>
+                    <Item id="42042" name="Remover espaços em branco no início da linha"/>
+                    <Item id="42043" name="Remover espaços em branco no início e no fim da linha"/>
+                    <Item id="42044" name="Transformar os fins de linha em espaços"/>
+                    <Item id="42045" name="Remover espaços em branco e fins de linha para espaços"/>
                     <Item id="42046" name="TAB para Espaço"/>
                     <Item id="42054" name="Espaço para TAB (Tudo)"/>
                     <Item id="42053" name="Espaço para TAB (Leading)"/>
@@ -386,41 +386,41 @@ The comments are here for explanation, it's not necessary to translate them.
             <Splitter>
             </Splitter>
             <TabBar>
-                    <Item CMID="0" name="Fechar"/>
-                    <Item CMID="1" name="Fechar tudo EXCETO este"/>
-                    <Item CMID="2" name="Guardar"/>
-                    <Item CMID="3" name="Guardar como..."/>
-                    <Item CMID="4" name="Imprimir"/>
-                    <Item CMID="5" name="Mostrar/Fechar separador lado a lado"/>
-                    <Item CMID="6" name="Clonar para outro separador"/>
-                    <Item CMID="7" name="Copiar localização completa do ficheiro"/>
-                    <Item CMID="8" name="Copiar nome do ficheiro"/>
-                    <Item CMID="9" name="Copiar localização dir. atual"/>
-                    <Item CMID="10" name="Renomear"/>
-                    <Item CMID="11" name="Mover para a Reciclagem"/>
-                    <Item CMID="12" name="Apenas-leitura"/>
-                    <Item CMID="13" name="Limpar símbolo apenas-leitura"/>
-                    <Item CMID="14" name="Mover para nova janela"/>
-                    <Item CMID="15" name="Abrir numa nova janela"/>
-                    <Item CMID="16" name="Recarregar"/>
-                    <Item CMID="17" name="Fechar TUDO para a esquerda"/>
-                    <Item CMID="18" name="Fechar TUDO para a direita"/>
-                    <Item CMID="19" name="Abrir pasta de conteúdo no Explorador"/>
-                    <Item CMID="20" name="Abrir pasta de conteúdo na janela de CMD"/>
-                    <Item CMID="21" name="Abrir no visualizador predefinido"/>
-                    <Item CMID="22" name="Fechar TUDO inalterado"/>
-                    <Item CMID="23" name="Abrir pasta de conteúdo como área de trabalho"/>
-                    <Item CMID="24" name="Aplicar cor 1"/>
-                    <Item CMID="25" name="Aplicar cor 2"/>
-                    <Item CMID="26" name="Aplicar cor 3"/>
-                    <Item CMID="27" name="Aplicar cor 4"/>
-                    <Item CMID="28" name="Aplicar cor 5"/>
-                    <Item CMID="29" name="Remover cor"/>
-                    <Item CMID="30" name="Fechar múltiplos separadores"/>
-                    <Item CMID="31" name="Abrir em"/>
-                    <Item CMID="32" name="Copiar para a área de transferência"/>
-                    <Item CMID="33" name="Mover documento"/>
-                    <Item CMID="34" name="Aplicar cor ao separador"/>
+                <Item CMDID="41003" name="Fechar"/>
+                <Item CMDID="0" name="Fechar múltiplos separadores"/>
+                <Item CMDID="41005" name="Fechar TUDO EXCETO este"/>
+                <Item CMDID="41009" name="Fechar TUDO à esquerda"/>
+                <Item CMDID="41018" name="Fechar TUDO à direita"/>
+                <Item CMDID="41024" name="Fechar TUDO inalterado"/>
+                <Item CMDID="41006" name="Guardar"/>
+                <Item CMDID="41008" name="Guardar como..."/>
+                <Item CMDID="1" name="Abrir em"/>
+                <Item CMDID="41019" name="Abrir a pasta de conteúdo no Explorador"/>
+                <Item CMDID="41020" name="Abrir a pasta de conteúdo na Linha de comandos"/>
+                <Item CMDID="41025" name="Abrir a pasta de conteúdo como Área de trabalho"/>
+                <Item CMDID="41023" name="Abrir no visualizador predefinido"/>
+                <Item CMDID="41017" name="Renomear..."/>
+                <Item CMDID="41016" name="Mover para a Reciclagem"/>
+                <Item CMDID="41014" name="Recarregar"/>
+                <Item CMDID="41010" name="Imprimir..."/>
+                <Item CMDID="42028" name="Apenas-leitura"/>
+                <Item CMDID="42033" name="Limpar símbolo apenas-leitura"/>
+                <Item CMDID="2" name="Copiar para a área de transferência"/>
+                <Item CMDID="42029" name="Copiar caminho completo do ficheiro"/>
+                <Item CMDID="42030" name="Copiar nome do ficheiro"/>
+                <Item CMDID="42031" name="Copiar caminho do diretório atual"/>
+                <Item CMDID="3" name="Mover documento"/>
+                <Item CMDID="10001" name="Mover para outra visualização"/>
+                <Item CMDID="10002" name="Clonar para outra visualização"/>
+                <Item CMDID="10003" name="Mover para nova instância"/>
+                <Item CMDID="10004" name="Abrir numa nova instância"/>
+                <Item CMDID="4" name="Aplicar cor ao separador"/>
+                <Item CMDID="44111" name="Aplicar cor 1"/>
+                <Item CMDID="44112" name="Aplicar cor 2"/>
+                <Item CMDID="44113" name="Aplicar cor 3"/>
+                <Item CMDID="44114" name="Aplicar cor 4"/>
+                <Item CMDID="44115" name="Aplicar cor 5"/>
+                <Item CMDID="44110" name="Remover cor"/>
             </TabBar>
         </Menu>
 
@@ -591,8 +591,8 @@ The comments are here for explanation, it's not necessary to translate them.
                 <ConflictInfoOk name="Sem conflito de atalhos para este item."/>
                 <ConflictInfoEditing name="Sem conflitos . . ."/>
                 <MainCommandNames>
-                    <Item id="41019" name="Abrir a pasta de conteúdo no Explorar"/>
-                    <Item id="41020" name="Abrir a pasta de conteúdo no prompt de comando"/>
+                    <Item id="41019" name="Abrir a pasta de conteúdo no Explorador"/>
+                    <Item id="41020" name="Abrir a pasta de conteúdo na Linha de comandos"/>
                     <Item id="41021" name="Restaurar ficheiro fechado recentemente"/>
                     <Item id="45001" name="EOL conversão para Windows (CR LF)"/>
                     <Item id="45002" name="EOL conversão para Unix (LF)"/>
@@ -896,7 +896,7 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="6132" name="Ocultar atalhos ＋ ▼ ✕ da barra de menu (é necessário reiniciar)"/>
                     <Item id="6123" name="Idioma"/>
 
-                    <Item id="6128" name="Alternar ícones"/>
+                    <Item id="6128" name="Ícones alternativos"/>
                 </Global>
                 <Scintillas title="Edição">
                     <Item id="6216" name="Definições do cursor"/>
@@ -927,7 +927,9 @@ The comments are here for explanation, it's not necessary to translate them.
                 </Scintillas>
 
                 <DarkMode title="Modo Escuro">
-                    <Item id="7101" name="Ativar modo escuro"/>
+                    <Item id="7131" name="Modo claro"/>
+                    <Item id="7132" name="Modo escuro"/>
+                    <Item id="7133" name="Seguir o Windows"/>
                     <Item id="7102" name="Preto"/>
                     <Item id="7103" name="Vermelho"/>
                     <Item id="7104" name="Verde"/>
@@ -1135,7 +1137,7 @@ Pode definir vários marcadores de coluna utilizando espaço branco para separar
                 </AutoCompletion>
 
                 <MultiInstance title="Multi-instância e Data">
-                    <Item id="6151" name="Definições de multi-instância"/>
+                    <Item id="6151" name="Definições de multi-instância *"/>
                     <Item id="6152" name="Abrir sessão numa nova instância (e guardar sessão automaticamente ao sair)"/>
                     <Item id="6153" name="Sempre no modo de multi-instância"/>
                     <Item id="6154" name="Predefinição (mono-instância)"/>
@@ -1143,6 +1145,16 @@ Pode definir vários marcadores de coluna utilizando espaço branco para separar
                     <Item id="6171" name="Personalizar inserção de Data e Hora"/>
                     <Item id="6175" name="Inverter ordem predefenida de data e hora (formatos curto e longo)"/>
                     <Item id="6172" name="Formato personalizado:"/>
+                    <Item id="6181" name="Estado do painel e [-nosession] *"/>
+                    <Item id="6182" name="Lembrar o estado do painel (o painel está aberto) noutras instâncias (modo multi-instância) ou quando se usa o parâmetro de linha de comandos [-nosession]"/>
+                    <Item id="6183" name="Histórico da Área de transferência"/>
+                    <Item id="6184" name="Lista de documentos"/>
+                    <Item id="6185" name="Painel de caracteres"/>
+                    <Item id="6186" name="Pasta como área de trabalho"/>
+                    <Item id="6187" name="Painéis de Projeto"/>
+                    <Item id="6188" name="Mapa de documentos"/>
+                    <Item id="6189" name="Lista de funções"/>
+                    <Item id="6190" name="Painéis de Plugins"/>
                 </MultiInstance>
 
                 <Delimiter title="Delimitador">
@@ -1155,6 +1167,18 @@ Pode definir vários marcadores de coluna utilizando espaço branco para separar
                     <Item id="6163" name="Adicione o seu caráter como parte da palavra
 (não o escolha a menos que saiba o que está a fazer)"/>
                 </Delimiter>
+
+                <Performance title="Desempenho">
+                    <Item id="7141" name="Restrição de ficheiros grandes"/>
+                    <Item id="7143" name="Ativar restrição de ficheiros grandes (sem destaque de sintaxe)"/>
+                    <Item id="7144" name="Definir tamanho de ficheiro grande:"/>
+                    <Item id="7146" name="MB   (1 - 4096)"/>
+                    <Item id="7147" name="Permitir a coloração simétrica do delimitador"/>
+                    <Item id="7148" name="Permitir conclusão automática"/>
+                    <Item id="7149" name="Permitir destaque inteligente"/>
+                    <Item id="7150" name="Desativar Quebra de linha globalmente"/>
+                    <Item id="7151" name="Permitir ligação URL clicável"/>
+                </Performance>
 
                 <Cloud title="Nuvem e Ligação">
                     <Item id="6262" name="Definições na nuvem"/>
@@ -1363,6 +1387,7 @@ O Notepad++ será reiniciado após a conclusão de todas as operações.
 Continuar?"/>
             <NeedToRestartToLoadPlugins title="O Notepad++ necessita de ser iniciado novamente" message="Tem de reiniciar o Notepad++ para carregar os plugins que instalou."/> <!-- HowToReproduce: Import a plugin via menu "Settings->Import->Import Plugin(s)...". -->
             <ChangeHistoryEnabledWarning title="O Notepad++ necessita de ser iniciado novamente" message="Tem de reiniciar o Notepad++ para ativar o histórico de alterações."/> <!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
+            <WindowsSessionExit title="Notepad++ - Sair da sessão do Windows" message="A sessão do Windows está prestes a terminar mas tem alguns dados não guardados. Quer sair do Notepad++ agora?"/>
         </MessageBox>
         <ClipboardHistory>
             <PanelTitle name="Histórico da área de transferência"/>
@@ -1391,7 +1416,7 @@ Continuar?"/>
             <ColumnHtmlName name="Código HTML"/>
         </AsciiInsertion>
         <DocumentMap>
-            <PanelTitle name="Mapa documento"/>
+            <PanelTitle name="Mapa de documentos"/>
         </DocumentMap>
         <FunctionList>
             <PanelTitle name="Lista da função"/>
@@ -1548,6 +1573,7 @@ Procurar em todos os ficheiros mas excluir todos os registos de pastas ou regist
             <splitter-rotate-left value="Rodar para a esquerda"/>
             <splitter-rotate-right value="Rodar para a direita"/>
             <recent-file-history-maxfile value="Ficheiro máximo: "/>
+            <recent-file-history-customlength value="Comprimento: "/>
             <language-tabsize value="Tamanho do separador: "/>
             <userdefined-title-new value="Criar nova linguagem..."/>
             <userdefined-title-save value="Guardar o nome da linguagem atual como..."/>
@@ -1594,6 +1620,12 @@ Procurar em todos os ficheiros mas excluir todos os registos de pastas ou regist
             <contextMenu-styleOneToken value="Marcar uma" />
             <contextMenu-clearStyle value="Limpar estilo" />
             <contextMenu-PluginCommands value="Comandos de plugin" />
+            <largeFileRestriction-tip value="Algumas funcionalidades podem abrandar o desempenho em ficheiros grandes. Estas funcionalidades podem ser desativadas automaticamente ao abrir um ficheiro grande. Pode personalizá-las aqui.
+
+NOTA:
+1. Modificar as opções de aqui requer a reabertura de ficheiros grandes atualmente abertos para obter um comportamento adequado.
+
+2. If &quot;Desativar a quebra de linha globalmente&quot; é verificada e abre-se um ficheiro grande, a &quot;Quebra de linha&quot; será desativada para todos os ficheiros. Pode voltar a ativá-la através do menu &quot;Visualização-&gt;Quebra de linha&quot;." />
         </MiscStrings>
     </Native-Langue>
 </NotepadPlus>
@@ -1609,16 +1641,18 @@ David Cunha <ling.fude@gmail.com>
 10/09/2012
 
 Luis Neves <luis.a.neves@sapo.pt>
-27/09/2013 (versão 6.4.5)
+27/09/2013
 
 Manuela Silva <manuela.silva@sky.com>
-20/09/2014 (versão 6.6.9)
+20/09/2014
 
 João Pereira <joaopereira@openmailbox.org>
 29/07/2015
 
 Hugo Carvalho <hugokarvalho@hotmail.com>
-21/09/2022 (versão 8.0, 8.1, 8.2, 8.3, 8.4)
+07/04/2021 (version 8.0, 8.1, 8.2, 8.3, 8.4)
+
+Last change: 10/01/2023 (Hugo Carvalho)
 
 Changelog:
 PT- Corrigidos erros de tradução, palavras por interpretar, ordem das frases e novas traduções concluídas.

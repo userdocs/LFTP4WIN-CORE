@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <NotepadPlus>
-    <Native-Langue name="Japanese" filename="japanese.xml" version="8.4.6">
+    <Native-Langue name="Japanese" filename="japanese.xml" version="8.4.9">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -155,7 +155,7 @@
                     <Item id="42042" name="行頭の空白を削除"/>
                     <Item id="42043" name="行頭・行末の空白を削除"/>
                     <Item id="42044" name="改行コードをスペースに"/>
-                    <Item id="42045" name="不要な空白と改行コードを削除"/>
+                    <Item id="42045" name="行頭・行末の空白を削除し、改行コードをスペースに"/>
                     <Item id="42046" name="タブをスペースに"/>
                     <Item id="42054" name="スペースをタブに(すべて)"/>
                     <Item id="42053" name="スペースをタブに(行頭のみ)"/>
@@ -389,41 +389,41 @@
             <Splitter>
             </Splitter>
             <TabBar>
-                    <Item CMID="0" name="閉じる"/>
-                    <Item CMID="1" name="他のタブをすべて閉じる"/>
-                    <Item CMID="2" name="上書き保存"/>
-                    <Item CMID="3" name="名前を付けて保存..."/>
-                    <Item CMID="4" name="印刷..."/>
-                    <Item CMID="5" name="別のビューへ移動"/>
-                    <Item CMID="6" name="別のビューへ複製"/>
-                    <Item CMID="7" name="フルパスをコピー"/>
-                    <Item CMID="8" name="ファイル名をコピー"/>
-                    <Item CMID="9" name="ディレクトリをコピー"/>
-                    <Item CMID="10" name="名前の変更..."/>
-                    <Item CMID="11" name="ごみ箱に移動"/>
-                    <Item CMID="12" name="読み取り専用モード"/>
-                    <Item CMID="13" name="ファイルの読み取り専用を解除"/>
-                    <Item CMID="14" name="新しいウィンドウへ移動"/>
-                    <Item CMID="15" name="新しいウィンドウで開く"/>
-                    <Item CMID="16" name="再読み込み"/>
-                    <Item CMID="17" name="左をすべて閉じる"/>
-                    <Item CMID="18" name="右をすべて閉じる"/>
-                    <Item CMID="19" name="ファイルの場所をエクスプローラーで開く"/>
-                    <Item CMID="20" name="ファイルの場所をコマンドプロンプトで開く"/>
-                    <Item CMID="21" name="既定のアプリで開く"/>
-                    <Item CMID="22" name="未変更をすべて閉じる"/>
-                    <Item CMID="23" name="ファイルを含むフォルダーをワークスペースとして開く"/>
-                    <Item CMID="24" name="色1"/>
-                    <Item CMID="25" name="色2"/>
-                    <Item CMID="26" name="色3"/>
-                    <Item CMID="27" name="色4"/>
-                    <Item CMID="28" name="色5"/>
-                    <Item CMID="29" name="色を外す"/>
-                    <Item CMID="30" name="複数のタブを閉じる"/>
-                    <Item CMID="31" name="開く"/>
-                    <Item CMID="32" name="クリップボードにコピー"/>
-                    <Item CMID="33" name="文書を移動"/>
-                    <Item CMID="34" name="タブに色を付ける"/>
+                <Item CMDID="41003" name="閉じる"/>
+                <Item CMDID="0" name="複数のタブを閉じる"/>
+                <Item CMDID="41005" name="他のタブをすべて閉じる"/>
+                <Item CMDID="41009" name="左をすべて閉じる"/>
+                <Item CMDID="41018" name="右をすべて閉じる"/>
+                <Item CMDID="41024" name="未変更をすべて閉じる"/>
+                <Item CMDID="41006" name="上書き保存"/>
+                <Item CMDID="41008" name="名前を付けて保存..."/>
+                <Item CMDID="1" name="開く"/>
+                <Item CMDID="41019" name="ファイルの場所をエクスプローラーで開く"/>
+                <Item CMDID="41020" name="ファイルの場所をコマンドプロンプトで開く"/>
+                <Item CMDID="41025" name="ファイルを含むフォルダーをワークスペースとして開く"/>
+                <Item CMDID="41023" name="既定のアプリで開く"/>
+                <Item CMDID="41017" name="名前の変更..."/>
+                <Item CMDID="41016" name="ごみ箱に移動"/>
+                <Item CMDID="41014" name="再読み込み"/>
+                <Item CMDID="41010" name="印刷..."/>
+                <Item CMDID="42028" name="読み取り専用モード"/>
+                <Item CMDID="42033" name="ファイルの読み取り専用を解除"/>
+                <Item CMDID="2" name="クリップボードにコピー"/>
+                <Item CMDID="42029" name="フルパスをコピー"/>
+                <Item CMDID="42030" name="ファイル名をコピー"/>
+                <Item CMDID="42031" name="ディレクトリをコピー"/>
+                <Item CMDID="3" name="文書を移動"/>
+                <Item CMDID="10001" name="別のビューへ移動"/>
+                <Item CMDID="10002" name="別のビューへ複製"/>
+                <Item CMDID="10003" name="新しいウィンドウへ移動"/>
+                <Item CMDID="10004" name="新しいウィンドウで開く"/>
+                <Item CMDID="4" name="タブに色を付ける"/>
+                <Item CMDID="44111" name="色1"/>
+                <Item CMDID="44112" name="色2"/>
+                <Item CMDID="44113" name="色3"/>
+                <Item CMDID="44114" name="色4"/>
+                <Item CMDID="44115" name="色5"/>
+                <Item CMDID="44110" name="色を外す"/>
             </TabBar>
         </Menu>
 
@@ -931,7 +931,9 @@
                 </Scintillas>
 
                 <DarkMode title="ダークモード">
-                    <Item id="7101" name="ダークモードを有効にする"/>
+                    <Item id="7131" name="ライトモード"/>
+                    <Item id="7132" name="ダークモード"/>
+                    <Item id="7133" name="システム設定に従う"/>
                     <Item id="7102" name="黒"/>
                     <Item id="7103" name="赤"/>
                     <Item id="7104" name="緑"/>
@@ -1140,7 +1142,7 @@
                 </AutoCompletion>
 
                 <MultiInstance title="複数起動、日時書式">
-                    <Item id="6151" name="複数起動（マルチインスタンス）の設定"/>
+                    <Item id="6151" name="複数起動（マルチインスタンス）の設定 *"/>
                     <Item id="6152" name="セッションを新しいインスタンスで開く（セッションは終了時に自動保存）"/>
                     <Item id="6153" name="常にマルチインスタンスモードとする"/>
                     <Item id="6154" name="デフォルト（1つのインスタンス）"/>
@@ -1148,6 +1150,16 @@
                     <Item id="6171" name="挿入する日時の書式設定"/>
                     <Item id="6175" name="日付と時刻の順序を逆にする（短い形式、長い形式の場合）"/>
                     <Item id="6172" name="カスタム書式:"/>
+                    <Item id="6181" name="パネルの表示状態と -nosession *"/>
+                    <Item id="6182" name="ほかのインスタンス（複数起動）のパネルの表示状態や、コマンドラインで -nosession を指定したときの表示状態を、保存するかを設定します"/>
+                    <Item id="6183" name="クリップボード履歴"/>
+                    <Item id="6184" name="文書一覧"/>
+                    <Item id="6185" name="文字コード表"/>
+                    <Item id="6186" name="ワークスペース フォルダー"/>
+                    <Item id="6187" name="プロジェクトパネル"/>
+                    <Item id="6188" name="文書マップ"/>
+                    <Item id="6189" name="関数リスト"/>
+                    <Item id="6190" name="プラグイン"/>
                 </MultiInstance>
 
                 <Delimiter title="区切り記号">
@@ -1160,6 +1172,18 @@
                     <Item id="6163" name="単語の一部と見なす文字を追加する
 (意味がわからないならば、標準のままにすべきです)"/>
                 </Delimiter>
+
+                <Performance title="パフォーマンス">
+                    <Item id="7141" name="大きなファイルでの制約"/>
+                    <Item id="7143" name="大きなファイルで制約をかける（強調表示なし）"/>
+                    <Item id="7144" name="ファイルサイズのしきい値："/>
+                    <Item id="7146" name="MB   (1 - 4096)"/>
+                    <Item id="7147" name="対応する括弧の強調表示を利用する"/>
+                    <Item id="7148" name="自動補完を利用する"/>
+                    <Item id="7149" name="スマート強調表示を利用する"/>
+                    <Item id="7150" name="画面端での折り返しをすべての文書でオフにする"/>
+                    <Item id="7151" name="URIのハイパーリンク化を利用する"/>
+                </Performance>
 
                 <Cloud title="クラウド、ハイパーリンク">
                     <Item id="6262" name="クラウド設定"/>
@@ -1368,6 +1392,7 @@ Notepad++ を管理者権限で立ち上げますか？"/>
 処理を続けますか？"/>
             <NeedToRestartToLoadPlugins title="Notepad++ を再起動してください" message="インストールしたプラグインを読み込むには、Notepad++ を再起動してください。"/>
             <ChangeHistoryEnabledWarning title="Notepad++ を再起動してください" message="編集履歴マーカーを有効にするには、Notepad++ を再起動してください。"/> <!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
+            <WindowsSessionExit title="Notepad++ - Windows セッションの終了" message="Windows セッションを終了しようとしていますが、保存されていない文書があります。Notepad++ を終了してもよろしいですか？"/>
         </MessageBox>
         <ClipboardHistory>
             <PanelTitle name="クリップボード履歴"/>
@@ -1550,12 +1575,13 @@ Notepad++ を管理者権限で立ち上げますか？"/>
             <tabrename-newname value="新ﾌｧｲﾙ名: "/>
             <splitter-rotate-left value="左回りに回す"/>
             <splitter-rotate-right value="右回りに回す"/>
-            <recent-file-history-maxfile value="最大数: "/>
-            <language-tabsize value="タブ幅: "/>
+            <recent-file-history-maxfile value="最大数:"/>
+            <recent-file-history-customlength value="長さ:"/>
+            <language-tabsize value="タブ幅:"/>
             <userdefined-title-new value="新しい言語定義を作成..."/>
             <userdefined-title-save value="言語定義に名前をつけて保存..."/>
             <userdefined-title-rename value="言語定義の名前を変更"/>
-            <autocomplete-nb-char value="数値: "/>
+            <autocomplete-nb-char value="数値:"/>
             <edit-verticaledge-nb-col value="桁位置:"/>
             <summary value="概要"/>
             <summary-filepath value="フルパス: "/>
@@ -1597,6 +1623,12 @@ Notepad++ を管理者権限で立ち上げますか？"/>
             <contextMenu-styleOneToken value="選択した語を一つだけ色づけ" />
             <contextMenu-clearStyle value="色づけを解除" />
             <contextMenu-PluginCommands value="プラグイン" />
+            <largeFileRestriction-tip value="機能によっては、大きなファイルを扱うときのパフォーマンスに影響が出ることがあります。そのため大きなファイルを開くときに、これらの機能を自動でオフにできます。ここでその設定を行います。
+
+注意：
+１．すでに大きなファイルを開いている場合、設定変更を適用するにはファイルを開きなおす必要があります。
+
+２．「画面端での折り返しをすべての文書でオフにする」を有効にすると、大きなファイルを開いたとき、すべての文書で折り返しがオフになります。メニューの「表示」→「画面端で折り返す」からオンにできます。" />
         </MiscStrings>
     </Native-Langue>
 </NotepadPlus>
