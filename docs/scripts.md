@@ -1,6 +1,6 @@
 Here is a brief description of scripts included.
 
-> [!tip|iconVisibility:hidden|labelVisibility:hidden] The `lftpsync.sh`, `lftp-winscp-mirror` and `lftp-winscp-pget` use the same hard coded lock file `lftp-winscp.lock` so as not to run another download in parallel while any other download are in progress. They will all check to see if lftp is actually running and clear dead lock files.
+> [!tip|iconVisibility:hidden|labelVisibility:hidden|style:callout] The `lftpsync.sh`, `lftp-winscp-mirror` and `lftp-winscp-pget` use the same hard coded lock file `lftp-winscp.lock` so as not to run another download in parallel while any other download are in progress. They will all check to see if lftp is actually running and clear dead lock files.
 
 `functions.sh` - The heart of the solution. It contains functions used across most scripts to process information passed by WinSCP.
 

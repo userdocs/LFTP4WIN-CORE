@@ -38,7 +38,7 @@ This is loading `/bin/bash.exe` relative to `/applications/VSCode/bin`
 
 `install_vscode` will install VSCode portable to the `/applications/VSCode` directory. This will immediately work with the WinSCP internal editor `code`
 
-> [!tip|iconVisibility:hidden|labelVisibility:hidden] WinSCP also has a native internal editor for `code`. The LFTP4WIN editor should be the nearest to the top.
+> [!tip|iconVisibility:hidden|labelVisibility:hidden|style:callout] WinSCP also has a native internal editor for `code`. The LFTP4WIN editor should be the nearest to the top.
 
 ![winscp-editor](assets/img-docs/winscp-editor.jpg)
 

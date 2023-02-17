@@ -1,10 +1,10 @@
-> [!warning|iconVisibility:hidden|labelVisibility:hidden] WinSCP does not have a method to load values from a file when using this custom commands. It will always load the default value unless you have defined a new default in the WinSCP options for the relevant command.
+> [!warning|iconVisibility:hidden|labelVisibility:hidden|style:callout] WinSCP does not have a method to load values from a file when using this custom commands. It will always load the default value unless you have defined a new default in the WinSCP options for the relevant command.
 
 The custom commands are located in the navigation bar at the top of the WinSCP window. In order to properly use this solution you will need to understand and use these custom commands.
 
 ![commands](assets/img-docs/commands.jpg)
 
-> [!tip|iconVisibility:hidden|labelVisibility:hidden] In WinSCP the local windows are on the left and the remote are on the right. Similar to Filezilla.
+> [!tip|iconVisibility:hidden|labelVisibility:hidden|style:callout] In WinSCP the local windows are on the left and the remote are on the right. Similar to Filezilla.
 
 Here is brief description of the custom commands you need to understand to use this solution properly.
 
@@ -20,9 +20,9 @@ This command has some options you can set.
 
 ## open-lftp-conf
 
-This command opens the main `lftp.conf` file in the  included notepad ++ for editing. Modifications to this file will apply global lftp settings that will take effect in a new local or remote terminal.
+This command opens the main `lftp.conf` file in the included notepad ++ for editing. Modifications to this file will apply global lftp settings that will take effect in a new local or remote terminal.
 
-> [!note|iconVisibility:hidden|labelVisibility:hidden] The `mirror-to-local` and `pget-to-local` commands will have certain settings overridden when configured using the `lftp-conf-override` command but these settings are not globally applied to lftp.
+> [!note|iconVisibility:hidden|labelVisibility:hidden|style:callout] The `mirror-to-local` and `pget-to-local` commands will have certain settings overridden when configured using the `lftp-conf-override` command but these settings are not globally applied to lftp.
 
 ## lftpsync-setup
 
@@ -110,7 +110,7 @@ WinSCP has a specific button that has been configured for kitty integration. Jus
 
 ![kitty](assets/img-docs/kitty.jpg)
 
-> [!note|iconVisibility:hidden|labelVisibility:hidden] The integration of OpenSSH via Cygwin using the `OpenSSH` custom command provides a more complete experience.
+> [!note|iconVisibility:hidden|labelVisibility:hidden|style:callout] The integration of OpenSSH via Cygwin using the `OpenSSH` custom command provides a more complete experience.
 
 ## Queuing explained
 

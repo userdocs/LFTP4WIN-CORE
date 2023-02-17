@@ -1,4 +1,4 @@
-> [!attention|iconVisibility:hidden|labelVisibility:hidden] **Critical note:** Passwords Golden Rules!
+> [!attention|iconVisibility:hidden|labelVisibility:hidden|style:callout] **Critical note:** Passwords Golden Rules!
 
 **1:** Do not use double quotes `"` or things will break.
 
@@ -6,7 +6,7 @@
 
 **3:** Single quotes can be used and are escaped.
 
-> [!tip|iconVisibility:hidden|labelVisibility:hidden] Values 1-10 are automatically populated by the WinSCP custom command `lftpsync-setup` once you have successfully connected to a server with WinSCP. Enter, not select, the local and remote directories you want to sync then use the command.
+> [!tip|iconVisibility:hidden|labelVisibility:hidden|style:callout] Values 1-10 are automatically populated by the WinSCP custom command `lftpsync-setup` once you have successfully connected to a server with WinSCP. Enter, not select, the local and remote directories you want to sync then use the command.
 
 **Step 1:** Connect to your server using WinSCP and use the custom command `lftpsync-setup`. It can automatically fill these settings. Running this command again will regenerate all script settings and the scheduled task settings based on the settings of the current command. The reset box resets the script and deletes the scheduled task.
 

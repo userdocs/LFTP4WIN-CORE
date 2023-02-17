@@ -1,4 +1,4 @@
-> [!note|iconVisibility:hidden|labelVisibility:hidden] Installation is documented in the readme for the deployment tool used to install the LFTP4WIN solution - [LFTP4WIN](https://github.com/userdocs/LFTP4WIN)
+> [!note|iconVisibility:hidden|labelVisibility:hidden|style:callout] Installation is documented in the readme for the deployment tool used to install the LFTP4WIN solution - [LFTP4WIN](https://github.com/userdocs/LFTP4WIN)
 
 Inside the main folder of a completed `LFTP4WIN` installation you see these main files once the install is complete.
 
@@ -22,7 +22,7 @@ All you need to do is edit this session to use your server connection details an
 
 There are some conditions to successfully using a password.
 
-> [!attention|iconVisibility:hidden|labelVisibility:hidden] **Critical note:** Passwords Golden Rules!
+> [!attention|iconVisibility:hidden|labelVisibility:hidden|style:callout] **Critical note:** Passwords Golden Rules!
 
 **1:** Do not use double quotes `"` or things will break.
 
@@ -46,7 +46,7 @@ When you edit the template session in WinSCP by providing a password for authent
 
 ![password](assets/img-docs/password.jpg)
 
-> [!tip|iconVisibility:hidden|labelVisibility:hidden] You can also configure a master password to protect your login:
+> [!tip|iconVisibility:hidden|labelVisibility:hidden|style:callout] You can also configure a master password to protect your login:
 
 ![master](assets/img-docs/master.jpg)
 
@@ -54,11 +54,11 @@ If you don't need to use a private key to authorize your connection you can move
 
 ### Private key authentication
 
-> [!tip|iconVisibility:hidden|labelVisibility:hidden] Please read this [guide](https://www.ssh.com/ssh/putty/windows/puttygen) for using puttygen import or create key files.
+> [!tip|iconVisibility:hidden|labelVisibility:hidden|style:callout] Please read this [guide](https://www.ssh.com/ssh/putty/windows/puttygen) for using puttygen import or create key files.
 
 All you need is to have your key file in the Putty format. You can create a new PPK format key using `puttygen`. It can also load and export an OpenSSH format key to the ppk format.
 
-> [!note|iconVisibility:hidden|labelVisibility:hidden] Loading too many keys from the `keys` folder may result in authentication errors. I suggest you keep it simple and only have a few unique keys here relative to your sessions.
+> [!note|iconVisibility:hidden|labelVisibility:hidden|style:callout] Loading too many keys from the `keys` folder may result in authentication errors. I suggest you keep it simple and only have a few unique keys here relative to your sessions.
 
 **1:** You need to place the Putty format key in your `Keys` directory.
 

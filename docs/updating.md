@@ -15,7 +15,7 @@ Windows task scheduler jobs are not changed. As long as the new LFTP4WIN folder 
 
 The WinSCP custom commands are loaded as WinSCP extension files and are independent from the main `WinSCP.ini` file. Extensions are loaded from the `system/applications/winscp` directory and have the name format of `winscp-command-name.WinSCPextension` and they are automatically loaded into WinSCP when it starts. You can add your own in the same way.
 
-> [!tip|iconVisibility:hidden|labelVisibility:hidden]  Extensions can have the extension of the language they use. So `winscp-command-name.WinSCPextension` can be `winscp-command-name.WinSCPextension.sh` if it is a bash script
+> [!tip|iconVisibility:hidden|labelVisibility:hidden|style:callout] Extensions can have the extension of the language they use. So `winscp-command-name.WinSCPextension` can be `winscp-command-name.WinSCPextension.sh` if it is a bash script
 
 **ConEmu:** This program automatically checks for updates when running. It will prompt you.
 
