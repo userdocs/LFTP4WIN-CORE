@@ -16,21 +16,33 @@
 # @option REMOTEARCH -config -run dropdownlist "Select the remote arch:" "amd64" "amd64" "arm64v8" "arm32v7" "arm32v6" "i386" "ppc64le" "s390x"
 #
 #! /usr/bin/env bash
-#
+
 winscp_to_bash "${@}"
-#
+
 [[ "${protocol:?}" == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
-#
+
 if [[ "${9##*\\}" == 'ConEmu64.exe' ]]; then
-	/applications/conemu/ConEmu64.exe -run {Bash::bash} -c "passh -p file:/tmp/.password ssh -qt -p '${port}' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" -new_console:s:t:LFTP4WIN_IPERF3_REMOTE &
+	if [[ -z "${password}" ]]; then
+		/applications/conemu/ConEmu64.exe -run {Bash::bash} -c "ssh -qt -p '${port}' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" -new_console:s:t:LFTP4WIN_IPERF3_REMOTE &
+	else
+		/applications/conemu/ConEmu64.exe -run {Bash::bash} -c "passh -p env:password ssh -qt -p '${port}' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" -new_console:s:t:LFTP4WIN_IPERF3_REMOTE &
+	fi
 fi
-#
+
 if [[ "${9##*\\}" == 'mintty.exe' ]]; then
-	/bin/mintty.exe --title LFTP4WIN_IPERF3_REMOTE -e /bin/bash -lic "passh -p file:/tmp/.password ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+	if [[ -z "${password}" ]]; then
+		/bin/mintty.exe --title LFTP4WIN_IPERF3_REMOTE -e /bin/bash -c "ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+	else
+		/bin/mintty.exe --title LFTP4WIN_IPERF3_REMOTE -e /bin/bash -c "passh -p env:password ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+	fi
 fi
 
 if [[ "${9##*\\}" =~ (-w|wt.exe) ]]; then
-	"$(cygpath -u "${LOCALAPPDATA}\Microsoft\WindowsApps\wt.exe")" -w 0 nt --title LFTP4WIN_IPERF3_REMOTE bash -lic "passh -p file:/tmp/.password ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+	if [[ -z "${password}" ]]; then
+		"$(cygpath -u "${LOCALAPPDATA}\Microsoft\WindowsApps\wt.exe")" -w 0 nt --title LFTP4WIN_IPERF3_REMOTE bash -c "ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+	else
+		"$(cygpath -u "${LOCALAPPDATA}\Microsoft\WindowsApps\wt.exe")" -w 0 nt --title LFTP4WIN_IPERF3_REMOTE bash -c "passh -p env:password ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+	fi
 fi
 
 sleep 5
@@ -39,7 +51,7 @@ lftp -p "${port}" -u "${username},$password" "${protocol}://${hostname}" <<- EOF
 	pget -c '~/.iperf3port' -o "/tmp"
 	quit
 EOF
-#
+
 echo 'Generating iperf3 report - Server to Client' | tee "${HOME}/../help/reports/report-${hostname}.txt"
 echo | tee -a "${HOME}/../help/reports/report-${hostname}.txt"
 #
