@@ -3,7 +3,7 @@
 To help understand the project as a whole, here is a basic diagram of the work flow and how the components interact.
 
 <p align="center">
-    <img src="/assets/img-docs/diagram.jpg" alt="diagram" height="320">
+    <img src="assets/img-docs/diagram.jpg" alt="diagram" height="320">
 </p>
 
 A special set of bash functions used by WinSCP extensions translate WinSCP session variables into bash shell environment variables that can then be used by our Cygwin applications. By combining WinSCP extension features with bash scripting we are able to create a basic GUI experience for using lftp on Windows as well as interface with other applications like OpenSSH.
