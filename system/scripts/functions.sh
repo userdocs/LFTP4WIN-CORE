@@ -62,12 +62,17 @@ function winscp_to_bash() {
 	[[ -n "${3}" ]] && port="${3}" && [[ "$(basename "${0}")" = 'winscp_lftp.WinSCPextension.sh' ]] && echo "port = ${port}" >> "${HOME}/lftpvar.txt"
 
 	# 4 # !S - Process the full encoded session URL to get our password and connection protocols.
-	[[ -n "${4}" && "$(basename "${0}")" = 'winscp_lftp.WinSCPextension.sh' ]] && echo "session = ${4}" >> "${HOME}/lftpvar.txt"
+
+	# To work with windows terminal we needed to base64 encode the session URL to avoid character conflict with ; - now we decode it.
+	session_url="$(base64 --decode <<< "${4}")"
+
+	# Log to file when using lftp
+	[[ -n "${session_url}" && "$(basename "${0}")" = 'winscp_lftp.WinSCPextension.sh' ]] && echo "session = ${session_url}" >> "${HOME}/lftpvar.txt"
 
 	# Check is the session URL contains a password. If the result is empty then do nothing.
-	if [[ -n "$(echo "${4}" | cut -f3 -d":" | cut -f1 -d";" | cut -f1 -d"@")" ]]; then
+	if [[ -n "$(echo "${session_url}" | cut -f3 -d":" | cut -f1 -d";" | cut -f1 -d"@")" ]]; then
 		# Get the URL encoded password string from the session URL and convert this to its un-encoded form to use with openssh and lftp to avoid special character issues.
-		password="$(printf %b "$(printf %s "${4//\%/\\x}" | cut -f3 -d":" | cut -f1 -d";" | cut -f1 -d"@")")" && [[ "$(basename "${0}")" = 'winscp_lftp.WinSCPextension.sh' ]] && echo "password = ${password}" >> "${HOME}/lftpvar.txt"
+		password="$(printf %b "$(printf %s "${session_url//\%/\\x}" | cut -f3 -d":" | cut -f1 -d";" | cut -f1 -d"@")")" && [[ "$(basename "${0}")" = 'winscp_lftp.WinSCPextension.sh' ]] && echo "password = ${password}" >> "${HOME}/lftpvar.txt"
 		# Echo the password to a text file to use with sshpass if the environment variable is not usable when ConEMU is laoded.
 		[[ "$(basename "${0}")" = 'winscp_iperf3.WinSCPextension.sh' ]] && echo "$password" > "/tmp/.password"
 		# The password with single quotes escaped for reuse or hardcoding into a script. This is adequate to hard code this variable into a script that will be called by another script. script > file > queued jobs script
@@ -79,7 +84,7 @@ function winscp_to_bash() {
 	fi
 
 	# Get session protocol type from - "!S" - Some checks are used to make sure variations of the protocol type are set correctly for use with lftp.
-	[[ -n "${4}" ]] && protocol="$(echo "${4}" | cut -d":" -f 1)" && [[ "$(basename "${0}")" = 'winscp_lftp.WinSCPextension.sh' ]] && echo "protocol = ${protocol}" >> "${HOME}/lftpvar.txt"
+	[[ -n "${session_url}" ]] && protocol="$(echo "${session_url}" | cut -d":" -f 1)" && [[ "$(basename "${0}")" = 'winscp_lftp.WinSCPextension.sh' ]] && echo "protocol = ${protocol}" >> "${HOME}/lftpvar.txt"
 
 	# Set the protocol used in the script based detected protocol.
 	[[ "$protocol" =~ ^(ftpes|ftps|ftp)$ ]] && protocol="ftp" && [[ "$(basename "${0}")" = 'winscp_lftp.WinSCPextension.sh' ]] && echo "protocol_used = ${protocol}" >> "${HOME}/lftpvar.txt"
@@ -109,4 +114,9 @@ function winscp_to_bash() {
 		# Modifiers
 		[[ "$(basename "${0}")" = 'winscp_lftpsync_setup.WinSCPextension.sh' ]] && local_dir="${local_dir_escaped}"
 	fi
+	return
+}
+
+function winscp_variables() {
+	printf '%s\n' "username=${username}" "hostname=${hostname}" "port=${port}" "password=${password}" "protocol=${protocol}" "remote_dir=${remote_dir}" "local_dir=${local_dir}" "session_url=${session_url}"
 }

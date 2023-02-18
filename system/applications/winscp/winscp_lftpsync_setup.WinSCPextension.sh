@@ -1,5 +1,5 @@
 # @name lftpsync-setup
-# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "%username%" "%hostname%" "%port%" "%protocol%" "%remotepath%" "%localpath%" "%mparallel%" "%mpget%" "%arguments%" "%schedule%" "%scheduletime%" "%reset%" "%openlftpsync%"
+# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "%username%" "%hostname%" "%port%" !`bash -c 'base64 -w 0 <<< "!S"'` "%remotepath%" "%localpath%" "%mparallel%" "%mpget%" "%arguments%" "%schedule%" "%scheduletime%" "%reset%" "%openlftpsync%"
 # @side Local
 # @flag
 # @description Use this command to automatically generate the lftpsync settings using the current local and remote directories. You can also configure the connection settings.
@@ -63,14 +63,13 @@ if [[ "${12}" = 'reset' ]]; then
 	sleep 2
 else
 	winscp_to_bash "${@}"
-	#
-	sed -ri "s|^username='(.*)'$|username='$username'|g" /scripts/lftpsync-config.sh
-	sed -ri "s|^hostname='(.*)'$|hostname='$hostname'|g" /scripts/lftpsync-config.sh
+	sed -ri "s|^username='(.*)'$|username='${username}'|g" /scripts/lftpsync-config.sh
+	sed -ri "s|^hostname='(.*)'$|hostname='${hostname}'|g" /scripts/lftpsync-config.sh
 	sed -ri "s|^port='(.*)'$|port='$port'|g" /scripts/lftpsync-config.sh
-	sed -ri "s|^protocol='(.*)'$|protocol='$protocol'|g" /scripts/lftpsync-config.sh
-	sed -ri "s|^remote_dir='(.*)'$|remote_dir='$remote_dir'|g" /scripts/lftpsync-config.sh
-	sed -ri "s|^local_dir='(.*)'$|local_dir='$local_dir'|g" /scripts/lftpsync-config.sh
-	sed -ri "s|^password='(.*)'$|password='$password'|g" /scripts/lftpsync-config.sh
+	sed -ri "s|^protocol='(.*)'$|protocol='${protocol}'|g" /scripts/lftpsync-config.sh
+	sed -ri "s|^remote_dir='(.*)'$|remote_dir='${remote_dir}'|g" /scripts/lftpsync-config.sh
+	sed -ri "s|^local_dir='(.*)'$|local_dir='${local_dir}'|g" /scripts/lftpsync-config.sh
+	sed -ri "s|^password='(.*)'$|password='${password}'|g" /scripts/lftpsync-config.sh
 	sed -ri "s|^mirror_parallel_transfer_count='(.*)'$|mirror_parallel_transfer_count='$7'|g" /scripts/lftpsync-config.sh
 	sed -ri "s|^mirror_use_pget_n='(.*)'$|mirror_use_pget_n='$8'|g" /scripts/lftpsync-config.sh
 	sed -ri "s|^mirror_args='(.*)'$|mirror_args='$(printf %q "$(echo "$9" | sed -r 's/^"(.*)"$/\1/' | sed "s:':'\\\\\'':g")")'|g" /scripts/lftpsync-config.sh

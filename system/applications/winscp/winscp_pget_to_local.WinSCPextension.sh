@@ -1,5 +1,5 @@
 # @name pget-to-local
-# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "!U" "!@" "!#" "!S" "!/!" "!\" "%skipqueue%
+# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "!U" "!@" "!#" !`bash -c 'base64 -w 0 <<< "!S"'` "!/!" "!\" "%skipqueue%"
 # @side Local
 # @flag RemoteFiles
 # @description LFTP pget selected remote file to local window.
@@ -9,7 +9,7 @@
 #
 # @option - -config group "Terminal Settings"
 #
-# @option TERMINAL -config checkbox "Use ConEMU instead of MinTTY" """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title LFTP4WIN -e /bin/bash -li" """%WINSCP_PATH%\..\conemu\ConEmu64.exe"" -run {Bash::bash}" """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title LFTP4WIN -e /bin/bash -li"
+# @option TERMINAL -run -config dropdownlist "Select your terminal" """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title LFTP4WIN_PGET -e /bin/bash -li" """%WINSCP_PATH%\..\conemu\ConEmu64.exe"" -run {Bash::bash} -new_console:t:LFTP4WIN_PGET"=conemu """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title LFTP4WIN_PGET -e /bin/bash -li"=mintty "wt -w 0 nt --title LFTP4WIN_PGET ""%WINSCP_PATH%\..\..\bin\bash.exe"" -li"=windows_terminal
 #
 # @option - -config group "Settings"
 #

@@ -1,5 +1,5 @@
-# @name Terminal
-# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "!U" "!@" "!#" !`bash -c 'base64 -w 0 <<< "!S"'` "!/" "!\" "%CDLOCAL%"
+# @name Terminal_quick
+# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "!\" "%CDLOCAL%"
 # @side Local
 # @flag
 # @description Start a terminal session in the home directory. Default is MinTTy. You can select ConEMU from the custom command preferences.
@@ -17,14 +17,8 @@
 #
 # @option TITLE -run textbox "Windows title!" "!\"
 #
-winscp_to_bash "${@}"
-
-mapfile -t export_vars < <(winscp_variables)
-
-[[ "${protocol:?}" == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
-
-[[ -n "${7}" && "${7}" = 'yes' ]] && { cd "${local_dir}" || exit 1; }
+[[ -n "${2}" && "${2}" = 'yes' ]] && { cd "${1}" || exit 1; }
 
 export set CHERE_INVOKING=1
 
-exec env "${export_vars[@]}" "${SHELL}"
+exec "${SHELL}"

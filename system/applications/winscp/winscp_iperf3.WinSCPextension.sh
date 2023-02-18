@@ -1,5 +1,5 @@
 # @name iperf3
-# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "!U" "!@" "!#" "!S" "!/" "!\" "%IPERF3PORT%" "%REMOTEARCH%" %TERMINAL%
+# @command cmd /c start "" %TERMINAL% "%EXTENSION_PATH%" "!U" "!@" "!#" !`bash -c 'base64 -w 0 <<< "!S"'` "!/" "!\" "%IPERF3PORT%" "%REMOTEARCH%" %TERMINAL%
 # @side Local
 # @flag
 # @description Install iperf3 on the remote server and run a test using iperf3 and mtr. A random remote port is used so you may need to disable your firewall temporarily.
@@ -9,7 +9,7 @@
 #
 # @option - -config group "Terminal Settings"
 #
-# @option TERMINAL -config checkbox "Use ConEMU instead of MinTTY" """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title LFTP4WIN -e /bin/bash -li" """%WINSCP_PATH%\..\conemu\ConEmu64.exe"" -run {Bash::bash}" """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title LFTP4WIN -e /bin/bash -li"
+# @option TERMINAL -run -config dropdownlist "Select your terminal" """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title LFTP4WIN_IPERF3 -e /bin/bash -li" """%WINSCP_PATH%\..\conemu\ConEmu64.exe"" -run {Bash::bash} -new_console:t:LFTP4WIN_IPERF3"=conemu """%WINSCP_PATH%\..\..\bin\mintty.exe"" --Title LFTP4WIN_IPERF3 -e /bin/bash -li"=mintty "%LocalAppData%\Microsoft\WindowsApps\wt.exe -w 0 nt --title LFTP4WIN_IPERF3 ""%WINSCP_PATH%\..\..\bin\bash.exe"" -li"=windows_terminal
 #
 # @option IPERF3PORT -config -run textbox "Select a port to override the random generation" ""
 #
@@ -21,18 +21,20 @@ winscp_to_bash "${@}"
 #
 [[ "${protocol:?}" == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
 #
-export SSHPASS="${password}"
-#
-if [[ -n "$(echo "${9}" | grep -o 'ConEmu64.exe')" ]]; then
-	/applications/conemu/ConEmu64.exe -run {Bash::bash} -c "sshpass -f '/tmp/.password' ssh -qt -p '${port}' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" -new_console:s &
+if [[ "${9##*\\}" == 'ConEmu64.exe' ]]; then
+	/applications/conemu/ConEmu64.exe -run {Bash::bash} -c "passh -p file:/tmp/.password ssh -qt -p '${port}' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" -new_console:s:t:LFTP4WIN_IPERF3_REMOTE &
 fi
 #
-if [[ -n "$(echo "${9}" | grep -o 'mintty.exe')" ]]; then
-	/bin/mintty.exe --title 'Iperf3 Remote' -e /bin/bash -lic "sshpass -e ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+if [[ "${9##*\\}" == 'mintty.exe' ]]; then
+	/bin/mintty.exe --title LFTP4WIN_IPERF3_REMOTE -e /bin/bash -lic "passh -p file:/tmp/.password ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
 fi
-#
+
+if [[ "${9##*\\}" =~ (-w|wt.exe) ]]; then
+	"$(cygpath -u "${LOCALAPPDATA}\Microsoft\WindowsApps\wt.exe")" -w 0 nt --title LFTP4WIN_IPERF3_REMOTE bash -lic "passh -p file:/tmp/.password ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+fi
+
 sleep 5
-#
+
 lftp -p "${port}" -u "${username},$password" "${protocol}://${hostname}" <<- EOF
 	pget -c '~/.iperf3port' -o "/tmp"
 	quit
