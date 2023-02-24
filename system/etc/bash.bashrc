@@ -69,6 +69,13 @@ install_vscode() {
 		/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
 		/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
 		/applications/VSCode/bin/code --force --install-extension vscode-icons-team.vscode-icons 2> /dev/null
+		/applications/VSCode/bin/code --force --install-extension DaltonMenezes.aura-theme 2> /dev/null
+		/applications/VSCode/bin/code --force --install-extension EditorConfig.EditorConfig 2> /dev/null
+		/applications/VSCode/bin/code --force --install-extension DavidAnson.vscode-markdownlint 2> /dev/null
+		/applications/VSCode/bin/code --force --install-extension PKief.material-icon-theme 2> /dev/null
+		/applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2> /dev/null
+		/applications/VSCode/bin/code --force --install-extension ms-vscode-remote.remote-wsl 2> /dev/null
+		/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
 		# /applications/VSCode/bin/code --force --install-extension EXT_NAME  2> /dev/null
 		rm -f "$HOME/vscode.zip"
 	else
@@ -77,19 +84,13 @@ install_vscode() {
 }
 #
 install_git() {
+	git_version_1="$(git ls-remote -q -t --refs https://github.com/git-for-windows/git.git | awk '/v/{sub("refs/tags/v", ""); sub("(.*)(-|rc|msysgit|[a-z]$)", ""); print $2 }' | awk '!/^$/' | sort -rV | head -n 1)"
+	git_version_2="${git_version_1/\.windows*/}-64-bit"
+	git_url="https://github.com/git-for-windows/git/releases/download/v${git_version_1}/PortableGit-${git_version_2}.7z.exe"
 	echo
-	echo "Downloading git portable"
+	echo "Downloading git portable with tag: v${git_version_1}"
 	echo
-	git_version_1="$(curl -skNL https://github.com/git-for-windows/git/releases/latest | grep -oPm1 "v(.*)\.windows\.[0-9]")"
-	#
-	if [[ "${git_version_1}" =~ ^v(.*)windows.1$ ]]; then
-		git_version_2="${git_version_1#v}" && git_version_2="${git_version_2/\.windows\.1/}-64-bit"
-	else
-		git_version_2="${git_version_1#v}" && git_version_2="${git_version_2/\.windows/}-64-bit"
-	fi
-	#
-	git_url="https://github.com/git-for-windows/git/releases/download/${git_version_1}/PortableGit-${git_version_2}.7z.exe"
-	#
+
 	if curl -skNL "${git_url}" > "$HOME/git.7z.exe"; then
 		echo "Extracting git portable to /applications/git"
 		echo
@@ -104,8 +105,16 @@ install_git() {
 	else
 		echo "There was a problem downloading git. Try again later"
 	fi
-
 }
+
+install_croc() {
+	curl -sL "https://raw.githubusercontent.com/schollz/croc/main/src/install/default.txt" -o /tmp/croc_install.sh
+	chmod 700 /tmp/croc_install.sh
+	bash /tmp/croc_install.sh
+	[[ -f /tmp/croc_install.sh ]] && rm -f /tmp/croc_install.sh
+	return
+}
+
 #
 # The pushover message script.
 pushover() {
