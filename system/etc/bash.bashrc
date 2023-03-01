@@ -50,19 +50,44 @@ if [[ -f "/etc/notifications" ]]; then
 	source "/etc/notifications"
 fi
 #
+
 install_vscode() {
-	echo
-	echo "Downloading VSCode portable"
-	echo
-	if curl -skNL "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive" > "$HOME/vscode.zip"; then
-		echo "Extracting VSCode portable to /applications/VSCode"
-		echo
+	printf "\n"
+	PS3=$'\n'"Select your version of VSCode please: "
+	options=("vscode" "vscodium" "quit")
+	select opt in "${options[@]}"; do
+		case $opt in
+			"vscode")
+				vscode_url="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive"
+				vscode_appname="VSCode"
+				sed -ri 's|VSCodium.exe|code.exe|g' "../help/start - vscode.cmd"
+				break
+				;;
+			"vscodium")
+				vscodium_tag="$(git ls-remote -q -t --refs https://github.com/VSCodium/vscodium.git | awk '{sub("refs/tags/", ""); sub("(.*)(-|rc|alpha|beta|[a-z]$)", ""); print $2 }' | awk '!/^$/' | sort -Vr | head -n 1)"
+				vscode_url="https://github.com/VSCodium/vscodium/releases/latest/download/VSCodium-win32-x64-${vscodium_tag}.zip"
+				vscode_appname="VSCodium"
+				sed -ri 's|code.exe|VSCodium.exe|g' "../help/start - vscode.cmd"
+				break
+				;;
+			"quit")
+				printf '\n%s\n\n' "Returning to parent"
+				return
+				;;
+			*)
+				printf "\n%s\n" "invalid option $REPLY"
+				;;
+		esac
+	done
+
+	printf '\n%s\n\n' "Downloading ${vscode_appname} portable"
+
+	if curl -skNL "${vscode_url}" > "$HOME/vscode.zip"; then
+		printf '%s\n\n' "Extracting ${vscode_appname} portable to /applications/VSCode"
 		if ! 7za -y x "$(cygpath -m $HOME/vscode.zip)" -o"$(cygpath -m "/applications/VSCode")" &> /dev/null; then
-			echo "Extraction error - make sure vscode is closed!"
-			echo
+			printf '%s\n\n' "Extraction error - make sure vscode is closed!"
 		else
-			echo "VSCode downloaded, extracted and installed"
-			echo
+			printf '%s\n\n' "VSCode downloaded, extracted and installed"
 		fi
 		#
 		/applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2> /dev/null
@@ -78,8 +103,10 @@ install_vscode() {
 		/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
 		# /applications/VSCode/bin/code --force --install-extension EXT_NAME  2> /dev/null
 		rm -f "$HOME/vscode.zip"
+		return
 	else
-		echo "There was a problem downloading VSCode. Try again later"
+		printf '%s\n' "There was a problem downloading VSCode. Try again later"
+		return 1
 	fi
 }
 #
