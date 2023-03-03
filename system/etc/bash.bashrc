@@ -57,50 +57,50 @@ install_vscode() {
 	options=("vscode" "vscodium" "quit")
 	select opt in "${options[@]}"; do
 		case $opt in
-			"vscode")
-				vscode_url="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive"
-				vscode_appname="VSCode"
-				sed -ri 's|VSCodium.exe|code.exe|g' "../help/start - vscode.cmd"
-				break
-				;;
-			"vscodium")
-				vscodium_tag="$(git ls-remote -q -t --refs https://github.com/VSCodium/vscodium.git | awk '{sub("refs/tags/", ""); sub("(.*)(-|rc|alpha|beta|[a-z]$)", ""); print $2 }' | awk '!/^$/' | sort -Vr | head -n 1)"
-				vscode_url="https://github.com/VSCodium/vscodium/releases/latest/download/VSCodium-win32-x64-${vscodium_tag}.zip"
-				vscode_appname="VSCodium"
-				sed -ri 's|code.exe|VSCodium.exe|g' "../help/start - vscode.cmd"
-				break
-				;;
-			"quit")
-				printf '\n%s\n\n' "Returning to parent"
-				return
-				;;
-			*)
-				printf "\n%s\n" "invalid option $REPLY"
-				;;
+		"vscode")
+			vscode_url="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive"
+			vscode_appname="VSCode"
+			sed -ri 's|VSCodium.exe|code.exe|g' "../help/start - vscode.cmd"
+			break
+			;;
+		"vscodium")
+			vscodium_tag="$(git ls-remote -q -t --refs https://github.com/VSCodium/vscodium.git | awk '{sub("refs/tags/", ""); sub("(.*)(-|rc|alpha|beta|[a-z]$)", ""); print $2 }' | awk '!/^$/' | sort -Vr | head -n 1)"
+			vscode_url="https://github.com/VSCodium/vscodium/releases/latest/download/VSCodium-win32-x64-${vscodium_tag}.zip"
+			vscode_appname="VSCodium"
+			sed -ri 's|code.exe|VSCodium.exe|g' "../help/start - vscode.cmd"
+			break
+			;;
+		"quit")
+			printf '\n%s\n\n' "Returning to parent"
+			return
+			;;
+		*)
+			printf "\n%s\n" "invalid option $REPLY"
+			;;
 		esac
 	done
 
 	printf '\n%s\n\n' "Downloading ${vscode_appname} portable"
 
-	if curl -skNL "${vscode_url}" > "$HOME/vscode.zip"; then
+	if curl -skNL "${vscode_url}" >"$HOME/vscode.zip"; then
 		printf '%s\n\n' "Extracting ${vscode_appname} portable to /applications/VSCode"
-		if ! 7za -y x "$(cygpath -m $HOME/vscode.zip)" -o"$(cygpath -m "/applications/VSCode")" &> /dev/null; then
+		if ! 7za -y x "$(cygpath -m $HOME/vscode.zip)" -o"$(cygpath -m "/applications/VSCode")" &>/dev/null; then
 			printf '%s\n\n' "Extraction error - make sure vscode is closed!"
 		else
 			printf '%s\n\n' "VSCode downloaded, extracted and installed"
 		fi
 		#
-		/applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension vscode-icons-team.vscode-icons 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension DaltonMenezes.aura-theme 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension EditorConfig.EditorConfig 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension DavidAnson.vscode-markdownlint 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension PKief.material-icon-theme 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension ms-vscode-remote.remote-wsl 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
+		/applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension vscode-icons-team.vscode-icons 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension DaltonMenezes.aura-theme 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension EditorConfig.EditorConfig 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension DavidAnson.vscode-markdownlint 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension PKief.material-icon-theme 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension ms-vscode-remote.remote-wsl 2>/dev/null
+		/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2>/dev/null
 		# /applications/VSCode/bin/code --force --install-extension EXT_NAME  2> /dev/null
 		rm -f "$HOME/vscode.zip"
 		return
@@ -118,10 +118,10 @@ install_git() {
 	echo "Downloading git portable with tag: v${git_version_1}"
 	echo
 
-	if curl -skNL "${git_url}" > "$HOME/git.7z.exe"; then
+	if curl -skNL "${git_url}" >"$HOME/git.7z.exe"; then
 		echo "Extracting git portable to /applications/git"
 		echo
-		if ! "$HOME/git.7z.exe" -y -o"$(cygpath -m "/applications/git")" &> /dev/null; then
+		if ! "$HOME/git.7z.exe" -y -o"$(cygpath -m "/applications/git")" &>/dev/null; then
 			echo "Extraction error - make sure git is closed!"
 			echo
 		else
@@ -146,14 +146,14 @@ install_croc() {
 # The pushover message script.
 pushover() {
 	if [[ -n "$pushover_api_token" ]]; then
-		curl -4s -d message="Your transfer has finished $1" -d title="lftp-windows" -d token="$pushover_api_token" -d user="$pushover_user_key" 'https://api.pushover.net/1/messages.json' > /dev/null 2>&1 || :
+		curl -4s -d message="Your transfer has finished $1" -d title="lftp-windows" -d token="$pushover_api_token" -d user="$pushover_user_key" 'https://api.pushover.net/1/messages.json' >/dev/null 2>&1 || :
 	fi
 }
 #
 # The pushbullet message script.
 pushbullet() {
 	if [[ -n "$pushbullet_api_key" ]]; then
-		curl -4u ''"$pushbullet_api_key"':' 'https://api.pushbullet.com/v2/pushes' -d type="note" -d title="lftp-windows" -d body="Your transfer has finished $1" > /dev/null 2>&1 || :
+		curl -4u ''"$pushbullet_api_key"':' 'https://api.pushbullet.com/v2/pushes' -d type="note" -d title="lftp-windows" -d body="Your transfer has finished $1" >/dev/null 2>&1 || :
 	fi
 }
 #
