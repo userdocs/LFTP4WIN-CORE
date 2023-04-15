@@ -3,7 +3,7 @@
 The comments are here for explanation, it's not necessary to translate them.
 -->
 <NotepadPlus>
-    <Native-Langue name="English" filename="english.xml" version="8.4.6">
+    <Native-Langue name="English" filename="english.xml" version="8.5.1">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -112,6 +112,7 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="42006" name="&amp;Delete"/>
                     <Item id="42007" name="&amp;Select All"/>
                     <Item id="42020" name="Begin/End &amp;Select"/>
+                    <Item id="42089" name="Begin/End Select in Column Mode"/>
                     <Item id="42084" name="Date Time (short)"/>
                     <Item id="42085" name="Date Time (long)"/>
                     <Item id="42086" name="Date Time (customized)"/>
@@ -201,7 +202,7 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="43019" name="Copy Bookmarked Lines"/>
                     <Item id="43020" name="Paste to (Replace) Bookmarked Lines"/>
                     <Item id="43021" name="Remove Bookmarked Lines"/>
-                    <Item id="43051" name="Remove Unmarked Lines"/>
+                    <Item id="43051" name="Remove Non-Bookmarked Lines"/>
                     <Item id="43050" name="Inverse Bookmark"/>
                     <Item id="43052" name="Find characters in rang&amp;e..."/>
                     <Item id="43053" name="Select All Between &amp;Matching Braces"/>
@@ -264,7 +265,7 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="44022" name="Word wrap"/>
                     <Item id="44023" name="Zoom &amp;In (Ctrl+Mouse Wheel Up)"/>
                     <Item id="44024" name="Zoom &amp;Out (Ctrl+Mouse Wheel Down)"/>
-                    <Item id="44025" name="Show White Space and TAB"/>
+                    <Item id="44025" name="Show Space and Tab"/>
                     <Item id="44026" name="Show End of Line"/>
                     <Item id="44029" name="Unfold All"/>
                     <Item id="44030" name="Fold Current Level"/>
@@ -294,6 +295,7 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="44113" name="Apply Color 3"/>
                     <Item id="44114" name="Apply Color 4"/>
                     <Item id="44115" name="Apply Color 5"/>
+                    <Item id="44130" name="Show Non-Printing Characters"/>
                     <Item id="44032" name="Toggle Full Screen Mode"/>
                     <Item id="44033" name="Restore Default Zoom"/>
                     <Item id="44034" name="Always on Top"/>
@@ -383,8 +385,6 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="11009" name="Size Larger to Smaller"/>
                 </Commands>
             </Main>
-            <Splitter>
-            </Splitter>
             <TabBar>
                 <Item CMDID="41003" name="Close"/>
                 <Item CMDID="0" name="Close Multiple Tabs"/>
@@ -422,6 +422,14 @@ The comments are here for explanation, it's not necessary to translate them.
                 <Item CMDID="44115" name="Apply Color 5"/>
                 <Item CMDID="44110" name="Remove Color"/>
             </TabBar>
+            <TrayIcon>
+                <Item id="43101" name="Activate"/>
+                <Item id="43102" name="New"/>
+                <Item id="43103" name="New and Paste"/>
+                <Item id="43104" name="Open..."/>
+                <Item id="43013" name="Find in Files..."/>
+                <Item id="43105" name="Close Tray Icon"/>
+            </TrayIcon>
         </Menu>
 
         <Dialog>
@@ -467,6 +475,11 @@ The comments are here for explanation, it's not necessary to translate them.
                 <Item id="1721" name="▲"/>
                 <Item id="1723" name="▼ Find Next"/>
                 <Item id="1725" name="Copy Marked Text"/>
+                <Menu>
+                    <Item id="1726" name="⇅ Swap Find with Replace"/>
+                    <Item id="1727" name="⤵ Copy from Find to Replace"/>
+                    <Item id="1728" name="⤴ Copy from Replace to Find"/>
+                </Menu>
             </Find>
 
             <IncrementalFind title="">
@@ -590,6 +603,20 @@ The comments are here for explanation, it's not necessary to translate them.
                 <ScintillaCommandsTab name="Scintilla commands"/>
                 <ConflictInfoOk name="No shortcut conflicts for this item."/>
                 <ConflictInfoEditing name="No conflicts . . ."/>
+                <WindowCategory name="Window"/>
+                <FileCategory name="File"/>
+                <EditCategory name="Edit"/>
+                <SearchCategory name="Search"/>
+                <ViewCategory name="View"/>
+                <FormatCategory name="Format"/>
+                <LangCategory name="Lang"/>
+                <AboutCategory name="About"/>
+                <SettingCategory name="Setting"/>
+                <ToolCategory name="Tool"/>
+                <ExecuteCategory name="Execute"/>
+                <ModifyContextMenu name="Modify"/>
+                <DeleteContextMenu name="Delete"/>
+                <ClearContextMenu name="Clear"/>
                 <MainCommandNames>
                     <Item id="41019" name="Open containing folder in Explorer"/>
                     <Item id="41020" name="Open containing folder in Command Prompt"/>
@@ -706,6 +733,7 @@ The comments are here for explanation, it's not necessary to translate them.
                 <Item id="20011" name="Transparency"/>
                 <Item id="20015" name="Import..."/>
                 <Item id="20016" name="Export..."/>
+                <Item id="20017" name="Undock"/>
                 <StylerDialog title="Styler Dialog">
                     <Item id="25030" name="Font options:"/>
                     <Item id="25006" name="Foreground color"/>
@@ -924,6 +952,10 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="6248" name="Default"/>
                     <Item id="6249" name="Plain Text"/>
                     <Item id="6250" name="Custom Color"/>
+                    <Item id="6252" name="Non-Printing Characters"/>
+                    <Item id="6254" name="Abbreviation"/>
+                    <Item id="6255" name="Codepoint"/>
+                    <Item id="6256" name="Custom Color"/>
                 </Scintillas>
 
                 <DarkMode title="Dark Mode">
@@ -1088,7 +1120,7 @@ You can define several column markers by using white space to separate the diffe
 
                 <RecentFilesHistory title="Recent Files History">
                     <Item id="6304" name="Recent Files History"/>
-                    <Item id="6306" name="Max. number of entries :"/>
+                    <Item id="6306" name="Max. number of entries:"/>
                     <Item id="6305" name="Don't check at launch time"/>
                     <Item id="6429" name="Display"/>
                     <Item id="6424" name="In Submenu"/>
@@ -1125,7 +1157,7 @@ You can define several column markers by using white space to separate the diffe
                     <Item id="6824" name="Ignore numbers"/>
                     <Item id="6811" name="From"/>
                     <Item id="6813" name="th character"/>
-                    <Item id="6814" name="Valid value : 1 - 9"/>
+                    <Item id="6872" name="Make auto-completion list brief"/>
                     <Item id="6815" name="Function parameters hint on input"/>
                     <Item id="6851" name="Auto-Insert"/>
                     <Item id="6857" name=" html/xml close tag"/>
@@ -1248,7 +1280,12 @@ You can define several column markers by using white space to separate the diffe
                 <Item id="2033" name="&amp;Number to Insert"/>
                 <Item id="2030" name="&amp;Initial number :"/>
                 <Item id="2031" name="Increase b&amp;y :"/>
-                <Item id="2035" name="Leading &amp;zeros"/>
+                <Item id="2038" name="&amp;Leading :"/>
+                <ComboBox id="2039">
+                    <Element name="None"/>
+                    <Element name="Zeros"/>
+                    <Element name="Spaces"/>
+                </ComboBox>
                 <Item id="2036" name="&amp;Repeat :"/>
                 <Item id="2032" name="Format"/>
                 <Item id="2024" name="&amp;Dec"/>
@@ -1289,7 +1326,8 @@ You can re-activate this dialog in Preferences later."/>
                 <Item id="4" name="Always Yes"/>
             </DoSaveAll> <!-- HowToReproduce: Check the 'Enable Save All confirm dialog' checkbox in Preference->MISC, now click 'Save all' -->
         </Dialog>
-        <MessageBox> <!-- $INT_REPLACE$ is a place holder, don't translate it -->
+        <MessageBox>
+            <!-- $INT_REPLACE$ and $STR_REPLACE$ are place holders, don't translate these place holders. -->
             <ContextMenuXmlEditWarning title="Editing contextMenu" message="Editing contextMenu.xml allows you to modify your Notepad++ popup context menu.
 You have to restart your Notepad++ to take effect after modifying contextMenu.xml."/>
             <SaveCurrentModifWarning title="Save Current Modification" message="You should save the current modification.
@@ -1317,7 +1355,18 @@ Your settings on cloud will be canceled. Please reset a coherent value via Prefe
             <DroppingFolderAsProjectModeWarning title="Invalid action" message="You can only drop files or folders but not both, because you're in dropping Folder as Project mode.
 you have to enable &quot;Open all files of folder instead of launching Folder as Workspace on folder dropping&quot; in &quot;Default Directory&quot; section of Preferences dialog to make this operation work."/>
             <SortingError title="Sorting Error" message="Unable to perform numeric sorting due to line $INT_REPLACE$."/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
-            <ColumnModeTip title="Column Mode Tip" message="Please use &quot;ALT+Mouse Selection&quot; or &quot;Alt+Shift+Arrow key&quot; to switch to column mode."/>
+            <ColumnModeTip title="Column Mode Tip" message="
+There are 3 ways to switch to column-select mode:
+
+1. (Keyboard and Mouse)  Hold Alt while left-click dragging
+
+2. (Keyboard only)  Hold Alt+Shift while using arrow keys
+
+3. (Keyboard or Mouse)
+      Put caret at desired start of column block position, then
+       execute &quot;Begin/End Select in Column Mode&quot; command;
+      Move caret to desired end of column block position, then
+       execute &quot;Begin/End Select in Column Mode&quot; command again"/>
             <BufferInvalidWarning title="Save failed" message="Cannot save: Buffer is invalid."/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
             <DoCloseOrNot title="Keep non existing file" message="The file &quot;$STR_REPLACE$&quot; doesn't exist anymore.
 Keep this file in editor?"/>
@@ -1348,6 +1397,8 @@ Do you want to open it?"/>
             <CreateNewFileOrNot title="Create new file" message="&quot;$STR_REPLACE$&quot; doesn't exist. Create it?"/>
             <CreateNewFileError title="Create new file" message="Cannot create the file &quot;$STR_REPLACE$&quot;."/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
             <OpenFileError title="ERROR" message="Can not open file &quot;$STR_REPLACE$&quot;."/>
+            <OpenFileNoFolderError title="Cannot open file" message="&quot;$STR_REPLACE1$&quot; cannot be opened:
+Folder &quot;$STR_REPLACE2$&quot; doesn't exist."/>
             <FileBackupFailed title="File Backup Failed" message="The previous version of the file could not be saved into the backup directory at &quot;$STR_REPLACE$&quot;.
 
 Do you want to save the current file anyways?"/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
@@ -1388,6 +1439,9 @@ Continue?"/>
             <NeedToRestartToLoadPlugins title="Notepad++ need to be relaunched" message="You have to restart Notepad++ to load plugins you installed."/> <!-- HowToReproduce: Import a plugin via menu "Settings->Import->Import Plugin(s)...". -->
             <ChangeHistoryEnabledWarning title="Notepad++ need to be relaunched" message="You have to restart Notepad++ to enable Change History."/> <!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
             <WindowsSessionExit title="Notepad++ - Windows session exit" message="Windows session is about to be terminated but you have some data unsaved. Do you want to exit Notepad++ now?"/>
+            <LanguageMenuCompactWarning title="Compact Language Menu" message="This option will be changed on the next launch."/> <!-- HowToReproduce: toggle "Make language menu compact" via Preferences dialog "Language/Language Menu. -->
+            <SwitchUnsavedThemeWarning title="$STR_REPLACE$" message="Unsaved changes are about to be discarded!
+Do you want to save your changes before switching themes?"/> <!-- HowToReproduce: In the Style Configurator dialog change some theme and switch to other theme without saving. -->
         </MessageBox>
         <ClipboardHistory>
             <PanelTitle name="Clipboard History"/>
@@ -1397,6 +1451,7 @@ Continue?"/>
             <ColumnName name="Name"/>
             <ColumnExt name="Ext."/>
             <ColumnPath name="Path"/>
+            <ListGroups name="Group by View"/>
         </DocList>
         <WindowsDlg>
             <ColumnName name="Name"/>
@@ -1412,8 +1467,9 @@ Continue?"/>
             <ColumnVal name="Value"/>
             <ColumnHex name="Hex"/>
             <ColumnChar name="Character"/>
-            <ColumnHtmlNumber name="HTML Number"/>
-            <ColumnHtmlName name="HTML Code"/>
+            <ColumnHtmlName name="HTML Name"/>
+            <ColumnHtmlNumber name="HTML Decimal"/>
+            <ColumnHtmlHexNb name="HTML Hexadecimal"/>
         </AsciiInsertion>
         <DocumentMap>
             <PanelTitle name="Document Map"/>
@@ -1431,7 +1487,7 @@ Continue?"/>
             <ExpandAllFoldersTip name="Unfold all"/>
             <CollapseAllFoldersTip name="Fold all"/>
             <LocateCurrentFileTip name="Locate current file"/>
-            <Menus>
+            <Menu>
                 <Item id="3511" name="Remove"/>
                 <Item id="3512" name="Remove All"/>
                 <Item id="3513" name="Add"/>
@@ -1442,7 +1498,7 @@ Continue?"/>
                 <Item id="3518" name="Explorer here"/>
                 <Item id="3519" name="CMD here"/>
                 <Item id="3520" name="Copy file name"/>
-            </Menus>
+            </Menu>
         </FolderAsWorkspace>
         <ProjectManager>
             <PanelTitle name="Project"/>
@@ -1492,7 +1548,7 @@ Continue?"/>
             </Menus>
         </ProjectManager>
         <MiscStrings>
-            <!-- $INT_REPLACE$  and $STR_REPLACE$ are a place holders, don't translate these place holders -->
+            <!-- $INT_REPLACE$ and $STR_REPLACE$ are place holders, don't translate these place holders. -->
             <word-chars-list-tip value="This allows you to include additional character into current word characters while double clicking for selection or searching with &quot;Match whole word only&quot; option checked."/> <!-- HowToReproduce: In "Delimiter" section of Preferences dialog, hover your mouse on the "?" button. -->
 
             <!-- Don't translate "(&quot;EOL custom color&quot;)" -->
@@ -1572,14 +1628,9 @@ Find in all files but exclude all folders log or logs recursively:
             <tabrename-newname value="New Name: "/>
             <splitter-rotate-left value="Rotate to left"/>
             <splitter-rotate-right value="Rotate to right"/>
-            <recent-file-history-maxfile value="Max File: "/>
-            <recent-file-history-customlength value="Length: "/>
-            <language-tabsize value="Tab Size: "/>
             <userdefined-title-new value="Create New Language..."/>
             <userdefined-title-save value="Save Current Language Name As..."/>
             <userdefined-title-rename value="Rename Current Language Name"/>
-            <autocomplete-nb-char value="Nb char: "/>
-            <edit-verticaledge-nb-col value="Nb of Column:"/>
             <summary value="Summary"/>
             <summary-filepath value="Full file path: "/>
             <summary-filecreatetime value="Created: "/>
@@ -1591,6 +1642,9 @@ Find in all files but exclude all folders log or logs recursively:
             <summary-nbsel1 value=" selected characters ("/>
             <summary-nbsel2 value=" bytes) in "/>
             <summary-nbrange value=" ranges"/>
+            <progress-hits-title value="Hits:"/>
+            <progress-cancel-button value="Cancel"/>
+            <progress-cancel-info value="Cancelling operation, please wait..."/>
             <find-in-files-progress-title value="Find In Files progress..."/>
             <replace-in-files-confirm-title value="Are you sure?"/>
             <replace-in-files-confirm-directory value="Are you sure you want to replace all occurrences in :"/>
@@ -1626,6 +1680,33 @@ NOTE:
 1. Modifying options here requires re-open currently opened large files to get proper behavior.
 
 2. If &quot;Deactivate Word Wrap globally&quot; is checked and you open a large file, &quot;Word Wrap&quot; will be disabled for all files. You can re-enable it via menu &quot;View-&gt;Word Wrap&quot;." />
+            <npcNote-tip value="Representation of selected &quot;non-ASCII&quot; whitespace and non-printing (control) characters.
+
+NOTE:
+Some characters might already have some representation and are thus visible. Line separator and paragraph separator are already represented by abbreviation by default.
+
+Using representation will disable character effects on text.
+
+For the full list of selected whitespace and non-printing characters check User Manual.
+
+Click on this button to open website with User Manual." />
+            <npcAbbreviation-tip value="Abbreviation : name
+NBSP : no-break space
+ZWSP : zero-width space
+ZWNBSP : zero-width no-break space
+
+For the full list check User Manual.
+Click on &quot;?&quot; button on right to open website with User Manual." />
+            <npcCodepoint-tip value="Codepoint : name
+U+00A0 : no-break space
+U+200B : zero-width space
+U+FEFF : zero-width no-break space
+
+For the full list check User Manual.
+Click on &quot;?&quot; button on right to open website with User Manual." />
+
+            <!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
+            <npcCustomColor-tip value="Go to Style Configurator to change the default custom color for selected whitespace and non-printing characters (&quot;Non-printing characters custom color&quot;)." />
         </MiscStrings>
     </Native-Langue>
 </NotepadPlus>

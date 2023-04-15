@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-        Slovenian localization for Notepad++ v8.4.5
-        Last modified 25. Sept 2022 by dr. Vinko Kastelic
+        Slovenian localization for Notepad++ v8.5.1
+        Last modified 28. Mar 2023 by dr. Vinko Kastelic
         
 -->
 <NotepadPlus>
-    <Native-Langue name="Slovenski jezik" filename="slovenian.xml" version="8.4.5">
+    <Native-Langue name="Slovenščina" filename="slovenian.xml" version="8.5.1">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -26,7 +26,7 @@
                 <!-- Sub Menu Entries -->
                 <SubEntries>
                     <Item subMenuId="file-openFolder" name="Odpri vsebino mape"/>
-					<Item subMenuId="file-closeMore" name="Zapri &amp;na več načinov"/>
+					<Item subMenuId="file-closeMore" name="Zapri &amp;več dokumentov"/>
 					<Item subMenuId="file-recentFiles" name="&amp;Nedavne datoteke"/>
                     <Item subMenuId="edit-insert" name="Vstavi"/>
 					<Item subMenuId="edit-copyToClipboard" name="Kop&amp;iraj v odložišče"/>
@@ -47,12 +47,12 @@
 					<Item subMenuId="search-copyStyledText" name="&amp;Kopiraj stilizirano besedilo"/>
 					<Item subMenuId="search-bookmark" name="&amp;Zaznamek"/>
 					<Item subMenuId="view-currentFileIn" name="Ogled trenutne datoteke v"/>
-					<Item subMenuId="view-showSymbol" name="Pokaži simbol"/>
+					<Item subMenuId="view-showSymbol" name="Prikaži simbol"/>
 					<Item subMenuId="view-zoom" name="Povečava"/>
 					<Item subMenuId="view-moveCloneDocument" name="Premakni/Kloniraj trenutni dokument"/>
 					<Item subMenuId="view-tab"  name="Tabulator"/>                
-					<Item subMenuId="view-collapseLevel" name="Strni raven"/>
-					<Item subMenuId="view-uncollapseLevel" name="Razgrni raven"/>
+					<Item subMenuId="view-collapseLevel" name="Raven zloženosti"/>
+					<Item subMenuId="view-uncollapseLevel" name="Raven raztegnjenja"/>
 					<Item subMenuId="view-project" name="Projekt"/>
 					<Item subMenuId="encoding-characterSets"  name="Nabor znakov"/>
 					<Item subMenuId="encoding-arabic"  name="arabski"/>
@@ -113,7 +113,8 @@
                     <Item id="42005" name="&amp;Prilepi"/>
                     <Item id="42006" name="I&amp;zbriši"/>
                     <Item id="42007" name="&amp;Izberi vse"/>
-					<Item id="42020" name="I&amp;zberi Začetek/Konec"/>
+					<Item id="42020" name="Začetek/Konec I&amp;zberi"/>
+                    <Item id="42089" name="Začetek/Konec Izberi v načinu stolpca"/>					
                     <Item id="42084" name="Datum in ura (kratko)"/>
                     <Item id="42085" name="Datum in čas (dolgo)"/>
                     <Item id="42086" name="Datum in čas (po meri)"/>					
@@ -160,7 +161,7 @@
 					<Item id="42042" name="Odstrani vodilne presledke"/>
                     <Item id="42043" name="Odstrani vodilne in zaključne presledke"/>
                     <Item id="42044" name="Konec vrstice v presledek"/>
-                    <Item id="42045" name="Odstrani nepotrebne praznine in konce vrstic"/>
+                    <Item id="42045" name="Obrežite oboje in EOL v prostor"/> 
                     <Item id="42046" name="Tabulator v presledek"/>
 					<Item id="42054" name="Presledek v tabulator (vse)"/>
                     <Item id="42053" name="Presledek v tabulator (vodilni)"/>
@@ -178,11 +179,11 @@
                     <Item id="42026" name="Smer besedila D->L"/>
                     <Item id="42027" name="Smer besedila L->D"/>
                     <Item id="42028" name="&amp;Nastavi samo za branje"/>
-                    <Item id="42029" name="Celotna pot trenutne datoteke v odložišče"/>
-                    <Item id="42030" name="Ime trenutne datoteke v odložišče"/>
-                    <Item id="42031" name="Pot trenutne mape v odložišče"/>
-                    <Item id="42087" name="Vsa imena datotek v odložišče"/>
-                    <Item id="42088" name="Vse poti datotek v odložišče"/>
+                    <Item id="42029" name="Kopiraj pot trenutne datoteke"/>
+                    <Item id="42030" name="Kopiraj ime trenutne datoteke"/>
+                    <Item id="42031" name="Kopiraj pot trenutne mape"/>
+                    <Item id="42087" name="Kopiraj vsa imena datotek"/>
+                    <Item id="42088" name="Kopiraj vse poti datotek"/>
                     <Item id="42032" name="&amp;Poženi makro večkrat..."/>
                     <Item id="42033" name="Počisti zastavico Samo za branje"/>
 					<Item id="42035" name="Komentiraj enovrstični komentar"/>
@@ -198,12 +199,12 @@
                     <Item id="43005" name="Preklopi zaznamek"/>
                     <Item id="43006" name="Naslednji zaznamek"/>
                     <Item id="43007" name="Prejšnji zaznamek"/>
-                    <Item id="43008" name="Počisti vse zaznamke"/>                    
-                    <Item id="43018" name="Izreži zaznamovane vrstice"/>
-                    <Item id="43019" name="Kopiraj zaznamovane vrstice"/>
-                    <Item id="43020" name="Prilepi v (zamenjaj) zaznamovane vrstice"/>
-                    <Item id="43021" name="Izbriši zaznamovane vrstice"/>
-					<Item id="43051" name="Odstrani neoznačene vrstice"/>
+                    <Item id="43008" name="Počisti vse zaznamke"/>
+                    <Item id="43018" name="Izreži vrstice z zaznamki"/>
+                    <Item id="43019" name="Kopiraj vrstice z zaznamki"/>
+                    <Item id="43020" name="Prilepi v (Zamenjaj) vrstice z zaznamki"/>
+                    <Item id="43021" name="Odstrani vrstice z zaznamki"/>
+                    <Item id="43051" name="Odstrani vrstice brez zaznamkov"/>
                     <Item id="43050" name="Inverzni zaznamek"/>
 					<Item id="43052" name="Najdi znake v &amp;območju..."/>
                     <Item id="43053" name="Izberi vse &amp;ujemanje med oklepaji"/>					
@@ -259,17 +260,17 @@
                     <Item id="43503" name="Kopiraj izbrana imena"/>
                     <Item id="43504" name="Kopiraj izbrana imena poti"/>					
 					<Item id="44009" name="Lepljivček"/>
-                    <Item id="44010" name="Strni vse"/> 
+                    <Item id="44010" name="Zloži vse"/> 
                     <Item id="44011" name="Prosti odmik način"/>					
-                    <Item id="44019" name="Pokaži vse znake"/>
-                    <Item id="44020" name="Pokaži vodilo zamika"/>
+                    <Item id="44019" name="Prikaži vse znake"/>
+                    <Item id="44020" name="Prikaži vodilo zamika"/>
                     <Item id="44022" name="Prelomi besedilo"/>
                     <Item id="44023" name="Po&amp;večaj (Ctrl+Kolešček miške gor)"/>
                     <Item id="44024" name="Po&amp;manjšaj (Ctrl+Kolešček miške dol)"/>
-                    <Item id="44025" name="Pokaži presledke in tabulatorje"/>
-                    <Item id="44026" name="Pokaži konce vrstic"/>
+                    <Item id="44025" name="Prikaži presledek in tabulator"/>
+                    <Item id="44026" name="Prikaži konce vrstic"/>
                     <Item id="44029" name="Razgrni vse"/>
-                    <Item id="44030" name="Strni trenutno raven"/>
+                    <Item id="44030" name="Zloži trenutno raven"/>
                     <Item id="44031" name="Razgrni trenutno raven"/>                   
 					<Item id="44049" name="Povzetek..."/>
 					<Item id="44080" name="Mapa dokumenta"/>
@@ -290,12 +291,19 @@
 					<Item id="44097" name="Spremljanje (tail -f)"/>
                     <Item id="44098" name="Premakni zavihek v ospredje"/>
                     <Item id="44099" name="Premakni zavihek v ozadje"/>
+                    <Item id="44110" name="Odstrani barvo"/>
+                    <Item id="44111" name="Uporabi barvo 1"/>
+                    <Item id="44112" name="Uporabi barvo 2"/>
+                    <Item id="44113" name="Uporabi barvo 3"/>
+                    <Item id="44114" name="Uporabi barvo 4"/>
+                    <Item id="44115" name="Uporabi barvo 5"/>
+	                <Item id="44130" name="Prikaži nenatisljive znake"/>
                     <Item id="44032" name="Preklopi celozaslonski način"/>
                     <Item id="44033" name="Povrni privzeto povečavo"/>
                     <Item id="44034" name="Vedno na vrhu"/>
                     <Item id="44035" name="Sinhroniziraj navpično drsenje"/>
                     <Item id="44036" name="Sinhroniziraj vodoravno drsenje"/>
-                    <Item id="44041" name="Pokaži simbol preloma vrstic"/>
+                    <Item id="44041" name="Prikaži simbol preloma vrstic"/>
                     <Item id="44072" name="Žarišče na drug prikaz"/>
                     <Item id="44081" name="Projekt Panel 1"/>
                     <Item id="44082" name="Projekt Panel 2"/>
@@ -368,7 +376,7 @@
 					<Item id="48016" name="Spremeni bližnjico/Izbriši makro..."/>
 					<Item id="48017" name="Spremeni bližnjico/Izbriši ukaz..."/>  
 
-                    <Item id="11001" name="&amp;Windows..."/>
+                    <Item id="11001" name="&amp;Okna..."/>
                     <Item id="11002" name="Ime A do Z"/>
                     <Item id="11003" name="Ime Z do A"/>
                     <Item id="11004" name="Pot A do Z"/>
@@ -379,34 +387,51 @@
                     <Item id="11009" name="Velikost od večje k manjši"/>  
 				</Commands>
             </Main>
-            <Splitter>
-            </Splitter>
             <TabBar>
-					<Item CMID="0" name="Zapri"/>
-					<Item CMID="1" name="Zapri vse razen tega"/>
-					<Item CMID="2" name="Shrani"/>
-					<Item CMID="3" name="Shrani kot..."/>
-					<Item CMID="4" name="Natisni..."/>
-					<Item CMID="5" name="Premakni v drugi pogled"/>
-					<Item CMID="6" name="Kloniraj v drugi pogled"/>
-					<Item CMID="7" name="Celotna pot trenutne datoteke v odložišče"/>
-					<Item CMID="8" name="Ime datoteke v odložišče"/>
-					<Item CMID="9" name="Pot trenutne mape v odložišče"/>
-					<Item CMID="10" name="Preimenuj..."/>
-					<Item CMID="11" name="Premakni v Koš"/>
-					<Item CMID="12" name="Samo za branje"/>
-					<Item CMID="13" name="Počisti oznako Samo za branje"/>
-					<Item CMID="14" name="Premakni v novo pojavitev"/>
-					<Item CMID="15" name="Odpri v novi pojavitvi"/>
-					<Item CMID="16" name="Osveži"/>
-					<Item CMID="17" name="Zapri vse na levo"/>
-					<Item CMID="18" name="Zapri vse na desno"/>
-					<Item CMID="19" name="Odpri vsebino mape v Raziskovalcu"/>
-					<Item CMID="20" name="Odpri vsebino mape v cmd.exe oknu"/>
-					<Item CMID="21" name="Odpri v privzetem pregledovalniku"/>
-					<Item CMID="22" name="Zapri vse nespremenjeno"/>
-					<Item CMID="23" name="Odpri vsebino mape as Workspace"/>				
+				<Item CMDID="41003" name="Zapri"/>
+				<Item CMDID="0" name="Zapri več zavihkov"/>
+				<Item CMDID="41005" name="Zapri vse RAZEN tega"/>				
+                <Item CMDID="41009" name="Zapri vse na levi"/>
+                <Item CMDID="41018" name="Zapri vse na desni"/>
+                <Item CMDID="41024" name="Zapri vse nespremenjeno"/>
+                <Item CMDID="41006" name="Shrani"/>
+                <Item CMDID="41008" name="Shrani kot..."/>
+                <Item CMDID="1" name="Odpri v"/>
+                <Item CMDID="41019" name="Odpri vsebino mape v Raziskovalcu"/>
+                <Item CMDID="41020" name="Odpri vsebino mape v ukaznem pozivu"/>
+                <Item CMDID="41025" name="Odpri vsebino mape kot delovni prostor"/>
+                <Item CMDID="41023" name="Odpri v privzetem pregledovalniku"/>
+                <Item CMDID="41017" name="Preimenuj..."/>
+                <Item CMDID="41016" name="Premakni v koš"/>
+                <Item CMDID="41014" name="Ponovno naloži"/>
+                <Item CMDID="41010" name="Natisni..."/>
+                <Item CMDID="42028" name="Samo za branje"/>
+                <Item CMDID="42033" name="Počisti zastavico Samo za branje"/>
+                <Item CMDID="2" name="Kopiraj v odložišče"/>
+                <Item CMDID="42029" name="Kopiraj celotno pot datoteke"/>
+                <Item CMDID="42030" name="Kopiraj ime datoteke"/>
+                <Item CMDID="42031" name="Kopiraj pot trenutne mape"/>
+                <Item CMDID="3" name="Premakni dokument"/>
+                <Item CMDID="10001" name="Premakni v drugi pogled"/>
+                <Item CMDID="10002" name="Kloniraj v drug pogled"/>
+                <Item CMDID="10003" name="Premakni v novo pojavitev"/>
+                <Item CMDID="10004" name="Odpri v novi pojavitvi"/>
+                <Item CMDID="4" name="Uporabi barvo zavihka"/>
+                <Item CMDID="44111" name="Uporabi barvo 1"/>
+                <Item CMDID="44112" name="Uporabi barvo 2"/>
+                <Item CMDID="44113" name="Uporabi barvo 3"/>
+                <Item CMDID="44114" name="Uporabi barvo 4"/>
+                <Item CMDID="44115" name="Uporabi barvo 5"/>
+                <Item CMDID="44110" name="Odstrani barvo"/>
 			</TabBar>
+			<TrayIcon>
+                <Item id="43101" name="Aktiviraj"/>
+                <Item id="43102" name="Novo"/>
+                <Item id="43103" name="Novo in Prilepi"/>
+                <Item id="43104" name="Odpri..."/>
+                <Item id="43013" name="Najdi v datotekah..."/>
+                <Item id="43105" name="Zapri ikono v opravilni vrstici"/>
+            </TrayIcon>
         </Menu>
 
         <Dialog>
@@ -451,7 +476,12 @@
 				<Item id="1703" name="&amp;. se ujema z novo vrstico"/>
 				<Item id="1721" name="▲"/>
                 <Item id="1723" name="▼ Najdi naprej"/>
-                <Item id="1725" name="Kopiraj označeno besedilo"/>				
+                <Item id="1725" name="Kopiraj označeno besedilo"/>
+				<Menu>
+                    <Item id="1726" name="⇅ Swap Find with Replace"/>
+                    <Item id="1727" name="⤵ Copy from Find to Replace"/>
+                    <Item id="1728" name="⤴ Copy from Replace to Find"/>
+                </Menu>
 			</Find>
 
             <IncrementalFind title="">
@@ -513,7 +543,7 @@
 				<Item id="2"    name="Zapri"/>
 			</SHA256FromTextDlg>
             
-			<PluginsAdminDlg title="Skrbnik vtičnikov" titleAvailable = "Na voljo" titleUpdates = "Posodobitve" titleInstalled = "Nameščeno">
+			<PluginsAdminDlg title="Skrbnik vtičnikov" titleAvailable="Na voljo" titleUpdates="Posodobitve" titleInstalled="Nameščeno" titleIncompatible="Nezdružljivo">
 				<ColumnPlugin   name="Vtičnik"/>
 				<ColumnVersion  name="Različica"/>
 				<Item id="5501" name="Išči:"/>
@@ -521,6 +551,8 @@
 				<Item id="5504" name="Posodobi"/>
 				<Item id="5505" name="Odstrani"/>
 				<Item id="5508" name="Naslednji"/>
+                <Item id="5509" name="Različica seznama vtičnikov: "/>
+                <Item id="5511" name="Odlagališče seznama vtičnikov"/>				
 				<Item id="2"    name="Zapri"/>
 			</PluginsAdminDlg>
 
@@ -538,9 +570,9 @@
                     <Item id="2209" name="Velikost pisave:"/>
 					<Item id="2211" name="Slog:"/>
                     <Item id="2212" name="Barve sloga"/>
-                    <Item id="2213" name="Slog pisave"/>
-                    <Item id="2214" name="Privzeta razširitev:"/>
-                    <Item id="2216" name="Uporabniška razširitev:"/>
+                    <Item id="2213" name="Pisava sloga"/>
+                    <Item id="2214" name="Privzeta pripona:"/>
+                    <Item id="2216" name="Uporabniška pripona:"/>
                     <Item id="2218" name="Podčrtano"/>
                     <Item id="2219" name="Privzete ključne besede"/>
                     <Item id="2221" name="Uporabniško določene ključne besede"/>
@@ -573,6 +605,20 @@
                 <ScintillaCommandsTab name="Ukazi Scintilla"/>
                 <ConflictInfoOk name="Za to postavko ni konfliktov z bližnjico."/>
                 <ConflictInfoEditing name="Ni konfliktov . . ."/>
+                <WindowCategory name="Okno"/>
+                <FileCategory name="File"/>
+                <EditCategory name="Edit"/>
+                <SearchCategory name="Search"/>
+                <ViewCategory name="View"/>
+                <FormatCategory name="Format"/>
+                <LangCategory name="Lang"/>
+                <AboutCategory name="About"/>
+                <SettingCategory name="Setting"/>
+                <ToolCategory name="Tool"/>
+                <ExecuteCategory name="Execute"/>
+                <ModifyContextMenu name="Modify"/>
+                <DeleteContextMenu name="Delete"/>
+                <ClearContextMenu name="Clear"/>				
 				<MainCommandNames>
 				    <Item id="41019" name="Odpri vsebino mape v Raziskovalcu"/>
                     <Item id="41020" name="Odpri vsebino mape v ukaznem pozivu"/>
@@ -621,14 +667,14 @@
                     <Item id="44102" name="Poglej trenutno datoteko v"/>
 					<Item id="50003" name="Preklopi na predhodni dokument"/>
 					<Item id="50004" name="Preklopi na naslednji dokument"/>
-                    <Item id="44051" name="Strni raven 1"/>
-                    <Item id="44052" name="Strni raven 2"/>
-                    <Item id="44053" name="Strni raven 3"/>
-                    <Item id="44054" name="Strni raven 4"/>
-                    <Item id="44055" name="Strni raven 5"/>
-                    <Item id="44056" name="Strni raven 6"/>
-                    <Item id="44057" name="Strni raven 7"/>
-                    <Item id="44058" name="Strni raven 8"/>
+                    <Item id="44051" name="Zloži raven 1"/>
+                    <Item id="44052" name="Zloži raven 2"/>
+                    <Item id="44053" name="Zloži raven 3"/>
+                    <Item id="44054" name="Zloži raven 4"/>
+                    <Item id="44055" name="Zloži raven 5"/>
+                    <Item id="44056" name="Zloži raven 6"/>
+                    <Item id="44057" name="Zloži raven 7"/>
+                    <Item id="44058" name="Zloži raven 8"/>
                     <Item id="44061" name="Razgrni raven 1"/>
                     <Item id="44062" name="Razgrni raven 2"/>
                     <Item id="44063" name="Razgrni raven 3"/>
@@ -651,6 +697,12 @@
                     <Item id="44107" name="Preklopi v mapo kot delovni prostor"/>
                     <Item id="44109" name="Preklopi v seznam dokumentov"/>      
 					<Item id="44108" name="Preklopi v seznam funkcij"/>
+                    <Item id="44110" name="Odstrani barvo zavihka"/>
+                    <Item id="44111" name="Uporabi barvo zavihka 1"/>
+                    <Item id="44112" name="Uporabi barvo zavihka 2"/>
+                    <Item id="44113" name="Uporabi barvo zavihka 3"/>
+                    <Item id="44114" name="Uporabi barvo zavihka 4"/>
+                    <Item id="44115" name="Uporabi barvo zavihka 5"/>
                     <Item id="11002" name="Razvrsti po imenu od A do Z"/>
                     <Item id="11003" name="Razvrsti po imenu od Z do A"/>
                     <Item id="11004" name="Razvrsti po poti od A do Z"/>
@@ -683,6 +735,7 @@
 				<Item id="20011" name="Prosojnost"/>
 				<Item id="20015" name="Uvoz..."/>
 				<Item id="20016" name="Izvoz..."/>
+				<Item id="20017" name="Odklopi"/>
 			    <StylerDialog title="Pogovorno okno Slogovnika">
 				    <Item id="25030" name="Možnosti pisave:"/>
 				    <Item id="25006" name="Barva pisave"/>
@@ -860,7 +913,7 @@
 					<Item id="6109" name="Potemni neaktivne zavihke"/>
 					<Item id="6110" name="Nariši obarvano vrstico na aktivnem zavihku"/>
 					
-					<Item id="6111" name="Pokaži vrstico stanja"/>
+					<Item id="6111" name="Prikaži vrstico stanja"/>
 					<Item id="6112" name="Prikaži gumb za zapiranje na vsakem zavihku"/>
 					<Item id="6113" name="Dvokliknite za zaprtje dokumenta"/>
 					<Item id="6118" name="Skrij"/>
@@ -879,8 +932,8 @@
 					<Item id="6216" name="Nastavitve kazalca"/>
 					<Item id="6217" name="Širina:"/>
 					<Item id="6219" name="Hitrost utripanja:"/>
-					<Item id="6221" name="F"/>
-					<Item id="6222" name="S"/>
+					<Item id="6221" name="H"/>
+					<Item id="6222" name="P"/>
 			        <Item id="6246" name="Naredi preklopne ukaze za zlaganje/razpiranje na trenutni ravni"/>		
 					<Item id="6225" name="Omogoči (Ctrl+klik miške/izbor)"/>
 					<Item id="6227" name="Prelom vrstice"/>
@@ -900,11 +953,17 @@
                     <Item id="6247" name="EOL (CRLF)"/> <!-- Don't translate "(CRLF)" -->
                     <Item id="6248" name="Privzeto"/>
                     <Item id="6249" name="Golo besedilo"/>
-                    <Item id="6250" name="Barva po meri"/>					
+                    <Item id="6250" name="Barva po meri"/>
+					<Item id="6252" name="Nenatisljivi znaki"/>
+                    <Item id="6254" name="Kratica"/>
+                    <Item id="6255" name="Kodna točka"/>
+                    <Item id="6256" name="Barva po meri"/>
 				</Scintillas>
 				
                 <DarkMode title="Temni način">
-                    <Item id="7101" name="Omogoči temni način"/>
+		            <Item id="7131" name="Svetli način"/>
+                    <Item id="7132" name="Temni način"/>
+                    <Item id="7133" name="Sledite sistemu Windows"/>
                     <Item id="7102" name="Črno"/>
                     <Item id="7103" name="Rdeče"/>
                     <Item id="7104" name="Zeleno"/>
@@ -914,7 +973,7 @@
                     <Item id="7109" name="Oljčno"/>
                     <Item id="7115" name="Prilagojeno"/>
                     <Item id="7116" name="Na vrh"/>
-                    <Item id="7117" name="Meni vroč trak"/>
+                    <Item id="7117" name="Vroč trak menija"/>
                     <Item id="7118" name="Aktivno"/>
                     <Item id="7119" name="Glavno"/>
                     <Item id="7120" name="Napaka"/>
@@ -929,8 +988,8 @@
                     <Item id="7135" name="Toni"/>					
                 </DarkMode>
 
-                <MarginsBorderEdge title="Robovi/Obroba/Rob">				
-					<Item id="6201" name="Slog roba mape"/>
+                <MarginsBorderEdge title="Margine/Obroba/Rob">				
+					<Item id="6201" name="Slog prepogiba roba"/>
 					<Item id="6202" name="Enostaven"/>
 					<Item id="6203" name="Puščica"/>
 					<Item id="6204" name="Drevo s krogci"/>
@@ -941,6 +1000,7 @@
                     <Item id="6292" name="Dinamična širina"/>
                     <Item id="6293" name="Konstantna širina"/>
                     <Item id="6207" name="Prikaži zaznamek"/>  
+                    <Item id="6223" name="Prikaži zgodovino sprememb"/>
 					<Item id="6211" name="Nastavitev navpičnega roba"/>
 					<Item id="6213" name="Način ozadja"/>
 					<Item id="6237" name="Dodajte oznako stolpca tako, da z decimalno številko navedete njegovo pozicijo.
@@ -973,7 +1033,7 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
 					<Item id="6413" name="Privzeti imenik Odpri/Shrani datoteko"/>
 					<Item id="6414" name="Sledi trenutnemu dokumentu"/>
 					<Item id="6415" name="Zapomni si zadnji uporabljen imenik"/>
-                    <Item id="6431" name="Odpri vse datoteke mape namesto začete Mape kot delovni prostor na spuščajočih mapah"/>
+                    <Item id="6431" name="Odpri vse datoteke mape namesto začete mape kot delovni prostor na spuščajočih mapah"/>
 				</DefaultDir>
 				
 				<FileAssoc title="Povezave datotek">
@@ -984,13 +1044,13 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
 				<Language title="Jezik">					
 					<Item id="6505" name="Razpoložljive postavke"/>
 					<Item id="6506" name="Onemogočene postavke"/>
-					<Item id="6507" name="Strni Meni Jezik"/>
+					<Item id="6507" name="Kompaktni Meni Jezik"/>
 					<Item id="6508" name="Meni Jezik"/> 			
 					<Item id="6301" name="Nastavitve zavihka"/>
 					<Item id="6302" name="Zamenjaj s presledki"/>
 					<Item id="6303" name="Velikost zavihka: "/>
 					<Item id="6510" name="Uporabi privzeto vrednost"/>
-					<Item id="6335" name="Uporabite poševnico kot ubežni znak za SQL"/>
+					<Item id="6335" name="Uporabi poševnico kot ubežni znak za SQL"/>
 			   	</Language>
 
                 <Highlighting title="Poudarjanje">
@@ -1017,7 +1077,7 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
 					<Item id="6604" name="Obrni"/>
 					<Item id="6605" name="Črno na belem"/>
 					<Item id="6606" name="Brez barve ozadja"/>
-					<Item id="6607" name="Nastavitve robov (enota: mm)"/>
+					<Item id="6607" name="Nastavitve margin (enota: mm)"/>
 					<Item id="6612" name="Levo"/>
 					<Item id="6613" name="Na vrhu"/>
 					<Item id="6614" name="Desno"/>
@@ -1089,7 +1149,7 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
 				<AutoCompletion title="Samodejno dopolnjevanje">
 					<Item id="6115" name="Samodejno zamikaj"/>
 					<Item id="6807" name="Samodejno dopolnjevanje"/>
-					<Item id="6808" name="Omogoči samodejno dopolnjevanje ob vsakem vnosu"/>
+					<Item id="6808" name="Omogoči samodejno dop. ob vsakem vnosu"/>
 					<Item id="6809" name="Dopolnjevanje funkcij"/>
 					<Item id="6810" name="Dopolnjevanje besed"/>
 					<Item id="6816" name="Funkcija in beseda zaključka"/>
@@ -1099,10 +1159,10 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
 					<Item id="6824" name="Prezri številke"/>
 					<Item id="6811" name="Od"/>
 					<Item id="6813" name=". znaka naprej"/>
-					<Item id="6814" name="Veljavna vrednost: 1 - 9"/>
+					<Item id="6872" name="Naredi kratek seznam samodokončanj"/>
 					<Item id="6815" name="Namig parametrov funkcije ob vnosu"/>
 					<Item id="6851" name="Samodejno vstavljanje"/>
-					<Item id="6857" name=" html/xml zapri oznako"/>
+					<Item id="6857" name=" html/xml zapiranje oznake"/>
 					<Item id="6858" name="Odpri"/>
 					<Item id="6859" name="Zapri"/>
 					<Item id="6860" name="Usklajen par 1:"/>
@@ -1110,8 +1170,8 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
 					<Item id="6866" name="Usklajen par 3:"/>
 				</AutoCompletion>
                 
-				<MultiInstance title="Večpojavnost &amp; Date">
-					<Item id="6151" name="Nastavitve večpojavnosti"/>
+				<MultiInstance title="Večpojavnost &amp; Datum">
+					<Item id="6151" name="Nastavitve večpojavnosti *"/>
                     <Item id="6152" name="Odpri sejo v novem primerku (in samodejno shrani sejo ob izhodu)"/>
                     <Item id="6153" name="Vedno v načinu večpojavnosti"/>
                     <Item id="6154" name="Privzeto (enopojavnost)"/>
@@ -1119,6 +1179,16 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
                     <Item id="6171" name="Prilagodi datum in čas vstavitve"/>
                     <Item id="6175" name="Obrni privzeti vrstni red datuma in časa (kratki &amp;&amp; dolgi formati)"/>
                     <Item id="6172" name="Format po meri:"/> 
+                     <Item id="6181" name="Stanje panela in [-brez seje] *"/>
+                     <Item id="6182" name="Zapomni si stanje panela (panel je odprt) v drugih primerih (način večpojavnosti) ali pri uporabi parametra ukazne vrstice [-brez seje]"/>
+                     <Item id="6183" name="Zgodovina odložišča"/>
+                     <Item id="6184" name="Seznam dokumentov"/>
+                     <Item id="6185" name="Panel znakov"/>
+                     <Item id="6186" name="Mapa kot delovni prostor"/>
+                     <Item id="6187" name="Paneli projektov"/>
+                     <Item id="6188" name="Mapa dokumenta"/>
+                     <Item id="6189" name="Seznam funkcij"/>
+                     <Item id="6190" name="Paneli vtičnikov"/>					
                </MultiInstance>
 				
 				<Delimiter title="Razmejilnik">
@@ -1131,8 +1201,20 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
                     <Item id="6163" name="Dodaj svoj znak kot del besede
 (izberite le če veste kaj počnete)"/>					
 				</Delimiter>			
+
+                <Performance title="Zmogljivosti">
+                    <Item id="7141" name="Omejitev velikih datotek"/>
+                    <Item id="7143" name="Omogoči omejitev velikih datotek (brez označevanja sintakse)"/>
+                    <Item id="7144" name="Določi velikost velike datoteke:"/>
+                    <Item id="7146" name="MB   (1 - 4096)"/>
+                    <Item id="7147" name="Dovoli ujemanje oklepajev"/>
+                    <Item id="7148" name="Dovoli samodejno dokončanje"/>
+                    <Item id="7149" name="Dovoli pametno označevanje"/>
+                    <Item id="7150" name="Globalno deaktiviraj prelom besed"/>
+                    <Item id="7151" name="Dovoli URL, ki jo je mogoče klikniti"/>
+                </Performance>
 				
-				<Cloud title="Oblak &amp; Link">
+				<Cloud title="Oblak &amp; Povezava">
                     <Item id="6262" name="Nastavitve na oblaku"/>
                     <Item id="6263" name="Brez oblaka"/>
                     <Item id="6267" name="Nastavite pot do lokacije oblaka tukaj:"/>
@@ -1140,7 +1222,7 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
 					<Item id="6319" name="Omogoči"/>
 					<Item id="6320" name="Brez podčrtavanja"/>
                     <Item id="6350" name="Omogoči način fullbox"/>
-                    <Item id="6264" name="URI prilagojene sheme:"/>					
+                    <Item id="6264" name="Prilagojene URI sheme:"/>					
 				</Cloud>
                 
 				<SearchEngine title="Iskalnik">
@@ -1167,7 +1249,7 @@ Lahko določite več označevalcev stolpcev z uporabo belega presledka za ločev
 					<Item id="6322" name="Pripona datoteke seje:"/>
 					<Item id="6323" name="Omogoči samodejno posodabljanje Notepada++"/>
 					<Item id="6324" name="Preklopnik dokumentov (Ctrl+TAB)"/>
-					<Item id="6331" name="V naslovni vrstici pokaži le ime datoteke"/>
+					<Item id="6331" name="V naslovni vrstici prikaži le ime datoteke"/>
 					<Item id="6334" name="Samodejno zaznavanje kodiranja znakov"/>			
 					<Item id="6349" name="Uporabite DirectWrite (lahko izboljša upodabljanje posebnih znakov; ponovno morate zagnati Notepad++)"/>				
 					<Item id="6337" name="Delovni prostor pripone datoteke:"/>
@@ -1241,7 +1323,8 @@ To pogovorno okno lahko pozneje znova aktivirate v nastavitvah."/>
                 <Item id="4" name="Vedno da"/>
             </DoSaveAll> <!-- HowToReproduce: Check the 'Enable Save All confirm dialog' checkbox in Preference->MISC, now click 'Save all' -->			
 		</Dialog>
-		<MessageBox> <!-- $INT_REPLACE$ is a place holder, don't translate it -->
+		<MessageBox>
+			<!-- $INT_REPLACE$ and $STR_REPLACE$ are place holders, don't translate these place holders. -->
             <ContextMenuXmlEditWarning title="Urejanje Kontekstnega menija" message="Urejanje contextMenu.xml vam omogoča, da spremenite Notepad++ pojavni kontekstni meni.
 Za uveljavitev sprememb v contextMenu.xml morate znova zagnati Notepad++."/>
             <SaveCurrentModifWarning title="Shrani trenutno spremembo" message="Morate shraniti trenutno spremembo.
@@ -1269,7 +1352,18 @@ Vaše nastavitve za oblak bodo preklicane. Ponastavite skladno vrednosti preko p
 			<DroppingFolderAsProjectModeWarning title="Neveljaven ukrep" message="Datoteke ali mape lahko samo spustite, vendar ne oboje, ker ste v spusti mapo, kot načinu projekta.
 morate omogočiti &quot;Odpri vse datoteke v mapi, namesto da zaženete Mapa kot delovni prostor pri spustu mape&quot; v &quot;Privzeti imenik&quot; v pogovornem oknu Nastavitve, da bo ta operacija delovala."/>
 			<SortingError title="Napaka pri razvrščanju" message="Zaradi vrstice ni bilo mogoče izvesti numeričnega razvrščanja $INT_REPLACE$."/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
-			<ColumnModeTip title="Način stolpca" message="Za preklop v način stolpca uporabite &quot;ALT+izbiro miške ali Alt+Shift+puščica."/>
+            <ColumnModeTip title="Nasvet za način stolpca" message="
+Obstajajo 3 načini za preklop v način izbire stolpcev:
+
+1. (Tipkovnica in miška) Držite tipko Alt med vlečenjem z levim klikom
+
+2. (Samo tipkovnica) Med uporabo puščičnih tipk držite Alt+Shift
+
+3. (Tipkovnica ali miška)
+      Postavite kazalko na želeni začetek položaja bloka stolpcev,nato
+        izvedite &quot;Začetek/konec izbire v načinu stolpcev&quot; ukaz;
+	  Premaknite kazalko na želeni konec bloka stolpca, nato
+        izvedite &quot;Začetek/konec izbire v načinu stolpcev&quot; ukaz znova"/>
 			<BufferInvalidWarning title="Shranjevanje ni uspelo" message="Ni mogoče shraniti: Medpomnilnik je neveljaven."/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 			<DoCloseOrNot title="Ohrani neobstoječo datoteko" message="Datoteka &quot;$STR_REPLACE$&quot; ne obstaja več.
 Pustim to datoteko v urejevalniku?"/>
@@ -1300,6 +1394,8 @@ Ali jo želite odpreti?"/>
 			<CreateNewFileOrNot title="Ustvari novo datoteko" message="&quot;$STR_REPLACE$&quot; ne obstaja. Jo ustvarim?"/>
 			<CreateNewFileError title="Ustvari novo datoteko" message="Datoteke ni mogoče ustvariti &quot;$STR_REPLACE$&quot;."/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 			<OpenFileError title="NAPAKA" message="Datoteke ni mogoče odpreti &quot;$STR_REPLACE$&quot;."/>
+			<OpenFileNoFolderError title="Datoteke ni mogoče odpreti" message="&quot;$STR_REPLACE1$&quot; ni mogoče odpreti:
+Mapa &quot;$STR_REPLACE2$&quot; ne obstaja."/>
 			<FileBackupFailed title="Varnostno kopiranje datoteke ni uspelo" message="Prejšnjo različico datoteke ni bilo mogoče shraniti v varnostno mapo na &quot;$STR_REPLACE$&quot;.
 
 Želite shraniti trenutno datoteko?"/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
@@ -1338,6 +1434,11 @@ izberite katerokoli drugo."/>
 Po zaključku vseh operacij se bo Notepad++ znova zagnal.
 Nadaljujem?"/>
 			<NeedToRestartToLoadPlugins title="Notepad++ je treba znova zagnati" message="Če želite naložiti vtičnike, morate znova zagnati Notepad++."/> <!-- HowToReproduce: Import a plugin via menu "Settings->Import->Import Plugin(s)...". -->
+			<ChangeHistoryEnabledWarning title="Notepad++ je treba znova zagnati" message="Če želite omogočiti zgodovino sprememb, morate znova zagnati Notepad++."/> <!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
+			<WindowsSessionExit title="Notepad++ - izhod iz seje sistema Windows" message="Seja sistema Windows bo kmalu prekinjena, vendar pa imate še nekaj neshranjenih podatkov. Ali želite zapustiti Notepad++ zdaj?"/>
+			<LanguageMenuCompactWarning title="Kompakten jezikovni meni" message="Ta možnost bo spremenjena ob naslednjem zagonu."/> <!-- HowToReproduce: toggle "Make language menu compact" via Preferences dialog "Language/Language Menu. -->
+            <SwitchUnsavedThemeWarning title="$STR_REPLACE$" message="Neshranjene spremembe bodo kmalu zavržene!
+Ali želite shraniti spremembe, preden zamenjate temo?"/> <!-- HowToReproduce: In the Style Configurator dialog change some theme and switch to other theme without saving. -->
 		</MessageBox>        
 		<ClipboardHistory>
 			<PanelTitle name="Zgodovina odložišča"/>
@@ -1346,7 +1447,8 @@ Nadaljujem?"/>
 			<PanelTitle name="Seznam dokumentov"/>
 			<ColumnName name="Ime"/>
 			<ColumnExt name="Ekst."/>
-            <ColumnPath name="Pot"/>			
+            <ColumnPath name="Pot"/>
+            <ListGroups name="Združi po pogledu"/>			
         </DocList>
 		<WindowsDlg>
 			<ColumnName name="Ime"/>
@@ -1378,10 +1480,10 @@ Nadaljujem?"/>
 		<FolderAsWorkspace>
 			<PanelTitle name="Mapa kot delovni prostor"/>
 			<SelectFolderFromBrowserString name="Izberite mapo, ki jo želite dodati v panel Mapa kot delovni prostor"/>
-            <ExpandAllFoldersTip name="Razširi vse mape"/>
-            <CollapseAllFoldersTip name="Strni vse mape"/>
-            <LocateCurrentFileTip name="Lociraj trenutno datoteko"/>
-			<Menus>
+            <ExpandAllFoldersTip name="Razgrni vse"/>
+            <CollapseAllFoldersTip name="Zloži vse"/>
+            <LocateCurrentFileTip name="Lociraj trenutno datoteko"/>		
+			<Menu>
 				<Item id="3511" name="Odstrani"/>
                 <Item id="3512" name="Odstrani vse"/>
                 <Item id="3513" name="Dodaj"/>
@@ -1391,8 +1493,8 @@ Nadaljujem?"/>
                 <Item id="3517" name="Najdi v datotekah..."/>
                 <Item id="3518" name="Razišči tukaj"/>
                 <Item id="3519" name="CMD tukaj"/>
-				<Item id="3520" name="Kopiraj ime datoteke"/>
-			</Menus>
+				<Item id="3520" name="Kopiraj ime datoteke"/>				
+			</Menu>
 		</FolderAsWorkspace>
 		<ProjectManager>
 			<PanelTitle name="Projekt"/>
@@ -1442,7 +1544,7 @@ Nadaljujem?"/>
             </Menus>
         </ProjectManager>	
         <MiscStrings>
-			<!-- $INT_REPLACE$  and $STR_REPLACE$ are a place holders, don't translate these place holders -->
+			<!-- $INT_REPLACE$ and $STR_REPLACE$ are place holders, don't translate these place holders. -->
 			<word-chars-list-tip value="To vam omogoča vključevati dodatni znak v aktualnih besednih znakih med dvoklikom za izbiro ali iskanje z &quot;Ujemanje samo cele besede&quot; možnost preverbe."/>
 
             <!-- Don't translate "(&quot;EOL custom color&quot;)" -->
@@ -1505,7 +1607,7 @@ Najdi v vseh datotekah, vendar rekurzivno izključite vse mape dnevnikov ali vse
             <find-status-scope-forward value="od karete do konca datoteke"/>
 			<finder-find-in-finder value="Najdi v teh rezultatih iskanja..."/>
 			<finder-close-this value="Zapri te rezultate iskanja"/>
-			<finder-collapse-all value="Strni vse"/>
+			<finder-collapse-all value="Zloži vse"/>
 			<finder-uncollapse-all value="Razgrni vse"/>
 			<finder-copy value="Kopiraj izbrane vrstice"/>
             <finder-copy-verbatim value="Kopiraj"/>
@@ -1522,13 +1624,9 @@ Najdi v vseh datotekah, vendar rekurzivno izključite vse mape dnevnikov ali vse
             <tabrename-newname value="Novo ime: "/>
             <splitter-rotate-left value="Zasuk na levo"/>
             <splitter-rotate-right value="Zasuk v desno"/>			
-            <recent-file-history-maxfile value="Maks. datotek: "/>
-            <language-tabsize value="Velikost zavihka: "/>
             <userdefined-title-new value="Ustvari nov jezik..."/>
             <userdefined-title-save value="Shrani ime trenutnega jezika kot..."/>
             <userdefined-title-rename value="Preimenuj ime trenutnega jezika"/>
-            <autocomplete-nb-char value="Št. znak: "/>
-            <edit-verticaledge-nb-col value="Št. stolpec:"/>
 			<summary value="Povzetek"/>
 			<summary-filepath value="Celotna pot datoteke: "/>
             <summary-filecreatetime value="Ustvarjeno: "/>
@@ -1540,6 +1638,8 @@ Najdi v vseh datotekah, vendar rekurzivno izključite vse mape dnevnikov ali vse
             <summary-nbsel1 value=" izbrani znaki ("/>
             <summary-nbsel2 value=" bajtov) v "/>
             <summary-nbrange value=" razponu"/>
+			<progress-cancel-button value="Prekliči"/>
+            <progress-cancel-info value="Preklic operacije, počakajte..."/>
             <find-in-files-progress-title value="Potek iskanja v datotekah..."/>
 		    <replace-in-files-confirm-title value="Ali ste prepričani?"/>
             <replace-in-files-confirm-directory value="Ali ste prepričani, da želite zamenjati vse pojavitve v :"/>
@@ -1568,7 +1668,40 @@ Najdi v vseh datotekah, vendar rekurzivno izključite vse mape dnevnikov ali vse
             <contextMenu-styleAlloccurrencesOfToken value="Slog vseh pojavnosti žetona" />
             <contextMenu-styleOneToken value="Slog žetona" />
             <contextMenu-clearStyle value="Počisti slog" />
-            <contextMenu-PluginCommands value="Ukazi vtičnika" />		
+            <contextMenu-PluginCommands value="Ukazi vtičnika" />
+            <largeFileRestriction-tip value="Nekatere funkcije lahko upočasnijo delovanje velikih datotek. Te funkcije se lahko samodejno onemogočijo, ko odprete veliko datoteko. Tukaj jih lahko prilagodite.
+
+OPOMBA:
+1. Spreminjanje možnosti tukaj zahteva ponovno odpiranje trenutno odprtih velikih datotek za pravilno delovanje.
+
+2. Če &quot;Deaktiviraj prelom besed globalno&quot; označeno in odprete veliko datoteko, &quot;Word Wrap&quot; bo onemogočen za vse datoteke. Ponovno ga lahko omogočite prek menija &quot;Pogled-&gt;Prelom besed&quot;." />			
+            <npcNote-tip value="Predstavitev izbranih &quot;non-ASCII&quot; presledkov in nenatisljivih (kontrolnih) znakov.
+
+OPOMBA:
+Nekateri znaki morda že imajo določeno predstavitev in so zato vidni. Ločilo vrstic in ločilo odstavkov sta že privzeto predstavljena s kratico.
+
+Uporaba predstavitve bo onemogočila učinke znakov na besedilo.
+
+Za celoten seznam izbranih presledkov in nenatisljivih znakov preverite uporabniški priročnik.
+
+Kliknite ta gumb, da odprete spletno stran z uporabniškim priročnikom." />
+            <npcAbbreviation-tip value="Kratica : ime
+NBSP : neprekinjen presledek
+ZWSP : presledek ničelne širine
+ZWNBSP : neprekinjen presledek ničelne širine
+
+Za celoten seznam preverite uporabniški priročnik.
+Kliknite na &quot;?&quot; gumb na desni, da odprete spletno mesto z uporabniškim priročnikom." />
+            <npcCodepoint-tip value="Kodna točka : ime
+U+00A0 : neprekinjen presledek
+U+200B : presledek ničelne širine
+U+FEFF : neprekinjen presledek ničelne širine
+
+Za celoten seznam preverite uporabniški priročnik.
+Kliknite na &quot;?&quot; gumb na desni, da odprete spletno mesto z uporabniškim priročnikom." />
+
+            <!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
+            <npcCustomColor-tip value="Pojdite v konfigurator sloga, da spremenite privzeto barvo po meri za izbrane presledke in nenatisljive znake (&quot;Non-printing characters custom color&quot;)." />		
 		</MiscStrings>					
     </Native-Langue>
 </NotepadPlus>
