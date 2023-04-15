@@ -1,6 +1,6 @@
  ConEmu.x64
 
- Timestamp is 625dce8c (Mon Apr 18 22:48:12 2022)
+ Timestamp is 639fd473 (Mon Dec 19 04:03:15 2022)
 
  Preferred load address is 0000000180000000
 
@@ -230,469 +230,469 @@
  0001:000052e0       ?OpenEditor@CPluginW2800@@UEAA_NPEB_W_N11HH@Z 00000001800062e0 f   ConEmuPlugin2800.obj
  0001:00005404       ?PanelControlApi@CPluginW2800@@UEAA_JPEAXH_J0@Z 0000000180006404 f   ConEmuPlugin2800.obj
  0001:0000543c       ?PostMacroApi@CPluginW2800@@UEAAXPEB_WPEAU_INPUT_RECORD@@_N@Z 000000018000643c f   ConEmuPlugin2800.obj
- 0001:000057b0       ?ProcessEditorInputPtr@CPluginW2800@@UEAAHPEBX@Z 00000001800067b0 f   ConEmuPlugin2800.obj
- 0001:000057d0       ?RedrawAll@CPluginW2800@@UEAAXXZ 00000001800067d0 f   ConEmuPlugin2800.obj
- 0001:00005808       ?SetStartupInfoPtr@CPluginW2800@@UEAAXPEAX@Z 0000000180006808 f   ConEmuPlugin2800.obj
- 0001:0000595c       ?SetWindow@CPluginW2800@@UEAAXH@Z 000000018000695c f   ConEmuPlugin2800.obj
- 0001:00005a94       ?ShowMessage@CPluginW2800@@UEAAHPEB_WH_N@Z 0000000180006a94 f   ConEmuPlugin2800.obj
- 0001:00005afc       ?ShowPluginMenu@CPluginW2800@@UEAAHPEAUConEmuPluginMenuItem@@HH@Z 0000000180006afc f   ConEmuPlugin2800.obj
- 0001:00005c50       ?ShowUserScreen@CPluginW2800@@UEAAX_N@Z 0000000180006c50 f   ConEmuPlugin2800.obj
- 0001:00005c7c       ?UpdateConEmuTabsApi@CPluginW2800@@UEAA_NH@Z 0000000180006c7c f   ConEmuPlugin2800.obj
- 0001:000065f4       ?_Getal@?$vector@UWindowInfo@@V?$MArrayAllocator@UWindowInfo@@@@@std@@AEAAAEAV?$MArrayAllocator@UWindowInfo@@@@XZ 00000001800075f4 f i ConEmuPlugin2800.obj
- 0001:000065f8       ?_Xlength@?$vector@UtagPROCESSENTRY32W@@V?$MArrayAllocator@UtagPROCESSENTRY32W@@@@@std@@CAXXZ 00000001800075f8 f i common-kernel64:MProcess.obj
- 0001:000065f8       ?_Xlength@?$vector@UWindowInfo@@V?$MArrayAllocator@UWindowInfo@@@@@std@@CAXXZ 00000001800075f8 f i ConEmuPlugin2800.obj
- 0001:0000660c       ?deallocate@?$MArrayAllocator@UWindowInfo@@@@QEAAXPEAUWindowInfo@@_K@Z 000000018000760c f i ConEmuPlugin2800.obj
- 0001:00006624       ?erase@?$MArray@UWindowInfo@@@@QEAAX_J0@Z 0000000180007624 f i ConEmuPlugin2800.obj
- 0001:000066b4       ?insert@?$MArray@UWindowInfo@@@@QEAA_J_JAEBUWindowInfo@@0@Z 00000001800076b4 f i ConEmuPlugin2800.obj
- 0001:00006750       ?insert@?$vector@UWindowInfo@@V?$MArrayAllocator@UWindowInfo@@@@@std@@QEAA?AV?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@UWindowInfo@@@std@@@std@@@2@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@UWindowInfo@@@std@@@std@@@2@_KAEBUWindowInfo@@@Z 0000000180007750 f i ConEmuPlugin2800.obj
- 0001:00006ba4       ?push_back@?$MArray@UWindowInfo@@@@QEAA_JAEBUWindowInfo@@@Z 0000000180007ba4 f i ConEmuPlugin2800.obj
- 0001:00006c28       ?what@exception@std@@UEBAPEBDXZ 0000000180007c28 f i ConEmuPlugin2800.obj
- 0001:00006c3c       GetGlobalInfoW             0000000180007c3c f   ConEmuPlugin2800.obj
- 0001:00006cd4       ??0CPluginW995@@QEAA@XZ    0000000180007cd4 f   ConEmuPlugin995.obj
- 0001:00006e6c       ??_ECPluginW995@@UEAAPEAXI@Z 0000000180007e6c f i ConEmuPlugin995.obj
- 0001:00006e6c       ??_GCPluginW995@@UEAAPEAXI@Z 0000000180007e6c f i ConEmuPlugin995.obj
- 0001:000072ec       ?CheckPanelExist@CPluginW995@@UEAA_NXZ 00000001800082ec f   ConEmuPlugin995.obj
- 0001:00007324       ?ExecuteSynchroApi@CPluginW995@@UEAA_NXZ 0000000180008324 f   ConEmuPlugin995.obj
- 0001:00007354       ?ExitFar@CPluginW995@@UEAAXXZ 0000000180008354 f   ConEmuPlugin995.obj
- 0001:000073dc       ?GetActiveWindowType@CPluginW995@@UEAAHXZ 00000001800083dc f   ConEmuPlugin995.obj
- 0001:000074d4       ?GetEditorModifiedState@CPluginW995@@UEAAKXZ 00000001800084d4 f   ConEmuPlugin995.obj
- 0001:0000752c       ?GetFarRect@CPluginW995@@UEAA_NAEAU_SMALL_RECT@@@Z 000000018000852c f   ConEmuPlugin995.obj
- 0001:00007584       ?GetMacroArea@CPluginW995@@UEAAHXZ 0000000180008584 f   ConEmuPlugin995.obj
- 0001:000075dc       ?GetMsg@CPluginW995@@UEAAPEB_WHPEA_W_K@Z 00000001800085dc f   ConEmuPlugin995.obj
- 0001:0000764c       ?GetPanelDir@CPluginW995@@UEAAPEA_WKPEA_WH@Z 000000018000864c f   ConEmuPlugin995.obj
- 0001:00007770       ?GetPanelInfo@CPluginW995@@UEAA_NKPEAUCEPanelInfo@@@Z 0000000180008770 f   ConEmuPlugin995.obj
- 0001:000079b0       ?GetPanelItemInfo@CPluginW995@@UEAA_NAEBUCEPanelInfo@@_N_JAEAU_WIN32_FIND_DATAW@@PEAPEA_W@Z 00000001800089b0 f   ConEmuPlugin995.obj
- 0001:00007b68       ?GetPluginInfoPtr@CPluginW995@@UEAAXPEAX@Z 0000000180008b68 f   ConEmuPlugin995.obj
- 0001:00007bd4       ?GetWindowCount@CPluginW995@@UEAAHXZ 0000000180008bd4 f   ConEmuPlugin995.obj
- 0001:00007c00       ?GuiMacroDlg@CPluginW995@@UEAAXXZ 0000000180008c00 f   ConEmuPlugin995.obj
- 0001:00007c08       ?InputBox@CPluginW995@@UEAA_NPEB_W000AEAPEA_W@Z 0000000180008c08 f   ConEmuPlugin995.obj
- 0001:00007cd0       ?IsMacroActive@CPluginW995@@UEAA_NXZ 0000000180008cd0 f   ConEmuPlugin995.obj
- 0001:00007d40       ?LoadFarColors@CPluginW995@@UEAAXAEAY0BAA@E@Z 0000000180008d40 f   ConEmuPlugin995.obj
- 0001:00007dfc       ?LoadFarSettings@CPluginW995@@UEAAXPEAUCEFarInterfaceSettings@@PEAUCEFarPanelSettings@@@Z 0000000180008dfc f   ConEmuPlugin995.obj
- 0001:00007e58       ?Open@CPluginAnsi@@UEAAPEAXPEBX@Z 0000000180008e58 f i ConEmuPluginA.obj
- 0001:00007e58       ?Open@CPluginW995@@UEAAPEAXPEBX@Z 0000000180008e58 f i ConEmuPlugin995.obj
- 0001:00007e60       ?OpenEditor@CPluginW995@@UEAA_NPEB_W_N11HH@Z 0000000180008e60 f   ConEmuPlugin995.obj
- 0001:00007f68       ?PanelControlApi@CPluginW995@@UEAA_JPEAXH_J0@Z 0000000180008f68 f   ConEmuPlugin995.obj
- 0001:00007fac       ?PostMacroApi@CPluginW995@@UEAAXPEB_WPEAU_INPUT_RECORD@@_N@Z 0000000180008fac f   ConEmuPlugin995.obj
- 0001:00008054       ?ProcessEditorEventPtr@CPluginAnsi@@UEAAHPEAX@Z 0000000180009054 f i ConEmuPluginA.obj
- 0001:00008054       ?ProcessEditorEventPtr@CPluginW995@@UEAAHPEAX@Z 0000000180009054 f i ConEmuPlugin995.obj
- 0001:00008054       ?ProcessEditorInputPtr@CPluginAnsi@@UEAAHPEBX@Z 0000000180009054 f i ConEmuPluginA.obj
- 0001:00008054       ?ProcessSynchroEventPtr@CPluginAnsi@@UEAAHPEAX@Z 0000000180009054 f i ConEmuPluginA.obj
- 0001:00008054       ?ProcessSynchroEventPtr@CPluginW995@@UEAAHPEAX@Z 0000000180009054 f i ConEmuPlugin995.obj
- 0001:00008054       ?ProcessViewerEventPtr@CPluginAnsi@@UEAAHPEAX@Z 0000000180009054 f i ConEmuPluginA.obj
- 0001:00008054       ?ProcessViewerEventPtr@CPluginW995@@UEAAHPEAX@Z 0000000180009054 f i ConEmuPlugin995.obj
- 0001:00008058       ?ProcessEditorInputPtr@CPluginW995@@UEAAHPEBX@Z 0000000180009058 f   ConEmuPlugin995.obj
- 0001:00008074       ?RedrawAll@CPluginW995@@UEAAXXZ 0000000180009074 f   ConEmuPlugin995.obj
- 0001:000080a4       ?SetStartupInfoPtr@CPluginW995@@UEAAXPEAX@Z 00000001800090a4 f   ConEmuPlugin995.obj
- 0001:00008200       ?SetWindow@CPluginW995@@UEAAXH@Z 0000000180009200 f   ConEmuPlugin995.obj
- 0001:0000824c       ?ShowMessage@CPluginW995@@UEAAHPEB_WH_N@Z 000000018000924c f   ConEmuPlugin995.obj
- 0001:000082ac       ?ShowPluginMenu@CPluginW995@@UEAAHPEAUConEmuPluginMenuItem@@HH@Z 00000001800092ac f   ConEmuPlugin995.obj
- 0001:000083e8       ?ShowUserScreen@CPluginW995@@UEAAX_N@Z 00000001800093e8 f   ConEmuPlugin995.obj
- 0001:00008414       ?StopWaitEndSynchro@CPluginW995@@UEAAXXZ 0000000180009414 f   ConEmuPlugin995.obj
- 0001:00008444       ?UpdateConEmuTabsApi@CPluginW995@@UEAA_NH@Z 0000000180009444 f   ConEmuPlugin995.obj
- 0001:000086bc       ?WaitEndSynchro@CPluginW995@@UEAAXXZ 00000001800096bc f   ConEmuPlugin995.obj
- 0001:00008854       ??0CPluginAnsi@@QEAA@XZ    0000000180009854 f   ConEmuPluginA.obj
- 0001:000089b8       ??_GCPluginAnsi@@UEAAPEAXI@Z 00000001800099b8 f i ConEmuPluginA.obj
- 0001:000089b8       ??_ECPluginAnsi@@UEAAPEAXI@Z 00000001800099b8 f i ConEmuPluginA.obj
- 0001:00008f70       ?CheckPanelExist@CPluginAnsi@@UEAA_NXZ 0000000180009f70 f   ConEmuPluginA.obj
- 0001:00008fa8       ?GetFarRect@CPluginAnsi@@UEAA_NAEAU_SMALL_RECT@@@Z 0000000180009fa8 f i ConEmuPluginA.obj
- 0001:00008fa8       ?ExecuteSynchroApi@CPluginAnsi@@UEAA_NXZ 0000000180009fa8 f i ConEmuPluginA.obj
- 0001:00008fac       ?ExitFar@CPluginAnsi@@UEAAXXZ 0000000180009fac f   ConEmuPluginA.obj
- 0001:00008ff0       ?GetActiveWindowType@CPluginAnsi@@UEAAHXZ 0000000180009ff0 f   ConEmuPluginA.obj
- 0001:00009074       ?GetEditorModifiedState@CPluginAnsi@@UEAAKXZ 000000018000a074 f   ConEmuPluginA.obj
- 0001:000090cc       _get_startup_argv_mode     000000018000a0cc f   LIBCMT:argv_mode.obj
- 0001:000090cc       ?GetMacroArea@CPluginAnsi@@UEAAHXZ 000000018000a0cc f   ConEmuPluginA.obj
- 0001:000090d4       ?GetMsg@CPluginAnsi@@UEAAPEB_WHPEA_W_K@Z 000000018000a0d4 f   ConEmuPluginA.obj
- 0001:00009174       ?GetPanelDir@CPluginAnsi@@UEAAPEA_WKPEA_WH@Z 000000018000a174 f   ConEmuPluginA.obj
- 0001:0000926c       ?GetPanelInfo@CPluginAnsi@@UEAA_NKPEAUCEPanelInfo@@@Z 000000018000a26c f   ConEmuPluginA.obj
- 0001:000094c4       ?GetPanelItemInfo@CPluginAnsi@@UEAA_NAEBUCEPanelInfo@@_N_JAEAU_WIN32_FIND_DATAW@@PEAPEA_W@Z 000000018000a4c4 f   ConEmuPluginA.obj
- 0001:000095fc       ?GetPluginInfoPtr@CPluginAnsi@@UEAAXPEAX@Z 000000018000a5fc f   ConEmuPluginA.obj
- 0001:00009688       ?GetWindowCount@CPluginAnsi@@UEAAHXZ 000000018000a688 f   ConEmuPluginA.obj
- 0001:000096b4       ?GuiMacroDlg@CPluginAnsi@@UEAAXXZ 000000018000a6b4 f   ConEmuPluginA.obj
- 0001:000096bc       ?InputBox@CPluginAnsi@@UEAA_NPEB_W000AEAPEA_W@Z 000000018000a6bc f   ConEmuPluginA.obj
- 0001:0000981c       ?IsMacroActive@CPluginAnsi@@UEAA_NXZ 000000018000a81c f   ConEmuPluginA.obj
- 0001:00009890       ?LoadFarColors@CPluginAnsi@@UEAAXAEAY0BAA@E@Z 000000018000a890 f   ConEmuPluginA.obj
- 0001:00009950       ?LoadFarSettings@CPluginAnsi@@UEAAXPEAUCEFarInterfaceSettings@@PEAUCEFarPanelSettings@@@Z 000000018000a950 f   ConEmuPluginA.obj
- 0001:000099b0       ?OpenEditor@CPluginAnsi@@UEAA_NPEB_W_N11HH@Z 000000018000a9b0 f   ConEmuPluginA.obj
- 0001:00009aec       ?PanelControlApi@CPluginAnsi@@UEAA_JPEAXH_J0@Z 000000018000aaec f   ConEmuPluginA.obj
- 0001:00009b28       ?PostMacroApi@CPluginAnsi@@UEAAXPEB_WPEAU_INPUT_RECORD@@_N@Z 000000018000ab28 f   ConEmuPluginA.obj
- 0001:00009bec       ?RedrawAll@CPluginAnsi@@UEAAXXZ 000000018000abec f   ConEmuPluginA.obj
- 0001:00009c20       ?SetStartupInfoPtr@CPluginAnsi@@UEAAXPEAX@Z 000000018000ac20 f   ConEmuPluginA.obj
- 0001:00009d64       ?SetWindow@CPluginAnsi@@UEAAXH@Z 000000018000ad64 f   ConEmuPluginA.obj
- 0001:00009db8       ?ShowMessage@CPluginAnsi@@UEAAHPEB_WH_N@Z 000000018000adb8 f   ConEmuPluginA.obj
- 0001:00009e94       ?ShowPluginMenu@CPluginAnsi@@UEAAHPEAUConEmuPluginMenuItem@@HH@Z 000000018000ae94 f   ConEmuPluginA.obj
- 0001:0000a030       ?ShowUserScreen@CPluginAnsi@@UEAAX_N@Z 000000018000b030 f   ConEmuPluginA.obj
- 0001:0000a05c       ?UpdateConEmuTabsApi@CPluginAnsi@@UEAA_NH@Z 000000018000b05c f   ConEmuPluginA.obj
- 0001:0000a318       ??$swprintf_c@$0BAE@@@YAHAEAY0BAE@_WPEB_WZZ 000000018000b318 f i ConEmuPluginBase.obj
- 0001:0000a344       ??$swprintf_c@$0DAM@@@YAHAEAY0DAM@_WPEB_WZZ 000000018000b344 f i ConEmuPluginBase.obj
- 0001:0000a370       ??$swprintf_c@$0EAA@@@YAHAEAY0EAA@_WPEB_WZZ 000000018000b370 f i ConEmuPluginBase.obj
- 0001:0000a39c       ??$swprintf_c@$0MI@@@YAHAEAY0MI@_WPEB_WZZ 000000018000b39c f i ConEmuPluginBase.obj
- 0001:0000a3c8       ??$wcscpy_c@$0BBE@@@YAHAEAY0BBE@_WPEB_W@Z 000000018000b3c8 f i ConEmuPluginBase.obj
- 0001:0000a414       ??$wcscpy_c@$0CAI@@@YAHAEAY0CAI@_WPEB_W@Z 000000018000b414 f i ConEmuPluginBase.obj
- 0001:0000a460       ??0CPluginBase@@QEAA@XZ    000000018000b460 f   ConEmuPluginBase.obj
- 0001:0000a57c       ??0MWow64Disable@@QEAA@XZ  000000018000b57c f i ConEmuPluginBase.obj
- 0001:0000a5f0       ??1?$MFileMapping@UConEmuGuiMapping@@@@QEAA@XZ 000000018000b5f0 f i common-user64:ConEmuCheckEx.obj
- 0001:0000a5f0       ??1?$MFileMapping@UCESERVER_CONSOLE_MAPPING_HDR@@@@QEAA@XZ 000000018000b5f0 f i ConEmuPluginBase.obj
- 0001:0000a5f0       ??1?$MFileMapping@UPanelViewSetMapping@@@@QEAA@XZ 000000018000b5f0 f i PluginBackground.obj
- 0001:0000a604       ??1CPluginBase@@UEAA@XZ    000000018000b604 f   ConEmuPluginBase.obj
- 0001:0000a610       ??1MWow64Disable@@QEAA@XZ  000000018000b610 f i ConEmuPluginBase.obj
- 0001:0000a634       ??_ECPluginBase@@UEAAPEAXI@Z 000000018000b634 f i ConEmuPluginBase.obj
- 0001:0000a634       ??_GCPluginBase@@UEAAPEAXI@Z 000000018000b634 f i ConEmuPluginBase.obj
- 0001:0000a660       ?ActivatePlugin@CPluginBase@@QEAA_NKPEAXK@Z 000000018000b660 f   ConEmuPluginBase.obj
- 0001:0000a81c       ?AddTab@CPluginBase@@QEAA_NAEAHH_N1HPEB_W2HHHH@Z 000000018000b81c f   ConEmuPluginBase.obj
- 0001:0000ab80       ?AddTabFinish@CPluginBase@@QEAAXH@Z 000000018000bb80 f   ConEmuPluginBase.obj
- 0001:0000ab8c       ?Attach2Gui@CPluginBase@@QEAA_N_N@Z 000000018000bb8c f   ConEmuPluginBase.obj
- 0001:0000afb4       ?BackgroundMacroError@CPluginBase@@SAKPEAX@Z 000000018000bfb4 f   ConEmuPluginBase.obj
- 0001:0000afdc       ?CheckBufferEnabled@CPluginBase@@QEAA_NXZ 000000018000bfdc f   ConEmuPluginBase.obj
- 0001:0000b040       ?CheckConEmuDetached@CPluginBase@@SAXXZ 000000018000c040 f   ConEmuPluginBase.obj
- 0001:0000b230       ?CheckResources@CPluginBase@@QEAAX_N@Z 000000018000c230 f   ConEmuPluginBase.obj
- 0001:0000b410       ?CloseMap@?$MFileMapping@UConEmuGuiMapping@@@@QEAAXXZ 000000018000c410 f i common-kernel64:ConEmuCheck.obj
- 0001:0000b410       ?CloseMap@?$MFileMapping@UPanelViewSetMapping@@@@QEAAXXZ 000000018000c410 f i PluginBackground.obj
- 0001:0000b410       ?CloseMap@?$MFileMapping@UCESERVER_CONSOLE_MAPPING_HDR@@@@QEAAXXZ 000000018000c410 f i ConEmuPluginBase.obj
- 0001:0000b474       ?CloseMapHeader@CPluginBase@@SAXXZ 000000018000c474 f   ConEmuPluginBase.obj
- 0001:0000b498       ?CloseTabs@CPluginBase@@SAXXZ 000000018000c498 f   ConEmuPluginBase.obj
- 0001:0000b538       ?CommonPluginStartup@CPluginBase@@QEAAXXZ 000000018000c538 f   ConEmuPluginBase.obj
- 0001:0000b644       ?CreateTabs@CPluginBase@@SA_NH@Z 000000018000c644 f   ConEmuPluginBase.obj
- 0001:0000b704       ?DllCheckUnique@CPluginBase@@KA_N_N@Z 000000018000c704 f   ConEmuPluginBase.obj
- 0001:0000b938       ?DllMain_ProcessAttach@CPluginBase@@KAXPEAUHINSTANCE__@@@Z 000000018000c938 f   ConEmuPluginBase.obj
- 0001:0000ba20       ?DllMain_ProcessDetach@CPluginBase@@KAXXZ 000000018000ca20 f   ConEmuPluginBase.obj
- 0001:0000bb08       ?EditViewConsoleOutput@CPluginBase@@QEAAX_N@Z 000000018000cb08 f   ConEmuPluginBase.obj
- 0001:0000bbd4       ?EmergencyShow@CPluginBase@@KAXXZ 000000018000cbd4 f   ConEmuPluginBase.obj
- 0001:0000bc30       ?ExecuteSynchro@CPluginBase@@QEAAXXZ 000000018000cc30 f   ConEmuPluginBase.obj
- 0001:0000bcb0       ?ExitFarCommon@CPluginBase@@QEAAX_N@Z 000000018000ccb0 f   ConEmuPluginBase.obj
- 0001:0000bcdc       ?FarSetConsoleSize@CPluginBase@@SA_NFF@Z 000000018000ccdc f   ConEmuPluginBase.obj
- 0001:0000bde8       ?FillLoadedParm@CPluginBase@@SAXPEAUConEmuLoadedArg@@PEAUHINSTANCE__@@H@Z 000000018000cde8 f   ConEmuPluginBase.obj
- 0001:0000bec0       ?FillUpdateBackground@CPluginBase@@QEAAXPEAUPaintBackgroundArg@@@Z 000000018000cec0 f   ConEmuPluginBase.obj
- 0001:0000c03c       ?FindServerCmd@CPluginBase@@QEAA_NKAEAK_N@Z 000000018000d03c f   ConEmuPluginBase.obj
- 0001:0000c138       ?GetMainThreadId@CPluginBase@@SAKXZ 000000018000d138 f   ConEmuPluginBase.obj
- 0001:0000c1e8       ?GetPanelInfo@CPluginBase@@QEAA_NKPEAUBkPanelInfo@@@Z 000000018000d1e8 f   ConEmuPluginBase.obj
- 0001:0000c28c       ?InitHWND@CPluginBase@@SAXXZ 000000018000d28c f   ConEmuPluginBase.obj
- 0001:0000c51c       ?InitResources@CPluginBase@@QEAAXXZ 000000018000d51c f   ConEmuPluginBase.obj
- 0001:0000c740       ?InitRootRegKey@CPluginBase@@IEAAXXZ 000000018000d740 f   ConEmuPluginBase.obj
- 0001:0000c874       ?InternalOpenCreate@?$MFileMapping@UCESERVER_CONSOLE_MAPPING_HDR@@@@IEAAPEAUCESERVER_CONSOLE_MAPPING_HDR@@_N0H@Z 000000018000d874 f i ConEmuPluginBase.obj
- 0001:0000c874       ?InternalOpenCreate@?$MFileMapping@UConEmuGuiMapping@@@@IEAAPEAUConEmuGuiMapping@@_N0H@Z 000000018000d874 f i common-kernel64:ConEmuCheck.obj
- 0001:0000c874       ?InternalOpenCreate@?$MFileMapping@UPanelViewSetMapping@@@@IEAAPEAUPanelViewSetMapping@@_N0H@Z 000000018000d874 f i PluginBackground.obj
- 0001:0000cb28       ?IsCurrentTabModal@CPluginBase@@QEAA_NXZ 000000018000db28 f   ConEmuPluginBase.obj
- 0001:0000cce4       ?LoadFarVersion@CPluginBase@@SA_NXZ 000000018000dce4 f   ConEmuPluginBase.obj
- 0001:0000cf8c       ?LoadPanelTabsFromRegistry@CPluginBase@@IEAAXXZ 000000018000df8c f   ConEmuPluginBase.obj
- 0001:0000d0d8       ?MonitorThreadProcW@CPluginBase@@SAKPEAX@Z 000000018000e0d8 f   ConEmuPluginBase.obj
- 0001:0000d4dc       ?NotifyConEmuUnloaded@CPluginBase@@SAXXZ 000000018000e4dc f   ConEmuPluginBase.obj
- 0001:0000d600       ?OnConsoleDetaching@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000e600 f   ConEmuPluginBase.obj
- 0001:0000d744       ?OnConsolePeekInput@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000e744 f   ConEmuPluginBase.obj
- 0001:0000d7ac       ?OnConsolePeekInputPost@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000e7ac f   ConEmuPluginBase.obj
- 0001:0000d7dc       ?OnConsolePeekReadInput@CPluginBase@@SAX_N@Z 000000018000e7dc f   ConEmuPluginBase.obj
- 0001:0000d9fc       ?OnConsoleReadInput@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000e9fc f   ConEmuPluginBase.obj
- 0001:0000da04       ?OnConsoleReadInputPost@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ea04 f   ConEmuPluginBase.obj
- 0001:0000dbb4       ?OnConsoleReadInputWork@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ebb4 f   ConEmuPluginBase.obj
- 0001:0000dc28       ?OnConsoleWasAttached@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ec28 f   ConEmuPluginBase.obj
- 0001:0000dc90       ?OnCurDirChanged@CPluginBase@@SAXXZ 000000018000ec90 f   ConEmuPluginBase.obj
- 0001:0000dcec       ?OnGetNumberOfConsoleInputEventsPost@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ecec f   ConEmuPluginBase.obj
- 0001:0000dd20       ?OnLibraryLoaded@CPluginBase@@SAXPEAUHINSTANCE__@@@Z 000000018000ed20 f   ConEmuPluginBase.obj
- 0001:0000ddc0       ?OnMainThreadActivated@CPluginBase@@QEAAXXZ 000000018000edc0 f   ConEmuPluginBase.obj
- 0001:0000df68       ?OnPanelViewCallbacks@CPluginBase@@SA_NPEAUHookCallbackArg@@P6AHPEAXPEAU_INPUT_RECORD@@KPEAKPEAH@Z5@Z 000000018000ef68 f   ConEmuPluginBase.obj
- 0001:0000e040       ?OnPostWriteConsoleOutput@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f040 f   ConEmuPluginBase.obj
- 0001:0000e04c       ?OnShellExecuteExW_Except@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f04c f   ConEmuPluginBase.obj
- 0001:0000e08c       ?OnWaitForMultipleObjects@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f08c f   ConEmuPluginBase.obj
- 0001:0000e0e0       ?OnWaitForMultipleObjectsPost@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f0e0 f   ConEmuPluginBase.obj
- 0001:0000e11c       ?OnWriteConsoleOutput@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f11c f   ConEmuPluginBase.obj
- 0001:0000e1f0       ?OpenMapHeader@CPluginBase@@SAHXZ 000000018000f1f0 f   ConEmuPluginBase.obj
- 0001:0000e3ac       ?OpenPluginCommon@CPluginBase@@QEAAPEAXH_J_N@Z 000000018000f3ac f   ConEmuPluginBase.obj
- 0001:0000e694       ?OutDataAlloc@CPluginBase@@SA_NK@Z 000000018000f694 f   ConEmuPluginBase.obj
- 0001:0000e6f4       ?OutDataRealloc@CPluginBase@@SA_NK@Z 000000018000f6f4 f   ConEmuPluginBase.obj
- 0001:0000e7bc       ?OutDataWrite@CPluginBase@@SA_NPEAXK@Z 000000018000f7bc f   ConEmuPluginBase.obj
- 0001:0000e85c       ?PanelControl@CPluginBase@@QEAA_JPEAXH_J0@Z 000000018000f85c f   ConEmuPluginBase.obj
- 0001:0000e8f4       ?Plugin@@YAPEAVCPluginBase@@XZ 000000018000f8f4 f   ConEmuPluginBase.obj
- 0001:0000e9cc       ?PrintText@CPluginBase@@QEAA_NPEB_W@Z 000000018000f9cc f   ConEmuPluginBase.obj
- 0001:0000eae8       ?ProcessCommand@CPluginBase@@QEAA_NKHPEAXPEAPEAUCESERVER_REQ@@_N@Z 000000018000fae8 f   ConEmuPluginBase.obj
- 0001:0000ef88       ?ProcessCommandLine@CPluginBase@@QEAA_NPEA_W@Z 000000018000ff88 f   ConEmuPluginBase.obj
- 0001:0000efd4       ?ProcessDragFrom@CPluginBase@@QEAAXXZ 000000018000ffd4 f   ConEmuPluginBase.obj
- 0001:0000f458       ?ProcessDragTo@CPluginBase@@QEAAXXZ 0000000180010458 f   ConEmuPluginBase.obj
- 0001:0000f768       ?ProcessEditorInputInternal@CPluginBase@@QEAAXAEBU_INPUT_RECORD@@@Z 0000000180010768 f   ConEmuPluginBase.obj
- 0001:0000f794       ?ProcessEditorViewerEvent@CPluginBase@@QEAAHHH@Z 0000000180010794 f   ConEmuPluginBase.obj
- 0001:0000f848       ?ProcessSetWindowCommand@CPluginBase@@QEAAXXZ 0000000180010848 f   ConEmuPluginBase.obj
- 0001:0000f970       ?ProcessSynchroEvent@CPluginBase@@QEAAHHPEAX@Z 0000000180010970 f   ConEmuPluginBase.obj
- 0001:0000f9f4       ?ReloadFarInfo@CPluginBase@@QEAA_N_N@Z 00000001800109f4 f   ConEmuPluginBase.obj
- 0001:0000fc84       ?ReloadFarInfoApi@CPluginBase@@IEAA_NXZ 0000000180010c84 f   ConEmuPluginBase.obj
- 0001:0000fe58       ?RunExternalProgram@CPluginBase@@QEAA_NPEA_W@Z 0000000180010e58 f   ConEmuPluginBase.obj
- 0001:0000ffe8       ?RunExternalProgramW@CPluginBase@@SA_NPEA_W0_N@Z 0000000180010fe8 f   ConEmuPluginBase.obj
- 0001:0001024c       ?SendTabs@CPluginBase@@SAXH_N@Z 000000018001124c f   ConEmuPluginBase.obj
- 0001:00010408       ?SetRootRegKey@CPluginBase@@IEAAXPEA_W@Z 0000000180011408 f   ConEmuPluginBase.obj
- 0001:000104a4       ?ShowConsoleInfo@CPluginBase@@QEAAXXZ 00000001800114a4 f   ConEmuPluginBase.obj
- 0001:000106a8       ?ShowMessage@CPluginBase@@QEAAHHH@Z 00000001800116a8 f   ConEmuPluginBase.obj
- 0001:00010724       ?ShowMessageBox@CPluginBase@@KAHPEB_WI@Z 0000000180011724 f   ConEmuPluginBase.obj
- 0001:00010808       ?ShowMessageGui@CPluginBase@@QEAAHHH@Z 0000000180011808 f   ConEmuPluginBase.obj
- 0001:00010890       ?ShowPanelsList@CPluginBase@@QEAAXXZ 0000000180011890 f   ConEmuPluginBase.obj
- 0001:000109dc       ?ShowPluginMenu@CPluginBase@@QEAAXW4PluginCallCommands@@@Z 00000001800119dc f   ConEmuPluginBase.obj
- 0001:00010be4       ?ShowProtocolWarning@CPluginBase@@KAXXZ 0000000180011be4 f   ConEmuPluginBase.obj
- 0001:00010d54       ?ShowTabsList@CPluginBase@@QEAAXXZ 0000000180011d54 f   ConEmuPluginBase.obj
- 0001:00010fdc       ?StartDebugger@CPluginBase@@QEAA_NXZ 0000000180011fdc f   ConEmuPluginBase.obj
- 0001:00011290       ?StopThread@CPluginBase@@QEAAX_N@Z 0000000180012290 f   ConEmuPluginBase.obj
- 0001:000114f4       ?StorePanelDirs@CPluginBase@@QEAA_NPEB_W0@Z 00000001800124f4 f   ConEmuPluginBase.obj
- 0001:00011664       ?StringCchCatW@@YAJPEA_W_KPEB_W@Z 0000000180012664 f i ConEmuPluginBase.obj
- 0001:00011720       ?StringCchCopyW@@YAJPEA_W_KPEB_W@Z 0000000180012720 f i ConEmuPluginBase.obj
- 0001:0001178c       ?SwitchTabCommand@CPluginBase@@QEAAXW4PluginMenuCommands@@@Z 000000018001278c f   ConEmuPluginBase.obj
- 0001:00011810       ?ToOem@CPluginBase@@SAPEADPEB_W@Z 0000000180012810 f   ConEmuPluginBase.obj
- 0001:0001186c       ?ToOem@CPluginBase@@SAXPEB_WPEAD_J@Z 000000018001286c f   ConEmuPluginBase.obj
- 0001:000118ac       ?ToUnicode@CPluginBase@@SAPEA_WPEBD@Z 00000001800128ac f   ConEmuPluginBase.obj
- 0001:00011914       ?TouchReadPeekConsoleInputs@CPluginBase@@SAXH@Z 0000000180012914 f   ConEmuPluginBase.obj
- 0001:00011960       ?UngetDummyMouseEvent@CPluginBase@@SA_N_NPEAUHookCallbackArg@@@Z 0000000180012960 f   ConEmuPluginBase.obj
- 0001:00011b0c       ?UpdateConEmuTabs@CPluginBase@@QEAA_N_N@Z 0000000180012b0c f   ConEmuPluginBase.obj
- 0001:00011d8c       ?UpdatePanelDirs@CPluginBase@@QEAAXXZ 0000000180012d8c f   ConEmuPluginBase.obj
- 0001:00011f5c       ?WaitPluginActivation@CPluginBase@@SAKKPEAPEAXHK@Z 0000000180012f5c f   ConEmuPluginBase.obj
- 0001:00012064       ?cmd_CloseQSearch@CPluginBase@@QEAAXXZ 0000000180013064 f   ConEmuPluginBase.obj
- 0001:0001209c       ?cmd_ConSetFont@CPluginBase@@QEAAXPEAX@Z 000000018001309c f   ConEmuPluginBase.obj
- 0001:000120f0       ?cmd_EMenu@CPluginBase@@QEAAXPEAX@Z 00000001800130f0 f   ConEmuPluginBase.obj
- 0001:0001220c       ?cmd_ExternalCallback@CPluginBase@@QEAA_NPEAX@Z 000000018001320c f   ConEmuPluginBase.obj
- 0001:00012270       ?cmd_GuiChanged@CPluginBase@@QEAAXPEAX@Z 0000000180013270 f   ConEmuPluginBase.obj
- 0001:000122fc       ?cmd_LeftClickSync@CPluginBase@@QEAAXPEAX@Z 00000001800132fc f   ConEmuPluginBase.obj
- 0001:000123e8       ?cmd_OpenEditorLine@CPluginBase@@QEAA_NPEAUCESERVER_REQ_FAREDITOR@@@Z 00000001800133e8 f   ConEmuPluginBase.obj
- 0001:000124b4       ?cmd_RedrawFarCall@CPluginBase@@QEAA_NAEAPEAUCESERVER_REQ@@PEAPEAU2@@Z 00000001800134b4 f   ConEmuPluginBase.obj
- 0001:00012588       ?cmd_SetWindow@CPluginBase@@QEAA_NPEAX_N@Z 0000000180013588 f   ConEmuPluginBase.obj
- 0001:00012614       ?isMacroActive@CPluginBase@@QEAA_NAEAH@Z 0000000180013614 f   ConEmuPluginBase.obj
- 0001:00012650       ?isModalEditorViewer@CPluginBase@@QEAA_NXZ 0000000180013650 f   ConEmuPluginBase.obj
- 0001:0001267c       ?pcc_Disabled@CPluginBase@@SA_NW4PluginMenuCommands@@@Z 000000018001367c f   ConEmuPluginBase.obj
- 0001:000126fc       ?pcc_Selected@CPluginBase@@SA_NW4PluginMenuCommands@@@Z 00000001800136fc f   ConEmuPluginBase.obj
- 0001:00012758       ??0CPluginBackground@@QEAA@XZ 0000000180013758 f   PluginBackground.obj
- 0001:00012910       ??1CPluginBackground@@QEAA@XZ 0000000180013910 f   PluginBackground.obj
- 0001:00012a78       ?CheckPanelFolders@CPluginBackground@@IEAAXH@Z 0000000180013a78 f   PluginBackground.obj
- 0001:00012b48       ?GetTo@?$MFileMapping@UPanelViewSetMapping@@@@QEAA_NPEAUPanelViewSetMapping@@H@Z 0000000180013b48 f i PluginBackground.obj
- 0001:00012c18       ?IsParmChanged@CPluginBackground@@IEAA_NPEAUPaintBackgroundArg@@0@Z 0000000180013c18 f   PluginBackground.obj
- 0001:00012e90       ?LoadThSet@CPluginBackground@@IEAAHH@Z 0000000180013e90 f   PluginBackground.obj
- 0001:00013204       ?MonitorBackground@CPluginBackground@@QEAAXXZ 0000000180014204 f   PluginBackground.obj
- 0001:0001326c       ?OnMainThreadActivated@CPluginBackground@@QEAAXHH@Z 000000018001426c f   PluginBackground.obj
- 0001:00013330       ?ReallocItems@CPluginBackground@@IEAAXH@Z 0000000180014330 f   PluginBackground.obj
- 0001:00013398       ?RegisterSubplugin@CPluginBackground@@QEAAHPEAURegisterBackgroundArg@@@Z 0000000180014398 f   PluginBackground.obj
- 0001:0001362c       ?SetDcPanelRect@CPluginBackground@@IEAAXPEAUtagRECT@@PEAUBkPanelInfo@@PEAUPaintBackgroundArg@@@Z 000000018001462c f   PluginBackground.obj
- 0001:00013700       ?SetForceThLoad@CPluginBackground@@QEAAXXZ 0000000180014700 f   PluginBackground.obj
- 0001:00013718       ?SetForceUpdate@CPluginBackground@@QEAAX_N@Z 0000000180014718 f   PluginBackground.obj
- 0001:00013738       ?UpdateBackground@CPluginBackground@@IEAAXXZ 0000000180014738 f   PluginBackground.obj
- 0001:00013fac       ?UpdateBackground_Exec@CPluginBackground@@KAXPEAURegisterBackgroundArg@@PEAUPaintBackgroundArg@@@Z 0000000180014fac f   PluginBackground.obj
- 0001:00013ff0       ??$swprintf_c@$09@@YAHAEAY09_WPEB_WZZ 0000000180014ff0 f i PluginSrv.obj
- 0001:0001401c       ??$wcscpy_c@$0BAE@@@YAHAEAY0BAE@_WPEB_W@Z 000000018001501c f i PluginSrv.obj
- 0001:00014068       ?DumpError@?$PipeServer@UCESERVER_REQ@@@@IEAAXPEAUPipeInst@1@PEB_WH@Z 0000000180015068 f i PluginSrv.obj
- 0001:0001417c       ?PipeServerRead@?$PipeServer@UCESERVER_REQ@@@@IEAAHPEAUPipeInst@1@@Z 000000018001517c f i PluginSrv.obj
- 0001:0001440c       ?PipeServerThread@?$PipeServer@UCESERVER_REQ@@@@IEAAKPEAUPipeInst@1@@Z 000000018001540c f i PluginSrv.obj
- 0001:000146dc       ?PipeServerWrite@?$PipeServer@UCESERVER_REQ@@@@IEAAHPEAUPipeInst@1@PEBXKPEAKH@Z 00000001800156dc f i PluginSrv.obj
- 0001:00014808       ?PlugServerCommand@@YAHPEAXPEAUCESERVER_REQ@@AEAPEAU1@AEAK3_J@Z 0000000180015808 f   PluginSrv.obj
- 0001:00014d14       ?PlugServerFree@@YAXPEAUCESERVER_REQ@@_J@Z 0000000180015d14 f   PluginSrv.obj
- 0001:00014d2c       ?PlugServerStart@@YA_NXZ   0000000180015d2c f   PluginSrv.obj
- 0001:00014e40       ?PlugServerStop@@YAX_N@Z   0000000180015e40 f   PluginSrv.obj
- 0001:00014e88       ?StartPipeInstance@?$PipeServer@UCESERVER_REQ@@@@IEAA_NPEAUPipeInst@1@@Z 0000000180015e88 f i PluginSrv.obj
- 0001:00015018       ?StartPipeServer@?$PipeServer@UCESERVER_REQ@@@@QEAA_N_NPEB_W_JPEAU_SECURITY_ATTRIBUTES@@P6AHPEAXPEAUCESERVER_REQ@@AEAPEAU3@AEAK72@ZP6AX52@ZP6AH42@ZP6AH42@ZP6AH42@Z@Z 0000000180016018 f i PluginSrv.obj
- 0001:0001519c       ?StopPipeServer@?$PipeServer@UCESERVER_REQ@@@@QEAAX_NAEA_N@Z 000000018001619c f i PluginSrv.obj
- 0001:00015524       ?WaitForClient@?$PipeServer@UCESERVER_REQ@@@@IEAA_NPEAUPipeInst@1@AEAH1@Z 0000000180016524 f i PluginSrv.obj
- 0001:0001583c       ?WaitOverlapped@?$PipeServer@UCESERVER_REQ@@@@IEAAHPEAUPipeInst@1@PEAK@Z 000000018001683c f i PluginSrv.obj
- 0001:00015a10       ?WriteDummyAnswer@?$PipeServer@UCESERVER_REQ@@@@IEAAHPEAUPipeInst@1@@Z 0000000180016a10 f i PluginSrv.obj
- 0001:00015a90       ?_PipeServerThread@?$PipeServer@UCESERVER_REQ@@@@KAKPEAX@Z 0000000180016a90 f i PluginSrv.obj
- 0001:00015aec       ?cmd_FarSetChanged@@YAXPEAUFAR_REQ_FARSETCHANGED@@@Z 0000000180016aec f   PluginSrv.obj
- 0001:00015b46       GetFileVersionInfoSizeW    0000000180016b46 f   version:VERSION.dll
- 0001:00015b4c       GetFileVersionInfoW        0000000180016b4c f   version:VERSION.dll
- 0001:00015b52       VerQueryValueW             0000000180016b52 f   version:VERSION.dll
- 0001:00015b58       CreateToolhelp32Snapshot   0000000180016b58 f   kernel32:KERNEL32.dll
- 0001:00015b5e       Thread32First              0000000180016b5e f   kernel32:KERNEL32.dll
- 0001:00015b64       Thread32Next               0000000180016b64 f   kernel32:KERNEL32.dll
- 0001:00015b6a       Module32FirstW             0000000180016b6a f   kernel32:KERNEL32.dll
- 0001:00015b70       Module32NextW              0000000180016b70 f   kernel32:KERNEL32.dll
- 0001:00015b78       ??2@YAPEAX_K@Z             0000000180016b78 f   common-kernel64:Memory.obj
- 0001:00015ba0       ??3@YAXPEAX@Z              0000000180016ba0 f   common-kernel64:Memory.obj
- 0001:00015ba0       ??_V@YAXPEAX@Z             0000000180016ba0 f   common-kernel64:Memory.obj
- 0001:00015ba8       ??_U@YAPEAX_K@Z            0000000180016ba8 f   common-kernel64:Memory.obj
- 0001:00015bb0       ?HeapDeinitialize@@YAXXZ   0000000180016bb0 f   common-kernel64:Memory.obj
- 0001:00015c14       ?HeapInitialize@@YA_NXZ    0000000180016c14 f   common-kernel64:Memory.obj
- 0001:00015c50       ?xf_calloc@@YAPEAX_K0@Z    0000000180016c50 f   common-kernel64:Memory.obj
- 0001:00015c80       ?xf_free@@YAXPEAX@Z        0000000180016c80 f   common-kernel64:Memory.obj
- 0001:00015cf8       ?xf_malloc@@YAPEAX_K@Z     0000000180016cf8 f   common-kernel64:Memory.obj
- 0001:00015d20       ?xf_realloc@@YAPEAXPEAX_K@Z 0000000180016d20 f   common-kernel64:Memory.obj
- 0001:00015d48       ??$wcscpy_c@$0CA@@@YAHAEAY0CA@_WPEB_W@Z 0000000180016d48 f i common-kernel64:ConEmuCheck.obj
- 0001:00015d94       ?ExecuteCmd@@YAPEAUCESERVER_REQ@@PEB_WPEAU1@KPEAUHWND__@@HKH@Z 0000000180016d94 f   common-kernel64:ConEmuCheck.obj
- 0001:00015f7c       ?ExecuteFreeResult@@YAXAEAPEAUCESERVER_REQ@@@Z 0000000180016f7c f   common-kernel64:ConEmuCheck.obj
- 0001:00015f9c       ?ExecuteGuiCmd@@YAPEAUCESERVER_REQ@@PEAUHWND__@@PEAU1@0H@Z 0000000180016f9c f   common-kernel64:ConEmuCheck.obj
- 0001:0001605c       ?ExecuteNewCmd@@YAPEAUCESERVER_REQ@@K_K@Z 000000018001705c f   common-kernel64:ConEmuCheck.obj
- 0001:000160c0       ?ExecuteNewCmd@@YA_NAEAPEAUCESERVER_REQ@@AEAKK_K@Z 00000001800170c0 f   common-kernel64:ConEmuCheck.obj
- 0001:000161b4       ?ExecuteOpenPipe@@YAPEAXPEB_WAEAY0CAI@_W0KKHPEAXH@Z 00000001800171b4 f   common-kernel64:ConEmuCheck.obj
- 0001:00016364       ?ExecutePrepareCmd@@YAXPEAUCESERVER_REQ@@K_K@Z 0000000180017364 f   common-kernel64:ConEmuCheck.obj
- 0001:000163a0       ?ExecutePrepareCmd@@YAXPEAUCESERVER_REQ_HDR@@K_K@Z 00000001800173a0 f   common-kernel64:ConEmuCheck.obj
- 0001:00016410       ?ExecuteSrvCmd@@YAPEAUCESERVER_REQ@@KPEAU1@PEAUHWND__@@HKH@Z 0000000180017410 f   common-kernel64:ConEmuCheck.obj
- 0001:000164e4       ?GetConEmuHWND@@YAPEAUHWND__@@W4ConEmuWndType@@@Z 00000001800174e4 f   common-kernel64:ConEmuCheck.obj
- 0001:0001658c       ?GetConEmuWindows@@YA?AUConEmuWindows@@PEAUHWND__@@@Z 000000018001758c f   common-kernel64:ConEmuCheck.obj
- 0001:000166a8       ?GetConEmuWindowsFromEnv@@YA?AUConEmuWindows@@XZ 00000001800176a8 f   common-kernel64:ConEmuCheck.obj
- 0001:00016838       ?GuiMessageBox@@YAHPEAUHWND__@@PEB_W1H@Z 0000000180017838 f   common-kernel64:ConEmuCheck.obj
- 0001:000169a0       ?IsConsoleClass@@YA_NPEB_W@Z 00000001800179a0 f   common-kernel64:ConEmuCheck.obj
- 0001:000169f0       ?IsConsoleWindow@@YA_NPEAUHWND__@@@Z 00000001800179f0 f   common-kernel64:ConEmuCheck.obj
- 0001:00016ae0       ?IsPseudoConsoleWindow@@YA_NPEAUHWND__@@@Z 0000000180017ae0 f   common-kernel64:ConEmuCheck.obj
- 0001:00016b64       ?LoadGuiMapping@@YAHKAEAUConEmuGuiMapping@@@Z 0000000180017b64 f   common-kernel64:ConEmuCheck.obj
- 0001:00016d34       ?LoadSrvMapping@@YAHPEAUHWND__@@AEAUCESERVER_CONSOLE_MAPPING_HDR@@@Z 0000000180017d34 f   common-kernel64:ConEmuCheck.obj
- 0001:00016f04       ?ModuleName@@YAPEB_WPEB_W@Z 0000000180017f04 f   common-kernel64:ConEmuCheck.obj
- 0001:00016fc4       ?myGetConsoleWindow@@YAPEAUHWND__@@XZ 0000000180017fc4 f   common-kernel64:ConEmuCheck.obj
- 0001:000170a0       ?StringCchVPrintfA@@YAJPEAD_KPEBD0@Z 00000001800180a0 f i common-kernel64:MStrSafe.obj
- 0001:00017148       ?lstrcmpni@@YAHPEB_W0H@Z   0000000180018148 f   common-kernel64:MStrSafe.obj
- 0001:00017268       ?msprintf@@YAPEB_WPEA_W_KPEB_WZZ 0000000180018268 f   common-kernel64:MStrSafe.obj
- 0001:00017288       ?mvsprintf@@YAPEB_WPEA_W_KPEB_WPEAD@Z 0000000180018288 f   common-kernel64:MStrSafe.obj
- 0001:00017728       ?sprintf_c@@YAHPEAD_JPEBDZZ 0000000180018728 f   common-kernel64:MStrSafe.obj
- 0001:00017768       ?swprintf_c@@YAHPEA_W_JPEB_WZZ 0000000180018768 f   common-kernel64:MStrSafe.obj
- 0001:000177a8       ??0CEStr@@QEAA@$$QEAU0@@Z  00000001800187a8 f   common-kernel64:CEStr.obj
- 0001:000177d0       ??0CEStr@@QEAA@PEB_W00000000@Z 00000001800187d0 f   common-kernel64:CEStr.obj
- 0001:00017944       ??0CEStr@@QEAA@XZ          0000000180018944 f   common-kernel64:CEStr.obj
- 0001:00017954       ??0bad_alloc@stdext@@QEAA@AEBV01@@Z 0000000180018954 f i common-kernel64:CEStr.obj
- 0001:00017974       ??0bad_alloc@stdext@@QEAA@XZ 0000000180018974 f i common-kernel64:CEStr.obj
- 0001:00017990       ??0exception@stdext@@QEAA@AEBV01@@Z 0000000180018990 f i common-kernel64:CEStr.obj
- 0001:000179a8       ??1CEStr@@QEAA@XZ          00000001800189a8 f   common-kernel64:CEStr.obj
- 0001:000179b0       ??1bad_alloc@stdext@@UEAA@XZ 00000001800189b0 f i common-kernel64:CEStr.obj
- 0001:000179bc       ??4CEStr@@QEAAAEAU0@$$QEAU0@@Z 00000001800189bc f   common-kernel64:CEStr.obj
- 0001:00017a08       ??4CEStr@@QEAAAEAU0@PEB_W@Z 0000000180018a08 f   common-kernel64:CEStr.obj
- 0001:00017a28       ??BCEStr@@QEBAPEB_WXZ      0000000180018a28 f   common-kernel64:CEStr.obj
- 0001:00017a28       ?data@CEStr@@QEBAPEA_WXZ   0000000180018a28 f   common-kernel64:CEStr.obj
- 0001:00017a2c       ??BCEStr@@QEBA_NXZ         0000000180018a2c f   common-kernel64:CEStr.obj
- 0001:00017a40       ??_Gbad_alloc@stdext@@UEAAPEAXI@Z 0000000180018a40 f i common-kernel64:CEStr.obj
- 0001:00017a40       ??_Ebad_alloc@stdext@@UEAAPEAXI@Z 0000000180018a40 f i common-kernel64:CEStr.obj
- 0001:00017a40       ??_Eexception@stdext@@UEAAPEAXI@Z 0000000180018a40 f i common-kernel64:CEStr.obj
- 0001:00017a40       ??_Gexception@stdext@@UEAAPEAXI@Z 0000000180018a40 f i common-kernel64:CEStr.obj
- 0001:00017a6c       ?Append@CEStr@@QEAAPEB_WPEB_W0000000@Z 0000000180018a6c f   common-kernel64:CEStr.obj
- 0001:00017b00       ?Clear@CEStr@@QEAAXXZ      0000000180018b00 f   common-kernel64:CEStr.obj
- 0001:00017b1c       ?Compare@CEStr@@QEBAHPEB_W_N@Z 0000000180018b1c f   common-kernel64:CEStr.obj
- 0001:00017b4c       ?Detach@CEStr@@QEAAPEA_WXZ 0000000180018b4c f   common-kernel64:CEStr.obj
- 0001:00017b5c       ?GetBuffer@CEStr@@QEAAPEA_W_J@Z 0000000180018b5c f   common-kernel64:CEStr.obj
- 0001:00017c2c       ?GetLen@CEStr@@QEBA_JXZ    0000000180018c2c f   common-kernel64:CEStr.obj
- 0001:00017c50       ?GetMaxCount@CEStr@@QEAA_JXZ 0000000180018c50 f   common-kernel64:CEStr.obj
- 0001:00017c7c       ?Release@CEStr@@QEAAXXZ    0000000180018c7c f   common-kernel64:CEStr.obj
- 0001:00017ca0       ?Set@CEStr@@QEAAPEB_WPEB_W_J@Z 0000000180018ca0 f   common-kernel64:CEStr.obj
- 0001:00017d7c       ?SetAt@CEStr@@QEAA_W_J_W@Z 0000000180018d7c f   common-kernel64:CEStr.obj
- 0001:00017dd4       ?StringCchCopyNW@@YAJPEA_W_KPEB_W1@Z 0000000180018dd4 f i common-kernel64:CEStr.obj
- 0001:00017e48       ?_Doraise@bad_alloc@stdext@@MEBAXXZ 0000000180018e48 f i common-kernel64:CEStr.obj
- 0001:00017e64       ?c_str@CEStr@@QEBAPEB_WPEB_W@Z 0000000180018e64 f   common-kernel64:CEStr.obj
- 0001:00017e70       ?what@exception@stdext@@UEBAPEBDXZ 0000000180018e70 f i common-kernel64:CEStr.obj
- 0001:00017e84       ?IsFilePath@@YA_NPEB_W_N@Z 0000000180018e84 f   common-kernel64:CmdLine.obj
- 0001:00018024       ?PointToExt@@YAPEB_WPEB_W@Z 0000000180019024 f   common-kernel64:CmdLine.obj
- 0001:00018048       ?PointToName@@YAPEB_WPEB_W@Z 0000000180019048 f   common-kernel64:CmdLine.obj
- 0001:000180a4       ?Unquote@@YAPEB_WPEA_W_N@Z 00000001800190a4 f   common-kernel64:CmdLine.obj
- 0001:0001810c       ??$sprintf_c@$0CI@@@YAHAEAY0CI@DPEBDZZ 000000018001910c f i common-kernel64:WThreads.obj
- 0001:00018138       ?SetThreadName@@YAXKPEAD@Z 0000000180019138 f   common-kernel64:WThreads.obj
- 0001:00018170       ?apiCreateThread@@YAPEAXP6AKPEAX@Z0PEAKPEBDH@Z 0000000180019170 f   common-kernel64:WThreads.obj
- 0001:000182b8       ?apiTerminateThreadEx@@YAHPEAXKPEBDH@Z 00000001800192b8 f   common-kernel64:WThreads.obj
- 0001:000183c0       ?apiThreadHelper@@YAKPEAX@Z 00000001800193c0 f   common-kernel64:WThreads.obj
- 0001:000185cc       ?lstrdup@@YA?AUCEStr@@PEB_W_K@Z 00000001800195cc f   common-kernel64:MStrDup.obj
- 0001:00018640       ?lstrdupW@@YA?AUCEStr@@PEBDI@Z 0000000180019640 f   common-kernel64:MStrDup.obj
- 0001:000186e4       ??0CEnvStrings@@QEAA@PEA_W@Z 00000001800196e4 f   common-kernel64:EnvVar.obj
- 0001:00018738       ??1CEnvStrings@@QEAA@XZ    0000000180019738 f   common-kernel64:EnvVar.obj
- 0001:0001875c       ?Clear@CEnvRestorer@@QEAAXXZ 000000018001975c f   common-kernel64:EnvVar.obj
- 0001:00018780       ?ExpandEnvStr@@YA?AUCEStr@@PEB_W@Z 0000000180019780 f   common-kernel64:EnvVar.obj
- 0001:00018938       ?GetEnvVar@@YA?AUCEStr@@PEB_W@Z 0000000180019938 f   common-kernel64:EnvVar.obj
- 0001:00018a50       ?SavePathVar@CEnvRestorer@@QEAAXPEB_W@Z 0000000180019a50 f   common-kernel64:EnvVar.obj
- 0001:00018a84       ?CommonShutdown@@YAXXZ     0000000180019a84 f   common-kernel64:Common.obj
- 0001:00018a94       ?IsEnvBlockVariableValid@@YA_NPEB_W@Z 0000000180019a94 f   common-kernel64:Common.obj
- 0001:00018ac8       ?IsEnvBlockVariableValid@@YA_NPEB_WAEAPEB_W@Z 0000000180019ac8 f   common-kernel64:Common.obj
- 0001:00018b1c       ?SetCommand@CESERVER_REQ_NEWCMD@@QEAAXPEB_W@Z 0000000180019b1c f   common-kernel64:Common.obj
- 0001:00018b80       ?SetEnvStrings@CESERVER_REQ_NEWCMD@@QEAAXPEB_WK@Z 0000000180019b80 f   common-kernel64:Common.obj
- 0001:00018c98       ??_GMNullDesc@@QEAAPEAXI@Z 0000000180019c98 f i common-kernel64:MSecurity.obj
- 0001:00018d0c       ?LoadAdvApi@MNullDesc@@IEAAHXZ 0000000180019d0c f i common-kernel64:MSecurity.obj
- 0001:00018e34       ?LocalSecurity@@YAPEAU_SECURITY_ATTRIBUTES@@XZ 0000000180019e34 f   common-kernel64:MSecurity.obj
- 0001:00018e8c       ?LocalSecurity@MNullDesc@@QEAAPEAU_SECURITY_ATTRIBUTES@@XZ 0000000180019e8c f i common-kernel64:MSecurity.obj
- 0001:00019008       ?ShutdownSecurity@@YAXXZ   000000018001a008 f   common-kernel64:MSecurity.obj
- 0001:00019030       ??0?$MHandleBase@PEAX@@QEAA@PEAXV?$function@$$A6AXPEAX@Z@std@@@Z 000000018001a030 f i common-kernel64:WObjects.obj
- 0001:000190a4       ??0MHandle@@QEAA@PEAXV?$function@$$A6AXPEAX@Z@std@@@Z 000000018001a0a4 f i common-kernel64:WObjects.obj
- 0001:00019144       ??4?$function@$$A6AXPEAX@Z@std@@QEAAAEAV01@$$QEAV01@@Z 000000018001a144 f i common-kernel64:WObjects.obj
- 0001:000191bc       ?Close@?$MHandleBase@PEAX@@QEAAXXZ 000000018001a1bc f i common-kernel64:WObjects.obj
- 0001:00019220       ?FileExists@@YA_NPEB_WPEA_K@Z 000000018001a220 f   common-kernel64:WObjects.obj
- 0001:000194bc       ?GetTicks@@YAKXZ           000000018001a4bc f   common-kernel64:WObjects.obj
- 0001:000194c4       ?IsWin6@@YA_NXZ            000000018001a4c4 f   common-kernel64:WObjects.obj
- 0001:000194f8       ?IsWin7@@YA_NXZ            000000018001a4f8 f   common-kernel64:WObjects.obj
- 0001:0001952c       ?IsWinVerOrHigher@@YA_NG@Z 000000018001a52c f   common-kernel64:WObjects.obj
- 0001:00019644       ?IsWindows64@@YA_NXZ       000000018001a644 f   common-kernel64:WObjects.obj
- 0001:00019668       ?SetHandle@?$MHandleBase@PEAX@@QEAA_NPEAXV?$function@$$A6AXPEAX@Z@std@@@Z 000000018001a668 f i common-kernel64:WObjects.obj
- 0001:000196d4       ?_Copy@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEBAPEAV?$_Func_base@XPEAX@2@PEAX@Z 000000018001a6d4 f i common-kernel64:WObjects.obj
- 0001:000196d4       ?_Move@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEAAPEAV?$_Func_base@XPEAX@2@PEAX@Z 000000018001a6d4 f i common-kernel64:WObjects.obj
- 0001:000196ec       ?_Delete_this@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEAAX_N@Z 000000018001a6ec f i common-kernel64:MProcess.obj
- 0001:000196ec       ?_Delete_this@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEAAX_N@Z 000000018001a6ec f i common-kernel64:WObjects.obj
- 0001:00019704       ?_Do_call@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEAAX$$QEAPEAX@Z 000000018001a704 f i common-kernel64:WObjects.obj
- 0001:00019710       ?_Get@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEBAPEBXXZ 000000018001a710 f i common-kernel64:WObjects.obj
- 0001:00019710       ?_Get@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEBAPEBXXZ 000000018001a710 f i common-kernel64:MProcess.obj
- 0001:00019718       ?_Target_type@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEBAAEBVtype_info@@XZ 000000018001a718 f i common-kernel64:WObjects.obj
- 0001:00019720       ?_VerifyVersionInfo@@YA_NPEAU_OSVERSIONINFOEXW@@K_K@Z 000000018001a720 f   common-kernel64:WObjects.obj
- 0001:000197f0       ?Init@HkFunc@@QEAA_NPEB_WPEAUHINSTANCE__@@@Z 000000018001a7f0 f   common-kernel64:HkFunc.obj
- 0001:00019880       ?isConEmuHk@HkFunc@@QEAA_NXZ 000000018001a880 f   common-kernel64:HkFunc.obj
- 0001:00019888       ??$_Emplace_reallocate@AEBUtagPROCESSENTRY32W@@@?$vector@UtagPROCESSENTRY32W@@V?$MArrayAllocator@UtagPROCESSENTRY32W@@@@@std@@QEAAPEAUtagPROCESSENTRY32W@@QEAU2@AEBU2@@Z 000000018001a888 f i common-kernel64:MProcess.obj
- 0001:00019a78       ??$emplace_back@AEBUtagPROCESSENTRY32W@@@?$vector@UtagPROCESSENTRY32W@@V?$MArrayAllocator@UtagPROCESSENTRY32W@@@@@std@@QEAA?A_TAEBUtagPROCESSENTRY32W@@@Z 000000018001aa78 f i common-kernel64:MProcess.obj
- 0001:00019b14       ??0?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAA@KK@Z 000000018001ab14 f i common-kernel64:MProcess.obj
- 0001:00019b9c       ??_E?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@UEAAPEAXI@Z 000000018001ab9c f i common-kernel64:MProcess.obj
- 0001:00019b9c       ??_EMToolHelpProcess@@UEAAPEAXI@Z 000000018001ab9c f i common-kernel64:MProcess.obj
- 0001:00019b9c       ??_G?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@UEAAPEAXI@Z 000000018001ab9c f i common-kernel64:MProcess.obj
- 0001:00019b9c       ??_GMToolHelpProcess@@UEAAPEAXI@Z 000000018001ab9c f i common-kernel64:MProcess.obj
- 0001:00019c04       ?Close@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAAXXZ 000000018001ac04 f i common-kernel64:MProcess.obj
- 0001:00019c84       ?Filter@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@MEAA_NAEBUtagPROCESSENTRY32W@@@Z 000000018001ac84 f i common-kernel64:MProcess.obj
- 0001:00019c84       __acrt_uninitialize_command_line 000000018001ac84 f i libucrt:argv_data.obj
- 0001:00019c88       ?Find@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAA_NAEBV?$function@$$A6A_NAEBUtagPROCESSENTRY32W@@@Z@std@@AEAUtagPROCESSENTRY32W@@@Z 000000018001ac88 f i common-kernel64:MProcess.obj
- 0001:00019d9c       ?Find@MToolHelpProcess@@QEAA_NKAEAUtagPROCESSENTRY32W@@@Z 000000018001ad9c f i common-kernel64:MProcess.obj
- 0001:00019e08       ?Next@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAA_NAEAUtagPROCESSENTRY32W@@@Z 000000018001ae08 f i common-kernel64:MProcess.obj
- 0001:00019ef0       ?Open@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAA_NXZ 000000018001aef0 f i common-kernel64:MProcess.obj
- 0001:00019f60       ?_Move@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEAAPEAV?$_Func_base@_NAEBUtagPROCESSENTRY32W@@@2@PEAX@Z 000000018001af60 f i common-kernel64:MProcess.obj
- 0001:00019f60       ?_Copy@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEBAPEAV?$_Func_base@_NAEBUtagPROCESSENTRY32W@@@2@PEAX@Z 000000018001af60 f i common-kernel64:MProcess.obj
- 0001:00019f74       ?_Do_call@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEAA_NAEBUtagPROCESSENTRY32W@@@Z 000000018001af74 f i common-kernel64:MProcess.obj
- 0001:00019f80       ?_Target_type@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEBAAEBVtype_info@@XZ 000000018001af80 f i common-kernel64:MProcess.obj
- 0001:00019f88       ?getNext@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@IEAA_NXZ 000000018001af88 f i common-kernel64:MProcess.obj
- 0001:0001a028       ?isTerminalMode@@YA_NXZ    000000018001b028 f   common-kernel64:MProcess.obj
- 0001:0001a164       ??0MSection@@QEAA@XZ       000000018001b164 f   common-kernel64:MSection.obj
- 0001:0001a1ec       ??0MSectionLock@@QEAA@XZ   000000018001b1ec f   common-kernel64:MSection.obj
- 0001:0001a1fc       ??0MSectionThread@@QEAA@PEAVMSection@@@Z 000000018001b1fc f   common-kernel64:MSection.obj
- 0001:0001a21c       ??1MSection@@QEAA@XZ       000000018001b21c f   common-kernel64:MSection.obj
- 0001:0001a284       ??1MSectionLock@@QEAA@XZ   000000018001b284 f   common-kernel64:MSection.obj
- 0001:0001a2a8       ??1MSectionThread@@QEAA@XZ 000000018001b2a8 f   common-kernel64:MSection.obj
- 0001:0001a2e4       ?AddRef@MSection@@IEAAXK@Z 000000018001b2e4 f   common-kernel64:MSection.obj
- 0001:0001a378       ?Lock@MSection@@IEAAHHK@Z  000000018001b378 f   common-kernel64:MSection.obj
- 0001:0001a474       ?Lock@MSectionLock@@QEAAHPEAVMSection@@HK@Z 000000018001b474 f   common-kernel64:MSection.obj
- 0001:0001a4c8       ?MyEnterCriticalSection@MSection@@IEAA_NK@Z 000000018001b4c8 f   common-kernel64:MSection.obj
- 0001:0001a5f4       ?ReleaseRef@MSection@@IEAAHK@Z 000000018001b5f4 f   common-kernel64:MSection.obj
- 0001:0001a694       ?Unlock@MSection@@IEAAXH@Z 000000018001b694 f   common-kernel64:MSection.obj
- 0001:0001a6ec       ?Unlock@MSectionLock@@QEAAXXZ 000000018001b6ec f   common-kernel64:MSection.obj
- 0001:0001a718       ?WaitUnlocked@MSection@@IEAAXKK@Z 000000018001b718 f   common-kernel64:MSection.obj
- 0001:0001a7ac       ?CheckCallbackPtr@@YA_NPEAUHINSTANCE__@@_KPEAP6A_JXZHHH@Z 000000018001b7ac f   common-kernel64:WModuleCheck.obj
- 0001:0001a8b4       ?IsModuleValid@@YA_NPEAUHINSTANCE__@@H@Z 000000018001b8b4 f   common-kernel64:WModuleCheck.obj
- 0001:0001a9bc       ??0MModule@@QEAA@PEAUHINSTANCE__@@@Z 000000018001b9bc f   common-kernel64:MModule.obj
- 0001:0001a9cc       ??1MModule@@QEAA@XZ        000000018001b9cc f   common-kernel64:MModule.obj
- 0001:0001a9d4       ?Free@MModule@@QEAAXXZ     000000018001b9d4 f   common-kernel64:MModule.obj
- 0001:0001aa0c       ??0MSectionSimple@@QEAA@_N@Z 000000018001ba0c f   common-kernel64:MSectionSimple.obj
- 0001:0001aa44       ?Close@MSectionSimple@@QEAAXXZ 000000018001ba44 f   common-kernel64:MSectionSimple.obj
- 0001:0001aa44       ??1MSectionSimple@@QEAA@XZ 000000018001ba44 f   common-kernel64:MSectionSimple.obj
- 0001:0001aa64       ?Enter@MSectionSimple@@QEAAXXZ 000000018001ba64 f   common-kernel64:MSectionSimple.obj
- 0001:0001aa6c       ?Init@MSectionSimple@@QEAAXXZ 000000018001ba6c f   common-kernel64:MSectionSimple.obj
- 0001:0001aa8c       ?Leave@MSectionSimple@@QEAAXXZ 000000018001ba8c f   common-kernel64:MSectionSimple.obj
- 0001:0001aa94       ?RecreateAndLock@MSectionSimple@@QEAA_NXZ 000000018001ba94 f   common-kernel64:MSectionSimple.obj
- 0001:0001ab04       ?TryEnter@MSectionSimple@@QEAA_NXZ 000000018001bb04 f   common-kernel64:MSectionSimple.obj
- 0001:0001ab2c       ?SetConEmuEnvHWND@@YAXPEB_WPEAUHWND__@@@Z 000000018001bb2c f   common-user64:SetEnvVar.obj
- 0001:0001ab84       ?SetConEmuEnvVar@@YAXPEAUHWND__@@@Z 000000018001bb84 f   common-user64:SetEnvVar.obj
- 0001:0001ac08       ?SetConEmuEnvVarChild@@YAXPEAUHWND__@@0@Z 000000018001bc08 f   common-user64:SetEnvVar.obj
- 0001:0001ac34       ??$wcscpy_c@$0BAF@@@YAHAEAY0BAF@_WPEB_W@Z 000000018001bc34 f i common-user64:ConEmuCheckEx.obj
- 0001:0001ac80       ?FindConEmuBaseDir@@YAHAEAY0BAF@_W0PEAUHINSTANCE__@@@Z 000000018001bc80 f   common-user64:ConEmuCheckEx.obj
- 0001:0001b32c       ?IsConEmuExeExist@@YAHPEB_WAEAY0BAF@_W@Z 000000018001c32c f   common-user64:ConEmuCheckEx.obj
- 0001:0001b3d4       ??$swprintf_c@$0FA@@@YAHAEAY0FA@_WPEB_WZZ 000000018001c3d4 f i common-user64:EmergencyShow.obj
- 0001:0001b400       ?CorrectConsolePos@@YAXPEAUHWND__@@@Z 000000018001c400 f   common-user64:EmergencyShow.obj
- 0001:0001b51c       ?EmergencyShow@@YAXPEAUHWND__@@HH@Z 000000018001c51c f   common-user64:EmergencyShow.obj
- 0001:0001b65c       ?EvaluateDefaultFontWidth@@YAHHPEB_W@Z 000000018001c65c f   common-user64:EmergencyShow.obj
- 0001:0001b77c       ?SetUserFriendlyFont@@YAXPEAUHWND__@@HH@Z 000000018001c77c f   common-user64:EmergencyShow.obj
- 0001:0001badc       ??0MSetter@@QEAA@PEAJ@Z    000000018001cadc f   common-user64:MSetter.obj
- 0001:0001baf4       ??1MSetter@@QEAA@XZ        000000018001caf4 f   common-user64:MSetter.obj
- 0001:0001bafc       ?Unlock@MSetter@@QEAAXXZ   000000018001cafc f   common-user64:MSetter.obj
- 0001:0001bb5c       ?IsDotsName@@YA_NPEB_W@Z   000000018001cb5c f   common-user64:WFiles.obj
- 0001:0001bb80       ?SearchAppPaths@@YA_NPEB_WAEAUCEStr@@_NPEAVCEnvRestorer@@@Z 000000018001cb80 f   common-user64:WFiles.obj
- 0001:0001c00c       ?GetConsoleSizeInfo@@YAXPEAUCONSOLE_INFO@@@Z 000000018001d00c f   common-user64:WConsoleEx.obj
- 0001:0001c098       ?SetConsoleFontSizeTo@@YAXPEAUHWND__@@HHPEB_WGG@Z 000000018001d098 f   common-user64:WConsoleEx.obj
- 0001:0001c480       ?SetConsoleInfo@@YAHPEAUHWND__@@PEAUCONSOLE_INFO@@@Z 000000018001d480 f   common-user64:WConsoleEx.obj
- 0001:0001c688       ?SetEnvVarExpanded@@YAXPEB_W0@Z 000000018001d688 f   common-user64:WUser.obj
- 0001:0001c76c       ?UpdateComspec@@YAXPEAUConEmuComspec@@_N@Z 000000018001d76c f   common-user64:WUser.obj
- 0001:0001cab4       ?apiShowWindow@@YA_NPEAUHWND__@@H@Z 000000018001dab4 f   common-user64:WUser.obj
- 0001:0001cac8       ?apiShowWindowAsync@@YA_NPEAUHWND__@@H@Z 000000018001dac8 f   common-user64:WUser.obj
- 0001:0001cadc       ?RegGetStringValue@@YAHPEAUHKEY__@@PEB_W1AEAUCEStr@@K@Z 000000018001dadc f   common-user64:WRegistry.obj
- 0001:0001cca0       ?FindMonitorsWorkspace@@YAHPEAUHMONITOR__@@PEAUHDC__@@PEAUtagRECT@@_J@Z 000000018001dca0 f   common-user64:Monitors.obj
- 0001:0001ccdc       ?GetAllMonitorsWorkspace@@YA?AUtagRECT@@XZ 000000018001dcdc f   common-user64:Monitors.obj
- 0001:0001cd3c       ??0bad_function_call@std@@QEAA@AEBV01@@Z 000000018001dd3c f i libcpmt:xthrow.obj
- 0001:0001cd78       ??0bad_function_call@std@@QEAA@XZ 000000018001dd78 f i libcpmt:xthrow.obj
- 0001:0001cd90       ??0length_error@std@@QEAA@AEBV01@@Z 000000018001dd90 f i libcpmt:xthrow.obj
- 0001:0001cdcc       ??0length_error@std@@QEAA@PEBD@Z 000000018001ddcc f i libcpmt:xthrow.obj
- 0001:0001ce14       ??0logic_error@std@@QEAA@AEBV01@@Z 000000018001de14 f i libcpmt:xthrow.obj
- 0001:0001ce50       ?_Xbad_function_call@std@@YAXXZ 000000018001de50 f   libcpmt:xthrow.obj
- 0001:0001ce70       ?_Xlength_error@std@@YAXPEBD@Z 000000018001de70 f   libcpmt:xthrow.obj
- 0001:0001ce94       ?what@bad_function_call@std@@UEBAPEBDXZ 000000018001de94 f i libcpmt:xthrow.obj
- 0001:0001ce9c       __GSHandlerCheck           000000018001de9c f   LIBCMT:gshandler.obj
- 0001:0001cebc       __GSHandlerCheckCommon     000000018001debc f   LIBCMT:gshandler.obj
+ 0001:000057b4       ?ProcessEditorInputPtr@CPluginW2800@@UEAAHPEBX@Z 00000001800067b4 f   ConEmuPlugin2800.obj
+ 0001:000057d4       ?RedrawAll@CPluginW2800@@UEAAXXZ 00000001800067d4 f   ConEmuPlugin2800.obj
+ 0001:0000580c       ?SetStartupInfoPtr@CPluginW2800@@UEAAXPEAX@Z 000000018000680c f   ConEmuPlugin2800.obj
+ 0001:00005960       ?SetWindow@CPluginW2800@@UEAAXH@Z 0000000180006960 f   ConEmuPlugin2800.obj
+ 0001:00005a98       ?ShowMessage@CPluginW2800@@UEAAHPEB_WH_N@Z 0000000180006a98 f   ConEmuPlugin2800.obj
+ 0001:00005b00       ?ShowPluginMenu@CPluginW2800@@UEAAHPEAUConEmuPluginMenuItem@@HH@Z 0000000180006b00 f   ConEmuPlugin2800.obj
+ 0001:00005c54       ?ShowUserScreen@CPluginW2800@@UEAAX_N@Z 0000000180006c54 f   ConEmuPlugin2800.obj
+ 0001:00005c80       ?UpdateConEmuTabsApi@CPluginW2800@@UEAA_NH@Z 0000000180006c80 f   ConEmuPlugin2800.obj
+ 0001:000065f8       ?_Getal@?$vector@UWindowInfo@@V?$MArrayAllocator@UWindowInfo@@@@@std@@AEAAAEAV?$MArrayAllocator@UWindowInfo@@@@XZ 00000001800075f8 f i ConEmuPlugin2800.obj
+ 0001:000065fc       ?_Xlength@?$vector@UtagPROCESSENTRY32W@@V?$MArrayAllocator@UtagPROCESSENTRY32W@@@@@std@@CAXXZ 00000001800075fc f i common-kernel64:MProcess.obj
+ 0001:000065fc       ?_Xlength@?$vector@UWindowInfo@@V?$MArrayAllocator@UWindowInfo@@@@@std@@CAXXZ 00000001800075fc f i ConEmuPlugin2800.obj
+ 0001:00006610       ?deallocate@?$MArrayAllocator@UWindowInfo@@@@QEAAXPEAUWindowInfo@@_K@Z 0000000180007610 f i ConEmuPlugin2800.obj
+ 0001:00006628       ?erase@?$MArray@UWindowInfo@@@@QEAAX_J0@Z 0000000180007628 f i ConEmuPlugin2800.obj
+ 0001:000066b8       ?insert@?$MArray@UWindowInfo@@@@QEAA_J_JAEBUWindowInfo@@0@Z 00000001800076b8 f i ConEmuPlugin2800.obj
+ 0001:00006754       ?insert@?$vector@UWindowInfo@@V?$MArrayAllocator@UWindowInfo@@@@@std@@QEAA?AV?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@UWindowInfo@@@std@@@std@@@2@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@UWindowInfo@@@std@@@std@@@2@_KAEBUWindowInfo@@@Z 0000000180007754 f i ConEmuPlugin2800.obj
+ 0001:00006ba8       ?push_back@?$MArray@UWindowInfo@@@@QEAA_JAEBUWindowInfo@@@Z 0000000180007ba8 f i ConEmuPlugin2800.obj
+ 0001:00006c2c       ?what@exception@std@@UEBAPEBDXZ 0000000180007c2c f i ConEmuPlugin2800.obj
+ 0001:00006c40       GetGlobalInfoW             0000000180007c40 f   ConEmuPlugin2800.obj
+ 0001:00006cd8       ??0CPluginW995@@QEAA@XZ    0000000180007cd8 f   ConEmuPlugin995.obj
+ 0001:00006e70       ??_ECPluginW995@@UEAAPEAXI@Z 0000000180007e70 f i ConEmuPlugin995.obj
+ 0001:00006e70       ??_GCPluginW995@@UEAAPEAXI@Z 0000000180007e70 f i ConEmuPlugin995.obj
+ 0001:000072f0       ?CheckPanelExist@CPluginW995@@UEAA_NXZ 00000001800082f0 f   ConEmuPlugin995.obj
+ 0001:00007328       ?ExecuteSynchroApi@CPluginW995@@UEAA_NXZ 0000000180008328 f   ConEmuPlugin995.obj
+ 0001:00007358       ?ExitFar@CPluginW995@@UEAAXXZ 0000000180008358 f   ConEmuPlugin995.obj
+ 0001:000073e0       ?GetActiveWindowType@CPluginW995@@UEAAHXZ 00000001800083e0 f   ConEmuPlugin995.obj
+ 0001:000074d8       ?GetEditorModifiedState@CPluginW995@@UEAAKXZ 00000001800084d8 f   ConEmuPlugin995.obj
+ 0001:00007530       ?GetFarRect@CPluginW995@@UEAA_NAEAU_SMALL_RECT@@@Z 0000000180008530 f   ConEmuPlugin995.obj
+ 0001:00007588       ?GetMacroArea@CPluginW995@@UEAAHXZ 0000000180008588 f   ConEmuPlugin995.obj
+ 0001:000075e0       ?GetMsg@CPluginW995@@UEAAPEB_WHPEA_W_K@Z 00000001800085e0 f   ConEmuPlugin995.obj
+ 0001:00007650       ?GetPanelDir@CPluginW995@@UEAAPEA_WKPEA_WH@Z 0000000180008650 f   ConEmuPlugin995.obj
+ 0001:00007774       ?GetPanelInfo@CPluginW995@@UEAA_NKPEAUCEPanelInfo@@@Z 0000000180008774 f   ConEmuPlugin995.obj
+ 0001:000079b4       ?GetPanelItemInfo@CPluginW995@@UEAA_NAEBUCEPanelInfo@@_N_JAEAU_WIN32_FIND_DATAW@@PEAPEA_W@Z 00000001800089b4 f   ConEmuPlugin995.obj
+ 0001:00007b6c       ?GetPluginInfoPtr@CPluginW995@@UEAAXPEAX@Z 0000000180008b6c f   ConEmuPlugin995.obj
+ 0001:00007bd8       ?GetWindowCount@CPluginW995@@UEAAHXZ 0000000180008bd8 f   ConEmuPlugin995.obj
+ 0001:00007c04       ?GuiMacroDlg@CPluginW995@@UEAAXXZ 0000000180008c04 f   ConEmuPlugin995.obj
+ 0001:00007c0c       ?InputBox@CPluginW995@@UEAA_NPEB_W000AEAPEA_W@Z 0000000180008c0c f   ConEmuPlugin995.obj
+ 0001:00007cd4       ?IsMacroActive@CPluginW995@@UEAA_NXZ 0000000180008cd4 f   ConEmuPlugin995.obj
+ 0001:00007d44       ?LoadFarColors@CPluginW995@@UEAAXAEAY0BAA@E@Z 0000000180008d44 f   ConEmuPlugin995.obj
+ 0001:00007e00       ?LoadFarSettings@CPluginW995@@UEAAXPEAUCEFarInterfaceSettings@@PEAUCEFarPanelSettings@@@Z 0000000180008e00 f   ConEmuPlugin995.obj
+ 0001:00007e5c       ?Open@CPluginAnsi@@UEAAPEAXPEBX@Z 0000000180008e5c f i ConEmuPluginA.obj
+ 0001:00007e5c       ?Open@CPluginW995@@UEAAPEAXPEBX@Z 0000000180008e5c f i ConEmuPlugin995.obj
+ 0001:00007e64       ?OpenEditor@CPluginW995@@UEAA_NPEB_W_N11HH@Z 0000000180008e64 f   ConEmuPlugin995.obj
+ 0001:00007f6c       ?PanelControlApi@CPluginW995@@UEAA_JPEAXH_J0@Z 0000000180008f6c f   ConEmuPlugin995.obj
+ 0001:00007fb0       ?PostMacroApi@CPluginW995@@UEAAXPEB_WPEAU_INPUT_RECORD@@_N@Z 0000000180008fb0 f   ConEmuPlugin995.obj
+ 0001:00008058       ?ProcessEditorEventPtr@CPluginAnsi@@UEAAHPEAX@Z 0000000180009058 f i ConEmuPluginA.obj
+ 0001:00008058       ?ProcessEditorEventPtr@CPluginW995@@UEAAHPEAX@Z 0000000180009058 f i ConEmuPlugin995.obj
+ 0001:00008058       ?ProcessEditorInputPtr@CPluginAnsi@@UEAAHPEBX@Z 0000000180009058 f i ConEmuPluginA.obj
+ 0001:00008058       ?ProcessSynchroEventPtr@CPluginAnsi@@UEAAHPEAX@Z 0000000180009058 f i ConEmuPluginA.obj
+ 0001:00008058       ?ProcessSynchroEventPtr@CPluginW995@@UEAAHPEAX@Z 0000000180009058 f i ConEmuPlugin995.obj
+ 0001:00008058       ?ProcessViewerEventPtr@CPluginAnsi@@UEAAHPEAX@Z 0000000180009058 f i ConEmuPluginA.obj
+ 0001:00008058       ?ProcessViewerEventPtr@CPluginW995@@UEAAHPEAX@Z 0000000180009058 f i ConEmuPlugin995.obj
+ 0001:0000805c       ?ProcessEditorInputPtr@CPluginW995@@UEAAHPEBX@Z 000000018000905c f   ConEmuPlugin995.obj
+ 0001:00008078       ?RedrawAll@CPluginW995@@UEAAXXZ 0000000180009078 f   ConEmuPlugin995.obj
+ 0001:000080a8       ?SetStartupInfoPtr@CPluginW995@@UEAAXPEAX@Z 00000001800090a8 f   ConEmuPlugin995.obj
+ 0001:00008204       ?SetWindow@CPluginW995@@UEAAXH@Z 0000000180009204 f   ConEmuPlugin995.obj
+ 0001:00008250       ?ShowMessage@CPluginW995@@UEAAHPEB_WH_N@Z 0000000180009250 f   ConEmuPlugin995.obj
+ 0001:000082b0       ?ShowPluginMenu@CPluginW995@@UEAAHPEAUConEmuPluginMenuItem@@HH@Z 00000001800092b0 f   ConEmuPlugin995.obj
+ 0001:000083ec       ?ShowUserScreen@CPluginW995@@UEAAX_N@Z 00000001800093ec f   ConEmuPlugin995.obj
+ 0001:00008418       ?StopWaitEndSynchro@CPluginW995@@UEAAXXZ 0000000180009418 f   ConEmuPlugin995.obj
+ 0001:00008448       ?UpdateConEmuTabsApi@CPluginW995@@UEAA_NH@Z 0000000180009448 f   ConEmuPlugin995.obj
+ 0001:000086c0       ?WaitEndSynchro@CPluginW995@@UEAAXXZ 00000001800096c0 f   ConEmuPlugin995.obj
+ 0001:00008858       ??0CPluginAnsi@@QEAA@XZ    0000000180009858 f   ConEmuPluginA.obj
+ 0001:000089bc       ??_GCPluginAnsi@@UEAAPEAXI@Z 00000001800099bc f i ConEmuPluginA.obj
+ 0001:000089bc       ??_ECPluginAnsi@@UEAAPEAXI@Z 00000001800099bc f i ConEmuPluginA.obj
+ 0001:00008f74       ?CheckPanelExist@CPluginAnsi@@UEAA_NXZ 0000000180009f74 f   ConEmuPluginA.obj
+ 0001:00008fac       ?GetFarRect@CPluginAnsi@@UEAA_NAEAU_SMALL_RECT@@@Z 0000000180009fac f i ConEmuPluginA.obj
+ 0001:00008fac       ?ExecuteSynchroApi@CPluginAnsi@@UEAA_NXZ 0000000180009fac f i ConEmuPluginA.obj
+ 0001:00008fb0       ?ExitFar@CPluginAnsi@@UEAAXXZ 0000000180009fb0 f   ConEmuPluginA.obj
+ 0001:00008ff4       ?GetActiveWindowType@CPluginAnsi@@UEAAHXZ 0000000180009ff4 f   ConEmuPluginA.obj
+ 0001:00009078       ?GetEditorModifiedState@CPluginAnsi@@UEAAKXZ 000000018000a078 f   ConEmuPluginA.obj
+ 0001:000090d0       _get_startup_argv_mode     000000018000a0d0 f   LIBCMT:argv_mode.obj
+ 0001:000090d0       ?GetMacroArea@CPluginAnsi@@UEAAHXZ 000000018000a0d0 f   ConEmuPluginA.obj
+ 0001:000090d8       ?GetMsg@CPluginAnsi@@UEAAPEB_WHPEA_W_K@Z 000000018000a0d8 f   ConEmuPluginA.obj
+ 0001:00009178       ?GetPanelDir@CPluginAnsi@@UEAAPEA_WKPEA_WH@Z 000000018000a178 f   ConEmuPluginA.obj
+ 0001:00009270       ?GetPanelInfo@CPluginAnsi@@UEAA_NKPEAUCEPanelInfo@@@Z 000000018000a270 f   ConEmuPluginA.obj
+ 0001:000094c8       ?GetPanelItemInfo@CPluginAnsi@@UEAA_NAEBUCEPanelInfo@@_N_JAEAU_WIN32_FIND_DATAW@@PEAPEA_W@Z 000000018000a4c8 f   ConEmuPluginA.obj
+ 0001:00009600       ?GetPluginInfoPtr@CPluginAnsi@@UEAAXPEAX@Z 000000018000a600 f   ConEmuPluginA.obj
+ 0001:0000968c       ?GetWindowCount@CPluginAnsi@@UEAAHXZ 000000018000a68c f   ConEmuPluginA.obj
+ 0001:000096b8       ?GuiMacroDlg@CPluginAnsi@@UEAAXXZ 000000018000a6b8 f   ConEmuPluginA.obj
+ 0001:000096c0       ?InputBox@CPluginAnsi@@UEAA_NPEB_W000AEAPEA_W@Z 000000018000a6c0 f   ConEmuPluginA.obj
+ 0001:00009820       ?IsMacroActive@CPluginAnsi@@UEAA_NXZ 000000018000a820 f   ConEmuPluginA.obj
+ 0001:00009894       ?LoadFarColors@CPluginAnsi@@UEAAXAEAY0BAA@E@Z 000000018000a894 f   ConEmuPluginA.obj
+ 0001:00009954       ?LoadFarSettings@CPluginAnsi@@UEAAXPEAUCEFarInterfaceSettings@@PEAUCEFarPanelSettings@@@Z 000000018000a954 f   ConEmuPluginA.obj
+ 0001:000099b4       ?OpenEditor@CPluginAnsi@@UEAA_NPEB_W_N11HH@Z 000000018000a9b4 f   ConEmuPluginA.obj
+ 0001:00009af0       ?PanelControlApi@CPluginAnsi@@UEAA_JPEAXH_J0@Z 000000018000aaf0 f   ConEmuPluginA.obj
+ 0001:00009b2c       ?PostMacroApi@CPluginAnsi@@UEAAXPEB_WPEAU_INPUT_RECORD@@_N@Z 000000018000ab2c f   ConEmuPluginA.obj
+ 0001:00009bf0       ?RedrawAll@CPluginAnsi@@UEAAXXZ 000000018000abf0 f   ConEmuPluginA.obj
+ 0001:00009c24       ?SetStartupInfoPtr@CPluginAnsi@@UEAAXPEAX@Z 000000018000ac24 f   ConEmuPluginA.obj
+ 0001:00009d68       ?SetWindow@CPluginAnsi@@UEAAXH@Z 000000018000ad68 f   ConEmuPluginA.obj
+ 0001:00009dbc       ?ShowMessage@CPluginAnsi@@UEAAHPEB_WH_N@Z 000000018000adbc f   ConEmuPluginA.obj
+ 0001:00009e98       ?ShowPluginMenu@CPluginAnsi@@UEAAHPEAUConEmuPluginMenuItem@@HH@Z 000000018000ae98 f   ConEmuPluginA.obj
+ 0001:0000a034       ?ShowUserScreen@CPluginAnsi@@UEAAX_N@Z 000000018000b034 f   ConEmuPluginA.obj
+ 0001:0000a060       ?UpdateConEmuTabsApi@CPluginAnsi@@UEAA_NH@Z 000000018000b060 f   ConEmuPluginA.obj
+ 0001:0000a31c       ??$swprintf_c@$0BAE@@@YAHAEAY0BAE@_WPEB_WZZ 000000018000b31c f i ConEmuPluginBase.obj
+ 0001:0000a348       ??$swprintf_c@$0DAM@@@YAHAEAY0DAM@_WPEB_WZZ 000000018000b348 f i ConEmuPluginBase.obj
+ 0001:0000a374       ??$swprintf_c@$0EAA@@@YAHAEAY0EAA@_WPEB_WZZ 000000018000b374 f i ConEmuPluginBase.obj
+ 0001:0000a3a0       ??$swprintf_c@$0MI@@@YAHAEAY0MI@_WPEB_WZZ 000000018000b3a0 f i ConEmuPluginBase.obj
+ 0001:0000a3cc       ??$wcscpy_c@$0BBE@@@YAHAEAY0BBE@_WPEB_W@Z 000000018000b3cc f i ConEmuPluginBase.obj
+ 0001:0000a418       ??$wcscpy_c@$0CAI@@@YAHAEAY0CAI@_WPEB_W@Z 000000018000b418 f i ConEmuPluginBase.obj
+ 0001:0000a464       ??0CPluginBase@@QEAA@XZ    000000018000b464 f   ConEmuPluginBase.obj
+ 0001:0000a580       ??0MWow64Disable@@QEAA@XZ  000000018000b580 f i ConEmuPluginBase.obj
+ 0001:0000a5f4       ??1?$MFileMapping@UConEmuGuiMapping@@@@QEAA@XZ 000000018000b5f4 f i common-user64:ConEmuCheckEx.obj
+ 0001:0000a5f4       ??1?$MFileMapping@UCESERVER_CONSOLE_MAPPING_HDR@@@@QEAA@XZ 000000018000b5f4 f i ConEmuPluginBase.obj
+ 0001:0000a5f4       ??1?$MFileMapping@UPanelViewSetMapping@@@@QEAA@XZ 000000018000b5f4 f i PluginBackground.obj
+ 0001:0000a608       ??1CPluginBase@@UEAA@XZ    000000018000b608 f   ConEmuPluginBase.obj
+ 0001:0000a614       ??1MWow64Disable@@QEAA@XZ  000000018000b614 f i ConEmuPluginBase.obj
+ 0001:0000a638       ??_ECPluginBase@@UEAAPEAXI@Z 000000018000b638 f i ConEmuPluginBase.obj
+ 0001:0000a638       ??_GCPluginBase@@UEAAPEAXI@Z 000000018000b638 f i ConEmuPluginBase.obj
+ 0001:0000a664       ?ActivatePlugin@CPluginBase@@QEAA_NKPEAXK@Z 000000018000b664 f   ConEmuPluginBase.obj
+ 0001:0000a820       ?AddTab@CPluginBase@@QEAA_NAEAHH_N1HPEB_W2HHHH@Z 000000018000b820 f   ConEmuPluginBase.obj
+ 0001:0000ab84       ?AddTabFinish@CPluginBase@@QEAAXH@Z 000000018000bb84 f   ConEmuPluginBase.obj
+ 0001:0000ab90       ?Attach2Gui@CPluginBase@@QEAA_N_N@Z 000000018000bb90 f   ConEmuPluginBase.obj
+ 0001:0000afb8       ?BackgroundMacroError@CPluginBase@@SAKPEAX@Z 000000018000bfb8 f   ConEmuPluginBase.obj
+ 0001:0000afe0       ?CheckBufferEnabled@CPluginBase@@QEAA_NXZ 000000018000bfe0 f   ConEmuPluginBase.obj
+ 0001:0000b044       ?CheckConEmuDetached@CPluginBase@@SAXXZ 000000018000c044 f   ConEmuPluginBase.obj
+ 0001:0000b234       ?CheckResources@CPluginBase@@QEAAX_N@Z 000000018000c234 f   ConEmuPluginBase.obj
+ 0001:0000b414       ?CloseMap@?$MFileMapping@UConEmuGuiMapping@@@@QEAAXXZ 000000018000c414 f i common-kernel64:ConEmuCheck.obj
+ 0001:0000b414       ?CloseMap@?$MFileMapping@UPanelViewSetMapping@@@@QEAAXXZ 000000018000c414 f i PluginBackground.obj
+ 0001:0000b414       ?CloseMap@?$MFileMapping@UCESERVER_CONSOLE_MAPPING_HDR@@@@QEAAXXZ 000000018000c414 f i ConEmuPluginBase.obj
+ 0001:0000b478       ?CloseMapHeader@CPluginBase@@SAXXZ 000000018000c478 f   ConEmuPluginBase.obj
+ 0001:0000b49c       ?CloseTabs@CPluginBase@@SAXXZ 000000018000c49c f   ConEmuPluginBase.obj
+ 0001:0000b53c       ?CommonPluginStartup@CPluginBase@@QEAAXXZ 000000018000c53c f   ConEmuPluginBase.obj
+ 0001:0000b648       ?CreateTabs@CPluginBase@@SA_NH@Z 000000018000c648 f   ConEmuPluginBase.obj
+ 0001:0000b708       ?DllCheckUnique@CPluginBase@@KA_N_N@Z 000000018000c708 f   ConEmuPluginBase.obj
+ 0001:0000b93c       ?DllMain_ProcessAttach@CPluginBase@@KAXPEAUHINSTANCE__@@@Z 000000018000c93c f   ConEmuPluginBase.obj
+ 0001:0000ba24       ?DllMain_ProcessDetach@CPluginBase@@KAXXZ 000000018000ca24 f   ConEmuPluginBase.obj
+ 0001:0000bb0c       ?EditViewConsoleOutput@CPluginBase@@QEAAX_N@Z 000000018000cb0c f   ConEmuPluginBase.obj
+ 0001:0000bbd8       ?EmergencyShow@CPluginBase@@KAXXZ 000000018000cbd8 f   ConEmuPluginBase.obj
+ 0001:0000bc34       ?ExecuteSynchro@CPluginBase@@QEAAXXZ 000000018000cc34 f   ConEmuPluginBase.obj
+ 0001:0000bcb4       ?ExitFarCommon@CPluginBase@@QEAAX_N@Z 000000018000ccb4 f   ConEmuPluginBase.obj
+ 0001:0000bce0       ?FarSetConsoleSize@CPluginBase@@SA_NFF@Z 000000018000cce0 f   ConEmuPluginBase.obj
+ 0001:0000bdec       ?FillLoadedParm@CPluginBase@@SAXPEAUConEmuLoadedArg@@PEAUHINSTANCE__@@H@Z 000000018000cdec f   ConEmuPluginBase.obj
+ 0001:0000bec4       ?FillUpdateBackground@CPluginBase@@QEAAXPEAUPaintBackgroundArg@@@Z 000000018000cec4 f   ConEmuPluginBase.obj
+ 0001:0000c040       ?FindServerCmd@CPluginBase@@QEAA_NKAEAK_N@Z 000000018000d040 f   ConEmuPluginBase.obj
+ 0001:0000c13c       ?GetMainThreadId@CPluginBase@@SAKXZ 000000018000d13c f   ConEmuPluginBase.obj
+ 0001:0000c1ec       ?GetPanelInfo@CPluginBase@@QEAA_NKPEAUBkPanelInfo@@@Z 000000018000d1ec f   ConEmuPluginBase.obj
+ 0001:0000c290       ?InitHWND@CPluginBase@@SAXXZ 000000018000d290 f   ConEmuPluginBase.obj
+ 0001:0000c520       ?InitResources@CPluginBase@@QEAAXXZ 000000018000d520 f   ConEmuPluginBase.obj
+ 0001:0000c744       ?InitRootRegKey@CPluginBase@@IEAAXXZ 000000018000d744 f   ConEmuPluginBase.obj
+ 0001:0000c878       ?InternalOpenCreate@?$MFileMapping@UCESERVER_CONSOLE_MAPPING_HDR@@@@IEAAPEAUCESERVER_CONSOLE_MAPPING_HDR@@_N0H@Z 000000018000d878 f i ConEmuPluginBase.obj
+ 0001:0000c878       ?InternalOpenCreate@?$MFileMapping@UConEmuGuiMapping@@@@IEAAPEAUConEmuGuiMapping@@_N0H@Z 000000018000d878 f i common-kernel64:ConEmuCheck.obj
+ 0001:0000c878       ?InternalOpenCreate@?$MFileMapping@UPanelViewSetMapping@@@@IEAAPEAUPanelViewSetMapping@@_N0H@Z 000000018000d878 f i PluginBackground.obj
+ 0001:0000cb2c       ?IsCurrentTabModal@CPluginBase@@QEAA_NXZ 000000018000db2c f   ConEmuPluginBase.obj
+ 0001:0000cce8       ?LoadFarVersion@CPluginBase@@SA_NXZ 000000018000dce8 f   ConEmuPluginBase.obj
+ 0001:0000cf90       ?LoadPanelTabsFromRegistry@CPluginBase@@IEAAXXZ 000000018000df90 f   ConEmuPluginBase.obj
+ 0001:0000d0dc       ?MonitorThreadProcW@CPluginBase@@SAKPEAX@Z 000000018000e0dc f   ConEmuPluginBase.obj
+ 0001:0000d4e0       ?NotifyConEmuUnloaded@CPluginBase@@SAXXZ 000000018000e4e0 f   ConEmuPluginBase.obj
+ 0001:0000d604       ?OnConsoleDetaching@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000e604 f   ConEmuPluginBase.obj
+ 0001:0000d748       ?OnConsolePeekInput@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000e748 f   ConEmuPluginBase.obj
+ 0001:0000d7b0       ?OnConsolePeekInputPost@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000e7b0 f   ConEmuPluginBase.obj
+ 0001:0000d7e0       ?OnConsolePeekReadInput@CPluginBase@@SAX_N@Z 000000018000e7e0 f   ConEmuPluginBase.obj
+ 0001:0000da00       ?OnConsoleReadInput@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ea00 f   ConEmuPluginBase.obj
+ 0001:0000da08       ?OnConsoleReadInputPost@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ea08 f   ConEmuPluginBase.obj
+ 0001:0000dbb8       ?OnConsoleReadInputWork@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ebb8 f   ConEmuPluginBase.obj
+ 0001:0000dc2c       ?OnConsoleWasAttached@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ec2c f   ConEmuPluginBase.obj
+ 0001:0000dc94       ?OnCurDirChanged@CPluginBase@@SAXXZ 000000018000ec94 f   ConEmuPluginBase.obj
+ 0001:0000dcf0       ?OnGetNumberOfConsoleInputEventsPost@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000ecf0 f   ConEmuPluginBase.obj
+ 0001:0000dd24       ?OnLibraryLoaded@CPluginBase@@SAXPEAUHINSTANCE__@@@Z 000000018000ed24 f   ConEmuPluginBase.obj
+ 0001:0000ddc4       ?OnMainThreadActivated@CPluginBase@@QEAAXXZ 000000018000edc4 f   ConEmuPluginBase.obj
+ 0001:0000df6c       ?OnPanelViewCallbacks@CPluginBase@@SA_NPEAUHookCallbackArg@@P6AHPEAXPEAU_INPUT_RECORD@@KPEAKPEAH@Z5@Z 000000018000ef6c f   ConEmuPluginBase.obj
+ 0001:0000e044       ?OnPostWriteConsoleOutput@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f044 f   ConEmuPluginBase.obj
+ 0001:0000e050       ?OnShellExecuteExW_Except@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f050 f   ConEmuPluginBase.obj
+ 0001:0000e090       ?OnWaitForMultipleObjects@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f090 f   ConEmuPluginBase.obj
+ 0001:0000e0e4       ?OnWaitForMultipleObjectsPost@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f0e4 f   ConEmuPluginBase.obj
+ 0001:0000e120       ?OnWriteConsoleOutput@CPluginBase@@SAHPEAUHookCallbackArg@@@Z 000000018000f120 f   ConEmuPluginBase.obj
+ 0001:0000e1f4       ?OpenMapHeader@CPluginBase@@SAHXZ 000000018000f1f4 f   ConEmuPluginBase.obj
+ 0001:0000e3b0       ?OpenPluginCommon@CPluginBase@@QEAAPEAXH_J_N@Z 000000018000f3b0 f   ConEmuPluginBase.obj
+ 0001:0000e698       ?OutDataAlloc@CPluginBase@@SA_NK@Z 000000018000f698 f   ConEmuPluginBase.obj
+ 0001:0000e6f8       ?OutDataRealloc@CPluginBase@@SA_NK@Z 000000018000f6f8 f   ConEmuPluginBase.obj
+ 0001:0000e7c0       ?OutDataWrite@CPluginBase@@SA_NPEAXK@Z 000000018000f7c0 f   ConEmuPluginBase.obj
+ 0001:0000e860       ?PanelControl@CPluginBase@@QEAA_JPEAXH_J0@Z 000000018000f860 f   ConEmuPluginBase.obj
+ 0001:0000e8f8       ?Plugin@@YAPEAVCPluginBase@@XZ 000000018000f8f8 f   ConEmuPluginBase.obj
+ 0001:0000e9d0       ?PrintText@CPluginBase@@QEAA_NPEB_W@Z 000000018000f9d0 f   ConEmuPluginBase.obj
+ 0001:0000eaec       ?ProcessCommand@CPluginBase@@QEAA_NKHPEAXPEAPEAUCESERVER_REQ@@_N@Z 000000018000faec f   ConEmuPluginBase.obj
+ 0001:0000ef8c       ?ProcessCommandLine@CPluginBase@@QEAA_NPEA_W@Z 000000018000ff8c f   ConEmuPluginBase.obj
+ 0001:0000efd8       ?ProcessDragFrom@CPluginBase@@QEAAXXZ 000000018000ffd8 f   ConEmuPluginBase.obj
+ 0001:0000f45c       ?ProcessDragTo@CPluginBase@@QEAAXXZ 000000018001045c f   ConEmuPluginBase.obj
+ 0001:0000f76c       ?ProcessEditorInputInternal@CPluginBase@@QEAAXAEBU_INPUT_RECORD@@@Z 000000018001076c f   ConEmuPluginBase.obj
+ 0001:0000f798       ?ProcessEditorViewerEvent@CPluginBase@@QEAAHHH@Z 0000000180010798 f   ConEmuPluginBase.obj
+ 0001:0000f84c       ?ProcessSetWindowCommand@CPluginBase@@QEAAXXZ 000000018001084c f   ConEmuPluginBase.obj
+ 0001:0000f974       ?ProcessSynchroEvent@CPluginBase@@QEAAHHPEAX@Z 0000000180010974 f   ConEmuPluginBase.obj
+ 0001:0000f9f8       ?ReloadFarInfo@CPluginBase@@QEAA_N_N@Z 00000001800109f8 f   ConEmuPluginBase.obj
+ 0001:0000fc88       ?ReloadFarInfoApi@CPluginBase@@IEAA_NXZ 0000000180010c88 f   ConEmuPluginBase.obj
+ 0001:0000fe5c       ?RunExternalProgram@CPluginBase@@QEAA_NPEA_W@Z 0000000180010e5c f   ConEmuPluginBase.obj
+ 0001:0000ffec       ?RunExternalProgramW@CPluginBase@@SA_NPEA_W0_N@Z 0000000180010fec f   ConEmuPluginBase.obj
+ 0001:00010250       ?SendTabs@CPluginBase@@SAXH_N@Z 0000000180011250 f   ConEmuPluginBase.obj
+ 0001:0001040c       ?SetRootRegKey@CPluginBase@@IEAAXPEA_W@Z 000000018001140c f   ConEmuPluginBase.obj
+ 0001:000104a8       ?ShowConsoleInfo@CPluginBase@@QEAAXXZ 00000001800114a8 f   ConEmuPluginBase.obj
+ 0001:000106ac       ?ShowMessage@CPluginBase@@QEAAHHH@Z 00000001800116ac f   ConEmuPluginBase.obj
+ 0001:00010728       ?ShowMessageBox@CPluginBase@@KAHPEB_WI@Z 0000000180011728 f   ConEmuPluginBase.obj
+ 0001:0001080c       ?ShowMessageGui@CPluginBase@@QEAAHHH@Z 000000018001180c f   ConEmuPluginBase.obj
+ 0001:00010894       ?ShowPanelsList@CPluginBase@@QEAAXXZ 0000000180011894 f   ConEmuPluginBase.obj
+ 0001:000109e0       ?ShowPluginMenu@CPluginBase@@QEAAXW4PluginCallCommands@@@Z 00000001800119e0 f   ConEmuPluginBase.obj
+ 0001:00010be8       ?ShowProtocolWarning@CPluginBase@@KAXXZ 0000000180011be8 f   ConEmuPluginBase.obj
+ 0001:00010d58       ?ShowTabsList@CPluginBase@@QEAAXXZ 0000000180011d58 f   ConEmuPluginBase.obj
+ 0001:00010fe0       ?StartDebugger@CPluginBase@@QEAA_NXZ 0000000180011fe0 f   ConEmuPluginBase.obj
+ 0001:00011294       ?StopThread@CPluginBase@@QEAAX_N@Z 0000000180012294 f   ConEmuPluginBase.obj
+ 0001:000114f8       ?StorePanelDirs@CPluginBase@@QEAA_NPEB_W0@Z 00000001800124f8 f   ConEmuPluginBase.obj
+ 0001:00011668       ?StringCchCatW@@YAJPEA_W_KPEB_W@Z 0000000180012668 f i ConEmuPluginBase.obj
+ 0001:00011724       ?StringCchCopyW@@YAJPEA_W_KPEB_W@Z 0000000180012724 f i ConEmuPluginBase.obj
+ 0001:00011790       ?SwitchTabCommand@CPluginBase@@QEAAXW4PluginMenuCommands@@@Z 0000000180012790 f   ConEmuPluginBase.obj
+ 0001:00011814       ?ToOem@CPluginBase@@SAPEADPEB_W@Z 0000000180012814 f   ConEmuPluginBase.obj
+ 0001:00011870       ?ToOem@CPluginBase@@SAXPEB_WPEAD_J@Z 0000000180012870 f   ConEmuPluginBase.obj
+ 0001:000118b0       ?ToUnicode@CPluginBase@@SAPEA_WPEBD@Z 00000001800128b0 f   ConEmuPluginBase.obj
+ 0001:00011918       ?TouchReadPeekConsoleInputs@CPluginBase@@SAXH@Z 0000000180012918 f   ConEmuPluginBase.obj
+ 0001:00011964       ?UngetDummyMouseEvent@CPluginBase@@SA_N_NPEAUHookCallbackArg@@@Z 0000000180012964 f   ConEmuPluginBase.obj
+ 0001:00011b10       ?UpdateConEmuTabs@CPluginBase@@QEAA_N_N@Z 0000000180012b10 f   ConEmuPluginBase.obj
+ 0001:00011d90       ?UpdatePanelDirs@CPluginBase@@QEAAXXZ 0000000180012d90 f   ConEmuPluginBase.obj
+ 0001:00011f60       ?WaitPluginActivation@CPluginBase@@SAKKPEAPEAXHK@Z 0000000180012f60 f   ConEmuPluginBase.obj
+ 0001:00012068       ?cmd_CloseQSearch@CPluginBase@@QEAAXXZ 0000000180013068 f   ConEmuPluginBase.obj
+ 0001:000120a0       ?cmd_ConSetFont@CPluginBase@@QEAAXPEAX@Z 00000001800130a0 f   ConEmuPluginBase.obj
+ 0001:000120f4       ?cmd_EMenu@CPluginBase@@QEAAXPEAX@Z 00000001800130f4 f   ConEmuPluginBase.obj
+ 0001:00012210       ?cmd_ExternalCallback@CPluginBase@@QEAA_NPEAX@Z 0000000180013210 f   ConEmuPluginBase.obj
+ 0001:00012274       ?cmd_GuiChanged@CPluginBase@@QEAAXPEAX@Z 0000000180013274 f   ConEmuPluginBase.obj
+ 0001:00012300       ?cmd_LeftClickSync@CPluginBase@@QEAAXPEAX@Z 0000000180013300 f   ConEmuPluginBase.obj
+ 0001:000123ec       ?cmd_OpenEditorLine@CPluginBase@@QEAA_NPEAUCESERVER_REQ_FAREDITOR@@@Z 00000001800133ec f   ConEmuPluginBase.obj
+ 0001:000124b8       ?cmd_RedrawFarCall@CPluginBase@@QEAA_NAEAPEAUCESERVER_REQ@@PEAPEAU2@@Z 00000001800134b8 f   ConEmuPluginBase.obj
+ 0001:0001258c       ?cmd_SetWindow@CPluginBase@@QEAA_NPEAX_N@Z 000000018001358c f   ConEmuPluginBase.obj
+ 0001:00012618       ?isMacroActive@CPluginBase@@QEAA_NAEAH@Z 0000000180013618 f   ConEmuPluginBase.obj
+ 0001:00012654       ?isModalEditorViewer@CPluginBase@@QEAA_NXZ 0000000180013654 f   ConEmuPluginBase.obj
+ 0001:00012680       ?pcc_Disabled@CPluginBase@@SA_NW4PluginMenuCommands@@@Z 0000000180013680 f   ConEmuPluginBase.obj
+ 0001:00012700       ?pcc_Selected@CPluginBase@@SA_NW4PluginMenuCommands@@@Z 0000000180013700 f   ConEmuPluginBase.obj
+ 0001:0001275c       ??0CPluginBackground@@QEAA@XZ 000000018001375c f   PluginBackground.obj
+ 0001:00012914       ??1CPluginBackground@@QEAA@XZ 0000000180013914 f   PluginBackground.obj
+ 0001:00012a7c       ?CheckPanelFolders@CPluginBackground@@IEAAXH@Z 0000000180013a7c f   PluginBackground.obj
+ 0001:00012b4c       ?GetTo@?$MFileMapping@UPanelViewSetMapping@@@@QEAA_NPEAUPanelViewSetMapping@@H@Z 0000000180013b4c f i PluginBackground.obj
+ 0001:00012c1c       ?IsParmChanged@CPluginBackground@@IEAA_NPEAUPaintBackgroundArg@@0@Z 0000000180013c1c f   PluginBackground.obj
+ 0001:00012e94       ?LoadThSet@CPluginBackground@@IEAAHH@Z 0000000180013e94 f   PluginBackground.obj
+ 0001:00013208       ?MonitorBackground@CPluginBackground@@QEAAXXZ 0000000180014208 f   PluginBackground.obj
+ 0001:00013270       ?OnMainThreadActivated@CPluginBackground@@QEAAXHH@Z 0000000180014270 f   PluginBackground.obj
+ 0001:00013334       ?ReallocItems@CPluginBackground@@IEAAXH@Z 0000000180014334 f   PluginBackground.obj
+ 0001:0001339c       ?RegisterSubplugin@CPluginBackground@@QEAAHPEAURegisterBackgroundArg@@@Z 000000018001439c f   PluginBackground.obj
+ 0001:00013630       ?SetDcPanelRect@CPluginBackground@@IEAAXPEAUtagRECT@@PEAUBkPanelInfo@@PEAUPaintBackgroundArg@@@Z 0000000180014630 f   PluginBackground.obj
+ 0001:00013704       ?SetForceThLoad@CPluginBackground@@QEAAXXZ 0000000180014704 f   PluginBackground.obj
+ 0001:0001371c       ?SetForceUpdate@CPluginBackground@@QEAAX_N@Z 000000018001471c f   PluginBackground.obj
+ 0001:0001373c       ?UpdateBackground@CPluginBackground@@IEAAXXZ 000000018001473c f   PluginBackground.obj
+ 0001:00013fb0       ?UpdateBackground_Exec@CPluginBackground@@KAXPEAURegisterBackgroundArg@@PEAUPaintBackgroundArg@@@Z 0000000180014fb0 f   PluginBackground.obj
+ 0001:00013ff4       ??$swprintf_c@$09@@YAHAEAY09_WPEB_WZZ 0000000180014ff4 f i PluginSrv.obj
+ 0001:00014020       ??$wcscpy_c@$0BAE@@@YAHAEAY0BAE@_WPEB_W@Z 0000000180015020 f i PluginSrv.obj
+ 0001:0001406c       ?DumpError@?$PipeServer@UCESERVER_REQ@@@@IEAAXPEAUPipeInst@1@PEB_WH@Z 000000018001506c f i PluginSrv.obj
+ 0001:00014180       ?PipeServerRead@?$PipeServer@UCESERVER_REQ@@@@IEAAHPEAUPipeInst@1@@Z 0000000180015180 f i PluginSrv.obj
+ 0001:00014410       ?PipeServerThread@?$PipeServer@UCESERVER_REQ@@@@IEAAKPEAUPipeInst@1@@Z 0000000180015410 f i PluginSrv.obj
+ 0001:000146e0       ?PipeServerWrite@?$PipeServer@UCESERVER_REQ@@@@IEAAHPEAUPipeInst@1@PEBXKPEAKH@Z 00000001800156e0 f i PluginSrv.obj
+ 0001:0001480c       ?PlugServerCommand@@YAHPEAXPEAUCESERVER_REQ@@AEAPEAU1@AEAK3_J@Z 000000018001580c f   PluginSrv.obj
+ 0001:00014d18       ?PlugServerFree@@YAXPEAUCESERVER_REQ@@_J@Z 0000000180015d18 f   PluginSrv.obj
+ 0001:00014d30       ?PlugServerStart@@YA_NXZ   0000000180015d30 f   PluginSrv.obj
+ 0001:00014e44       ?PlugServerStop@@YAX_N@Z   0000000180015e44 f   PluginSrv.obj
+ 0001:00014e8c       ?StartPipeInstance@?$PipeServer@UCESERVER_REQ@@@@IEAA_NPEAUPipeInst@1@@Z 0000000180015e8c f i PluginSrv.obj
+ 0001:0001501c       ?StartPipeServer@?$PipeServer@UCESERVER_REQ@@@@QEAA_N_NPEB_W_JPEAU_SECURITY_ATTRIBUTES@@P6AHPEAXPEAUCESERVER_REQ@@AEAPEAU3@AEAK72@ZP6AX52@ZP6AH42@ZP6AH42@ZP6AH42@Z@Z 000000018001601c f i PluginSrv.obj
+ 0001:000151a0       ?StopPipeServer@?$PipeServer@UCESERVER_REQ@@@@QEAAX_NAEA_N@Z 00000001800161a0 f i PluginSrv.obj
+ 0001:00015528       ?WaitForClient@?$PipeServer@UCESERVER_REQ@@@@IEAA_NPEAUPipeInst@1@AEAH1@Z 0000000180016528 f i PluginSrv.obj
+ 0001:00015840       ?WaitOverlapped@?$PipeServer@UCESERVER_REQ@@@@IEAAHPEAUPipeInst@1@PEAK@Z 0000000180016840 f i PluginSrv.obj
+ 0001:00015a14       ?WriteDummyAnswer@?$PipeServer@UCESERVER_REQ@@@@IEAAHPEAUPipeInst@1@@Z 0000000180016a14 f i PluginSrv.obj
+ 0001:00015a94       ?_PipeServerThread@?$PipeServer@UCESERVER_REQ@@@@KAKPEAX@Z 0000000180016a94 f i PluginSrv.obj
+ 0001:00015af0       ?cmd_FarSetChanged@@YAXPEAUFAR_REQ_FARSETCHANGED@@@Z 0000000180016af0 f   PluginSrv.obj
+ 0001:00015b4a       GetFileVersionInfoSizeW    0000000180016b4a f   version:VERSION.dll
+ 0001:00015b50       GetFileVersionInfoW        0000000180016b50 f   version:VERSION.dll
+ 0001:00015b56       VerQueryValueW             0000000180016b56 f   version:VERSION.dll
+ 0001:00015b5c       CreateToolhelp32Snapshot   0000000180016b5c f   kernel32:KERNEL32.dll
+ 0001:00015b62       Thread32First              0000000180016b62 f   kernel32:KERNEL32.dll
+ 0001:00015b68       Thread32Next               0000000180016b68 f   kernel32:KERNEL32.dll
+ 0001:00015b6e       Module32FirstW             0000000180016b6e f   kernel32:KERNEL32.dll
+ 0001:00015b74       Module32NextW              0000000180016b74 f   kernel32:KERNEL32.dll
+ 0001:00015b7c       ??2@YAPEAX_K@Z             0000000180016b7c f   common-kernel64:Memory.obj
+ 0001:00015ba4       ??3@YAXPEAX@Z              0000000180016ba4 f   common-kernel64:Memory.obj
+ 0001:00015ba4       ??_V@YAXPEAX@Z             0000000180016ba4 f   common-kernel64:Memory.obj
+ 0001:00015bac       ??_U@YAPEAX_K@Z            0000000180016bac f   common-kernel64:Memory.obj
+ 0001:00015bb4       ?HeapDeinitialize@@YAXXZ   0000000180016bb4 f   common-kernel64:Memory.obj
+ 0001:00015c18       ?HeapInitialize@@YA_NXZ    0000000180016c18 f   common-kernel64:Memory.obj
+ 0001:00015c54       ?xf_calloc@@YAPEAX_K0@Z    0000000180016c54 f   common-kernel64:Memory.obj
+ 0001:00015c84       ?xf_free@@YAXPEAX@Z        0000000180016c84 f   common-kernel64:Memory.obj
+ 0001:00015cfc       ?xf_malloc@@YAPEAX_K@Z     0000000180016cfc f   common-kernel64:Memory.obj
+ 0001:00015d24       ?xf_realloc@@YAPEAXPEAX_K@Z 0000000180016d24 f   common-kernel64:Memory.obj
+ 0001:00015d4c       ??$wcscpy_c@$0CA@@@YAHAEAY0CA@_WPEB_W@Z 0000000180016d4c f i common-kernel64:ConEmuCheck.obj
+ 0001:00015d98       ?ExecuteCmd@@YAPEAUCESERVER_REQ@@PEB_WPEAU1@KPEAUHWND__@@HKH@Z 0000000180016d98 f   common-kernel64:ConEmuCheck.obj
+ 0001:00015f80       ?ExecuteFreeResult@@YAXAEAPEAUCESERVER_REQ@@@Z 0000000180016f80 f   common-kernel64:ConEmuCheck.obj
+ 0001:00015fa0       ?ExecuteGuiCmd@@YAPEAUCESERVER_REQ@@PEAUHWND__@@PEAU1@0H@Z 0000000180016fa0 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016060       ?ExecuteNewCmd@@YAPEAUCESERVER_REQ@@K_K@Z 0000000180017060 f   common-kernel64:ConEmuCheck.obj
+ 0001:000160c4       ?ExecuteNewCmd@@YA_NAEAPEAUCESERVER_REQ@@AEAKK_K@Z 00000001800170c4 f   common-kernel64:ConEmuCheck.obj
+ 0001:000161b8       ?ExecuteOpenPipe@@YAPEAXPEB_WAEAY0CAI@_W0KKHPEAXH@Z 00000001800171b8 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016368       ?ExecutePrepareCmd@@YAXPEAUCESERVER_REQ@@K_K@Z 0000000180017368 f   common-kernel64:ConEmuCheck.obj
+ 0001:000163a4       ?ExecutePrepareCmd@@YAXPEAUCESERVER_REQ_HDR@@K_K@Z 00000001800173a4 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016414       ?ExecuteSrvCmd@@YAPEAUCESERVER_REQ@@KPEAU1@PEAUHWND__@@HKH@Z 0000000180017414 f   common-kernel64:ConEmuCheck.obj
+ 0001:000164e8       ?GetConEmuHWND@@YAPEAUHWND__@@W4ConEmuWndType@@@Z 00000001800174e8 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016590       ?GetConEmuWindows@@YA?AUConEmuWindows@@PEAUHWND__@@@Z 0000000180017590 f   common-kernel64:ConEmuCheck.obj
+ 0001:000166ac       ?GetConEmuWindowsFromEnv@@YA?AUConEmuWindows@@XZ 00000001800176ac f   common-kernel64:ConEmuCheck.obj
+ 0001:0001683c       ?GuiMessageBox@@YAHPEAUHWND__@@PEB_W1H@Z 000000018001783c f   common-kernel64:ConEmuCheck.obj
+ 0001:000169a4       ?IsConsoleClass@@YA_NPEB_W@Z 00000001800179a4 f   common-kernel64:ConEmuCheck.obj
+ 0001:000169f4       ?IsConsoleWindow@@YA_NPEAUHWND__@@@Z 00000001800179f4 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016ae4       ?IsPseudoConsoleWindow@@YA_NPEAUHWND__@@@Z 0000000180017ae4 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016b68       ?LoadGuiMapping@@YAHKAEAUConEmuGuiMapping@@@Z 0000000180017b68 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016d38       ?LoadSrvMapping@@YAHPEAUHWND__@@AEAUCESERVER_CONSOLE_MAPPING_HDR@@@Z 0000000180017d38 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016f08       ?ModuleName@@YAPEB_WPEB_W@Z 0000000180017f08 f   common-kernel64:ConEmuCheck.obj
+ 0001:00016fc8       ?myGetConsoleWindow@@YAPEAUHWND__@@XZ 0000000180017fc8 f   common-kernel64:ConEmuCheck.obj
+ 0001:000170a4       ?StringCchVPrintfA@@YAJPEAD_KPEBD0@Z 00000001800180a4 f i common-kernel64:MStrSafe.obj
+ 0001:0001714c       ?lstrcmpni@@YAHPEB_W0H@Z   000000018001814c f   common-kernel64:MStrSafe.obj
+ 0001:0001726c       ?msprintf@@YAPEB_WPEA_W_KPEB_WZZ 000000018001826c f   common-kernel64:MStrSafe.obj
+ 0001:0001728c       ?mvsprintf@@YAPEB_WPEA_W_KPEB_WPEAD@Z 000000018001828c f   common-kernel64:MStrSafe.obj
+ 0001:0001772c       ?sprintf_c@@YAHPEAD_JPEBDZZ 000000018001872c f   common-kernel64:MStrSafe.obj
+ 0001:0001776c       ?swprintf_c@@YAHPEA_W_JPEB_WZZ 000000018001876c f   common-kernel64:MStrSafe.obj
+ 0001:000177ac       ??0CEStr@@QEAA@$$QEAU0@@Z  00000001800187ac f   common-kernel64:CEStr.obj
+ 0001:000177d4       ??0CEStr@@QEAA@PEB_W00000000@Z 00000001800187d4 f   common-kernel64:CEStr.obj
+ 0001:00017948       ??0CEStr@@QEAA@XZ          0000000180018948 f   common-kernel64:CEStr.obj
+ 0001:00017958       ??0bad_alloc@stdext@@QEAA@AEBV01@@Z 0000000180018958 f i common-kernel64:CEStr.obj
+ 0001:00017978       ??0bad_alloc@stdext@@QEAA@XZ 0000000180018978 f i common-kernel64:CEStr.obj
+ 0001:00017994       ??0exception@stdext@@QEAA@AEBV01@@Z 0000000180018994 f i common-kernel64:CEStr.obj
+ 0001:000179ac       ??1CEStr@@QEAA@XZ          00000001800189ac f   common-kernel64:CEStr.obj
+ 0001:000179b4       ??1bad_alloc@stdext@@UEAA@XZ 00000001800189b4 f i common-kernel64:CEStr.obj
+ 0001:000179c0       ??4CEStr@@QEAAAEAU0@$$QEAU0@@Z 00000001800189c0 f   common-kernel64:CEStr.obj
+ 0001:00017a0c       ??4CEStr@@QEAAAEAU0@PEB_W@Z 0000000180018a0c f   common-kernel64:CEStr.obj
+ 0001:00017a2c       ??BCEStr@@QEBAPEB_WXZ      0000000180018a2c f   common-kernel64:CEStr.obj
+ 0001:00017a2c       ?data@CEStr@@QEBAPEA_WXZ   0000000180018a2c f   common-kernel64:CEStr.obj
+ 0001:00017a30       ??BCEStr@@QEBA_NXZ         0000000180018a30 f   common-kernel64:CEStr.obj
+ 0001:00017a44       ??_Gbad_alloc@stdext@@UEAAPEAXI@Z 0000000180018a44 f i common-kernel64:CEStr.obj
+ 0001:00017a44       ??_Ebad_alloc@stdext@@UEAAPEAXI@Z 0000000180018a44 f i common-kernel64:CEStr.obj
+ 0001:00017a44       ??_Eexception@stdext@@UEAAPEAXI@Z 0000000180018a44 f i common-kernel64:CEStr.obj
+ 0001:00017a44       ??_Gexception@stdext@@UEAAPEAXI@Z 0000000180018a44 f i common-kernel64:CEStr.obj
+ 0001:00017a70       ?Append@CEStr@@QEAAPEB_WPEB_W0000000@Z 0000000180018a70 f   common-kernel64:CEStr.obj
+ 0001:00017b04       ?Clear@CEStr@@QEAAXXZ      0000000180018b04 f   common-kernel64:CEStr.obj
+ 0001:00017b20       ?Compare@CEStr@@QEBAHPEB_W_N@Z 0000000180018b20 f   common-kernel64:CEStr.obj
+ 0001:00017b50       ?Detach@CEStr@@QEAAPEA_WXZ 0000000180018b50 f   common-kernel64:CEStr.obj
+ 0001:00017b60       ?GetBuffer@CEStr@@QEAAPEA_W_J@Z 0000000180018b60 f   common-kernel64:CEStr.obj
+ 0001:00017c30       ?GetLen@CEStr@@QEBA_JXZ    0000000180018c30 f   common-kernel64:CEStr.obj
+ 0001:00017c54       ?GetMaxCount@CEStr@@QEAA_JXZ 0000000180018c54 f   common-kernel64:CEStr.obj
+ 0001:00017c80       ?Release@CEStr@@QEAAXXZ    0000000180018c80 f   common-kernel64:CEStr.obj
+ 0001:00017ca4       ?Set@CEStr@@QEAAPEB_WPEB_W_J@Z 0000000180018ca4 f   common-kernel64:CEStr.obj
+ 0001:00017d80       ?SetAt@CEStr@@QEAA_W_J_W@Z 0000000180018d80 f   common-kernel64:CEStr.obj
+ 0001:00017dd8       ?StringCchCopyNW@@YAJPEA_W_KPEB_W1@Z 0000000180018dd8 f i common-kernel64:CEStr.obj
+ 0001:00017e4c       ?_Doraise@bad_alloc@stdext@@MEBAXXZ 0000000180018e4c f i common-kernel64:CEStr.obj
+ 0001:00017e68       ?c_str@CEStr@@QEBAPEB_WPEB_W@Z 0000000180018e68 f   common-kernel64:CEStr.obj
+ 0001:00017e74       ?what@exception@stdext@@UEBAPEBDXZ 0000000180018e74 f i common-kernel64:CEStr.obj
+ 0001:00017e88       ?IsFilePath@@YA_NPEB_W_N@Z 0000000180018e88 f   common-kernel64:CmdLine.obj
+ 0001:00018028       ?PointToExt@@YAPEB_WPEB_W@Z 0000000180019028 f   common-kernel64:CmdLine.obj
+ 0001:0001804c       ?PointToName@@YAPEB_WPEB_W@Z 000000018001904c f   common-kernel64:CmdLine.obj
+ 0001:000180a8       ?Unquote@@YAPEB_WPEA_W_N@Z 00000001800190a8 f   common-kernel64:CmdLine.obj
+ 0001:00018110       ??$sprintf_c@$0CI@@@YAHAEAY0CI@DPEBDZZ 0000000180019110 f i common-kernel64:WThreads.obj
+ 0001:0001813c       ?SetThreadName@@YAXKPEAD@Z 000000018001913c f   common-kernel64:WThreads.obj
+ 0001:00018174       ?apiCreateThread@@YAPEAXP6AKPEAX@Z0PEAKPEBDH@Z 0000000180019174 f   common-kernel64:WThreads.obj
+ 0001:000182bc       ?apiTerminateThreadEx@@YAHPEAXKPEBDH@Z 00000001800192bc f   common-kernel64:WThreads.obj
+ 0001:000183c4       ?apiThreadHelper@@YAKPEAX@Z 00000001800193c4 f   common-kernel64:WThreads.obj
+ 0001:000185d0       ?lstrdup@@YA?AUCEStr@@PEB_W_K@Z 00000001800195d0 f   common-kernel64:MStrDup.obj
+ 0001:00018644       ?lstrdupW@@YA?AUCEStr@@PEBDI@Z 0000000180019644 f   common-kernel64:MStrDup.obj
+ 0001:000186e8       ??0CEnvStrings@@QEAA@PEA_W@Z 00000001800196e8 f   common-kernel64:EnvVar.obj
+ 0001:0001873c       ??1CEnvStrings@@QEAA@XZ    000000018001973c f   common-kernel64:EnvVar.obj
+ 0001:00018760       ?Clear@CEnvRestorer@@QEAAXXZ 0000000180019760 f   common-kernel64:EnvVar.obj
+ 0001:00018784       ?ExpandEnvStr@@YA?AUCEStr@@PEB_W@Z 0000000180019784 f   common-kernel64:EnvVar.obj
+ 0001:0001893c       ?GetEnvVar@@YA?AUCEStr@@PEB_W@Z 000000018001993c f   common-kernel64:EnvVar.obj
+ 0001:00018a54       ?SavePathVar@CEnvRestorer@@QEAAXPEB_W@Z 0000000180019a54 f   common-kernel64:EnvVar.obj
+ 0001:00018a88       ?CommonShutdown@@YAXXZ     0000000180019a88 f   common-kernel64:Common.obj
+ 0001:00018a98       ?IsEnvBlockVariableValid@@YA_NPEB_W@Z 0000000180019a98 f   common-kernel64:Common.obj
+ 0001:00018acc       ?IsEnvBlockVariableValid@@YA_NPEB_WAEAPEB_W@Z 0000000180019acc f   common-kernel64:Common.obj
+ 0001:00018b20       ?SetCommand@CESERVER_REQ_NEWCMD@@QEAAXPEB_W@Z 0000000180019b20 f   common-kernel64:Common.obj
+ 0001:00018b84       ?SetEnvStrings@CESERVER_REQ_NEWCMD@@QEAAXPEB_WK@Z 0000000180019b84 f   common-kernel64:Common.obj
+ 0001:00018c9c       ??_GMNullDesc@@QEAAPEAXI@Z 0000000180019c9c f i common-kernel64:MSecurity.obj
+ 0001:00018d10       ?LoadAdvApi@MNullDesc@@IEAAHXZ 0000000180019d10 f i common-kernel64:MSecurity.obj
+ 0001:00018e38       ?LocalSecurity@@YAPEAU_SECURITY_ATTRIBUTES@@XZ 0000000180019e38 f   common-kernel64:MSecurity.obj
+ 0001:00018e90       ?LocalSecurity@MNullDesc@@QEAAPEAU_SECURITY_ATTRIBUTES@@XZ 0000000180019e90 f i common-kernel64:MSecurity.obj
+ 0001:0001900c       ?ShutdownSecurity@@YAXXZ   000000018001a00c f   common-kernel64:MSecurity.obj
+ 0001:00019034       ??0?$MHandleBase@PEAX@@QEAA@PEAXV?$function@$$A6AXPEAX@Z@std@@@Z 000000018001a034 f i common-kernel64:WObjects.obj
+ 0001:000190a8       ??0MHandle@@QEAA@PEAXV?$function@$$A6AXPEAX@Z@std@@@Z 000000018001a0a8 f i common-kernel64:WObjects.obj
+ 0001:00019148       ??4?$function@$$A6AXPEAX@Z@std@@QEAAAEAV01@$$QEAV01@@Z 000000018001a148 f i common-kernel64:WObjects.obj
+ 0001:000191c0       ?Close@?$MHandleBase@PEAX@@QEAAXXZ 000000018001a1c0 f i common-kernel64:WObjects.obj
+ 0001:00019224       ?FileExists@@YA_NPEB_WPEA_K@Z 000000018001a224 f   common-kernel64:WObjects.obj
+ 0001:000194c0       ?GetTicks@@YAKXZ           000000018001a4c0 f   common-kernel64:WObjects.obj
+ 0001:000194c8       ?IsWin6@@YA_NXZ            000000018001a4c8 f   common-kernel64:WObjects.obj
+ 0001:000194fc       ?IsWin7@@YA_NXZ            000000018001a4fc f   common-kernel64:WObjects.obj
+ 0001:00019530       ?IsWinVerOrHigher@@YA_NG@Z 000000018001a530 f   common-kernel64:WObjects.obj
+ 0001:00019648       ?IsWindows64@@YA_NXZ       000000018001a648 f   common-kernel64:WObjects.obj
+ 0001:0001966c       ?SetHandle@?$MHandleBase@PEAX@@QEAA_NPEAXV?$function@$$A6AXPEAX@Z@std@@@Z 000000018001a66c f i common-kernel64:WObjects.obj
+ 0001:000196d8       ?_Copy@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEBAPEAV?$_Func_base@XPEAX@2@PEAX@Z 000000018001a6d8 f i common-kernel64:WObjects.obj
+ 0001:000196d8       ?_Move@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEAAPEAV?$_Func_base@XPEAX@2@PEAX@Z 000000018001a6d8 f i common-kernel64:WObjects.obj
+ 0001:000196f0       ?_Delete_this@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEAAX_N@Z 000000018001a6f0 f i common-kernel64:MProcess.obj
+ 0001:000196f0       ?_Delete_this@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEAAX_N@Z 000000018001a6f0 f i common-kernel64:WObjects.obj
+ 0001:00019708       ?_Do_call@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEAAX$$QEAPEAX@Z 000000018001a708 f i common-kernel64:WObjects.obj
+ 0001:00019714       ?_Get@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEBAPEBXXZ 000000018001a714 f i common-kernel64:WObjects.obj
+ 0001:00019714       ?_Get@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEBAPEBXXZ 000000018001a714 f i common-kernel64:MProcess.obj
+ 0001:0001971c       ?_Target_type@?$_Func_impl_no_alloc@P6AHPEAX@ZXPEAX@std@@EEBAAEBVtype_info@@XZ 000000018001a71c f i common-kernel64:WObjects.obj
+ 0001:00019724       ?_VerifyVersionInfo@@YA_NPEAU_OSVERSIONINFOEXW@@K_K@Z 000000018001a724 f   common-kernel64:WObjects.obj
+ 0001:000197f4       ?Init@HkFunc@@QEAA_NPEB_WPEAUHINSTANCE__@@@Z 000000018001a7f4 f   common-kernel64:HkFunc.obj
+ 0001:00019884       ?isConEmuHk@HkFunc@@QEAA_NXZ 000000018001a884 f   common-kernel64:HkFunc.obj
+ 0001:0001988c       ??$_Emplace_reallocate@AEBUtagPROCESSENTRY32W@@@?$vector@UtagPROCESSENTRY32W@@V?$MArrayAllocator@UtagPROCESSENTRY32W@@@@@std@@QEAAPEAUtagPROCESSENTRY32W@@QEAU2@AEBU2@@Z 000000018001a88c f i common-kernel64:MProcess.obj
+ 0001:00019a7c       ??$emplace_back@AEBUtagPROCESSENTRY32W@@@?$vector@UtagPROCESSENTRY32W@@V?$MArrayAllocator@UtagPROCESSENTRY32W@@@@@std@@QEAA?A_TAEBUtagPROCESSENTRY32W@@@Z 000000018001aa7c f i common-kernel64:MProcess.obj
+ 0001:00019b18       ??0?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAA@KK@Z 000000018001ab18 f i common-kernel64:MProcess.obj
+ 0001:00019ba0       ??_E?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@UEAAPEAXI@Z 000000018001aba0 f i common-kernel64:MProcess.obj
+ 0001:00019ba0       ??_EMToolHelpProcess@@UEAAPEAXI@Z 000000018001aba0 f i common-kernel64:MProcess.obj
+ 0001:00019ba0       ??_G?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@UEAAPEAXI@Z 000000018001aba0 f i common-kernel64:MProcess.obj
+ 0001:00019ba0       ??_GMToolHelpProcess@@UEAAPEAXI@Z 000000018001aba0 f i common-kernel64:MProcess.obj
+ 0001:00019c08       ?Close@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAAXXZ 000000018001ac08 f i common-kernel64:MProcess.obj
+ 0001:00019c88       ?Filter@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@MEAA_NAEBUtagPROCESSENTRY32W@@@Z 000000018001ac88 f i common-kernel64:MProcess.obj
+ 0001:00019c88       __acrt_uninitialize_command_line 000000018001ac88 f i libucrt:argv_data.obj
+ 0001:00019c8c       ?Find@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAA_NAEBV?$function@$$A6A_NAEBUtagPROCESSENTRY32W@@@Z@std@@AEAUtagPROCESSENTRY32W@@@Z 000000018001ac8c f i common-kernel64:MProcess.obj
+ 0001:00019da0       ?Find@MToolHelpProcess@@QEAA_NKAEAUtagPROCESSENTRY32W@@@Z 000000018001ada0 f i common-kernel64:MProcess.obj
+ 0001:00019e0c       ?Next@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAA_NAEAUtagPROCESSENTRY32W@@@Z 000000018001ae0c f i common-kernel64:MProcess.obj
+ 0001:00019ef4       ?Open@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@QEAA_NXZ 000000018001aef4 f i common-kernel64:MProcess.obj
+ 0001:00019f64       ?_Move@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEAAPEAV?$_Func_base@_NAEBUtagPROCESSENTRY32W@@@2@PEAX@Z 000000018001af64 f i common-kernel64:MProcess.obj
+ 0001:00019f64       ?_Copy@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEBAPEAV?$_Func_base@_NAEBUtagPROCESSENTRY32W@@@2@PEAX@Z 000000018001af64 f i common-kernel64:MProcess.obj
+ 0001:00019f78       ?_Do_call@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEAA_NAEBUtagPROCESSENTRY32W@@@Z 000000018001af78 f i common-kernel64:MProcess.obj
+ 0001:00019f84       ?_Target_type@?$_Func_impl_no_alloc@V<lambda_217d18733db987cb8fc0adfd68028951>@@_NAEBUtagPROCESSENTRY32W@@@std@@EEBAAEBVtype_info@@XZ 000000018001af84 f i common-kernel64:MProcess.obj
+ 0001:00019f8c       ?getNext@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@IEAA_NXZ 000000018001af8c f i common-kernel64:MProcess.obj
+ 0001:0001a02c       ?isTerminalMode@@YA_NXZ    000000018001b02c f   common-kernel64:MProcess.obj
+ 0001:0001a168       ??0MSection@@QEAA@XZ       000000018001b168 f   common-kernel64:MSection.obj
+ 0001:0001a1f0       ??0MSectionLock@@QEAA@XZ   000000018001b1f0 f   common-kernel64:MSection.obj
+ 0001:0001a200       ??0MSectionThread@@QEAA@PEAVMSection@@@Z 000000018001b200 f   common-kernel64:MSection.obj
+ 0001:0001a220       ??1MSection@@QEAA@XZ       000000018001b220 f   common-kernel64:MSection.obj
+ 0001:0001a288       ??1MSectionLock@@QEAA@XZ   000000018001b288 f   common-kernel64:MSection.obj
+ 0001:0001a2ac       ??1MSectionThread@@QEAA@XZ 000000018001b2ac f   common-kernel64:MSection.obj
+ 0001:0001a2e8       ?AddRef@MSection@@IEAAXK@Z 000000018001b2e8 f   common-kernel64:MSection.obj
+ 0001:0001a37c       ?Lock@MSection@@IEAAHHK@Z  000000018001b37c f   common-kernel64:MSection.obj
+ 0001:0001a478       ?Lock@MSectionLock@@QEAAHPEAVMSection@@HK@Z 000000018001b478 f   common-kernel64:MSection.obj
+ 0001:0001a4cc       ?MyEnterCriticalSection@MSection@@IEAA_NK@Z 000000018001b4cc f   common-kernel64:MSection.obj
+ 0001:0001a5f8       ?ReleaseRef@MSection@@IEAAHK@Z 000000018001b5f8 f   common-kernel64:MSection.obj
+ 0001:0001a698       ?Unlock@MSection@@IEAAXH@Z 000000018001b698 f   common-kernel64:MSection.obj
+ 0001:0001a6f0       ?Unlock@MSectionLock@@QEAAXXZ 000000018001b6f0 f   common-kernel64:MSection.obj
+ 0001:0001a71c       ?WaitUnlocked@MSection@@IEAAXKK@Z 000000018001b71c f   common-kernel64:MSection.obj
+ 0001:0001a7b0       ?CheckCallbackPtr@@YA_NPEAUHINSTANCE__@@_KPEAP6A_JXZHHH@Z 000000018001b7b0 f   common-kernel64:WModuleCheck.obj
+ 0001:0001a8b8       ?IsModuleValid@@YA_NPEAUHINSTANCE__@@H@Z 000000018001b8b8 f   common-kernel64:WModuleCheck.obj
+ 0001:0001a9c0       ??0MModule@@QEAA@PEAUHINSTANCE__@@@Z 000000018001b9c0 f   common-kernel64:MModule.obj
+ 0001:0001a9d0       ??1MModule@@QEAA@XZ        000000018001b9d0 f   common-kernel64:MModule.obj
+ 0001:0001a9d8       ?Free@MModule@@QEAAXXZ     000000018001b9d8 f   common-kernel64:MModule.obj
+ 0001:0001aa10       ??0MSectionSimple@@QEAA@_N@Z 000000018001ba10 f   common-kernel64:MSectionSimple.obj
+ 0001:0001aa48       ?Close@MSectionSimple@@QEAAXXZ 000000018001ba48 f   common-kernel64:MSectionSimple.obj
+ 0001:0001aa48       ??1MSectionSimple@@QEAA@XZ 000000018001ba48 f   common-kernel64:MSectionSimple.obj
+ 0001:0001aa68       ?Enter@MSectionSimple@@QEAAXXZ 000000018001ba68 f   common-kernel64:MSectionSimple.obj
+ 0001:0001aa70       ?Init@MSectionSimple@@QEAAXXZ 000000018001ba70 f   common-kernel64:MSectionSimple.obj
+ 0001:0001aa90       ?Leave@MSectionSimple@@QEAAXXZ 000000018001ba90 f   common-kernel64:MSectionSimple.obj
+ 0001:0001aa98       ?RecreateAndLock@MSectionSimple@@QEAA_NXZ 000000018001ba98 f   common-kernel64:MSectionSimple.obj
+ 0001:0001ab08       ?TryEnter@MSectionSimple@@QEAA_NXZ 000000018001bb08 f   common-kernel64:MSectionSimple.obj
+ 0001:0001ab30       ?SetConEmuEnvHWND@@YAXPEB_WPEAUHWND__@@@Z 000000018001bb30 f   common-user64:SetEnvVar.obj
+ 0001:0001ab88       ?SetConEmuEnvVar@@YAXPEAUHWND__@@@Z 000000018001bb88 f   common-user64:SetEnvVar.obj
+ 0001:0001ac0c       ?SetConEmuEnvVarChild@@YAXPEAUHWND__@@0@Z 000000018001bc0c f   common-user64:SetEnvVar.obj
+ 0001:0001ac38       ??$wcscpy_c@$0BAF@@@YAHAEAY0BAF@_WPEB_W@Z 000000018001bc38 f i common-user64:ConEmuCheckEx.obj
+ 0001:0001ac84       ?FindConEmuBaseDir@@YAHAEAY0BAF@_W0PEAUHINSTANCE__@@@Z 000000018001bc84 f   common-user64:ConEmuCheckEx.obj
+ 0001:0001b330       ?IsConEmuExeExist@@YAHPEB_WAEAY0BAF@_W@Z 000000018001c330 f   common-user64:ConEmuCheckEx.obj
+ 0001:0001b3d8       ??$swprintf_c@$0FA@@@YAHAEAY0FA@_WPEB_WZZ 000000018001c3d8 f i common-user64:EmergencyShow.obj
+ 0001:0001b404       ?CorrectConsolePos@@YAXPEAUHWND__@@@Z 000000018001c404 f   common-user64:EmergencyShow.obj
+ 0001:0001b520       ?EmergencyShow@@YAXPEAUHWND__@@HH@Z 000000018001c520 f   common-user64:EmergencyShow.obj
+ 0001:0001b660       ?EvaluateDefaultFontWidth@@YAHHPEB_W@Z 000000018001c660 f   common-user64:EmergencyShow.obj
+ 0001:0001b780       ?SetUserFriendlyFont@@YAXPEAUHWND__@@HH@Z 000000018001c780 f   common-user64:EmergencyShow.obj
+ 0001:0001bae0       ??0MSetter@@QEAA@PEAJ@Z    000000018001cae0 f   common-user64:MSetter.obj
+ 0001:0001baf8       ??1MSetter@@QEAA@XZ        000000018001caf8 f   common-user64:MSetter.obj
+ 0001:0001bb00       ?Unlock@MSetter@@QEAAXXZ   000000018001cb00 f   common-user64:MSetter.obj
+ 0001:0001bb60       ?IsDotsName@@YA_NPEB_W@Z   000000018001cb60 f   common-user64:WFiles.obj
+ 0001:0001bb84       ?SearchAppPaths@@YA_NPEB_WAEAUCEStr@@_NPEAVCEnvRestorer@@@Z 000000018001cb84 f   common-user64:WFiles.obj
+ 0001:0001c010       ?GetConsoleSizeInfo@@YAXPEAUCONSOLE_INFO@@@Z 000000018001d010 f   common-user64:WConsoleEx.obj
+ 0001:0001c09c       ?SetConsoleFontSizeTo@@YAXPEAUHWND__@@HHPEB_WGG@Z 000000018001d09c f   common-user64:WConsoleEx.obj
+ 0001:0001c484       ?SetConsoleInfo@@YAHPEAUHWND__@@PEAUCONSOLE_INFO@@@Z 000000018001d484 f   common-user64:WConsoleEx.obj
+ 0001:0001c68c       ?SetEnvVarExpanded@@YAXPEB_W0@Z 000000018001d68c f   common-user64:WUser.obj
+ 0001:0001c770       ?UpdateComspec@@YAXPEAUConEmuComspec@@_N@Z 000000018001d770 f   common-user64:WUser.obj
+ 0001:0001cab8       ?apiShowWindow@@YA_NPEAUHWND__@@H@Z 000000018001dab8 f   common-user64:WUser.obj
+ 0001:0001cacc       ?apiShowWindowAsync@@YA_NPEAUHWND__@@H@Z 000000018001dacc f   common-user64:WUser.obj
+ 0001:0001cae0       ?RegGetStringValue@@YAHPEAUHKEY__@@PEB_W1AEAUCEStr@@K@Z 000000018001dae0 f   common-user64:WRegistry.obj
+ 0001:0001cca4       ?FindMonitorsWorkspace@@YAHPEAUHMONITOR__@@PEAUHDC__@@PEAUtagRECT@@_J@Z 000000018001dca4 f   common-user64:Monitors.obj
+ 0001:0001cce0       ?GetAllMonitorsWorkspace@@YA?AUtagRECT@@XZ 000000018001dce0 f   common-user64:Monitors.obj
+ 0001:0001cd40       ??0bad_function_call@std@@QEAA@AEBV01@@Z 000000018001dd40 f i libcpmt:xthrow.obj
+ 0001:0001cd7c       ??0bad_function_call@std@@QEAA@XZ 000000018001dd7c f i libcpmt:xthrow.obj
+ 0001:0001cd94       ??0length_error@std@@QEAA@AEBV01@@Z 000000018001dd94 f i libcpmt:xthrow.obj
+ 0001:0001cdd0       ??0length_error@std@@QEAA@PEBD@Z 000000018001ddd0 f i libcpmt:xthrow.obj
+ 0001:0001ce18       ??0logic_error@std@@QEAA@AEBV01@@Z 000000018001de18 f i libcpmt:xthrow.obj
+ 0001:0001ce54       ?_Xbad_function_call@std@@YAXXZ 000000018001de54 f   libcpmt:xthrow.obj
+ 0001:0001ce74       ?_Xlength_error@std@@YAXPEBD@Z 000000018001de74 f   libcpmt:xthrow.obj
+ 0001:0001ce98       ?what@bad_function_call@std@@UEBAPEBDXZ 000000018001de98 f i libcpmt:xthrow.obj
+ 0001:0001cea0       __GSHandlerCheck           000000018001dea0 f   LIBCMT:gshandler.obj
+ 0001:0001cec0       __GSHandlerCheckCommon     000000018001dec0 f   LIBCMT:gshandler.obj
  0001:0001cf30       __security_check_cookie    000000018001df30 f   LIBCMT:amdsecgs.obj
  0001:0001cf50       ??3@YAXPEAX_K@Z            000000018001df50 f   LIBCMT:delete_scalar_size.obj
  0001:0001cf70       _alloca_probe              000000018001df70 f   LIBCMT:chkstk.obj
@@ -2953,19 +2953,19 @@
  0001:00004038       ?CallGuiMacroProc@@YAXXZ   0000000180005038 f   ConEmuPlugin2800.obj
  0001:00004468       ?FreeMacroResult@@YAXPEAXPEAUFarMacroValue@@_K@Z 0000000180005468 f   ConEmuPlugin2800.obj
  0001:00004604       ?GetFarSetting@@YAHPEAX_KPEB_W@Z 0000000180005604 f   ConEmuPlugin2800.obj
- 0001:00006438       ?WExists@@YA_JAEBUWindowInfo@@AEBV?$MArray@UWindowInfo@@@@@Z 0000000180007438 f   ConEmuPlugin2800.obj
- 0001:0000649c       ?WLoadWindows@@YA_JAEAV?$MArray@UWindowInfo@@@@H@Z 000000018000749c f   ConEmuPlugin2800.obj
- 0001:00006eac       ?CallGuiMacroDlg@@YA_JPEAXHH_J@Z 0000000180007eac f   ConEmuPlugin995.obj
- 0001:00007094       ?CallGuiMacroProc@@YAXXZ   0000000180008094 f   ConEmuPlugin995.obj
- 0001:000089f8       ?CallGuiMacroDlg@@YA_JPEAXHH_J@Z 00000001800099f8 f   ConEmuPluginA.obj
- 0001:00008c70       ?CallGuiMacroProc@@YAXXZ   0000000180009c70 f   ConEmuPluginA.obj
- 0001:0000cbcc       ?LoadFarVersion@@YA_NAEAUFarVersion@@AEAY0CAA@_W@Z 000000018000dbcc f   ConEmuPluginBase.obj
- 0001:0000cd7c       ?LoadModuleVersion@@YA_NPEB_WAEAUtagVS_FIXEDFILEINFO@@PEA_W_K@Z 000000018000dd7c f   ConEmuPluginBase.obj
- 0001:00019c84       initialize_environment     000000018001ac84 f i libucrt:initialization.obj
- 0001:00019c84       initialize_global_state_isolation 000000018001ac84 f i libucrt:initialization.obj
- 0001:00019c84       report_memory_leaks        000000018001ac84 f i libucrt:initialization.obj
- 0001:00019c84       uninitialize_c             000000018001ac84 f i libucrt:initialization.obj
- 0001:00019c84       uninitialize_global_state_isolation 000000018001ac84 f i libucrt:initialization.obj
+ 0001:0000643c       ?WExists@@YA_JAEBUWindowInfo@@AEBV?$MArray@UWindowInfo@@@@@Z 000000018000743c f   ConEmuPlugin2800.obj
+ 0001:000064a0       ?WLoadWindows@@YA_JAEAV?$MArray@UWindowInfo@@@@H@Z 00000001800074a0 f   ConEmuPlugin2800.obj
+ 0001:00006eb0       ?CallGuiMacroDlg@@YA_JPEAXHH_J@Z 0000000180007eb0 f   ConEmuPlugin995.obj
+ 0001:00007098       ?CallGuiMacroProc@@YAXXZ   0000000180008098 f   ConEmuPlugin995.obj
+ 0001:000089fc       ?CallGuiMacroDlg@@YA_JPEAXHH_J@Z 00000001800099fc f   ConEmuPluginA.obj
+ 0001:00008c74       ?CallGuiMacroProc@@YAXXZ   0000000180009c74 f   ConEmuPluginA.obj
+ 0001:0000cbd0       ?LoadFarVersion@@YA_NAEAUFarVersion@@AEAY0CAA@_W@Z 000000018000dbd0 f   ConEmuPluginBase.obj
+ 0001:0000cd80       ?LoadModuleVersion@@YA_NPEB_WAEAUtagVS_FIXEDFILEINFO@@PEA_W_K@Z 000000018000dd80 f   ConEmuPluginBase.obj
+ 0001:00019c88       initialize_environment     000000018001ac88 f i libucrt:initialization.obj
+ 0001:00019c88       initialize_global_state_isolation 000000018001ac88 f i libucrt:initialization.obj
+ 0001:00019c88       report_memory_leaks        000000018001ac88 f i libucrt:initialization.obj
+ 0001:00019c88       uninitialize_c             000000018001ac88 f i libucrt:initialization.obj
+ 0001:00019c88       uninitialize_global_state_isolation 000000018001ac88 f i libucrt:initialization.obj
  0001:0001cf20       $$000000                   000000018001df20     LIBCMT:amdsecgs.obj
  0001:0001cf60       $$000000                   000000018001df60     LIBCMT:chkstk.obj
  0001:0001d06c       ?__scrt_initialize_thread_safe_statics@@YAHXZ 000000018001e06c f   LIBCMT:thread_safe_statics.obj
