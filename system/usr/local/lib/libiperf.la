@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/cygdrive/c/Users/username/Desktop/LFTP4WIN-BUILD/home/lib'
+libdir='/cygdrive/d/a/iperf3-static/iperf3-static/iperf3/lib'
