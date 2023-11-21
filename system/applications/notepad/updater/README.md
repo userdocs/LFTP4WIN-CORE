@@ -64,18 +64,19 @@ How to build it?
 
  * Step 1: You have to build cURL before building WinGup:
 
-    1. Open VS2017 Native Tool Command for 32/64 bits. If you want to build for ARM, open a cmd, and run the following command:<br/>
-    `C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsamd64_arm64.bat`
+    1. Open VS2022 Native Tool Command for 32/64 bits. If you want to build for ARM, open a cmd, and run the following command:<br/>
+    `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsamd64_arm64.bat`
     2. go to curl winbuild directory:<br/>
        `cd <your wingup source path>\curl\winbuild`
-    3. compile cURL by using one of the following commands, according the mode and archetecture of wingup you want to build.
+    3. compile cURL by using one of the following commands, according the mode and architecture of wingup you want to build.
        - x64 release: `nmake /f Makefile.vc mode=dll vc=15 RTLIBCFG=static MACHINE=x64`
        - x64 debug: `nmake /f Makefile.vc mode=dll vc=15 RTLIBCFG=static DEBUG=yes MACHINE=x64`
        - x86 release: `nmake /f Makefile.vc mode=dll vc=15 RTLIBCFG=static MACHINE=x86`
        - x86 debug: `nmake /f Makefile.vc mode=dll vc=15 RTLIBCFG=static DEBUG=yes MACHINE=x86`
        - ARM64 release: `nmake /f Makefile.vc mode=dll vc=15 RTLIBCFG=static MACHINE=ARM64`
+       - ARM64 debug: `nmake /f Makefile.vc mode=dll vc=15 RTLIBCFG=static DEBUG=yes MACHINE=ARM64`
 
- * Step 2: Open [`vcproj\GUP.sln`](https://github.com/gup4win/wingup/blob/master/vcproj/GUP.sln) with VS2017.
+ * Step 2: Open [`vcproj\GUP.sln`](https://github.com/gup4win/wingup/blob/master/vcproj/GUP.sln) with VS2022.
  
  * Step 3: Build WinGup like a normal Visual Studio project.
 
