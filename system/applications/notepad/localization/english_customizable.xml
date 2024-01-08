@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="English" filename="english_customizable.xml" version="8.5.5">
+	<Native-Langue name="English" filename="english_customizable.xml" version="8.6">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -39,6 +39,8 @@ Translation note:
 					<Item subMenuId="edit-blankOperations" name="&amp;Blank Operations"/>
 					<Item subMenuId="edit-pasteSpecial" name="&amp;Paste Special"/>
 					<Item subMenuId="edit-onSelection" name="&amp;On Selection"/>
+					<Item subMenuId="edit-multiSelectALL" name="Multi-select ALL"/>
+					<Item subMenuId="edit-multiSelectNext" name="Multi-select Next"/>
 					<Item subMenuId="search-changeHistory" name="Change History"/>
 					<Item subMenuId="search-markAll" name="Style &amp;All Occurrences of Token"/>
 					<Item subMenuId="search-markOne" name="Style &amp;One Token"/>
@@ -118,6 +120,16 @@ Translation note:
 					<Item id="42007" name="&amp;Select All"/>
 					<Item id="42020" name="Begin/End &amp;Select"/>
 					<Item id="42089" name="Begin/End Select in Column Mode"/>
+					<Item id="42090" name="Ignore Case &amp;&amp; Whole Word"/>
+					<Item id="42091" name="Match Case Only"/>
+					<Item id="42092" name="Match Whole Word Only"/>
+					<Item id="42093" name="Match Case &amp;&amp; Whole Word"/>
+					<Item id="42094" name="Ignore Case &amp;&amp; Whole Word"/>
+					<Item id="42095" name="Match Case Only"/>
+					<Item id="42096" name="Match Whole Word Only"/>
+					<Item id="42097" name="Match Case &amp;&amp; Whole Word"/>
+					<Item id="42098" name="Undo the Latest Added Multi-Select"/>
+					<Item id="42099" name="Skip Current &amp;&amp; Go to Next Multi-select"/>
 					<Item id="42084" name="Date Time (short)"/>
 					<Item id="42085" name="Date Time (long)"/>
 					<Item id="42086" name="Date Time (customized)"/>
@@ -292,6 +304,8 @@ Translation note:
 					<Item id="44092" name="7th Tab"/>
 					<Item id="44093" name="8th Tab"/>
 					<Item id="44094" name="9th Tab"/>
+					<Item id="44116" name="First Tab"/>
+					<Item id="44117" name="Last Tab"/>
 					<Item id="44095" name="Next Tab"/>
 					<Item id="44096" name="Previous Tab"/>
 					<Item id="44097" name="Monitoring (tail -f)"/>
@@ -334,12 +348,12 @@ Translation note:
 					<Item id="45057" name="OEM 865: Nordic"/>
 					<Item id="45053" name="OEM 860: Portuguese"/>
 					<Item id="45056" name="OEM 863: French"/>
-
 					<Item id="10001" name="Move to Other View"/>
 					<Item id="10002" name="Clone to Other View"/>
 					<Item id="10003" name="Move to New Instance"/>
 					<Item id="10004" name="Open in New Instance"/>
-
+					<Item id="10005" name="Move to Start"/>
+					<Item id="10006" name="Move to End"/>
 					<Item id="46001" name="Style Configurator..."/>
 					<Item id="46250" name="Define your language..."/>
 					<Item id="46300" name="Open User Defined Language folder..."/>
@@ -425,6 +439,8 @@ Translation note:
 				<Item CMDID="42030" name="Copy Filename"/>
 				<Item CMDID="42031" name="Copy Current Dir. Path"/>
 				<Item CMDID="3" name="Move Document"/>
+				<Item CMDID="10005" name="Move to Start"/>
+				<Item CMDID="10006" name="Move to End"/>
 				<Item CMDID="10001" name="Move to Other View"/>
 				<Item CMDID="10002" name="Clone to Other View"/>
 				<Item CMDID="10003" name="Move to New Instance"/>
@@ -579,7 +595,6 @@ Translation note:
 				<Item id="1934" name="Co&amp;py to Clipboard"/>
 				<Item id="2" name="&amp;Close"/>
 			</SHA512FromTextDlg>
-
 			<PluginsAdminDlg title="Plugins Admin" titleAvailable="Available" titleUpdates="Updates" titleInstalled="Installed" titleIncompatible="Incompatible">
 				<ColumnPlugin name="Plugin"/>
 				<ColumnVersion name="Version"/>
@@ -642,17 +657,7 @@ Translation note:
 				<ScintillaCommandsTab name="Scintilla commands"/>
 				<ConflictInfoOk name="No shortcut conflicts for this item."/>
 				<ConflictInfoEditing name="No conflicts . . ."/>
-				<WindowCategory name="Window"/>
-				<FileCategory name="File"/>
-				<EditCategory name="Edit"/>
-				<SearchCategory name="Search"/>
-				<ViewCategory name="View"/>
-				<FormatCategory name="Format"/>
-				<LangCategory name="Lang"/>
 				<AboutCategory name="About"/>
-				<SettingCategory name="Setting"/>
-				<ToolCategory name="Tool"/>
-				<ExecuteCategory name="Execute"/>
 				<ModifyContextMenu name="Modify"/>
 				<DeleteContextMenu name="Delete"/>
 				<ClearContextMenu name="Clear"/>
@@ -972,7 +977,6 @@ Translation note:
 					<Item id="6221" name="F"/>
 					<Item id="6222" name="S"/>
 					<Item id="6246" name="Make current level folding/unfolding commands toggleable"/>
-					<Item id="6225" name="Enable Multi-Editing (Ctrl+Mouse click/selection)"/>
 					<Item id="6227" name="Line Wrap"/>
 					<Item id="6228" name="Default"/>
 					<Item id="6229" name="Aligned"/>
@@ -1153,10 +1157,11 @@ You can define several column markers by using white space to separate the diffe
 					<Item id="6903" name="Find dialog remains open after search that outputs to results window"/>
 					<Item id="6904" name="Confirm Replace All in All Opened Documents"/>
 					<Item id="6905" name="Replace: Don't move to the following occurrence"/>
-					<Item id="6906" name="Search Result window: show only one entry per found line"/>
+					<Item id="6906" name="Search Result window: show only one entry per found line if possible"/>
 					<Item id="6907" name="When Find Dialog is Invoked"/>
 					<Item id="6908" name="Fill Find Field with Selected Text"/>
 					<Item id="6909" name="Select Word Under Caret when Nothing Selected"/>
+					<Item id="6910" name="Minimum Size for Auto-Checking &quot;In selection&quot;:"/>
 				</Searching>
 
 				<RecentFilesHistory title="Recent Files History">
@@ -1177,6 +1182,7 @@ You can define several column markers by using white space to separate the diffe
 					<Item id="6821" name="seconds"/>
 					<Item id="6822" name="Backup path:"/>
 					<Item id="6309" name="Remember current session for next launch"/>
+					<Item id="6825" name="Remember inaccessible files from past session"/>
 					<Item id="6801" name="Backup on save"/>
 					<Item id="6315" name="None"/>
 					<Item id="6316" name="Simple backup"/>
@@ -1366,7 +1372,7 @@ You can re-activate this dialog in Preferences later."/>
 				<Item id="6" name="&amp;Yes"/>
 				<Item id="7" name="&amp;No"/>
 				<Item id="4" name="&amp;Always yes"/>
-			</DoSaveAll><!-- HowToReproduce: Check the 'Enable Save All confirm dialog' checkbox in Preference->MISC, now click 'Save all' -->
+			</DoSaveAll><!-- HowToReproduce: Check the "Enable Save All confirm dialog" checkbox in Preference->MISC, now click "Save all" -->
 		</Dialog>
 		<MessageBox>
 			<!-- $INT_REPLACE$ and $STR_REPLACE$ are place holders, don't translate these place holders. -->
@@ -1493,7 +1499,18 @@ Notepad++ will backup your old &quot;shortcuts.xml&quot; and save it as &quot;sh
 Renaming &quot;shortcuts.xml.v8.5.2.backup&quot; -&gt; &quot;shortcuts.xml&quot;, your commands should be restored and work properly."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
 			<NotEnoughRoom4Saving title="Save failed" message="Failed to save file.
 It seems there's not enough space on disk to save file. Your file is not saved."/>
+			<FileInaccessibleUserSession title="File inaccessible" message="Some files from your manually-saved session &quot;$STR_REPLACE$&quot; are inaccessible. They can be opened as empty and read-only documents as placeholders.
 
+Would you like to create those placeholders?
+
+NOTE: Choosing not to create the placeholders or closing them later, your manually-saved session will NOT be modified on exit."/>
+			<FileInaccessibleDefaultSessionXml title="File inaccessible" message="Some files from your past session are inaccessible. They can be opened as empty and read-only documents as placeholders.
+
+Would you like to create those placeholders?
+
+NOTE: Choosing not to create the placeholders or closing them later, your session WILL BE MODIFIED ON EXIT! We suggest you backup your &quot;session.xml&quot; now."/>
+			<RTLvsDirectWrite title="Cannot run RTL" message="RTL is not compatible with DirectWrite mode. Please disable DirectWrite mode in MISC. section of Preferences dialog, and restart Notepad++."/>
+			<FileMemoryAllocationFailed title="Exception: File memory allocation failed" message="There is probably not enough contiguous free memory for the file being loaded by Notepad++."/><!-- HowToReproduce: Try to open multiple files with total size > ~700MB in the x86 Notepad++ (it will depend on the PC memory configuration and the current system memory usage...). -->
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Clipboard History"/>
@@ -1637,6 +1654,7 @@ Find in all files but exclude all folders log or logs recursively:
 			<find-status-replaceinopenedfiles-1-replaced value="Replace in Opened Files: 1 occurrence was replaced"/>
 			<find-status-replaceinopenedfiles-nb-replaced value="Replace in Opened Files: $INT_REPLACE$ occurrences were replaced"/>
 			<find-status-invalid-re value="Find: Invalid regular expression"/>
+			<find-status-search-failed value="Find: Search failed"/>
 			<find-status-mark-1-match value="Mark: 1 match"/>
 			<find-status-mark-nb-matches value="Mark: $INT_REPLACE$ matches"/>
 			<find-status-count-1-match value="Count: 1 match"/>
@@ -1652,6 +1670,7 @@ Find in all files but exclude all folders log or logs recursively:
 			<find-status-replace-not-found value="Replace: no occurrence was found"/>
 			<find-status-replace-readonly value="Replace: Cannot replace text. The current document is read only"/>
 			<find-status-cannot-find value="Find: Can't find the text &quot;$STR_REPLACE$&quot;"/>
+			<find-status-cannot-find-pebkac-maybe value="The given occurrence cannot be found. You may have forgotten to check &quot;Wrap around&quot; (to ON), &quot;Match case&quot; (to OFF), or &quot;Match whole word only&quot; (to OFF)."/>
 			<find-status-scope-selection value="in selected text"/>
 			<find-status-scope-all value="in entire file"/>
 			<find-status-scope-backward value="from start-of-file to caret"/>
@@ -1753,6 +1772,7 @@ Click on &quot;?&quot; button on right to open website with User Manual."/>
 			<!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
 			<npcCustomColor-tip value="Go to Style Configurator to change the default custom color for selected whitespace and non-printing characters (&quot;Non-printing characters custom color&quot;)."/>
 			<npcIncludeCcUniEol-tip value="Apply non-printing characters appearance settings to C0, C1 control and Unicode EOL (next line, line separator and paragraph separator) characters."/>
+			<searchingInSelThresh-tip value="Number of selected characters in edit zone to automatically check the &quot;In selection&quot; checkbox when the Find dialog is activated. The maximum value is 1024. Set the value to 0 to disable auto-checking."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

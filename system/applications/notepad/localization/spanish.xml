@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="Español" filename="spanish.xml" version="8.5.5">
+	<Native-Langue name="Español" filename="spanish.xml" version="8.6">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -39,6 +39,8 @@ Translation note:
 					<Item subMenuId="edit-blankOperations" name="Operaciones de limpie&amp;za"/>
 					<Item subMenuId="edit-pasteSpecial" name="Pe&amp;gado especial"/>
 					<Item subMenuId="edit-onSelection" name="Selecció&amp;n"/>
+					<Item subMenuId="edit-multiSelectALL" name="Multiselección total"/>
+					<Item subMenuId="edit-multiSelectNext" name="Siguiente multiselección"/>
 					<Item subMenuId="search-changeHistory" name="Historial de cambios"/>
 					<Item subMenuId="search-markAll" name="Resaltar todas las coincid&amp;encias buscadas"/>
 					<Item subMenuId="search-markOne" name="Resaltar una coinci&amp;dencia"/>
@@ -154,6 +156,16 @@ Translation note:
 					<Item id="42074" name="Abrir carpeta contenedora en explorador de archivos"/>
 					<Item id="42075" name="Buscar en Internet"/>
 					<Item id="42076" name="Cambiar motor de búsqueda..."/>
+					<Item id="42090" name="Ignorar mayúsculas y minúsculas &amp;&amp; Palabra completa"/>
+					<Item id="42091" name="Solo mayúsculas y minúsculas"/>
+					<Item id="42092" name="Solo palabra completa"/>
+					<Item id="42093" name="Coincidir mayúsculas y minúsculas &amp;&amp; Palabra completa"/>
+					<Item id="42094" name="Ignorar mayúsculas y minúsculas &amp;&amp; Palabra completa"/>
+					<Item id="42095" name="Solo mayúsculas y minúsculas"/>
+					<Item id="42096" name="Solo palabra completa"/>
+					<Item id="42097" name="Coincidir mayúsculas y minúsculas &amp;&amp; Palabra completa"/>
+					<Item id="42098" name="Deshacer la última selección múltiple añadida"/>
+					<Item id="42099" name="Saltar actual &amp;&amp; Ir a siguiente multiselección"/>
 					<Item id="42018" name="&amp;Inicio de grabación"/>
 					<Item id="42019" name="&amp;Fin de grabación"/>
 					<Item id="42021" name="&amp;Reproducir"/>
@@ -198,7 +210,7 @@ Translation note:
 					<Item id="43001" name="&amp;Buscar..."/>
 					<Item id="43002" name="Buscar &amp;siguiente"/>
 					<Item id="43003" name="Sustitui&amp;r..."/>
-					<Item id="43004" name="Ir a &amp;línea..."/>
+					<Item id="43004" name="Ir a la &amp;línea..."/>
 					<Item id="43005" name="Activar/Desactivar marcadores"/>
 					<Item id="43006" name="Marcador siguiente"/>
 					<Item id="43007" name="Marcador anterior"/>
@@ -292,6 +304,8 @@ Translation note:
 					<Item id="44092" name="Pestaña 7"/>
 					<Item id="44093" name="Pestaña 8"/>
 					<Item id="44094" name="Pestaña 9"/>
+					<Item id="44116" name="Primera pestaña"/>
+					<Item id="44117" name="Última pestaña"/>
 					<Item id="44095" name="Pestaña siguiente"/>
 					<Item id="44096" name="Pestaña anterior"/>
 					<Item id="44097" name="Monitorizando (tail -f)"/>
@@ -334,12 +348,12 @@ Translation note:
 					<Item id="45057" name="OEM 865: Nórdico"/>
 					<Item id="45053" name="OEM 860: Portugués"/>
 					<Item id="45056" name="OEM 863: Francés"/>
-
 					<Item id="10001" name="Mover a otra vista"/>
 					<Item id="10002" name="Clonar en otra vista"/>
 					<Item id="10003" name="Mover a una ventana nueva"/>
 					<Item id="10004" name="Abrir en una ventana nueva"/>
-
+					<Item id="10005" name="Ir al inicio"/>
+					<Item id="10006" name="Ir al final"/>
 					<Item id="46001" name="Configurador de estilos..."/>
 					<Item id="46250" name="Defina su lenguaje..."/>
 					<Item id="46300" name="Abrir carpeta de lenguaje definida por el usuario..."/>
@@ -389,7 +403,7 @@ Translation note:
 					<Item id="48016" name="Modificar o borrar accesos directos de macros..."/>
 					<Item id="48017" name="Modificar o borrar accesos directos de comandos..."/>
 
-					<Item id="11001" name="P&amp;estañas..."/>
+					<Item id="11001" name="&amp;Pestañas..."/>
 					<Item id="11002" name="Nombre A a Z"/>
 					<Item id="11003" name="Nombre Z a A"/>
 					<Item id="11004" name="Ruta A a Z"/>
@@ -498,9 +512,9 @@ Translation note:
 			</Find>
 
 			<IncrementalFind title="">
-				<Item id="1681" name="Buscar"/>
-				<Item id="1685" name="Coincidir MAYÚS/minús"/>
-				<Item id="1690" name="Marcar todo"/>
+				<Item id="1681" name="Buscar:"/>
+				<Item id="1685" name="&amp;Coincidir MAYÚS/minús"/>
+				<Item id="1690" name="&amp;Marcar todo"/>
 			</IncrementalFind>
 
 			<FindCharsInRange title="Rango de búsqueda de caracteres">
@@ -961,7 +975,6 @@ Translation note:
 					<Item id="6221" name="R"/>
 					<Item id="6222" name="L"/>
 					<Item id="6246" name="Comandos de plegado/desplegado del nivel actual conmutables"/>
-					<Item id="6225" name="Habilitar edición múltiple (Ctrl. + clic/selección)"/>
 					<Item id="6227" name="Ajuste de línea"/>
 					<Item id="6228" name="Por defecto"/>
 					<Item id="6229" name="Alineado"/>
@@ -1132,7 +1145,7 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 						<Element name="Fecha larga"/>
 						<Element name="Hora"/>
 					</ComboBox>
-					<Item id="6725" name="Opciones:"/>
+					<Item id="6725" name="&amp;Opciones:"/>
 					<Item id="6727" name="Sus ajustes de las variables"/>
 					<Item id="6728" name="Encabezado y pie de página"/>
 				</Print>
@@ -1142,10 +1155,11 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 					<Item id="6903" name="El cuadro de diálogo permanece abierto después de la búsqueda que muestra la ventana de resultados"/>
 					<Item id="6904" name="Confirmar &quot;Sustituir todo&quot; en todos los documentos abiertos"/>
 					<Item id="6905" name="Sustituir: no ir a la siguiente coincidencia"/>
-					<Item id="6906" name="Ventana de resultados de búsqueda: mostrar solo una entrada por línea encontrada"/>
+					<Item id="6906" name="Ventana de resultados de búsqueda: mostrar, si es posible, solo una entrada por línea encontrada"/>
 					<Item id="6907" name="Al abrir el cuadro de búsqueda"/>
 					<Item id="6908" name="Rellenar el campo de búsqueda con el texto seleccionado"/>
 					<Item id="6909" name="Seleccionar la palabra bajo el cursor si no hay nada seleccionado"/>
+					<Item id="6910" name="Tamaño para la comprobación automática en &quot;Selección&quot;"/>
 				</Searching>
 
 				<RecentFilesHistory title="Archivos recientes">
@@ -1166,6 +1180,7 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 					<Item id="6821" name="segundos"/>
 					<Item id="6822" name="Guardar en:"/>
 					<Item id="6309" name="Recordar la sesión actual en el próximo inicio"/>
+					<Item id="6825" name="Recordar los archivos inaccesibles de la sesión anterior"/>
 					<Item id="6801" name="Copia de seguridad"/>
 					<Item id="6315" name="No hacer"/>
 					<Item id="6316" name="Copia simple"/>
@@ -1198,7 +1213,7 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 					<Item id="6866" name="3ª pareja:"/>
 				</AutoCompletion>
 
-				<MultiInstance title="Multi instancia &amp;&amp; Fecha">
+				<MultiInstance title="Multi instancia &amp; Fecha">
 					<Item id="6151" name="Configuración *"/>
 					<Item id="6152" name="Abrir sesión en nueva instancia de Notepad++ **"/>
 					<Item id="6153" name="Usar siempre en modo de múltiples instancias"/>
@@ -1243,7 +1258,7 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 					<Item id="7152" name="Suprimir advertencia al abrir archivos de 2 GB o mayores"/>
 				</Performance>
 
-				<Cloud title="Nube &amp;&amp; Enlaces">
+				<Cloud title="Nube &amp; Enlaces">
 					<Item id="6262" name="Ajustes de la nube"/>
 					<Item id="6263" name="Sin nube"/>
 					<Item id="6267" name="Especifique abajo la ruta de ubicación de la nube:"/>
@@ -1355,7 +1370,7 @@ Puede reactivarlo en Preferencias si lo desea."/>
 				<Item id="6" name="&amp;Sí"/>
 				<Item id="7" name="&amp;No"/>
 				<Item id="4" name="Siem&amp;pre sí"/>
-			</DoSaveAll><!-- HowToReproduce: Check the 'Enable Save All confirm dialog' checkbox in Preference->MISC, now click 'Save all' -->
+			</DoSaveAll><!-- HowToReproduce: Check the &quot;Enable Save All confirm dialog&quot; checkbox in Preference->MISC, now click &quot;Save all&quot; -->
 		</Dialog>
 		<MessageBox>
 			<!-- $INT_REPLACE$ and $STR_REPLACE$ are place holders, don't translate these place holders. -->
@@ -1379,8 +1394,7 @@ Las modificaciones guardadas no se pueden deshacer.
 
 			<NbFileToOpenImportantWarning title="La cantidad de archivos para abrir es demasiado grande" message="Se abrirán $INT_REPLACE$ archivos.
 ¿Desea abrir todos estos archivos?"/><!-- HowToReproduce: Check "Open all files of folder instead of launching Folder as Workspace on folder dropping" in "Default Directory" of Preferences dialog, then drop a folder which contains more then 200 files into Notepad++. -->
-			<SettingsOnCloudError title="Configuración en la nube" message="Parece que la ruta de la configuración en la nube se establece en una unidad de solo lectura 
-o en una carpeta que necesita derecho de acceso para escritura.
+			<SettingsOnCloudError title="Configuración en la nube" message="Parece que la ruta de la configuración en la nube se establece en una unidad de solo lectura o en una carpeta que necesita derecho de acceso para escritura.
 Su configuración en la nube será cancelada. Reinicie con un valor coherente usando el cuadro de diálogo de Preferencias."/>
 			<FilePathNotFoundWarning title="Abrir archivo" message="El archivo que está intentando abrir no existe."/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 			<SessionFileInvalidError title="No se pudo cargar la sesión" message="El archivo de sesión está dañado o no es válido."/><!-- HowToReproduce: Save current session via menu "File -> Save Session...", use another editor to modify the session you saved to make it an invalid xml file. Then load this invalid session via menu "File -> Load Session...". -->
@@ -1436,7 +1450,7 @@ Este archivo ha sido modificado por otro programa.
 			<CreateNewFileError title="Crear un archivo nuevo" message="No se puede crear el archivo &quot;$STR_REPLACE$&quot;."/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 			<OpenFileError title="Error" message="No se puede abrir el archivo &quot;$STR_REPLACE$&quot;."/>
 			<OpenFileNoFolderError title="No se puede abrir el archivo" message="Es imposible abrir &quot;$STR_REPLACE1$&quot;:
-			La carpeta &quot;$STR_REPLACE2$&quot; no existe."/>
+La carpeta &quot;$STR_REPLACE2$&quot; no existe."/>
 			<FileBackupFailed title="Error en la copia de seguridad del archivo" message="La versión anterior del archivo no se pudo guardar en el directorio de copia de seguridad en &quot;$STR_REPLACE$&quot;.
 
 ¿Desea guardar el archivo actual de todos modos?"/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
@@ -1488,6 +1502,18 @@ Notepad++ hará una copia de seguridad de su antiguo &quot;shortcuts.xml&quot; y
 Cambie el nombre de &quot;shortcuts.xml.v8.5.2.backup&quot; -&gt; &quot;shortcuts.xml&quot; y sus comandos serán restaurados y funcionales de nuevo."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
 			<NotEnoughRoom4Saving title="Guardado fallido" message="No se ha podido guardar el archivo.
 Parece que no hay espacio suficiente en el disco y no es posible guardarlo."/>
+			<FileInaccessibleUserSession title="Archivo inaccesible" message="Algunos archivos de su sesión guardada manualmente &quot;$STR_REPLACE$&quot; están inaccesibles. Se pueden abrir como documentos vacíos y de solo lectura como marcadores de posición.
+
+¿Quiere crear esos marcadores de posición?
+
+NOTA: Si elige no crear los marcadores de posición o cerrarlos más tarde, su sesión guardada manualmente NO se modificará al salir."/>
+			<FileInaccessibleDefaultSessionXml title="Archivo inaccesible" message="Algunos archivos de su sesión anterior están inaccesibles. Pueden abrirse como documentos vacíos y de solo lectura como marcadores de posición.
+
+¿Quiere crear esos marcadores de posición?
+
+NOTA: ¡Si elige no crear los marcadores de posición o cerrarlos más tarde, su sesión SERÁ MODIFICADA AL SALIR! Le sugerimos que haga una copia de seguridad de su &quot;session.xml&quot; ahora."/>
+			<RTLvsDirectWrite title="No se puede ejecutar RTL" message="RTL no es compatible con el modo DirectWrite. Desactívelo en Configuración -> Preferencias -> Varios y reinicie Notepad++."/>
+			<FileMemoryAllocationFailed title="Excepción: fallo en la asignación de memoria para los archivos" message="Es posible que no haya memoria suficiente disponible para los archivos que quiere abrir con Notepad++."/><!-- HowToReproduce: Try to open multiple files with total size > ~700MB in the x86 Notepad++ (it will depend on the PC memory configuration and the current system memory usage...). -->
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Historial del portapapeles"/>
@@ -1647,6 +1673,7 @@ Buscar en todos los archivos pero excluir todas las carpetas de registro o regis
 			<find-status-replace-not-found value="No se encontró ninguna coincidencia."/>
 			<find-status-replace-readonly value="Atención: no se puede sustituir el texto. El documento actual es de solo lectura."/>
 			<find-status-cannot-find value="Atención: no se puede encontrar el texto &quot;$STR_REPLACE$&quot;"/>
+			<find-status-cannot-find-pebkac-maybe value="No se puede encontrar la expresión indicada. Puede que haya olvidado marcar &quot;Buscar en todo el documento&quot; y desmarcar &quot;Coincidir mayúsculas y minúsculas&quot; o &quot;Solo palabra completa&quot;."/>
 			<find-status-scope-selection value="en el texto seleccionado."/>
 			<find-status-scope-all value="en todo el archivo."/>
 			<find-status-scope-backward value="desde el inicio del archivo hasta el cursor."/>
@@ -1667,7 +1694,7 @@ Buscar en todos los archivos pero excluir todas las carpetas de registro o regis
 			<common-cancel value="Cancelar"/>
 			<common-name value="Nombre"/>
 			<tabrename-title value="Renombrar pestaña actual"/>
-			<tabrename-newname value="Nuevo nombre"/>
+			<tabrename-newname value="Nombre nuevo"/>
 			<splitter-rotate-left value="Girar a la izquierda"/>
 			<splitter-rotate-right value="Girar a la derecha"/>
 			<userdefined-title-new value="Crear nuevo lenguaje..."/>
@@ -1700,6 +1727,11 @@ Buscar en todos los archivos pero excluir todas las carpetas de registro o regis
 			<find-result-title value="Buscar"/><!-- Must not begin with space or tab character -->
 			<find-result-title-info value="(Hay $INT_REPLACE1$ coincidencia(s) en $INT_REPLACE2$ archivo(s) de $INT_REPLACE3$ búsqueda(s))"/>
 			<find-result-title-info-selections value="(Hay $INT_REPLACE1$ coincidencias en $INT_REPLACE2$ selecciones de $INT_REPLACE3$ búsquedas)"/>
+			<find-result-title-info-options-searchmode-normal value="Normal"/>
+			<find-result-title-info-options-searchmode-extended value="Extendido"/>
+			<find-result-title-info-options-searchmode-regexp value="RegEx"/>
+			<find-result-title-info-options-case value="Mayúsculas - Minúsculas"/>
+			<find-result-title-info-options-word value="Palabra"/>
 			<find-result-title-info-extra value=" - Modo de filtro: mostrar solo los resultados buscados"/>
 			<find-result-hits value="($INT_REPLACE$ coincidencias)"/>
 			<find-result-line-prefix value="Línea"/><!-- Must not begin with space or tab character -->
@@ -1734,7 +1766,7 @@ Haga clic en este botón para abrir el sitio web del manual del usuario."/>
 NBSP: espacio sin salto de línea
 ZWSP: espacio de ancho cero
 ZWNBSP: espacio sin salto de línea de ancho cero
- 
+
 Para ver la lista completa, consulte el manual del usuario.
 Haga clic en el botón derecho &quot;?&quot; para abrir el sitio web del manual de usuario."/>
 			<npcCodepoint-tip value="Punto de código: nombre
@@ -1748,6 +1780,7 @@ Haga clic en el botón derecho &quot;?&quot; para abrir el sitio web del manual 
 			<!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
 			<npcCustomColor-tip value="Vaya al Configurador de estilos para cambiar el color personalizado por defecto de los espacios en blanco y caracteres no imprimibles seleccionados. (&quot;Non-printing characters custom color&quot;)."/>
 			<npcIncludeCcUniEol-tip value="Aplicar ajustes de apariencia de caracteres no imprimibles a los caracteres de control C0, C1 y Unicode EOL (línea siguiente, separador de línea y separador de párrafo)."/>
+			<searchingInSelThresh-tip value="Número de caracteres seleccionados en la zona de edición para marcar automáticamente la casilla &quot;Selección&quot; cuando se activa el diálogo Buscar. El valor máximo es 1024. Establezca el valor en 0 para desactivar la comprobación automática."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

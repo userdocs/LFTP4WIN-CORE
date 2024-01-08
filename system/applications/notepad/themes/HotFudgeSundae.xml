@@ -139,6 +139,7 @@ Installation:
             <WordsStyle name="COMMAND" styleID="5" fgColor="D92B10" bgColor="2B0F01" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="VARIABLE" styleID="6" fgColor="CFBA28" bgColor="2B0F01" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="OPERATOR" styleID="7" fgColor="D6C479" bgColor="2B0F01" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="AFTER LABEL" styleID="8" fgColor="208008" bgColor="2B0F01" fontName="" fontStyle="2" fontSize="" />
         </LexerType>
         <LexerType name="c" desc="C" ext="">
             <WordsStyle name="PREPROCESSOR" styleID="9" fgColor="C11418" bgColor="2B0F01" fontName="" fontStyle="0" fontSize="" />
@@ -934,7 +935,9 @@ Installation:
         <WidgetStyle name="Current line background colour" styleID="0" bgColor="432C13" />
         <!-- In below rule 'fgColor' attribute for 'Selected text colour' can be unlocked with a enableSelectFgColor.xml file -->
         <WidgetStyle name="Selected text colour" styleID="0" bgColor="585858" fgColor="CC0000" />
+        <WidgetStyle name="Multi-selected text color" styleID="0" bgColor="585858" />
         <WidgetStyle name="Caret colour" styleID="2069" fgColor="FAF1C6" />
+        <WidgetStyle name="Multi-edit carets color" styleID="0" fgColor="FAF1C6" />
         <WidgetStyle name="Edge colour" styleID="0" fgColor="8B642B" />
         <WidgetStyle name="Line number margin" styleID="33" fgColor="8B642B" bgColor="43250B" fontName="" fontStyle="0" fontSize="" />
         <WidgetStyle name="Bookmark margin" styleID="0" bgColor="43250B" />

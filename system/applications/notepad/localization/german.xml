@@ -14,7 +14,7 @@ Translation note:
 	or a copy at: http://www.should.keepfree.de/N++/german.xml.txt (rename to german.xml)
 -->
 <NotepadPlus>
-	<Native-Langue name="Deutsch" filename="german.xml" version="2023.10.06"><!-- basiert auf english.xml vom 06.10.2023 -->
+	<Native-Langue name="Deutsch" filename="german.xml" version="2023.12.30"><!-- basiert auf english.xml vom 29.12.2023 -->
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -48,6 +48,8 @@ Translation note:
 					<Item subMenuId="edit-blankOperations" name="Nicht &amp;druckbare Zeichen"/>
 					<Item subMenuId="edit-pasteSpecial" name="Einf&amp;ügen speziell"/>
 					<Item subMenuId="edit-onSelection" name="Mit Auswahl"/>
+					<Item subMenuId="edit-multiSelectALL" name="Mehrfachauswahl ALLE"/>
+					<Item subMenuId="edit-multiSelectNext" name="Mehrfachauswahl Nächstes"/>
 					<Item subMenuId="search-changeHistory" name="Änderungs-Historie"/>
 					<Item subMenuId="search-markAll" name="&amp;Alle Vorkommen hervorheben"/>
 					<Item subMenuId="search-markOne" name="Di&amp;eses Vorkommen hervorheben"/>
@@ -163,6 +165,16 @@ Translation note:
 					<Item id="42074" name="Verzeichnis im Explorer öffnen"/>
 					<Item id="42075" name="Im Internet suchen"/>
 					<Item id="42076" name="Andere Suchmaschine wählen …"/>
+					<Item id="42090" name="Ignoriere Groß- und Kleinschreibung &amp;&amp; ganzes Wort"/>
+					<Item id="42091" name="Nur Übereinstimmung Groß- und Kleinschreibung"/>
+					<Item id="42092" name="Nur Übereinstimmung ganzes Wort"/>
+					<Item id="42093" name="Übereinstimmung Groß- und Kleinschreibung &amp;&amp; ganzes Wort"/>
+					<Item id="42094" name="Ignoriere Groß- und Kleinschreibung &amp;&amp; ganzes Wort"/>
+					<Item id="42095" name="Nur Übereinstimmung Groß- und Kleinschreibung"/>
+					<Item id="42096" name="Nur Übereinstimmung ganzes Wort"/>
+					<Item id="42097" name="Übereinstimmung Groß- und Kleinschreibung &amp;&amp; ganzes Wort"/>
+					<Item id="42098" name="Letzte Mehrfachauswahl rückgängig machen"/>
+					<Item id="42099" name="Aktuelle überspringen &amp;&amp; zur nächsten Mehrfachauswahl gehen"/>
 					<Item id="42018" name="Aufzei&amp;chnung starten"/>
 					<Item id="42019" name="Aufzeichnung s&amp;toppen"/>
 					<Item id="42021" name="Makro ausfüh&amp;ren"/>
@@ -301,6 +313,8 @@ Translation note:
 					<Item id="44092" name="&amp;7. Tab"/>
 					<Item id="44093" name="&amp;8. Tab"/>
 					<Item id="44094" name="&amp;9. Tab"/>
+					<Item id="44116" name="&amp;Erster Tab"/>
+					<Item id="44117" name="&amp;Letzter Tab"/>
 					<Item id="44095" name="&amp;Nächster Tab"/>
 					<Item id="44096" name="&amp;Vorheriger Tab"/>
 					<Item id="44097" name="Überwachen (tail -f)"/>
@@ -343,12 +357,12 @@ Translation note:
 					<Item id="45057" name="OEM 865 (Nordisch)"/>
 					<Item id="45053" name="OEM 860 (Portugiesisch)"/>
 					<Item id="45056" name="OEM 863 (kanadisches Französisch)"/>
-
 					<Item id="10001" name="In zweite Ansicht &amp;verschieben"/>
 					<Item id="10002" name="In zweite Ansicht &amp;duplizieren"/>
 					<Item id="10003" name="In &amp;neue Instanz verschieben"/>
 					<Item id="10004" name="In neue Instan&amp;z duplizieren"/>
-
+					<Item id="10005" name="Zum Anfang verschieben"/>
+					<Item id="10006" name="Ans Ende verschieben"/>
 					<Item id="46001" name="&amp;Stile konfigurieren …"/>
 					<Item id="46250" name="Eigene Sprache &amp;definieren …"/>
 					<Item id="46300" name="Verzeichnis mit benutzerdefinierten Sprachen öffnen …"/>
@@ -434,6 +448,8 @@ Translation note:
 				<Item CMDID="42030" name="Nur Datei&amp;namen kopieren"/>
 				<Item CMDID="42031" name="Nur Verzeichnis&amp;pfad kopieren"/>
 				<Item CMDID="3" name="Dokument verschieben"/>
+				<Item CMDID="10005" name="Zum Anfang verschieben"/>
+				<Item CMDID="10006" name="Ans Ende verschieben"/>
 				<Item CMDID="10001" name="In zweite Ansicht &amp;verschieben"/>
 				<Item CMDID="10002" name="In zw&amp;eite Ansicht duplizieren"/>
 				<Item CMDID="10003" name="In neue &amp;Instanz verschieben"/>
@@ -507,9 +523,9 @@ Translation note:
 			</Find>
 
 			<IncrementalFind title="">
-				<Item id="1681" name="Suchen"/>
-				<Item id="1685" name="Groß-/Kleinschreibung"/>
-				<Item id="1690" name="Alle markieren"/>
+				<Item id="1681" name="Suchen:"/>
+				<Item id="1685" name="&amp;Groß-/Kleinschreibung"/>
+				<Item id="1690" name="&amp;Alle markieren"/>
 			</IncrementalFind>
 
 			<FindCharsInRange title="Suche nach Zeichencodes">
@@ -970,7 +986,6 @@ Translation note:
 					<Item id="6221" name="S"/>
 					<Item id="6222" name="L"/>
 					<Item id="6246" name="Befehl zum Ein- und Ausfalten der aktuellen Ebene umschaltbar machen"/>
-					<Item id="6225" name="Multi-Editing aktivieren (Strg+Mausklick/Auswahl)"/>
 					<Item id="6227" name="Zeilenumbruch"/>
 					<Item id="6228" name="Standard"/>
 					<Item id="6229" name="Ausgerichtet"/>
@@ -1151,11 +1166,11 @@ Mehrere Spaltenmarkierungen können definiert werden, indem die Zahlen durch Lee
 					<Item id="6903" name="Der Suchdialog bleibt nach der Suche geöffnet, die im Ergebnisfenster ausgegeben wird"/>
 					<Item id="6904" name="Bestätigung für 'Alle Ersetzen' in allen offenen Dokumenten"/>
 					<Item id="6905" name="Ersetzen: Nach Ersetzung nicht zum nächsten Vorkommen springen"/>
-					<Item id="6906" name="Suchergebnisfenster: Zeige nur einen Eintrag pro gefundener Zeile"/>
+					<Item id="6906" name="Suchergebnisfenster: Zeige wenn möglich nur einen Eintrag pro gefundener Zeile"/>
 					<Item id="6907" name="Wenn der Suchdialog aufgerufen wird"/>
 					<Item id="6908" name="Im Suchfeld gewählten Text einsetzen"/>
 					<Item id="6909" name="Das Wort unter dem Cursor verwenden wenn nichts gewählt ist"/>
-					<Item id="6910" name="Mindestgröße für die automatische Prüfung 'In Auswahl'"/>
+					<Item id="6910" name="Mindestgröße für die automatische Aktivierung von 'In Auswahl'"/>
 				</Searching>
 
 				<RecentFilesHistory title="Zuletzt geöffn. Dateien">
@@ -1176,6 +1191,7 @@ Mehrere Spaltenmarkierungen können definiert werden, indem die Zahlen durch Lee
 					<Item id="6821" name="Sekunden"/>
 					<Item id="6822" name="Verzeichnis:"/>
 					<Item id="6309" name="Aktuelle Sitzung für den nächsten Start merken"/>
+					<Item id="6825" name="Nicht zugängliche Dateien aus der letzten Sitzung merken"/>
 					<Item id="6801" name="Sicherheitskopie beim Speichern von Dateien"/>
 					<Item id="6315" name="Keine"/>
 					<Item id="6316" name="Einfach"/>
@@ -1492,6 +1508,18 @@ Notepad++ wird ein Backup der alten &quot;shortcuts.xml&quot; machen und die Dat
 Beim darauf folgenden Umbenennen der &quot;shortcuts.xml.v8.5.2.backup&quot; -&gt; &quot;shortcuts.xml&quot; sollten die Kommandos wiederhergestellt sein und wieder funktionieren."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
 			<NotEnoughRoom4Saving title="Speichern fehlgeschlagen" message="Konnte Datei nicht speichern.
 Es ist nicht genug Speicherplatz vorhanden, daher wurde die Datei nicht gespeichert."/>
+			<FileInaccessibleUserSession title="Datei nicht zugänglich" message="Einige Dateien der manuell gespeicherten Sitzung &quot;$STR_REPLACE$&quot; sind nicht zugänglich. Sie können aber als leere Datei und schreibgeschützt als Platzhalter geöffnet werden.
+
+Sollen diese Datei-Platzhalter erstellt werden?
+
+HINWEIS: Wenn die Platzhalter nicht erstellt oder später geschlossen werden, wird die manuell gespeicherte Sitzung beim Beenden NICHT MODIFIZIERT."/>
+			<FileInaccessibleDefaultSessionXml title="Datei nicht zugänglich" message="Einige Dateien der letzten Sitzung sind nicht zugänglich. Sie können aber als leere Datei und schreibgeschützt als Platzhalter geöffnet werden.
+
+Sollen diese Dateil-Platzhalter erstellt werden?
+
+HINWEIS: Wenn die Platzhalter nicht erstellt oder später geschlossen werden, wird die Sitzung beim Beenden MODIFIZIERT! Es wird empfohlen jetzt eine Sicherung der Sitzung &quot;session.xml&quot; zu machen."/>
+			<RTLvsDirectWrite title="Kann nicht auf 'Schreibrichtung von rechts nach links' (RTL) schalten" message="'RTL' ist nicht kompatibel mit dem 'DirectWrite' Modus. Bitte dazu 'DirectWrite' unter 'Diverses' in den Einstellungen deaktivieren und danach Notepad++ neu starten."/>
+			<FileMemoryAllocationFailed title="Ausnahmefehler: Dateispeicherzuweisung fehlgeschlagen" message="Eventuell gibt es nicht genügend zusammenhängenden freien Speicher für die von Notepad++ geladene Datei."/><!-- HowToReproduce: Try to open multiple files with total size > ~700MB in the x86 Notepad++ (it will depend on the PC memory configuration and the current system memory usage...). -->
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Zwischenablage"/>
@@ -1651,6 +1679,7 @@ Suche in allen Dateien, exkludiere alle Verzeichnisse log oder logs rekursiv:
 			<find-status-replace-not-found value="Ersetzen: Kein Vorkommen gefunden"/>
 			<find-status-replace-readonly value="Ersetzen: Konnte Text wegen schreibgeschützter Datei nicht ersetzen"/>
 			<find-status-cannot-find value="Suche: Konnte Text &quot;$STR_REPLACE$&quot; nicht finden"/>
+			<find-status-cannot-find-pebkac-maybe value="Das angegebene Vorkommen kann nicht gefunden werden. Bitte überprüfen ob 'Am Ende von vorne beginnen' (auf EIN), 'Groß-/Kleinschreibung beachten' (auf AUS), oder 'Nur ganze Wörter suchen' (auf AUS) gesetzt sind."/>
 			<find-status-scope-selection value="im gewählten Text"/>
 			<find-status-scope-all value="in der gesamten Datei"/>
 			<find-status-scope-backward value="vom Dateianfang bis zum Cursor"/>
@@ -1704,6 +1733,11 @@ Suche in allen Dateien, exkludiere alle Verzeichnisse log oder logs rekursiv:
 			<find-result-title value="Suche"/><!-- Must not begin with space or tab character -->
 			<find-result-title-info value="($INT_REPLACE1$ Treffer in $INT_REPLACE2$ Dateien von $INT_REPLACE3$ gesucht)"/>
 			<find-result-title-info-selections value="($INT_REPLACE1$ Treffer in $INT_REPLACE2$ Auswahlen von $INT_REPLACE3$ gesucht)"/>
+			<find-result-title-info-options-searchmode-normal value="Normal"/>
+			<find-result-title-info-options-searchmode-extended value="Erweitert"/>
+			<find-result-title-info-options-searchmode-regexp value="RegEx"/>
+			<find-result-title-info-options-case value="Fall"/>
+			<find-result-title-info-options-word value="Wort"/>
 			<find-result-title-info-extra value=" - Zeilenfilter-Modus: nur die Treffer anzeigen"/>
 			<find-result-hits value="($INT_REPLACE$ Treffer)"/>
 			<find-result-line-prefix value="Zeile"/><!-- Must not begin with space or tab character -->
@@ -1752,7 +1786,7 @@ Ein Klick auf &quot;?&quot; öffnet die Webseite des Benutzerhandbuchs."/>
 			<!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
 			<npcCustomColor-tip value="Im Stil-Konfigurator kann die Standardfarbe für die speziellen Leerzeichen und die nicht druckbaren Zeichen angepasst werden (&quot;Non-printing characters custom color&quot;)."/>
 			<npcIncludeCcUniEol-tip value="Wenden Sie die Einstellungen für das Erscheinungsbild von nicht druckbaren Zeichen auf die Steuerzeichen C0, C1 und Unicode EOL (nächste Zeile, Zeilen- und Absatztrenner) an."/>
-			<searchingInSelThresh-tip value="Anzahl der ausgewählten Zeichen (max. 1024) in der Bearbeitungszone, um das Kontrollkästchen 'In Auswahl' automatisch zu aktivieren, wenn der Suchdialog aktiviert wird. Setzen Sie den Wert auf 0, um die automatische Markierung zu deaktivieren."/>
+			<searchingInSelThresh-tip value="Anzahl der ausgewählten Zeichen (max. 1024) in der Bearbeitungszone, um das Kontrollkästchen 'In Auswahl' automatisch zu aktivieren, wenn der Suchdialog aktiviert wird. Den Wert auf 0 setzen, um die automatische Markierung zu deaktivieren."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

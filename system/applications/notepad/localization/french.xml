@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="français" filename="french.xml" version="8.5.5">
+	<Native-Langue name="français" filename="french.xml" version="8.6">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -39,6 +39,8 @@ Translation note:
 					<Item subMenuId="edit-blankOperations" name="Traitement des espacements"/>
 					<Item subMenuId="edit-pasteSpecial" name="Collage spécial"/>
 					<Item subMenuId="edit-onSelection" name="Pour la sélection"/>
+					<Item subMenuId="edit-multiSelectALL" name="Multi-sélection TOUS"/>
+					<Item subMenuId="edit-multiSelectNext" name="Multi-sélection Suivant"/>
 					<Item subMenuId="search-changeHistory" name="Historique de Modification"/>
 					<Item subMenuId="search-markAll" name="Marquer tout"/>
 					<Item subMenuId="search-markOne" name="Marquer uniquement la sélection"/>
@@ -77,6 +79,7 @@ Translation note:
 					<Item subMenuId="tools-md5" name="MD5"/>
 					<Item subMenuId="tools-sha1" name="SHA-1"/>
 					<Item subMenuId="tools-sha256" name="SHA-256"/>
+					<Item subMenuId="tools-sha512" name="SHA-512"/>
 					<Item subMenuId="window-sortby" name="Trier par"/>
 				</SubEntries>
 
@@ -153,6 +156,16 @@ Translation note:
 					<Item id="42074" name="Ouvrir le répertoire dans l'explorateur"/>
 					<Item id="42075" name="Rechercher sur Internet"/>
 					<Item id="42076" name="Changer le moteur de recherche..."/>
+					<Item id="42090" name="Ignorer la casse &amp;&amp; le mot entier"/>
+					<Item id="42091" name="Respecter la casse seulement"/>
+					<Item id="42092" name="Respecter le mot entier seulement"/>
+					<Item id="42093" name="Respecter la casse &amp;&amp; le mot entier"/>
+					<Item id="42094" name="Ignorer la casse &amp;&amp; le mot entier"/>
+					<Item id="42095" name="Respecter la casse seulement"/>
+					<Item id="42096" name="Respecter le mot entier seulement"/>
+					<Item id="42097" name="Respecter la casse &amp;&amp; le mot entier"/>
+					<Item id="42098" name="Annuler le dernier ajout à la multi-sélection"/>
+					<Item id="42099" name="Sauter la courante &amp;&amp; aller à la prochaine multi-sélection"/>
 					<Item id="42018" name="Démarrer l’enregistrement"/>
 					<Item id="42019" name="Arrêter l’enregistrement"/>
 					<Item id="42021" name="Rejouer la macro"/>
@@ -291,6 +304,8 @@ Translation note:
 					<Item id="44092" name="Onglet 7"/>
 					<Item id="44093" name="Onglet 8"/>
 					<Item id="44094" name="Onglet 9"/>
+					<Item id="44116" name="Premier Onglet"/>
+					<Item id="44117" name="Dernier Onglet"/>
 					<Item id="44095" name="Onglet suivant"/>
 					<Item id="44096" name="Onglet précédent"/>
 					<Item id="44097" name="Surveillance de Log (tail -f)"/>
@@ -338,7 +353,8 @@ Translation note:
 					<Item id="10002" name="Cloner dans l'autre vue"/>
 					<Item id="10003" name="Déplacer vers une nouvelle fenêtre"/>
 					<Item id="10004" name="Ouvrir dans une nouvelle fenêtre"/>
-
+					<Item id="10005" name="Déplacer au début"/>
+					<Item id="10006" name="Déplacer à la fin"/>
 					<Item id="46001" name="Configurateur de coloration syntaxique..."/>
 					<Item id="46250" name="Définir votre langage..."/>
 					<Item id="46300" name="Ouvrir le dossier des Langages utilisateur..."/>
@@ -578,7 +594,6 @@ Translation note:
 				<Item id="1934" name="Copier dans le presse-papiers"/>
 				<Item id="2" name="Fermer"/>
 			</SHA512FromTextDlg>
-
 			<PluginsAdminDlg title="Gestionnaire des modules d'extension" titleAvailable="Disponibles" titleUpdates="Mises à jour" titleInstalled="Installés" titleIncompatible="Incompatibilité">
 				<ColumnPlugin name="Modules d'extension"/>
 				<ColumnVersion name="Version"/>
@@ -961,7 +976,6 @@ Translation note:
 					<Item id="6221" name="Vif"/><!-- Rapide -->
 					<Item id="6222" name="Zen"/><!-- Lent -->
 					<Item id="6246" name="Rendre les commandes de pliage/dépliage du niveau actuel commutables"/>
-					<Item id="6225" name="Activer Multi-édition (Ctrl+Clic/sélection)"/>
 					<Item id="6227" name="Ligne pliée"/>
 					<Item id="6228" name="Défaut"/>
 					<Item id="6229" name="Aligné"/>
@@ -1142,11 +1156,11 @@ Vous pouvez définir plusieurs marqueurs de colonne en utilisant un espace pour 
 					<Item id="6903" name="La boîte de dialogue &quot;Rechercher&quot; reste ouverte après la recherche qui affiche la fenêtre de résultats"/>
 					<Item id="6904" name="Confirmer &quot;Remplacer dans tous les documents ouverts&quot;"/>
 					<Item id="6905" name="&quot;Remplacer&quot; : ne pas passer à l'occurrence suivante"/>
-					<Item id="6906" name="Résultats de recherche : afficher une seule entrée par ligne trouvée"/>
+					<Item id="6906" name="Résultats de recherche : afficher une seule entrée par ligne trouvée si possible"/>
 					<Item id="6907" name="Quand la boîte de dialogue &quot;Rechercher&quot; est invoquée"/>
 					<Item id="6908" name="Remplir le champ de recherche avec le texte sélectionné"/>
 					<Item id="6909" name="Sélectionner le mot sous le curseur si rien n'est sélectionné"/>
-					<Item id="6910" name="Taille minimale pour l'auto-coche de 'Dans la sélection'"/>
+					<Item id="6910" name="Taille minimale pour l'auto-coche de &quot;Dans la sélection&quot;:"/>
 				</Searching>
 
 				<RecentFilesHistory title="Fichiers récents">
@@ -1167,6 +1181,7 @@ Vous pouvez définir plusieurs marqueurs de colonne en utilisant un espace pour 
 					<Item id="6821" name="secondes"/>
 					<Item id="6822" name="dans le dossier"/>
 					<Item id="6309" name="Mémoriser la session actuelle"/>
+					<Item id="6825" name="Mémoriser les fichiers inaccessibles de la session précédente"/>
 					<Item id="6801" name="Sauvegarde"/>
 					<Item id="6315" name="Aucune"/>
 					<Item id="6316" name="Simple"/>
@@ -1482,7 +1497,19 @@ Autrement, vous pouvez revenir vers Notepad++ v8.5.2 et restaurer les données p
 Notepad++ va sauvegarder votre ancien &quot;shortcuts.xml&quot; et l'enregistrer sous &quot;shortcuts.xml.v8.5.2.backup&quot;.
 En renommant &quot;shortcuts.xml.v8.5.2.backup&quot; -&gt; &quot;shortcuts.xml&quot;, vos commandes devraient être proprement restaurées."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
 			<NotEnoughRoom4Saving title="Échec de l'enregistrement" message="Échec de l'enregistrement du fichier.
-Il semblerait qu'il n'y a pas assez d'espace disque pour enregistrer le fichier. Votre fichier n'est pas enregistré."/>
+Il semblerait qu'il n'y a pas assez d'espace sur le disque. Votre fichier n'est pas enregistré."/>
+			<FileInaccessibleUserSession title="Fichier inaccessible" message="Certains fichiers de votre session sauvegardée manuellement &quot;$STR_REPLACE$&quot; sont inaccessibles. Ils peuvent être ouverts comme des documents vides et en lecture seule en tant qu'espaces réservés.
+
+Voulez-vous créer des espaces réservés pour eux ?
+
+Notez que si vous choisissez de ne pas créer d'espaces réservés ou de les fermer plus tard, votre session sauvegardée manuellement ne sera PAS modifiée à la sortie."/>
+			<FileInaccessibleDefaultSessionXml title="Fichier inaccessible" message="Certains fichiers de votre session précédente sont inaccessibles. Ils peuvent être ouverts comme des documents vides et en lecture seule en tant qu'espaces réservés.
+
+Voulez-vous créer des espaces réservés pour eux ?
+
+NOTE : Si vous choisissez de ne pas créer d'espaces réservés ou de les fermer plus tard, votre fichier de session sera modifié à la sortie. Nous vous suggérons de faire une sauvegarde du fichier de session &quot;session.xml&quot; maintenant."/>
+			<RTLvsDirectWrite title="Exécution de la commande &quot;Texte de droite à gauche&quot; impossible" message="&quot;Texte de droite à gauche&quot; n'est pas compatible avec le mode &quot;DirectWrite&quot;. Veuillez désactiver ce mode dans la section &quot;Divers&quot; du dialogue Préférences, et redémarer Notepad++."/>
+			<FileMemoryAllocationFailed title="Exception : échec de l'allocation de mémoire du fichier" message="Il n'y a probablement pas assez de mémoire libre contiguë pour le fichier chargé par Notepad++."/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Historique du presse-papier"/>
@@ -1642,6 +1669,7 @@ Rechercher dans tous les fichiers mais pas dans les dossiers log ou logs récurs
 			<find-status-replace-not-found value="Remplacer : aucune occurrence n'a été trouvée"/>
 			<find-status-replace-readonly value="Remplacer : l'opération a échoué. Le fichier est en lecture seule"/>
 			<find-status-cannot-find value="Rechercher : &quot;$STR_REPLACE$&quot; n'a pas été trouvé"/>
+			<find-status-cannot-find-pebkac-maybe value="L'occurrence donnée n’a pas été trouvée. Vous avez peut-être oublié de cocher &quot;Boucler&quot; (activé), &quot;Respecter la casse&quot; (désactivé), ou &quot;Mot entier uniquement&quot; (désactivé)."/>
 			<find-status-scope-selection value="dans le texte sélectionné"/>
 			<find-status-scope-all value="dans le fichier"/>
 			<find-status-scope-backward value="du début du fichier au curseur"/>
@@ -1695,6 +1723,11 @@ Rechercher dans tous les fichiers mais pas dans les dossiers log ou logs récurs
 			<find-result-title value="Rechercher"/><!-- Must not begin with space or tab character -->
 			<find-result-title-info value="($INT_REPLACE1$ résultats dans $INT_REPLACE2$ documents depuis $INT_REPLACE3$ documents recherchés)"/>
 			<find-result-title-info-selections value="($INT_REPLACE1$ résultats dans $INT_REPLACE2$ sélections de $INT_REPLACE3$ recherchés)"/>
+			<find-result-title-info-options-searchmode-normal value="Normal"/>
+			<find-result-title-info-options-searchmode-extended value="Étendu"/>
+			<find-result-title-info-options-searchmode-regexp value="RegEx"/>
+			<find-result-title-info-options-case value="Casse"/>
+			<find-result-title-info-options-word value="Mot"/>
 			<find-result-title-info-extra value=" - Mode de filtre de ligne : affiche uniquement les résultats filtrés"/>
 			<find-result-hits value="($INT_REPLACE$ résultats)"/>
 			<find-result-line-prefix value="Ligne"/><!-- Must not begin with space or tab character -->
@@ -1743,7 +1776,7 @@ Cliquez sur le bouton &quot;?&quot; à droite pour ouvrir le site web du Manuel 
 			<!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
 			<npcCustomColor-tip value="Aller dans le Configurateur de style pour changer la couleur personnalisée par défaut pour la sélection de caractères blancs et de caractères non-imprimables (&quot;Couleur personnalisée des caractères non-imprimables&quot;)."/>
 			<npcIncludeCcUniEol-tip value="Applique les paramètres d'apparence des caractères non-imprimables aux contrôles C0, C1 et aux caractères Unicode EOL (ligne suivante, séparateur de ligne et séparateur de paragraphe)."/>
-			<searchingInSelThresh-tip value="Nombre de caractères sélectionnés dans la zone d'édition pour cocher automatiquement la case 'Dans la sélection' quand la fenêtre Rechercher est activée. La valeur maximale est 1024. Mettre la valeur à 0 pour désactiver l'auto-coche."/>
+			<searchingInSelThresh-tip value="Nombre de caractères sélectionnés dans la zone d'édition pour cocher automatiquement la case &quot;Dans la sélection&quot; quand la fenêtre Rechercher est activée. La valeur maximale est 1024. Mettre la valeur à 0 pour désactiver l'auto-coche."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>
