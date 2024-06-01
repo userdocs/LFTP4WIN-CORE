@@ -1,46 +1,49 @@
-Notepad++ v8.6.2 fixed regressions:
+Notepad++ v8.6.7 bug-fixes & new enhancements:
 
- 1. Fix Shift-DEL, Ctrl-INS and Shift-INS not working regression.
- 2. Fix Ctrl+V cannot paste into the text fields of certain plugins regression.
- 3. Remove option "disableLineCopyCutDelete.xml" (the empty file takes no effect).
- 4. Fix a regression: the position in the previous session is now restored correctly in cloned document.
+1. Fix regression of multi-edit cursors placed wrongly issue.
+2. Fix multi-editing not showing multiple cursors in dark mode.
+3. Add auto-completion for Go & Raku, function list for Raku.
+4. Fix symbol '&' not showing in Document Switcher.
+5. Allow syntax highlighting for custom tags in HTML.
+6. Fix dialogs out of screen problem.
 
 
-Notepad++ v8.6.1 new features & bug-fixes:
+Notepad++ v8.6.6 bug-fixes & new enhancements:
 
- 1. Updated to Scintilla 5.4.1 & Lexilla 5.3.0.
- 2. Fix a regression: customized extension in Style Configurator is now saved correctly.
- 3. Add an ability (disableLineCopyCutDelete.xml) to disable line copy/cut/delete when no selection is made.
- 4. Add an ability (noColumnToMultiSelect.xml) to disable column mode to multi-select mode.
- 5. Fix deleting in column mode also delete an unexpected EOL.
- 6. Fix hidden results of long lines for Search results with "Find in..." commands.
- 7. Enhance Search-results by showing search options for "Find in..." commands.
- 8. Fix an issue: replacements are no longer duplicated (the 2nd time in cloned document) for "Replace in Opened Docs".
- 9. Fix a regression to make F3 & Shift-F3 work again in Incremental Search.
-10. Add document tab navigation commands: "First tab" & "Last tab".
-11. Add document tab commands: "Move to Start" & "Move to End" commands.
-12. 3 RTL new abilities: RTL per document, RTL per document remembered across the sessions & new attribute editZoneRTL="no" in RTL localization files.
-13. Enhance the "-loadingTime" command line parameter.
-14. Enhance the performance: disable undo collection while loading a file.
-15. Sort language list in the Preferences dialog.
-16. Fix a visual glitch that occurred during multi-paste.
-17. Fix confusing memory allocation error message.
-18. Fix python wrong decorator attribute color.
-19. Fix file status in "other view" is not detected.
-20. Fix dropped file being opened in the wrong view.
+ 1. Update to scintilla 5.5.0 & Lexilla 5.3.2.
+ 2. Fix crash when crossing the 2GB file size threshold.
+ 3. Fix a performance issue due to URL recognition.
+ 4. Update to nlohman json 3.11.3.
+ 5. Fix multi-edit resists escape after typing issue.
+ 6. Make F3 & Shift-F3 work in Find Replace dialog.
+ 7. Allow Ctrl-TAB to switch tabs in FindReplace, PluginAdmin and UDL dialogs.
+ 8. Add programming language support for Go & Raku(Perl 6).
+ 9. Fix user defined auto-insert not working issue.
+10. Enhance GUI: resize checkboxes/radio buttons as text length needs.
+11. Enhance GUI: make sizing arrows more coherent in Find dialog.
+12. Fix URL enclosed in apostrophes or backtick not working issue.
+13. Fix wrong dropped file view issue.
+14. Fix Korean(한)/English(영) key not working regression.
+15. Fix the tab labels of some dialogs being cut in Dark mode.
+16. Fix close button disappeared issue in Find Replace dialog.
+17. Apply dark theme to checkbox buttons on Windows 11.
+18. Fix menu bar cluttered in Dark Mode issue.
+19. Fix Debug Info minor display regression.
+20. Enhance Lua language syntax highlighting.
+21. Enhance the function list support for Ada.
 
 
 Get more info on
-https://notepad-plus-plus.org/downloads/v8.6.2/
+https://notepad-plus-plus.org/downloads/v8.6.7/
 
 
 Included plugins:
 
 1.  NppExport v0.4
-2.  Converter v4.5
-3.  Mime Tool v3.0
+2.  Converter v4.6
+3.  Mime Tool v3.1
 
 
 Updater (Installer only):
 
-* WinGUp (for Notepad++) v5.2.7
+* WinGUp (for Notepad++) v5.2.8
