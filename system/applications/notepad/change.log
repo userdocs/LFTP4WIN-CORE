@@ -1,40 +1,36 @@
-Notepad++ v8.6.7 bug-fixes & new enhancements:
+Notepad++ v8.6.9 bug-fixes & new enhancements:
 
-1. Fix regression of multi-edit cursors placed wrongly issue.
-2. Fix multi-editing not showing multiple cursors in dark mode.
-3. Add auto-completion for Go & Raku, function list for Raku.
-4. Fix symbol '&' not showing in Document Switcher.
-5. Allow syntax highlighting for custom tags in HTML.
-6. Fix dialogs out of screen problem.
-
-
-Notepad++ v8.6.6 bug-fixes & new enhancements:
-
- 1. Update to scintilla 5.5.0 & Lexilla 5.3.2.
- 2. Fix crash when crossing the 2GB file size threshold.
- 3. Fix a performance issue due to URL recognition.
- 4. Update to nlohman json 3.11.3.
- 5. Fix multi-edit resists escape after typing issue.
- 6. Make F3 & Shift-F3 work in Find Replace dialog.
- 7. Allow Ctrl-TAB to switch tabs in FindReplace, PluginAdmin and UDL dialogs.
- 8. Add programming language support for Go & Raku(Perl 6).
- 9. Fix user defined auto-insert not working issue.
-10. Enhance GUI: resize checkboxes/radio buttons as text length needs.
-11. Enhance GUI: make sizing arrows more coherent in Find dialog.
-12. Fix URL enclosed in apostrophes or backtick not working issue.
-13. Fix wrong dropped file view issue.
-14. Fix Korean(한)/English(영) key not working regression.
-15. Fix the tab labels of some dialogs being cut in Dark mode.
-16. Fix close button disappeared issue in Find Replace dialog.
-17. Apply dark theme to checkbox buttons on Windows 11.
-18. Fix menu bar cluttered in Dark Mode issue.
-19. Fix Debug Info minor display regression.
-20. Enhance Lua language syntax highlighting.
-21. Enhance the function list support for Ada.
+ 1. Make installation and updates easy & quiet by adding "Yes (Silent)" button.
+ 2. Add new options '/closeRunningNpp' & '/runNppAfterSilentInstall' in the installer.
+ 3. Fix crash of "Next Search Result" command on the empty search result.
+ 4. Fix the regression where the Find dialog size is not remembered across sessions.
+ 5. Fix the regression of content lost by using Encoding "Convert to..." commands. 
+ 6. Fix the regression of exception/crash on Windows Server Core 2022.
+ 7. Prevent DirectWrite from being enabled under Windows Sever.
+ 8. Enhance the quality of Fluent toolbar icon sets for different DPI settings.
+ 9. Improve the look & feel of tabbar close button in dark mode.
+10. Improve the dark mode tab bar icon in the search results panel.
+11. Add ability to pre-populate the predefined color sets for custom tones.
+12. Add "Show All Character" popup menu on toolbar button.
+13. Fix the rectangular selection copy-paste bug.
+14. Allow opening shortcut files (*.lnk) directly if the file extension is changed.
+15. Fix the lost panels issue.
+16. Add Backspace unindent option.
+17. Fix CSS more indentation bug.
+18. Include F13-F24 keys in Shortcut Mapper.
+19. Fix the problem where the last empty clean untitled tab cannot be closed after renaming.
+20. Add plugin a command (NPPM_SETUNTITLEDNAME) to rename untitled tab.
+21. Display a message box with information about disabled backward regex searching.
+22. Fix the display glitch for unsaved tabs containing tab characters.
+23. Fix status bar and tab bar flicker during the GUI updated (fixed only for dark mode).
+24. Fix the issue with "Begin/End Select" command after deletion.
+25. Resolve the integer overflow problem in the Column Editor.
+26. Adjust the position of hits text in the File Progress dialog.
+27. Fix the deployment of other software blocked due to NppShell.
 
 
 Get more info on
-https://notepad-plus-plus.org/downloads/v8.6.7/
+https://notepad-plus-plus.org/downloads/v8.6.9/
 
 
 Included plugins:
@@ -46,4 +42,4 @@ Included plugins:
 
 Updater (Installer only):
 
-* WinGUp (for Notepad++) v5.2.8
+* WinGUp (for Notepad++) v5.3
