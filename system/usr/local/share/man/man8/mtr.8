@@ -56,6 +56,12 @@ mtr \- a network diagnostic tool
 .B \-\-aslookup\c
 ]
 [\c
+.BI \-\-ipinfo_provider4 \ DOMAIN\c
+]
+[\c
+.BI \-\-ipinfo_provider6 \ DOMAIN\c
+]
+[\c
 .BI \-i \ INTERVAL\c
 ]
 [\c
@@ -350,6 +356,14 @@ Example (columns to the right not shown for clarity):
 7. AS1850  www.isnic.is
 .fi
 .TP
+.B \-\-ipinfo_provider4 \fIDOMAIN
+Provider for IPv4 AS lookups.  Defaults to origin.asn.cymru.com.
+.fi
+.TP
+.B \-\-ipinfo_provider6 \fIDOMAIN
+Provider for IPv6 AS lookups.  Defaults to origin6.asn.cymru.com.
+.fi
+.TP
 .B \-i \fISECONDS\fR, \fB\-\-interval \fISECONDS
 Use this option to specify the positive number of seconds between ICMP
 ECHO requests.  The default value for this parameter is one second.  The
@@ -439,7 +453,7 @@ a short interval, will use up a lot of file descriptors.
 Set the mark for each packet sent through this socket similar to the
 netfilter MARK target but socket-based.
 .I MARK
-is 32 unsigned integer.  See
+is a 32-bit unsigned integer.  See
 .BR socket (7)
 for full description of this socket option.
 .SH ENVIRONMENT

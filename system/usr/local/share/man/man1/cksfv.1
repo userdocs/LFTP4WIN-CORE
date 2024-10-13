@@ -1,0 +1,129 @@
+.TH CKSFV 1
+.\" NAME should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.SH NAME
+cksfv \- tests and creates simple file verification (SFV) listings
+.SH SYNOPSIS
+.B cksfv
+.I "[-bciqrLR] [-C dir] [-f file] [-g path] [file ...]"
+.br
+.SH "DESCRIPTION"
+.BR cksfv
+is a tool for verifying CRC32 checksums of files. CRC32 checksums are
+used to verify that files are not corrupted. The algorithm is
+cryptographically crippled so it can not be used for security purposes.
+.BR md5sum
+(1) or
+.BR sha1sum
+(1)
+are much better tools for checksuming files. cksfv should only
+be used for compatibility with other systems.
+
+cksfv has two operation modes: checksum creation and checksum verification
+
+In
+.BR checksum\ creation\ mode
+cksfv outputs CRC32 checksums of files to
+to stdout, normally redirected to an .sfv file.
+
+In
+.BR checksum\ verification\ mode
+cksfv reads filenames from an sfv file, and compares the
+recorded checksum values against recomputed checksums of files.
+
+.SH OPTIONS
+These options are available
+.TP
+.B \-b
+Strip dirnames from filenames that are checksumed. loads the files from
+original positions, but prints only basenames to catalogue in sfv file.
+.TP
+.B \-c
+Use stdout for printing progress and final resolution (files OK or
+some errors detected). This is useful for external programs analysing
+output of cksfv. This also forces fflushes on the output when needed.
+.TP
+.B \-C dir
+.BR
+Change current directory before proceeding with a verification operation.
+This option is mostly obsoleted with -g option. Earlier this was used
+to verify checksums in a different directory: cksfv -C foo -f foo/bar.sfv
+.TP
+.B \-f file
+Verify checksums in the sfv file
+.TP
+.B \-g path
+Go to the path name directory and verify checksums in the sfv file
+.TP
+.B \-i
+Ignore case in filenames. This is used in the checksum verification mode.
+.TP
+.B \-L
+Follow symlinks when recursing subdirectories. This option can be used with
+the -r and -R options.
+.TP
+.B \-q
+Enable QUIET mode (instead of verbose mode), only error messages are printed
+.TP
+.B \-v
+Enable VERBOSE mode, this is the default mode
+.TP
+.B \-r
+recurse directories and check the .sfv files in each. Symlinks are not
+followed by default. This option cannot be used with -f and -g options.
+.TP
+.B \-R
+recurse directories and read checksum for each file. Symlinks are not
+followed by default.
+
+.SH EXAMPLES
+.nf
+Verify checksums of files listed in 'foo/files.sfv':
+.ft B
+cksfv -g foo/files.sfv
+
+.ft R
+Create checksums for a set of files:
+.ft B
+cksfv *.gz > files.sfv
+
+.ft R
+Verify checksums of case-insensitive filenames listed in 'files.sfv'.
+This is sometimes useful with files created by operating systems
+that have case-insensitive filesystem names.
+.ft B
+cksfv -i -g files.sfv
+
+.ft R
+Check checksums of files 'foo' and 'bar' listed in 'files.sfv':
+.ft B
+cksfv -g files.sfv foo bar
+
+.ft R
+Create checksums of files matching /foo/bar/* and strip dirnames away:
+.ft B
+cksfv -b /foo/bar/* > files.sfv
+
+.ft R
+Recursively scan /foo/bar and verify each .sfv file:
+.ft B
+cksfv -C /foo/bar -r
+
+.ft R
+Same as previous, but starting from the current working directory 
+and also following symlinks during recursion:
+.ft B
+cksfv -r -L
+
+.SH "SEE ALSO"
+.BR basename (1)
+.BR dirname (1)
+.BR md5sum (1)
+.BR sha1sum (1)
+
+.SH AUTHOR
+This manual page was originally written by
+Stefan Alfredsson <stefan@alfredsson.org>.
+It was later modified by
+Heikki Orsila <heikki.orsila@iki.fi> and
+Durk van Veen <durk.van.veen@gmail.com>.
