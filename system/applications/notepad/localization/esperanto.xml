@@ -360,7 +360,6 @@
 				<Item id="1625" name="Normala"/>
 				<Item id="1626" name="Speciala (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Anstataŭigu en la dosieroj"/>
-				<Item id="1661" name="Ujo de la aktiva dosiero"/>
 				<Item id="1641" name="Serĉu ĉiujn en la aktiva dosiero"/>
 				<Item id="1686" name="Travidebla"/>
 				<Item id="1703" name="&amp;. kaptas linifinon"/>
@@ -743,8 +742,6 @@
 				</RecentFilesHistory>
 
 				<MISC title="Diversaĵoj">
-					<Item id="6307" name="Ŝaltu"/>
-					<Item id="6308" name="Minimumigu en taskopleton"/>
 					<Item id="6309" name="Memoru la seancdosierojn por estonta lanĉo"/>
 					<Item id="6312" name="Aŭtomata rekono de dosierstato"/>
 					<Item id="6313" name="Ĝisdatigu sen rimarkigo"/>
@@ -788,7 +785,6 @@
 				</Backup>
 
 				<AutoCompletion title="Vortkompletigo">
-					<Item id="6115" name="Aŭtomata krommarĝeno"/>
 					<Item id="6807" name="Aŭtomata vortkompletiĝo"/>
 					<Item id="6808" name="Ŝaltu vortkompletiĝon por ĉiu enigo"/>
 					<Item id="6809" name="Kompletigu funkciojn"/>

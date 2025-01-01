@@ -341,7 +341,6 @@
 				<Item id="1625" name="ನಾರ್ಮಲ್"/>
 				<Item id="1626" name="ಎಕ್ಸ್‌ಟೆಂಡೆಡ್ (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="ರೀಪ್ಲೇಸ್ ಇನ್ ಫೈಲ್ಸ್"/>
-				<Item id="1661" name="ಫಾಲೊ ಕರೆಂಟ್ doc."/>
 				<Item id="1641" name="ಫೈಂಡ್ ಆಲ್ ಇನ್ ಕರೆಂಟ್ ಡಾಕ್ಯುಮೆಂಟ್"/>
 				<Item id="1686" name="ಟ್ರ್ಯಾನ್ಸ್ಪರೆನ್ಸೀ"/>
 				<Item id="1703" name="ಮ್ಯಾಚಸ್ ನೇವಲಿನೆ  (&amp;.)"/>
@@ -726,7 +725,6 @@
 				</Backup>
 
 				<AutoCompletion title="Auto-Completion">
-					<Item id="6115" name="ಆಟೋ-ಇನ್‌ಡೆಂಟ್"/>
 					<Item id="6807" name="Auto-Completion"/>
 					<Item id="6808" name="ಎನೇಬಲ್ auto-completion ಒನ್ ಈಚ್ ಇನ್‌ಪುಟ್"/>
 					<Item id="6809" name="ಫಂಕ್ಶನ್ ಕಂಪ್ಲೀಶನ್"/>
@@ -770,8 +768,6 @@
 				</Cloud>
 
 				<MISC title="MISC.">
-					<Item id="6307" name="Enable"/>
-					<Item id="6308" name="ಮಿನಿಮೈಸ್ ತೋ ಸಿಸ್ಟಮ್ ಟ್ರೇ"/>
 					<Item id="6312" name="ಫೈಲ್ ಸ್ಟೇಟಸ್ Auto-Detection"/>
 					<Item id="6313" name="ಅಪ್‌ಡೇಟ್ ಸೈಲೆಂಟ್ಲೀ"/>
 					<Item id="6318" name="ಕ್ಲಿಕ್ಕಬ್ಳೆ ಲಿಂಕ್ ಸೆಟ್ಟಿಂಗ್ಸ್"/>

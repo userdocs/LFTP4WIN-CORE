@@ -322,7 +322,6 @@
 				<Item id="1658" name="In is sutacartellas"/>
 				<Item id="1659" name="In is sutacartellas cuadas"/>
 				<Item id="1660" name="&amp;Càmbia in is files"/>
-				<Item id="1661" name="Sighe documentu currente"/>
 				<Item id="1686" name="T&amp;rasparèntzia"/>
 				<Item id="1687" name="Si perdet su focus"/>
 				<Item id="1688" name="Semper"/>
@@ -569,13 +568,10 @@
 					<Item id="6728" name="Intestatzione e pee de pàgina"/>
 				</Print>
 				<MISC title="Vàrias">
-					<Item id="6307" name="Ativa autorilevamentu"/>
-					<Item id="6308" name="Mìnima in s'àrea de notìfica"/>
 					<Item id="6309" name="Ammenta sa sessione currente a s'aviu chi sighit"/>
 					<Item id="6312" name="Autorilevamentu de s'istadu de su file"/>
 					<Item id="6313" name="Annoa sena notìfica"/>
 					<Item id="6114" name="Abìlita"/>
-					<Item id="6115" name="Indentatzione automàtica"/>
 					<Item id="6117" name="Pretzedèntzia a is files prus reghentes"/>
 					<Item id="6318" name="Impostatziones acàpios cracàbiles"/>
 					<Item id="6319" name="Abìlita"/>

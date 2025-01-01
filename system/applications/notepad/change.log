@@ -1,33 +1,50 @@
-Notepad++ v8.7 bug-fixes & new enhancements:
+Notepad++ v8.7.5 regression-fixes, bug-fixes & enhancements:
 
- 1. Update to scintilla 5.5.2 & Lexilla 5.4.0.
- 2. Fix monitoring large files with frequent writes freezing the UI issue.
- 3. Fix regression of multiple selections in comboboxes of Find dialog.
- 4. Fix a single undo reverting many changes issue.
- 5. Improve Styler Configurator performance considerably.
- 6. Fix CVE-2014-9456 (but CVE-2014-9456 is not a "Security Vulnerability").
- 7. Make find dialog status messages color customizable via Style Configurator.
- 8. Make individual tab color customizable via Style Configurator.
- 9. Add new plugin command NPPM_GETNATIVELANGFILENAME & notification NPPN_NATIVELANGCHANGED for native language being changed. 
-10. Fix Folder as Workspace sorting problem for network storage (Samba, WebDAV, WSL, etc.).
-11. Fix closing unsaved clone document causing periodic backup loss issue.
-12. Fix Style Config's "User-defined keywords" not being saved properly after emptying it.
-13. Add user-defined keyword ability for some supported programming languages (ActionScript, ASP, Bash, C, C++, C#, GDScript, Go, HTML, Java, JavaScript).
-14. Add Fluent Icons for enhancing FunctionList, Folder as Workspace & project panels' icons in lite mode.
-15. Fix Python smart indent issue when a string or comment line ends with a colon.
-16. Add file type filters for UDL in Save dialogs.
-17. Add TOML language (TOML format) support.
-18. Add function list for TeX/LaTeX.
-19. Recognize Cython files as Python.
-20. Fix edit zone not getting focus while clicking the active tab.
-21. Add the ability to open the copy automatically after the “Save a Copy” command.
-22. Fix inability to paste after removing read-only via menu.
-23. Add one more option for auto-indent so C-Like language indent can be disabled.
-24. Fix Style Configurator regression: "URL hovered"'s "Go to Settings" not working.
+ 1. Fix nfo file losing modification issue (regression from v8.7.4).
+ 2. Fix network file wrong modification detection (regression from v8.7.1).
+ 3. Fix regression "Open Selected PathName(s)" command not working while all selected.
+ 4. Fix unusuability after deleting files in split view.
+ 5. Fix unsaved documents lost on next launch if portable Notepad++ change path.    
+ 6. Refactoring for the better performance & smaller binary size.
+ 7. Improve "Copy Selected Lines" command.
+ 8. Add Visual Basic function list.
+ 9. Add Swift, TypeScript, and Go for advanced Auto-indent.
+10. Fix UDL comment line not working due to conflict with stream comment definition.
+11. Enhance "Follow current doc." GUI action/option in Find in files.
+12. Fix Reload Workspace not working.
+13. Add "Show details" functionality in installer.
+
+
+Notepad++ v8.7.4 regression-fix & bug-fixes:
+
+1. Fix regression of multi-line tabbar height not updated after closing tabs.
+2. Fix the extension defined by user not override language default extensions.
+3. Fix encoding of nfo file cannot be changed bug.
+
+
+Notepad++ v8.7.3 bug-fixes & new features :
+
+1. Fix a crash while disabling "Pin tab" feature.
+2. Fix drag&drop a folder in Notepad++ launch redundant dialog regression.
+3. Fix docked panels invisibility in multi-instance mode.
+4. Add "Pin/Unpin Tab" context menu item.
+5. Add "Close All BUT Pinned" command.
+6. Fix a possible buffer overflow issue.
+
+
+Notepad++ v8.7.2 new features & bug-fixes:
+
+1. Add Pin tab feature.
+2. Tabbar enhancement: Hide inactive tab Close & Pin buttons.  
+3. Tabbar enhancement: Highlight inactive darken tab on mouse hover.
+4. Fix Ctrl-C not doing copy from Search result issue.
+5. Add "Minimize / Close to" option for System tray.
+6. Add ability to open/copy selected files from Search-results.
+7. Fix replace field focus losing when Notepad++ is switched back.
 
 
 Get more info on
-https://notepad-plus-plus.org/downloads/v8.7/
+https://notepad-plus-plus.org/downloads/v8.7.5/
 
 
 Included plugins:
@@ -39,4 +56,4 @@ Included plugins:
 
 Updater (Installer only):
 
-* WinGUp (for Notepad++) v5.3
+* WinGUp (for Notepad++) v5.3.1

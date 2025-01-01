@@ -370,7 +370,6 @@
 				<Item id="1625" name="Ormal&amp;nay"/>
 				<Item id="1626" name="E&amp;xtendedyay (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Eplace&amp;ray inyay Ilesfay"/>
-				<Item id="1661" name="Ollowfay urrentcay ocday."/>
 				<Item id="1641" name="Indfay Allyay inyay Urrentcay Ocumentday"/>
 				<Item id="1686" name="Ansparenc&amp;ytray"/>
 				<Item id="1703" name="&amp;. atchesmay ewlinenay"/>
@@ -845,7 +844,6 @@
 				</Backup>
 
 				<AutoCompletion title="Auto-Completion">
-					<Item id="6115" name="Autoyay-indentyay"/>
 					<Item id="6807" name="Autoyay-Ompletioncay"/>
 					<Item id="6808" name="Enableyay autoyay-ompletioncay onyay eachyay inputyay"/>
 					<Item id="6809" name="Unctionfay ompletioncay"/>
@@ -900,8 +898,6 @@
 				</SearchEngine>
 
 				<MISC title="MISC.">
-					<Item id="6307" name="Enableyay"/>
-					<Item id="6308" name="Inimizemay otay ystemsay aytray"/>
 					<Item id="6312" name="Ilefay Atusstay Autoyay-Etectionday"/>
 					<Item id="6313" name="Updateyay ilentlysay"/>
 					<Item id="6318" name="Ickableclay Inklay Ettingssay"/>
@@ -1138,7 +1134,6 @@
 			<finder-copy value="Opycay"/>
 			<finder-select-all value="Electsay allyay"/>
 			<finder-clear-all value="Earclay allyay"/>
-			<finder-open-all value="Openyay allyay"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

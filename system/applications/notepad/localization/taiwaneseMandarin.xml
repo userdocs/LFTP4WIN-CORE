@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NotepadPlus>
-	<Native-Langue name="台灣繁體" filename="taiwaneseMandarin.xml" version="8.6.3">
+	<Native-Langue name="台灣繁體" filename="taiwaneseMandarin.xml" version="8.7.3">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -85,6 +85,7 @@
 					<Item id="41003" name="關閉(&amp;C)"/>
 					<Item id="41004" name="全部關閉(&amp;E)"/>
 					<Item id="41005" name="除此之外全部關閉"/>
+					<Item id="41026" name="除固定標籤頁之外 全部關閉"/>
 					<Item id="41009" name="關閉左側所有檔案"/>
 					<Item id="41018" name="關閉右側所有檔案"/>
 					<Item id="41024" name="關閉所有未更改的檔案"/>
@@ -391,9 +392,11 @@
 				<Item CMDID="41003" name="關閉"/>
 				<Item CMDID="0" name="關閉多個檔案"/>
 				<Item CMDID="41005" name="除此之外全部關閉"/>
-				<Item CMDID="41009" name="關閉左側所有檔案"/>
-				<Item CMDID="41018" name="關閉右側所有檔案"/>
-				<Item CMDID="41024" name="關閉所有未更改的檔案"/>
+				<Item CMDID="41026" name="除固定標籤頁之外 全部關閉"/>
+				<Item CMDID="41009" name="關閉左側所有文件"/>
+				<Item CMDID="41018" name="關閉右側所有文件"/>
+				<Item CMDID="41024" name="關閉所有未更改的文件"/>
+				<Item CMDID="44048" name="固定標籤頁" alternativeName="取消固定標籤頁"/>
 				<Item CMDID="41006" name="儲存"/>
 				<Item CMDID="41008" name="另存新檔..."/>
 				<Item CMDID="1" name="開啟至"/>
@@ -458,7 +461,6 @@
 				<Item id="1626" name="延伸（\n, \r, \t, \0, \x...）"/>
 				<Item id="1660" name="在多個檔案中取代"/>
 				<Item id="1665" name="在專案中多個檔案中取代"/>
-				<Item id="1661" name="使用目前文件資料夾位置"/>
 				<Item id="1662" name="專案管理員 1"/>
 				<Item id="1663" name="專案管理員 2"/>
 				<Item id="1664" name="專案管理員 3"/>
@@ -597,6 +599,7 @@
 					<Item id="2231" name="開啟共用斜體"/>
 					<Item id="2232" name="開啟共用底線"/>
 					<Item id="2234" name="至相關的偏好設定"/>
+					<Item id="2235" name="什麼是「Global override」？"/>
 				</SubDialog>
 			</StyleConfig>
 			<ShortcutMapper title="管理快捷鍵">
@@ -909,13 +912,15 @@
 					<Item id="6130" name="Filled Fluent UI: 大圖示"/>
 					<Item id="6105" name="標準: : 小圖示"/>
 					<Item id="6106" name="頁籤列"/>
-					<Item id="6107" name="小型"/>
+					<Item id="6107" name="縮小"/>
+					<Item id="6128" name="替代圖示"/>
 					<Item id="6108" name="鎖定（禁止拖曳）"/>
 					<Item id="6109" name="非使用中的頁籤變暗"/>
 					<Item id="6110" name="使用中的頁籤加色條"/>
 					<Item id="6111" name="顯示狀態列"/>
-					<Item id="6112" name="在每個頁籤顯示關閉按鈕"/>
+					<Item id="6112" name="顯示關閉按鈕"/>
 					<Item id="6113" name="雙擊滑鼠關閉文件"/>
+					<Item id="6115" name="啟用固定標籤頁功能"/>
 					<Item id="6118" name="隱藏"/>
 					<Item id="6119" name="多行"/>
 					<Item id="6120" name="直式"/>
@@ -1168,7 +1173,6 @@
 				</Backup>
 
 				<AutoCompletion title="字詞自動完成功能">
-					<Item id="6115" name="自動縮排"/>
 					<Item id="6807" name="自動完成功能"/>
 					<Item id="6808" name="啟動自動完成功能"/>
 					<Item id="6809" name="函式"/>
@@ -1250,8 +1254,13 @@
 						<Element name="啟用於所有開啟文件"/>
 						<Element name="停止啟用"/>
 					</ComboBox>
-					<Item id="6307" name="啟用"/>
-					<Item id="6308" name="最小化至系統匣"/>
+					<ComboBox id="6307">
+						<Element name="無任何行動至"/>
+						<Element name="最小化至"/>
+						<Element name="關閉至"/>
+						<Element name="最小化 / 關閉至"/>
+					</ComboBox>
+					<Item id="6308" name="系統匣"/>
 					<Item id="6312" name="自動更新檔案狀態"/>
 					<Item id="6313" name="於背景自動更新"/>
 					<Item id="6325" name="更新後捲動至最後一行"/>
@@ -1541,8 +1550,8 @@
 所有檔案但在所有的層級（遞歸地）不搜尋檔案夾 log 或 logs:
 *.* !+\log*"/>
 			<find-in-files-select-folder value="選擇一個你要從中搜尋的資料夾"/>
-			<find-status-top-reached value="搜尋：從下面找到相符的字串。搜尋已抵達文件開首。"/>
-			<find-status-end-reached value="搜尋：從上面找到相符的字串。搜尋已抵達文件結尾。"/>
+			<find-status-top-reached value="搜尋：搜尋已抵達文件開首，從下面找到第一個相符的字串。"/>
+			<find-status-end-reached value="搜尋：搜尋已抵達文件結尾，從上面找到第一個相符的字串。"/>
 			<find-status-replaceinfiles-1-replaced value="在檔案中取代：取代了 1 個字串。"/>
 			<find-status-replaceinfiles-nb-replaced value="在檔案中取代：取代了 $INT_REPLACE$ 個字串。"/>
 			<find-status-replaceinopenedfiles-1-replaced value="在所有開啟文件中取代：取代了 1 個字串。"/>
@@ -1555,8 +1564,8 @@
 			<find-status-replaceall-1-replaced value="全部取代：取代了 1 個字串。"/>
 			<find-status-replaceall-nb-replaced value="全部取代：取代了 $INT_REPLACE$ 個字串。"/>
 			<find-status-replaceall-readonly value="全部取代：檔案為唯讀，無法取代字串。"/>
-			<find-status-replace-end-reached value="取代：從上面取代了 1 個相符的字串。搜尋已抵達文件結尾。"/>
-			<find-status-replace-top-reached value="取代：從下面取代了 1 個相符的字串。搜尋已抵達文件開首。"/>
+			<find-status-replace-end-reached value="取代：搜尋已抵達文件結尾，從頂端繼續搜尋取代。"/>
+			<find-status-replace-top-reached value="取代：搜尋已抵達文件開頭，從尾端繼續搜尋取代。"/>
 			<find-status-replaced-next-found value="取代：取代了 1 個字串。找到下一個字串。"/>
 			<find-status-replaced-next-not-found value="取代：取代了 1 個字串。找不到下一個字串。"/>
 			<find-status-replace-not-found value="取代：找不到搜尋字串"/>
@@ -1572,11 +1581,12 @@
 			<finder-collapse-all value="層數全部收折"/>
 			<finder-uncollapse-all value="層數全部展開"/>
 			<finder-copy value="複製全行"/>
+			<finder-copy-selected-paths value="複製選取路徑到剪貼簿"/>
 			<finder-clear-all value="全部清除"/>
-			<finder-open-all value="全部開啟"/>
+			<finder-open-selected-paths value="開啟選取路徑檔案"/>
 			<finder-wrap-long-lines value="自動換行"/>
-			<common-ok value="OK啦"/>
-			<common-cancel value="取消啦"/>
+			<common-ok value="OK"/>
+			<common-cancel value="取消"/>
 			<common-name value="名稱："/>
 			<tabrename-title value="重新命名現有頁籤"/>
 			<tabrename-newname value="新的名稱："/>
@@ -1640,6 +1650,7 @@
 C、C++、Java、C#、Objective-C、PHP、JavaScript、JSP、CSS、Perl、Rust、PowerShell 與 JSON
 
 如果你選擇進階模式但不編輯上述語言文件，縮排設定將保留為基本模式。"/>
+			<global-override-tip value="此處啟用「Global override」將覆蓋所有語言樣式中的此些參數。你可能真正想要的是使用「Default Style」設置"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

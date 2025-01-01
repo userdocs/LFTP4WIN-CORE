@@ -443,7 +443,6 @@ Updated to v8.6 fixed version
 				<Item id="1658" name="Kaikissa al&amp;ikansioissa"/>
 				<Item id="1659" name="&amp;Piilotetuissa kansioissa"/>
 				<Item id="1660" name="&amp;Korvaa tiedostoissa"/>
-				<Item id="1661" name="Seuraa nykyistä dokumenttia"/>
 				<Item id="1662" name="Projektipaneeli 1"/>
 				<Item id="1663" name="Projektipaneeli 2"/>
 				<Item id="1664" name="Projektipaneeli 3"/>
@@ -1099,7 +1098,6 @@ Updated to v8.6 fixed version
 				</Backup>
 				
 				<AutoCompletion title="Automaattitäydennys">
-					<Item id="6115" name="Automaattinen sisennys"/>
 					<Item id="6807" name="Automaattinen täydennys"/>
 					<Item id="6808" name="Automaattinen täydennys kullekin syötteelle"/>
 					<Item id="6809" name="Funktion täydennys"/>
@@ -1200,7 +1198,6 @@ Updated to v8.6 fixed version
 					</ComboBox>
 					<Item id="6114" name="Käytössä"/>
 					<Item id="6117" name="Ota käyttöön MRU-käyttäytyminen"/>
-					<Item id="6308" name="Pienennä ilmoitusalueelle"/>
 					<Item id="6312" name="Tiedostotilan automaattinen tunnistus"/>
 					<Item id="6313" name="Äänetön päivitys"/>
 					<Item id="6314" name="Käytä hakuikkunassa tasalevyistä fonttia (sovellus on käynnistettävä uudelleen)"/>
@@ -1489,10 +1486,8 @@ Updated to v8.6 fixed version
 			<finder-uncollapse-all value="Laajenna kaikki"/>
 			<finder-copy value="Kopioi valitut rivit"/>
 			<finder-copy-verbatim value="Kopioi"/>
-			<finder-copy-paths value="Kopioi polut"/>
 			<finder-select-all value="Valitse kaikki"/>
 			<finder-clear-all value="Tyhjennä kaikki"/>
-			<finder-open-all value="Avaa kaikki"/>
 			<finder-purge-for-every-search value="Tyhjennä kutakin hakua varten"/>
 			<finder-wrap-long-lines value="Rivitä pitkät rivit"/>
 			<common-ok value="OK"/>

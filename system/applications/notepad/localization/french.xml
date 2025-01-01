@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="Français" filename="french.xml" version="8.6.8">
+	<Native-Langue name="Français" filename="french.xml" version="8.7.3">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -93,6 +93,7 @@ Translation note:
 					<Item id="41003" name="Fermer"/>
 					<Item id="41004" name="Fermer tout"/>
 					<Item id="41005" name="Fermer tout sauf le document actuel"/>
+					<Item id="41026" name="Fermer tout sauf les documents épinglés"/>
 					<Item id="41009" name="Fermer tout à gauche"/>
 					<Item id="41018" name="Fermer tout à droite"/>
 					<Item id="41024" name="Fermer tous les documents non-modifiés"/>
@@ -418,10 +419,12 @@ Translation note:
 			<TabBar>
 				<Item CMDID="41003" name="Fermer"/>
 				<Item CMDID="0" name="Fermer plusieurs onglets"/>
-				<Item CMDID="41005" name="Fermer tout sauf ce fichier"/>
+				<Item CMDID="41005" name="Fermer tout sauf ce document"/>
+				<Item CMDID="41026" name="Fermer tout sauf les documents épinglés"/>
 				<Item CMDID="41009" name="Fermer les onglets sur la gauche"/>
 				<Item CMDID="41018" name="Fermer les onglets sur la droite"/>
 				<Item CMDID="41024" name="Fermer tous les documents non-modifiés"/>
+				<Item CMDID="44048" name="Epingler l’onglet" alternativeName="Désépingler l’onglet"/>
 				<Item CMDID="41006" name="Enregistrer"/>
 				<Item CMDID="41008" name="Enregistrer sous..."/>
 				<Item CMDID="1" name="Ouvrir dans"/>
@@ -497,7 +500,6 @@ Translation note:
 				<Item id="1626" name="Mode étendu (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Remplacer tout"/>
 				<Item id="1665" name="Remplacer tout"/>
-				<Item id="1661" name="Suivre le doc. courant"/>
 				<Item id="1662" name="Panneau de projet #1"/>
 				<Item id="1663" name="Panneau de projet #2"/>
 				<Item id="1664" name="Panneau de projet #3"/>
@@ -535,8 +537,8 @@ Translation note:
 			<GoToLine title="Aller à...">
 				<Item id="2007" name="Ligne"/>
 				<Item id="2008" name="Position"/>
-				<Item id="1" name="&amp;Zyva !"/>
-				<Item id="2" name="Je vais nulle part"/>
+				<Item id="1" name="&amp;Aller"/>
+				<Item id="2" name="Annuler"/>
 				<Item id="2004" name="Vous êtes ici :"/>
 				<Item id="2005" name="Vous allez à :"/>
 				<Item id="2006" name="Pas plus loin que :"/>
@@ -630,14 +632,15 @@ Translation note:
 					<Item id="2219" name="Mots-clés prédéfinis"/>
 					<Item id="2221" name="Mots-clés utilisateur"/>
 					<Item id="2225" name="Langage :"/>
-					<Item id="2226" name="Appliquer le premier plan global"/>
-					<Item id="2227" name="Appliquer l’arrière-plan global"/>
-					<Item id="2228" name="Appliquer la police globale"/>
-					<Item id="2229" name="Appliquer la taille globale"/>
-					<Item id="2230" name="Appliquer le style gras global"/>
-					<Item id="2231" name="Appliquer le style italique global"/>
-					<Item id="2232" name="Appliquer le style souligné global"/>
-					<Item id="2234" name="Aller à la boîte de dialogue Préférences"/>
+					<Item id="2226" name="Forcer 1er plan pour tous les styles"/>
+					<Item id="2227" name="Forcer arrière-plan pour tous les styles"/>
+					<Item id="2228" name="Forcer police pour tous les styles"/>
+					<Item id="2229" name="Forcer taille pour tous les styles"/>
+					<Item id="2230" name="Forcer style gras pour tous les styles"/>
+					<Item id="2231" name="Forcer italique pour tous les styles"/>
+					<Item id="2232" name="Forcer souligné pour tous les styles"/>
+					<Item id="2234" name="Forcera boîte de dialogue Préférences"/>
+					<Item id="2235" name="C'est quoi « Global override » ?"/>
 				</SubDialog>
 			</StyleConfig>
 
@@ -954,8 +957,9 @@ Translation note:
 					<Item id="6108" name="Verrouiller (pas de glisser-déposer)"/>
 					<Item id="6109" name="Colorer les onglets inactifs"/>
 					<Item id="6110" name="Barre colorée sur l’onglet actif"/>
-					<Item id="6112" name="Bouton de fermeture sur chaque onglet"/>
+					<Item id="6112" name="Activer bouton de fermeture"/>
 					<Item id="6113" name="Fermer l’onglet par double clic"/>
+					<Item id="6115" name="Activer l’option épingler l’onglet"/>
 					<Item id="6118" name="Cacher"/>
 					<Item id="6119" name="Multiligne"/>
 					<Item id="6120" name="Verticale"/>
@@ -1213,7 +1217,6 @@ Translation note:
 				</Backup>
 
 				<AutoCompletion title="Autocomplétion">
-					<Item id="6115" name="Indentation automatique"/>
 					<Item id="6807" name="Autocomplétion"/>
 					<Item id="6808" name="Activer la complétion automatique"/>
 					<Item id="6809" name="Complétion de fonction"/>
@@ -1309,7 +1312,13 @@ Translation note:
 						<Element name="Activer avec tous les onglets"/>
 						<Element name="Désactiver"/>
 					</ComboBox>
-					<Item id="6308" name="Réduire dans la barre de notifications"/>
+					<ComboBox id="6307">
+						<Element name="Pas d'action dans"/>
+						<Element name="Réduire dans"/>
+						<Element name="Fermer dans"/>
+						<Element name="Réduire / Fermer dans"/>
+					</ComboBox>
+					<Item id="6308" name="la barre de notifications"/>
 					<Item id="6312" name="Surveillance de l’état des fichiers"/>
 					<Item id="6313" name="Mise à jour sans alerte"/>
 					<Item id="6325" name="Aller à la dernière ligne après mise à jour"/>
@@ -1674,8 +1683,8 @@ Rechercher dans tous les fichiers mais pas dans les dossiers tests, bin &amp;&am
 Rechercher dans tous les fichiers mais pas dans les dossiers log ou logs récursivement:
 *.* !+\log*"/><!-- HowToReproduce: Tip of mouse hovered on "Filters" label in "Find in Files" section of Find dialog. -->
 			<find-in-files-select-folder value="Sélectionner un dossier pour rechercher à l’intérieur"/><!-- HowToReproduce: Search > Find in Files > [...] -->
-			<find-status-top-reached value="Rechercher : La 1ère occurrence a été trouvée depuis le haut. Le début du document a été atteint"/>
-			<find-status-end-reached value="Rechercher : La dernière occurrence a été trouvée avant le bas. La fin du document a été atteinte"/>
+			<find-status-top-reached value="Rechercher : Début du document atteint, 1ère occurrence trouvée depuis le bas."/>
+			<find-status-end-reached value="Rechercher : Fin du document atteinte, 1ère occurrence trouvée depuis le haut."/>
 			<find-status-replaceinfiles-1-replaced value="Remplacer dans les fichiers : 1 occurrence a été remplacée"/>
 			<find-status-replaceinfiles-nb-replaced value="Remplacer dans les fichiers : $INT_REPLACE$ occurrences ont été remplacées"/>
 			<find-status-replaceinopenedfiles-1-replaced value="Remplacer dans les fichiers ouverts : 1 occurrence a été remplacée"/>
@@ -1689,8 +1698,8 @@ Rechercher dans tous les fichiers mais pas dans les dossiers log ou logs récurs
 			<find-status-replaceall-1-replaced value="Remplacer tout : 1 occurrence a été remplacée"/>
 			<find-status-replaceall-nb-replaced value="Remplacer tout : $INT_REPLACE$ occurrences ont été remplacées"/>
 			<find-status-replaceall-readonly value="Remplacer tout : l’opération a échoué. Le fichier est en lecture seule"/>
-			<find-status-replace-end-reached value="Remplacer : La 1ère occurrence a été remplacée depuis le haut. La fin du document a été atteinte"/>
-			<find-status-replace-top-reached value="Remplacer : La 1ère occurrence a été remplacée depuis le bas. Le début du document a été atteint"/>
+			<find-status-replace-end-reached value="Remplacer : Fin du document atteinte, continuer depuis le début."/>
+			<find-status-replace-top-reached value="Remplacer : Début du document atteint, continuer depuis la fin."/>
 			<find-status-replaced-next-found value="Remplacer : 1 occurrence a été remplacée. L’occurrence suivante a été trouvée"/>
 			<find-status-replaced-without-continuing value="Remplacer : 1 occurrence a été remplacée."/>
 			<find-status-replaced-next-not-found value="Remplacer : 1 occurrence a été remplacée. L’occurrence suivante n’a pas été trouvée"/>
@@ -1707,9 +1716,9 @@ Rechercher dans tous les fichiers mais pas dans les dossiers log ou logs récurs
 			<finder-collapse-all value="Replier tout"/>
 			<finder-uncollapse-all value="Déplier tout"/>
 			<finder-copy value="Copier la(les) ligne(s) sélectionnée(s)"/>
-			<finder-copy-paths value="Copier le(s) chemin(s)"/>
+			<finder-copy-selected-paths value="Copier le(s) chemin(s) sélectionné(s)"/>
 			<finder-clear-all value="Effacer tout"/>
-			<finder-open-all value="Ouvrir tout"/>
+			<finder-open-selected-paths value="Ouvrir le(s) chemin(s) sélectionné(s)"/>
 			<finder-purge-for-every-search value="Purger chaque recherche"/>
 			<finder-wrap-long-lines value="Retour à la ligne automatique"/>
 			<common-ok value="OK"/>
@@ -1808,6 +1817,7 @@ Cliquez sur le bouton « ? » à droite pour ouvrir le site web du manuel utilis
 C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell et JSON
 
 Si vous sélectionnez le mode avancé sans modifier les fichiers des langues mentionnées ci-dessus, les paramètres d'indentation resteront en mode basique."/>
+			<global-override-tip value="Activer le « global override » ici substituera ces paramètres dans tous les styles pour tous les langages de programmation. Vous préférerez probablement utiliser les paramètres « Default Style » à la place"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

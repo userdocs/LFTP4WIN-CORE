@@ -3,7 +3,7 @@
 |
 |   Translators:.....: 2014–yyyy – Rusi Dimitrov;
 |                      2007–2012 – Milen Metev (Tragedy);
-|   Last revision:...: 08.09.2024 by Rusi Dimitrov <npp[at]rdd.anonaddy.com>
+|   Last revision:...: 21.12.2024 by Rusi Dimitrov <npp[at]rdd.anonaddy.com>
 |
 \========================================================================== -->
 <NotepadPlus>
@@ -115,6 +115,7 @@
 					<Item id="41004" name="Затваряне на в&amp;сички"/>
 					<!-- Подменю "Затваряне на разделите" -->
 					<Item id="41005" name="Всички, без текущия"/>
+					<Item id="41026" name="Всички, без закачените"/>
 					<Item id="41009" name="Всички отляво"/>
 					<Item id="41018" name="Всички отдясно"/>
 					<Item id="41024" name="Всички непроменени"/>
@@ -487,8 +488,10 @@
 			<TabBar>
 				<Item CMDID="41003" name="Затваряне"/>
 				<Item CMDID="0" name="Затваряне на раздели"/>
+				<Item CMDID="44048" name="Закачване на раздела" alternativeName="Откачване на раздела"/>
 				<!-- Подменю "Затваряне на раздели" -->
 				<Item CMDID="41005" name="Затваряне на всички без този"/>
+				<Item CMDID="41026" name="Затваряне на всички без закачените"/>
 				<Item CMDID="41009" name="Затваряне на всички отляво"/>
 				<Item CMDID="41018" name="Затваряне на всички отдясно"/>
 				<Item CMDID="41024" name="Затваряне на всички непроменени"/>
@@ -602,7 +605,7 @@
 				<!-- "Търсене във файлове" -->
 				<Item id="1655" name="П&amp;апка:"/>
 				<Item id="1660" name="Замяна във файловете"/>
-				<Item id="1661" name="Според текущият файл"/>
+				
 				<Item id="1658" name="Във всички по&amp;дпапки"/>
 				<Item id="1659" name="В &amp;скрити папки"/>
 				<!-- "Търсене в проекти" -->
@@ -885,9 +888,10 @@
 					<Item id="6107" name="Малък размер"/>
 					<Item id="6128" name="Алтернативни икони"/>
 					<Item id="6108" name="Заключено (без влачене и пускане)"/>
-					<Item id="6109" name="Потъмняване на неактивните"/>
+					<Item id="6109" name="Промяна на цвета на неактивните"/>
 					<Item id="6110" name="Цветна лента върху активния"/>
-					<Item id="6112" name="Бутони за затваряне"/>
+					<Item id="6112" name="Бутон за затваряне"/>
+					<Item id="6115" name="Закачане на раздел"/>
 					<Item id="6113" name="Двойно щракане за затваряне"/>
 					<Item id="6121" name="Изход при затваряне на последният раздел"/>
 					<Item id="6131" name="Меню"/>
@@ -1087,7 +1091,7 @@
 					<ComboBox id="6724">
 						<Element name="Пълен път на файла"/>
 						<Element name="Име на файла"/>
-						<Element name="Дир. на файла"/>
+						<Element name="Директория на файла"/>
 						<Element name="Страница"/>
 						<Element name="Кратка дата"/>
 						<Element name="Дълга дата"/>
@@ -1112,6 +1116,7 @@
 				<Searching title="Търсене">
 					<Item id="6907" name="Когато прозорецът за &quot;Търсене&quot; е извикан"/>
 					<Item id="6910" name="Минимален размер за авто-проверка на &quot;В избраното&quot;"/>
+					<Item id="6913" name="Попълване на полето за папка при търсене във файлове, на базата на активния файл"/>
 					<Item id="6908" name="Попълване на полето за търсене с избрания текст"/>
 					<Item id="6909" name="Избиране на думата под курсора, когато не е избрано нищо"/>
 					<Item id="6902" name="Равноширок шрифт в диалога за търсене (изисква се рестартиране на Notepad++)"/>
@@ -1158,7 +1163,6 @@
 					<Item id="6860" name="Двойка #1:"/>
 					<Item id="6863" name="Двойка #2:"/>
 					<Item id="6866" name="Двойка #3:"/>
-					<Item id="6115" name="Автоматичен отстъп"/>
 				</AutoCompletion>
 				<!-- Прозорци и дата -->
 				<MultiInstance title="Прозорци и дата">
@@ -1242,10 +1246,16 @@
 					</ComboBox>
 					<Item id="6313" name="Тихо обновяване"/>
 					<Item id="6325" name="Превъртане до последния ред"/>
+					<ComboBox id="6307">
+						<Element name="Без действие"/>
+						<Element name="Минимизиране"/>
+						<Element name="Затваряне"/>
+						<Element name="Минимизиране и затваряне"/>
+					</ComboBox>
+					<Item id="6308" name="в системната област"/>
 					<Item id="6323" name="Автоматично обновяване на Notepad++"/>
 					<Item id="6360" name="Изключване на всички звуци"/>
 					<Item id="6334" name="Автоматично определяне кодировката на знаците"/>
-					<Item id="6308" name="Намаляване в системната област"/>
 					<Item id="6331" name="Показване само името на файла в заглавната лента"/>
 					<Item id="6349" name="Използване на DirectWrite за изобразяване на текст (изисква се рестартиране на Notepad++)"/>
 					<Item id="6361" name="Диалогов прозорец за потвърждение при &quot;Запис на всички&quot;"/>
@@ -1271,24 +1281,25 @@
 					<Item id="2212" name="Цвят на стила"/>
 					<Item id="2206" name="Цвят на шрифта"/>
 					<Item id="2207" name="Фон на шрифта"/>
-					<Item id="2226" name="Глобален цвят на текста"/>
-					<Item id="2227" name="Глобален цвят на фона"/>
+					<Item id="2226" name="Наложен цвят на текста за вс. стилове"/>
+					<Item id="2227" name="Наложен цвят на фона за вс. стилове"/>
 					<Item id="2213" name="Стил на шрифта"/>
 					<Item id="2208" name="Име:"/>
 					<Item id="2209" name="Размер:"/>
 					<Item id="2204" name="Получер"/>
 					<Item id="2205" name="Курсив"/>
 					<Item id="2218" name="Подчертан"/>
-					<Item id="2228" name="Глобален шрифт"/>
-					<Item id="2229" name="Глобален размер на шрифта"/>
-					<Item id="2230" name="Глобален получер шрифт"/>
-					<Item id="2231" name="Глобален курсив шрифт"/>
-					<Item id="2232" name="Глобален подчертан шрифт"/>
+					<Item id="2228" name="Наложен шрифт за всички стилове"/>
+					<Item id="2229" name="Наложен размер на шрифта за вс. стилове"/>
+					<Item id="2230" name="Наложен получер шрифт за вс. стилове"/>
+					<Item id="2231" name="Наложен курсив шрифт за вс. стилове"/>
+					<Item id="2232" name="Наложено подчертаване за вс. стилове"/>
 					<Item id="2214" name="По подразбиране"/>
 					<Item id="2216" name="Потребителско"/>
 					<Item id="2219" name="Ключови думи по подразбиране"/>
 					<Item id="2221" name="Потребителски ключови думи"/>
 					<Item id="2234" name="Отиване в настройките"/>
+					<Item id="2235" name="Какво е Global override?"/>
 				</SubDialog>
 			</StyleConfig>
 			<!-- "Бързи клавиши..." -->
@@ -1623,8 +1634,8 @@
 			<!-- "Търсене", "Замяна", "Търсене във файлове", "Търсене в проекти", "Маркиране" -->
 			<shift-change-direction-tip value="Търсене в обратна посока чрез Shift+Enter"/>
 			<two-find-buttons-tip value="Режим за търсене с два бутона"/>
-			<find-status-top-reached value="Търсене: Намерено е последното повторение от краят. Началото на документа е достигнато."/>
-			<find-status-end-reached value="Търсене: Намерено е последното повторение от началото. Краят на документа е достигнат."/>
+			<find-status-top-reached value="Търсене: Достигнато е началото на документа, намерено е първото повторение от края."/>
+			<find-status-end-reached value="Търсене: Достигнат е краят на документа, намерено е първото повторение от началото."/>
 			<find-status-invalid-re value="Търсене: Неправилен регулярен израз"/>
 			<find-status-search-failed value="Търсене: Търсенето е неуспешно"/>
 			<find-status-cannot-find value="Търсене: Текстът &quot;$STR_REPLACE$&quot; не може да бъде намерен"/>
@@ -1635,14 +1646,14 @@
 			<find-status-replaceinopenedfiles-nb-replaced value="Замяна в отворените файлове: Заменени са $INT_REPLACE$ повторения"/>
 			<find-status-replaceall-1-replaced value="Замяна на всичко: Заменено е 1 повторение"/>
 			<find-status-replaceall-nb-replaced value="Замяна на всичко: Заменени са $INT_REPLACE$ повторения"/>
-			<find-status-replaceall-readonly value="Замяна на всичко: Текстът не може да бъде заменен. Текущият документ е само за четене"/>
-			<find-status-replace-end-reached value="Замяна: Заменено е последното повторение от началото. Краят на документа е достигнат"/>
-			<find-status-replace-top-reached value="Замяна: Заменено е последното повторение от краят. Началото на документа е достигнато"/>
-			<find-status-replaced-next-found value="Замяна: Заменено е 1 повторение. Намерено е следващото повторение"/>
+			<find-status-replaceall-readonly value="Замяна на всичко: Текстът не може да бъде заменен. Текущият документ е само за четене."/>
+			<find-status-replace-end-reached value="Замяна: Достигнат е краят на документа, започване от началото"/>
+			<find-status-replace-top-reached value="Замяна: Достигнато е началото на документа, започване от края"/>
+			<find-status-replaced-next-found value="Замяна: Заменено е 1 повторение. Намерено е следващото повторение."/>
 			<find-status-replaced-without-continuing value="Замяна: Заменено е 1 повторение."/>
-			<find-status-replaced-next-not-found value="Замяна: Заменено е 1 повторение. Не бяха намерени повече повторения"/>
+			<find-status-replaced-next-not-found value="Замяна: Заменено е 1 повторение. Не бяха намерени повече повторения."/>
 			<find-status-replace-not-found value="Замяна: Не е намерено повторение"/>
-			<find-status-replace-readonly value="Замяна: Текстът не може да бъде заменен. Текущият документ е само за четене"/>
+			<find-status-replace-readonly value="Замяна: Текстът не може да бъде заменен. Текущият документ е само за четене."/>
 			<find-status-mark-1-match value="Маркиране: 1 повторение"/>
 			<find-status-mark-nb-matches value="Маркиране: $INT_REPLACE$ повторения"/>
 			<find-status-count-1-match value="Брой повторения: 1"/>
@@ -1656,10 +1667,10 @@
 			<finder-collapse-all value="Свиване на всички"/>
 			<finder-uncollapse-all value="Разгъване на всички"/>
 			<finder-copy value="Копиране на избраните редове"/>
-			<finder-copy-paths value="Копиране пълния път на файловете"/>
+			<finder-copy-selected-paths value="Копиране на избран(ите) път(ища)"/>
 			<finder-select-all value="Избиране на всичко"/>
 			<finder-clear-all value="Изчистване на всичко"/>
-			<finder-open-all value="Отваряне на всички"/>
+			<finder-open-selected-paths value="Отваряне на избран(ите) път(ища)"/>
 			<finder-wrap-long-lines value="На повече редове"/>
 			<finder-purge-for-every-search value="Изчистване при всяко търсене"/>
 			<find-in-files-filter-tip value="Търсене в cpp, cxx, h, hxx и hpp:
@@ -1675,6 +1686,7 @@
 *.* !+\log*"/>
 			<!-- "Търсене във файлове" -->
 			<find-in-files-select-folder value="Избиране на папка, от която да се търси"/>
+			<find-in-files-dir-from-active-doc-tip value="Попълване на полето за папка на базата на активния документ"/>
 			<!-- "Намиране на всички" -->
 			<find-result-caption value="Намерени резултати"/>
 			<find-result-title value="Търсене на"/>
@@ -1805,6 +1817,8 @@ C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell
 			<tab-untitled-string value="нов "/>
 			<close-panel-tip value="Затваряне"/>
 			<fileSaveAsCopySaveButton-tip value="Задръжте клавиша Shift, докато натискате Запис, за да отворите копието след запазване."/>
+			<!-- "Global override" и "Default Style" не се превеждат -->
+			<global-override-tip value="Активирането на &quot;Global override&quot; ще замени тези параметри във всички езикови стилове. Това, което вероятно искате, е да използвате настройките в &quot;Default Style&quot; вместо тези."/>
 		</MiscStrings>
 		<!-- Меню "Изглед" - "Карта на документа" -->
 		<DocumentMap>

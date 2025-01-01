@@ -344,7 +344,6 @@
 				<Item id="1625" name="Parastais"/>
 				<Item id="1626" name="Paplašinātais (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Aizstāt failos"/>
-				<Item id="1661" name="Sekot pašreizējam dok."/>
 				<Item id="1641" name="Atrast visu pašreizējā dokumentā"/>
 				<Item id="1686" name="Caurspīdīgums"/>
 				<Item id="1703" name="&amp;. arī jaunu rindu"/>
@@ -741,7 +740,6 @@
 				</Backup>
 
 				<AutoCompletion title="Automātiskā pabeigšana">
-					<Item id="6115" name="Automātiska atkāpe"/>
 					<Item id="6807" name="Automātiskā pabeigšana"/>
 					<Item id="6808" name="Ieslēgt ievades automātisko pabeigšanu"/>
 					<Item id="6809" name="Funkciju pabeigšana"/>
@@ -785,8 +783,6 @@
 				</Cloud>
 
 				<MISC title="Citi">
-					<Item id="6307" name="Ieslēgt"/>
-					<Item id="6308" name="Minimizējot pārvietot sistēmas ikonu joslā"/>
 					<Item id="6309" name="Atcerēties pašreizējo sesiju līdz nākošajai palaišanas reizei"/>
 					<Item id="6312" name="Faila statusa automātiska noteikšana"/>
 					<Item id="6313" name="Atjaunināt klusi"/>

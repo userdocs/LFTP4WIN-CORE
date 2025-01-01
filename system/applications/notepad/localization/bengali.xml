@@ -342,7 +342,6 @@
 				<Item id="1625" name="সাধারণ"/>
 				<Item id="1626" name="সম্প্রসারিত(Extended) (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="ফাইল পরিবর্তনের জন্য সমগ্র প্রতিস্থাপন"/>
-				<Item id="1661" name="বর্তমান নথি অনুসরণ করুন"/>
 				<Item id="1641" name="সমস্ত বিদ্যমান নথি অনুসন্ধান"/>
 				<Item id="1686" name="স্বচ্ছতা"/>
 				<Item id="1703" name="&amp;. নতুন লাইন ম্যাচ"/>
@@ -722,7 +721,6 @@
 				</Backup>
 
 				<AutoCompletion title="Auto-Completion">
-					<Item id="6115" name="অটো-ইন্ডেন্ট"/>
 					<Item id="6807" name="স্বয়ং সম্পূর্ণতা(Auto-Completion)"/>
 					<Item id="6808" name="প্রতিটি ইনপুট জন্য স্বয়ংক্রিয় সমাপ্তির সক্রিয়"/>
 					<Item id="6809" name="শেষ ফাংশন"/>
@@ -757,8 +755,6 @@
 				</Delimiter>
 
 				<MISC title="MISC.">
-					<Item id="6307" name="সক্রিয়"/>
-					<Item id="6308" name="সিস্টেম ট্রে / হ্রাস"/>
 					<Item id="6312" name="ফাইল অবস্থা অটো সনাক্তকরণ"/>
 					<Item id="6313" name="চুপি চুপি আপডেট"/>
 					<Item id="6318" name="যোগ্য লিঙ্ক সেটিংস"/>

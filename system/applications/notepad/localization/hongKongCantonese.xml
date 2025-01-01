@@ -557,7 +557,6 @@
 				<Item id="1626" name="加強（例如 \n, \r, \t, \0, \x...）(&amp;X)"/>
 				<Item id="1660" name="所有檔案全部取代"/>
 				<Item id="1665" name="喺 projects 嘅檔案執行取代"/><!-- #new v7.9.4 -->
-				<Item id="1661" name="使用目前文件嘅資料夾"/>
 				<Item id="1662" name="Project Panel 1"/><!-- #new v7.9.4 -->
 				<Item id="1663" name="Project Panel 2"/><!-- #new v7.9.4 -->
 				<Item id="1664" name="Project Panel 3"/><!-- #new v7.9.4 -->
@@ -1242,7 +1241,6 @@
 				</Backup>
 
 				<AutoCompletion title="自動完成">
-					<Item id="6115" name="自動縮排"/>
 					<Item id="6807" name="自動完成"/>
 					<Item id="6808" name="打每隻字都行自動完成"/>
 					<Item id="6809" name="函式自動完成"/>
@@ -1338,7 +1336,6 @@
 						<Element name="喺所有打開咗嘅檔案啟用"/>
 						<Element name="停用"/>
 					</ComboBox>
-					<Item id="6308" name="最小化視窗嗰陣縮去系統匣"/>
 					<Item id="6312" name="自動偵測檔案狀態"/>
 					<Item id="6313" name="靜靜雞喺背景更新"/>
 					<Item id="6325" name="更新後轆去最後一行"/>
@@ -1711,10 +1708,8 @@ Reload 會放棄你喺 Notepad++ 改過嘅嘢，咁仲繼唔繼續呢？"/>
 			<finder-uncollapse-all value="展開所有層級"/>
 			<finder-copy value="抄低呢（幾）行"/>
 			<finder-copy-verbatim value="抄"/><!-- #new v7.9.2 -->
-			<finder-copy-paths value="抄低檔案路徑"/><!-- #new v7.9.6 -->
 			<finder-select-all value="揀晒"/>
 			<finder-clear-all value="全部清除"/>
-			<finder-open-all value="全部打開"/>
 			<finder-purge-for-every-search value="次次都清走搜尋結果"/><!-- #new v7.9.6 -->
 			<finder-wrap-long-lines value="自動換行"/>
 			<common-ok value="OK"/>

@@ -321,7 +321,6 @@ By ChesÃƒÂºs D. Trigo [xuxinho7@gmail.com] & softaragones [softaragones@soft
 				<Item id="1625" name="Normal"/>
 				<Item id="1626" name="Estendillau (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Substituir-lo en os fichers"/>
-				<Item id="1661" name="Seguir documento actual"/>
 				<Item id="1641" name="Mirar-lo tot en o documento actual"/>
 				<Item id="1686" name="Transparencia"/>
 				<Item id="1703" name="&amp;. mirar nueva linia"/>
@@ -697,8 +696,6 @@ By ChesÃƒÂºs D. Trigo [xuxinho7@gmail.com] & softaragones [softaragones@soft
 				</RecentFilesHistory>
 
 				<MISC title="Miscelania">
-					<Item id="6307" name="Habilitar"/>
-					<Item id="6308" name="Minimizar ta la servilla d'o sistema"/>
 					<Item id="6309" name="Remerar a sesiÃƒÂ³n actual ta la venient execuciÃƒÂ³n"/>
 					<Item id="6312" name="AutodetecciÃƒÂ³n de l'estau d'o fichero"/>
 					<Item id="6313" name="Esviellar en silencio"/>
@@ -731,7 +728,6 @@ By ChesÃƒÂºs D. Trigo [xuxinho7@gmail.com] & softaragones [softaragones@soft
 				</Backup>
 
 				<AutoCompletion title="AutocompleciÃƒÂ³n">
-					<Item id="6115" name="Sangrar automaticament"/>
 					<Item id="6807" name="AutocompleciÃƒÂ³n"/>
 					<Item id="6808" name="Permitir l'autocompleciÃƒÂ³n en cada dentrada"/>
 					<Item id="6809" name="Autocompletar funcions"/>

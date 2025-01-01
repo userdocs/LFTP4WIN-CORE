@@ -347,7 +347,6 @@ gan/by Aled Powell
 				<Item id="1625" name="Arferol"/>
 				<Item id="1626" name="Estynedig (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Newid mewn Ffeilau"/>
-				<Item id="1661" name="Dilyn y ddogfen pres."/>
 				<Item id="1641" name="Canfod y Cwbl yn y Ddogfen Presennol"/>
 				<Item id="1686" name="Tryloywder"/>
 				<Item id="1703" name="&amp;. yn llinell newydd"/>
@@ -725,7 +724,6 @@ gan/by Aled Powell
 				</Backup>
 
 				<AutoCompletion title="Awto-cwblhau">
-					<Item id="6115" name="Awto-mewnoli"/>
 					<Item id="6807" name="Awto-cwblhau"/>
 					<Item id="6808" name="Galluogi awto-cwblhau ar pob mewnbwn"/>
 					<Item id="6809" name="Cwblhau Swyddogaeth"/>
@@ -770,8 +768,6 @@ gan/by Aled Powell
 
 
 				<MISC title="Eraill">
-					<Item id="6307" name="Galluogi"/>
-					<Item id="6308" name="Lleihau i flwch system"/>
 					<Item id="6312" name="Awto-Synhwyro Statws Ffeiliau"/>
 					<Item id="6313" name="Diweddaru'n dawel"/>
 					<Item id="6318" name="Gosodiadau Dolenni Clicadwy"/>

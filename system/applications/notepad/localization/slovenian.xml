@@ -496,7 +496,6 @@
 				<Item id="1626" name="Ra&amp;zširjen (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Zamenjaj v datotekah"/>
 				<Item id="1665" name="Zamenjaj v projektih"/>
-				<Item id="1661" name="Sledi trenutnem dok."/>
 				<Item id="1662" name="Panel projekta 1"/>
 				<Item id="1663" name="Panel projekta 2"/>
 				<Item id="1664" name="Panel projekta 3"/>
@@ -1203,7 +1202,6 @@
 				</Backup>
                 
 				<AutoCompletion title="Samodejno dopolnjevanje">
-					<Item id="6115" name="Samodejno zamikaj"/>
 					<Item id="6807" name="Samodejno dopolnjevanje"/>
 					<Item id="6808" name="Omogoči samodejno dop. ob vsakem vnosu"/>
 					<Item id="6809" name="Dopolnjevanje funkcij"/>
@@ -1299,7 +1297,6 @@
 						<Element name="Omogoči za vse odprte datoteke"/>
 						<Element name="Onemogoči"/>
 					</ComboBox>
-					<Item id="6308" name="Minimiraj v sistemsko vrstico"/>
 					<Item id="6312" name="Samozaznava stanja datoteke"/>
 					<Item id="6313" name="Posodobi tiho"/>
 					<Item id="6325" name="Pomakni se do zadnje vrstice po posodobitvi"/>
@@ -1690,9 +1687,7 @@ Najdi v vseh datotekah, vendar rekurzivno izključite vse mape dnevnikov ali vse
 			<finder-collapse-all value="Zloži vse"/>
 			<finder-uncollapse-all value="Razgrni vse"/>
 			<finder-copy value="Kopiraj izbrane vrstice"/>
-			<finder-copy-paths value="Kopiraj ime(na) poti"/>
 			<finder-clear-all value="Počisti vse"/>
-			<finder-open-all value="Odpri vse"/>
 			<finder-purge-for-every-search value="Počisti za vsakim iskanjem"/>
 			<finder-wrap-long-lines value="Prelomi dolge vrstice"/>
 			<common-ok value="V redu"/>

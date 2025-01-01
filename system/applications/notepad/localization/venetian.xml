@@ -503,7 +503,6 @@ Translation note:
 				<Item id="1626" name="Sƚargà (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Sostituisi inte i file"/>
 				<Item id="1665" name="Sostituisi inte i Progeti"/>
-				<Item id="1661" name="Segui documento corente"/>
 				<Item id="1662" name="Paneƚo de el Progeto 1"/>
 				<Item id="1663" name="Paneƚo de el Progeto 2"/>
 				<Item id="1664" name="Paneƚo de el Progeto 3"/>
@@ -1221,7 +1220,6 @@ Translation note:
 				</Backup>
 
 				<AutoCompletion title="Otoconpletamento">
-					<Item id="6115" name="Indentasion otomàtica"/>
 					<Item id="6807" name="Oto-Conpletamento"/>
 					<Item id="6808" name="Ativa ƚ&apos;oto-conpletamento so ogni input"/>
 					<Item id="6809" name="Conpletamento funsion"/>
@@ -1317,7 +1315,6 @@ Translation note:
 						<Element name="Ativa par tuti i tab"/>
 						<Element name="Dixativa"/>
 					</ComboBox>
-					<Item id="6308" name="Minimixa inte ƚ&apos;area de notifica"/>
 					<Item id="6312" name="Riƚevamento Stato File"/>
 					<Item id="6313" name="Axorna sensa notifica"/>
 					<Item id="6325" name="Và a ƚ&apos;ùltima riga dopo ƚ&apos;axornamento"/>
@@ -1718,9 +1715,7 @@ Runa en tuti i files, ma escludi tute ƚe carteƚe o sotocarteƚe log o logs:
 			<finder-collapse-all value="Coƚasa tuto cuanto\"/>
 			<finder-uncollapse-all value="Espandi tuto cuanto"/>
 			<finder-copy value="Còpia ƚe righe seƚesionà"/>
-			<finder-copy-paths value="Còpia Percorso/i"/>
 			<finder-clear-all value="Puƚisi tuto cuanto"/>
-			<finder-open-all value="Vèrxi tuto cuanto"/>
 			<finder-purge-for-every-search value="Pulisi par ogni riserca"/>
 			<finder-wrap-long-lines value="A capo otomàtico par ƚe righe ƚonghe"/>
 			<common-ok value="Conferma"/>

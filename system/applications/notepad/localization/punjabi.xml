@@ -359,7 +359,6 @@
 				<Item id="1625" name="ਸਧਾਰਨ"/>
 				<Item id="1626" name="ਏਕ੍ਸ੍ਤੇੰਦੇਦ (Extended) (\r, \n, \t, \x..., \0)"/>
 				<Item id="1660" name="ਫਾਇਲ ਵਿੱਚ ਤਬਦੀਲ"/>
-				<Item id="1661" name="ਮੌਜੂਦਾ doc ਦੀ ਪਾਲਣਾ ਕਰੋ."/>
 				<Item id="1641" name="ਮੌਜੂਦਾ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਸਾਰੇ ਲੱਭੋ"/>
 				<Item id="1686" name="ਪਾਰਦਰਸ਼ਤਾ"/>
 				<Item id="1703" name="&amp;. ਲਾਈਨ ਨਾਲ ਮਿਲਦਾ ਹੈ"/>
@@ -756,7 +755,6 @@
 				</Backup>
 
 				<AutoCompletion title="Auto-Completion">
-					<Item id="6115" name="ਆਟੋ-ਹਾਸ਼ੀਏ"/>
 					<Item id="6807" name="ਆਟੋ ਪੂਰਨ"/>
 					<Item id="6808" name="ਹਰ ਇੰਪੁੱਟ 'ਤੇ ਆਟੋ ਪੂਰਨ ਕਰਨ ਯੋਗ ਕਰੋ"/>
 					<Item id="6809" name="ਫੰਕਸ਼ਨ ਮੁਕੰਮਲ"/>
@@ -798,8 +796,6 @@
 				</Cloud>
 
 				<MISC title="MISC.">
-					<Item id="6307" name="ਯੋਗ"/>
-					<Item id="6308" name="ਸਿਸਟਮ ਟਰੇ ਨੂੰ ਨਿਊਨਤਮ"/>
 					<Item id="6312" name="ਫਾਇਲ ਹਾਲਤ ਸਵੈ-ਖੋਜ"/>
 					<Item id="6313" name="ਚੁੱਪ ਅੱਪਡੇਟ"/>
 					<Item id="6318" name="ਕਲਿੱਕਯੋਗ ਲਿੰਕ ਸੈਟਿੰਗ"/>

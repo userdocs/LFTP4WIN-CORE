@@ -461,7 +461,6 @@ Last modified by Sahid A.Z. on 3/3/2023
 				<Item id="1626" name="&amp;Lanjut (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Ganti dalam Berkas"/>
 				<Item id="1665" name="Ganti dalam Proyek"/>
-				<Item id="1661" name="Ikuti dok. ini"/>
 				<Item id="1662" name="Panel Proyek 1"/>
 				<Item id="1663" name="Panel Proyek 2"/>
 				<Item id="1664" name="Panel Proyek 3"/>
@@ -1136,7 +1135,6 @@ Anda dapat mendefinisikan beberapa penanda kolom dengan menggunakan spasi putih 
 				</Backup>
 
 				<AutoCompletion title="Pelengkapan Otomatis (PO)">
-					<Item id="6115" name="Indentasi otomatis"/>
 					<Item id="6807" name="Pelengkapan Otomatis (PO)"/>
 					<Item id="6808" name="Aktifkan PO pada tiap input"/>
 					<Item id="6809" name="Pelengkapan fungsi"/>
@@ -1231,7 +1229,6 @@ Anda dapat mendefinisikan beberapa penanda kolom dengan menggunakan spasi putih 
 						<Element name="Aktifkan untuk semua berkas terbuka"/>
 						<Element name="Nonaktifkan"/>
 					</ComboBox>
-					<Item id="6308" name="Minimalkan ke baki sistem"/>
 					<Item id="6312" name="Deteksi Otomatis Status Berkas"/>
 					<Item id="6313" name="Perbarui diam-diam"/>
 					<Item id="6325" name="Gulir ke baris terakhir setelah diperbarui"/>
@@ -1600,10 +1597,8 @@ Temukan dalam semua berkas kecuali semua folder log atau logs secara berulang:
 			<finder-uncollapse-all value="Buka semua lipatan"/>
 			<finder-copy value="Salin Baris Terpilih"/>
 			<finder-copy-verbatim value="Salin"/>
-			<finder-copy-paths value="Salin Nama Jalur"/>
 			<finder-select-all value="Pilih semua"/>
 			<finder-clear-all value="Bersihkan semua"/>
-			<finder-open-all value="Buka semua"/>
 			<finder-purge-for-every-search value="Hapus untuk tiap pencarian"/>
 			<finder-wrap-long-lines value="Kemas kata baris panjang"/>
 			<common-ok value="Oke"/>

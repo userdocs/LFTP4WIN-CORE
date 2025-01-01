@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="English" filename="english_customizable.xml" version="8.6.9">
+	<Native-Langue name="English" filename="english_customizable.xml" version="8.7.3">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -93,6 +93,7 @@ Translation note:
 					<Item id="41003" name="&amp;Close"/>
 					<Item id="41004" name="Clos&amp;e All"/>
 					<Item id="41005" name="Close All BUT Current Document"/>
+					<Item id="41026" name="Close All BUT Pinned Documents"/>
 					<Item id="41009" name="Close All to the Left"/>
 					<Item id="41018" name="Close All to the Right"/>
 					<Item id="41024" name="Close All Unchanged"/>
@@ -419,9 +420,11 @@ Translation note:
 				<Item CMDID="41003" name="Close"/>
 				<Item CMDID="0" name="Close Multiple Tabs"/>
 				<Item CMDID="41005" name="Close All BUT This"/>
+				<Item CMDID="41026" name="Close All BUT Pinned"/>
 				<Item CMDID="41009" name="Close All to the Left"/>
 				<Item CMDID="41018" name="Close All to the Right"/>
 				<Item CMDID="41024" name="Close All Unchanged"/>
+				<Item CMDID="44048" name="Pin Tab" alternativeName="Unpin Tab"/>
 				<Item CMDID="41006" name="Save"/>
 				<Item CMDID="41008" name="Save As..."/>
 				<Item CMDID="1" name="Open into"/>
@@ -497,7 +500,6 @@ Translation note:
 				<Item id="1626" name="E&amp;xtended (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Replace in Files"/>
 				<Item id="1665" name="Replace in Projects"/>
-				<Item id="1661" name="Follow current doc."/>
 				<Item id="1662" name="Project Panel 1"/>
 				<Item id="1663" name="Project Panel 2"/>
 				<Item id="1664" name="Project Panel 3"/>
@@ -630,14 +632,16 @@ Translation note:
 					<Item id="2219" name="Default keywords"/>
 					<Item id="2221" name="User-defined keywords"/>
 					<Item id="2225" name="Language:"/>
-					<Item id="2226" name="Enable global foreground color"/>
-					<Item id="2227" name="Enable global background color"/>
-					<Item id="2228" name="Enable global font"/>
-					<Item id="2229" name="Enable global font size"/>
-					<Item id="2230" name="Enable global bold font style"/>
-					<Item id="2231" name="Enable global italic font style"/>
-					<Item id="2232" name="Enable global underline font style"/>
+					<Item id="2226" name="Force foreground color for all styles"/>
+					<Item id="2227" name="Force background color for all styles"/>
+					<Item id="2228" name="Force font choice for all styles"/>
+					<Item id="2229" name="Force font size choice for all styles"/>
+					<Item id="2230" name="Force bold choice for all styles"/>
+					<Item id="2231" name="Force italic choice for all styles"/>
+					<Item id="2232" name="Force underline choice for all styles"/>
 					<Item id="2234" name="Go to settings"/>
+					<!-- Don't translate "Global override" -->
+					<Item id="2235" name="What is Global override?"/>
 				</SubDialog>
 			</StyleConfig>
 
@@ -952,9 +956,9 @@ Translation note:
 					<Item id="6106" name="Tab Bar"/>
 					<Item id="6107" name="Reduce"/>
 					<Item id="6108" name="Lock (no drag and drop)"/>
-					<Item id="6109" name="Darken inactive tabs"/>
+					<Item id="6109" name="Change inactive tab color"/>
 					<Item id="6110" name="Draw a colored bar on active tab"/>
-					<Item id="6112" name="Show close button on each tab"/>
+					<Item id="6112" name="Show close button"/>
 					<Item id="6113" name="Double click to close document"/>
 					<Item id="6118" name="Hide"/>
 					<Item id="6119" name="Multi-line"/>
@@ -1184,6 +1188,7 @@ Translation note:
 					<Item id="6908" name="Fill Find Field with Selected Text"/>
 					<Item id="6909" name="Select Word Under Caret when Nothing Selected"/>
 					<Item id="6910" name="Minimum Size for Auto-Checking &quot;In selection&quot;:"/>
+					<Item id="6913" name="Fill Find in Files Directory Field Based On Active Document"/>
 				</Searching>
 
 				<RecentFilesHistory title="Recent Files History">
@@ -1214,7 +1219,6 @@ Translation note:
 				</Backup>
 
 				<AutoCompletion title="Auto-Completion">
-					<Item id="6115" name="Auto-indent"/>
 					<Item id="6807" name="Auto-Completion"/>
 					<Item id="6808" name="Enable auto-completion on each input"/>
 					<Item id="6809" name="Function completion"/>
@@ -1310,7 +1314,13 @@ Translation note:
 						<Element name="Enable for all opened files"/>
 						<Element name="Disable"/>
 					</ComboBox>
-					<Item id="6308" name="Minimize to system tray"/>
+					<ComboBox id="6307">
+						<Element name="No action to"/>
+						<Element name="Minimize to"/>
+						<Element name="Close to"/>
+						<Element name="Minimize / Close to"/>
+					</ComboBox>
+					<Item id="6308" name="system tray"/>
 					<Item id="6312" name="File Status Auto-Detection"/>
 					<Item id="6313" name="Update silently"/>
 					<Item id="6325" name="Scroll to the last line after update"/>
@@ -1678,8 +1688,9 @@ Find in all files but exclude folders tests, bin &amp;&amp; bin64:
 Find in all files but exclude all folders log or logs recursively:
 *.* !+\log*"/><!-- HowToReproduce: Tip of mouse hovered on "Filters" label in "Find in Files" section of Find dialog. -->
 			<find-in-files-select-folder value="Select a folder to search from"/><!-- HowToReproduce: Search > Find in Files > [...] -->
-			<find-status-top-reached value="Find: Found the last occurrence from the bottom. The beginning of the document has been reached."/>
-			<find-status-end-reached value="Find: Found the last occurrence from the top. The end of the document has been reached."/>
+			<find-in-files-dir-from-active-doc-tip value="Fill directory field based on active document"/><!-- HowToReproduce: Search > Find in Files > [<<] -->
+			<find-status-top-reached value="Find: Reached document beginning, first occurrence from the bottom found."/>
+			<find-status-end-reached value="Find: Reached document end, first occurrence from the top found."/>
 			<find-status-replaceinfiles-1-replaced value="Replace in Files: 1 occurrence was replaced"/>
 			<find-status-replaceinfiles-nb-replaced value="Replace in Files: $INT_REPLACE$ occurrences were replaced"/>
 			<find-status-replaceinopenedfiles-1-replaced value="Replace in Opened Files: 1 occurrence was replaced"/>
@@ -1693,8 +1704,8 @@ Find in all files but exclude all folders log or logs recursively:
 			<find-status-replaceall-1-replaced value="Replace All: 1 occurrence was replaced"/>
 			<find-status-replaceall-nb-replaced value="Replace All: $INT_REPLACE$ occurrences were replaced"/>
 			<find-status-replaceall-readonly value="Replace All: Cannot replace text. The current document is read only"/>
-			<find-status-replace-end-reached value="Replace: Replaced the last occurrence from the top. The end of document has been reached"/>
-			<find-status-replace-top-reached value="Replace: Replaced the last occurrence from the bottom. The begin of document has been reached"/>
+			<find-status-replace-end-reached value="Replace: Reached document end, started from top."/>
+			<find-status-replace-top-reached value="Replace: Reached document beginning, started from bottom."/>
 			<find-status-replaced-next-found value="Replace: 1 occurrence was replaced. The next occurrence found."/>
 			<find-status-replaced-without-continuing value="Replace: 1 occurrence was replaced."/>
 			<find-status-replaced-next-not-found value="Replace: 1 occurrence was replaced. No more occurrences were found."/>
@@ -1711,9 +1722,9 @@ Find in all files but exclude all folders log or logs recursively:
 			<finder-collapse-all value="Fold all"/>
 			<finder-uncollapse-all value="Unfold all"/>
 			<finder-copy value="Copy Selected Line(s)"/>
-			<finder-copy-paths value="Copy Pathname(s)"/>
+			<finder-copy-selected-paths value="Copy Selected Pathname(s)"/>
 			<finder-clear-all value="Clear all"/>
-			<finder-open-all value="Open all"/>
+			<finder-open-selected-paths value="Open Selected Pathname(s)"/>
 			<finder-purge-for-every-search value="Purge for every search"/>
 			<finder-wrap-long-lines value="Word wrap long lines"/>
 			<common-ok value="OK"/>
@@ -1813,7 +1824,7 @@ Click on &quot;?&quot; button on right to open website with User Manual."/>
 C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell and JSON.
 
 If you select advanced mode but do not edit files in the aforementioned languages, the indentation will remain in basic mode."/>
+			<global-override-tip value="Enabling &quot;Global override&quot; here will override that parameter in all language styles. What you probably really want is to use the &quot;Default Style&quot; settings instead"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>
-

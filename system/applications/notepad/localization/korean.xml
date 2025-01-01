@@ -500,7 +500,6 @@ Translation note:
 				<Item id="1626" name="확장 (\n, \r, \t, \0, \x...)(&amp;x)"/>
 				<Item id="1660" name="파일에서 바꾸기"/>
 				<Item id="1665" name="프로젝트에서 바꾸기"/>
-				<Item id="1661" name="현재 문서 따라가기"/>
 				<Item id="1662" name="프로젝트 영역 1"/>
 				<Item id="1663" name="프로젝트 영역 2"/>
 				<Item id="1664" name="프로젝트 영역 3"/>
@@ -1218,7 +1217,6 @@ Translation note:
 				</Backup>
 
 				<AutoCompletion title="자동 완성">
-					<Item id="6115" name="자동 들여쓰기"/>
 					<Item id="6807" name="자동 완성"/>
 					<Item id="6808" name="각 입력에 자동 완성 사용"/>
 					<Item id="6809" name="함수 완성"/>
@@ -1314,7 +1312,6 @@ Translation note:
 						<Element name="모든 열린 파일에 사용"/>
 						<Element name="사용 금지"/>
 					</ComboBox>
-					<Item id="6308" name="시스템 트레이로 최소화"/>
 					<Item id="6312" name="파일 상태 자동 확인"/>
 					<Item id="6313" name="경고 없이 업데이트"/>
 					<Item id="6325" name="업데이트 후 마지막 줄로 이동"/>
@@ -1715,9 +1712,7 @@ log나 logs를 포함한 하위 디렉토리를 제외하고 모든 파일 찾�
 			<finder-collapse-all value="모두 접기"/>
 			<finder-uncollapse-all value="모두 펼치기"/>
 			<finder-copy value="선택된 줄 복사"/>
-			<finder-copy-paths value="경로 이름 복사"/>
 			<finder-clear-all value="모두 지우기"/>
-			<finder-open-all value="모두 열기"/>
 			<finder-purge-for-every-search value="모든 찾기 삭제"/>
 			<finder-wrap-long-lines value="긴 줄을 단어 단위로 줄바꿈"/>
 			<common-ok value="확인"/>

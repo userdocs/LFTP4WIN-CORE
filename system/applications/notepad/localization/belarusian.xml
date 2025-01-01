@@ -457,7 +457,6 @@ The comments are here for explanation, it's not necessary to translate them.
 				<Item id="1626" name="Пашыраны (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Замяніць у файлах"/>
 				<Item id="1665" name="Замяніць у праектах"/>
-				<Item id="1661" name="У папцы бягучага файла"/>
 				<Item id="1662" name="Панэль праекта 1"/>
 				<Item id="1663" name="Панэль праекта 2"/>
 				<Item id="1664" name="Панэль праекта 3"/>
@@ -1111,7 +1110,6 @@ The comments are here for explanation, it's not necessary to translate them.
 				</Backup>
 
 				<AutoCompletion title="Аўтазавяршэнне">
-					<Item id="6115" name="Аўтаводступ"/>
 					<Item id="6807" name="Аўтазавяршэнне"/>
 					<Item id="6808" name="Уключыць аўтазавяршэнне для кожнага ўвядзення"/>
 					<Item id="6809" name="Завяршэнне функцый"/>
@@ -1196,7 +1194,6 @@ The comments are here for explanation, it's not necessary to translate them.
 						<Element name="Уключыць для ўсіх адкрытых файлаў"/>
 						<Element name="Адключыць"/>
 					</ComboBox>
-					<Item id="6308" name="Згортваць у сістэмны латок"/>
 					<Item id="6312" name="Аўтавызначэнне стану файла"/>
 					<Item id="6313" name="Абнаўляць без апавяшчэння"/>
 					<Item id="6325" name="Пасля абнаўлення перайсці да апошняга радка"/>
@@ -1544,10 +1541,8 @@ The comments are here for explanation, it's not necessary to translate them.
 			<finder-uncollapse-all value="Разгарнуць усе"/>
 			<finder-copy value="Капіяваць выбраныя радкі"/>
 			<finder-copy-verbatim value="Капіяваць"/>
-			<finder-copy-paths value="Капіяваць назвы шляхоў"/>
 			<finder-select-all value="Выбраць усе"/>
 			<finder-clear-all value="Ачысціць усе"/>
-			<finder-open-all value="Адкрыць усе"/>
 			<finder-purge-for-every-search value="Ачышчаць для кожнага пошуку"/>
 			<finder-wrap-long-lines value="Пераносіць словы ў доўгіх радках"/>
 			<common-ok value="Добра"/>

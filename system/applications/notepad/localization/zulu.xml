@@ -379,7 +379,6 @@
 				<Item id="1625" name="&amp;Okujwayelekile"/>
 				<Item id="1626" name="E&amp;xtended (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="&amp;Faka esikhundleni kumafayela"/>
-				<Item id="1661" name="Landela i-doc yamanje."/>
 				<Item id="1641" name="Thola konke kuDokhumenti yamanje"/>
 				<Item id="1686" name="&amp;Ukuphawula"/>
 				<Item id="1703" name="&amp;.ifana ne-lineline entsha"/>
@@ -842,7 +841,6 @@
 				</Backup>
 
 				<AutoCompletion title="Ukuqedela ngokuzenzekelayo">
-					<Item id="6115" name="I-self-indent"/>
 					<Item id="6807" name="Ukuqedela ngokuzenzekelayo"/>
 					<Item id="6808" name="Nika amandla ukuqedela ngokuzenzakalela kokufakwayo ngalunye"/>
 					<Item id="6809" name="Ukuqedwa komsebenzi"/>
@@ -899,8 +897,6 @@
 				</SearchEngine>
 
 				<MISC title="I-MISC.">
-					<Item id="6307" name="Nika amandla"/>
-					<Item id="6308" name="Ncishiswa kwi-tray yesistimu"/>
 					<Item id="6312" name="Isimo Sefayile Ukutholwa Okuzenzakalelayo"/>
 					<Item id="6313" name="Buyekeza ngokuthula"/>
 					<Item id="6318" name="Izilungiselelo Zesixhumanisi Clickable"/>
@@ -1174,7 +1170,6 @@ Ingabe ufuna ukuqala i-Notepad ++ kwimodi ye-Administrator?"/>
 			<finder-copy value="Kopisha"/>
 			<finder-select-all value="Khetha konke"/>
 			<finder-clear-all value="Sula konke"/>
-			<finder-open-all value="Vula konke"/>
 		</MiscStrings>
 
 	</Native-Langue>

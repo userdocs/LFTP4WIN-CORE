@@ -3,7 +3,7 @@
 	Slovak localization for Notepad++
 -->
 <NotepadPlus>
-	<Native-Langue name="Slovenčina" filename="slovak.xml" version="8.7.0">
+	<Native-Langue name="Slovenčina" filename="slovak.xml" version="8.7.5">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -89,8 +89,9 @@
 					<Item id="41020" name="v Príkazovom riadku"/>
 					<Item id="41025" name="Priečinok ako pracovný priestor"/>
 					<Item id="41003" name="Zavrieť"/>
-					<Item id="41004" name="Z&amp;atvoriť všetko"/>
-					<Item id="41005" name="Zavrieť všetky okrem aktuálneho"/>
+					<Item id="41004" name="Z&amp;avrieť všetky"/>
+					<Item id="41005" name="Zavrieť všetky OKREM aktuálnej"/>
+					<Item id="41026" name="Zavrieť všetky OKREM pripnutých"/>
 					<Item id="41009" name="Zavrieť všetky vľavo"/>
 					<Item id="41018" name="Zavrieť všetky vpravo"/>
 					<Item id="41024" name="Zavrieť všetky nezmenené"/>
@@ -417,9 +418,11 @@
 				<Item CMDID="41003" name="Zavrieť"/>
 				<Item CMDID="0" name="Zavrieť viacero kariet"/>
 				<Item CMDID="41005" name="Zavrieť všetky OKREM tejto"/>
+				<Item CMDID="41026" name="Zavrieť všetky OKREM pripnutých"/>
 				<Item CMDID="41009" name="Zavrieť všetky vľavo"/>
 				<Item CMDID="41018" name="Zavrieť všetky vpravo"/>
 				<Item CMDID="41024" name="Zavrieť všetky nezmenené"/>
+				<Item CMDID="44048" name="Pripnúť kartu" alternativeName="Odopnúť kartu"/>
 				<Item CMDID="41006" name="Uložiť"/>
 				<Item CMDID="41008" name="Uložiť ako…"/>
 				<Item CMDID="1" name="Otvoriť do"/>
@@ -495,7 +498,6 @@
 				<Item id="1626" name="&amp;Rozšírený (\n, \r, \t, \0, \x…)"/>
 				<Item id="1660" name="Nahradiť v súboroch"/>
 				<Item id="1665" name="Nahradiť v projektoch"/>
-				<Item id="1661" name="Podľa aktuálneho dok."/>
 				<Item id="1662" name="Panel projektu 1"/>
 				<Item id="1663" name="Panel projektu 2"/>
 				<Item id="1664" name="Panel projektu 3"/>
@@ -628,14 +630,15 @@
 					<Item id="2219" name="Predvolené kľúčové slová"/>
 					<Item id="2221" name="Používateľom definované kľúčové slová"/>
 					<Item id="2225" name="Jazyk:"/>
-					<Item id="2226" name="Povoliť globálnu farbu popredia"/>
-					<Item id="2227" name="Povoliť globálnu farbu pozadia"/>
-					<Item id="2228" name="Povoliť globálny typ písma"/>
-					<Item id="2229" name="Povoliť globálnu veľkosť písma"/>
-					<Item id="2230" name="Povoliť globálny štýl pre tučné písmo"/>
-					<Item id="2231" name="Povoliť globálny štýl pre kurzívu"/>
-					<Item id="2232" name="Povoliť glob. štýl pre podčiark. písmo"/>
+					<Item id="2226" name="Vynútiť farbu popredia pre všetky štýly"/>
+					<Item id="2227" name="Vynútiť farbu pozadia pre všetky štýly"/>
+					<Item id="2228" name="Vynútiť písmo pre všetky štýly"/>
+					<Item id="2229" name="Vynútiť veľkosť písma pre všetky štýly"/>
+					<Item id="2230" name="Vynútiť tučné písmo pre všetky štýly"/>
+					<Item id="2231" name="Vynútiť kurzívu pre všetky štýly"/>
+					<Item id="2232" name="Vynútiť podčiarknutie pre všetky štýly"/>
 					<Item id="2234" name="Prejsť na nastavenia"/>
+					<Item id="2235" name="Čo je &quot;Global override&quot;?"/>
 				</SubDialog>
 			</StyleConfig>
 
@@ -950,10 +953,11 @@
 					<Item id="6106" name="Panel kariet"/>
 					<Item id="6107" name="Zmenšiť"/>
 					<Item id="6108" name="Zamknúť (Vypne Drag 'N' Drop)"/>
-					<Item id="6109" name="Stmaviť neaktívne karty"/>
+					<Item id="6109" name="Zmeniť farbu neaktívnej karty"/>
 					<Item id="6110" name="Farebne zvýrazniť aktívnu kartu"/>
-					<Item id="6112" name="Zobraziť tlačidlo zatvorenia na karte"/>
+					<Item id="6112" name="Zobraziť tlačidlo zatvorenia"/>
 					<Item id="6113" name="Dvojklikom zavrieť dokument"/>
+					<Item id="6115" name="Povoliť funkciu pripnúť kartu"/>
 					<Item id="6118" name="Skryť"/>
 					<Item id="6119" name="Viacriadkový"/>
 					<Item id="6120" name="Vertikálny"/>
@@ -1183,6 +1187,7 @@
 					<Item id="6908" name="Vložiť označený text do vyhľadávacieho poľa"/>
 					<Item id="6909" name="Ak nie je nič označené, označiť slovo na pozícii kurzora"/>
 					<Item id="6910" name="Minimálna dĺžka na automatické začiarknutie &quot;Vo výbere&quot;:"/>
+					<Item id="6913" name="Vyplniť pole Priečinok v Hľadať v súboroch z aktívneho dokumentu"/>
 				</Searching>
 
 				<RecentFilesHistory title="História súborov">
@@ -1213,7 +1218,6 @@
 				</Backup>
 
 				<AutoCompletion title="Automat. dokončovanie">
-					<Item id="6115" name="Automatické odsadzovanie"/>
 					<Item id="6807" name="Automatické dokončovanie"/>
 					<Item id="6808" name="Povoliť automatické dokončovanie"/>
 					<Item id="6809" name="Dokončovanie funkcií"/>
@@ -1309,7 +1313,13 @@
 						<Element name="Povoliť pre všetky otvorené súbory"/>
 						<Element name="Zakázať"/>
 					</ComboBox>
-					<Item id="6308" name="Minimalizovať do oblasti oznámení"/>
+					<ComboBox id="6307">
+						<Element name="Nič do"/>
+						<Element name="Minimalizovať do"/>
+						<Element name="Zavrieť do"/>
+						<Element name="Minimalizovať/Zavrieť do"/>
+					</ComboBox>
+					<Item id="6308" name="oblasti oznámení"/>
 					<Item id="6312" name="Automatické zisťovanie stavu súboru"/>
 					<Item id="6313" name="Tichá aktualizácia"/>
 					<Item id="6325" name="Skočiť po aktualizácii na posledný riadok"/>
@@ -1679,8 +1689,9 @@ Hľadá vo všetkých súboroch okrem priečinkov tests, bin &amp;&amp; bin64:
 Hľadá vo všetkých súboroch okrem všetkých priečinkov log alebo logs rekurzívne:
 *.* !+\log*"/>
 			<find-in-files-select-folder value="Vyberte priečinok, v ktorom chcete hľadať"/>
-			<find-status-top-reached value="Hľadať: Našiel sa posledný výskyt hľadaného výrazu. Bol dosiahnutý začiatok dokumentu."/>
-			<find-status-end-reached value="Hľadať: Našiel sa posledný výskyt hľadaného výrazu. Bol dosiahnutý koniec dokumentu."/>
+			<find-in-files-dir-from-active-doc-tip value="Vyplniť pole Priečinok z aktívneho dokumentu"/>
+			<find-status-top-reached value="Hľadať: Dosiahnutý začiatok dokumentu, nájdený prvý výskyt zdola."/>
+			<find-status-end-reached value="Hľadať: Dosiahnutý koniec dokumentu, nájdený prvý výskyt zhora."/>
 			<find-status-replaceinfiles-1-replaced value="Nahradiť v súboroch: Bol nahradený 1 výskyt hľadaného výrazu."/>
 			<find-status-replaceinfiles-nb-replaced value="Nahradiť v súboroch: Bolo nahradených $INT_REPLACE$ výskytov hľadaného výrazu."/>
 			<find-status-replaceinopenedfiles-1-replaced value="Nahradiť v otvorených súboroch: Bol nahradený 1 výskyt hľadaného výrazu."/>
@@ -1694,8 +1705,8 @@ Hľadá vo všetkých súboroch okrem všetkých priečinkov log alebo logs reku
 			<find-status-replaceall-1-replaced value="Nahradiť všetko: Bol nahradený 1 výskyt hľadaného výrazu."/>
 			<find-status-replaceall-nb-replaced value="Nahradiť všetko: Bolo nahradených $INT_REPLACE$ výskytov hľadaného výrazu"/>
 			<find-status-replaceall-readonly value="Nahradiť všetko: Text nie je možné nahradiť. Aktuálny dokument je iba na čítanie"/>
-			<find-status-replace-end-reached value="Nahradiť: Bol nahradený posledný výskyt hľadaného výrazu. Bol dosiahnutý koniec dokumentu"/>
-			<find-status-replace-top-reached value="Nahradiť: Bol nahradený posledný výskyt hľadaného výrazu. Bol dosiahnutý začiatok dokumentu"/>
+			<find-status-replace-end-reached value="Nahradiť: Dosiahnutý koniec dokumentu, nahradený prvý výskyt zhora."/>
+			<find-status-replace-top-reached value="Nahradiť: Dosiahnutý začiatok dokumentu, nahradený prvý výskyt zdola."/>
 			<find-status-replaced-next-found value="Nahradiť: Bol nahradený 1 výskyt hľadaného výrazu. Nájdený ďalší výskyt."/>
 			<find-status-replaced-without-continuing value="Nahradiť: bol nahradený 1 výskyt."/>
 			<find-status-replaced-next-not-found value="Nahradiť: Bol nahradený 1 výskyt hľadaného výrazu. Neboli nájdené žiadne ďalšie výskyty."/>
@@ -1712,9 +1723,9 @@ Hľadá vo všetkých súboroch okrem všetkých priečinkov log alebo logs reku
 			<finder-collapse-all value="Zbaliť všetko"/>
 			<finder-uncollapse-all value="Rozbaliť všetko"/>
 			<finder-copy value="Kopírovať vybrané riadky"/>
-			<finder-copy-paths value="Kopírovať názov súboru(ov)"/>
+			<finder-copy-selected-paths value="Kopírovať vybrané cesty k súborom"/>
 			<finder-clear-all value="Vymazať všetko"/>
-			<finder-open-all value="Otvoriť všetko"/>
+			<finder-open-selected-paths value="Otvoriť vybrané cesty k súborom"/>
 			<finder-purge-for-every-search value="Vymazať pri každom hľadaní"/>
 			<finder-wrap-long-lines value="Zalamovať dlhé riadky"/>
 			<common-ok value="OK"/>
@@ -1813,6 +1824,8 @@ Kliknutím na tlačidlo &quot;?&quot; vpravo otvoríte webovú stránku s použ�
 			<autoIndentAdvanced-tip value="Povoľte inteligentné odsadenie pre jazyky podobné jazyku C a Python. Medzi jazyky podobné jazyku C patria:
 C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell a JSON.
 Ak vyberiete pokročilý režim, ale neupravujete súbory vo vyššie uvedených jazykoch, odsadenie zostane v základnom režime."/>
+			<!-- Don't translate "&quot;Global override&quot; and &quot;Default Style&quot; -->
+			<global-override-tip value="Ak tu povolíte &quot;Global override&quot;, tento parameter sa prepíše vo všetkých štýloch pre všetky programovacie jazyky. Pravdepodobne chcete namiesto toho použiť nastavenie &quot;Default Style&quot;"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

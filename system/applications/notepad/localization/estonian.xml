@@ -372,7 +372,6 @@ https://github.com/AndresTraks/
 				<Item id="1625" name="Tavaline"/>
 				<Item id="1626" name="Laiendatud (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Asenda failides"/>
-				<Item id="1661" name="Järgi praegust dokumenti"/>
 				<Item id="1641" name="Leia kõik praeguses dokumendis"/>
 				<Item id="1686" name="Läbipaistvus"/>
 				<Item id="1703" name="&amp;. vastab realõpule"/>
@@ -797,7 +796,6 @@ https://github.com/AndresTraks/
 				</Backup>
 
 				<AutoCompletion title="Automaattäitmine">
-					<Item id="6115" name="Automaatne taane"/>
 					<Item id="6807" name="Automaattäitmine"/>
 					<Item id="6808" name="Luba automaattäitmine iga sisendi puhul"/>
 					<Item id="6809" name="Funktsioonide lõpetamine"/>
@@ -854,8 +852,6 @@ https://github.com/AndresTraks/
 				</SearchEngine>
 
 				<MISC title="Muu">
-					<Item id="6307" name="Võimalda"/>
-					<Item id="6308" name="Minimeeri süsteemisalve"/>
 					<Item id="6312" name="Faili oleku automaatne tuvastamine"/>
 					<Item id="6313" name="Värskenda vaikselt"/>
 					<Item id="6318" name="Hüperlinkide avamise sätted"/>

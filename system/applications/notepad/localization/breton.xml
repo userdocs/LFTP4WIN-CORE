@@ -384,7 +384,6 @@
 				<Item id="1625" name="&amp;Normal"/>
 				<Item id="1626" name="Astennet (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Erlec'hiañ er restroù"/>
-				<Item id="1661" name="Heuliañ an teuliad-red"/>
 				<Item id="1641" name="Kavout pep-tra en teuliad-red"/>
 				<Item id="1686" name="Treuzwelusted"/>
 				<Item id="1703" name="&amp;. a genglot gant linennoù nevez"/>
@@ -862,7 +861,6 @@
 				</Backup>
 
 				<AutoCompletion title="Em-glokaat">
-					<Item id="6115" name="Em-endantañ"/>
 					<Item id="6807" name="Em-glokaat"/>
 					<Item id="6808" name="Enaouiñ an em-glokaat war bep enmont"/>
 					<Item id="6809" name="Arc'hweladur klokat"/>
@@ -924,7 +922,6 @@
 						<Element name="Enaouiñ evit an holl restroù digoret"/>
 						<Element name="Lazhañ"/>
 					</ComboBox>
-					<Item id="6308" name="Bihanaat e barrenn ar c'hemennoù"/>
 					<Item id="6312" name="Em-diguzhadur ar statudoù restr"/>
 					<Item id="6313" name="Hizivaat hep trouz ebet"/>
 					<Item id="6318" name="Arventennoù al liammoù klikus"/>
@@ -1233,7 +1230,6 @@ Klask en holl restroù paneve exe, obj &amp;&amp; log:
 			<finder-copy value="Eilañ"/>
 			<finder-select-all value="Diuzañ pep-tra"/>
 			<finder-clear-all value="Diverkañ pep-tra"/>
-			<finder-open-all value="Digeriñ pep-tra"/>
 			<common-ok value="Mat eo"/>
 			<common-cancel value="Nullañ"/>
 			<common-name value="Anv: "/>

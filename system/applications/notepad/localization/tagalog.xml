@@ -458,8 +458,6 @@
 					<Item id="6304" name="Kalagayan ng Kasaysayan ng Pila"/>
 					<Item id="6305" name="Huwag i-check 'pag oras ng launch"/>
 					<Item id="6306" name="Pinakamalaking Bilang ng Pila sa Kasaysayan :"/>
-					<Item id="6307" name="Payagan"/>
-					<Item id="6308" name="Paliitin sa sys tray"/>
 					<Item id="6309" name="Tandaan ang kasalukuyang session sa susunod na launch"/>
 					<Item id="6312" name="Auto-detection ng Kalagayan ng File"/>
 					<Item id="6313" name="Mag-update nang tahimik"/>
@@ -478,7 +476,6 @@
 
 					<Item id="6331" name="Show only filename in titlebar"/>
 					<Item id="6114" name="Payagan"/>
-					<Item id="6115" name="Kusang pagpasok"/>
 					<Item id="6117" name="Payagan ang MRU-ng kaugalian"/>
 
 				</MISC>

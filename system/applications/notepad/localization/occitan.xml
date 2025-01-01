@@ -380,7 +380,6 @@
 				<Item id="1625" name="Normal"/>
 				<Item id="1626" name="Espandit (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Remplaçar dins los fichièrs"/>
-				<Item id="1661" name="Seguir lo document actiu"/>
 				<Item id="1641" name="Trobar tot dins lo document actiu"/>
 				<Item id="1686" name="Transparéncia"/>
 				<Item id="1703" name="&amp;. cerca linhas novèlas"/>
@@ -837,7 +836,6 @@
 				</Backup>
 				
 				<AutoCompletion title="Auto-complecion">
-					<Item id="6115" name="Indentacion automatica"/>
 					<Item id="6807" name="Auto-compleion"/>
 					<Item id="6808" name="Activar l'auto-complecion per cada entrada"/>
 					<Item id="6809" name="Complecion de fonccion"/>
@@ -888,8 +886,6 @@
 				</SearchEngine>
 				
 				<MISC title="Autres">
-					<Item id="6307" name="Activar"/>
-					<Item id="6308" name="Minimizar dins la barra d'estat sistèma"/>
 					<Item id="6312" name="Auto-deteccion de l'estatut de fichièr"/>
 					<Item id="6313" name="Actualizacion discreta"/>
 					<Item id="6318" name="Paramètre de ligam clicable"/>

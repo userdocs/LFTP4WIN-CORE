@@ -389,7 +389,6 @@
 				<Item id="1625" name="सामान्य"/>
 				<Item id="1626" name="विस्तृत (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="फ़ाईलों में बदलें"/>
-				<Item id="1661" name="वर्तमान दस्तावेज़ का अनुसरण करें"/>
 				<Item id="1641" name="वर्तमान दस्तावेज़ में सब खोजें"/>
 				<Item id="1686" name="पारदर्शिता"/>
 				<Item id="1703" name="&amp;. न्यू लाइन मैच"/>
@@ -866,7 +865,6 @@
 				</Backup>
 
 				<AutoCompletion title="स्वतः पूर्ति">
-					<Item id="6115" name="स्वचालित इंडेंट"/>
 					<Item id="6807" name="स्वतः पूर्ति"/>
 					<Item id="6808" name="प्रत्येक इनपुट पर स्वतः पूर्ति सक्रिय करें"/>
 					<Item id="6809" name="फंक्शन समापन"/>
@@ -928,7 +926,6 @@
 						<Element name="सभी खुली हुई फाइलों के लिए इनेबल करें"/>
 						<Element name="डिसेबल करें"/>
 					</ComboBox>
-					<Item id="6308" name="सिस्टम ट्रे में छोटा करें"/>
 					<Item id="6312" name="फाईल स्टेटस की स्वचालित जांच"/>
 					<Item id="6313" name="साइलेंटली अपडेट करें"/>
 					<Item id="6318" name="क्लिक योग्य लिंक की सेटिंग"/>
@@ -1217,7 +1214,6 @@
 			<finder-copy value="कॉपी करें"/>
 			<finder-select-all value="सब सेलेक्ट करें"/>
 			<finder-clear-all value="सब क्लियर करें"/>
-			<finder-open-all value="सब ओपन करें"/>
 			<common-ok value="ओके"/>
 			<common-cancel value="रद्द करें"/>
 			<common-name value="नाम: "/>

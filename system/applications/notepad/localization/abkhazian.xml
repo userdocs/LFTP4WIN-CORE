@@ -469,7 +469,6 @@ Updated to v8.2.1:
 				<Item id="1658" name="Акаталоггәылақәа зегьы рҟны"/>
 				<Item id="1659" name="Иҵәаху акаталогқәа рҟны"/>
 				<Item id="1660" name="Иалаԥсахтәуп Афаилқәа рҟны"/>
-				<Item id="1661" name="Ари адокумент акаталог"/>
 				<Item id="1662" name="Апроект апанель 1"/>
 				<Item id="1663" name="Апроект апанель 2"/>
 				<Item id="1664" name="Апроект апанель 3"/>
@@ -1060,7 +1059,6 @@ Updated to v8.2.1:
 						<Element name="Иаҿакуп иаарту афаилқәа зегьы рзы"/>
 						<Element name="Иаҿыхуп"/>
 					</ComboBox>
-					<Item id="6308" name="Еикәарҳәтәуп атреи ахь"/>
 					<Item id="6312" name="Афаилқәа рҟны Аԥсахрақәа Рыцклаԥшра"/>
 					<Item id="6313" name="Ирҿыцлатәуп зҵаарада"/>
 					<Item id="6325" name="Арҿыцра ашьҭахь аҵыхәтәантәи ацәаҳәахьы"/>
@@ -1134,7 +1132,6 @@ Updated to v8.2.1:
 					<Item id="6822" name="Арезервтә копиа амҩа:"/>
 				</Backup>
 				<AutoCompletion title="Автохыркәшара">
-					<Item id="6115" name="Авто-хьаҵ Ацәаҳәа Ҿыц аҟны"/>
 					<Item id="6807" name="Автохыркәшара"/>
 					<Item id="6808" name="Иаҿактәуп аҭагаларақәа рыцԥхьаӡа рзы автоматикала ахарҭәара"/>
 					<Item id="6809" name="Афункциақәа рхыркәшара"/>
@@ -1439,10 +1436,8 @@ Updated to v8.2.1:
 			<finder-uncollapse-all value="Еиҵыхтәуп зегьы"/>
 			<finder-copy value="Икопиатәуп иалкаау ацәаҳәа(қәа)"/>
 			<finder-copy-verbatim value="Икопиатәуп"/>
-			<finder-copy-paths value="Икопиатәуп афаил амҩа(қәа)"/>
 			<finder-select-all value="Иалкаатәуп зегьы"/>
 			<finder-clear-all value="Ирыцқьатәуп иԥшаау зегьы"/>
-			<finder-open-all value="Иаарттәуп афаилқәа зегьы"/>
 			<finder-wrap-long-lines value="Иауу ацәаҳәақәа рҟны ажәақәа риагара"/>
 			<common-ok value="ОК"/>
 			<common-cancel value="Аҟәыхра"/>
@@ -1486,7 +1481,6 @@ Updated to v8.2.1:
 			<find-result-title-info-selections value="($INT_REPLACE1$ аиқәшәарақәа $INT_REPLACE2$ аҟны иалкаақәоу $INT_REPLACE3$ рҟынтәи)"/>
 			<find-result-title-info-extra value=" - Ацәаҳәақәа рФильтр Арежим: иаанарԥшуеит афильтрра алҵшәақәа мацара"/>
 			<find-result-hits value="(Аиқәшәарақәа $INT_REPLACE$)"/>
-			<find-result-hits-and-line-hits value="($INT_REPLACE1$ аиқәшәарақәа ацәаҳәақәа $INT_REPLACE2$ рҟны)"/>
 			<find-regex-zero-length-match value="ноль аура змоу аиқәшәара"/>
 			<session-save-folder-as-workspace value="Еиқәырхатәуп Акаталог Апроект ҳасабла"/>
 			<tab-untitled-string value="аҿыц "/>

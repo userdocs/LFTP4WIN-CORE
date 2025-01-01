@@ -496,7 +496,6 @@ Translation note:
 				<Item id="1626" name="扩展(&amp;X) (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="在文件中替换"/>
 				<Item id="1665" name="在工程中替换"/>
-				<Item id="1661" name="当前文件夹。"/>
 				<Item id="1662" name="工程面板1"/>
 				<Item id="1663" name="工程面板2"/>
 				<Item id="1664" name="工程面板3"/>
@@ -1102,10 +1101,24 @@ Translation note:
 					<Item id="6508" name="程序语言菜单"/>
 					<Item id="6301" name="制表符设置"/>
 					<Item id="6302" name="替换为空格"/>
-					<Item id="6303" name="制表符宽度: "/>
+					<Item id="6303" name="制表符宽度:"/>
 					<Item id="6510" name="使用默认值"/>
 					<Item id="6335" name="视反斜杠为 SQL 转义字符"/>
 				</Language>
+
+				<Indentation title="缩进">
+					<Item id="7161" name="自动缩进"/>
+					<Item id="7162" name="无"/>
+					<Item id="7163" name="基本"/>
+					<Item id="7164" name="高深"/>
+					<Item id="6301" name="缩进设置"/>
+					<Item id="6302" name="空格字符"/>
+					<Item id="6303" name="缩进大小:"/>
+					<Item id="6310" name="缩进方式:"/>
+					<Item id="6311" name="制表符"/>
+					<Item id="6510" name="使用默认值"/>
+					<Item id="6512" name="退格键取消缩进而不是删除单个空格"/>
+				</Indentation>
 
 				<Highlighting title="高亮">
 					<Item id="6351" name="用格式标记全部"/>
@@ -1203,7 +1216,6 @@ Translation note:
 				</Backup>
 
 				<AutoCompletion title="自动补全">
-					<Item id="6115" name="自动缩进"/>
 					<Item id="6807" name="自动补全"/>
 					<Item id="6808" name="所有输入均启用自动补全"/>
 					<Item id="6809" name="函数自动补全"/>
@@ -1299,7 +1311,6 @@ Translation note:
 						<Element name="对所有已打开文件启用"/>
 						<Element name="禁用"/>
 					</ComboBox>
-					<Item id="6308" name="最小化到系统托盘"/>
 					<Item id="6312" name="自动检测文件状态"/>
 					<Item id="6313" name="自动更新文件"/>
 					<Item id="6325" name="更新后定位到末行"/>
@@ -1690,9 +1701,7 @@ Notepad++ 会备份旧的 “shortcuts.xml”，并将其保存为 “shortcuts.
 			<finder-collapse-all value="全部折叠"/>
 			<finder-uncollapse-all value="全部展开"/>
 			<finder-copy value="复制选中行"/>
-			<finder-copy-paths value="复制路径"/>
 			<finder-clear-all value="全部清除"/>
-			<finder-open-all value="全部打开"/>
 			<finder-purge-for-every-search value="每次搜索时清除"/>
 			<finder-wrap-long-lines value="自动换行"/>
 			<common-ok value="确定"/>

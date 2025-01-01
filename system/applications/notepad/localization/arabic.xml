@@ -394,7 +394,6 @@
 				<Item id="1625" name="&amp;عادي"/>
 				<Item id="1626" name="مو&amp;سع (\n أو \r أو \t أو \0 أو \x...)"/>
 				<Item id="1660" name="ا&amp;ستبدال في الملفات"/>
-				<Item id="1661" name="اتبع المستند الحالي"/>
 				<Item id="1641" name="بحث عن الكل في المستند الحالي"/>
 				<Item id="1686" name="الشفاف&amp;ية"/>
 				<Item id="1703" name="&amp;. تطابق سطر جديد"/>
@@ -870,7 +869,6 @@
 				</Backup>
 
 				<AutoCompletion title="الإكمال التلقائي">
-					<Item id="6115" name="إزاحة تلقائية"/>
 					<Item id="6807" name="الإكمال التلقائي"/>
 					<Item id="6808" name="تفعيل الإكمال التلقائي لكل إدخال"/>
 					<Item id="6809" name="إكمال الإقتران"/>
@@ -931,7 +929,6 @@
 						<Element name="تفعيل لكل الملفات المفتوحة"/>
 						<Element name="تعطيل"/>
 					</ComboBox>
-					<Item id="6308" name="تصغير إلى جوار الساعة"/>
 					<Item id="6312" name="التحقق التلقائي من حالة الملف"/>
 					<Item id="6313" name="التحديث بشكل صامت"/>
 					<Item id="6318" name="إعدادات الرابط القابل للنقر"/>
@@ -1196,7 +1193,6 @@
 			<finder-copy value="نسخ"/>
 			<finder-select-all value="تحديد الكل"/>
 			<finder-clear-all value="مسح الكل"/>
-			<finder-open-all value="فتح الكل"/>
 			<common-ok value="موافق"/>
 			<common-cancel value="إلغاء"/>
 			<common-name value="الاسم: "/>

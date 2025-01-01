@@ -456,7 +456,6 @@ The comments are here for explanation, it's not necessary to translate them.
 				<Item id="1626" name="Mở rộng (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="Thay thế trong tệp"/>
 				<Item id="1665" name="Thay thế trong các dự án"/>
-				<Item id="1661" name="Theo tài liệu hiện tại."/>
 				<Item id="1662" name="Bảng dự án 1"/>
 				<Item id="1663" name="Bảng dự án 2"/>
 				<Item id="1664" name="Bảng dự án 3"/>
@@ -1110,7 +1109,6 @@ Bạn có thể định nghĩa một vài mốc đánh dấu bằng cách sử d
 				</Backup>
 
 				<AutoCompletion title="Tự động hoàn thành">
-					<Item id="6115" name="Tự động thụt lề"/>
 					<Item id="6807" name="Tự động hoàn thành"/>
 					<Item id="6808" name="Bật tự động hoàn thành mỗi khi nhập"/>
 					<Item id="6809" name="Hoàn thành hàm"/>
@@ -1196,7 +1194,6 @@ Bạn có thể định nghĩa một vài mốc đánh dấu bằng cách sử d
 						<Element name="Bật cho mọi tệp được mở"/>
 						<Element name="Tắt"/>
 					</ComboBox>
-					<Item id="6308" name="Thu nhỏ hẳn vào khay hệ thống"/>
 					<Item id="6312" name="Tự phát hiện trạng thái tệp"/>
 					<Item id="6313" name="Lặng lẽ cập nhật"/>
 					<Item id="6325" name="Cuộn xuống dòng cuối sau khi cập nhật"/>
@@ -1546,10 +1543,8 @@ Tìm trong tất cả các tệp nhưng loại trừ tất cả thư mục log h
 			<finder-uncollapse-all value="Duỗi tất cả"/>
 			<finder-copy value="Sao chép các dòng được chọn"/>
 			<finder-copy-verbatim value="Sao chép"/>
-			<finder-copy-paths value="Sao chép tên đường dẫn"/>
 			<finder-select-all value="Sao chép tất cả"/>
 			<finder-clear-all value="Xoá sạch tất cả"/>
-			<finder-open-all value="Mở tất cả"/>
 			<finder-purge-for-every-search value="Tẩy sạch cho mỗi lần tìm kiếm"/>
 			<finder-wrap-long-lines value="Bọc từ ở các dòng dài"/>
 			<common-ok value="OK"/>

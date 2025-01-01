@@ -376,7 +376,6 @@
 				<Item id="1625" name="ئاسایی"/>
 				<Item id="1626" name="Extended (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="گۆڕین لە پەڕگە"/>
-				<Item id="1661" name="شوێنكەوتنی بەڵگەنامەی ئێستا."/>
 				<Item id="1641" name="گەڕان لە بەڵگەنامەكانی ئێستا"/>
 				<Item id="1686" name="ڕوونی"/>
 				<Item id="1703" name="&amp;. matches newline"/>
@@ -801,7 +800,6 @@
 				</Backup>
 
 				<AutoCompletion title="Auto-Completion">
-					<Item id="6115" name="Auto-indent"/>
 					<Item id="6807" name="Auto-Completion"/>
 					<Item id="6808" name="Enable auto-completion on each input"/>
 					<Item id="6809" name="Function completion"/>
@@ -858,8 +856,6 @@
 				</SearchEngine>
 
 				<MISC title="MISC.">
-					<Item id="6307" name="Enable"/>
-					<Item id="6308" name="Minimize to system tray"/>
 					<Item id="6312" name="File Status Auto-Detection"/>
 					<Item id="6313" name="Update silently"/>
 					<Item id="6318" name="Clickable Link Settings"/>

@@ -412,7 +412,6 @@
 				<Item id="1658" name="Σε υπο-φακέλους"/>
 				<Item id="1659" name="Σε κρυφούς φακέλους"/>
 				<Item id="1660" name="Αντικατάσταση σε αρχεία"/>
-				<Item id="1661" name="Και στο τρέχον doc."/>
 				<Item id="1662" name="Πίνακας έργου 1"/>
 				<Item id="1663" name="Πίνακας έργου 2"/>
 				<Item id="1664" name="Πίνακας έργου 3"/>
@@ -999,7 +998,6 @@
 				</Backup>
 
 				<AutoCompletion title="Αυτόμ συμπλήρωση">
-					<Item id="6115" name="Αυτόματη εσοχή"/>
 					<Item id="6807" name="Αυτόμ συμπλήρωση"/>
 					<Item id="6808" name="Ενεργοπ. αυτόμ. συμπλήρ. σε κάθε είσοδο"/>
 					<Item id="6809" name="Συνάρτηση συμπλήρωσης"/>
@@ -1068,7 +1066,6 @@
 					</ComboBox>
 					<Item id="6114" name="Ενεργό"/>
 					<Item id="6117" name="Ενεργή MRU προσαρμογή"/>
-					<Item id="6308" name="Ελαχιστοποίηση στη Γραμμή εργασιών"/>
 					<Item id="6312" name="Κατάσταση Αρχείων Αυτόματης-ανίχνευσης"/>
 					<Item id="6313" name="Αθόρυβη ενημέρωση"/>
 					<Item id="6322" name="Επέκταση αρχείου συνόδου:"/>
@@ -1384,10 +1381,8 @@ Find in all files except exe, obj &amp;&amp; log:
 			<finder-uncollapse-all value="Uncollapse all"/>
 			<finder-copy value="Copy Selected Line(s)"/>
 			<finder-copy-verbatim value="Copy"/>
-			<finder-copy-paths value="Copy Pathname(s)"/>
 			<finder-select-all value="Select all"/>
 			<finder-clear-all value="Clear all"/>
-			<finder-open-all value="Open all"/>
 			<finder-purge-for-every-search value="Purge for every search"/>
 			<finder-wrap-long-lines value="Word wrap long lines"/>
 			<common-ok value="OK"/>

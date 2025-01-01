@@ -340,7 +340,6 @@
 				<Item id="1625" name="નોર્મલ"/>
 				<Item id="1626" name="વિસ્તૃત(Extended) (\n, \r, \t, \0, \x...)"/>
 				<Item id="1660" name="ફાઈલ્સ માં બદલો"/>
-				<Item id="1661" name="હાલના ડોક્યુમેન્ટ ને અનુસરો"/>
 				<Item id="1641" name="બધા હાલના ડોક્યુમેન્ટ માં શોધો"/>
 				<Item id="1686" name="પારદર્શકતા"/>
 				<Item id="1703" name="&amp;. નવી લાઈન મેચ કરે"/>
@@ -720,7 +719,6 @@
 				</Backup>
 
 				<AutoCompletion title="Auto-Completion">
-					<Item id="6115" name="ઓટો-ઇન્ડેન્ટ"/>
 					<Item id="6807" name="ઓટો -કમ્પ્લીશન(Auto-Completion)"/>
 					<Item id="6808" name="દરેક ઈનપુટ માટે ઓટો-કમ્પ્લીશન સક્રિય કરો"/>
 					<Item id="6809" name="ફંક્શન કમ્પ્લીશન"/>
@@ -755,8 +753,6 @@
 				</Delimiter>
 
 				<MISC title="MISC.">
-					<Item id="6307" name="સક્રિય"/>
-					<Item id="6308" name="સીસ્ટમ ટ્રે માટે/સુધી ઘટાડો"/>
 					<Item id="6312" name="ફાઈલ સ્ટેટસ ઓટો-ડીટેક્શન"/>
 					<Item id="6313" name="અપડેટ સાઈલન્ટલી"/>
 					<Item id="6318" name="ક્લીકેબલ લીંક સેટિંગ્સ"/>
