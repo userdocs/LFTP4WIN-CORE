@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="Japanese" filename="japanese.xml" version="8.7.5">
+	<Native-Langue name="Japanese" filename="japanese.xml" version="8.8">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -137,6 +137,8 @@ Translation note:
 					<Item id="42060" name="選択行を　辞書順で降順ソート"/>
 					<Item id="42080" name="選択行を　辞書順で昇順ソート(大文字小文字を無視)"/>
 					<Item id="42081" name="選択行を　辞書順で降順ソート(大文字小文字を無視)"/>
+					<Item id="42100" name="選択行を　ロケールを考慮して昇順ソート"/>
+					<Item id="42101" name="選択行を　ロケールを考慮して降順ソート"/>
 					<Item id="42061" name="選択行を　整数として昇順ソート"/>
 					<Item id="42062" name="選択行を　整数として降順ソート"/>
 					<Item id="42063" name="選択行を　実数(コンマが小数点)として昇順ソート"/>
@@ -827,6 +829,7 @@ Translation note:
 				<Folder title="デフォルト・折り畳み設定">
 					<Item id="21101" name="デフォルトスタイル設定"/>
 					<Item id="21102" name="スタイル設定"/>
+					<Item id="21103" name="ユーザー定義についてのオンラインヘルプ"/>
 					<Item id="21105" name="ドキュメンテーション"/>
 					<Item id="21106" name="コンパクトに畳む(空行を含む)(&amp;C)"/>
 					<Item id="21220" name="スタイル1で畳む"/>
@@ -950,15 +953,38 @@ Translation note:
 			<Preference title="環境設定">
 				<Item id="6001" name="閉じる"/>
 				<Global title="全般設定">
-					<Item id="6101" name="ツールバー"/>
+					<Item id="6123" name="言語"/>
+					<Item id="6131" name="メニュー"/>
+					<Item id="6122" name="隠す(表示するには Alt か F10 を押す)"/>
+					<Item id="6132" name="右端の ＋ ▼ ✕ ボタンを非表示にする"/>
+					<Item id="6133" name="ステータスバー"/>
+					<Item id="6134" name="隠す"/>
+				</Global>
+
+				<Toolbar title="ツールバー">
 					<Item id="6102" name="隠す"/>
 					<Item id="6103" name="Fluent UI 小"/>
 					<Item id="6104" name="Fluent UI 大"/>
 					<Item id="6129" name="Filled Fluent UI 小"/>
 					<Item id="6130" name="Filled Fluent UI 大"/>
 					<Item id="6105" name="標準アイコン 小"/>
+					<Item id="6011" name="色付け"/>
+					<Item id="6012" name="全体"/>
+					<Item id="6013" name="一部のみ"/>
+					<Item id="6014" name="色の設定"/>
+					<Item id="6015" name="標準"/>
+					<Item id="6016" name="赤"/>
+					<Item id="6017" name="緑"/>
+					<Item id="6018" name="青"/>
+					<Item id="6019" name="紫"/>
+					<Item id="6020" name="シアン"/>
+					<Item id="6021" name="オリーブ"/>
+					<Item id="6022" name="黄"/>
+					<Item id="6023" name="システムのアクセントカラー"/>
+					<Item id="6024" name="カスタム"/>
+				</Toolbar>
 
-					<Item id="6106" name="タブバー"/>
+				<Tabbar title="タブバー">
 					<Item id="6107" name="小さく表示"/>
 					<Item id="6108" name="固定(ドラッグ&amp;&amp;ドロップを許可しない)"/>
 					<Item id="6109" name="非アクティブなタブの色を変える"/>
@@ -967,21 +993,13 @@ Translation note:
 					<Item id="6112" name="タブに「閉じる」ボタンを表示"/>
 					<Item id="6113" name="ダブルクリックでドキュメントを閉じる"/>
 					<Item id="6115" name="タブのピン留め機能を有効にする"/>
+					<Item id="6135" name="ピン留め中のみピンボタンを表示する"/>
 					<Item id="6118" name="隠す"/>
 					<Item id="6119" name="多段表示"/>
 					<Item id="6120" name="縦に表示する"/>
 					<Item id="6121" name="最後のタブを閉じると終了する"/>
 					<Item id="6128" name="別デザインのアイコンを使用する"/>
-
-					<Item id="6133" name="ステータスバー"/>
-					<Item id="6134" name="隠す"/>
-
-					<Item id="6131" name="メニュー"/>
-					<Item id="6122" name="隠す(表示するには Alt か F10 を押す)"/>
-					<Item id="6132" name="右端の ＋ ▼ ✕ ボタンを非表示にする"/>
-
-					<Item id="6123" name="言語"/>
-				</Global>
+				</Tabbar>
 
 				<Scintillas title="編集画面 1">
 					<Item id="6216" name="カーソル設定"/>
@@ -1000,6 +1018,7 @@ Translation note:
 					<Item id="6239" name="選択範囲外を右クリックしたときに選択を解除しない"/>
 					<Item id="6245" name="仮想空白を有効にする"/>
 					<Item id="6214" name="選択範囲がないときは行全体をコピー/切り取りする"/>
+					<Item id="6225" name="選択文字列の文字色にカスタム色を利用する"/>
 					<Item id="6651" name="現在行の強調表示"/>
 					<Item id="6652" name="なし"/>
 					<Item id="6653" name="背景を色付け"/>
@@ -1036,10 +1055,10 @@ Translation note:
 					<Item id="7108" name="シアン"/>
 					<Item id="7109" name="オリーブ"/>
 					<Item id="7115" name="カスタム"/>
-					<Item id="7116" name="上部"/>
-					<Item id="7117" name="注目中のメニュー"/>
-					<Item id="7118" name="アクティブ タブ"/>
-					<Item id="7119" name="背景"/>
+					<Item id="7116" name="コンテンツの背景"/>
+					<Item id="7117" name="注目中の要素"/>
+					<Item id="7118" name="コントロールの背景"/>
+					<Item id="7119" name="ダイアログの背景"/>
 					<Item id="7120" name="エラー"/>
 					<Item id="7121" name="文字"/>
 					<Item id="7122" name="濃い文字"/>
@@ -1184,7 +1203,7 @@ Translation note:
 					<Item id="6727" name="編集内容がここにも表示されます"/>
 					<Item id="6728" name="ヘッダーとフッター"/>
 				</Print>
-                
+
 				<Searching title="検索">
 					<Item id="6902" name="検索画面で固定幅フォントを使用する（Notepad++ の再起動が必要）"/>
 					<Item id="6903" name="検索結果を結果ウィンドウに表示する時に、検索画面を自動で閉じないようにする"/>
@@ -1328,7 +1347,15 @@ Translation note:
 						<Element name="終了時に"/>
 						<Element name="最小化/終了時に"/>
 					</ComboBox>
+					<ComboBox id="6362">
+						<Element name="GDI (互換性を優先)"/>
+						<Element name="DirectWrite (標準)"/>
+						<Element name="DirectWrite (フレームを保持)"/>
+						<Element name="DirectWrite (GDI DCに描画)"/>
+						<Element name="DirectWrite (DirectX 11)"/>
+					</ComboBox>
 					<Item id="6308" name="タスクトレイへ格納"/>
+					<Item id="6363" name="描画モード"/>
 					<Item id="6312" name="ファイルの状態監視"/>
 					<Item id="6313" name="自動で最新状態に更新"/>
 					<Item id="6325" name="更新後最後の行にスクロール"/>
@@ -1337,7 +1364,6 @@ Translation note:
 					<Item id="6324" name="ビューの切り替え(Ctrl+Tab)"/>
 					<Item id="6331" name="タイトルバーにファイル名のみ表示"/>
 					<Item id="6334" name="文字コードを自動判別"/>
-					<Item id="6349" name="DirectWriteを使用する（特殊な文字の描画が改善されます。Notepad++ の再起動が必要）"/>
 					<Item id="6337" name="ワークスペースファイルの拡張子:"/>
 					<Item id="6114" name="有効"/>
 					<Item id="6117" name="最近使用した順で切り替える"/>
@@ -1449,7 +1475,9 @@ Translation note:
 			<DroppingFolderAsProjectModeWarning title="無効な操作です" message="「フォルダーをプロジェクトとして開く」設定になっているため、ファイルとフォルダーを同時にドロップして開くことはできません。
 この操作を使いたい場合、「環境設定」を開き、「既定のディレクトリ」の「フォルダーをドロップした時、ワークスペースとせずに すべてのファイルを開く」を有効にして下さい。"/>
 			<SortingError title="ソートエラー" message="行番号 $INT_REPLACE$ が原因でソートを実行できませんでした。"/>
-
+			<SortLocaleMultiple title="ソートを行えません" message="複数選択時はソートを行えません。"/><!-- HowToReproduce: Make a multiple selection and choose Edit | Line Operations | Sort Lines In Locale Order. -->
+			<SortLocaleUnknown title="ソートに失敗しました" message="不明な理由でソートに失敗しました。"/><!-- HowToReproduce: This condition is theoretical; it is unknown what could cause it. -->
+			<SortLocaleExcept title="ソートに失敗しました" message="$STR_REPLACE$"/><!-- HowToReproduce: Open a large file, e.g. 500MB / 90k lines, in 32-bit Notepad++ and choose Edit | Line Operations | Sort Lines In Locale Order. -->
 			<ColumnModeTip title="矩形モード" message="矩形モードに切り替えるには、次の3つの方法があります：
 1.（キーボードとマウス）Altキーを押しながら左ボタンでドラッグ
 2.（キーボード）Alt＋Shiftキーを押しながら矢印キーを押す
@@ -1517,6 +1545,11 @@ langs.xml を復元しますか？"/>
 			<UDLNewNameError title="ユーザー定義 エラー" message="この名前は他の言語に使用されています。
 違う名前にして下さい。"/>
 			<UDLRemoveCurrentLang title="現在の言語を削除" message="よろしいですか？"/>
+			<UDL_importSuccessful title="ユーザー定義" message="インポートしました。"/>
+			<UDL_importFails title="ユーザー定義" message="インポートに失敗しました。"/>
+			<UDL_saveBeforeImport title="ユーザー定義" message="エクスポートを行う前に、「保存...」ボタンを押して作成した定義を保存してください。"/> <!-- HowToReproduce: Choose "User Defined Language" in User Language combobox, then click on "Export... button". -->
+			<UDL_exportSuccessful title="ユーザー定義" message="エクスポートしました。"/>
+			<UDL_exportFails title="ユーザー定義" message="エクスポートに失敗しました。"/>
 			<SCMapperDoDeleteOrNot title="よろしいですか？" message="このショートカットを削除してよろしいですか？"/>
 			<FindCharRangeValueError title="数値範囲" message="0 から 255 の値を入力して下さい。"/> <!-- HowToReproduce: Search menu, then Find characters in range, select Custom range, enter 999 in either edit box, press Find. -->
 			<OpenInAdminMode title="保存に失敗" message="ファイルを保存できませんでした。保護されたファイルのようです。
@@ -1826,8 +1859,22 @@ U+FEFF : zero-width no-break space（ゼロ幅改行なしスペース）
 C、C++、Java、C#、Objective-C、PHP、JavaScript、JSP、CSS、Perl、Rust、PowerShell、JSON を指します。
 
 「高度」を選択しても、上記の言語以外を編集している場合は「基本」と同じになります。"/>
+
 			<!-- Don't translate "Global override" and "Default Style" -->
 			<global-override-tip value="&quot;Global override&quot; を使用すると、すべての言語のスタイル設定が、チェックを入れたもので上書きされます。&quot;Default Style&quot; を使われるほうが、お望みの挙動に近いかもしれません。"/>
+			<scintillaRenderingTechnology-tip value="特殊な文字の描画や、グラフィックス関連の問題が改善することがあります。Notepad++ の再起動が必要です。"/>
+
+			<!-- Due to the limited space on the status bar, if the translations for 'length' & 'lines' are much longer than the English words, please leave them in English instead of translating them. -->
+			<statusbar-length-lines value="長さ: $STR_REPLACE1$    行数: $STR_REPLACE2$"/>
+
+			<!-- Due to the limited space on the status bar, if the translations for 'Ln' & 'Col' are longer than the English words, please leave them in English instead of translating them. -->
+			<statusbar-Ln-Col value="行: $STR_REPLACE1$    桁: $STR_REPLACE2$"/>
+
+			<!-- Due to the limited space on the status bar, if the translations for 'Pos' & 'Sel' are longer than the English words, please leave them in English instead of translating them. -->
+			<statusbar-Pos value="位置: "/>
+			<statusbar-Sel value="選択: "/>
+			<statusbar-Sel-number value="選択"/>
+			<toolbar-accent-tip value="これを選択すると、ツールバーのアイコン色が Windows のアクセントカラーに従います。Windows のアクセントカラーは、ボタン、枠、スタートメニューのタイルなどのハイライトに使われています。変更するには、Windows の「設定」→「個人用設定」→「色」に進み、アクセントカラーを変更してください。"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

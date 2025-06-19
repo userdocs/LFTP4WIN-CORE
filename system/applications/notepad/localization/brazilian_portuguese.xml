@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- Brazilian Portuguese by Hélio de Souza and Luxy, updated: Jul 2021, for Notepad++ 8.1.2; last update by Marcello, 15 Jan 2025, for Notepad++ 8.7.6
+<!-- Brazilian Portuguese by Hélio de Souza and Luxy, updated: Jul 2021, for Notepad++ 8.1.2; last update by Marcello, 02 May 2025, for Notepad++ 8.8.1
 Translation note:
 1. Please install XML Tools plugin for formatting your XML translation. Via menu "Plugins -> XML Tools-> Pretty Print - indent only" command.
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="Brazilian Portuguese" filename="brazilian_portuguese.xml" version="8.7.6">
+	<Native-Langue name="Brazilian Portuguese" filename="brazilian_portuguese.xml" version="8.8.1">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -137,6 +137,8 @@ Translation note:
 					<Item id="42060" name="Classificar em ordem decrescente"/>
 					<Item id="42080" name="Classificar em ordem crescente - ignorando maiúsculas/minúsculas"/>
 					<Item id="42081" name="Classificar em ordem decrescente - ignorando maiúsculas/minúsculas"/>
+					<Item id="42100" name="Classificar linhas em ordem ascendente local"/>
+					<Item id="42101" name="Classificar linhas em ordem descendente local"/>
 					<Item id="42061" name="Classificar como números inteiros - ordem crescente"/>
 					<Item id="42062" name="Classificar como números inteiros - ordem decrescente"/>
 					<Item id="42063" name="Classificar como números decimais (vírgula) - ordem crescente"/>
@@ -822,6 +824,7 @@ Translation note:
 				<Folder title="Dobragem e padrão">
 					<Item id="21101" name="Estilo padrão"/>
 					<Item id="21102" name="Estilo"/>
+					<Item id="21103" name="Ajuda online para Linguagens definidas pelo usuário"/>
 					<Item id="21105" name="Documentação:"/>
 					<Item id="21106" name="Dobrar e compactar (dobrar linhas vazias também)"/>
 					<Item id="21220" name="Dobragem de código estilo 1:"/>
@@ -945,15 +948,38 @@ Translation note:
 			<Preference title="Preferências">
 				<Item id="6001" name="Fechar"/>
 				<Global title="Geral">
-					<Item id="6101" name="Barra de ferramentas"/>
-					<Item id="6102" name="Ocultar"/>
-					<Item id="6103" name="Fluent UI: ícones pequenos"/>
-					<Item id="6104" name="Fluent UI: ícones grandes"/>
-					<Item id="6129" name="Filled Fluent UI: ícones pequenos"/>
-					<Item id="6130" name="Filled Fluent UI: ícones grandes"/>
-					<Item id="6105" name="Padrão: ícones pequenos"/>
+					<Item id="6123" name="Localização"/>
+					<Item id="6131" name="Menu"/>
+					<Item id="6122" name="Ocultar (use teclas Alt ou F10 para alternar)"/>
+					<Item id="6132" name="Ocultar atalhos à direita ＋ ▼ ✕"/>
+					<Item id="6133" name="Barra de Status"/>
+					<Item id="6134" name="Ocultar"/>
+				</Global>
 
-					<Item id="6106" name="Barra de abas"/>
+				<Toolbar title="Ferramentas">
+					<Item id="6102" name="Ocultar"/>
+					<Item id="6103" name="Ícones contornados: pequenos"/>
+					<Item id="6104" name="Ícones contornados: grandes"/>
+					<Item id="6129" name="Ícones cheios: pequenos"/>
+					<Item id="6130" name="Ícones cheios: grandes"/>
+					<Item id="6105" name="Ícones clássicos: pequenos"/>
+					<Item id="6011" name="Colorização"/>
+					<Item id="6012" name="Completo"/>
+					<Item id="6013" name="Parcial"/>
+					<Item id="6014" name="Escolha de Cor"/>
+					<Item id="6015" name="Padrão"/>
+					<Item id="6016" name="Vermelho"/>
+					<Item id="6017" name="Verde"/>
+					<Item id="6018" name="Azul"/>
+					<Item id="6019" name="Roxo"/>
+					<Item id="6020" name="Ciano"/>
+					<Item id="6021" name="Verde Azeitona"/>
+					<Item id="6022" name="Amarelo"/>
+					<Item id="6023" name="Cor base do Sistema"/>
+					<Item id="6024" name="Particularizado"/>
+				</Toolbar>
+				
+				<Tabbar title="Barra de Abas">
 					<Item id="6107" name="Reduzir"/>
 					<Item id="6108" name="Travar (sem arrastar e soltar)"/>
 					<Item id="6109" name="Mudar cor de aba inativa"/>
@@ -962,21 +988,13 @@ Translation note:
 					<Item id="6112" name="Mostrar o botão fechar"/>
 					<Item id="6113" name="Fechar documento com duplo clique"/>
 					<Item id="6115" name="Habilitar recurso de fixar aba"/>
+					<Item id="6135" name="Mostrar apenas botões fixados"/>
 					<Item id="6118" name="Ocultar"/>
 					<Item id="6119" name="Multilinhas"/>
 					<Item id="6120" name="Vertical"/>
 					<Item id="6121" name="Sair ao fechar a última aba"/>
 					<Item id="6128" name="Ícones alternativos"/>
-
-					<Item id="6133" name="Barra de Status"/>
-					<Item id="6134" name="Ocultar"/>
-
-					<Item id="6131" name="Menu"/>
-					<Item id="6122" name="Ocultar (use Alt ou F10 para alternar)"/>
-					<Item id="6132" name="Ocultar atalhos à direita ＋ ▼ ✕"/>
-
-					<Item id="6123" name="Localização"/>
-				</Global>
+				</Tabbar>
 				
 				<Scintillas title="Edição 1">
 					<Item id="6216" name="Configurações do cursor"/>
@@ -995,6 +1013,7 @@ Translation note:
 					<Item id="6239" name="Manter a seleção ao clicar com o botão direito fora da seleção"/>
 					<Item id="6245" name="Habilitar espaço virtual"/>
 					<Item id="6214" name="Habilitar Copiar/Recortar Linha sem seleção"/>
+					<Item id="6225" name="Aplicar cor customizada em texto selecionado"/>
 					<Item id="6651" name="Indicador de linha atual"/>
 					<Item id="6652" name="Nenhum"/>
 					<Item id="6653" name="Destacar fundo"/>
@@ -1323,7 +1342,15 @@ Translation note:
 						<Element name="Fechar para"/>
 						<Element name="Minimizar / Fechar para"/>
 					</ComboBox>
+					<ComboBox id="6362">
+						<Element name="GDI (mais compatível)"/>
+						<Element name="DirectWrite (padrão)"/>
+						<Element name="DirectWrite (mantém estrutura)"/>
+						<Element name="DirectWrite (estendendo a GDI DC)"/>
+						<Element name="DirectWrite (DirectX 11)"/>
+					</ComboBox>
 					<Item id="6308" name="bandeja"/>
+					<Item id="6363" name="modo renderização"/>
 					<Item id="6312" name="Autodetectar estado de arquivos"/>
 					<Item id="6313" name="Atualizar silenciosamente"/>
 					<Item id="6325" name="Ir para a última linha depois de atualizar"/>
@@ -1332,7 +1359,6 @@ Translation note:
 					<Item id="6324" name="Alternador de documentos (Ctrl+TAB)"/>
 					<Item id="6331" name="Exibir somente o nome do arquivo no título"/>
 					<Item id="6334" name="Autodetectar codificação do caractere"/>
-					<Item id="6349" name="Usar DirectWrite (Pode melhorar a renderização de caracteres especiais, é necessário reiniciar o Notepad++)"/>
 					<Item id="6337" name="Extensão do arquivo de espaço de trabalho:"/>
 					<Item id="6114" name="Habilitar"/>
 					<Item id="6117" name="Habilitar comportamento MRU"/>
@@ -1444,6 +1470,9 @@ Suas configurações na nuvem serão canceladas. Por favor, redefina um valor co
 			<DroppingFolderAsProjectModeWarning title="Você só pode soltar arquivos ou pastas, mas não ambos, porque você está soltando Pasta como modo Projeto.
 É necessário habilitar &quot;Abrir todos os arquivos da pasta em vez de usar a pasta como espaço de trabalho&quot; na seção &quot;Diretório padrão&quot; da opção Preferências para que esta operação funcione."/>
 			<SortingError title="Erro de Classificação" message="Não é possível realizar a classificação numérica devido à linha $INT_REPLACE$."/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
+			<SortLocaleMultiple title="Classificação não efetuada" message="Classificação de múltiplas seleções não é suportada."/><!-- HowToReproduce: Make a multiple selection and choose Edit | Line Operations | Sort Lines In Locale Order. -->
+			<SortLocaleUnknown title="Erro de Classificação" message="O motivo da falha de classificação não pôde ser determinado."/><!-- HowToReproduce: This condition is theoretical; it is unknown what could cause it. -->
+			<SortLocaleExcept title="Erro de Classificação" message="$STR_REPLACE$"/><!-- HowToReproduce: Open a large file, e.g. 500MB / 90k lines, in 32-bit Notepad++ and choose Edit | Line Operations | Sort Lines In Locale Order. -->
 			<ColumnModeTip title="Dica de Modo Coluna" message="
 Existem 3 maneiras de ativar o modo de seleção em colunas:
 
@@ -1514,6 +1543,11 @@ Deseja continuar?"/>
 			<UDLNewNameError title="Erro UDL" message="Esse nome é usado por outro idioma.
 Por favor, dê outro."/>
 			<UDLRemoveCurrentLang title="Remover a linguagem atual" message="Você tem certeza?"/>
+			<UDL_importSuccessful title="Linguagem Definida pelo Usuário" message="Importação efetuada com sucesso."/>
+			<UDL_importFails title="Linguagem Definida pelo Usuário" message="Erro na importação."/>
+			<UDL_saveBeforeImport title="Linguagem Definida pelo Usuário" message="Antes de exportar, salve sua definição de linguagem clicando no botão &quot;Salvar como...&quot;."/> <!-- HowToReproduce: Choose "User Defined Language" in User Language combobox, then click on "Export... button". -->
+			<UDL_exportSuccessful title="Linguagem Definida pelo Usuário" message="Exportação efetuada com sucesso."/>
+			<UDL_exportFails title="Linguagem Definida pelo Usuário" message="Erro na exportação."/>
 			<SCMapperDoDeleteOrNot title="Você tem certeza?" message="Tem certeza de que deseja excluir este atalho?"/>
 			<FindCharRangeValueError title="Problema do Valor do intervalo" message="Você deve escolher entre 0 e 255."/> <!-- Como Reproduzir: No menu 'Localizar', depois 'Localizar caracteres em um intervalo', selecione 'Meu intervalo', digite 999 nas duas caixas de edição, e clique em 'Localizar'. -->
 			<OpenInAdminMode title="Falha ao salvar" message="O arquivo não pode ser salvo e pode estar protegido.
@@ -1558,6 +1592,7 @@ Se for necessário executar uma busca regex para trás, consulte o manual de usu
 			<PrintError title="0" message="Não foi posssível iniciar a impressão do documento."/><!-- Use title="0" para usar o título do "Erro" padrão do Windows. -->
 			<FindAutoChangeOfInSelectionWarning title="Aviso da Localização" message="O estado da caixa de seleção &quot;Na seleção&quot; foi modificado automaticamente.
 Por favor verifique a condição de localização antes de continuar."/> <!-- Como Reproduzir: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
+		<Need2Restart2ShowMenuShortcuts title="O Notepad++ precisa ser reiniciado" message="O Notepad++ precisa ser reiniciado para mostrar os atalhos de botão direito."/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Histórico da área de transferência"/>
@@ -1829,8 +1864,22 @@ Clique no botão &quot;?&quot; à direita para abrir o site com o Manual do Usu�
 C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell e JSON.
 
 Se você ativar o modo avançado mas não editar arquivos destas linguagens, a indentação continuará em modo básico."/>
+
 			<!-- Não traduzir "Global override" e "Default Style" -->
 			<global-override-tip value="Habilitar o &quot;Global override&quot; aqui vai prevalecer sobre este parâmetro em todos os estilos de linguagem. O que provavelmente é desejado é usar as configurações de &quot;Default Style&quot;"/>
+			<scintillaRenderingTechnology-tip value="Pode melhorar a renderização de caracteres especiais ou resolver alguns problemas gráficos, reinicie o Notepad++ para aplicar as mudanças."/>
+
+			<!-- Devido ao espaço limitado na barra de status, se as traduções para 'length' & 'lines' forem muito maiores do que o texto em Inglês, por favor deixe-os em Inglês ao invés de traduzi-los. -->
+ 			<statusbar-length-lines value="tamanho: $STR_REPLACE1$    linhas: $STR_REPLACE2$"/>
+
+			<!-- Devido ao espaço limitado na barra de status, se as traduções para 'Ln' & 'Col' forem muito maiores do que o texto em Inglês, por favor deixe-os em Inglês ao invés de traduzi-los. -->
+ 			<statusbar-Ln-Col value="Ln: $STR_REPLACE1$    Col: $STR_REPLACE2$"/>
+ 
+			<!-- Devido ao espaço limitado na barra de status, se as traduções para 'Pos' & 'Sel' forem muito maiores do que o texto em Inglês, por favor deixe-os em Inglês ao invés de traduzi-los. -->
+ 			<statusbar-Pos value="Pos: "/>
+ 			<statusbar-Sel value="Sel: "/>
+ 			<statusbar-Sel-number value="Sel"/>
+			<toolbar-accent-tip value="Esta opção faz com que os ícondes de sua barra de ferramentas sigam a cor principal do sistema Windows. A cor principal é a cor de destaque usada em botões, margens, e títulos no Menu Iniciar do Windows. Para alterar, acesse Configurações &gt; Preferências &gt; Cores, e então selecione seu padrão de  cores preferido."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

@@ -945,7 +945,6 @@ Translation note:
 			<Preference title="Sở thích">
 				<Item id="6001" name="Đóng"/>
 				<Global title="Tổng quát">
-					<Item id="6101" name="Thanh công cụ"/>
 					<Item id="6102" name="Ẩn"/>
 					<Item id="6103" name="Fluent UI: nhỏ"/>
 					<Item id="6104" name="Fluent UI: lớn"/>
@@ -953,7 +952,6 @@ Translation note:
 					<Item id="6130" name="Fluent UI Đặc: lớn"/>
 					<Item id="6105" name="Biểu tượng chuẩn: nhỏ"/>
 
-					<Item id="6106" name="Thanh thẻ"/>
 					<Item id="6107" name="Giảm"/>
 					<Item id="6108" name="Khóa (không có kéo và thả)"/>
 					<Item id="6109" name="Làm tối các thẻ không hoạt động"/>
@@ -1332,7 +1330,6 @@ Translation note:
 					<Item id="6324" name="Khung chuyển tài liệu (Ctrl+TAB)"/>
 					<Item id="6331" name="Chỉ hiện tên tệp trong thanh tiêu đề"/>
 					<Item id="6334" name="Tự động phát hiện biên mã kí tự"/>
-					<Item id="6349" name="Sử dụng DirectWrite (Có thể cải thiện kết xuất các kí tự đặc biệt, cần khởi động lại Notepad++)"/>
 					<Item id="6337" name="Đuôi tệp không gian làm việc:"/>
 					<Item id="6114" name="Bật"/>
 					<Item id="6117" name="Bật hành vi DGĐN (dùng gần đây nhất)"/>

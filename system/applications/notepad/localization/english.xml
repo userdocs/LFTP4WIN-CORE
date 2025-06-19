@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="English" filename="english.xml" version="8.7.3">
+	<Native-Langue name="English" filename="english.xml" version="8.8">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -137,6 +137,8 @@ Translation note:
 					<Item id="42060" name="Sort Lines Lexicographically Descending"/>
 					<Item id="42080" name="Sort Lines Lex. Ascending Ignoring Case"/>
 					<Item id="42081" name="Sort Lines Lex. Descending Ignoring Case"/>
+					<Item id="42100" name="Sort Lines In Locale Order Ascending"/>
+					<Item id="42101" name="Sort Lines In Locale Order Descending"/>
 					<Item id="42061" name="Sort Lines As Integers Ascending"/>
 					<Item id="42062" name="Sort Lines As Integers Descending"/>
 					<Item id="42063" name="Sort Lines As Decimals (Comma) Ascending"/>
@@ -822,6 +824,7 @@ Translation note:
 				<Folder title="Folder &amp;&amp; Default">
 					<Item id="21101" name="Default style"/>
 					<Item id="21102" name="Styler"/>
+					<Item id="21103" name="User Defined Languages online help"/>
 					<Item id="21105" name="Documentation"/>
 					<Item id="21106" name="Fold &amp;compact (fold empty lines too)"/>
 					<Item id="21220" name="Folding in code 1 style"/>
@@ -945,15 +948,38 @@ Translation note:
 			<Preference title="Preferences">
 				<Item id="6001" name="Close"/>
 				<Global title="General">
-					<Item id="6101" name="Toolbar"/>
+					<Item id="6123" name="Localization"/>
+					<Item id="6131" name="Menu"/>
+					<Item id="6122" name="Hide (use Alt or F10 key to toggle)"/>
+					<Item id="6132" name="Hide right shortcuts ＋ ▼ ✕"/>
+					<Item id="6133" name="Status Bar"/>
+					<Item id="6134" name="Hide"/>
+				</Global>
+
+				<Toolbar title="Toolbar">
 					<Item id="6102" name="Hide"/>
 					<Item id="6103" name="Fluent UI: small"/>
 					<Item id="6104" name="Fluent UI: large"/>
 					<Item id="6129" name="Filled Fluent UI: small"/>
 					<Item id="6130" name="Filled Fluent UI: large"/>
 					<Item id="6105" name="Standard icons: small"/>
+					<Item id="6011" name="Colorization"/>
+					<Item id="6012" name="Complete"/>
+					<Item id="6013" name="Partial"/>
+					<Item id="6014" name="Color choice"/>
+					<Item id="6015" name="Default"/>
+					<Item id="6016" name="Red"/>
+					<Item id="6017" name="Green"/>
+					<Item id="6018" name="Blue"/>
+					<Item id="6019" name="Purple"/>
+					<Item id="6020" name="Cyan"/>
+					<Item id="6021" name="Olive"/>
+					<Item id="6022" name="Yellow"/>
+					<Item id="6023" name="System Accent"/>
+					<Item id="6024" name="Custom"/>
+				</Toolbar>
 
-					<Item id="6106" name="Tab Bar"/>
+				<Tabbar title="Tab Bar">
 					<Item id="6107" name="Reduce"/>
 					<Item id="6108" name="Lock (no drag and drop)"/>
 					<Item id="6109" name="Change inactive tab color"/>
@@ -962,21 +988,13 @@ Translation note:
 					<Item id="6112" name="Show close button"/>
 					<Item id="6113" name="Double click to close document"/>
 					<Item id="6115" name="Enable pin tab feature"/>
+					<Item id="6135" name="Show only pinned button"/>
 					<Item id="6118" name="Hide"/>
 					<Item id="6119" name="Multi-line"/>
 					<Item id="6120" name="Vertical"/>
 					<Item id="6121" name="Exit on close the last tab"/>
 					<Item id="6128" name="Alternate icons"/>
-
-					<Item id="6133" name="Status Bar"/>
-					<Item id="6134" name="Hide"/>
-
-					<Item id="6131" name="Menu"/>
-					<Item id="6122" name="Hide (use Alt or F10 key to toggle)"/>
-					<Item id="6132" name="Hide right shortcuts ＋ ▼ ✕"/>
-
-					<Item id="6123" name="Localization"/>
-				</Global>
+				</Tabbar>
 
 				<Scintillas title="Editing 1">
 					<Item id="6216" name="Caret Settings"/>
@@ -995,6 +1013,7 @@ Translation note:
 					<Item id="6239" name="Keep selection when right-click outside of selection"/>
 					<Item id="6245" name="Enable virtual space"/>
 					<Item id="6214" name="Enable Copy/Cut Line without selection"/>
+					<Item id="6225" name="Apply custom color to selected text foreground"/>
 					<Item id="6651" name="Current Line Indicator"/>
 					<Item id="6652" name="None"/>
 					<Item id="6653" name="Highlight Background"/>
@@ -1031,10 +1050,10 @@ Translation note:
 					<Item id="7108" name="Cyan"/>
 					<Item id="7109" name="Olive"/>
 					<Item id="7115" name="Customized"/>
-					<Item id="7116" name="Top"/>
-					<Item id="7117" name="Menu hot track"/>
-					<Item id="7118" name="Active"/>
-					<Item id="7119" name="Main"/>
+					<Item id="7116" name="Content background"/>
+					<Item id="7117" name="Hot track item"/>
+					<Item id="7118" name="Control background"/>
+					<Item id="7119" name="Dialog background"/>
 					<Item id="7120" name="Error"/>
 					<Item id="7121" name="Text"/>
 					<Item id="7122" name="Darker text"/>
@@ -1323,7 +1342,15 @@ Translation note:
 						<Element name="Close to"/>
 						<Element name="Minimize / Close to"/>
 					</ComboBox>
+					<ComboBox id="6362">
+						<Element name="GDI (most compatible)"/>
+						<Element name="DirectWrite (default)"/>
+						<Element name="DirectWrite (retain frames)"/>
+						<Element name="DirectWrite (draw to GDI DC)"/>
+						<Element name="DirectWrite (DirectX 11)"/>
+					</ComboBox>
 					<Item id="6308" name="system tray"/>
+					<Item id="6363" name="rendering mode"/>
 					<Item id="6312" name="File Status Auto-Detection"/>
 					<Item id="6313" name="Update silently"/>
 					<Item id="6325" name="Scroll to the last line after update"/>
@@ -1332,7 +1359,6 @@ Translation note:
 					<Item id="6324" name="Document Switcher (Ctrl+TAB)"/>
 					<Item id="6331" name="Show only filename in title bar"/>
 					<Item id="6334" name="Autodetect character encoding"/>
-					<Item id="6349" name="Use DirectWrite (May improve rendering special characters, need to restart Notepad++)"/>
 					<Item id="6337" name="Workspace file ext.:"/>
 					<Item id="6114" name="Enable"/>
 					<Item id="6117" name="Enable MRU behaviour"/>
@@ -1444,6 +1470,9 @@ Your settings on cloud will be canceled. Please reset a coherent value via Prefe
 			<DroppingFolderAsProjectModeWarning title="Invalid action" message="You can only drop files or folders but not both, because you're in dropping Folder as Project mode.
 You have to enable &quot;Open all files of folder instead of launching Folder as Workspace on folder dropping&quot; in &quot;Default Directory&quot; section of Preferences dialog to make this operation work."/>
 			<SortingError title="Sorting Error" message="Unable to perform numeric sorting due to line $INT_REPLACE$."/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
+			<SortLocaleMultiple title="Sort not performed" message="Sorting multiple selections is not supported."/><!-- HowToReproduce: Make a multiple selection and choose Edit | Line Operations | Sort Lines In Locale Order. -->
+			<SortLocaleUnknown title="Sort Failed" message="The reason the sort failed cannot be determined."/><!-- HowToReproduce: This condition is theoretical; it is unknown what could cause it. -->
+			<SortLocaleExcept title="Sort Failed" message="$STR_REPLACE$"/><!-- HowToReproduce: Open a large file, e.g. 500MB / 90k lines, in 32-bit Notepad++ and choose Edit | Line Operations | Sort Lines In Locale Order. -->
 			<ColumnModeTip title="Column Mode Tip" message="
 There are 3 ways to switch to column-select mode:
 
@@ -1514,6 +1543,11 @@ Do you want to continue?"/>
 			<UDLNewNameError title="UDL Error" message="This name is used by another language,
 please give another one."/>
 			<UDLRemoveCurrentLang title="Remove the current language" message="Are you sure?"/>
+			<UDL_importSuccessful title="User Defined Language" message="Import successful."/>
+			<UDL_importFails title="User Defined Language" message="Failed to import."/>
+			<UDL_saveBeforeImport title="User Defined Language" message="Before exporting, save your language definition by clicking &quot;Save As...&quot; button."/> <!-- HowToReproduce: Choose "User Defined Language" in User Language combobox, then click on "Export... button". -->
+			<UDL_exportSuccessful title="User Defined Language" message="Export successful."/>
+			<UDL_exportFails title="User Defined Language" message="Failed to export."/>
 			<SCMapperDoDeleteOrNot title="Are you sure?" message="Are you sure you want to delete this shortcut?"/>
 			<FindCharRangeValueError title="Range Value problem" message="You should type between 0 and 255."/> <!-- HowToReproduce: Search menu, then Find characters in range, select Custom range, enter 999 in either edit box, press Find. -->
 			<OpenInAdminMode title="Save failed" message="The file cannot be saved and it may be protected.
@@ -1830,8 +1864,22 @@ Click on &quot;?&quot; button on right to open website with User Manual."/>
 C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell and JSON.
 
 If you select advanced mode but do not edit files in the aforementioned languages, the indentation will remain in basic mode."/>
+
 			<!-- Don't translate "Global override" and "Default Style" -->
 			<global-override-tip value="Enabling &quot;Global override&quot; here will override that parameter in all language styles. What you probably really want is to use the &quot;Default Style&quot; settings instead"/>
+			<scintillaRenderingTechnology-tip value="May improve rendering of special characters or resolve some graphics issues, restart Notepad++ to apply the changes."/>
+
+			<!-- Due to the limited space on the status bar, if the translations for 'length' & 'lines' are much longer than the English words, please leave them in English instead of translating them. -->
+			<statusbar-length-lines value="length: $STR_REPLACE1$    lines: $STR_REPLACE2$"/>
+
+			<!-- Due to the limited space on the status bar, if the translations for 'Ln' & 'Col' are longer than the English words, please leave them in English instead of translating them. -->
+			<statusbar-Ln-Col value="Ln: $STR_REPLACE1$    Col: $STR_REPLACE2$"/>
+
+			<!-- Due to the limited space on the status bar, if the translations for 'Pos' & 'Sel' are longer than the English words, please leave them in English instead of translating them. -->
+			<statusbar-Pos value="Pos: "/>
+			<statusbar-Sel value="Sel: "/>
+			<statusbar-Sel-number value="Sel"/>
+			<toolbar-accent-tip value="This option makes your toolbar icons follow Windows system accent color. Accent color is the highlight color used in buttons, borders, and Start menu tiles in Windows. To change it, go to Settings &gt; Personalization &gt; Colors, then select your preferred accent color."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

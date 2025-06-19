@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- 
+<!--
 Notepad++ Custom stylers
 Style name: 		Port Ruby Blue
 File name: 			stylers.xml
 Created by:			tomsolo (aka tonoslo on sourceforge.net)
 				http://www.3276.hu
-Featured language:	Php, Css, Sql, JavaScript, Html, XML. 
+Featured language:	Php, Css, Sql, JavaScript, Html, XML.
 Note: 			If u create other languages with this style please send me the modified styler.xml : tonoslo at users.sourceforge.net (ty!)
 Other info:			this style is based on and inspired by Textmate (a Mac source editor, http:/www.textmate.org) user submitted theme:
 				Ruby Blue theme created by John W. Long, http://wiseheartdesign.com/articles/2006/03/11/ruby-blue-textmate-theme)
@@ -13,14 +13,14 @@ Other info:			this style is based on and inspired by Textmate (a Mac source edit
 				This style available under the terms of the GNU Free License.
 
 
-Requirements: 
-	1. The style is based on DejaVu fonts, go to 
+Requirements:
+	1. The style is based on DejaVu fonts, go to
 	http://dejavu.sourceforge.net/wiki/index.php/Main_Page
 	and grab this font pack and install (use DejaVu Mono).
 	2. Use Cleartype, for nice smooth font on screen (optional).
 	3. Notepad 3.5 install :)
 
-Install: copy your installed Notepad++ directory root, overwrite old stylers.xml (backup old file first), 
+Install: copy your installed Notepad++ directory root, overwrite old stylers.xml (backup old file first),
 or copy c:\Documents and Settings\**USERNAME**\Application Data\Notepad++\
 overwrite old stylers.xml (backup old file first)
 
@@ -31,7 +31,7 @@ ENJOY!
 If u like, please donate Notepad++:
 http://sourceforge.net/donate/index.php?group_id=95717
 
- 
+
 
 2006.03.27.
 
@@ -169,6 +169,51 @@ http://sourceforge.net/donate/index.php?group_id=95717
             <WordsStyle name="USER KEYWORDS 7" styleID="134" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" keywordClass="substyle7" />
             <WordsStyle name="USER KEYWORDS 8" styleID="135" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" keywordClass="substyle8" />
         </LexerType>
+        <LexerType name="errorlist" desc="ErrorList" ext="">
+            <WordsStyle name="DEFAULT STYLE" styleID="0" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="PYTHON Error" styleID="1" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="GCC Error" styleID="2" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="MS Error" styleID="3" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="CMD Error" styleID="4" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="BORLAND Error" styleID="5" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="PERL Error" styleID="6" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="NET Error" styleID="7" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="LUA Error" styleID="8" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="CTAG Error" styleID="9" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="DIFF Changed" styleID="10" fgColor="FF0080" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="DIFF Addition" styleID="11" fgColor="13A10E" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="DIFF Deletion" styleID="12" fgColor="CC0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="DIFF Message" styleID="13" fgColor="3A96DD" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="PHP Error" styleID="14" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ELF Error" styleID="15" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="IFC Error" styleID="16" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="IFORT Error" styleID="17" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ABSF Error" styleID="18" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="TIDY Error" styleID="19" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="JAVA Stack Error" styleID="20" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="VALUE Error" styleID="21" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="GCC Included-From Error" styleID="22" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="Escape Sequence" styleID="23" fgColor="C0C0C0" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="Unknown Escape Sequence" styleID="24" fgColor="FFFF78" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="GCC Excerpt Error" styleID="25" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="BASH Error" styleID="26" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR BLACK" styleID="40" fgColor="000000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR RED" styleID="41" fgColor="CD0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR GREEN" styleID="42" fgColor="00CD00" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR BROWN" styleID="43" fgColor="AA5500" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR BLUE" styleID="44" fgColor="0000FF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR MAGENTA" styleID="45" fgColor="CD00CD" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR CYAN" styleID="46" fgColor="008888" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR GRAY" styleID="47" fgColor="E5E5E5" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR DARK GRAY" styleID="48" fgColor="7F7F7F" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR BRIGHT RED" styleID="49" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR BRIGHT GREEN" styleID="50" fgColor="00FC00" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR YELLOW" styleID="51" fgColor="CCCC00" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR BRIGHT BLUE" styleID="52" fgColor="3B78FF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR BRIGHT MAGENTA" styleID="53" fgColor="FF00FF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR BRIGHT CYAN" styleID="54" fgColor="00CDCD" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="ANSI COLOR WHITE" styleID="55" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+        </LexerType>
         <LexerType name="raku" desc="Raku" ext="">
             <WordsStyle name="DEFAULT"                      styleID="0" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
             <WordsStyle name="ERROR"                        styleID="1" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
@@ -264,6 +309,21 @@ http://sourceforge.net/donate/index.php?group_id=95717
             <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+        </LexerType>
+        <LexerType name="sas" desc="SAS" ext="">
+            <WordsStyle name="DEFAULT" styleID="0" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
+            <WordsStyle name="COMMENT BLOCK" styleID="3" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
+            <WordsStyle name="OPERATOR" styleID="5" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
+            <WordsStyle name="IDENTIFIER" styleID="6" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="1" fontSize="" />
+            <WordsStyle name="STRING" styleID="7" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="MACRO" styleID="11" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" />
+            <WordsStyle name="MACRO KEYWORD" styleID="12" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" keywordClass="instre1" />
+            <WordsStyle name="MACRO FUNCTION" styleID="14" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="2" fontSize="" keywordClass="type1" />
+            <WordsStyle name="FUNCTION" styleID="13" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="1" fontSize="" keywordClass="instre2" />
+            <WordsStyle name="STATEMENT" styleID="15" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="" fontSize="" keywordClass="type2" />
         </LexerType>
         <LexerType name="sql" desc="SQL" ext="">
             <WordsStyle name="KEYWORD" styleID="5" fgColor="7BC22F" bgColor="112435" fontName="" fontStyle="0" fontSize="" keywordClass="instre1" />
@@ -362,7 +422,7 @@ http://sourceforge.net/donate/index.php?group_id=95717
             <WordsStyle name="COMPACT IRI" styleID="10" fgColor="0000FF" bgColor="112435" fontName="" fontStyle="1" fontSize="" />
             <WordsStyle name="KEYWORD" styleID="11" fgColor="18AF8A" bgColor="112435" fontName="" fontStyle="1" fontSize="" keywordClass="instre1"/>
             <WordsStyle name="LD KEYWORD" styleID="12" fgColor="FF0000" bgColor="112435" fontName="" fontStyle="0" fontSize="" keywordClass="instre2" />
-            <WordsStyle name="ERROR" styleID="13" fgColor="FFFF80" bgColor="FF0000" fontName="" fontStyle="0" fontSize="" />		
+            <WordsStyle name="ERROR" styleID="13" fgColor="FFFF80" bgColor="FF0000" fontName="" fontStyle="0" fontSize="" />
 		</LexerType>
         <LexerType name="asp" desc="asp" ext="asp">
             <WordsStyle name="DEFAULT" styleID="81" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
@@ -829,7 +889,6 @@ http://sourceforge.net/donate/index.php?group_id=95717
     </LexerStyles>
     <GlobalStyles>
         <!-- Attention : Don't modify the name of styleID="0" -->
-        <WidgetStyle name="Global override" styleID="0" fgColor="FFFF80" bgColor="FF8000" fontName="Courier New" fontStyle="0" fontSize="10" />
         <WidgetStyle name="Default Style" styleID="32" fgColor="FFFFFF" bgColor="112435" fontName="DejaVu Sans Mono" fontStyle="0" fontSize="10" />
         <WidgetStyle name="Indent guideline style" styleID="37" fgColor="0080FF" bgColor="112435" fontName="" fontStyle="1" fontSize="" />
         <WidgetStyle name="Brace highlight style" styleID="34" fgColor="FFFFFF" bgColor="112435" fontName="" fontStyle="0" fontSize="" />
@@ -882,5 +941,6 @@ http://sourceforge.net/donate/index.php?group_id=95717
         <WidgetStyle name="URL hovered" styleID="0" fgColor="FFFFFF" />
         <WidgetStyle name="Document map" styleID="0" fgColor="FFFFFF" bgColor="112435" />
         <WidgetStyle name="EOL custom color" styleID="0" fgColor="808080" />
+        <WidgetStyle name="Global override" styleID="0" fgColor="FFFF80" bgColor="FF8000" fontName="Courier New" fontStyle="0" fontSize="10" />
     </GlobalStyles>
 </NotepadPlus>
