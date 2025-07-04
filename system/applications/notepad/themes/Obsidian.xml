@@ -368,6 +368,7 @@ Notepad++ Custom Style
             <WordsStyle name="PREDECLARED IDENTIFIERS" styleID="19" fgColor="678C67" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="instre2" />
             <WordsStyle name="NUMBER" styleID="4" fgColor="FFCD22" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="STRING" styleID="6" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="STRING RAW" styleID="20" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="CHARACTER" styleID="7" fgColor="FF8409" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="OPERATOR" styleID="10" fgColor="E8E2B7" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="VERBATIM" styleID="13" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
@@ -622,7 +623,6 @@ Notepad++ Custom Style
             <WordsStyle name="HEX NUMBER" styleID="8" fgColor="FFCD22" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="STRING" styleID="10" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="STRING EOL" styleID="11" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
-            <WordsStyle name="CHARACTER" styleID="7" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="OPERATOR" styleID="13" fgColor="E8E2B7" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="ASM" styleID="14" fgColor="D39745" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="COMMENT" styleID="2" fgColor="66747B" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
@@ -776,7 +776,7 @@ Notepad++ Custom Style
             <WordsStyle name="IDENTIFIER"                   styleID="21" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="1" fontSize="" />
             <!-- TYPEDEF styling applies to type1..type4 lists from langs.xml, but only associated with type1 in stylers/themes -->
             <WordsStyle name="TYPEDEF"                      styleID="22" fgColor="93C763" bgColor="293134" fontName="" fontStyle="" fontSize="" keywordClass="type1" />
-            <WordsStyle name="MU"                           styleID="8" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="" fontSize="" />
+            <WordsStyle name="MU"                           styleID="23" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="" fontSize="" />
             <WordsStyle name="POSITIONAL"                   styleID="24" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="ASSOCIATIVE"                  styleID="25" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="CALLABLE"                     styleID="26" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="1" fontSize="" />
@@ -831,6 +831,35 @@ Notepad++ Custom Style
             <WordsStyle name="BACKTICKS" styleID="18" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="DATA SECTION" styleID="19" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="STRING Q" styleID="24" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+        </LexerType>
+        <LexerType name="rust" desc="Rust" ext="">
+            <WordsStyle name="DEFAULT" styleID="32" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="WHITESPACE" styleID="0" fgColor="DCDCCC" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="BLOCK COMMENT" styleID="1" fgColor="818E96" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="LINE COMMENT" styleID="2" fgColor="818E96" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="BLOCK DOC COMMENT" styleID="3" fgColor="818E96" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="LINE DOC COMMENT" styleID="4" fgColor="818E96" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="NUMBER" styleID="5" fgColor="FFCD22" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="KEYWORDS 1" styleID="6" fgColor="93C763" bgColor="293134" fontName="" fontStyle="1" fontSize="" keywordClass="instre1" />
+            <WordsStyle name="KEYWORDS 2" styleID="7" fgColor="93C763" bgColor="293134" fontName="" fontStyle="1" fontSize="" keywordClass="instre2" />
+            <WordsStyle name="KEYWORDS 3" styleID="8" fgColor="93C763" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="type1" />
+            <WordsStyle name="KEYWORDS 4" styleID="9" fgColor="93C763" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="type2" />
+            <WordsStyle name="KEYWORDS 5" styleID="10" fgColor="93C763" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="type3" />
+            <WordsStyle name="KEYWORDS 6" styleID="11" fgColor="93C763" bgColor="293134" fontName="" fontStyle="3" fontSize="" keywordClass="type4" />
+            <WordsStyle name="KEYWORDS 7" styleID="12" fgColor="93C763" bgColor="293134" fontName="" fontStyle="3" fontSize="" keywordClass="type5" />
+            <WordsStyle name="REGULAR STRING" styleID="13" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="RAW STRING" styleID="14" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="CHARACTER" styleID="15" fgColor="D39745" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="OPERATOR" styleID="16" fgColor="E8E2B7" bgColor="293134" fontName="" fontStyle="1" fontSize="" />
+            <WordsStyle name="IDENTIFIER" styleID="17" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="LIFETIME" styleID="18" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="MACRO" styleID="19" fgColor="93C763" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="LEXICAL ERROR" styleID="20" fgColor="EBD6EB" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="BYTE STRING" styleID="21" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="3" fontSize="" />
+            <WordsStyle name="RAW BYTE STRING" styleID="22" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="3" fontSize="" />
+            <WordsStyle name="BYTE CHARACTER" styleID="23" fgColor="D39745" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="C STRING" styleID="24" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="RAW C STRING" styleID="25" fgColor="EC7600" bgColor="293134" fontName="" fontStyle="3" fontSize="" />
         </LexerType>
         <LexerType name="sas" desc="SAS" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="" fontSize="" />
@@ -972,8 +1001,6 @@ Notepad++ Custom Style
             <WordsStyle name="INSTRUCTION" styleID="8" fgColor="93C763" bgColor="293134" fontName="" fontStyle="1" fontSize="" keywordClass="instre1" />
             <WordsStyle name="STD OPERATOR" styleID="9" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="instre2" />
             <WordsStyle name="ATTRIBUTE" styleID="10" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="type1" />
-            <WordsStyle name="DIRECTIVE" styleID="9" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
-            <WordsStyle name="DIRECTIVE OPERAND" styleID="10" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="STD FUNCTION" styleID="11" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="type2" />
             <WordsStyle name="STD PACKAGE" styleID="12" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="type3" />
             <WordsStyle name="STD TYPE" styleID="13" fgColor="E0E2E4" bgColor="293134" fontName="" fontStyle="0" fontSize="" keywordClass="type4" />

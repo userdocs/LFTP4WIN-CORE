@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NotepadPlus>
-	<Native-Langue name="台灣繁體" filename="taiwaneseMandarin.xml" version="8.8">
+	<Native-Langue name="台灣繁體" filename="taiwaneseMandarin.xml" version="8.8.1">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -177,12 +177,12 @@
 					<Item id="42025" name="儲存巨集(&amp;S)"/>
 					<Item id="42026" name="文字由右至左"/>
 					<Item id="42027" name="文字由左至右"/>
-					<Item id="42028" name="設為唯讀(&amp;S)"/>
+					<Item id="42028" name="在 Notepad++ 中設為唯讀"/>
 					<Item id="42029" name="複製路徑及檔名"/>
 					<Item id="42030" name="複製檔名"/>
 					<Item id="42031" name="複製路徑"/>
 					<Item id="42032" name="重複執行巨集(&amp;R)..."/>
-					<Item id="42033" name="取消唯讀"/>
+					<Item id="42033" name="檔案系統權限唯讀"/>
 					<Item id="42035" name="單行註解"/>
 					<Item id="42036" name="解除單行註解"/>
 					<Item id="42055" name="移除空行"/>
@@ -408,8 +408,8 @@
 				<Item CMDID="41016" name="移至回收筒"/>
 				<Item CMDID="41014" name="重新載入"/>
 				<Item CMDID="41010" name="列印"/>
-				<Item CMDID="42028" name="唯讀"/>
-				<Item CMDID="42033" name="取消唯讀"/>
+				<Item CMDID="42028" name="在 Notepad++ 中設為唯讀"/>
+				<Item CMDID="42033" name="檔案系統權限唯讀"/>
 				<Item CMDID="2" name="複製到剪貼簿"/>
 				<Item CMDID="42029" name="複製完整路徑檔名"/>
 				<Item CMDID="42030" name="複製檔名"/>
@@ -905,7 +905,6 @@
 			<Preference title="偏好設定">
 				<Item id="6001" name="儲存並關閉"/>
 				<Global title="一般">
-					<Item id="6125" name="文件切換器"/>
 					<Item id="6131" name="選單"/>
 					<Item id="6122" name="隱藏（用 Alt 或 F10 切換）"/>
 					<Item id="6132" name="隱藏選單中右邊的 ＋ ▼ ✕ 捷徑"/>
@@ -952,6 +951,8 @@
 					<Item id="6119" name="多行"/>
 					<Item id="6120" name="直式"/>
 					<Item id="6121" name="關閉最後一個文件時關閉程式"/>
+					<Item id="6125" name="功能表現"/>
+					<Item id="6126" name="外觀與體驗"/>
 				</Tabbar>
 
 				<Scintillas title="編輯一">
@@ -1290,12 +1291,18 @@
 						<Element name="DirectWrite（繪製到 GDI DC）"/>
 						<Element name="DirectWrite (DirectX 11)"/>
 					</ComboBox>
+					<ComboBox id="6364">
+						<Element name="關閉"/>
+						<Element name="啟用在 Notepad++ 起動時"/>
+						<Element name="啟用在 Notepad++ 關閉時"/>
+					</ComboBox>
 					<Item id="6308" name="系統匣"/>
+					<Item id="6363" name="繪製模式"/>
+					<Item id="6365" name="自動更新："/>
 					<Item id="6312" name="自動更新檔案狀態"/>
 					<Item id="6313" name="於背景自動更新"/>
 					<Item id="6325" name="更新後捲動至最後一行"/>
 					<Item id="6322" name="工作階段檔案副檔名："/>
-					<Item id="6323" name="自動更新 Notepad++"/>
 					<Item id="6324" name="文件切換器（Ctrl + TAB）"/>
 					<Item id="6331" name="在標題列僅顯示檔案名稱（隱藏資料夾路徑）"/>
 					<Item id="6334" name="自動偵測檔案編碼"/>
@@ -1463,6 +1470,7 @@
 			<RTLvsDirectWrite title="無法執行「文字由右至左」指令" message="「文字由右至左」指令與「直接寫入」模式不相容。 請在偏好設定對話框的「其他」中停用「直接寫入」模式，然後重新​​啟動 Notepad++ 。"/>
 			<FileMemoryAllocationFailed title="例外狀況：檔案記憶體分配失敗" message="可能沒有足夠的連續可用記憶體供 Notepad++ 載入檔案。"/>
 			<Need2Restart2ShowMenuShortcuts title="重新啟動 Notepad++" message="Notepad++ 需要重新啟動才能顯示選單右邊捷徑。"/>
+			<NoAdminRight2ChangeReadOnlyFileAttribute title="更改檔案維讀屬性失敗" message="請在系統管理員模式下重新啟動 Notepad++ 以使用此功能。"/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="剪貼簿記錄"/>

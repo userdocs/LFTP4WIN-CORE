@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="Français" filename="french.xml" version="8.8">
+	<Native-Langue name="Français" filename="french.xml" version="8.8.1">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -194,14 +194,14 @@ Translation note:
 					<Item id="42025" name="Enregistrer la macro"/>
 					<Item id="42026" name="Texte de droite à gauche"/>
 					<Item id="42027" name="Texte de gauche à droite"/>
-					<Item id="42028" name="Lecture seule pour le document actuel"/>
+					<Item id="42028" name="Lecture seule dans Notepad++"/>
 					<Item id="42029" name="Copier le chemin complet du document actuel"/>
 					<Item id="42030" name="Copier le nom du document actuel"/>
 					<Item id="42031" name="Copier le dossier du document actuel"/>
 					<Item id="42087" name="Copier tous les noms des documents"/>
 					<Item id="42088" name="Copier tous les dossiers des documents"/>
 					<Item id="42032" name="Exécuter une macro en boucle..."/>
-					<Item id="42033" name="Enlever l’attribut de lecture seule du fichier"/>
+					<Item id="42033" name="Attribut de lecture seule du fichier"/>
 					<Item id="42035" name="Commenter (mode ligne)"/>
 					<Item id="42036" name="Décommenter (mode ligne)"/>
 					<Item id="42055" name="Enlever les lignes vides"/>
@@ -436,8 +436,8 @@ Translation note:
 				<Item CMDID="41016" name="Supprimer le fichier actuel"/>
 				<Item CMDID="41014" name="Recharger"/>
 				<Item CMDID="41010" name="Imprimer"/>
-				<Item CMDID="42028" name="Lecture seule pour le document actuel"/>
-				<Item CMDID="42033" name="Enlever l’attribut de lecture seule du fichier"/>
+				<Item CMDID="42028" name="Lecture seule dans Notepad++"/>
+				<Item CMDID="42033" name="Attribut de lecture seule du fichier"/>
 				<Item CMDID="2" name="Copier dans le presse-papiers"/>
 				<Item CMDID="42029" name="Copier le chemin complet du document actuel"/>
 				<Item CMDID="42030" name="Copier le nom du fichier actuel"/>
@@ -993,6 +993,8 @@ Translation note:
 					<Item id="6120" name="Verticale"/>
 					<Item id="6121" name="Quitter lors de la fermeture du dernier onglet"/>
 					<Item id="6128" name="Icônes alternatives"/>
+					<Item id="6125" name="Comportement"/>
+					<Item id="6126" name="Aspect visuel"/>
 				</Tabbar>
 
 				<Scintillas title="Zones d’édition 1">
@@ -1348,13 +1350,18 @@ Translation note:
 						<Element name="DirectWrite (rendu sur GDI DC)"/>
 						<Element name="DirectWrite (DirectX 11)"/>
 					</ComboBox>
+					<ComboBox id="6364">
+						<Element name="Désactiver"/>
+						<Element name="Activer au démarage de Notepad++"/>
+						<Element name="Activer à la fermeture de Notepad++"/>
+					</ComboBox>
 					<Item id="6308" name="la barre de notifications"/>
 					<Item id="6363" name="mode de rendu"/>
+					<Item id="6365" name="Mise à jour automatique :"/>
 					<Item id="6312" name="Surveillance de l’état des fichiers"/>
 					<Item id="6313" name="Mise à jour sans alerte"/>
 					<Item id="6325" name="Aller à la dernière ligne après mise à jour"/>
 					<Item id="6322" name="Ext. fichier session :"/>
-					<Item id="6323" name="Activer la mise à jour automatique"/>
 					<Item id="6324" name="Commutateur de documents (Ctrl+Tab)"/>
 					<Item id="6331" name="Afficher seulement le nom du fichier dans la barre de titre"/>
 					<Item id="6334" name="Détecter l’encodage automatiquement"/>
@@ -1589,6 +1596,7 @@ Si vous avez besoin de la fonction de recherche d’expression régulière inver
 			<FindAutoChangeOfInSelectionWarning title="Avertissement de recherche" message="L'état de laa case à cocher &quot;Dans la sélection&quot; a été automatiquement modifié.
 Veuillez vérifier la condition de recherche avant de procéder à l'action."/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="Redémarrer Notepad++" message="Vous avez besoins de redémarrer Notepad++ afin d'afficher menu ＋ ▼ ✕ "/>
+			<NoAdminRight2ChangeReadOnlyFileAttribute title="Impossible de modifier l'attribut lecture seule" message="Veuillez lancer Notepad++ en mode « Administrateur » pour modifier cet attribut du fichier."/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Historique du presse-papier"/>

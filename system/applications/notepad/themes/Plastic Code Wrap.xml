@@ -104,6 +104,7 @@ Credits:
             <WordsStyle name="PREDECLARED IDENTIFIERS" styleID="19" fgColor="FFAAFF" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" keywordClass="instre2" />
             <WordsStyle name="NUMBER" styleID="4" fgColor="FF3A83" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" />
             <WordsStyle name="STRING" styleID="6" fgColor="55E439" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" />
+            <WordsStyle name="STRING RAW" styleID="20" fgColor="55E439" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" />
             <WordsStyle name="CHARACTER" styleID="7" fgColor="55E439" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" />
             <WordsStyle name="OPERATOR" styleID="10" fgColor="FFAA00" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" />
             <WordsStyle name="VERBATIM" styleID="13" fgColor="FF3A83" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" />
@@ -873,8 +874,6 @@ Credits:
             <WordsStyle name="INSTRUCTION" styleID="8" fgColor="FFAA00" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" keywordClass="instre1" />
             <WordsStyle name="STD OPERATOR" styleID="9" fgColor="F8F8F8" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" keywordClass="instre2" />
             <WordsStyle name="ATTRIBUTE" styleID="10" fgColor="EFE900" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" keywordClass="type1" />
-            <WordsStyle name="DIRECTIVE" styleID="9" fgColor="FFAA00" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" />
-            <WordsStyle name="DIRECTIVE OPERAND" styleID="10" fgColor="F8F8F8" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" />
             <WordsStyle name="STD FUNCTION" styleID="11" fgColor="F8F8F8" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" keywordClass="type2" />
             <WordsStyle name="STD PACKAGE" styleID="12" fgColor="F8F8F8" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" keywordClass="type3" />
             <WordsStyle name="STD TYPE" styleID="13" fgColor="F8F8F8" bgColor="0B161D" fontName="" fontStyle="0" fontSize="10" keywordClass="type4" />

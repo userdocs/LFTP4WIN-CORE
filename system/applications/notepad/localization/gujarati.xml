@@ -135,7 +135,6 @@
 					<Item id="42030" name="હાલનું ફાઈલનેમ ક્લિપબોર્ડ પર"/>
 					<Item id="42031" name="હાલનો ડિરેક્ટરી પાથ ક્લિપબોર્ડ પર"/>
 					<Item id="42032" name="એક મૅક્રો ઘણી વખત ચલાવો..."/>
-					<Item id="42033" name="ક્લિયર રિડ ઓનલી ફ્લેગ"/>
 					<Item id="42035" name="સિંગલ લાઈન કમેન્ટ"/>
 					<Item id="42036" name="સિંગલ લાઈન અનકમેન્ટ"/>
 					<Item id="42055" name="ખાલી લાઈન્સ કાઢો"/>
@@ -804,8 +803,8 @@
 		<MessageBox>
 			<ContextMenuXmlEditWarning title="Editing contextMenu" message="Editing contextMenu.xml allows you to modify your Notepad++ popup context menu.\rYou have to restart your Notepad++ to take effect after modifying contextMenu.xml."/>
 			<NppHelpAbsentWarning title="File does not exist" message="\rdoesn't exist. Please download it on Notepad++ site."/>
-			<SaveCurrentModifWarning title="Save Current Modification" message="You should save the current modification.\rAll the saved modifications can not be undone.\r\rContinue?"/>
-			<LoseUndoAbilityWarning title="Lose Undo Ability Warning" message="You should save the current modification.\rAll the saved modifications can not be undone.\r\rContinue?"/>
+			<SaveCurrentModifWarning title="Save Current Modification" message="You should save the current modification.\rAll the saved modifications cannot be undone.\r\rContinue?"/>
+			<LoseUndoAbilityWarning title="Lose Undo Ability Warning" message="You should save the current modification.\rAll the saved modifications cannot be undone.\r\rContinue?"/>
 			<CannotMoveDoc title="Move to new Notepad++ Instance" message="Document is modified, save it then try again."/>
 			<DocReloadWarning title="Reload" message="Are you sure you want to reload the current file and lose the changes made in Notepad++?"/>
 			<FileLockedWarning title="Save failed" message="Please check whether if this file is opened in another program"/>

@@ -29,7 +29,7 @@ Translation note:
 					<Item subMenuId="file-closeMore" name="关闭多个文档(&amp;M)"/>
 					<Item subMenuId="file-recentFiles" name="近期文件(&amp;R)"/>
 					<Item subMenuId="edit-insert" name="插入"/>
-					<Item subMenuId="edit-copyToClipboard" name="复制到剪切板(&amp;Y)"/>
+					<Item subMenuId="edit-copyToClipboard" name="复制到剪贴板(&amp;Y)"/>
 					<Item subMenuId="edit-indent" name="缩进(&amp;I)"/>
 					<Item subMenuId="edit-convertCaseTo" name="转换大小写(&amp;V)"/>
 					<Item subMenuId="edit-lineOperations" name="行操作(&amp;L)"/>
@@ -201,7 +201,6 @@ Translation note:
 					<Item id="42087" name="复制所有文件名"/>
 					<Item id="42088" name="复制所有文件路径"/>
 					<Item id="42032" name="重复运行宏(&amp;R)..."/>
-					<Item id="42033" name="清除只读标记"/>
 					<Item id="42035" name="设置行注释"/>
 					<Item id="42036" name="取消行注释"/>
 					<Item id="42055" name="移除空行"/>
@@ -441,7 +440,6 @@ Translation note:
 				<Item CMDID="41014" name="重新载入"/>
 				<Item CMDID="41010" name="打印..."/>
 				<Item CMDID="42028" name="设置为只读"/>
-				<Item CMDID="42033" name="清除只读属性"/>
 				<Item CMDID="2" name="复制到剪贴板"/>
 				<Item CMDID="42029" name="复制文件路径"/>
 				<Item CMDID="42030" name="复制文件名"/>
