@@ -21,7 +21,7 @@
 [[ -z ${CYG_SYS_BASHRC} ]] && CYG_SYS_BASHRC="1" || return
 
 # If not running interactively, don't do anything
-[[ "$-" != *i* ]] && return
+[[ $- != *i* ]] && return
 
 # Exclude *dlls from TAB expansion
 export EXECIGNORE="*.dll"
@@ -80,6 +80,25 @@ install_vscode() {
 		esac
 	done
 
+	printf "\n"
+	PS3=$'\n'"Install plugins/extensions? "
+	plugin_options=("yes" "no")
+	select plugin_opt in "${plugin_options[@]}"; do
+		case $plugin_opt in
+			"yes")
+				NO_PLUGINS=0
+				break
+				;;
+			"no")
+				NO_PLUGINS=1
+				break
+				;;
+			*)
+				printf "\n%s\n" "invalid option $REPLY"
+				;;
+		esac
+	done
+
 	printf '\n%s\n\n' "Downloading ${vscode_appname} portable"
 
 	if curl -skNL "${vscode_url}" > "$HOME/vscode.zip"; then
@@ -89,18 +108,26 @@ install_vscode() {
 		else
 			printf '%s\n\n' "VSCode downloaded, extracted and installed"
 		fi
-		#
-		/applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension vscode-icons-team.vscode-icons 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension DaltonMenezes.aura-theme 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension EditorConfig.EditorConfig 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension DavidAnson.vscode-markdownlint 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension PKief.material-icon-theme 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension ms-vscode-remote.remote-wsl 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
+
+		if [[ $NO_PLUGINS -eq 0 ]]; then
+			if [[ -f "$HOME/.vscode_extensions" ]]; then
+				while IFS= read -r line; do
+					echo "Processing: ${line}"
+					/applications/VSCode/bin/code --force --install-extension "${line}" 2> /dev/null
+				done < "$HOME/.vscode_extensions"
+			else
+				/applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension DaltonMenezes.aura-theme 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension EditorConfig.EditorConfig 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension DavidAnson.vscode-markdownlint 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension ms-vscode-remote.remote-wsl 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
+			fi
+		fi
+
 		# /applications/VSCode/bin/code --force --install-extension EXT_NAME  2> /dev/null
 		rm -f "$HOME/vscode.zip"
 		return
@@ -154,14 +181,14 @@ install_bashit() {
 #
 # The pushover message script.
 pushover() {
-	if [[ -n "$pushover_api_token" ]]; then
+	if [[ -n $pushover_api_token ]]; then
 		curl -4s -d message="Your transfer has finished $1" -d title="lftp-windows" -d token="$pushover_api_token" -d user="$pushover_user_key" 'https://api.pushover.net/1/messages.json' > /dev/null 2>&1 || :
 	fi
 }
 #
 # The pushbullet message script.
 pushbullet() {
-	if [[ -n "$pushbullet_api_key" ]]; then
+	if [[ -n $pushbullet_api_key ]]; then
 		curl -4u ''"$pushbullet_api_key"':' 'https://api.pushbullet.com/v2/pushes' -d type="note" -d title="lftp-windows" -d body="Your transfer has finished $1" > /dev/null 2>&1 || :
 	fi
 }

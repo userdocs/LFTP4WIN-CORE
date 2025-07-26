@@ -1,25 +1,16 @@
 {
     "extensions.ignoreRecommendations": false,
     "terminal.integrated.cwd": "${fileDirname}",
-    "telemetry.enableTelemetry": false,
-    "shellformat.flag": "-ci -sr -i 0",
+    "telemetry.telemetryLevel": "off",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "editor.detectIndentation": false,
-    "workbench.iconTheme": "vscode-icons",
     "shellcheck.useWorkspaceRootAsCwd": true,
     "shellcheck.enableQuickFix": true,
-    "vsicons.dontShowNewVersionMessage": true,
-    "C_Cpp.updateChannel": "Insiders",
-    "workbench.productIconTheme": "fluent-icons",
-    "workbench.colorTheme": "Monokai Dimmed",
-    "telemetry.enableCrashReporter": false,
+    "workbench.colorTheme": "Aura Soft Dark",
     "git.enableSmartCommit": true,
     "terminal.integrated.defaultProfile.windows": "bash",
-    "githubPullRequests.telemetry.enabled": false,
-    "github.gitCommand": "${execPath}\\..\\..\\git\\bin\\git.exe",
-    "git-graph.integratedTerminalShell": "${execPath}\\..\\..\\git\\bin\\bash.exe",
     "terminal.integrated.profiles.windows": {
         "PowerShell -NoProfile": {
             "source": "PowerShell",
@@ -38,14 +29,6 @@
             ]
         }
     },
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "remark.format": {
-        "rules": {
-            "listItemIndent": "mixed"
-        }
-    },
     "files.defaultLanguage": "shellscript",
     "[plaintext]": {
         "files.eol": "\n",
@@ -53,7 +36,8 @@
     },
     "[shellscript]": {
         "files.eol": "\n",
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
     },
     "[batch]": {
         "files.eol": "\r\n"
@@ -68,30 +52,28 @@
         "editor.tabSize": 2,
         "editor.insertSpaces": true
     },
+    "[github-actions-workflow]": {
+        "files.eol": "\n",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
     "[html]": {
         "files.eol": "\n",
         "editor.tabSize": 2,
         "editor.insertSpaces": true
     },
-    "spellright.language": [
-        "en"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ],
     "diffEditor.ignoreTrimWhitespace": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "gitlens.advanced.messages": {
-        "suppressGitMissingWarning": true
-    },
-    "cmake.configureOnOpen": true,
     "redhat.telemetry.enabled": false,
-    "[dockerfile]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
     "git.path": "${execPath}\\..\\..\\git\\bin\\git.exe",
     "workbench.editor.enablePreview": false,
-    "terminal.integrated.enableMultiLinePasteWarning": false
+    "terminal.integrated.enableMultiLinePasteWarning": "auto",
+    // "shellformat.path": "C:\\bin\\shfmt.exe",
+    "shellformat.flag": "-s -bn -ci -sr -i 0",
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "cSpell.enabledFileTypes": {
+        "shellscript": true
+    },
 }
