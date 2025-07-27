@@ -89,18 +89,24 @@ install_vscode() {
 		else
 			printf '%s\n\n' "VSCode downloaded, extracted and installed"
 		fi
-		#
-		/applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension vscode-icons-team.vscode-icons 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension DaltonMenezes.aura-theme 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension EditorConfig.EditorConfig 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension DavidAnson.vscode-markdownlint 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension PKief.material-icon-theme 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension ms-vscode-remote.remote-wsl 2> /dev/null
-		/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
+        
+        if [[ -f "$HOME/.vscode_extensions" ]]; then
+            while IFS= read -r line; do
+                echo "Processing: ${line}"
+                /applications/VSCode/bin/code --force --install-extension "${line}" 2> /dev/null
+            done < "$HOME/.vscode_extensions"
+        else
+            /applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2> /dev/null
+            /applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
+            /applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
+            /applications/VSCode/bin/code --force --install-extension DaltonMenezes.aura-theme 2> /dev/null
+            /applications/VSCode/bin/code --force --install-extension EditorConfig.EditorConfig 2> /dev/null
+            /applications/VSCode/bin/code --force --install-extension DavidAnson.vscode-markdownlint 2> /dev/null
+            /applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2> /dev/null
+            /applications/VSCode/bin/code --force --install-extension ms-vscode-remote.remote-wsl 2> /dev/null
+            /applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
+        fi
+
 		# /applications/VSCode/bin/code --force --install-extension EXT_NAME  2> /dev/null
 		rm -f "$HOME/vscode.zip"
 		return
