@@ -64,7 +64,7 @@ install_vscode() {
 				break
 				;;
 			"vscodium")
-				vscodium_tag="$(git ls-remote -q -t --refs https://github.com/VSCodium/vscodium.git | awk '{sub("refs/tags/", ""); sub("(.*)(-|rc|alpha|beta|[a-z]$)", ""); print $2 }' | awk '!/^$/' | sort -Vr | head -n 1)"
+				vscodium_tag="$(git ls-remote -q -t --refs https://github.com/VSCodium/vscodium.git | awk '{sub(\"refs/tags/\", \"\"); sub(\"(.*)(-|rc|alpha|beta|[a-z]$)\", \"\"); print $2 }' | awk '!/^$/ ' | sort -Vr | head -n 1)"
 				vscode_url="https://github.com/VSCodium/vscodium/releases/latest/download/VSCodium-win32-x64-${vscodium_tag}.zip"
 				vscode_appname="VSCodium"
 				sed -ri 's|code.exe|VSCodium.exe|g' "../help/start - vscode.cmd"
@@ -73,6 +73,25 @@ install_vscode() {
 			"quit")
 				printf '\n%s\n\n' "Returning to parent"
 				return
+				;;
+			*)
+				printf "\n%s\n" "invalid option $REPLY"
+				;;
+		esac
+	done
+
+	printf "\n"
+	PS3=$'\n'"Install plugins/extensions? "
+	plugin_options=("yes" "no")
+	select plugin_opt in "${plugin_options[@]}"; do
+		case $plugin_opt in
+			"yes")
+				NO_PLUGINS=0
+				break
+				;;
+			"no")
+				NO_PLUGINS=1
+				break
 				;;
 			*)
 				printf "\n%s\n" "invalid option $REPLY"
@@ -90,26 +109,23 @@ install_vscode() {
 			printf '%s\n\n' "VSCode downloaded, extracted and installed"
 		fi
 
-		if [[ -f "$HOME/.vscode_extensions" ]]; then
-			while IFS= read -r line; do
-				echo "Processing: ${line}"
-				/applications/VSCode/bin/code --force --install-extension "${line}" 2> /dev/null
-			done < "$HOME/.vscode_extensions"
-		else
-			/applications/VSCode/bin/code --force --install-extension daltonmenezes.aura-theme 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension davidanson.vscode-markdownlint 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension editorconfig.editorconfig 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension medo64.render-crlf 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension rpinski.shebang-snippets 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension shd101wyy.markdown-preview-enhanced 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension streetsidesoftware.code-spell-checker 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension streetsidesoftware.code-spell-checker-british-english 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension tahabasri.snippets 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2> /dev/null
-			/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
+		if [[ $NO_PLUGINS -eq 0 ]]; then
+			if [[ -f "$HOME/.vscode_extensions" ]]; then
+				while IFS= read -r line; do
+					echo "Processing: ${line}"
+					/applications/VSCode/bin/code --force --install-extension "${line}" 2> /dev/null
+				done < "$HOME/.vscode_extensions"
+			else
+				/applications/VSCode/bin/code --force --install-extension foxundermoon.shell-format 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension timonwong.shellcheck 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension yzhang.markdown-all-in-one 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension DaltonMenezes.aura-theme 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension EditorConfig.EditorConfig 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension DavidAnson.vscode-markdownlint 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension redhat.vscode-yaml 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension ms-vscode-remote.remote-wsl 2> /dev/null
+				/applications/VSCode/bin/code --force --install-extension oderwat.indent-rainbow 2> /dev/null
+			fi
 		fi
 
 		# /applications/VSCode/bin/code --force --install-extension EXT_NAME  2> /dev/null
