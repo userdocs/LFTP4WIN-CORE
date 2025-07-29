@@ -64,7 +64,7 @@ install_vscode() {
 				break
 				;;
 			"vscodium")
-				vscodium_tag="$(git ls-remote -q -t --refs https://github.com/VSCodium/vscodium.git | awk '{sub(\"refs/tags/\", \"\"); sub(\"(.*)(-|rc|alpha|beta|[a-z]$)\", \"\"); print $2 }' | awk '!/^$/ ' | sort -Vr | head -n 1)"
+				vscodium_tag="$(git ls-remote -q -t --refs https://github.com/VSCodium/vscodium.git | awk '{sub("refs/tags/", ""); sub("(.*)(-|rc|alpha|beta|[a-z]$)", ""); print $2 }' | awk '!/^$/' | sort -Vr | head -n 1)"
 				vscode_url="https://github.com/VSCodium/vscodium/releases/latest/download/VSCodium-win32-x64-${vscodium_tag}.zip"
 				vscode_appname="VSCodium"
 				sed -ri 's|code.exe|VSCodium.exe|g' "../help/start - vscode.cmd"
