@@ -2,3 +2,4 @@ node_modules/*
 docs/node_modules/*
 docs/package-lock.json
 docs/package.json
+system/usr/local/bin/cygwin1.dll
