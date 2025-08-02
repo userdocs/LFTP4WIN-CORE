@@ -19,29 +19,30 @@
 
 winscp_to_bash "${@}"
 
-[[ "${protocol:?}" == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
+[[ ${protocol:?} == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
 
-if [[ "${9##*\\}" == 'ConEmu64.exe' ]]; then
-	if [[ -z "${password}" ]]; then
+if [[ ${9##*\\} == 'ConEmu64.exe' ]]; then
+	if [[ -z ${password} ]]; then
 		/applications/conemu/ConEmu64.exe -run {Bash::bash} -c "ssh -qt -p '${port}' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" -new_console:s:t:LFTP4WIN_IPERF3_REMOTE &
 	else
-		/applications/conemu/ConEmu64.exe -run {Bash::bash} -c "passh -p env:password ssh -qt -p '${port}' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" -new_console:s:t:LFTP4WIN_IPERF3_REMOTE &
+		/applications/conemu/ConEmu64.exe -run {Bash::bash} -c "passh -p '${password}' ssh -qt -p '${port}' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" -new_console:s:t:LFTP4WIN_IPERF3_REMOTE &
 	fi
 fi
 
-if [[ "${9##*\\}" == 'mintty.exe' ]]; then
-	if [[ -z "${password}" ]]; then
+if [[ ${9##*\\} == 'mintty.exe' ]]; then
+	if [[ -z ${password} ]]; then
 		/bin/mintty.exe --title LFTP4WIN_IPERF3_REMOTE -e /bin/bash -c "ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
 	else
-		/bin/mintty.exe --title LFTP4WIN_IPERF3_REMOTE -e /bin/bash -c "passh -p env:password ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+		/bin/mintty.exe --title LFTP4WIN_IPERF3_REMOTE -e /bin/bash -c "passh -p '${password}' ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
 	fi
 fi
 
-if [[ "${9##*\\}" =~ (-w|wt.exe) ]]; then
-	if [[ -z "${password}" ]]; then
+if [[ ${9##*\\} =~ (-w|wt.exe) ]]; then
+	if [[ -z ${password} ]]; then
 		"$(cygpath -u "${LOCALAPPDATA}\Microsoft\WindowsApps\wt.exe")" -w 0 nt --title LFTP4WIN_IPERF3_REMOTE bash -c "ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
 	else
-		"$(cygpath -u "${LOCALAPPDATA}\Microsoft\WindowsApps\wt.exe")" -w 0 nt --title LFTP4WIN_IPERF3_REMOTE bash -c "passh -p env:password ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
+		# printf '%s' "${password}" > file
+		"$(cygpath -u "${LOCALAPPDATA}\Microsoft\WindowsApps\wt.exe")" -w 0 nt --title LFTP4WIN_IPERF3_REMOTE bash -lc "passh -p '$(printf '%q' "${password}")' ssh -qt -p '$port' '${username}@${hostname}' 'export IPERF3PORT=${7} && export REMOTEARCH=${8} && bash -li <(curl -4sL https://git.io/fjRIi)'" &
 	fi
 fi
 
@@ -76,6 +77,6 @@ echo 'This report has been saved to the help/reports directory.' | tee -a "${HOM
 echo | tee -a "${HOME}/../help/reports/report-${hostname}.txt"
 read -ep "Are you ready to close the terminals?: " -i "y" quitme
 #
-if [[ "${quitme}" =~ ^[Yy]$ ]]; then
+if [[ ${quitme} =~ ^[Yy]$ ]]; then
 	exit
 fi
