@@ -26,13 +26,13 @@
 #
 winscp_to_bash "${@}"
 
-[[ "${protocol:?}" == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
+[[ ${protocol:?} == 'sftp' ]] && openssh_known_hosts "${port}" "${hostname}"
 
 export SSHPASS="${password}"
 
 cd "${local_dir}" || exit 1
 
-[[ -n "${7}" && "${7}" = 'yes' && -n "${8}" ]] && DYNAMIC="-D ${8}" || DYNAMIC=""
+[[ -n ${7} && ${7} == 'yes' && -n ${8} ]] && DYNAMIC="-D ${8}" || DYNAMIC=""
 
 remote_shell="$(sshpass -e ssh -qt ${DYNAMIC} -p "${port}" -T "${username}@${hostname}" 'printf ${SHELL}')"
 remote_shell_test="${remote_shell##*/}" # remove paths and just test the shell name.
@@ -49,9 +49,9 @@ case "${remote_shell_test}" in
 		;;
 esac
 
-[[ -n "${9}" && "${9}" = 'yes' ]] && REMOTE_CMD="cd '${remote_dir}' && ${remote_shell}" || REMOTE_CMD="${remote_shell}"
+[[ -n ${9} && ${9} == 'yes' ]] && REMOTE_CMD="cd '${remote_dir}' && ${remote_shell}" || REMOTE_CMD="${remote_shell}"
 
-if [[ -z "${SSHPASS}" ]]; then
+if [[ -z ${SSHPASS} ]]; then
 	ssh -qt ${DYNAMIC} -p "${port}" "${username}@${hostname}" "${REMOTE_CMD}"
 else
 	passh -p env:SSHPASS ssh -qt ${DYNAMIC} -p "${port}" "${username}@${hostname}" "${REMOTE_CMD}"
