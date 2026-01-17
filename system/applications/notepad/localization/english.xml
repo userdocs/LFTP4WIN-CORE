@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="English" filename="english.xml" version="8.8.1">
+	<Native-Langue name="English" filename="english.xml" version="8.8.7">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -41,6 +41,7 @@ Translation note:
 					<Item subMenuId="edit-onSelection" name="&amp;On Selection"/>
 					<Item subMenuId="edit-multiSelectALL" name="Multi-select ALL"/>
 					<Item subMenuId="edit-multiSelectNext" name="Multi-select Next"/>
+					<Item subMenuId="edit-readonlyInNotepad++" name="Read-Only in Notepad++"/>
 					<Item subMenuId="search-changeHistory" name="Change History"/>
 					<Item subMenuId="search-markAll" name="Style &amp;All Occurrences of Token"/>
 					<Item subMenuId="search-markOne" name="Style &amp;One Token"/>
@@ -139,6 +140,8 @@ Translation note:
 					<Item id="42081" name="Sort Lines Lex. Descending Ignoring Case"/>
 					<Item id="42100" name="Sort Lines In Locale Order Ascending"/>
 					<Item id="42101" name="Sort Lines In Locale Order Descending"/>
+					<Item id="42104" name="Sort Lines By Length Ascending"/>
+					<Item id="42105" name="Sort Lines By Length Descending"/>
 					<Item id="42061" name="Sort Lines As Integers Ascending"/>
 					<Item id="42062" name="Sort Lines As Integers Descending"/>
 					<Item id="42063" name="Sort Lines As Decimals (Comma) Ascending"/>
@@ -196,7 +199,9 @@ Translation note:
 					<Item id="42025" name="&amp;Save Currently Recorded Macro..."/>
 					<Item id="42026" name="Text Direction RTL"/>
 					<Item id="42027" name="Text Direction LTR"/>
-					<Item id="42028" name="Read-Only in Notepad++"/>
+					<Item id="42028" name="Read-Only on Current Document"/>
+					<Item id="42102" name="Read-Only for All Documents"/>
+					<Item id="42103" name="Clear Read-Only for All Documents"/>
 					<Item id="42029" name="Copy Current File Path"/>
 					<Item id="42030" name="Copy Current Filename"/>
 					<Item id="42031" name="Copy Current Dir. Path"/>
@@ -223,7 +228,7 @@ Translation note:
 					<Item id="43020" name="Paste to (Replace) Bookmarked Lines"/>
 					<Item id="43021" name="Remove Bookmarked Lines"/>
 					<Item id="43051" name="Remove Non-Bookmarked Lines"/>
-					<Item id="43050" name="Inverse Bookmark"/>
+					<Item id="43050" name="Inverse Bookmarks"/>
 					<Item id="43052" name="Find characters in rang&amp;e..."/>
 					<Item id="43053" name="Select All In-betw&amp;een {} [] or ()"/>
 					<Item id="43009" name="Go to &amp;Matching Brace"/>
@@ -416,6 +421,8 @@ Translation note:
 					<Item id="11007" name="Type Z to A"/>
 					<Item id="11008" name="Content Length Ascending"/>
 					<Item id="11009" name="Content Length Descending"/>
+					<Item id="11010" name="Modified Time Ascending"/>
+					<Item id="11011" name="Modified Time Descending"/>
 				</Commands>
 			</Main>
 			<TabBar>
@@ -996,6 +1003,7 @@ Translation note:
 					<Item id="6128" name="Alternate icons"/>
 					<Item id="6125" name="Behavior"/>
 					<Item id="6126" name="Look &amp;&amp; feel"/>
+					<Item id="6136" name="Max. tab label length:"/>
 				</Tabbar>
 
 				<Scintillas title="Editing 1">
@@ -1214,6 +1222,7 @@ Translation note:
 					<Item id="6909" name="Select Word Under Caret when Nothing Selected"/>
 					<Item id="6910" name="Minimum Size for Auto-Checking &quot;In selection&quot;:"/>
 					<Item id="6913" name="Fill Find in Files Directory Field Based On Active Document"/>
+					<Item id="6916" name=": Max Characters to Auto-Fill Find Field from Selection"/>
 				</Searching>
 
 				<RecentFilesHistory title="Recent Files History">
@@ -1579,6 +1588,8 @@ Please test those commands and, if needed, re-edit them.
 Alternatively, you can downgrade to Notepad++ v8.5.2 and restore your previous data.
 Notepad++ will backup your old &quot;shortcuts.xml&quot; and save it as &quot;shortcuts.xml.v8.5.2.backup&quot;.
 Renaming &quot;shortcuts.xml.v8.5.2.backup&quot; -&gt; &quot;shortcuts.xml&quot;, your commands should be restored and work properly."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
+			<FullReadOnlySavingForbidden title="Save failed" message="Cannot save file.
+The Notepad++ full read-only saving forbidden mode prevented the file from being saved."/>
 			<NotEnoughRoom4Saving title="Save failed" message="Failed to save file.
 It seems there's not enough space on disk to save file. Your file is not saved."/>
 			<FileInaccessibleUserSession title="File inaccessible" message="Some files from your manually-saved session &quot;$STR_REPLACE$&quot; are inaccessible. They can be opened as empty and read-only documents as placeholders.
@@ -1618,6 +1629,7 @@ Please verify the search condition before performing the action."/> <!-- HowToRe
 			<ColumnPath name="Path"/>
 			<ColumnType name="Type"/>
 			<ColumnSize name="Size"/>
+			<ColumnDateTime name="Modified time"/>
 			<NbDocsTotal name="total documents:"/>
 			<MenuCopyName name="Copy Name(s)"/>
 			<MenuCopyPath name="Copy Pathname(s)"/>
@@ -1865,7 +1877,8 @@ Click on &quot;?&quot; button on right to open website with User Manual."/>
 			<!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
 			<npcCustomColor-tip value="Go to Style Configurator to change the default custom color for selected whitespace and non-printing characters (&quot;Non-printing characters custom color&quot;)."/>
 			<npcIncludeCcUniEol-tip value="Apply non-printing characters appearance settings to C0, C1 control and Unicode EOL (next line, line separator and paragraph separator) characters."/>
-			<searchingInSelThresh-tip value="Number of selected characters in edit zone to automatically check the &quot;In selection&quot; checkbox when the Find dialog is activated. The maximum value is 1024. Set the value to 0 to disable auto-checking."/>
+			<searchingInSelThresh-tip value="Minimum number of selected characters in edit zone to automatically check the &quot;In selection&quot; checkbox when the Find dialog is activated. The maximum value is $INT_REPLACE$. Set the value to 0 to disable auto-checking."/>
+			<searchingFillFindWhat-tip value="Maximum number of selected characters in edit zone to fill automatically the &quot;Find what&quot; field when the Ctrl-F is triggered. The maximum value is $INT_REPLACE$, which is the maximum size of &quot;Find what&quot; field, limited by the system."/>
 			<verticalEdge-tip value="Add your column marker by indicating its position with a decimal number. You can define several column markers by using white space to separate the different numbers."/>
 			<fileSaveAsCopySaveButton-tip value="Hold Shift while pressing Save to open the copy after saving."/>
 			<autoIndentBasic-tip value="Ensure that the indentation of the current line (i.e. the new line created by pressing the ENTER key) matches the indentation of the previous line."/>
@@ -1889,6 +1902,13 @@ If you select advanced mode but do not edit files in the aforementioned language
 			<statusbar-Sel value="Sel: "/>
 			<statusbar-Sel-number value="Sel"/>
 			<toolbar-accent-tip value="This option makes your toolbar icons follow Windows system accent color. Accent color is the highlight color used in buttons, borders, and Start menu tiles in Windows. To change it, go to Settings &gt; Personalization &gt; Colors, then select your preferred accent color."/>
+			<len-limit-exceeded-tip value="Length limit exceeded: Your input may exceed the limit allowed and could have been truncated, and it won't be saved for the next session."/>
+			<max-len-on-search-tip value="Your input may exceed the limit allowed and could have been truncated, and it won't be saved for the next session."/>
+			<max-len-on-save-tip value="The length of your input is very long and may not be saved for your next session."/>
+			<goto-setting-tip value="Find your setting here"/>
+			<tabbar-tabcompactlabellen-tip value="Limits the visible length of long tab names. Enter to apply the given value. Value range: 1-257 characters (0 disables the truncation)."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>
+
+

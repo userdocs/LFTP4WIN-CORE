@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="Français" filename="french.xml" version="8.8.1">
+	<Native-Langue name="Français" filename="french.xml" version="8.8.7">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -414,6 +414,8 @@ Translation note:
 					<Item id="11007" name="Type de Z à A"/>
 					<Item id="11008" name="Taille de +petite à +grande"/>
 					<Item id="11009" name="Taille de +grande à +petite"/>
+					<Item id="11010" name="Heure de modification de +ancienne à +récente"/>
+					<Item id="11011" name="Heure de modification de +récente à +ancienne"/>
 				</Commands>
 			</Main>
 			<TabBar>
@@ -639,7 +641,7 @@ Translation note:
 					<Item id="2230" name="Forcer style gras pour tous les styles"/>
 					<Item id="2231" name="Forcer italique pour tous les styles"/>
 					<Item id="2232" name="Forcer souligné pour tous les styles"/>
-					<Item id="2234" name="Forcera boîte de dialogue Préférences"/>
+					<Item id="2234" name="Accéder au paramètre"/>
 					<!-- Don't translate "Global override" -->
 					<Item id="2235" name="C'est quoi « Global override » ?"/>
 				</SubDialog>
@@ -995,6 +997,7 @@ Translation note:
 					<Item id="6128" name="Icônes alternatives"/>
 					<Item id="6125" name="Comportement"/>
 					<Item id="6126" name="Aspect visuel"/>
+					<Item id="6136" name="Taille max. du libellé d'onglet :"/>
 				</Tabbar>
 
 				<Scintillas title="Zones d’édition 1">
@@ -1211,7 +1214,8 @@ Translation note:
 					<Item id="6908" name="Remplir le champ de recherche avec le texte sélectionné"/>
 					<Item id="6909" name="Sélectionner le mot sous le curseur si rien n’est sélectionné"/>
 					<Item id="6910" name="Taille minimale pour l’auto-coche de « Dans la sélection » :"/>
-					<Item id="6913" name="Remplir le champ Répertoire de la Recherche dans les fichiers en se basant sur la document actif"/>
+					<Item id="6913" name="Remplir le champ de &quot;Dossier&quot; de &quot;Recherche dans les fichiers&quot; avec chemin du fichier actif"/>
+					<Item id="6916" name=" : Nombre max. de caractères sélectionnés à copier dans le champ de recherche"/>
 				</Searching>
 
 				<RecentFilesHistory title="Fichiers récents">
@@ -1613,6 +1617,7 @@ Veuillez vérifier la condition de recherche avant de procéder à l'action."/> 
 			<ColumnPath name="Chemin"/>
 			<ColumnType name="Type"/>
 			<ColumnSize name="Taille"/>
+			<ColumnDateTime name="Heure de modification"/>
 			<NbDocsTotal name="nombre de documents :"/>
 			<MenuCopyName name="Copier le(s) nom(s)"/>
 			<MenuCopyPath name="Copier le(s) chemin(s) complet(s)"/>
@@ -1860,7 +1865,8 @@ Cliquez sur le bouton « ? » à droite pour ouvrir le site web du manuel utilis
 			<!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
 			<npcCustomColor-tip value="Aller dans le Configurateur de style pour changer la couleur personnalisée par défaut pour la sélection des caractères blancs et des caractères non-imprimables (« Couleur personnalisée des caractères non-imprimables »)."/>
 			<npcIncludeCcUniEol-tip value="Applique les paramètres d’apparence des caractères non-imprimables aux contrôles C0, C1 et aux caractères Unicode EOL (ligne suivante, séparateur de ligne et séparateur de paragraphe)."/>
-			<searchingInSelThresh-tip value="Nombre de caractères sélectionnés dans la zone d’édition pour cocher automatiquement la case « Dans sélection » quand la fenêtre de recherche est activée. La valeur maximale est 1024. Mettre la valeur à 0 pour désactiver l’auto-coche."/>
+			<searchingInSelThresh-tip value="Nombre minimal de caractères sélectionnés dans la zone d’édition pour cocher automatiquement la case « Dans sélection » quand la fenêtre de recherche est activée. La valeur maximale est $INT_REPLACE$. Mettre la valeur à 0 pour désactiver l’auto-coche."/>
+			<searchingFillFindWhat-tip value="Nombre maximal de caractères sélectionnés dans la zone de texte à utiliser pour remplir automatiquement le champ « Rechercher » lors de l'activation de la combinaison Ctrl+F. La valeur maximale est $INT_REPLACE$, soit la taille maximale du champ « Rechercher », limitée par le système."/>
 			<verticalEdge-tip value="Ajoutez votre marqueur de colonne en indiquant sa position avec un nombre entier. Vous pouvez définir plusieurs marqueurs de colonne en utilisant un espace pour séparer les différents nombres."/>
 			<fileSaveAsCopySaveButton-tip value="Maintenez Shift en appuyant sur Enregistrer pour ouvrir une copie après enregistrement."/>
 			<autoIndentBasic-tip value="Assurez-vous que la ligne courante (c'est-à-dire la nouvelle ligne saisie en appuyant sur ENTRÉE) a la même indentation que la ligne précédente."/>
@@ -1884,6 +1890,11 @@ Si vous sélectionnez le mode avancé sans modifier les fichiers des langues men
 			<statusbar-Sel value="Sel : "/>
 			<statusbar-Sel-number value="Sel"/>
 			<toolbar-accent-tip value="Cette option permet aux icônes de votre barre d'outils d'adopter la couleur d'accentuation du système Windows. La couleur d'accentuation est la couleur de surbrillance utilisée pour les boutons, les bordures et les tuiles du menu Démarrer sous Windows. Pour la modifier, accédez à Paramètres &gt; Personnalisation &gt; Couleurs, puis sélectionnez votre couleur d'accentuation préférée."/>
+			<len-limit-exceeded-tip value="Limite de longueur dépassée : Votre saisie peut dépasser la limite autorisée et avoir été tronquée, et elle ne sera pas enregistrée pour la prochaine session."/>
+			<max-len-on-search-tip value="Votre saisie peut dépasser la limite autorisée et avoir été tronquée, et elle ne sera pas enregistrée pour la prochaine session."/>
+			<max-len-on-save-tip value="La longueur de votre saisie est très longue et il se peut qu'elle ne soit pas enregistrée pour votre prochaine session."/>
+			<goto-setting-tip value="Réglage du paramètre ici"/>
+			<tabbar-tabcompactlabellen-tip value="Limiter la longueur du libellé pour compacter l'onglet. Appuyez sur Entrée pour appliquer la valeur indiquée. Valeurs possibles : 1 à 257 caractères (0 désactive la troncature)."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

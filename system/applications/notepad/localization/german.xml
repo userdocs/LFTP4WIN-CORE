@@ -14,7 +14,7 @@ Translation note:
 	or a copy at: http://www.should.keepfree.de/N++/german.xml.txt (rename to german.xml)
 -->
 <NotepadPlus>
-	<Native-Langue name="Deutsch" filename="german.xml" version="8.8.1"><!-- Datum: 22.06.2025, basiert auf english.xml 8.8.1 vom 21.06.2025 -->
+	<Native-Langue name="Deutsch" filename="german.xml" version="8.8.7"><!-- Datum: 04.12.2025, basiert auf english.xml 8.8.7 vom 02.12.2025 -->
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -50,6 +50,7 @@ Translation note:
 					<Item subMenuId="edit-onSelection" name="Mit Auswahl"/>
 					<Item subMenuId="edit-multiSelectALL" name="Mehrfachauswahl ALLE"/>
 					<Item subMenuId="edit-multiSelectNext" name="Mehrfachauswahl Nächstes"/>
+					<Item subMenuId="edit-readonlyInNotepad++" name="Nur Lesen in Notepad++"/>
 					<Item subMenuId="search-changeHistory" name="Änderungs-Historie"/>
 					<Item subMenuId="search-markAll" name="&amp;Alle Treffer hervorheben"/>
 					<Item subMenuId="search-markOne" name="Di&amp;esen Treffer hervorheben"/>
@@ -148,6 +149,8 @@ Translation note:
 					<Item id="42081" name="Zeilen alph. absteigend sortieren, Schreibung ignorieren"/>
 					<Item id="42100" name="Zeilen in lokaler Reihenfolge aufsteigend sortieren"/>
 					<Item id="42101" name="Zeilen in lokaler Reihenfolge absteigend sortieren"/>
+					<Item id="42104" name="Zeilen der Länge nach aufsteigend sortieren"/>
+					<Item id="42105" name="Zeilen der Länge nach absteigend sortieren"/>
 					<Item id="42061" name="Zeilen als Ganzzahlen aufsteigend sortieren"/>
 					<Item id="42062" name="Zeilen als Ganzzahlen absteigend sortieren"/>
 					<Item id="42063" name="Zeilen als Dezimalzahlen (Komma) aufsteigend sortieren"/>
@@ -205,7 +208,9 @@ Translation note:
 					<Item id="42025" name="Aufgenommenes Makro s&amp;peichern …"/>
 					<Item id="42026" name="Schreib&amp;richtung von rechts nach links"/>
 					<Item id="42027" name="Schreibrichtung von lin&amp;ks nach rechts"/>
-					<Item id="42028" name="Schreibsch&amp;utz in Notepad++"/>
+					<Item id="42028" name="Schreibsch&amp;utz im aktuellen Dokument"/>
+					<Item id="42102" name="Schreibschutz für alle Dokumente"/>
+					<Item id="42103" name="Hebe Schreibschutz für alle Dokumente auf"/>
 					<Item id="42029" name="Vollständigen Datei&amp;pfad kopieren"/>
 					<Item id="42030" name="Nur Datei&amp;namen kopieren"/>
 					<Item id="42031" name="Nur &amp;Verzeichnispfad kopieren"/>
@@ -425,6 +430,8 @@ Translation note:
 					<Item id="11007" name="Typ Z bis A"/>
 					<Item id="11008" name="Inhaltslänge aufsteigend"/>
 					<Item id="11009" name="Inhaltslänge absteigend"/>
+					<Item id="11010" name="Änderungszeit aufsteigend"/>
+					<Item id="11011" name="Änderungszeit absteigend"/>
 				</Commands>
 			</Main>
 			<TabBar>
@@ -643,8 +650,8 @@ Translation note:
 					<Item id="2219" name="Standard-Schlüsselwörter:"/>
 					<Item id="2221" name="Benutzerdefinierte Schlüsselwörter:"/>
 					<Item id="2225" name="Sprache:"/>
-					<Item id="2226" name="Erzwinge Vordergrundfarbe f. alle Stile"/>
-					<Item id="2227" name="Erzwinge Hintergrundfarbe f. alle Stile"/>
+					<Item id="2226" name="Vordergrundfarbe erzw. f. alle Stile"/>
+					<Item id="2227" name="Hintergrundfarbe erzw. f. alle Stile"/>
 					<Item id="2228" name="Erzwinge Schriftart für alle Stile"/>
 					<Item id="2229" name="Erzwinge Schriftgröße für alle Stile"/>
 					<Item id="2230" name="Erzwinge Fettschrift für alle Stile"/>
@@ -794,7 +801,7 @@ Translation note:
 				<Item id="20015" name="Importieren …"/>
 				<Item id="20016" name="Exportieren …"/>
 				<Item id="20017" name="Abdocken"/>
-				<StylerDialog title="Stiloptionen für benutzerdefinierte Sprachen">
+				<StylerDialog title="Stiloptionen für benutzerdefinierte Sprache">
 					<Item id="25030" name="Schriftoptionen:"/>
 					<Item id="25006" name="Vordergrundfarbe:"/>
 					<Item id="25007" name="Hintergrundfarbe:"/>
@@ -957,7 +964,7 @@ Translation note:
 			<Preference title="Optionen">
 				<Item id="6001" name="S&amp;chließen"/>
 				<Global title="Allgemein">
-					<Item id="6123" name="Sprache"/>
+					<Item id="6123" name="Menüsprache"/>
 					<Item id="6131" name="Menü"/>
 					<Item id="6122" name="Ausblenden (Umschalten mit Alt oder F10)"/>
 					<Item id="6132" name="Schaltflächen '＋ ▼ ✕' ausblenden"/>
@@ -1005,6 +1012,7 @@ Translation note:
 					<Item id="6128" name="Alternative Symbole"/>
 					<Item id="6125" name="Verhalten"/>
 					<Item id="6126" name="Aussehen &amp;&amp; Wirkung (Look &amp;&amp; feel)"/>
+					<Item id="6136" name="Max. Länge für Tab-Namen:"/>
 				</Tabbar>
 
 				<Scintillas title="Bearbeiten 1">
@@ -1052,7 +1060,7 @@ Translation note:
 				<DarkMode title="Dunkler Modus">
 					<Item id="7131" name="Heller Modus"/>
 					<Item id="7132" name="Dunkler Modus"/>
-					<Item id="7133" name="Folge Windows"/>
+					<Item id="7133" name="Folge Einstellung von Windows"/>
 					<Item id="7102" name="Schwarz"/>
 					<Item id="7103" name="Rot"/>
 					<Item id="7104" name="Grün"/>
@@ -1124,7 +1132,7 @@ Translation note:
 					<Item id="6413" name="Verzeichnis beim Öffnen/Speichern"/>
 					<Item id="6414" name="Wie aktuelle Datei"/>
 					<Item id="6415" name="Letztes Verzeichnis merken"/>
-					<Item id="6431" name="Verzeichnis-Drag&amp;&amp;Drop öffnet alle Dateien darin statt &quot;Verzeichnis als Arbeitsbereich&quot; zu starten"/>
+					<Item id="6431" name="Verzeichnis-Drag&amp;&amp;Drop öffnet alle Dateien darin statt 'Verzeichnis als Arbeitsbereich' zu starten"/>
 				</DefaultDir>
 
 				<FileAssoc title="Dateiverknüpfungen">
@@ -1223,6 +1231,7 @@ Translation note:
 					<Item id="6909" name="Das Wort unter dem Cursor verwenden wenn nichts gewählt ist"/>
 					<Item id="6910" name="Mindestgröße für die automatische Aktivierung von 'In Auswahl'"/>
 					<Item id="6913" name="Suche im Dateiverzeichnisfeld basierend auf dem aktiven Dokument ausfüllen"/>
+					<Item id="6916" name=": Max. Zeichen für automatisches Ausfüllen des Suchfelds aus der Auswahl"/>
 				</Searching>
 
 				<RecentFilesHistory title="Zuletzt geöffn. Dateien">
@@ -1310,14 +1319,14 @@ Translation note:
 				<Performance title="Leistung">
 					<Item id="7141" name="Einschränkung für große Dateien"/>
 					<Item id="7143" name="Aktivieren der Einschränkung für große Dateien (keine Syntaxhervorhebung)"/>
-					<Item id="7144" name="Große Dateigröße definieren:"/>
+					<Item id="7144" name="Große Datei definieren:"/>
 					<Item id="7146" name="MB   (1 - 2046)"/>
 					<Item id="7147" name="Klammerübereinstimmung zulassen"/>
 					<Item id="7148" name="Auto-Vervollständigung zulassen"/>
 					<Item id="7149" name="Intelligente Hervorhebung zulassen"/>
 					<Item id="7150" name="Wortumbruch global deaktivieren"/>
 					<Item id="7151" name="URL anklickbaren Link zulassen"/>
-					<Item id="7152" name="Unterdrücke Warnung beim Öffnen von Dateien ≥2GB"/>
+					<Item id="7152" name="Unterdrücke Warnung beim Öffnen von Dateien ≥ 2GB"/>
 				</Performance>
 
 				<Cloud title="Cloud &amp; Links">
@@ -1362,13 +1371,13 @@ Translation note:
 						<Element name="DirectWrite (DirectX 11)"/>
 					</ComboBox>
 					<ComboBox id="6364">
-						<Element name="Deaktivieren"/>
-						<Element name="Aktivieren beim Start von Notepad++"/>
-						<Element name="Aktivieren beim Beenden von Notepad++"/>
+						<Element name="deaktivieren"/>
+						<Element name="beim Start von Notepad++"/>
+						<Element name="beim Beenden von Notepad++"/>
 					</ComboBox>
 					<Item id="6308" name="Infobereich (Tray)"/>
 					<Item id="6363" name="Darstellungsmodus"/>
-					<Item id="6365" name="Automatische Aktualisierung"/>
+					<Item id="6365" name="Autom. Aktualisierung"/>
 					<Item id="6312" name="Automatische Änderungserkennung"/>
 					<Item id="6313" name="Ohne Rückfrage aktualisieren"/>
 					<Item id="6325" name="Nach Aktualisierung zum Ende scrollen"/>
@@ -1541,8 +1550,8 @@ Soll die Datei trotzdem gespeichert werden?"/>
 			<LoadLangsFailed title="Konfigurator" message="Laden der Datei 'langs.xml' ist fehlgeschlagen!
 Soll die Datei 'langs.xml' wiederhergestellt werden?"/>
 			<LoadLangsFailedFinal title="Konfigurator" message="Laden der Datei 'langs.xml' ist fehlgeschlagen!"/>
-			<FolderAsWorspaceSubfolderExists title="'Verzeichnis als Arbeitsbereich'-Problem" message="Ein Unterverzeichnis existiert im Verzeichnis das hinzugefügt werden soll.
-Bitte dieses Verzeichnis vorher entfernen bevor das Verzeichnis &quot;$STR_REPLACE$&quot; hinzugefügt wird."/>
+			<FolderAsWorspaceSubfolderExists title="'Verzeichnis als Arbeitsbereich'-Problem" message="Ein Unterverzeichnis existiert im Verzeichnis, das hinzugefügt werden soll.
+Bitte das Unterverzeichnis aus dem Arbeitsbereich entfernen, bevor das Verzeichnis &quot;$STR_REPLACE$&quot; hinzugefügt wird."/>
 
 			<ProjectPanelChanged title="$STR_REPLACE$" message="Der Arbeitsbereich wurde geändert. Soll er jetzt gespeichert werden?"/>
 			<ProjectPanelSaveError title="$STR_REPLACE$" message="Ein Fehler ist beim Speichern der Arbeitsbereichsdatei aufgetreten.
@@ -1588,6 +1597,8 @@ Bitte die Kommandos daher testen und falls nötig editieren.
 Alternativ dazu kann auch auf die ältere Version Notepad++ v8.5.2 gewechselt und dort die aktuellen Daten gesichert werden.
 Notepad++ wird ein Backup der alten &quot;shortcuts.xml&quot; machen und die Datei als &quot;shortcuts.xml.v8.5.2.backup&quot; speichern.
 Beim darauf folgenden Umbenennen der &quot;shortcuts.xml.v8.5.2.backup&quot; -&gt; &quot;shortcuts.xml&quot; sollten die Kommandos wiederhergestellt sein und wieder funktionieren."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
+			<FullReadOnlySavingForbidden title="Speichern fehlgeschlagen" message="Kann Datei nicht speichern.
+Der Schreibschutz von Notepad++ verhindert das Speichern dieser Datei."/>
 			<NotEnoughRoom4Saving title="Speichern fehlgeschlagen" message="Konnte Datei nicht speichern.
 Es ist nicht genug Speicherplatz vorhanden, daher wurde die Datei nicht gespeichert."/>
 			<FileInaccessibleUserSession title="Datei nicht zugänglich" message="Einige Dateien der manuell gespeicherten Sitzung &quot;$STR_REPLACE$&quot; sind nicht zugänglich. Sie können aber als leere Datei und schreibgeschützt als Platzhalter geöffnet werden.
@@ -1610,6 +1621,7 @@ Falls die Regex-Rückwärtssuche dennoch benötigt wird, kann deren Aktivierung 
 			<FindAutoChangeOfInSelectionWarning title="Suchwarnung" message="Der Status des Kontrollkästchens 'In Auswahl' wurde automatisch geändert.
 Bitte die Suchbedingungen überprüfen, bevor die Aktion ausgeführt wird."/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="Neustart von Notepad++ erforderlich" message="Notepad++ muss zur Anzeige der Tastenkürzel neu gestartet werden."/>
+			<NoAdminRight2ChangeReadOnlyFileAttribute title="Das Ändern des schreibgeschützten Attributs der Datei ist fehlgeschlagen" message="Bitte Notepad++ als Administrator ausführen, um Dateiattribute zu ändern."/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Zwischenablage"/>
@@ -1626,6 +1638,7 @@ Bitte die Suchbedingungen überprüfen, bevor die Aktion ausgeführt wird."/> <!
 			<ColumnPath name="Pfad"/>
 			<ColumnType name="Typ"/>
 			<ColumnSize name="Größe"/>
+			<ColumnDateTime name="Änderungszeit"/>
 			<NbDocsTotal name="Gesamtzahl Dokumente:"/>
 			<MenuCopyName name="Name(n) kopieren"/>
 			<MenuCopyPath name="Pfadname(n) kopieren"/>
@@ -1846,8 +1859,8 @@ Suche in allen Dateien, exkludiere alle Verzeichnisse log oder logs rekursiv:
 ACHTUNG:
 1. Wenn Sie die Optionen hier ändern, müssen Sie die aktuell geöffneten großen Dateien erneut öffnen um die Änderung zu erhalten.
 
-2. Wenn &quot;Wortumbruch global deaktivieren&quot; aktiv ist und Sie eine große Datei öffnen, wird &quot;Wortumbruch&quot; für alle Dateien deaktiviert. Sie können das aber über das Menü &quot;Ansicht-&gt;Wortumbruch&quot; wieder aktivieren."/>
-			<npcNote-tip value="Darstellung von ausgewählten &quot;Nicht-ASCII&quot; Leerzeichen und nicht druckbaren (Steuer-) Zeichen.
+2. Wenn 'Wortumbruch global deaktivieren' aktiv ist und Sie eine große Datei öffnen, wird 'Wortumbruch' für alle Dateien deaktiviert. Sie können das aber über das Menü 'Ansicht-&gt;Wortumbruch' wieder aktivieren."/>
+			<npcNote-tip value="Darstellung von ausgewählten 'Nicht-ASCII' Leerzeichen und nicht druckbaren (Steuer-) Zeichen.
 
 HINWEIS:
 Die Verwendung der Darstellung deaktiviert die Zeicheneffekte im Text.
@@ -1873,7 +1886,8 @@ Ein Klick auf &quot;?&quot; öffnet die Webseite des Benutzerhandbuchs."/>
 			<!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
 			<npcCustomColor-tip value="Im Stil-Konfigurator kann die Standardfarbe für die speziellen Leerzeichen und die nicht druckbaren Zeichen angepasst werden (&quot;Non-printing characters custom color&quot;)."/>
 			<npcIncludeCcUniEol-tip value="Einstellungen für das Erscheinungsbild von nicht druckbaren Zeichen auf die Steuerzeichen C0, C1 und Unicode EOL (nächste Zeile, Zeilen- und Absatztrenner) anwenden."/>
-			<searchingInSelThresh-tip value="Anzahl der ausgewählten Zeichen (max. 1024) in der Bearbeitungszone, um das Kontrollkästchen 'In Auswahl' automatisch zu aktivieren, wenn der Suchdialog aktiviert wird. Diesen Wert auf 0 setzen, um die automatische Markierung zu deaktivieren."/>
+			<searchingInSelThresh-tip value="Minimale Anzahl der ausgewählten Zeichen in der Bearbeitungszone, um das Kontrollkästchen 'In Auswahl' automatisch zu aktivieren, wenn der Suchdialog aktiviert wird. Der Maximalwert ist $INT_REPLACE$, der Wert 0 deaktiviert die automatische Überprüfung."/>
+			<searchingFillFindWhat-tip value="Maximale Anzahl der ausgewählten Zeichen in der Bearbeitungszone, um das Kontrollkästchen 'In Auswahl' automatisch zu aktivieren, wenn der Suchdialog aktiviert wird. Der Maximalwert ist $INT_REPLACE$, das ist die Maximalgröße vom 'Suchen nach:'-Feld, limitiert durch das System."/>
 			<verticalEdge-tip value="Eine Spaltenmarkierung kann hinzugefügt werden, indem ihre Position mit einer Dezimalzahl angeben wird. Mehrere Spaltenmarkierungen können definiert werden, indem die verschiedenen Zahlen durch Leerzeichen getrennt werden."/>
 			<fileSaveAsCopySaveButton-tip value="Drücke die Shift-Taste während des Speicherns um die Kopie nach dem Speichern zu öffnen."/>
 			<autoIndentBasic-tip value="Stelle sicher, dass die Einrückung in der aktuellen Zeile (z.B. erstellt durch das Drücken der ENTER-Taste) mit der Einrückung in der vorigen Zeile übereinstimmt."/>
@@ -1883,7 +1897,7 @@ C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell
 Wenn diese 'Intelligente Einrückung' gewählt wird, aber keine Dateien in den oben genannten Sprachen bearbeitet werden, bleibt die Einrückung im Standard-Modus."/>
 
 			<!-- Don't translate "Global override" and "Default Style" -->
-			<global-override-tip value="Das Aktivieren der 'Global override' überschreibt die Parameter in allen Schriftstilen. Was aber wahrscheinlich stattdessen gewünscht ist, sind die Einstellungen für 'Default Style'"/>
+			<global-override-tip value="Das Aktivieren von 'Global override' überschreibt die Parameter in allen Schriftstilen. Was aber wahrscheinlich stattdessen gewünscht ist, sind die Einstellungen für 'Default Style'"/>
 			<scintillaRenderingTechnology-tip value="Verwende DirectWrite (kann die Darstellung von Sonderzeichen verbessern oder einige Grafikprobleme beheben - erfordert einen Neustart von Notepad++."/>
 
 			<!-- Due to the limited space on the status bar, if the translations for 'length' & 'lines' are much longer than the English words, please leave them in English instead of translating them. -->
@@ -1897,6 +1911,11 @@ Wenn diese 'Intelligente Einrückung' gewählt wird, aber keine Dateien in den o
 			<statusbar-Sel value="Gew: "/>
 			<statusbar-Sel-number value="Gew"/>
 			<toolbar-accent-tip value="Mit dieser Option werden die Symbolleistensymbole der Akzentfarbe des Windows-Systems angepasst. Die Akzentfarbe ist die Farbe, mit der Schaltflächen, Rahmen und Startmenükacheln in Windows hervorgehoben werden. Um sie zu ändern, gehen Sie zu Einstellungen &gt; Personalisierung &gt; Farben und wählen Sie dann Ihre bevorzugte Akzentfarbe."/>
+			<len-limit-exceeded-tip value="Zeichen-Limit überschritten: Ihre Eingabe überschreitet ev. die zulässige Grenze und wurde möglicherweise gekürzt, und wird auch für die nächste Sitzung nicht gespeichert."/>
+			<max-len-on-search-tip value="Ihre Eingabe überschreitet ev. die zulässige Grenze und wurde möglicherweise gekürzt, und wird auch für die nächste Sitzung nicht gespeichert."/>
+			<max-len-on-save-tip value="Ihre Eingabe ist sehr lang und wird möglicherweise nicht für Ihre nächste Sitzung gespeichert."/>
+			<goto-setting-tip value="Finden Sie hier Ihre Einstellungen"/>
+			<tabbar-tabcompactlabellen-tip value="Kürzt die sichtbare Länge der Tab-Namen. 'Enter'-Taste drücken um den Eingabewert zu übernehmen. Mögliche Eingabe: 1-257 Zeichen (0 deaktiviert das Kürzen der Tab-Namen)."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

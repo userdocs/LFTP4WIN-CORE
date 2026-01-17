@@ -1,42 +1,28 @@
-Notepad++ v8.8.2 regression-fixes, bug-fixes & new features:
+Notepad++ v8.9 security enhancement, new improvements, regression fixes & bug-fixes:
 
- 1. Fix regression of folding state not being remembered through sessions.
- 2. Fix "Go To Settings" links in Style Configurator regression (from v8.8).
- 3. Fix small regression of tab background (hovered) highlighting issue after drag&drop.
- 4. Fix an unresponsive (hang) issue due to hide lines.
- 5. Fix installer security issue by Use the absolute path instead of an unspecified path (CVE-2025-49144).
- 6. Installer component "WinGUp": update cURL to 8.13.0 for fixing cURL's security issue CVE-2025-0167.
- 7. Update to scintilla 5.5.7 & Lexilla 5.4.5.
- 8. Add feature to update Notepad++ on exit.
- 9. Add `/relaunchNppAfterSilentInstall` command argument for installer.
-10. Add feature to set read-only attribute on file so user can toggle (set/remove) read-only attribute of a file.
-11. Add new plugin API: NPPM_GETTOOLBARICONSETMODE & NPPN_TOOLBARICONSETCHANGED to get toolbar icon set choice.
-12. Deprecate 3 APIs: Deprecate NPPM_GETOPENFILENAMES, NPPM_GETOPENFILENAMESPRIMARY & NPPM_GETOPENFILENAMESSECOND.
-13. Add new feature of using first line of untitled document for its tab name.
-14. Enhance NPPM_DARKMODESUBCLASSANDTHEME: Enable darkmode progress bar for plugins.
-15. Various dark mode enhancements.    
-16. Fix right click on caption bar unhidding main menu.
-17. Fix rename tab error message when tab name is unchanged.
-18. Fix Python FunctionList absorbing next function issue if space after colon.
-19. Remove .log from errorlist lexer's default extensions.
-20. Make raw string syntax highlighting work for Golang.
-21. Fix Notepad++ tray icon lost after Windows Taskbar crashing & being relaunched.       
-22. Fix changing toolbar icon set not updating to matching panel icon set.
-23. Fix Windows dialog file list not react with keystroke (character match).
-24. Add "*" mark on modified file entries in "Windows" dropdown menu.
+0. Remove Notepad++ self-singed certificate signature, use only the certificate issued by GlobalSign.
+1. Log security errors automatically while auto-updating in "%LOCALAPPDATA%\Notepad++\log\securityError.log".
+2. Fix jarring color regression in dark mode (introduced in v8.8.9).
+3. Fix "/noUpdater" installer option not working if updater was previously installed.
+4. Fix column mode edit undo regression (introduced in v8.8.9).
+5. Fix issue where an empty file opened without encoding under a UTF-8 system codepage.
+6. Add makefile function list parser.
+7. Improve performance & add missing file ext. from langs.model.xml to langs.xml.
+8. Improve "Open containing folder in Explorer" command to avoid creating Explorer process.
+9. Allow refresh mouse scroll amount according to OS settings changes.
 
 
 Get more info on
-https://notepad-plus-plus.org/downloads/v8.8.2/
+https://notepad-plus-plus.org/downloads/v8.9/
 
 
 Included plugins:
 
-1.  NppExport v0.4
-2.  Converter v4.6
-3.  Mime Tool v3.1
+ 1.  NppExport v0.4
+ 2.  Converter v4.7
+ 3.  Mime Tool v3.1
 
 
 Updater (Installer only):
 
-* WinGUp (for Notepad++) v5.3.3
+* WinGUp (for Notepad++) v5.3.9

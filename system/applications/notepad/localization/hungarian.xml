@@ -5,7 +5,7 @@
 <!-- Prohardver topic: https://prohardver.hu/tema/re_notepad/friss.html -->
 <!-- For more information see the Commits History: https://github.com/notepad-plus-plus/notepad-plus-plus/commits/master/PowerEditor/installer/nativeLang/hungarian.xml -->
 <NotepadPlus>
-	<Native-Langue name="Magyar" filename="hungarian.xml" version="8.8.1">
+	<Native-Langue name="Magyar" filename="hungarian.xml" version="8.8.7">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -41,6 +41,7 @@
 					<Item subMenuId="edit-onSelection" name="A ki&amp;jelölt szövegrész alapján"/>
 					<Item subMenuId="edit-multiSelectALL" name="Többszörös ki&amp;jelölés az ÖSSZES egyezővel"/>
 					<Item subMenuId="edit-multiSelectNext" name="Többszörös ki&amp;jelölés a következő egyezővel"/>
+					<Item subMenuId="edit-readonlyInNotepad++" name="Csak olvashat&amp;ó a Notepad++-ban"/>
 					<Item subMenuId="search-changeHistory" name="Mó&amp;dosítási előzmények"/>
 					<Item subMenuId="search-markAll" name="Az ö&amp;sszes elem kiemelése"/>
 					<Item subMenuId="search-markOne" name="A jele&amp;nlegi elem kiemelése"/>
@@ -139,6 +140,8 @@
 					<Item id="42081" name="Sorok rendezése &amp;fordított betűrendben, kis- és nagybetűtől függetlenül"/>
 					<Item id="42100" name="Sorok rendezése ter&amp;ületi beállítások szerint"/>
 					<Item id="42101" name="Sorok rendezése ter&amp;ületi beállítások szerinti fordított sorrendben"/>
+					<Item id="42104" name="Sorok rendezése &amp;hosszúság szerint növekvően"/>
+					<Item id="42105" name="Sorok rendezése &amp;hosszúság szerint csökkenően"/>
 					<Item id="42061" name="Sorok rendezése e&amp;gész számok szerint növekvően"/>
 					<Item id="42062" name="Sorok rendezése egés&amp;z számok szerint csökkenően"/>
 					<Item id="42063" name="Sorok rendezése &amp;tizedes számok szerint növekvően (tizedesvessző alapján)"/>
@@ -192,11 +195,13 @@
 					<Item id="42037" name="Oszlo&amp;pos kijelölés…"/>
 					<Item id="42034" name="Oszlo&amp;pszerkesztő…"/>
 					<Item id="42051" name="Ka&amp;raktertábla"/>
-					<Item id="42052" name="Vágóla&amp;p-előzmények"/>
+					<Item id="42052" name="Vágóla&amp;pelőzmények"/>
 					<Item id="42025" name="Az aktuális makrófelvétel mentése…"/>
 					<Item id="42026" name="Szö&amp;vegirány: jobbról balra"/>
 					<Item id="42027" name="Szöv&amp;egirány: balról jobbra"/>
-					<Item id="42028" name="Csak olvashat&amp;ó a Notepad++-ban"/>
+					<Item id="42028" name="Az aktuális dokumentum csak olvashat&amp;ó"/>
+					<Item id="42102" name="Az &amp;összes dokumentum csak olvasható"/>
+					<Item id="42103" name="Az &amp;összes dokumentum csak olvasható beállításának törlése"/>
 					<Item id="42029" name="&amp;A fájl teljes elérési útvonala"/>
 					<Item id="42030" name="A &amp;fájl neve"/>
 					<Item id="42031" name="A &amp;mappa útvonala"/>
@@ -416,6 +421,8 @@
 					<Item id="11007" name="Tí&amp;pus szerint Z-től A-ig"/>
 					<Item id="11008" name="A t&amp;artalom hossza szerint növekvő sorrendben"/>
 					<Item id="11009" name="A ta&amp;rtalom hossza szerint csökkenő sorrendben"/>
+					<Item id="11010" name="&amp;Módosítás dátuma szerint növekvő sorrendben"/>
+					<Item id="11011" name="Mó&amp;dosítás dátuma szerint csökkenő sorrendben"/>
 				</Commands>
 			</Main>
 			<TabBar>
@@ -996,6 +1003,7 @@
 					<Item id="6128" name="Alternatí&amp;v ikonok"/>
 					<Item id="6125" name="Viselkedés"/>
 					<Item id="6126" name="Megjelenés és működés"/><!-- Based on the standard translations (the translator) -->
+					<Item id="6136" name="&amp;Maximális fülcímkehossz:"/>
 				</Tabbar>
 
 				<Scintillas title="Szerkesztés">
@@ -1012,7 +1020,7 @@
 					<Item id="6234" name="&amp;Érintőpad-problémák miatt a haladó szintű görgetés letiltása"/>
 					<Item id="6215" name="B&amp;etűsimítás engedélyezése"/>
 					<Item id="6236" name="Az &amp;utolsó sornál lejjebb görgetés engedélyezése"/>
-					<Item id="6239" name="Kijelölés &amp;megtartása a kijelölésen kívül jobb egérgombbal történő kattintáskor is"/>
+					<Item id="6239" name="Kijelölés &amp;megtartása a kijelölésen kívül jobb egérgombbal kattintva is"/>
 					<Item id="6245" name="S&amp;orvégi virtuális szóközök engedélyezése"/>
 					<Item id="6214" name="Ki&amp;jelölés nélküli sormásolás és -kivágás engedélyezése"/>
 					<Item id="6225" name="Eg&amp;yéni szín a kijelölt szöveg előteréhez"/>
@@ -1214,6 +1222,7 @@
 					<Item id="6909" name="K&amp;ijelölés hiányában a kurzor alatti szó használata"/>
 					<Item id="6910" name="„&amp;A kijelölésben” automatikus bejelölése ettől:"/>
 					<Item id="6913" name="A „Keresés &amp;fájlokban” fül alatti „Mappa” mező kitöltése az aktív dokumentum alapján"/>
+					<Item id="6916" name=": a ki&amp;jelölt karakterek legnagyobb száma a „Keresendő” mező auto. kitöltéséhez"/>
 				</Searching>
 
 				<RecentFilesHistory title="Fájlelőzmények">
@@ -1348,17 +1357,22 @@
 					<ComboBox id="6362">
 						<Element name="GDI (legjobb kompatibilitás)"/>
 						<Element name="DirectWrite (alapértelmezett)"/>
-						<Element name="DirectWrite (képkockamegőrzéssel)"/>
-						<Element name="DirectWrite (GDI DC-be rajzolással)"/>
+						<Element name="DirectWrite (képkockamegőrző)"/>
+						<Element name="DirectWrite (GDI DC-be rajzolva)"/>
 						<Element name="DirectWrite (DirectX 11-gyel)"/>
+					</ComboBox>
+					<ComboBox id="6364">
+						<Element name="Kikapcsolva"/>
+						<Element name="Engedélyezve Notepad++-indításkor"/>
+						<Element name="Engedélyezve Notepad++-bezáráskor"/>
 					</ComboBox>
 					<Item id="6308" name="az értesítési területre"/>
 					<Item id="6363" name="renderelési mód"/>
+					<Item id="6365" name="Aut&amp;omatikus frissítés:"/>
 					<Item id="6312" name="&amp;Automatikus fájlállapot-felismerés"/>
 					<Item id="6313" name="&amp;Figyelmeztetés nélküli fájlfrissítés"/>
-					<Item id="6325" name="F&amp;rissítés után az utolsó sorhoz görgetés"/>
+					<Item id="6325" name="F&amp;rissítés után utolsó sorhoz görgetés"/>
 					<Item id="6322" name="A &amp;munkamenetfájl kiterjesztése:"/>
-					<Item id="6323" name="A &amp;Notepad++ automatikus frissítésének engedélyezése"/>
 					<Item id="6324" name="Dokumentumváltó panel (Ctrl + Tab)"/>
 					<Item id="6331" name="&amp;Csak a fájlnév megjelenítése a címsorban"/>
 					<Item id="6334" name="Au&amp;tomatikus karakterkódolás-felismerés"/>
@@ -1367,7 +1381,7 @@
 					<Item id="6117" name="A &amp;legutóbbi használat sorrendjével"/>
 					<Item id="6344" name="Dokumentum-előnézet"/>
 					<Item id="6345" name="Előné&amp;zeti kép a dokumentumfülön"/>
-					<Item id="6346" name="Me&amp;gjelenítés a „Dokumentumtérkép”-en"/>
+					<Item id="6346" name="Me&amp;gjelenítés itt: „Dokumentumtérkép”"/>
 					<Item id="6360" name="Az &amp;összes hang némítása"/>
 					<Item id="6361" name="Megerő&amp;sítés kérése „Az összes mentése” esetén"/>
 				</MISC>
@@ -1400,10 +1414,10 @@
 				</ComboBox>
 				<Item id="2036" name="&amp;Számok ismétlése:"/>
 				<Item id="2032" name="Formátum (számrendszer)"/>
-				<Item id="2024" name="&amp;Decimális (10-es)"/>
-				<Item id="2025" name="Ok&amp;tális (8-as)"/>
-				<Item id="2026" name="&amp;Hexadec. (16-os)"/>
-				<Item id="2027" name="B&amp;ináris (2-es)"/>
+				<Item id="2024" name="&amp;Dec (10-es)"/>
+				<Item id="2025" name="Ok&amp;t (8-as)"/>
+				<Item id="2026" name="&amp;Hex (16)"/>
+				<Item id="2027" name="B&amp;in (2-es)"/>
 				<Item id="1" name="&amp;OK"/>
 				<Item id="2" name="&amp;Mégse"/>
 			</ColumnEditor>
@@ -1447,23 +1461,23 @@ Ebben az esetben a „Gépház” párbeszédpanel „Egyéb” szakasza alatt k
 			<!-- $INT_REPLACE$ is a place holder, don't translate it -->
 			<ContextMenuXmlEditWarning title="Felugró menü szerkesztése" message="A contextMenu.xml fájl szerkesztésével a Notepad++ helyi menüje módosítható.
 A fájl mentése után a módosítások érvénybe léptetéséhez a Notepad++ újraindítása szükséges."/>
-			<SaveCurrentModifWarning title="Módosítások javasolt mentése" message="Javasoljuk a jelenlegi módosítások mentését.
+			<SaveCurrentModifWarning title="A módosítások mentése javasolt" message="Javasoljuk a jelenlegi módosítások mentését.
 Az elmentett módosítások nem vonhatók vissza.
 
-Kívánja folytatni?"/><!-- HowToReproduce: when you openned file is modified but unsaved yet, and you are changing file encoding. -->
+Biztosan folytatja?"/><!-- HowToReproduce: when you openned file is modified but unsaved yet, and you are changing file encoding. -->
 			<LoseUndoAbilityWarning title="A visszavonás lehetőségének elvesztése" message="Javasoljuk a jelenlegi módosítások mentését.
 Az elmentett módosítások nem vonhatók vissza.
 
-Kívánja folytatni?"/><!-- HowToReproduce: when you openned file is modified and saved, then you are changing file encoding. -->
+Biztosan folytatja?"/><!-- HowToReproduce: when you openned file is modified and saved, then you are changing file encoding. -->
 			<CannotMoveDoc title="Áthelyezés új alkalmazáspéldányba" message="A dokumentum módosítva lett. Kérjük, mentse el, majd próbálja újra"/><!-- HowToReproduce: From your Notepad++ drag & drop a clean (not dirty) file to outside of Notepad++, another instance of Notepad++ will be created. Then from your first Notepad++ drag & drop an unsaved file to the new instance. -->
-			<DocReloadWarning title="A fájl újratöltése" message="Szeretné újratölteni az aktuális fájlt? Ezzel elvesznek a Notepad++-ban végzett módosítások"/>
+			<DocReloadWarning title="A fájl újratöltése" message="Biztosan újratölti az aktuális fájlt? Ezzel elvesznek a Notepad++-ban végzett módosítások"/>
 			<FileLockedWarning title="Sikertelen mentés" message="Kérjük, ellenőrizze, hogy a fájl nincs-e megnyitva másik alkalmazásban"/>
 			<FileAlreadyOpenedInNpp title="Sikertelen mentés" message="A fájl már meg van nyitva a Notepad++-ban"/><!-- HowToReproduce: Open a new document and open a file "c:/tmp/foo", save this new document by choosing "c:/tmp/foo" as file to save, reply the override popup "yes", then this message appears. -->
 			<RenameTabTemporaryNameAlreadyInUse title="Sikertelen átnevezés" message="A megadott név már használatban van egy másik fülön"/><!-- HowToReproduce: Rename the tab of an untitled document and provide a name that is the same as an already-existing tab of an untitled document. -->
 			<RenameTabTemporaryNameIsEmpty title="Sikertelen átnevezés" message="A megadott név nem lehet üres, illetve nem tartalmazhat csak szóköz(öke)t vagy tabulátor(oka)t"/><!-- HowToReproduce: Rename the tab of an untitled document and provide an empty string or only some white speces. -->
 			<DeleteFileFailed title="Sikertelen törlés" message="A fájl törlése sikertelen"/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 
-			<NbFileToOpenImportantWarning title="Nagy mennyiségű fájl megnyitása" message="$INT_REPLACE$ fájlt kíván megnyitni.
+			<NbFileToOpenImportantWarning title="Nagy mennyiségű fájl megnyitása" message="$INT_REPLACE$ fájlt szeretne megnyitni.
 Biztosan megnyitja mindet?"/><!-- HowToReproduce: Check "Open all files of folder instead of launching Folder as Workspace on folder dropping" in "Default Directory" of Preferences dialog, then drop a folder which contains more then 200 files into Notepad++. -->
 			<SettingsOnCloudError title="Beállítások tárolása felhőben" message="Úgy tűnik, a felhőtárhely helyi elérési útja írásvédett meghajtóra mutat,
 vagy pedig a megadott mappához írási jogosultság szükséges.
@@ -1493,10 +1507,10 @@ A művelet végrehajtásához a „Gépház” párbeszédpanel „Alapértelmez
 Megtartja a fájlt a szerkesztőben?"/>
 			<DoDeleteOrNot title="Fájl törlése" message="A(z) „$STR_REPLACE$” fájl
 át lesz helyezve a Lomtárba, ez a dokumentum pedig bezáródik.
-Kívánja folytatni?"/>
+Biztosan folytatja?"/>
 			<NoBackupDoSaveFile title="Mentés" message="A biztonságimentés-fájl nem található (Notepad++-on kívülről törölve).
 Mentés nélkül az adatok el fognak veszni.
-El kívánja menteni a(z) „$STR_REPLACE$” fájlt?"/>
+El szeretné menteni a(z) „$STR_REPLACE$” fájlt?"/>
 			<DoReloadOrNot title="Újratöltés" message="„$STR_REPLACE$”
 
 Ezt a fájlt módosította egy másik alkalmazás.
@@ -1514,7 +1528,7 @@ Meglátogatja a Notepad++ weboldalát a legújabb verzió letöltéséhez?"/><!-
 			<FileTooBigToOpen title="Fájlméretprobléma" message="A fájl túl nagy ahhoz, hogy a Notepad++ megnyithassa azt"/><!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
 			<FileLoadingException title="Kivétel hibakódja: $STR_REPLACE$" message="Hiba történt a fájl betöltésekor!"/>
 			<WantToOpenHugeFile title="Figyelmeztetés nagyméretű fájl megnyitására" message="Egy 2 GB-nál is nagyobb fájl megnyitása több percbe is telhet.
-Meg kívánja nyitni?"/>
+Biztosan megnyitja?"/>
 			<CreateNewFileOrNot title="Új fájl létrehozása" message="A(z) „$STR_REPLACE$” nem létezik. Létrehozza?"/>
 			<CreateNewFileError title="Új fájl létrehozása" message="A(z) „$STR_REPLACE$” fájl nem hozható létre"/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 			<OpenFileError title="Hiba" message="A(z) „$STR_REPLACE$” fájl nem nyitható meg"/>
@@ -1525,16 +1539,16 @@ A(z) „$STR_REPLACE2$” mappa nem létezik"/>
 Mindenesetre el szeretné menteni a jelenlegi fájlt?"/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 			<LoadStylersFailed title="A stylers.xml betöltése sikertelen" message="A(z) „$STR_REPLACE$” betöltése nem sikerült!"/>
 			<LoadLangsFailed title="Beállításkezelő" message="Nem sikerült a langs.xml betöltése!
-Helyre kívánja állítani a langs.xml fájlt?"/><!-- HowToReproduce: Close Notepad++. Use another editor to make "langs.xml" an invalid xml file then save it. Open Notepad++. -->
+Helyre szeretné állítani a langs.xml fájlt?"/><!-- HowToReproduce: Close Notepad++. Use another editor to make "langs.xml" an invalid xml file then save it. Open Notepad++. -->
 			<LoadLangsFailedFinal title="Beállításkezelő" message="Nem sikerült a langs.xml betöltése!"/><!-- HowToReproduce: Close Notepad++. Use another editor to make "langs.xml" an invalid xml file then save it. Open Notepad++. -->
 			<FolderAsWorspaceSubfolderExists title="Probléma mappa hozzáadásakor a „Mappa mint munkaterület”-hez" message="A hozzáadni kívánt könyvtárnak már létezik itt almappája.
 Kérjük, távolítsa el a panelről az almappát, mielőtt hozzáadja a következő könyvtárat: „$STR_REPLACE$”"/><!-- HowToReproduce: Add a folder like "c:\temp\aFolder\" into "Folder as Workspace" panel, then try to add "c:\temp\". -->
 
-			<ProjectPanelChanged title="$STR_REPLACE$" message="Változott a munkaterület. Kívánja menteni?"/>
+			<ProjectPanelChanged title="$STR_REPLACE$" message="Változott a munkaterület. Szeretné menteni?"/>
 			<ProjectPanelSaveError title="$STR_REPLACE$" message="Hiba történt a munkaterületi fájlba íráskor.
 Nem sikerült menteni a munkaterületet"/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
-			<ProjectPanelOpenDoSaveDirtyWsOrNot title="Munkaterület megnyitás" message="Változott a jelenlegi munkaterület. Kívánja menteni az aktuális projektet?"/>
-			<ProjectPanelNewDoSaveDirtyWsOrNot title="Új munkaterület" message="Változott a jelenlegi munkaterület. Kívánja menteni az aktuális projektet?"/>
+			<ProjectPanelOpenDoSaveDirtyWsOrNot title="Munkaterület megnyitás" message="Változott a jelenlegi munkaterület. Szeretné menteni az aktuális projektet?"/>
+			<ProjectPanelNewDoSaveDirtyWsOrNot title="Új munkaterület" message="Változott a jelenlegi munkaterület. Szeretné menteni az aktuális projektet?"/>
 			<ProjectPanelOpenFailed title="Új munkaterület" message="A munkaterület nem nyitható meg.
 Úgy tűnik, a megnyitandó fájl nem érvényes projektfájl"/>
 			<ProjectPanelRemoveFolderFromProject title="Mappa eltávolítása a projektből" message="Az összes altétel el lesz távolítva.
@@ -1542,7 +1556,7 @@ Biztosan eltávolítja ezt a mappát a projektből?"/>
 			<ProjectPanelRemoveFileFromProject title="Fájl eltávolítása a projektből" message="Biztosan eltávolítja ezt a fájlt a projektből?"/>
 			<ProjectPanelReloadError title="Munkaterület újratöltése" message="Nem található a fájl az újratöltéshez"/>
 			<ProjectPanelReloadDirty title="Munkaterület újratöltése" message="Változott a jelenlegi munkaterület. Az újratöltés minden módosítást el fog vetni.
-Kívánja folytatni?"/>
+Biztosan folytatja?"/>
 			<UDLNewNameError title="Felhasználóinyelv-hiba" message="Ezt a nevet már másik nyelv már használja;
 kérjük, adjon meg más elnevezést"/>
 			<UDLRemoveCurrentLang title="Az aktuális nyelv eltávolítása" message="Biztos benne?"/>
@@ -1551,39 +1565,41 @@ kérjük, adjon meg más elnevezést"/>
 			<UDL_saveBeforeImport title="Felhasználói nyelvek" message="Exportálás előtt, kérjük, mentse el a felhasználói nyelvet a „Klónozás…” gombra kattintva"/> <!-- HowToReproduce: Choose "User Defined Language" in User Language combobox, then click on "Export... button". -->
 			<UDL_exportSuccessful title="Felhasználói nyelvek" message="Sikeres exportálás"/>
 			<UDL_exportFails title="Felhasználói nyelvek" message="Sikertelen exportálás"/>
-			<SCMapperDoDeleteOrNot title="Billentyűparancs" message="Biztosan el kívánja távolítani ezt a billentyűparancsot?"/>
+			<SCMapperDoDeleteOrNot title="Billentyűparancs" message="Biztosan eltávolítja ezt a billentyűparancsot?"/>
 			<FindCharRangeValueError title="Értéktartomány-probléma" message="Kérjük, egy 0 és 255 közötti értéket adjon meg"/> <!-- HowToReproduce: Search menu, then Find characters in range, select Custom range, enter 999 in either edit box, press Find. -->
 			<OpenInAdminMode title="Sikertelen mentés" message="A fájl mentése sikertelen volt; lehet, hogy védett.
-El kívánja indítani a Notepad++-t rendszergazdaként?"/>
+El szeretné indítani a Notepad++-t rendszergazdaként?"/>
 			<OpenInAdminModeWithoutCloseCurrent title="Sikertelen mentés" message="A fájl mentése sikertelen volt; lehet, hogy védett.
-El kívánja indítani a Notepad++-t rendszergazdaként?"/>
+El szeretné indítani a Notepad++-t rendszergazdaként?"/>
 			<OpenInAdminModeFailed title="A rendszergazdaként futtatás sikertelen" message="A Notepad++ nem futtatható rendszergazdaként."/><!-- HowToReproduce: When you have no Admin privilege and you try to save a modified file in a protected location (for example: any file in sub-folder of "C:\Program Files\". This message will appear after replying "Yes" to "Open in Admin mode" dialog. -->
 			<ViewInBrowser title="A jelenlegi fájl megnyitása böngészőben" message="Az alkalmazás nem található a rendszerben"/>
 			<ExitToUpdatePlugins title="A Notepad++ bezárása következik" message="Ha az IGEN-re kattint, a műveletek folytatásához Ön kilép a Notepad++-ból.
 A műveletek elvégzése után a Notepad++ újraindul.
-Kívánja folytatni?"/>
+Szeretné folytatni?"/>
 			<NeedToRestartToLoadPlugins title="A Notepad++ újraindítást igényel" message="A telepített bővítmények betöltéséhez a Notepad++ újraindítása szükséges"/><!-- HowToReproduce: Import a plugin via menu "Settings->Import->Import Plugin(s)...". -->
 			<ChangeHistoryEnabledWarning title="A Notepad++ újraindítást igényel" message="A változáselőzmények megjelenítéséhez a Notepad++ újraindítása szükséges"/><!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
 			<WindowsSessionExit title="Notepad++ - kilépés a Windows-munkamenetből" message="A Windows-munkamenet hamarosan leáll, de néhány adat nincs mentve. Szeretne most kilépni a Notepad++ alkalmazásból?"/>
 			<LanguageMenuCompactWarning title="Kompakt „Nyelv” menü" message="Ez a beállítás a következő indításkor lép érvénybe"/><!-- HowToReproduce: toggle "Make language menu compact" via Preferences dialog "Language/Language Menu. -->
 			<SwitchUnsavedThemeWarning title="A(z) „$STR_REPLACE$” stílus módosítása" message="A nem mentett módosítások el lesznek vetve!
-Kívánja menteni a módosításokat témaváltás előtt?"/><!-- HowToReproduce: In the Style Configurator dialog change some theme and switch to other theme without saving. -->
+Szeretné menteni a módosításokat témaváltás előtt?"/><!-- HowToReproduce: In the Style Configurator dialog change some theme and switch to other theme without saving. -->
 			<MacroAndRunCmdlWarning title="Kompatibilitás: „Makrók” és „Programok (Parancsok) futtatása”" message="Előfordulhat, hogy a Notepad++ 8.5.2-es (vagy régebbi) verziójával mentett, „Makrók” és „Programok (Parancsok) futtatása” alatti műveletek nem kompatibilisek a Notepad++ jelenlegi verziójával.
 Kérjük, tesztelje ezeket a parancsokat, és ha szükséges, szerkessze újra őket.
 
 Alternatív megoldásként visszaválthat Notepad++ v8.5.2-re, és visszaállíthatja a korábbi adatokat.
 A Notepad++ biztonsági másolatot készít a régi „shortcuts.xml” fájlról, és elmenti azt „shortcuts.xml.v8.5.2.backup” néven.
 Egy „shortcuts.xml.v8.5.2.backup” » „shortcuts.xml” átnevezéssel a parancsokat sikeresen vissza kell tudnia állítani, és azoknak megfelelően működniük kell."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
+			<FullReadOnlySavingForbidden title="Sikertelen mentés" message="Nem menthető el a fájl.
+A Notepad++ az összes dokumentumot csak olvashatóként kezeli, ami megakadályozza a fájl mentését"/>
 			<NotEnoughRoom4Saving title="Sikertelen mentés" message="Nem sikerült menteni a fájlt.
 Úgy tűnik, nincs elég hely a lemezen a fájl mentéséhez. A fájl nem lett elmentve."/>
 			<FileInaccessibleUserSession title="A fájl(ok) elérése sikertelen" message="Nem érhető el egy vagy több fájl a kézzel mentett munkamenetben: „$STR_REPLACE$”. Ezek ugyanakkor megnyithatók helykitöltő üres és csak olvasható dokumentumokként.
 
-Létre kívánja hozni ezeket a helykitöltőket?
+Létre szeretné hozni ezeket a helykitöltőket?
 
 MEGJEGYZÉS: ha úgy dönt, hogy nem hoz létre helykitöltő dokumentumokat, esetleg később bezárja őket, kézzel mentett munkamenete NEM lesz módosítva kilépéskor."/>
 			<FileInaccessibleDefaultSessionXml title="A fájl(ok) elérése sikertelen" message="Nem érhető el az előző munkamenet egy vagy több fájlja. Ezek ugyanakkor megnyithatók helykitöltő üres és csak olvasható dokumentumokként.
 
-Létre kívánja hozni ezeket a helykitöltőket?
+Létre szeretné hozni ezeket a helykitöltőket?
 
 MEGJEGYZÉS: ha úgy dönt, hogy nem hoz létre helykitöltő dokumentumokat, esetleg később bezárja őket, munkamenete MÓDOSÍTVA LESZ KILÉPÉSKOR! Javasoljuk, hogy mielőbb készítsen biztonsági mentést a „session.xml” fájlról."/>
 			<RTLvsDirectWrite title="Nem használható a „jobbról balra” szövegirány" message="A „jobbról balra” (RTL) szövegirány nem kompatibilis a DirectWrite móddal. Kérjük, kapcsolja ki a DirectWrite-ot a „Gépház” párbeszédpanel „Egyéb” szakaszában, és indítsa újra a Notepad++-t."/>
@@ -1596,6 +1612,7 @@ Ha szüksége van a visszafelé történő reguláris keresésre, a Felhasznál�
 			<FindAutoChangeOfInSelectionWarning title="Keresési figyelmeztetés" message="Az „A kijelölésben” jelölőnégyzet állapota automatikusan módosítva lett.
 Kérjük, a művelet végrehajtása előtt ellenőrizze a keresési feltételeket"/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="A Notepad++ újraindítása szükséges" message="Újra kell indítani a Notepad++-t a jobb oldali parancsikonok megjelenítéséhez"/>
+			<NoAdminRight2ChangeReadOnlyFileAttribute title="A fájl csak olvasható attribútumának megváltoztatása sikertelen" message="Kérjük, futtassa a Notepad++-t rendszergazdaként a fájl attribútumának módosításához"/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Vágólap-előzmények"/>
@@ -1612,6 +1629,7 @@ Kérjük, a művelet végrehajtása előtt ellenőrizze a keresési feltételeke
 			<ColumnPath name="Mappa"/>
 			<ColumnType name="Típus"/>
 			<ColumnSize name="Méret"/>
+			<ColumnDateTime name="Módosítva"/>
 			<NbDocsTotal name="Dokumentumok száma:"/>
 			<MenuCopyName name="Név: kijelölt(ek) másolása"/>
 			<MenuCopyPath name="Mappa: kijelölt teljes útvonal(ak) másolása"/>
@@ -1795,13 +1813,13 @@ Keresés minden fájlban – kivéve rekurzívan a log vagy logs mappákat:
 			<progress-cancel-info value="Művelet megszakítása; kérjük, várjon…"/>
 			<find-in-files-progress-title value="A fájlokban keresés folyamatban…"/>
 			<replace-in-files-confirm-title value="Biztos benne?"/>
-			<replace-in-files-confirm-directory value="Biztosan cserélni kívánja az összes előfordulást az alábbi mappában?"/>
+			<replace-in-files-confirm-directory value="Biztosan cserélni szeretné az összes előfordulást az alábbi mappában?"/>
 			<replace-in-files-confirm-filetype value="A kapcsolódó fájlnévszűrő:"/>
 			<replace-in-files-progress-title value="A fájlokban történő csere folyamatban…"/>
 			<replace-in-projects-confirm-title value="Biztos benne?"/>
-			<replace-in-projects-confirm-message value="Biztosan cserélni kívánja a kiválasztott projektpanel(ek) mindegyik dokumentumában az összes előfordulást?"/>
+			<replace-in-projects-confirm-message value="Biztosan cserélni szeretné a kiválasztott projektpanel(ek) mindegyik dokumentumában az összes előfordulást?"/>
 			<replace-in-open-docs-confirm-title value="Biztos benne?"/>
-			<replace-in-open-docs-confirm-message value="Biztosan cserélni kívánja az összes előfordulást az összes megnyitott dokumentumban?"/>
+			<replace-in-open-docs-confirm-message value="Biztosan cserélni szeretné az összes előfordulást az összes megnyitott dokumentumban?"/>
 			<find-result-caption value="Keresési eredmények"/>
 			<find-result-title value="Keresés erre:"/><!-- Must not begin with space or tab character -->
 			<find-result-title-info value="($INT_REPLACE1$ találat összesen $INT_REPLACE2$ fájlban a(z) $INT_REPLACE3$ dokumentumból)"/>
@@ -1859,7 +1877,8 @@ Kattintson a jobb oldali „?” gombra a Felhasználói kézikönyv weboldalán
 			<!-- Don't translate "(&quot;Non-printing characters custom color&quot;)" -->
 			<npcCustomColor-tip value="Ugrás a „Stílusbeállítások” párbeszédpanelhez az adott nem látható és nem nyomtatható karakterek alapértelmezett egyéni színeinek („Non-printing characters custom color”) beállításához"/>
 			<npcIncludeCcUniEol-tip value="A nem nyomtatható karakterek megjelenési beállításainak alkalmazása a C0- és C1-vezérlőkarakterekre, ill. Unicode-sorvégjelekre (EOL – következő sor, sor-, valamint paragrafuselválasztó) is"/>
-			<searchingInSelThresh-tip value="Ha a szerkesztési felületen legalább ennyi karakter ki van jelölve, akkor a „Keresés” párbeszédpanel aktiválásakor a panel „A kijelölésben” jelölőnégyzete automatikusan be lesz pipálva. A legmagasabb érték 1024. Az automatikus bejelölés kikapcsolásához állítsa az értéket 0-ra"/>
+			<searchingInSelThresh-tip value="Ha a szerkesztési felületen legalább ennyi karakter ki van jelölve, akkor a „Keresés” párbeszédpanel aktiválásakor a panel „A kijelölésben” jelölőnégyzete automatikusan be lesz pipálva. A legmagasabb érték $INT_REPLACE$. Az automatikus bejelölés kikapcsolásához állítsa az értéket 0-ra"/>
+			<searchingFillFindWhat-tip value="Ha a szerkesztési felületen legfeljebb ennyi karakter van kijelölve, egy „Keresés” (Ctrl + F) indításakor a „Keresendő” mező automatikusan ki lesz töltve. A maximális érték $INT_REPLACE$, ami a „Keresendő” mező (rendszer által korlátozott) maximális mérete"/>
 			<verticalEdge-tip value="Hozzon létre egy vagy több sorhosszúság-jelölőt, egész számmal meghatározva azok pozícióját. Több ilyen jelölőt is megadhat, ha a különböző számokat üres karakterrel (szóközzel) választja el egymástól"/>
 			<fileSaveAsCopySaveButton-tip value="A mentés utáni másolat megnyitásához tartsa lenyomva a Shift billentyűt, miközben lenyomja a Mentés gombot"/>
 			<autoIndentBasic-tip value="Annak biztosítása, hogy az aktuális sor (azaz az ENTER billentyű lenyomásával létrehozott új sor) behúzása megegyezik az előző sor behúzásával"/>
@@ -1883,6 +1902,13 @@ Ha a „Haladó szintű” módot választja, de nem a fenti nyelvek fájljait s
 			<statusbar-Sel value="Kij.: "/>
 			<statusbar-Sel-number value="Kij."/>
 			<toolbar-accent-tip value="A beállítással az eszköztár ikonjaira a Windows kiemelőszíne alkalmazható. A kiemelőszín egy, a Windows gombjaiban, szegélyeiben és a Start menüben az elemek hangsúlyozására használt szín. A módosításhoz kattintson a ⚙ Beállítások » Személyre szabás » Színek lehetőségre, majd válassza ki a kívánt Kiemelőszínt"/>
+			<len-limit-exceeded-tip value="Karakterkorlát túllépve: előfordulhat, hogy a felvett szöveg meghaladja a megengedett hosszúságot, emiatt lehet, hogy rövidítve lesz, valamint a levágott részt nem menti a rendszer a következő munkamenethez"/>
+			<max-len-on-search-tip value="Előfordulhat, hogy a felvett szöveg meghaladja a megengedett hosszúságot, emiatt lehet, hogy rövidítve lesz, valamint a levágott részt nem menti a rendszer a következő munkamenethez"/>
+			<max-len-on-save-tip value="A felvett szöveg rendkívül hosszú, emiatt előfordulhat, hogy nem lehet teljesen menteni a következő munkamenethez"/>
+			<goto-setting-tip value="Keresés a beállítások között"/>
+			<tabbar-tabcompactlabellen-tip value="A terjedelmes lapnevek hosszának korlátozása. A megadott érték alkalmazásához nyomjon Entert. Értéktartomány: 1–257 karakter (a 0 kikapcsolja a levágást)"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>
+
+

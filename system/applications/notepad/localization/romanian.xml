@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
  <!--
--    Traducerea în română pentru Notepad++ 8.8.1
--    Ultima modificare a fost făcută 17 iunie 2025 de către Miloiu Andrei-Valentin
+-    Traducerea în română pentru Notepad++ 8.8.3
+-    Ultima modificare a fost făcută 01 august 2025 de către Miloiu Andrei-Valentin
 	 Modificările din 30 ianuarie 2019 au fost făcute de către Barna Cosmin Marian
      Pentru actualizări vizitați: https://github.com/notepad-plus-plus/notepad-plus-plus/tree/master/PowerEditor/installer/nativeLang -->
 <NotepadPlus>
-    <Native-Langue name="Romanian" filename="romanian.xml" version="8.8.1">
+    <Native-Langue name="Romanian" filename="romanian.xml" version="8.8.3">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -1130,6 +1130,7 @@
                     <Item id="6419" name="Document nou"/>
                     <Item id="6420" name="Se aplică la fișierele ANSI deschise"/>
 					<Item id="6432" name="Deschide întotdeauna un document nou în plus la pornire"/>
+					<Item id="6433" name="Folosește prima linie a documentului ca nume de filă fără titlu"/>
                 </NewDoc>
 
                 <DefaultDir title="Folder implicit">
@@ -1379,14 +1380,19 @@
 						<Element name="DirectWrite (desenează în GDI DC)"/>
 						<Element name="DirectWrite (cu DirectX 11)"/>
 					</ComboBox>
+					<ComboBox id="6364">
+						<Element name="Dezactivare"/>
+						<Element name="Activează la pornirea Notepad++"/>
+						<Element name="Activează la ieșirea din Notepad++"/>
+					</ComboBox>
 					<Item id="6308" name="bara de sistem"/>
 					<Item id="6363" name="modul de randare"/>
+					<Item id="6365" name="Actualizare automată:"/>
 					<Item id="6362" name="Închide în bara de sistem"/>
                     <Item id="6312" name="Detectează automat starea fișierului"/>
                     <Item id="6313" name="Actualizare silențioasă"/>
                     <Item id="6325" name="Derulează la ultima linie după actualizare"/>
                     <Item id="6322" name="Extensie a fișierului de sesiune:"/>
-                    <Item id="6323" name="Activează actualizarea automată a Notepad++"/>
                     <Item id="6324" name="Comutator de documente (Ctrl+TAB)"/>
                     <Item id="6331" name="Afișează numai numele fișierului în bara de titlu"/>
                     <Item id="6334" name="Detectează automat codificarea caracterelor"/>
@@ -1630,6 +1636,7 @@ Dacă ai nevoie de funcția de căutare inversă regex, consultă manualul utili
 			<FindAutoChangeOfInSelectionWarning title="Avertisment de căutare" message="Starea casetei de selectare &quot;În selecție&quot; a fost modificată automat.
 Te rugăm să verifici condiția de căutare înainte de a efectua acțiunea."/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="Notepad++ trebuie repornit" message="Notepad++ trebuie repornit ca să afișeze comenzile rapide (scurtăturile) din meniul din dreapta."/>
+			<NoAdminRight2ChangeReadOnlyFileAttribute title="Schimbarea atributului de tip Doar în citire (Numai în citire) a fișierului a eșuat" message="Te rugăm să rulezi Notepad++ ca administrator pentru schimbarea atributului."/>
 		</MessageBox>
         <ClipboardHistory>
             <PanelTitle name="Istoricul clipboard-ului"/>
@@ -1927,6 +1934,9 @@ Dacă selectezi modul avansat, dar nu editezi fișiere în limbile menționate m
  			<statusbar-Sel value="Sel: "/>
  			<statusbar-Sel-number value="Sel"/>
 			<toolbar-accent-tip value="Această opțiune face ca pictogramele tale din bara de instrumente să urmeze culoarea de accent a sistemului Windows. Culoarea de accent este culoarea de evidențiere folosită la butoane, chenare și borduri din meniul Start din Windows. Ca să o schimbi, mergi la Setări &gt; Personalizare &gt; Culori, apoi selectează-ți culoarea de accent preferată."/>
+			<max-len-on-search-tip value="Sunt permise doar caractere $INT_REPLACE$ pentru lungimea textului de căutare/înlocuire - datele introduse de tine ar putea fi trunchiate și nu vor fi salvate pentru următoarea sesiune."/>
+			<max-len-on-save-tip value="Această intrare de căutare (> $INT_REPLACE$ caractere) nu va fi salvată pentru următoarea sesiune."/>
+			<goto-setting-tip value="Găsește-ți setarea aici"/>
 		</MiscStrings>
     </Native-Langue>
 </NotepadPlus>
