@@ -1,3 +1,29 @@
+Notepad++ v8.9.3 regression fixes, bug-fixes & new improvements:
+
+ 1. Regression fix: a crash in User Defined Language.
+ 2. Regression fix: installing (or removing) plugin re-opens Notepad++ with permanent admin privilege.
+ 3. Regression-fix: wrongly added parenthesis for some multi-bytes characters.
+ 4. Regression-fix: incorrect function list text display for non-UTF8 documents.
+ 5. Regression-fix: ProjectPanel Workspace text localization issue.
+ 6. Regression-fix: Change History margin not enabled by default.
+ 7. Regression-fix: Notepad++ update & plugin download fail behind corporate MITM proxies.
+ 8. Security enhancement: Update cURL to v8.19.0 in auto-updater (WinGUp) to fix cURL security issue (CVE-2025-14819).
+ 9. Improve performance by migrating the XML parser from TinyXML to pugixml.
+10. Update Scintilla to 5.6.0 & Lexilla to 5.4.7.
+11. Fix the issue where printing caused Notepad++ to crash.
+12. Fix Find in Files failing to search file content on disk.
+13. Add disableNppAutoUpdate.xml to disable auto-update when WinGUp (GUP.exe) is present.
+14. Fix a memory leak on exit.
+15. Fix installed auto-completion files not overwritten after update.
+16. Add model capacity of shortcuts.xml & contexMenu.xml for administration.
+17. Add an option to disable selected text drag-and-drop.
+18. Fix wrong theme-writing path for non-ProgramFiles installations.
+19. Enhancement: prevent XML config files from being overwritten when updating portable package (copy/paste).
+20. Fix incomplete Find dialg tab translation when 1st opêned from Project Panels.
+21. Fix Notepad++ spawning a new Windows Explorer process in Task Manager.
+22. Add Function List & Autocompletion for D language.
+
+
 Notepad++ v8.9.2 regression fixes, bug-fixes & new improvements:
 
  1. Security enhancement: Make updater check interity & authenticity of server-returned XML (XMLDsig).
@@ -28,7 +54,7 @@ Notepad++ v8.9.1 regression fixes, bug-fixes & new improvements:
 
 
 Get more info on
-https://notepad-plus-plus.org/downloads/v8.9.2/
+https://notepad-plus-plus.org/downloads/v8.9.3/
 
 
 Included plugins:
@@ -40,4 +66,4 @@ Included plugins:
 
 Updater (Installer only):
 
-* WinGUp (for Notepad++) v5.4
+* WinGUp (for Notepad++) v5.4.1

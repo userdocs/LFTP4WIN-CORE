@@ -65,18 +65,8 @@ How to build it?
 
  * Step 1: You have to build cURL before building WinGUp:
 
-    1. Open VS2022 Native Tool Command for 32/64 bits. If you want to build for ARM, open a cmd, and run the following command:<br/>
-       `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsamd64_arm64.bat`
-    2. Go to winbuild directory under curl directory:<br/>
-       `cd <your WinGUp source path>\curl\winbuild\` then run:
-       `set WINBUILD_ACKNOWLEDGE_DEPRECATED=yes`
-    3. Compile cURL by using one of the following commands, according the mode and architecture of WinGUp you want to build.
-       - x64 release: `nmake /f Makefile.vc mode=static vc=15 RTLIBCFG=static MACHINE=x64`
-       - x64 debug: `nmake /f Makefile.vc mode=static vc=15 RTLIBCFG=static DEBUG=yes MACHINE=x64`
-       - x86 release: `nmake /f Makefile.vc mode=static vc=15 RTLIBCFG=static MACHINE=x86`
-       - x86 debug: `nmake /f Makefile.vc mode=static vc=15 RTLIBCFG=static DEBUG=yes MACHINE=x86`
-       - ARM64 release: `nmake /f Makefile.vc mode=static vc=15 RTLIBCFG=static MACHINE=ARM64`
-       - ARM64 debug: `nmake /f Makefile.vc mode=static vc=15 RTLIBCFG=static DEBUG=yes MACHINE=ARM64`
+    1. Open Visual Studio Native Tool Command.
+    2. Go to WinGUp source directory and run "buildCurlAll.bat".
 
  * Step 2: Open [`vcproj\GUP.sln`](https://github.com/gup4win/wingup/blob/master/vcproj/GUP.sln) with VS2022.
  
