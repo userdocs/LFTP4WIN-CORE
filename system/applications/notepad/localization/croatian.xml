@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
 	Croatian localization for Notepad++
-	Updated: February 11, 2026 by Elvis Gambiraža (el.gambo@gmail.com)
+	Updated: September 16, 2026 by Elvis Gambiraža (el.gambo@gmail.com)
 	All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="Hrvatski" filename="croatian.xml" version="8.9">
+	<Native-Langue name="Hrvatski" filename="croatian.xml" version="8.9.8">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -90,6 +90,7 @@
 					<Item id="41002" name="&amp;Otvori..."/>
 					<Item id="41019" name="U &amp;Eksploreru"/>
 					<Item id="41020" name="U &amp;naredbenom retku"/>
+					<Item id="41027" name="U PowerShellu"/>
 					<Item id="41025" name="U &amp;mapi kao radnom prostoru"/>
 					<Item id="41003" name="&amp;Zatvori"/>
 					<Item id="41004" name="Z&amp;atvori sve"/>
@@ -199,7 +200,7 @@
 					<Item id="42052" name="Povi&amp;jest međuspremnika"/>
 					<Item id="42025" name="&amp;Spremi upravo snimljeni makro..."/>
 					<Item id="42026" name="&amp;Smjer teksta s desna na lijevo"/>
-					<Item id="42027" name="&amp;Smjer teksta s lijeva na desno"/>
+					<Item id="42027" name="Smjer teksta s &amp;lijeva na desno"/>
 					<Item id="42028" name="Samo za čitanje u trenutačnom dokumentu"/>
 					<Item id="42102" name="Samo za čitanje za sve dokumente"/>
 					<Item id="42103" name="Očisti samo za čitanje za sve dokumente"/>
@@ -296,6 +297,7 @@
 					<Item id="44024" name="U&amp;manji (Ctrl + kotačić miša dolje)"/>
 					<Item id="44025" name="Prikaži &amp;razmake i tabulatore"/>
 					<Item id="44026" name="Prikaži &amp;kraj retka"/>
+					<Item id="44027" name="&amp;Sinkroniziraj među prikazima"/>
 					<Item id="44029" name="R&amp;azmotaj sve razine"/>
 					<Item id="44030" name="Sm&amp;otaj trenutnu razinu"/>
 					<Item id="44031" name="Razmo&amp;taj trenutnu razinu"/>
@@ -407,6 +409,7 @@
 					<Item id="48511" name="Generiraj iz &amp;datoteka..."/>
 					<Item id="48512" name="Generiraj iz &amp;izbora u međuspremnik"/>
 					<Item id="49000" name="&amp;Pokreni..."/>
+					<Item id="49001" name="Validiraj shortcuts.&amp;xml"/>
 
 					<Item id="50000" name="Dopunjavanje &amp;funkcija"/>
 					<Item id="50001" name="Dopunjavanje &amp;riječi"/>
@@ -448,6 +451,7 @@
 				<Item CMDID="1" name="Otvori mapu"/>
 				<Item CMDID="41019" name="Otvori mapu s trenutnom datotekom u Eksploreru"/>
 				<Item CMDID="41020" name="Otvori mapu s trenutnom datotekom u naredbenom retku"/>
+				<Item CMDID="41027" name="Otvori mapu s trenutnom datotekom u PowerShellu"/>
 				<Item CMDID="41025" name="Otvori mapu s trenutnom datotekom kao radni prostor"/>
 				<Item CMDID="41023" name="Otvori u zadanom pregledniku"/>
 				<Item CMDID="41017" name="Preimenuj..."/>
@@ -538,6 +542,7 @@
 				<Item id="1681" name="Pronađi: "/>
 				<Item id="1685" name="Razlikuj &amp;velika i mala slova"/>
 				<Item id="1690" name="Označi &amp;sva pojavljivanja"/>
+				<Item id="1691" name="&amp;Izbroji"/>
 			</IncrementalFind>
 
 			<FindCharsInRange title="Pronađi znakove u rasponu...">
@@ -617,7 +622,7 @@
 				<Item id="1934" name="&amp;Kopiraj u međuspremnik"/>
 				<Item id="2" name="&amp;Zatvori"/>
 			</SHA512FromTextDlg>
-			<PluginsAdminDlg title="Uređivanje dodataka" titleAvailable="Dostupno" titleUpdates="Ažuriranja" titleInstalled="Instalirano" titleIncompatible="Nekompatibilno">
+			<PluginsAdminDlg title="Uređivanje dodataka" titleAvailable="Dostupno" titleUpdates="Ažuriranja" titleInstalled="Instalirano" titleIncompatible="Nekompatibilno" titleDisabled="Deaktivirano">
 				<ColumnPlugin name="Dodatak"/>
 				<ColumnVersion name="Verzija"/>
 				<Item id="5501" name="&amp;Traži:"/>
@@ -627,6 +632,8 @@
 				<Item id="5508" name="&amp;Sljedeće"/>
 				<Item id="5509" name="Verzija popisa dodataka: "/>
 				<Item id="5511" name="Spremište popisa dodataka"/>
+				<Item id="5512" name="&amp;Deaktiviraj"/>
+				<Item id="5513" name="A&amp;ktiviraj"/>
 				<Item id="2" name="Zatvori"/>
 			</PluginsAdminDlg>
 
@@ -664,6 +671,10 @@
 				</SubDialog>
 			</StyleConfig>
 
+			<ColorPopup>
+				<Item id="1" name="Više boja..."/>
+			</ColorPopup>
+
 			<ShortcutMapper title="Mapiranje tipkovnih prečaca">
 				<Item id="2602" name="Izmijeni"/>
 				<Item id="2603" name="Izbriši"/>
@@ -688,6 +699,8 @@
 				<MainCommandNames>
 					<Item id="41019" name="Otvori mapu koja sadrži trenutnu datoteku u Eksploreru"/>
 					<Item id="41020" name="Otvori mapu koja sadrži trenutnu datoteku u naredbenom retku"/>
+					<Item id="41027" name="Otvori mapu koja sadrži trenutnu datoteku u PowerShellu"/>
+					<Item id="41025" name="Otvori mapu koja sadrži trenutnu datoteku kao radni prostor"/>
 					<Item id="41021" name="Vrati nedavno zatvorenu datoteku"/>
 					<Item id="45001" name="Konverzija kraja retka (EOL) u Windows (CR LF)"/>
 					<Item id="45002" name="Konverzija kraja retka (EOL) u Unix (LF)"/>
@@ -727,10 +740,10 @@
 					<Item id="43059" name="Kopiraj tekst s oznakom 5. stila"/>
 					<Item id="43060" name="Kopiraj tekst sa svim oznakama stila"/>
 					<Item id="43061" name="Kopiraj tekst s oznakom pronađenog"/>
-					<Item id="44100" name="Otvori trenutnu datoteku u Firefoxu"/>
-					<Item id="44101" name="Otvori trenutnu datoteku u Chromeu"/>
-					<Item id="44103" name="Otvori trenutnu datoteku u IE-u"/>
-					<Item id="44102" name="Otvori trenutnu datoteku u Edgeu"/>
+					<Item id="44100" name="Otvori trenutnu datoteku u &amp;Firefoxu"/>
+					<Item id="44101" name="Otvori trenutnu datoteku u &amp;Chromeu"/>
+					<Item id="44103" name="Otvori trenutnu datoteku u &amp;IE-u"/>
+					<Item id="44102" name="Otvori trenutnu datoteku u &amp;Edgeu"/>
 					<Item id="50003" name="Prijeđi na prethodni dokument"/>
 					<Item id="50004" name="Prijeđi na sljedeći dokument"/>
 					<Item id="44051" name="Smotaj razinu 1"/>
@@ -1033,6 +1046,7 @@
 					<Item id="6239" name="Zadrži izbor nakon desnog klika izvan izbora"/>
 					<Item id="6245" name="Uključi virtualni prostor"/>
 					<Item id="6214" name="Omogući kopiranje/izrezivanje retka bez označavanja"/>
+					<Item id="6266" name="Onemogući povlačenje i ispuštanje odabranog teksta"/>
 					<Item id="6225" name="Primjeni korisničku boju na pozadinu odabranog teksta"/>
 					<Item id="6651" name="Indikator trenutno aktivnog retka"/>
 					<Item id="6652" name="Ništa"/>
@@ -1164,7 +1178,7 @@
 					<Item id="6311" name="tabulatore"/>
 					<Item id="6510" name="Koristi zadanu vrijednost"/>
 					<Item id="6512" name="Tipka Backspace poništava uvlake,
-					umjesto brisanja jednog razmaka"/>
+umjesto brisanja jednog razmaka"/>
 				</Indentation>
 
 				<Highlighting title="Označavanje">
@@ -1185,7 +1199,8 @@
 				</Highlighting>
 
 				<Print title="Ispisivanje">
-					<Item id="6601" name="Ispi&amp;ši brojeve redaka"/>
+					<Item id="6601" name="Ispiši &amp;brojeve redaka"/>
+					<Item id="6616" name="Ispiši &amp;formfeed kao prijelom stranice"/>
 					<Item id="6602" name="Mogućnosti boja"/>
 					<Item id="6603" name="&amp;WYSIWYG"/>
 					<Item id="6604" name="&amp;Inverzija boja"/>
@@ -1207,7 +1222,7 @@
 					<Item id="6719" name="Podnožje"/>
 					<Item id="6720" name="Lije&amp;vo"/>
 					<Item id="6721" name="Sredin&amp;a"/>
-					<Item id="6722" name="Desn&amp;o"/>
+					<Item id="6722" name="Des&amp;no"/>
 					<Item id="6723" name="Doda&amp;ti"/>
 					<ComboBox id="6724">
 						<Element name="Naziv i puni put"/>
@@ -1235,6 +1250,7 @@
 					<Item id="6910" name="Min. označenog teksta za auto. uključivanje &quot;U označenom&quot;:"/>
 					<Item id="6913" name="Ispuni polje Mapa pri traženju u datotekama prema aktivnom dokumentu"/>
 					<Item id="6916" name=": Maksimalan broj znakova za automatsko popunjavanje polja za pretraživanje iz odabira"/>
+					<Item id="6917" name="Pronađi u datotekama: Preferiraj sadržaj datoteke na disku u odnosu na otvorene međuspremnike"/>
 				</Searching>
 
 				<RecentFilesHistory title="Povijest datoteka">
@@ -1303,7 +1319,7 @@
 					<Item id="6184" name="Popis dokumenata"/>
 					<Item id="6185" name="Panel ASCII znakova"/>
 					<Item id="6186" name="Mapa kao radni prostor"/>
-					<Item id="6187" name="Projektni paneli"/>
+					<Item id="6187" name="Pro&amp;jektni paneli"/>
 					<Item id="6188" name="Pregledni prikaz dokumenta"/>
 					<Item id="6189" name="Popis funkcija"/>
 					<Item id="6190" name="Paneli dodataka"/>
@@ -1400,6 +1416,7 @@
 					<Item id="6346" name="Pogled na mapu dokumenta"/>
 					<Item id="6360" name="Isključi sve zvukove"/>
 					<Item id="6361" name="Omogući dijalog za potvrdu spremanja svih datoteka"/>
+					<Item id="6366" name="Dopusti učitavanje symlinkova u panelu Mapa kao radni prostor"/>
 				</MISC>
 			</Preference>
 			<MultiMacro title="Makro pokrenuti više puta">
@@ -1467,6 +1484,18 @@ Ovaj dijalog možete kasnije ponovo aktivirati u Postavkama."/>
 				<Item id="7" name="&amp;Ne"/>
 				<Item id="4" name="&amp;Uvijek da"/>
 			</DoSaveAll><!-- HowToReproduce: Check the "Enable Save All confirm dialog" checkbox in Preference->MISC, now click "Save all" -->
+			<NetworkPathWarning title="Učitavanje sesije Notepad++" title2="Klikabilna datoteka:// link" title3="Učitavanje toolbarButtonsConf.xml" title4="Učitavanje XML datoteke projektnog panela">
+				<Item id="1771" name="Upozorenje o mrežnoj putanji:
+
+$STR_REPLACE$
+
+Učitavanje ove datoteke će uzrokovati automatsku autentifikaciju sustava Windows na njenom poslužitelju, što potencijalno otkriva vaše podatke za prijavu u sustav Windows.
+Učitaj svejedno?"/>
+				<Item id="2" name="&amp;Preskoči"/>
+				<Item id="6" name="&amp;Uvijek učitaj s ovog servera"/>
+				<Item id="7" name="Uvijek p&amp;reskoči mrežnu putanju"/>
+				<Item id="4" name="Uvijek u&amp;čitaj mrežnu putanju"/>
+			</NetworkPathWarning>
 
 			<DebugInfo title="Debug informacije">
 				<Item id="1752" name="&amp;Kopiraj podatke u međuspremnik"/>
@@ -1498,7 +1527,7 @@ Jeste li sigurni da ih želite sve otvoriti?"/><!-- HowToReproduce: Check "Open 
 			<SettingsOnCloudError title="Podešavanje oblaka" message="Izgleda da je put u podešavanju oblaka postavljen na pogon koji je samo za čitanje,
 ili na mapu koja zahtijeva posebne ovlasti za pisanje.
 Vaše postavke oblaka će biti poništene. Molim, resetirajte odgovarajuću vrijednost preko dijaloga Postavke."/>
-			<FilePathNotFoundWarning title="Otvaranje datoteke" message="Datoteka koju pokušavate otvoriti ne postoji."/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
+			<FilePathNotFoundWarning title="Otvaranje puta" message="Put koji pokušavate otvoriti ne postoji."/>
 			<SessionFileInvalidError title="Ne mogu učitati sesiju" message="Datoteka sesije je ili oštećena ili nije valjana."/><!-- HowToReproduce: Save current session via menu "File -> Save Session...", use another editor to modify the session you saved to make it an invalid xml file. Then load this invalid session via menu "File -> Load Session...". -->
 			<DroppingFolderAsProjectModeWarning title="Pogrešna akcija" message="Možete ispustiti samo datoteke ili mape, ali ne oboje, jer ispuštate Mape u Projektnom načinu.
 Morate omogućiti &quot;Otvori sve datoteke mape umjesto pokretanja 'Mapa kao radni prostor' pri prenošenju mape&quot; u odjeljku &quot;Zadana mapa&quot; dijaloga Postavki kako bi ova operacija radila."/>
@@ -1538,8 +1567,6 @@ Ovu datoteku je izmijenio drugi program.
 			<PrehistoricSystemDetected title="Detektiran prapovijesni sistem" message="Izgleda da još koristite prapovijesni operativni sistem. Žao mi je, ali ova mogućnost radi samo na modernim sistemima."/><!-- HowToReproduce: Launch "Document Map" under Windows XP. -->
 			<XpUpdaterProblem title="Notepad++ ažuriranje" message="Notepad++ ažuriranje nije kompatibilno s XP zbog zastarjele sigurnosne zaštite pod XP.
 Želite li preuzeti najnoviju verziju s Notepad++ web stranica?"/><!-- HowToReproduce: Run menu "? -> Update Notepad++" under Windows XP. -->
-			<GUpProxyConfNeedAdminMode title="Postavke proxyja" message="Molim zatvorite Notepad++ i pokrenite ga kao Administrator
-kako bi prilagodili proxy."/>
 			<DocTooDirtyToMonitor title="Problem nadgledanja" message="Dokument nije konzistentan. Molim spremite izmjene prije nadgledanja."/>
 			<DocNoExistToMonitor title="Problem nadgledanja" message="Datoteka mora postojati da bi se nadgledala."/>
 			<FileTooBigToOpen title="Problem s veličinom datoteke" message="Datoteka je prevelika da bi se otvorila u Notepadu++"/><!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
@@ -1579,11 +1606,11 @@ molim izaberite neko drugo."/>
 			<UDLRemoveCurrentLang title="Ukloni trenutnu sintaksu" message="Jeste li sigurni?"/>
 			<UDL_importSuccessful title="Korisnički definirana sintaksa" message="Uvoz uspješan."/>
 			<UDL_importFails title="Korisnički definirana sintaksa" message="Uvoz nije uspio."/>
-			<UDL_saveBeforeImport title="Korisnički definirana sintaksa" message="Prije izvoza spremite svoju definiciju sintakse klikom na gumb &quot;Spremi kao...&quot;."/> <!-- HowToReproduce: Choose "User Defined Language" in User Language combobox, then click on "Export... button". -->
+			<UDL_saveBeforeImport title="Korisnički definirana sintaksa" message="Prije izvoza spremite svoju definiciju sintakse klikom na gumb &quot;Spremi kao...&quot;."/><!-- HowToReproduce: Choose "User Defined Language" in User Language combobox, then click on "Export... button". -->
 			<UDL_exportSuccessful title="Korisnički definirana sintaksa" message="Izvoz uspješan."/>
 			<UDL_exportFails title="Korisnički definirana sintaksa" message="Izvoz nije uspio."/>
 			<SCMapperDoDeleteOrNot title="Jeste li sigurni?" message="Jeste li sigurni da želite izbrisati ovaj prečac?"/>>
-			<FindCharRangeValueError title="Problem s rasponom vrijednosti" message="Trebate upisati broj između 0 i 255."/> <!-- HowToReproduce: Search menu, then Find characters in range, select Custom range, enter 999 in either edit box, press Find. -->
+			<FindCharRangeValueError title="Problem s rasponom vrijednosti" message="Trebate upisati broj između 0 i 255."/><!-- HowToReproduce: Search menu, then Find characters in range, select Custom range, enter 999 in either edit box, press Find. -->
 			<OpenInAdminMode title="Spremanje nije uspjelo" message="Datoteka ne može biti spremljena, možda je zaštićena od prepisivanja.
 Želite li pokrenuti Notepad++ u Administratorskom načinu?"/>
 			<OpenInAdminModeWithoutCloseCurrent title="Spremanje nije uspjelo" message="Datoteka ne može biti spremljena, možda je zaštićena od prepisivanja.
@@ -1599,12 +1626,6 @@ Nastaviti?"/>
 			<LanguageMenuCompactWarning title="Kompaktni izbornik sintaksi" message="Ova opcija će biti promijenjena pri sljedećem pokretanju."/><!-- HowToReproduce: toggle "Make language menu compact" via Preferences dialog "Language/Language Menu. -->
 			<SwitchUnsavedThemeWarning title="$STR_REPLACE$" message="Nespremljene izmjene će biti odbačene!
 Želite li spremiti izmjene prije promjene teme?"/><!-- HowToReproduce: In the Style Configurator dialog change some theme and switch to other theme without saving. -->
-			<MacroAndRunCmdlWarning title="Kompatibilnost Makro i Pokretanje naredbi" message="Vaše Makro i Pokretanje naredbe spremljene u Notepadu++ v.8.5.2 (ili starijem) možda nisu kompatibilne s aktualnom verzijom Notepada++.
-Molim, testirajte te naredbe u aktualnoj verziji Notepada++ i, ako je potrebno, ispravite ih i ponovno spremite.
-
-Alternativno, možete se vratiti na Notepad++ v8.5.2 i vratiti svoje prethodne podatke.
-Notepad++ će sigurnosno kopirati vaš stari &quot;shortcuts.xml&quot; i spremiti ga kao &quot;shortcuts.xml.v8.5.2.backup&quot;.
-Promijenite naziv datoteke &quot;shortcuts.xml.v8.5.2.backup&quot; -&gt; &quot;shortcuts.xml&quot;, i vaše bi naredbe trebale biti vraćene i ispravno raditi."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
 			<FullReadOnlySavingForbidden title="Save failed" message="Ne mogu spremiti datoteku
 Notepad++ potpuni način rada samo za čitanje spriječio je spremanje datoteke."/>
 			<NotEnoughRoom4Saving title="Neuspjelo spremanje" message="Spremanje datoteke nije uspjelo.
@@ -1629,9 +1650,21 @@ Pritisnite gumb U redu kako bi otvorili dijaloški okvir Traži ili postavite fo
 Ako vam je potrebna značajka pretraživanja regularnih izraza unatrag, potražite u korisničkom priručniku upute o tome kako ju omogućiti."/>
 			<PrintError title="0" message="Nije moguće pokrenuti dokument pisača."/><!-- Use title="0" to use Windows OS default translated "Error" title. -->
 			<FindAutoChangeOfInSelectionWarning title="Upozorenje pretraživanja" message="Stanje potvrdnog okvira &quot;U označenom&quot; je automatski promijenjeno.
-Prije izvođenja radnje provjerite uvjet pretraživanja."/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
+Prije izvođenja radnje provjerite uvjet pretraživanja."/><!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="Notepad++ treba ponovno pokrenuti" message="Potreban je restart Notepada++ za prikaz prečaca s desne strane izborničke vrpce"/>
 			<NoAdminRight2ChangeReadOnlyFileAttribute title="Promjena atributa datoteke samo za čitanje nije uspjela" message="Pokrenite Notepad++ kao administrator kako biste promijenili atribute datoteke."/>
+			<ReadOnlyFileCannotBeSaved title="Spremanje nije uspjelo - Datoteka je samo za čitanje" message="&quot;$STR_REPLACE$&quot;
+Datoteka je samo za čitanje i ne može se spremiti.
+Uklonite atribut samo za čitanje, a zatim spremite datoteku."/>
+			<ShortcutsXmlHMACMissing title="Sigurnosno upozorenje" message="Sigurnosne informacije za shortcuts.xml nedostaju u config.xml.
+
+Iz sigurnosnih razloga, provjerit će se integritet datoteke shortcuts.xml. Kako biste pokrenuli prilagođenu naredbu, pregledajte otvorenu datoteku shortcuts.xml. Ako je sadržaj datoteke u redu, upotrijebite &quot;Validiraj shortcuts.xml&quot; iz izbornika &quot;Pokretanje&quot; kako biste to potvrdili."/>
+			<ShortcutsXmlTampered title="Sigurnosno upozorenje" message="Čini se da je datoteka shortcuts.xml ručno izmijenjena.
+
+Iz sigurnosnih razloga, pregledajte otvorenu datoteku shortcuts.xml. Ako je sadržaj datoteke u redu, upotrijebite &quot;Validiraj shortcuts.xml&quot; iz izbornika &quot;Pokretanje&quot; kako biste to potvrdili."/>
+			<SymlinkLoadingWarning title="Upozorenje: Učitavanje simlinka može uzrokovati zamrzavanje" message="Omogućavanje učitavanja symlinka u Mapi kao radnom prostoru može uzrokovati da Notepad++ uđe u beskonačnu petlju i zamrzne.
+To se može dogoditi kada se simlinkovi direktorija razriješe u nadređene mape ili formiraju kružne reference.
+Nastavite samo ako razumijete rizik."/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Povijest međuspremnika"/>
@@ -1689,6 +1722,7 @@ Prije izvođenja radnje provjerite uvjet pretraživanja."/> <!-- HowToReproduce:
 				<Item id="3518" name="Eksplorer ovdje"/>
 				<Item id="3519" name="Naredbeni redak ovdje"/>
 				<Item id="3520" name="Kopiraj naziv datoteke"/>
+				<Item id="3521" name="PowerShell ovdje"/>
 			</Menu>
 		</FolderAsWorkspace>
 		<ProjectManager>
@@ -1797,6 +1831,7 @@ Nađi u svim datotekama s izuzetkom svih mapa log ili logs rekurzivno:
 			<find-status-scope-all value="u cijeloj datoteci"/>
 			<find-status-scope-backward value="od početka datoteke do kursora"/>
 			<find-status-scope-forward value="od kursora do kraja datoteke"/>
+			<find-status-replace-invalid-replace-chars value="Zamijeni: nije moguće zamijeniti ne-ANSI tekstom u ANSI dokumentu"/>
 			<find-status-invisible-chars-findWhat value="Nevidljivi znakovi u zalijepljenom sadržaju &quot;Pronađi&quot; ili &quot;Zamijeni sa&quot;"/>
 			<find-status-invisible-chars-findWhat-tip value="Upozorenje: Nevidljivi znakovi u polju za pretraživanje (ili zamjenu).
 Tekst zalijepljen u ovo polje sadrži nevidljive znakove (možda one koji završavaju redak). Ako nastavite bez brisanja, bit će uključeni u tekst za pretraživanje (ili zamjenu)."/>
@@ -1813,6 +1848,7 @@ Tekst zalijepljen u ovo polje sadrži nevidljive znakove (možda one koji završ
 			<common-ok value="U redu"/>
 			<common-cancel value="Poništi"/>
 			<common-name value="Ime"/>
+			<common-error value="Greška"/>
 			<tabrename-title value="Preimenuj trenutnu karticu"/>
 			<tabrename-newname value="Novo ime"/>
 			<splitter-rotate-left value="Rotiraj lijevo"/>
@@ -1834,6 +1870,7 @@ Tekst zalijepljen u ovo polje sadrži nevidljive znakove (možda one koji završ
 			<progress-hits-title value="Nađeno:"/>
 			<progress-cancel-info value="Poništavanje operacije, molim pričekajte..."/>
 			<find-in-files-progress-title value="Napredak traženja u datotekama..."/>
+			<discover-file-candidates-title value="Otkrivanje datoteka kandidata..."/>
 			<replace-in-files-confirm-title value="Jeste li sigurni?"/>
 			<replace-in-files-confirm-directory value="Jeste li sigurni da želite zamijeniti sva pojavljivanja u:"/>
 			<replace-in-files-confirm-filetype value="Za vrstu datoteka:"/>
@@ -1859,7 +1896,6 @@ Tekst zalijepljen u ovo polje sadrži nevidljive znakove (možda one koji završ
 			<tab-untitled-string value="novo "/>
 			<file-save-assign-type value="&amp;Dodaj nastavak"/>
 			<close-panel-tip value="Zatvori"/>
-			<IncrementalFind-FSFound value="$INT_REPLACE$ podudaranja"/>
 			<IncrementalFind-FSNotFound value="Fraza nije pronađena"/>
 			<IncrementalFind-FSTopReached value="Dostignut je početak dokumenta, nastavak od dna"/>
 			<IncrementalFind-FSEndReached value="Dostignut je kraj dokumenta, nastavak od vrha"/>
@@ -1929,6 +1965,9 @@ Ako odaberete napredni način, ali ne uređujete datoteke na gore navedenim jezi
 			<max-len-on-save-tip value="Vaš unos je vrlo dugačak i neće biti spremljen za sljedeću sesiju."/>
 			<goto-setting-tip value="Pronađite svoju postavku ovdje"/>
 			<tabbar-tabcompactlabellen-tip value="Ograničava vidljivu duljinu dugih naziva na jezičcima kartica. Pritisnite Enter za primjenu zadane vrijednosti. Raspon vrijednosti: 1-257 znakova (0 onemogućuje skraćivanje)."/>
+			<networkpathwarning-serverwhitelist-tip value="Upisuje poslužitelj trenutne datoteke u Notepad++ serverWhiteList.xml.
+
+Za više informacija, kliknite ovaj gumb kako biste otvorili web stranicu s odgovarajućim dijelom korisničkog priručnika."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

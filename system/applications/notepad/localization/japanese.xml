@@ -5,7 +5,7 @@ Translation note:
 2. All the comments are for explanation, they are not for translation.
 -->
 <NotepadPlus>
-	<Native-Langue name="Japanese" filename="japanese.xml" version="8.9">
+	<Native-Langue name="Japanese" filename="japanese.xml" version="8.9.8">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -90,6 +90,7 @@ Translation note:
 					<Item id="41002" name="開く(&amp;O)..."/>
 					<Item id="41019" name="エクスプローラー"/>
 					<Item id="41020" name="コマンドプロンプト"/>
+					<Item id="41027" name="PowerShell"/>
 					<Item id="41025" name="フォルダーをワークスペースとして開く(&amp;K)"/>
 					<Item id="41003" name="閉じる(&amp;C)"/>
 					<Item id="41004" name="すべて閉じる(&amp;E)"/>
@@ -296,6 +297,7 @@ Translation note:
 					<Item id="44024" name="縮小表示(Ctrl+マウスホイールを下へ)(&amp;O)"/>
 					<Item id="44025" name="半角スペースとタブを表示"/>
 					<Item id="44026" name="改行コードを表示"/>
+					<Item id="44027" name="ビュー間で同期する(&amp;S)"/>
 					<Item id="44029" name="すべて展開する"/>
 					<Item id="44030" name="カーソル位置のレベルで畳む"/>
 					<Item id="44031" name="カーソル位置のレベルで展開"/>
@@ -403,6 +405,7 @@ Translation note:
 					<Item id="48511" name="ファイルから生成..."/>
 					<Item id="48512" name="選択範囲から生成しクリップボードへ出力"/>
 					<Item id="49000" name="ファイル名を指定して実行(&amp;R)..."/>
+					<Item id="49001" name="shortcuts.xml を承認する"/>
 
 					<Item id="50000" name="関数名補完"/>
 					<Item id="50001" name="単語補完"/>
@@ -444,6 +447,7 @@ Translation note:
 				<Item CMDID="1" name="開く"/>
 				<Item CMDID="41019" name="ファイルの場所をエクスプローラーで開く"/>
 				<Item CMDID="41020" name="ファイルの場所をコマンドプロンプトで開く"/>
+				<Item CMDID="41027" name="ファイルの場所をPowerShellで開く"/>
 				<Item CMDID="41025" name="ファイルを含むフォルダーをワークスペースとして開く"/>
 				<Item CMDID="41023" name="既定のアプリで開く"/>
 				<Item CMDID="41017" name="名前の変更..."/>
@@ -534,6 +538,7 @@ Translation note:
 				<Item id="1681" name="検索文字列:"/>
 				<Item id="1685" name="大/小文字を区別(&amp;C)"/>
 				<Item id="1690" name="すべてハイライト(&amp;H)"/>
+				<Item id="1691" name="一致数を表示(&amp;O)"/>
 			</IncrementalFind>
 
 			<FindCharsInRange title="文字範囲を指定して検索...">
@@ -613,7 +618,7 @@ Translation note:
 				<Item id="2" name="閉じる(&amp;C)"/>
 			</SHA512FromTextDlg>
 
-			<PluginsAdminDlg title="プラグイン管理" titleAvailable="利用可能" titleUpdates="アップデート" titleInstalled="インストール済み" titleIncompatible="互換性がない">
+			<PluginsAdminDlg title="プラグイン管理" titleAvailable="利用可能" titleUpdates="アップデート" titleInstalled="インストール済み" titleIncompatible="互換性がない" titleDisabled="無効化済み">
 				<ColumnPlugin name="プラグイン"/>
 				<ColumnVersion name="バージョン"/>
 				<Item id="5501" name="検索(&amp;S)："/>
@@ -623,6 +628,8 @@ Translation note:
 				<Item id="5508" name="次を検索(&amp;N)"/>
 				<Item id="5509" name="プラグインリストのバージョン："/>
 				<Item id="5511" name="プラグインリストのレポジトリ"/>
+				<Item id="5512" name="無効化する(&amp;E)"/>
+				<Item id="5513" name="有効にする(&amp;A)"/>
 				<Item id="2" name="閉じる"/>
 			</PluginsAdminDlg>
 
@@ -660,6 +667,10 @@ Translation note:
 				</SubDialog>
 			</StyleConfig>
 
+			<ColorPopup>
+				<Item id="1" name="そのほかの色..."/>
+			</ColorPopup>
+
 			<ShortcutMapper title="ショートカット管理">
 				<Item id="2602" name="変更"/>
 				<Item id="2603" name="行を削除"/>
@@ -684,6 +695,8 @@ Translation note:
 				<MainCommandNames>
 					<Item id="41019" name="このファイルのあるフォルダーをエクスプローラーで開く"/>
 					<Item id="41020" name="このファイルのあるフォルダーをコマンドプロンプトで開く"/>
+					<Item id="41027" name="このファイルのあるフォルダーをPowerShellで開く"/>
+					<Item id="41025" name="このファイルのあるフォルダーをワークスペースとして開く"/>
 					<Item id="41021" name="直前に閉じたファイルを開く"/>
 					<Item id="45001" name="改行コードを Windows (CR LF) に変換"/>
 					<Item id="45002" name="改行コードを Unix (LF) に変換"/>
@@ -1180,6 +1193,7 @@ Translation note:
 
 				<Print title="印刷">
 					<Item id="6601" name="行番号を印刷する(&amp;U)"/>
+					<Item id="6616" name="formfeed制御文字を改ページとして扱う(&amp;S)"/>
 					<Item id="6602" name="色"/>
 					<Item id="6603" name="編集画面の表示のまま(&amp;Y)"/>
 					<Item id="6604" name="反転(&amp;N)"/>
@@ -1392,6 +1406,7 @@ Translation note:
 					<Item id="6346" name="文書マップに表示する"/>
 					<Item id="6360" name="音を鳴らさないようにする"/>
 					<Item id="6361" name="「すべて保存」時に確認ダイアログを表示する"/>
+					<Item id="6366" name="「フォルダーをワークスペースとして開く」にてシンボリックリンクを開くことを許可する"/>
 				</MISC>
 			</Preference>
 			<MultiMacro title="指定マクロを複数回実行">
@@ -1459,7 +1474,18 @@ Translation note:
 				<Item id="7" name="いいえ(&amp;N)"/>
 				<Item id="4" name="常に はい(&amp;A)"/>
 			</DoSaveAll><!-- HowToReproduce: Check the 'Enable Save All confirm dialog' checkbox in Preference->MISC, now click 'Save all' -->
+			<NetworkPathWarning title="Notepad++ セッションの読み込み" title2="クリックできる file:// リンク" title3="toolbarButtonsConf.xml の読み込み" title4="プロジェクトパネルの XML ファイルの読み込み">
+				<Item id="1771" name="ネットワークパスの警告:
 
+$STR_REPLACE$
+
+このファイルを読み込むと、Windowsが自動的にサーバーと認証を行うため、Windowsのログイン情報が漏洩する恐れがあります。
+読み込みを続けますか？"/>
+				<Item id="2" name="スキップ(&amp;S)"/>
+				<Item id="6" name="このサーバーからは常に読み込む(&amp;L)"/>
+				<Item id="7" name="常にネットワークパスをスキップ(&amp;A)"/>
+				<Item id="4" name="常にネットワークパスを読み込む(&amp;E)"/>
+			</NetworkPathWarning>
 			<DebugInfo title="デバッグ情報">
 				<Item id="1752" name="情報をクリップボードにコピー（&amp;C）"/>
 				<Item id="1" name="OK"/>
@@ -1489,8 +1515,7 @@ Translation note:
 本当に開きますか?"/>
 			<SettingsOnCloudError title="警告: クラウド設定" message="クラウドのパスが、読み込み専用ドライブか、書き込み権限が必要なフォルダーに設定されています。
 クラウドの設定はキャンセルされます。環境設定画面で正しい場所を指定し直して下さい。"/>
-
-			<FilePathNotFoundWarning title="警告: ファイルを開く" message="指定されたファイルは存在しません。"/>
+			<FilePathNotFoundWarning title="警告: パスを開く" message="指定されたパスは存在しません。"/>
 			<SessionFileInvalidError title="セッションを読み込めません" message="セッションファイルが破損しているか、正しい形式ではありません。"/>
 			<DroppingFolderAsProjectModeWarning title="無効な操作です" message="「フォルダーをプロジェクトとして開く」設定になっているため、ファイルとフォルダーを同時にドロップして開くことはできません。
 この操作を使いたい場合、「環境設定」を開き、「既定のディレクトリ」の「フォルダーをドロップした時、ワークスペースとせずに すべてのファイルを開く」を有効にして下さい。"/>
@@ -1527,7 +1552,6 @@ Notepad++ で行った変更は破棄されますが、再読み込みします�
 			<PrehistoricSystemDetected title="古いシステムです" message="システムが古いため、この機能は利用できません。"/>
 			<XpUpdaterProblem title="Notepad++ アップデーター" message="Notepad++ アップデーターは XP では利用できません。これは XP のセキュリティー機能が古いためです。
 Notepad++ のダウンロードページを開きますか？"/>
-			<GUpProxyConfNeedAdminMode title="プロキシ設定" message="プロキシ設定を変更するには、Notepad++ を管理者権限で実行してください。"/>
 			<DocTooDirtyToMonitor title="ファイル監視" message="この文書は変更されています。監視を始める前に保存をして下さい。"/>
 			<DocNoExistToMonitor title="ファイル監視" message="監視対象のファイルが存在しません。"/>
 			<FileTooBigToOpen title="ファイルサイズ" message="ファイルサイズが大きいため Notepad++ で開けません。"/>
@@ -1612,6 +1636,18 @@ OKボタンを押すと検索ダイアログが開きます。
 検索条件が予期したものであるか確認してから、操作を続けてください。"/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="Notepad++ を再起動してください" message="メニュー右端のボタンを表示するには、Notepad++ を再起動してください。"/>
 			<NoAdminRight2ChangeReadOnlyFileAttribute title="読み取り専用属性を変更できませんでした" message="このファイルの読み取り専用属性を変更するには、Notepad++ を管理者権限で実行してください。"/>
+			<ReadOnlyFileCannotBeSaved title="保存に失敗しました - 読み取り専用です" message="「$STR_REPLACE$」
+このファイルが読み取り専用のため、保存できませんでした。
+読み取り専用を解除してから保存を行ってください。"/>
+			<ShortcutsXmlHMACMissing title="セキュリティー警告" message="shortcuts.xml についてのセキュリティー情報が、config.xml に見つかりません。
+
+セキュリティーのため、shortcuts.xml の完全性が都度検証されます。設定したコマンドを実行するには、まず shortcuts.xml の内容が意図したものであるかを確認してください。問題なければ、「実行」メニューから「shortcuts.xml を承認する」を押してください。"/>
+			<ShortcutsXmlTampered title="セキュリティー警告" message="shortcuts.xml が手動で変更されたようです。
+
+セキュリティーのため、shortcuts.xml の内容が意図したものであるかを確認してください。問題なければ、「実行」メニューから「shortcuts.xml を承認する」を押してください。"/>
+			<SymlinkLoadingWarning title="警告: シンボリックリンクを開くとフリーズすることがあります" message="シンボリックリンクの読み込みを「フォルダーをワークスペースとして開く」で許可すると、Notepad++ が無限ループに陥り、フリーズすることが起こりえます。
+この状況は、シンボリックリンクが親フォルダーを指していたり、循環参照を作ったりすると起こります。
+十分注意してこの機能を利用してください。"/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="クリップボード履歴"/>
@@ -1669,6 +1705,7 @@ OKボタンを押すと検索ダイアログが開きます。
 				<Item id="3518" name="エクスプローラーを開く"/>
 				<Item id="3519" name="コマンドプロンプトを開く"/>
 				<Item id="3520" name="ファイル名をコピー"/>
+				<Item id="3521" name="PowerShellを開く"/>
 			</Menu>
 		</FolderAsWorkspace>
 		<ProjectManager>
@@ -1775,6 +1812,7 @@ OKボタンを押すと検索ダイアログが開きます。
 			<find-status-scope-all value="（ファイル全体）"/>
 			<find-status-scope-backward value="（ファイル先頭から カーソル位置まで）"/>
 			<find-status-scope-forward value="（カーソル位置から ファイル末尾まで）"/>
+			<find-status-replace-invalid-replace-chars value="置換：ANSIエンコードの文書では、非ANSI文字へ置換できません"/>
 			<find-status-invisible-chars-findWhat value="「検索文字列」や「置換文字列」に貼り付けられたテキストに、不可視文字が含まれています"/>
 			<find-status-invisible-chars-findWhat-tip value="注意：検索／置換文字列に不可視文字があります。
 貼り付けられたテキストに不可視文字（改行文字など）が含まれています。削除しない場合、これらの文字も検索／置換文字列として扱われます。"/>
@@ -1791,6 +1829,7 @@ OKボタンを押すと検索ダイアログが開きます。
 			<common-ok value="OK"/>
 			<common-cancel value="ｷｬﾝｾﾙ"/>
 			<common-name value="名前"/>
+			<common-error value="エラー"/>
 			<tabrename-title value="現ﾀﾌﾞのﾌｧｲﾙ名を変更"/>
 			<tabrename-newname value="新ﾌｧｲﾙ名"/>
 			<splitter-rotate-left value="左回りに回す"/>
@@ -1812,6 +1851,7 @@ OKボタンを押すと検索ダイアログが開きます。
 			<progress-hits-title value="一致件数:"/>
 			<progress-cancel-info value="キャンセルしています。お待ちください..."/>
 			<find-in-files-progress-title value="複数ファイル内を検索中..."/>
+			<discover-file-candidates-title value="対象のファイルを列挙中..."/>
 			<replace-in-files-confirm-title value="本当によろしいですか？"/>
 			<replace-in-files-confirm-directory value="下記ディレクトリ内の該当箇所をすべて置換しようとしています。よろしいですか？"/>
 			<replace-in-files-confirm-filetype value="ファイルの種類："/>
@@ -1837,7 +1877,6 @@ OKボタンを押すと検索ダイアログが開きます。
 			<tab-untitled-string value="新規"/>
 			<file-save-assign-type value="拡張子をつける(&amp;A)"/>
 			<close-panel-tip value="閉じる"/>
-			<IncrementalFind-FSFound value="$INT_REPLACE$ 件の一致"/>
 			<IncrementalFind-FSNotFound value="見つかりません"/>
 			<IncrementalFind-FSTopReached value="文書の先頭に達したため、末尾から検索しました"/>
 			<IncrementalFind-FSEndReached value="文書の末尾に達したため、先頭から検索しました"/>
@@ -1902,6 +1941,9 @@ C、C++、Java、C#、Objective-C、PHP、JavaScript、JSP、CSS、Perl、Rust�
 			<max-len-on-save-tip value="入力された文字列が非常に長いため、次回のセッションに引き継がれない可能性があります。"/>
 			<goto-setting-tip value="関連する設定はこちら"/>
 			<tabbar-tabcompactlabellen-tip value="タブの名称が長いときに、表示する文字数を制限します。Enterキーを押すと反映されます。設定可能な値: 1-257 文字 (無効にするには 0 を入力)。"/>
+			<networkpathwarning-serverwhitelist-tip value="このファイルのサーバー名を、Notepad++ の serverWhiteList.xml に保存します。
+
+詳しくは、このボタンを押すと開く、オンラインマニュアルをご確認ください。"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

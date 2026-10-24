@@ -6,7 +6,7 @@
 		- Radoš Milićev (https://github.com/rammba)
 -->
 <NotepadPlus>
-	<Native-Langue name="Српски" filename="serbianCyrillic.xml"  version="8.9.1">
+	<Native-Langue name="Српски" filename="serbianCyrillic.xml"  version="8.9.3">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -1025,6 +1025,7 @@
 					<Item id="6239" name="Задржи избор након десног клика изван тренутног избора"/>
 					<Item id="6245" name="Омогући виртуелни размак"/>
 					<Item id="6214" name="Омогући копирање/исецање линије без одабира"/>
+					<Item id="6266" name="Онемогући превлачење одабраног текста"/>
 					<Item id="6225" name="Примени прилагођену боју на одабрани текст"/>
 					<Item id="6651" name="Показивач тренутне линије"/>
 					<Item id="6652" name="Ништа"/>
@@ -1217,7 +1218,7 @@
 					<Item id="6902" name="Користи једнака слова у дијалогу за проналажење (Мора се поново покренути Notepad++)"/>
 					<Item id="6903" name="Дијалог за проналажење остаје отворен након претраге која исписује резултат у прозор"/>
 					<Item id="6904" name="Потврди &quot;Замени све у свим отвореним документима&quot;"/>
-					<Item id="6905" name="Заменa: Немој се померити на тренутно"/>
+					<Item id="6905" name="Замени: Немој се померити на тренутно"/>
 					<Item id="6906" name="Прозор за резултате претраге: прикажи само један унос по линији ако је могуће"/>
 					<Item id="6907" name="Када је дијалог за проналажење покренут"/>
 					<Item id="6908" name="Постави изабрани текст у поље за претрагу"/>
@@ -1225,6 +1226,7 @@
 					<Item id="6910" name="Минимална величина за аутоматску проверу за &quot;У избору&quot;:"/>
 					<Item id="6913" name="Постави активни документ у директоријум поље у &quot;Пронађи у датотекама&quot;"/>
 					<Item id="6916" name=": Максимално карактера за аутоматско попуњавање поља за претрагу"/>
+					<Item id="6917" name="Пронађи у датотекама: Дај предност садржају на диску у односу на отворене бафере"/>
 				</Searching>
 
 				<RecentFilesHistory title="Историја недавних дат.">
@@ -1524,7 +1526,6 @@
 			<PrehistoricSystemDetected title="Детектован праисторијски систем" message="Изгледа да користите праисторијски систем. Извините, али ова функционалност ради само на модерним системима."/><!-- HowToReproduce: Launch "Document Map" under Windows XP. -->
 			<XpUpdaterProblem title="Notepad++ ажурирање" message="Notepad++ ажурирање није компатибилно са XP због застарелих сигурносних слојева у XP-у.
 Желите ли отићи на Notepad++ страницу да скинете најновију верзију?"/><!-- HowToReproduce: Run menu "? -> Update Notepad++" under Windows XP. -->
-			<GUpProxyConfNeedAdminMode title="Proxy подешавања" message="Поново покрените Notepad++ као администратор да би сте подесили proxy."/>
 			<DocTooDirtyToMonitor title="Проблем са надгледањем" message="Документ је прљав. Молимо сачувајте промену пре надгледања."/>
 			<DocNoExistToMonitor title="Проблем са надгледањем" message="Датотека треба да постоји да би се надгледала."/>
 			<FileTooBigToOpen title="Проблем са величином датотеке" message="Датотека је превелика да би је Notepad++ отворио"/><!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
@@ -1584,12 +1585,6 @@ Notepad++ ће се поново покренути када се све опе�
 			<LanguageMenuCompactWarning title="Компактан језички мени" message="Ова опција ће бити промењена у наредном покретању."/><!-- HowToReproduce: toggle "Make language menu compact" via Preferences dialog "Language/Language Menu. -->
 			<SwitchUnsavedThemeWarning title="$STR_REPLACE$" message="Несачуване промене ће бити одбачене!
 Да ли желите сачувати промене пре пребацивања тема?"/><!-- HowToReproduce: In the Style Configurator dialog change some theme and switch to other theme without saving. -->
-			<MacroAndRunCmdlWarning title="Компатибилност макроа и команди за покретање" message="Ваше команде за макрое и покретање сачуване у Notepad++ v.8.5.2 (или старијој) могу бити некомпатибилне са тренутном Notepad++ верзијом.
-Тестирајте команде и уредите их ако је потребно.
-
-Алтернативно, можете спустити Notepad++ на v8.5.2 и повратити претходне податке.
-Notepad++ ће backup-овати старији &quot;shortcuts.xml&quot; и сачувати га као &quot;shortcuts.xml.v8.5.2.backup&quot;.
-Преименовањем &quot;shortcuts.xml.v8.5.2.backup&quot; на &quot;shortcuts.xml&quot;, ваше команде ће бити повраћене и радиће нормално."/><!-- HowToReproduce: Close Notepad++, remove shortcuts.xml.v8.5.2.backup & v852ShortcutsCompatibilityWarning.xml if present, relaunch Notepad++, delete or modify a shortcuts via Shortcut Mapper, close Notepad++, then the message will show up -->
 			<FullReadOnlySavingForbidden title="Неуспешно чување" message="Датотека се не може сачувати.
 Режим забрањеног чувања у Notepad++, само за читање, спречио је да датотека буде сачувана."/>
 			<NotEnoughRoom4Saving title="Неуспешно чување" message="Неуспешно чување датотеке.
@@ -1780,6 +1775,7 @@ Notepad++ ће backup-овати старији &quot;shortcuts.xml&quot; и с�
 			<find-status-scope-all value="у целој датотеци"/>
 			<find-status-scope-backward value="од старта датотеке то показивача"/>
 			<find-status-scope-forward value="од показивача до краја датотеке"/>
+			<find-status-replace-invalid-replace-chars value="Замени: У ANSI документу се не може заменити са текстом који није ANSI"/>
 			<find-status-invisible-chars-findWhat value="Невидљиви карактери у садржају налепљеном на &quot;Пронађи&quot; или &quot;Замени са&quot;"/>
 			<find-status-invisible-chars-findWhat-tip value="Упозорење: Невидљиви карактери у пољима за претрагу (или замену).
 Текст налепљен у ово поље садржи невидљиве карактере (можда крај линије). Ако наставите, ти карактери ће бити садржани у претрази (или тексту за замену)."/>
@@ -1842,7 +1838,6 @@ Notepad++ ће backup-овати старији &quot;shortcuts.xml&quot; и с�
 			<tab-untitled-string value="ново "/>
 			<file-save-assign-type value="&amp;Додај екстензију"/>
 			<close-panel-tip value="Затвори"/>
-			<IncrementalFind-FSFound value="$INT_REPLACE$ поклапања"/>
 			<IncrementalFind-FSNotFound value="Фраза није пронађена"/>
 			<IncrementalFind-FSTopReached value="Достигнут почетак странице, наставак од краја"/>
 			<IncrementalFind-FSEndReached value="Достигнут крај странице, наставак од почетка"/>
@@ -1915,5 +1910,3 @@ C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>
-
-

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-	- last change:  Notepad++ 8.9.3  13/Mar/2026  by Ondřej Müller (mullero@email.cz)
+	- last change:  Notepad++ 8.9.8 16/Sep/2026  by Ondřej Müller (mullero@email.cz)
 	- N++ Community QA:  https://notepad-plus-plus.org/community/topic/87/czech-translations
 	- contributors:  Ondřej Müller (mullero@email.cz), Tomáš Hrouda (gobbet@centrum.cz), Martin Darebný (darBis)
 	- the most recent version of this file can be downloaded from the project master-branch here: https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/PowerEditor/installer/nativeLang/czech.xml
 -->
 <NotepadPlus>
-	<Native-Langue name="Čeština" filename="czech.xml" version="8.9.2">
+	<Native-Langue name="Čeština" filename="czech.xml" version="8.9.8">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -115,6 +115,7 @@
 					<Item id="41024" name="Zavřít všechny nezměněné"/>
 					<Item id="41025" name="Složka jako Pracovní plocha"/>
 					<Item id="41026" name="Zavřít vše KROMĚ připnutých"/>
+					<Item id="41027" name="PowerShell"/>
 					<Item id="42001" name="Vyjmou&amp;t"/>
 					<Item id="42002" name="&amp;Kopírovat"/>
 					<Item id="42003" name="&amp;Zpět"/>
@@ -302,6 +303,7 @@
 					<Item id="44024" name="Zme&amp;nšit Ctrl-Myš kolečko dolu"/>
 					<Item id="44025" name="Zobrazit prázdné znaky a tabulátory"/>
 					<Item id="44026" name="Zobrazit konce řádků"/>
+					<Item id="44027" name="&amp;Synchronizovat mezi pohledy"/>
 					<Item id="44029" name="Rozbalit vše"/>
 					<Item id="44030" name="Sbalit aktuální úroveň"/>
 					<Item id="44031" name="Rozbalit aktuální úroveň"/>
@@ -314,7 +316,7 @@
 					<Item id="44042" name="Skrýt řádky"/>
 					<Item id="44049" name="Souhrnné informace..."/>
 					<Item id="44070" name="Seznam dokumentů"/>
-					<Item id="44072" name="Přejít na další náhled"/>
+					<Item id="44072" name="Přejít na další pohled"/>
 					<Item id="44080" name="Přehledná mapa dokumentu"/>
 					<Item id="44081" name="Panel 1"/>
 					<Item id="44082" name="Panel 2"/>
@@ -364,8 +366,8 @@
 					<Item id="45057" name="OEM 865: Skandinávské jazyky"/>
 					<Item id="45053" name="OEM 860: Portugalština"/>
 					<Item id="45056" name="OEM 863: Francouzština"/>
-					<Item id="10001" name="Přesunout do druhého náhledu"/>
-					<Item id="10002" name="Vytvořit kopii v druhém náhledu"/>
+					<Item id="10001" name="Přesunout do druhého pohledu"/>
+					<Item id="10002" name="Vytvořit kopii v druhém pohledu"/>
 					<Item id="10003" name="Přesunout do nové instance"/>
 					<Item id="10004" name="Otevřít v nové instanci"/>
 					<Item id="10005" name="Přesunout na začátek"/>
@@ -414,6 +416,7 @@
 					<Item id="48511" name="Generovat ze souborů..."/>
 					<Item id="48512" name="Generovat z výběru do Schránky"/>
 					<Item id="49000" name="&amp;Spustit..."/>
+					<Item id="49001" name="Ověřit soubor shortcuts.xml"/>
 					<Item id="50000" name="Dokončování funkcí"/>
 					<Item id="50001" name="Dokončování slov"/>
 					<Item id="50002" name="Nápověda k parametrům funkcí"/>
@@ -448,9 +451,10 @@
 				<Item CMDID="41006" name="Uložit"/>
 				<Item CMDID="41008" name="Uložit jako..."/>
 				<Item CMDID="1" name="Otevřít v"/>
-				<Item CMDID="41019" name="Otevřít složku obsahující akt. soubor v Průzkumníkovi"/>
-				<Item CMDID="41020" name="Otevřít složku obsahující akt. soubor v okně s příkaz. řádkem"/>
-				<Item CMDID="41025" name="Otevřít složku obsahující akt. soubor jako Pracovní plochu"/>
+				<Item CMDID="41019" name="Otevřít složku aktuálního souboru v Průzkumníkovi"/>
+				<Item CMDID="41020" name="Otevřít složku aktuálního souboru v okně s příkazovým řádkem"/>
+				<Item CMDID="41027" name="Otevřít složku aktuálního souboru v PowerShellu"/>
+				<Item CMDID="41025" name="Otevřít složku aktuálního souboru jako Pracovní plochu"/>
 				<Item CMDID="41023" name="Otevřít v implicitním prohlížeči"/>
 				<Item CMDID="41017" name="Přejmenovat..."/>
 				<Item CMDID="41016" name="Přesunout do Koše"/>
@@ -463,8 +467,8 @@
 				<Item CMDID="42030" name="Kopírovat název souboru"/>
 				<Item CMDID="42031" name="Kopírovat název aktuálního adresáře souboru"/>
 				<Item CMDID="3" name="Přesunout dokument/kartu"/>
-				<Item CMDID="10001" name="Přesunout do druhého náhledu"/>
-				<Item CMDID="10002" name="Vytvořit kopii v druhém náhledu"/>
+				<Item CMDID="10001" name="Přesunout do druhého pohledu"/>
+				<Item CMDID="10002" name="Vytvořit kopii v druhém pohledu"/>
 				<Item CMDID="10003" name="Přesunout do nové instance"/>
 				<Item CMDID="10004" name="Otevřít v nové instanci"/>
 				<Item CMDID="10005" name="Přesunout na začátek"/>
@@ -541,6 +545,7 @@
 				<Item id="1681" name="Najít:"/>
 				<Item id="1685" name="&amp;Rozlišovat velikost písmen"/>
 				<Item id="1690" name="&amp;Zvýraznit všechny"/>
+				<Item id="1691" name="Celkový &amp;počet"/>
 			</IncrementalFind>
 
 			<FindCharsInRange title="Najít znaky z rozsahu...">
@@ -620,7 +625,7 @@
 				<Item id="2" name="&amp;Zavřít"/>
 			</SHA512FromTextDlg>
 
-			<PluginsAdminDlg title="Správa pluginů" titleAvailable="Dostupné" titleUpdates="Aktualizované" titleInstalled="Instalované" titleIncompatible="Nekompatibilní">
+			<PluginsAdminDlg title="Správa pluginů" titleAvailable="Dostupné" titleUpdates="Aktualizované" titleInstalled="Instalované" titleIncompatible="Nekompatibilní" titleDisabled="Deaktivované">
 				<ColumnPlugin name="Plugin"/>
 				<ColumnVersion name="Verze"/>
 				<Item id="5501" name="&amp;Rešerše:"/>
@@ -630,6 +635,8 @@
 				<Item id="5508" name="&amp;Pokračovat"/>
 				<Item id="5509" name="Verze seznamu pluginů:"/>
 				<Item id="5511" name="Repozitář seznamu pluginů"/>
+				<Item id="5512" name="&amp;Deaktivovat"/>
+				<Item id="5513" name="&amp;Aktivovat"/>
 				<Item id="2" name="Ukončit"/>
 			</PluginsAdminDlg>
 
@@ -665,7 +672,11 @@
 					<Item id="2235" name="Co znamená &quot;Global override&quot;?"/>
 				</SubDialog>
 			</StyleConfig>
-			
+
+			<ColorPopup>
+				<Item id="1" name="Více barev..."/>
+			</ColorPopup>
+
 			<ShortcutMapper title="Asociace klávesových zkratek">
 				<Item id="2602" name="Změnit"/>
 				<Item id="2603" name="Odstranit"/>
@@ -688,8 +699,10 @@
 				<DeleteContextMenu name="Odstranit"/>
 				<ClearContextMenu name="Vymazat"/>
 				<MainCommandNames>
-					<Item id="41019" name="Otevřít složku obsahující akt. soubor v Průzkumníkovi"/>
-					<Item id="41020" name="Otevřít složku obsahující akt. soubor v okně s příkaz. řádkem"/>
+					<Item id="41019" name="Otevřít složku aktuálního souboru v Průzkumníkovi"/>
+					<Item id="41020" name="Otevřít složku aktuálního souboru v okně s příkazovým řádkem"/>
+					<Item id="41027" name="Otevřít složku aktuálního souboru v PowerShellu"/>
+					<Item id="41025" name="Otevřít složku aktuálního souboru jako Pracovní plochu"/>
 					<Item id="41021" name="Znovuotevřít právě zavřený soubor"/>
 					<Item id="45001" name="Konverze konců řádků (EOL) na CR LF (Windows)"/>
 					<Item id="45002" name="Konverze konců řádků (EOL) na LF (Unix)"/>
@@ -1212,6 +1225,7 @@
 					<Item id="6613" name="Na&amp;hoře"/>
 					<Item id="6614" name="V&amp;pravo"/>
 					<Item id="6615" name="Dol&amp;e"/>
+					<Item id="6616" name="Znak 0x0C (&amp;formfeed) zalomí stránku"/>
 					<Item id="6706" name="&amp;Tučně"/>
 					<Item id="6707" name="&amp;Kurzíva"/>
 					<Item id="6708" name="Záhlaví"/>
@@ -1304,6 +1318,7 @@
 					<Item id="6361" name="Povolit potvrzovací dialog &quot;Uložit všechny&quot;"/>
 					<Item id="6363" name="vykreslovací režim"/>
 					<Item id="6365" name="Automat. aktualizace:"/>
+					<Item id="6366" name="Povolit načítání symbolických odkazů v panelu Složka jako pracovní plocha"/>
 				</MISC>
 				<Backup title="Zálohování">
 					<Item id="6219" name="Uživatelsky definovaný adresář pro zálohování"/>
@@ -1460,7 +1475,7 @@
 				<Item id="1718" name="&amp;Rozšířený (\n, \r, \t, \0, \x...)"/>
 				<Item id="1720" name="&amp;. označuje nový ř."/>
 			</FindInFinder>
-			
+
 			<DoSaveOrNot title="Ukládání">
 				<Item id="1761" name="Uložit soubor &quot;$STR_REPLACE$&quot; ?"/>
 				<Item id="6" name="&amp;Ano"/>
@@ -1479,6 +1494,20 @@ Potvrzovací dialog můžete kdykoliv reaktivovat v &quot;Nastavení&quot;."/>
 				<Item id="7" name="&amp;Ne"/>
 				<Item id="4" name="&amp;Pokaždé ano"/>
 			</DoSaveAll><!-- HowToReproduce: Check the "Enable Save All confirm dialog" checkbox in Preference->MISC, now click "Save all" -->
+
+			<NetworkPathWarning title="Načítání relace Notepadu++" title2="Klikatelný odkaz file://" title3="Načítání toolbarButtonsConf.xml" title4="Načítání XML-souboru panelu Projektů">
+				<Item id="1771" name="Varování před síťovou cestou:
+
+$STR_REPLACE$
+
+Načtení tohoto souboru způsobí, že se systém Windows automaticky ověří příslušnému serveru, což může vést k odhalení Vašich přihlašovacích údajů do systému Windows.
+
+Přesto načíst?"/>
+				<Item id="2" name="&amp;Přeskočit"/>
+				<Item id="6" name="Vždy &amp;načítat z tohoto serveru"/>
+				<Item id="7" name="Vždy přeskakovat &amp;síťové cesty"/>
+				<Item id="4" name="Vždy načítat síťové &amp;cesty"/>
+			</NetworkPathWarning>
 
 			<DebugInfo title="Informace k ladění">
 				<Item id="1752" name="&amp;Zkopírujte informace do Schránky"/>
@@ -1501,7 +1530,7 @@ Potvrzovací dialog můžete kdykoliv reaktivovat v &quot;Nastavení&quot;."/>
 			<DeleteFileFailed title="Odstranit Soubor" message="Odstranění souboru selhalo"/>
 			<NbFileToOpenImportantWarning title="Velmi mnoho souborů k otevření" message="$INT_REPLACE$ souborů má být otevřeno.\rJste si tím jisti?"/>
 			<SettingsOnCloudError title="Nastavení cloudu" message="Zdá se, že nastavená cesta k i-úložišti ukazuje na jednotku, která je určena pouze ke čtení\r nebo na složku bez oprávnění k zápisu.\rVaše nastavení i-úložiště bude zrušeno. Prosím nastavte znovu odpovídající hodnotu v dialogu Volby..."/>
-			<FilePathNotFoundWarning title="Otevření souboru" message="Soubor, který se pokoušíte otevřít, neexistuje."/>
+			<FilePathNotFoundWarning title="Otevřít cestu" message="Souborová cesta, kterou se pokoušíte otevřít, neexistuje."/>
 			<SessionFileInvalidError title="Relace nemohla být zavedena" message="Soubor relace je buďto poškozen nebo je neplatný."/>
 			<DroppingFolderAsProjectModeWarning title="Neplatná akce" message="Můžete přetahovat soubory nebo složky, ale ne obojí zároveň, jelikož máte zapnutý mód pro otevírání složek souborů jako projektů. Pro změnu nastavení musíte v Nastavení->Volby...->ImplicitníAdresář povolit &quot;Otevírat všechny soubory ve složce při přetažení myší (místo zdroje pro pracovní plochu)&quot;."/>
 			<SortingError title="Chyba třídění" message="Nebylo možné provést numerické setřídění kvůli řádku $INT_REPLACE$."/>
@@ -1533,7 +1562,6 @@ Existují 3 způsoby přepnutí do režimu výběru sloupce:
 			<DoReloadOrNotAndLooseChange title="Znovuotevření" message="&quot;$STR_REPLACE$&quot;  Tento soubor byl změněn jiným programem. Chcete jej znovu načíst a ztratit tak všechny změny provedené v Notepadu++?"/>
 			<PrehistoricSystemDetected title="Detekován příliš starý systém" message="Vypadá to, že používáte příliš starý operační systém. Je nám líto, ale tato funkce je podporována pouze na novějších systémech."/>
 			<XpUpdaterProblem title="Aktualizační program Notepadu++" message="Aktualizační program Notepadu++ není kompatibilní s Windows XP vzhledem k zastaralé bezpečnostní vrstvě tohoto systému. Chcete místo toho přejít na webové stránky Notepadu++, odkud si můžete sami stáhnout poslední verzi Notepadu++?"/>
-			<GUpProxyConfNeedAdminMode title="Nastavení proxy-serveru" message="Pro nastavení proxy-serveru spusťte prosím znovu Notepad++ pod účtem administrátora."/>
 			<DocTooDirtyToMonitor title="Chyba sledování stavu" message="Dokument je v nekonzistentním stavu. Uložte prosím změny v dokumentu před zapnutím sledování jeho stavu."/>
 			<DocNoExistToMonitor title="Problém se sledováním stavu" message="Soubor musí existovat, aby jej bylo možné sledovat."/>
 			<FileTooBigToOpen title="Problém s velikostí souboru" message="Soubor je příliš velký na to, aby mohl být otevřen v Notepadu++."/>
@@ -1605,6 +1633,20 @@ Pokud opravdu potřebujete funkci zpětného vyhledávání při regulárních v
 Před provedením akce si prosím nejprve ověřte nastavené podmínky."/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="Restartujte Notepad++" message="Je zapotřebí restartovat Notepad++, aby se vpravo mohly zobrazit ovládací prvky hlavního menu."/>
 			<NoAdminRight2ChangeReadOnlyFileAttribute title="Změna atributu souboru 'pouze pro čtení' se nezdařila." message="Pro změnu atributů souboru spusťte Notepad++ s právy administrátora."/>
+			<ReadOnlyFileCannotBeSaved title="Uložení selhalo - soubor je pouze pro čtení" message="&quot;$STR_REPLACE$&quot;
+Soubor je 'pouze pro čtení', a proto jej nelze uložit.
+Odeberte nejprve prosím povolení 'pouze pro čtení' a poté soubor uložte."/>
+			<ShortcutsXmlHMACMissing title="Bezpečnostní upozornění" message="V konfiguračním souboru config.xml chybí platný autentizační kód pro soubor shortcuts.xml.
+
+Z bezpečnostních důvodů musí být nejprve ověřena integrita souboru shortcuts.xml. Pokud chcete spustit vlastní příkaz(y), nejprve zkontrolujte otevřený soubor shortcuts.xml. Jestliže bude jeho obsah v pořádku, použijte příkaz &quot;Ověřit soubor shortcuts.xml&quot; v menu 'Spustit'."/>
+			<ShortcutsXmlTampered title="Bezpečnostní upozornění" message="Soubor shortcuts.xml byl pravděpodobně manuálně upraven nebo poškozen.
+
+Z bezpečnostních důvodů musí být nejprve ověřena jeho integrita. Pokud chcete spustit vlastní příkaz(y), nejprve zkontrolujte otevřený soubor shortcuts.xml. Jestliže bude jeho obsah v pořádku, použijte příkaz &quot;Ověřit soubor shortcuts.xml&quot; v menu 'Spustit'."/>
+			<SymlinkLoadingWarning title="Varování: Načítání symbolických odkazů může způsobit zamrznutí." message="Povolení načítání symbolických odkazů pro panel Složka jako pracovní plocha může způsobit, že Notepad++ přejde do nekonečné smyčky a zamrzne.
+
+K tomu může dojít, pokud symbolické odkazy na adresáře odkazují na nadřazené složky nebo vytvářejí cyklické odkazy.
+
+Pokračujte pouze tehdy, pokud rozumíte rizikům."/>
 		</MessageBox>
 		
 		<ClipboardHistory>
@@ -1616,7 +1658,7 @@ Před provedením akce si prosím nejprve ověřte nastavené podmínky."/> <!--
 			<ColumnName name="Název"/>
 			<ColumnExt name="Příp."/>
 			<ColumnPath name="Cesta"/>
-			<ListGroups name="Seskupovat podle náhledu"/>
+			<ListGroups name="Seskupovat podle pohledu"/>
 		</DocList>
 		
 		<WindowsDlg>
@@ -1669,6 +1711,7 @@ Před provedením akce si prosím nejprve ověřte nastavené podmínky."/> <!--
 				<Item id="3518" name="Průzkumník zde"/>
 				<Item id="3519" name="cmd zde"/>
 				<Item id="3520" name="Kopírovat název souboru"/>
+				<Item id="3521" name="PowerShell zde"/>
 			</Menu>
 		</FolderAsWorkspace>
 
@@ -1777,6 +1820,7 @@ Hledat ve všech souborech, ale rekurzivně vynechat všechny složky log nebo l
 			<find-status-scope-all value="v celém souboru"/>
 			<find-status-scope-backward value="od začátku souboru až ke kurzoru"/>
 			<find-status-scope-forward value="od kurzoru až do konce souboru"/>
+			<find-status-replace-invalid-replace-chars value="Nahradit: v ANSI dokumentu nelze nahrazovat textem, který není v ANSI kódování"/>
 			<find-status-invisible-chars-findWhat value="Do políčka &quot;Najít&quot; nebo &quot;Nahradit&quot; byl vložen obsah s neviditelnými znaky."/>
 			<find-status-invisible-chars-findWhat-tip value="Upozornění: Neviditelné znaky v políčku pro vyhledávání (nebo nahrazování).
 
@@ -1794,6 +1838,7 @@ Text vložený do políčka(ček) obsahuje implicitně neviditelné znaky (pravd
 			<common-ok value="OK"/>
 			<common-cancel value="Storno"/>
 			<common-name value="Název"/>
+			<common-error value="Chyba"/>
 			<tabrename-title value="Přejmenovat aktuální kartu (tab)"/>
 			<tabrename-newname value="Nový název"/>
 			<splitter-rotate-left value="Otočit doleva"/>
@@ -1815,6 +1860,7 @@ Text vložený do políčka(ček) obsahuje implicitně neviditelné znaky (pravd
 			<progress-hits-title value="Výskytů:"/>
 			<progress-cancel-info value="Ruším operaci, počkejte prosím ..."/>
 			<find-in-files-progress-title value="Průběh hledání v souborech ..."/>
+			<discover-file-candidates-title value="Probíhá vytváření seznamu souborů k prohledání..."/>
 			<replace-in-files-confirm-title value="Jste si jistí?"/>
 			<replace-in-files-confirm-directory value="Jste si jistí, že chcete nahradit všechny výskyty v:"/>
 			<replace-in-files-confirm-filetype value="Pro typ souboru:"/>
@@ -1840,7 +1886,6 @@ Text vložený do políčka(ček) obsahuje implicitně neviditelné znaky (pravd
 			<tab-untitled-string value="nový "/>
 			<file-save-assign-type value="Přid&amp;at příponu."/>
 			<close-panel-tip value="Zavřít"/>
-			<IncrementalFind-FSFound value="výskytů: $INT_REPLACE$"/>
 			<IncrementalFind-FSNotFound value="Výraz nenalezen."/>
 			<IncrementalFind-FSTopReached value="Dosažen začátek stránky, pokračování odspodu."/>
 			<IncrementalFind-FSEndReached value="Dosažen konec stránky, pokračování odshora."/>
@@ -1908,6 +1953,9 @@ Pokud zvolíte Pokročilý režim, ale nebudete upravovat soubory výše zmíně
 			<max-len-on-save-tip value="Délka Vámi zadaného textu je příliš dlouhá a nemusí být uložena pro příští relaci(e)."/>
 			<goto-setting-tip value="Nastavení najdete zde"/>
 			<tabbar-tabcompactlabellen-tip value="Omezuje viditelnou délku dlouhých názvů karet. Stisknutím klávesy Enter použijete zde zadanou hodnotu okamžitě. Rozsah hodnot: 1–257 znaků (0 zakáže zkracování)."/>
+			<networkpathwarning-serverwhitelist-tip value="Přidá server aktuálního souboru na seznam povolených v Notepadu++ (serverWhiteList.xml).
+
+Pro více informací klikněte na toto tlačítko a otevře se Vám webová stránka s příslušnou částí Uživatelské příručky."/>
 		</MiscStrings>
 
 	</Native-Langue>

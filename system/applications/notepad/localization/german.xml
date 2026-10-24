@@ -14,7 +14,7 @@ Translation note:
 	or a copy at: http://www.should.keepfree.de/N++/german.xml.txt (rename to german.xml)
 -->
 <NotepadPlus>
-	<Native-Langue name="Deutsch" filename="german.xml" version="8.9"><!-- Datum: 10.03.2026, basiert auf english.xml 8.9 vom 10.03.2026 -->
+	<Native-Langue name="Deutsch" filename="german.xml" version="8.9.8"><!-- Datum: 18.09.2026, basiert auf english.xml 8.9.8 vom 16.09.2026 -->
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -50,7 +50,7 @@ Translation note:
 					<Item subMenuId="edit-onSelection" name="Mit Auswahl"/>
 					<Item subMenuId="edit-multiSelectALL" name="Mehrfachauswahl ALLE"/>
 					<Item subMenuId="edit-multiSelectNext" name="Mehrfachauswahl Nächstes"/>
-					<Item subMenuId="edit-readonlyInNotepad++" name="Schreibschutz in Notepad++"/>
+					<Item subMenuId="edit-readonlyInNotepad++" name="Schreibsch&amp;utz in Notepad++"/>
 					<Item subMenuId="search-changeHistory" name="Änderungs-Historie"/>
 					<Item subMenuId="search-markAll" name="&amp;Alle Treffer hervorheben"/>
 					<Item subMenuId="search-markOne" name="Di&amp;esen Treffer hervorheben"/>
@@ -60,13 +60,13 @@ Translation note:
 					<Item subMenuId="search-copyStyledText" name="Hervorgehobenen Text kopieren"/>
 					<Item subMenuId="search-bookmark" name="&amp;Lesezeichen"/>
 					<Item subMenuId="view-currentFileIn" name="Aktuelle Datei betrachten in"/>
-					<Item subMenuId="view-showSymbol" name="Symbole anzeigen"/>
+					<Item subMenuId="view-showSymbol" name="&amp;Symbole anzeigen"/>
 					<Item subMenuId="view-zoom" name="Z&amp;oom"/>
 					<Item subMenuId="view-moveCloneDocument" name="Datei &amp;verschieben/duplizieren"/>
 					<Item subMenuId="view-tab" name="&amp;Tabs"/>
 					<Item subMenuId="view-collapseLevel" name="T&amp;extblöcke schließen"/>
 					<Item subMenuId="view-uncollapseLevel" name="Te&amp;xtblöcke öffnen"/>
-					<Item subMenuId="view-project" name="Projektver&amp;waltung"/>
+					<Item subMenuId="view-project" name="Pro&amp;jektverwaltung"/>
 					<Item subMenuId="encoding-characterSets" name="&amp;Weitere Codepages"/>
 					<Item subMenuId="encoding-arabic" name="&amp;Arabisch"/>
 					<Item subMenuId="encoding-baltic" name="&amp;Baltisch"/>
@@ -86,10 +86,10 @@ Translation note:
 					<Item subMenuId="encoding-vietnamese" name="&amp;Vietnamesisch"/>
 					<Item subMenuId="language-userDefinedLanguage" name="Benutzerdefinierte Sprache"/>
 					<Item subMenuId="settings-import" name="&amp;Importieren"/>
-					<Item subMenuId="tools-md5" name="MD5"/>
-					<Item subMenuId="tools-sha1" name="SHA-1"/>
-					<Item subMenuId="tools-sha256" name="SHA-256"/>
-					<Item subMenuId="tools-sha512" name="SHA-512"/>
+					<Item subMenuId="tools-md5" name="&amp;MD5"/>
+					<Item subMenuId="tools-sha1" name="SHA-&amp;1"/>
+					<Item subMenuId="tools-sha256" name="SHA-&amp;256"/>
+					<Item subMenuId="tools-sha512" name="SHA-&amp;512"/>
 					<Item subMenuId="window-sortby" name="Sortieren nach"/>
 				</SubEntries>
 
@@ -98,7 +98,8 @@ Translation note:
 					<Item id="41001" name="&amp;Neu"/>
 					<Item id="41002" name="&amp;Öffnen …"/>
 					<Item id="41019" name="E&amp;xplorer"/>
-					<Item id="41020" name="&amp;Eingabeaufforderung (cmd)"/>
+					<Item id="41020" name="&amp;Eingabeaufforderung/Kommandozeile"/>
+					<Item id="41027" name="PowerShell"/>
 					<Item id="41025" name="Ordner als Arbeitsbereich"/>
 					<Item id="41003" name="S&amp;chließen"/>
 					<Item id="41004" name="All&amp;e schließen"/>
@@ -210,15 +211,15 @@ Translation note:
 					<Item id="42026" name="Schreib&amp;richtung von rechts nach links"/>
 					<Item id="42027" name="Schreibrichtung von lin&amp;ks nach rechts"/>
 					<Item id="42028" name="Schreibsch&amp;utz für aktuelles Dokument"/>
-					<Item id="42102" name="Schreibschutz für alle Dokumente"/>
-					<Item id="42103" name="Entferne Schreibschutz für alle Dokumente"/>
+					<Item id="42102" name="Schreibschutz für &amp;alle Dokumente"/>
+					<Item id="42103" name="Schreibschutz für alle Dokumente &amp;entfernen"/>
 					<Item id="42029" name="Vollständigen Datei&amp;pfad kopieren"/>
 					<Item id="42030" name="Nur Datei&amp;namen kopieren"/>
 					<Item id="42031" name="Nur &amp;Verzeichnispfad kopieren"/>
 					<Item id="42087" name="Alle Dateinamen kopieren"/>
 					<Item id="42088" name="Alle vollständigen Dateipfade kopieren"/>
 					<Item id="42032" name="Makro &amp;mehrfach ausführen …"/>
-					<Item id="42033" name="Schreibschutz-Attribut in Windows"/>
+					<Item id="42033" name="Schreibschutz-Attribut in &amp;Windows"/>
 					<Item id="42035" name="Zeilen aus&amp;kommentieren"/>
 					<Item id="42036" name="Auskommentierung der Zeilen a&amp;ufheben"/>
 					<Item id="42055" name="&amp;Leerzeilen (nur völlig leere) löschen"/>
@@ -282,9 +283,9 @@ Translation note:
 					<Item id="43064" name="Markierung &amp;3"/>
 					<Item id="43065" name="Markierung &amp;4"/>
 					<Item id="43066" name="Markierung &amp;5"/>
-					<Item id="43067" name="Gehe zur nächsten Änderung"/>
-					<Item id="43068" name="Gehe zur vorherigen Änderung"/>
-					<Item id="43069" name="Änderungs-Historie löschen"/>
+					<Item id="43067" name="Zur nächsten Änderung gehen"/>
+					<Item id="43068" name="Zur vorherigen Änderung gehen"/>
+					<Item id="43069" name="Änderungshistorie löschen"/>
 					<Item id="43045" name="Suchergebnis-&amp;Fenster"/>
 					<Item id="43046" name="Zum n&amp;ächsten Suchergebnis springen"/>
 					<Item id="43047" name="Zum vorherigen S&amp;uchergebnis springen"/>
@@ -305,6 +306,7 @@ Translation note:
 					<Item id="44024" name="Schrift ver&amp;kleinern (STRG + Mausrad nach unten)"/>
 					<Item id="44025" name="&amp;Leerzeichen und Tabulatoren anzeigen"/>
 					<Item id="44026" name="Zeilenende anze&amp;igen"/>
+					<Item id="44027" name="Zwischen Ansichten &amp;synchronisieren"/>
 					<Item id="44029" name="Alle Textblöcke &amp;öffnen"/>
 					<Item id="44030" name="Textblock schlie&amp;ßen"/>
 					<Item id="44031" name="Textblock öff&amp;nen"/>
@@ -312,7 +314,7 @@ Translation note:
 					<Item id="44080" name="&amp;Miniaturansicht"/>
 					<Item id="44070" name="&amp;Dokumentenliste"/>
 					<Item id="44084" name="&amp;Funktionsliste"/>
-					<Item id="44085" name="Verzeichnis als Arbeitsbereich"/>
+					<Item id="44085" name="Verzei&amp;chnis als Arbeitsbereich"/>
 					<Item id="44086" name="&amp;1. Tab"/>
 					<Item id="44087" name="&amp;2. Tab"/>
 					<Item id="44088" name="&amp;3. Tab"/>
@@ -326,7 +328,7 @@ Translation note:
 					<Item id="44117" name="&amp;Letzter Tab"/>
 					<Item id="44095" name="&amp;Nächster Tab"/>
 					<Item id="44096" name="&amp;Vorheriger Tab"/>
-					<Item id="44097" name="Überwachen (tail -f)"/>
+					<Item id="44097" name="Über&amp;wachen (tail -f)"/>
 					<Item id="44098" name="Tab vorwärts bewegen"/>
 					<Item id="44099" name="Tab rückwärts bewegen"/>
 					<Item id="44110" name="Entferne Farbe"/>
@@ -395,19 +397,20 @@ Translation note:
 					<Item id="48011" name="&amp;Optionen …"/>
 					<Item id="48014" name="Plugin-Verzeichnis öffnen …"/>
 					<Item id="48015" name="Plugin-Verwaltung …"/>
-					<Item id="48501" name="Erstellen …"/>
-					<Item id="48502" name="Aus Dateien erstellen …"/>
-					<Item id="48503" name="Aus Auswahl in der Zwischenablage erstellen"/>
-					<Item id="48504" name="Erstellen …"/>
-					<Item id="48505" name="Aus Dateien erstellen …"/>
-					<Item id="48506" name="Aus Auswahl in der Zwischenablage erstellen"/>
-					<Item id="48507" name="Erstelle …"/>
-					<Item id="48508" name="Erstelle aus Dateien …"/>
-					<Item id="48509" name="Erstelle aus der Auswahl in die Zwischenablage"/>
-					<Item id="48510" name="Erstelle …"/>
-					<Item id="48511" name="Erstelle aus Dateien …"/>
-					<Item id="48512" name="Erstelle aus der Auswahl in die Zwischenablage"/>
+					<Item id="48501" name="&amp;Erstellen …"/>
+					<Item id="48502" name="Aus &amp;Dateien erstellen …"/>
+					<Item id="48503" name="Aus Auswahl in der &amp;Zwischenablage erstellen"/>
+					<Item id="48504" name="&amp;Erstellen …"/>
+					<Item id="48505" name="Aus &amp;Dateien erstellen …"/>
+					<Item id="48506" name="Aus Auswahl in der &amp;Zwischenablage erstellen"/>
+					<Item id="48507" name="&amp;Erstellen …"/>
+					<Item id="48508" name="Aus &amp;Dateien erstellen …"/>
+					<Item id="48509" name="Aus Auswahl in der &amp;Zwischenablage erstellen"/>
+					<Item id="48510" name="&amp;Erstellen …"/>
+					<Item id="48511" name="Aus &amp;Dateien erstellen …"/>
+					<Item id="48512" name="Aus Auswahl in der &amp;Zwischenablage erstellen"/>
 					<Item id="49000" name="Externes Programm &amp;ausführen …"/>
+					<Item id="49001" name="Datei 'shortcuts.xml' prüfen"/>
 
 					<Item id="50000" name="&amp;Funktionsvervollständigung"/>
 					<Item id="50001" name="&amp;Wortvervollständigung"/>
@@ -423,16 +426,16 @@ Translation note:
 					<Item id="48017" name="Verknüpfung &amp;ändern/Befehl löschen …"/>
 
 					<Item id="11001" name="&amp;Fenster …"/>
-					<Item id="11002" name="Name A bis Z"/>
-					<Item id="11003" name="Name Z bis A"/>
-					<Item id="11004" name="Pfad A bis Z"/>
-					<Item id="11005" name="Pfad Z bis A"/>
-					<Item id="11006" name="Typ A bis Z"/>
-					<Item id="11007" name="Typ Z bis A"/>
-					<Item id="11008" name="Inhaltslänge aufsteigend"/>
-					<Item id="11009" name="Inhaltslänge absteigend"/>
-					<Item id="11010" name="Letzte Änderung aufsteigend"/>
-					<Item id="11011" name="Letzte Änderung absteigend"/>
+					<Item id="11002" name="&amp;Name A bis Z"/>
+					<Item id="11003" name="Name &amp;Z bis A"/>
+					<Item id="11004" name="&amp;Pfad A bis Z"/>
+					<Item id="11005" name="Pfad Z &amp;bis A"/>
+					<Item id="11006" name="&amp;Typ A bis Z"/>
+					<Item id="11007" name="T&amp;yp Z bis A"/>
+					<Item id="11008" name="&amp;Inhaltslänge aufsteigend"/>
+					<Item id="11009" name="In&amp;haltslänge absteigend"/>
+					<Item id="11010" name="&amp;Letzte Änderung aufsteigend"/>
+					<Item id="11011" name="Letzte Änderung ab&amp;steigend"/>
 				</Commands>
 			</Main>
 			<TabBar>
@@ -447,16 +450,17 @@ Translation note:
 				<Item CMDID="41006" name="&amp;Speichern"/>
 				<Item CMDID="41008" name="Speichern &amp;unter …"/>
 				<Item CMDID="1" name="Öffne in"/>
-				<Item CMDID="41019" name="Ordner im E&amp;xplorer öffnen"/>
-				<Item CMDID="41020" name="Kommandozeile im aktuellen &amp;Ordner öffnen"/>
-				<Item CMDID="41025" name="Enthaltenden Ordner als Arbeitsbereich öffnen"/>
+				<Item CMDID="41019" name="Aktuellen Ordner im E&amp;xplorer öffnen"/>
+				<Item CMDID="41020" name="Aktuellen &amp;Ordner in der Kommandozeile öffnen"/>
+				<Item CMDID="41027" name="Aktuellen Ordner in PowerShell öffnen"/>
+				<Item CMDID="41025" name="Aktuellen Ordner als Arbeitsbereich öffnen"/>
 				<Item CMDID="41023" name="Im Standard-Betrachter öffnen"/>
 				<Item CMDID="41017" name="Um&amp;benennen …"/>
 				<Item CMDID="41016" name="L&amp;öschen"/>
 				<Item CMDID="41014" name="Neu &amp;laden"/>
 				<Item CMDID="41010" name="&amp;Drucken …"/>
 				<Item CMDID="42028" name="Schreibsch&amp;utz in Notepad++"/>
-				<Item CMDID="42033" name="Schreibschutz-Attribut in Windows"/>
+				<Item CMDID="42033" name="Schreibschutz-Attribut in &amp;Windows"/>
 				<Item CMDID="2" name="In Zwischenablage kopieren"/>
 				<Item CMDID="42029" name="Vollständigen Dateipfad &amp;kopieren"/>
 				<Item CMDID="42030" name="Nur Datei&amp;namen kopieren"/>
@@ -516,7 +520,7 @@ Translation note:
 				<Item id="1659" name="&amp;Versteckte Ordner"/>
 				<Item id="1624" name="Suchmodus"/>
 				<Item id="1625" name="Norma&amp;l"/>
-				<Item id="1626" name="Erwe&amp;itert (\n, \r, \t, \0, \x…)"/>
+				<Item id="1626" name="Erwe&amp;itert (\n, \r, \t, \0, \x, …)"/>
 				<Item id="1660" name="Ersetzen in Dateien"/>
 				<Item id="1665" name="Ersetzen in Projekten"/>
 				<Item id="1662" name="Projekt Tafel 1"/>
@@ -539,13 +543,14 @@ Translation note:
 				<Item id="1681" name="Suchen:"/>
 				<Item id="1685" name="&amp;Groß-/Kleinschreibung"/>
 				<Item id="1690" name="&amp;Alle markieren"/>
+				<Item id="1691" name="&amp;Zählen"/>
 			</IncrementalFind>
 
 			<FindCharsInRange title="Suche nach Zeichencodes">
 				<Item id="2" name="S&amp;chließen"/>
 				<Item id="2901" name="&amp;Nicht-ASCII-Zeichen (128–255)"/>
 				<Item id="2902" name="&amp;ASCII-Zeichen (0–127)"/>
-				<Item id="2903" name="&amp;Benutzerdefiniert (0-255):"/>
+				<Item id="2903" name="&amp;Benutzerdefiniert (0–255):"/>
 				<Item id="2906" name="A&amp;ufwärts"/>
 				<Item id="2907" name="Ab&amp;wärts"/>
 				<Item id="2908" name="Suchrichtung"/>
@@ -617,16 +622,18 @@ Translation note:
 				<Item id="1934" name="&amp;Kopiere in Zwischenablage"/>
 				<Item id="2" name="S&amp;chließen"/>
 			</SHA512FromTextDlg>
-			<PluginsAdminDlg title="Plugin-Verwaltung" titleAvailable="Verfügbar" titleUpdates="Aktualisierungen" titleInstalled="Installiert" titleIncompatible="Inkompatibel">
+			<PluginsAdminDlg title="Plugin-Verwaltung" titleAvailable="Verfügbar" titleUpdates="Aktualisierungen" titleInstalled="Installiert" titleIncompatible="Inkompatibel" titleDisabled="Deaktiviert">
 				<ColumnPlugin name="Plugin"/>
 				<ColumnVersion name="Version"/>
-				<Item id="5501" name="&amp;Suchen:"/>
+				<Item id="5501" name="&amp;Suche:"/>
 				<Item id="5503" name="&amp;Installieren"/>
 				<Item id="5504" name="&amp;Aktualisieren"/>
 				<Item id="5505" name="&amp;Entfernen"/>
 				<Item id="5508" name="&amp;Nächstes finden"/>
-				<Item id="5509" name="&amp;Version der Plugin-Liste: "/>
+				<Item id="5509" name="&amp;Version der Plugin-Liste:"/>
 				<Item id="5511" name="Speicherort der &amp;Plugin-Liste"/>
+				<Item id="5512" name="&amp;Deaktivieren"/>
+				<Item id="5513" name="A&amp;ktivieren"/>
 				<Item id="2" name="Schließen"/>
 			</PluginsAdminDlg>
 
@@ -664,6 +671,10 @@ Translation note:
 				</SubDialog>
 			</StyleConfig>
 
+			<ColorPopup>
+				<Item id="1" name="Weitere Farben …"/>
+			</ColorPopup>
+
 			<ShortcutMapper title="Tastenkombinationen">
 				<Item id="2602" name="Ändern …"/>
 				<Item id="2603" name="Alle Löschen"/>
@@ -686,8 +697,10 @@ Translation note:
 				<DeleteContextMenu name="Löschen"/>
 				<ClearContextMenu name="Entfernen"/>
 				<MainCommandNames>
-					<Item id="41019" name="Ordner im Explorer öffnen"/>
-					<Item id="41020" name="Ordner in der Kommandozeile öffnen"/>
+					<Item id="41019" name="Aktuellen Ordner im Explorer öffnen"/>
+					<Item id="41020" name="Aktuellen Ordner in der Kommandozeile öffnen"/>
+					<Item id="41027" name="Aktuellen Ordner in PowerShell öffnen"/>
+					<Item id="41025" name="Aktuellen Ordner als Arbeitsbereich öffnen"/>
 					<Item id="41021" name="Zuletzt geschlossene Datei wieder öffnen"/>
 					<Item id="45001" name="Zeilenende umwandeln zu Windows (CR LF)"/>
 					<Item id="45002" name="Zeilenende umwandeln zu Unix (LF)"/>
@@ -1001,11 +1014,11 @@ Translation note:
 					<Item id="6108" name="Tabs nicht mit der Maus verschiebbar"/>
 					<Item id="6109" name="Farbe inaktiver Tabs ändern"/>
 					<Item id="6110" name="Aktiven Tab farbig hervorheben"/>
-					<Item id="6111" name="Schaltfläche auf inaktiven Tabs anzeigen"/>
+					<Item id="6111" name="Schaltflächen auf inaktiven Tabs anzeigen"/>
 					<Item id="6112" name="Schließen-Kreuz anzeigen"/>
 					<Item id="6113" name="Tabs per Doppelklick schließen"/>
 					<Item id="6115" name="Pin-Tab-Funktion aktivieren (anheften/loslösen)"/>
-					<Item id="6135" name="Nur angeheftete Schaltfläche anzeigen"/>
+					<Item id="6135" name="Nur angeheftete Pins anzeigen"/>
 					<Item id="6118" name="Ausblenden"/>
 					<Item id="6119" name="Mehrzeilig"/>
 					<Item id="6120" name="Vertikal"/>
@@ -1151,7 +1164,7 @@ Translation note:
 					<Item id="6508" name="Sprachmenü"/>
 					<Item id="6335" name="Backslash ist Escapezeichen für SQL"/>
 				</Language>
-				
+
 				<Indentation title="Einrückungen">
 					<Item id="7161" name="Autom. Einrückung"/>
 					<Item id="7162" name="Keine"/>
@@ -1184,7 +1197,8 @@ Translation note:
 				</Highlighting>
 
 				<Print title="Drucken">
-					<Item id="6601" name="Zeilennu&amp;mmern mitdrucken"/>
+					<Item id="6601" name="Zeilennu&amp;mmern drucken"/>
+					<Item id="6616" name="Seitenvorschub &amp;als Seitenumbruch drucken"/>
 					<Item id="6602" name="Farbo&amp;ptionen"/>
 					<Item id="6603" name="Wie angezeigt (W&amp;YSIWYG)"/>
 					<Item id="6604" name="I&amp;nvertieren"/>
@@ -1396,6 +1410,7 @@ Translation note:
 					<Item id="6346" name="Momentaufnahme in Miniaturansicht"/>
 					<Item id="6360" name="Alle Klänge stummschalten"/>
 					<Item id="6361" name="Dialogfeld 'Alle Dateien speichern' aktivieren"/>
+					<Item id="6366" name="Laden von symbolischen Links in 'Ordner als Arbeitsbereich' zulassen"/>
 				</MISC>
 			</Preference>
 			<MultiMacro title="Makro mehrfach ausführen">
@@ -1463,7 +1478,18 @@ Diese Wahl kann jederzeit in den Einstellungen angepasst werden."/>
 				<Item id="7" name="&amp;Nein"/>
 				<Item id="4" name="&amp;Immer Ja"/>
 			</DoSaveAll><!-- HowToReproduce: Check the 'Enable Save All confirm dialog' checkbox in Preference->MISC, now click 'Save all' -->
+			<NetworkPathWarning title="Laden der Notepad++-Sitzung" title2="Anklickbarer file://-Link" title3="Laden von toolbarButtonsConf.xml" title4="Laden der Projekt-Panel-XML-Datei">
+				<Item id="1771" name="Warnung vor Netzwerkpfad:
 
+$STR_REPLACE$
+
+Das Laden dieser Datei veranlasst Windows dazu, sich automatisch am Server zu authentifizieren, wodurch die Windows-Anmeldedaten möglicherweise offengelegt werden.
+Dennoch laden?"/>
+				<Item id="2" name="Über&amp;springen"/>
+				<Item id="6" name="Immer von diesem Server &amp;laden"/>
+				<Item id="7" name="Netzwerkpf&amp;ad immer überspringen"/>
+				<Item id="4" name="&amp;Netzwerkpfad immer laden"/>
+			</NetworkPathWarning>
 			<DebugInfo title="Debug-Info">
 				<Item id="1752" name="&amp;Kopiere Debug-Info in Zwischenabl."/>
 				<Item id="1" name="OK"/>
@@ -1494,7 +1520,7 @@ Sind Sie sicher?"/>
 			<SettingsOnCloudError title="Cloud-Einstellungen" message="Der von Ihnen angegebene Pfad für die Einstellungen in der Cloud erlaubt kein
 Speichern oder es fehlen die Schreibberechtigungen.
 Ihre Einstellungen konnten nicht gespeichert werden. Bitte passen Sie die Einstellungen an."/>
-			<FilePathNotFoundWarning title="Datei öffnen" message="Die zu öffnende Datei existiert nicht."/>
+			<FilePathNotFoundWarning title="Pfad öffnen" message="Der zu öffnende Pfad existiert nicht."/>
 			<SessionFileInvalidError title="Konnte Sitzung nicht laden" message="Die Sitzungsdatei ist entweder beschädigt oder ungültig."/>
 			<DroppingFolderAsProjectModeWarning title="Ungültige Aktion" message="Es können entweder Dateien oder Verzeichnisse abgelegt werden, aber nicht beides zugleich, da das Programm im 'Verzeichnis als Projekt'-Modus ist.
 Um dies zu ändern aktivieren Sie die Option &quot;Alle Dateien im jeweiligen Verzeichnis öffnen anstelle des Start-Verzeichnisses&quot; im &quot;Standardverzeichnis&quot; Bereich des Optionen-Dialogs."/>
@@ -1534,7 +1560,6 @@ Soll die Datei erneut geladen werden und die Änderungen ignoriert werden?"/>
 			<PrehistoricSystemDetected title="Altes Betriebssystem festgestellt" message="Anscheinend verwenden Sie ein veraltetes Betriebssystem - diese Funktion funktioniert nur mit einem modernen Betriebssystem."/>
 			<XpUpdaterProblem title="Automatisches Update" message="Die Update-Funktion von Notepad++ ist unter Windows XP wegen fehlender Sicherheitsebene nicht kompatibel.
 Soll auf die Homepage von Notepad++ gewechselt werden um die aktuellste Version herunterzuladen?"/>
-			<GUpProxyConfNeedAdminMode title="Proxyeinstellungen" message="Um Proxyeinstellungen vorzunehmen muss Notepad++ im Administrator-Modus neu gestartet werden."/>
 			<DocTooDirtyToMonitor title="Überwachungsproblem" message="Die Datei ist unsauber. Bitte vor der Überwachung die Änderungen speichern."/>
 			<DocNoExistToMonitor title="Überwachungsproblem" message="Die Datei muss existieren, um überwacht werden zu können."/>
 			<FileTooBigToOpen title="Problem mit Dateigröße" message="Die Datei ist zu groß, um mit Notepad++ geöffnet zu werden."/>
@@ -1607,18 +1632,30 @@ HINWEIS: Wenn die Platzhalter nicht erstellt oder später geschlossen werden, wi
 
 Sollen diese Dateil-Platzhalter erstellt werden?
 
-HINWEIS: Wenn die Platzhalter nicht erstellt oder später geschlossen werden, wird die Sitzung beim Beenden MODIFIZIERT! Es wird empfohlen jetzt eine Sicherung der Sitzung &quot;session.xml&quot; zu machen."/>
+HINWEIS: Wenn die Platzhalter nicht erstellt oder später geschlossen werden, wird die Sitzung beim Beenden MODIFIZIERT! Es wird empfohlen jetzt eine Sicherung der Sitzung 'session.xml' zu machen."/>
 			<RTLvsDirectWrite title="Kann nicht auf 'Schreibrichtung von rechts nach links' (RTL) schalten" message="'RTL' ist nicht kompatibel mit dem 'DirectWrite' Modus. Bitte dazu 'DirectWrite' unter 'Diverses' in den Einstellungen deaktivieren und danach Notepad++ neu starten."/>
 			<FileMemoryAllocationFailed title="Ausnahmefehler: Dateispeicherzuweisung fehlgeschlagen" message="Eventuell gibt es nicht genügend zusammenhängenden freien Speicher für die von Notepad++ geladene Datei."/><!-- HowToReproduce: Try to open multiple files with total size > ~700MB in the x86 Notepad++ (it will depend on the PC memory configuration and the current system memory usage...). -->
 			<FindRegexBackwardDisabled title="Regex-Rückwärtssuche nicht aktiv" message="Standardmäßig ist die Regex-Rückwärtssuche deaktiviert da möglicherweise unerwartete Ergebnisse auftreten. Um dennoch eine Regex-Rückwärtssuche durchzuführen, ist in der Suche entweder die normale oder erweiterte Suche statt regulärer Ausdrucke auszuwählen.
 OK auswählen um die Suche zu öffnen oder in den Vordergrund zu bringen.
-			
+
 Falls die Regex-Rückwärtssuche dennoch benötigt wird, kann deren Aktivierung im Benutzerhandbuch nachgeschlagen werden."/>
 			<PrintError title="0" message="Druckerdokument kann nicht gestartet werden."/><!-- Use title="0" to use Windows OS default translated "Error" title. -->
 			<FindAutoChangeOfInSelectionWarning title="Suchwarnung" message="Der Status des Kontrollkästchens 'In Auswahl' wurde automatisch geändert.
 Bitte die Suchbedingungen überprüfen, bevor die Aktion ausgeführt wird."/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="Neustart von Notepad++ erforderlich" message="Notepad++ muss zur Anzeige der Tastenkürzel neu gestartet werden."/>
 			<NoAdminRight2ChangeReadOnlyFileAttribute title="Ändern des Schreibschutz-Attributs der Datei fehlgeschlagen" message="Bitte Notepad++ als Administrator ausführen, um Dateiattribute zu ändern."/>
+			<ReadOnlyFileCannotBeSaved title="Speichern fehlgeschlagen – Schreibschutz" message="&quot;$STR_REPLACE$&quot;
+Die Datei ist schreibgeschützt und kann nicht gespeichert werden.
+Entferne den Schreibschutz, um die Datei zu speichern."/>
+			<ShortcutsXmlHMACMissing title="Sicherheitswarnung" message="Die Sicherheitsinformationen für 'shortcuts.xml' fehlen in 'config.xml'.
+
+Aus Sicherheitsgründen wird die Integrität der Datei 'shortcuts.xml' überprüft. Um den benutzerdefinierten Befehl auszuführen, bitte die geöffnete Datei 'shortcuts.xml' durchsehen. Wenn der Dateiinhalt in Ordnung ist, verwende 'Datei shortcuts.xml prüfen' im Menü 'Ausführen', um dies zu bestätigen."/>
+			<ShortcutsXmlTampered title="Sicherheitswarnung" message="Die Datei 'shortcuts.xml' wurde anscheinend manuell verändert.
+
+Aus Sicherheitsgründen bitte die geöffnete Datei 'shortcuts.xml' durchsehen. Wenn der Dateiinhalt in Ordnung ist, verwende 'Datei shortcuts.xml prüfen' im Menü 'Ausführen', um dies zu bestätigen."/>
+			<SymlinkLoadingWarning title="Warnung: Laden von symbolischen Links kann zum Einfrieren führen" message="Das Aktivieren des Ladens symbolischer Links in 'Ordner als Arbeitsbereich' kann dazu führen, dass Notepad++ in eine Endlosschleife gerät und einfriert.
+Dies kann geschehen, wenn symbolische Links von Verzeichnissen auf übergeordnete Ordner verweisen oder zirkuläre Verweise bilden.
+Nur fortfahren, wenn man sich dieser Risiken bewusst ist."/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Zwischenablage"/>
@@ -1660,22 +1697,23 @@ Bitte die Suchbedingungen überprüfen, bevor die Aktion ausgeführt wird."/> <!
 			<PreferencesInitialSort name="Funktionen standardmäßig nach Namen sortieren"/>
 		</FunctionList>
 		<FolderAsWorkspace>
-			<PanelTitle name="Verzeichnis als Arbeitsbereich"/>
-			<SelectFolderFromBrowserString name="Wähle ein Verzeichnis zum Hinzufügen zum Arbeitsbereich"/>
-			<ExpandAllFoldersTip name="Alle Verzeichnisse aufklappen"/>
-			<CollapseAllFoldersTip name="Alle Verzeichnisse zuklappen"/>
+			<PanelTitle name="Ordner als Arbeitsbereich"/>
+			<SelectFolderFromBrowserString name="Wähle einen Ordner um ihn zum Arbeitsbereich hinzuzufügen"/>
+			<ExpandAllFoldersTip name="Alle Ordner ausklappen"/>
+			<CollapseAllFoldersTip name="Alle Ordner einklappen"/>
 			<LocateCurrentFileTip name="Aktuelle Datei lokalisieren"/>
 			<Menu>
 				<Item id="3511" name="Entfernen"/>
 				<Item id="3512" name="Alle entfernen"/>
 				<Item id="3513" name="Hinzufügen …"/>
-				<Item id="3514" name="Vom System gestartet"/>
+				<Item id="3514" name="Durch System starten"/>
 				<Item id="3515" name="Öffnen"/>
 				<Item id="3516" name="Pfad kopieren"/>
 				<Item id="3517" name="In Dateien suchen …"/>
 				<Item id="3518" name="Explorer hier öffnen"/>
 				<Item id="3519" name="Kommandozeile hier öffnen"/>
 				<Item id="3520" name="Dateinamen kopieren"/>
+				<Item id="3521" name="PowerShell hier öffnen"/>
 			</Menu>
 		</FolderAsWorkspace>
 		<ProjectManager>
@@ -1784,6 +1822,7 @@ Suche in allen Dateien, exkludiere alle Verzeichnisse log oder logs rekursiv:
 			<find-status-scope-all value="in dieser Datei"/>
 			<find-status-scope-backward value="vom Dateianfang bis zum Cursor"/>
 			<find-status-scope-forward value="vom Cursor bis zum Dateiende"/>
+			<find-status-replace-invalid-replace-chars value="Ersetzen: Kann in einem ANSI-Dokument nicht durch Nicht-ANSI-Text ersetzt werden"/>
 			<find-status-invisible-chars-findWhat value="Unsichtbare Zeichen im eingefügten &quot;Suchen nach&quot;- oder &quot;Ersetzen durch&quot;-Inhalt"/>
 			<find-status-invisible-chars-findWhat-tip value="Warnung: Unsichtbare Zeichen im Suchen- oder Ersetzen-Feld.
 Der in diese Felder eingefügte Text enthält unsichtbare Zeichen (möglicherweise Zeilenumbrüche). Falls fortgefahren wird, ohne sie zu löschen, werden sie in den Suchen- oder Ersetzen-Text einbezogen."/>
@@ -1799,9 +1838,10 @@ Der in diese Felder eingefügte Text enthält unsichtbare Zeichen (möglicherwei
 			<finder-wrap-long-lines value="Zeilenumbruch bei langen Zeilen"/>
 			<common-ok value="OK"/>
 			<common-cancel value="Abbruch"/>
-			<common-name value="Name: "/>
+			<common-name value="Name"/>
+			<common-error value="Fehler"/>
 			<tabrename-title value="Akt. Register umbenennen"/>
-			<tabrename-newname value="Neuer Name: "/>
+			<tabrename-newname value="Neuer Name"/>
 			<splitter-rotate-left value="Nach links drehen"/>
 			<splitter-rotate-right value="Nach rechts drehen"/>
 			<userdefined-title-new value="Neue Sprache erstellen …"/>
@@ -1821,6 +1861,7 @@ Der in diese Felder eingefügte Text enthält unsichtbare Zeichen (möglicherwei
 			<progress-hits-title value="Treffer:"/>
 			<progress-cancel-info value="Aktion wird abgebrochen, bitte warten …"/>
 			<find-in-files-progress-title value="Fortschritt für die Suche in Dateien …"/>
+			<discover-file-candidates-title value="Suche nach Dateikandidaten …"/>
 			<replace-in-files-confirm-title value="Sind Sie sicher?"/>
 			<replace-in-files-confirm-directory value="Sind Sie sicher, dass alle Treffer ersetzt werden sollen in: "/>
 			<replace-in-files-confirm-filetype value="Für Dateityp: "/>
@@ -1846,7 +1887,6 @@ Der in diese Felder eingefügte Text enthält unsichtbare Zeichen (möglicherwei
 			<tab-untitled-string value="neu "/>
 			<file-save-assign-type value="Erweiterung &amp;anfügen"/>
 			<close-panel-tip value="Schließen"/>
-			<IncrementalFind-FSFound value="$INT_REPLACE$ Übereinstimmungen"/>
 			<IncrementalFind-FSNotFound value="Ausdruck nicht gefunden"/>
 			<IncrementalFind-FSTopReached value="Anfang der Seite erreicht, Fortsetzung von unten"/>
 			<IncrementalFind-FSEndReached value="Ende der Seite erreicht, Fortsetzung von oben"/>
@@ -1908,14 +1948,17 @@ Wenn diese 'Intelligente Einrückung' gewählt wird, aber keine Dateien in den o
 
 			<!-- Due to the limited space on the status bar, if the translations for 'Pos' & 'Sel' are longer than the English words, please leave them in English instead of translating them. -->
 			<statusbar-Pos value="Pos: "/>
-			<statusbar-Sel value="Gew: "/>
-			<statusbar-Sel-number value="Gew"/>
+			<statusbar-Sel value="Asw: "/>
+			<statusbar-Sel-number value="Asw"/>
 			<toolbar-accent-tip value="Mit dieser Option werden die Symbolleistensymbole der Akzentfarbe des Windows-Systems angepasst. Die Akzentfarbe ist die Farbe, mit der Schaltflächen, Rahmen und Startmenükacheln in Windows hervorgehoben werden. Um sie zu ändern, gehe zu Einstellungen &gt; Personalisierung &gt; Farben und wähle die bevorzugte Akzentfarbe."/>
 			<len-limit-exceeded-tip value="Zeichen-Limit überschritten: Die Eingabe überschreitet evtl. das zulässige Limit und wurde möglicherweise gekürzt, und sie wird nicht für die nächste Sitzung gespeichert."/>
 			<max-len-on-search-tip value="Die Eingabe überschreitet evtl. das zulässige Limit und wurde möglicherweise gekürzt, und sie wird nicht für die nächste Sitzung gespeichert."/>
 			<max-len-on-save-tip value="Die Eingabe ist sehr lang und wird möglicherweise nicht für die nächste Sitzung gespeichert."/>
 			<goto-setting-tip value="Gehe zu den Einstellungen"/>
 			<tabbar-tabcompactlabellen-tip value="Beschränkt die sichtbare Länge von Tab-Namen. Enter-Taste drücken, um den Eingabewert anzuwenden. Wertebereich: 1-257 Zeichen (0 deaktiviert das Kürzen)."/>
+			<networkpathwarning-serverwhitelist-tip value="Fügt den Server der aktuellen Datei zur Datei 'serverWhiteList.xml' von Notepad++ hinzu.
+
+Für weitere Informationen: Klicke auf diese Schaltfläche, um die Website mit dem entsprechenden Abschnitt des Benutzerhandbuchs zu öffnen."/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

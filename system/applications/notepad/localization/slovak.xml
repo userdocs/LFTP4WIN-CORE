@@ -3,7 +3,7 @@
 	Slovak localization for Notepad++
 -->
 <NotepadPlus>
-	<Native-Langue name="Slovenčina" filename="slovak.xml" version="8.9.2">
+	<Native-Langue name="Slovenčina" filename="slovak.xml" version="8.9.8">
 		<Menu>
 			<Main>
 				<!-- Main Menu Entries -->
@@ -39,7 +39,7 @@
 					<Item subMenuId="edit-onSelection" name="V&amp;ybraný text"/>
 					<Item subMenuId="edit-multiSelectALL" name="Viacnásobný výber VŠETKO"/>
 					<Item subMenuId="edit-multiSelectNext" name="Viacnásobný výber Ďalší"/>
-					<Item subMenuId="edit-readonlyInNotepad++" name="Iba na čítanie v Notepad++"/>
+					<Item subMenuId="edit-readonlyInNotepad++" name="'Iba na čítanie' v Notepad++"/>
 					<Item subMenuId="search-changeHistory" name="História zmien"/>
 					<Item subMenuId="search-markAll" name="Použiť štýl na vše&amp;tky tokeny"/>
 					<Item subMenuId="search-markOne" name="Použiť štýl na &amp;jeden token"/>
@@ -86,8 +86,9 @@
 				<Commands>
 					<Item id="41001" name="&amp;Nový"/>
 					<Item id="41002" name="&amp;Otvoriť…"/>
-					<Item id="41019" name="v Prieskumníkovi"/>
-					<Item id="41020" name="v Príkazovom riadku"/>
+					<Item id="41019" name="Prieskumník"/>
+					<Item id="41020" name="Príkazový riadok"/>
+					<Item id="41027" name="PowerShell"/>
 					<Item id="41025" name="Priečinok ako pra&amp;covný priestor"/>
 					<Item id="41003" name="Zavrieť"/>
 					<Item id="41004" name="Z&amp;avrieť všetky"/>
@@ -198,8 +199,8 @@
 					<Item id="42025" name="Uložiť aktuálne zaznamenané ma&amp;kro…"/>
 					<Item id="42026" name="Smer textu sprava do&amp;ľava"/>
 					<Item id="42027" name="Smer te&amp;xtu zľava doprava"/>
-					<Item id="42028" name="Iba na čítanie pre aktuálny dokument"/>
-					<Item id="42102" name="Iba na čítanie pre všetky dokumenty"/>
+					<Item id="42028" name="'Iba na čítanie' pre aktuálny dokument"/>
+					<Item id="42102" name="'Iba na čítanie' pre všetky dokumenty"/>
 					<Item id="42103" name="Odstrániť 'Iba na čítanie' pre všetky dokumenty"/>
 					<Item id="42029" name="Skopírovať cestu k aktuálnemu súboru"/>
 					<Item id="42030" name="Skopírovať názov aktuálneho súboru"/>
@@ -207,7 +208,7 @@
 					<Item id="42087" name="Všetky názvy súborov"/>
 					<Item id="42088" name="Všetky cesty súborov"/>
 					<Item id="42032" name="Spustiť makro &amp;viacnásobne…"/>
-					<Item id="42033" name="Atribút Iba na čítanie vo Windowse"/>
+					<Item id="42033" name="Atribút 'Iba na čítanie' vo Windowse"/>
 					<Item id="42035" name="Zakomentovať riadok"/>
 					<Item id="42036" name="Odkomentovať riadok"/>
 					<Item id="42055" name="Odstrániť prázdne riadky"/>
@@ -294,6 +295,7 @@
 					<Item id="44024" name="&amp;Oddialiť  (Ctrl+Koliesko myši nadol)"/>
 					<Item id="44025" name="Zobraziť medzery a tabulátory"/>
 					<Item id="44026" name="Zobraziť konce riadkov"/>
+					<Item id="44027" name="&amp;Synchronizovať medzi zobrazeniami"/>
 					<Item id="44029" name="Rozbaliť všetko"/>
 					<Item id="44030" name="Zbaliť aktuálnu úroveň"/>
 					<Item id="44031" name="Rozbaliť aktuálnu úroveň"/>
@@ -315,7 +317,7 @@
 					<Item id="44117" name="Posledná karta"/>
 					<Item id="44095" name="Nasledujúca karta"/>
 					<Item id="44096" name="Predchádzajúca karta"/>
-					<Item id="44097" name="Sledovania zmien (tail -&amp;f)"/>
+					<Item id="44097" name="Sledovanie zmien (tail -&amp;f)"/>
 					<Item id="44098" name="Presunúť kartu dopredu"/>
 					<Item id="44099" name="Presunúť kartu dozadu"/>
 					<Item id="44110" name="Odstrániť farbu"/>
@@ -397,6 +399,7 @@
 					<Item id="48511" name="Vytvoriť zo súborov…"/>
 					<Item id="48512" name="Vytvoriť z výberu do schránky"/>
 					<Item id="49000" name="&amp;Spustiť…"/>
+					<Item id="49001" name="Overiť súbor shortcuts.xml"/>
 
 					<Item id="50000" name="Dokončovanie funkcií"/>
 					<Item id="50001" name="Dokončovanie slov"/>
@@ -438,14 +441,15 @@
 				<Item CMDID="1" name="Otvoriť v"/>
 				<Item CMDID="41019" name="Otvoriť priečinok súboru v Prieskumníkovi"/>
 				<Item CMDID="41020" name="Otvoriť priečinok súboru v Príkazovom riadku"/>
+				<Item CMDID="41027" name="Otvoriť priečinok súboru v PowerShelli"/>
 				<Item CMDID="41025" name="Otvoriť priečinok súboru ako pracovný priestor"/>
 				<Item CMDID="41023" name="Otvoriť v predvolenom prehliadači"/>
 				<Item CMDID="41017" name="Premenovať…"/>
 				<Item CMDID="41016" name="Presunúť do koša…"/>
 				<Item CMDID="41014" name="Obnoviť"/>
 				<Item CMDID="41010" name="Tlačiť…"/>
-				<Item CMDID="42028" name="Iba na čítanie v Notepad++"/>
-				<Item CMDID="42033" name="Atribút Iba na čítanie vo Windowse"/>
+				<Item CMDID="42028" name="'Iba na čítanie' v Notepad++"/>
+				<Item CMDID="42033" name="Atribút 'Iba na čítanie' vo Windowse"/>
 				<Item CMDID="2" name="Kopírovať do schránky"/>
 				<Item CMDID="42029" name="Skopírovať celú cestu k súboru"/>
 				<Item CMDID="42030" name="Skopírovať názov súboru"/>
@@ -528,18 +532,19 @@
 				<Item id="1681" name="Hľadať:"/>
 				<Item id="1685" name="&amp;Rozlišovať veľkosť písmen"/>
 				<Item id="1690" name="&amp;Zvýrazniť všetky"/>
+				<Item id="1691" name="P&amp;očet"/>
 			</IncrementalFind>
 
 			<FindCharsInRange title="Hľadať znaky v rozsahu…">
 				<Item id="2" name="&amp;Zavrieť"/>
 				<Item id="2901" name="&amp;Nie-ASCII znaky (128 – 255)"/>
-				<Item id="2902" name="&amp;ASCII znaky (0 – 127)"/>
+				<Item id="2902" name="ASCII z&amp;naky (0 – 127)"/>
 				<Item id="2903" name="Vlastný &amp;rozsah (0 – 255):"/>
 				<Item id="2906" name="&amp;Hore"/>
 				<Item id="2907" name="&amp;Dole"/>
 				<Item id="2908" name="Smer"/>
 				<Item id="2909" name="&amp;Cyklicky"/>
-				<Item id="2910" name="&amp;Hľadať"/>
+				<Item id="2910" name="Hľ&amp;adať"/>
 			</FindCharsInRange>
 
 			<GoToLine title="Ísť na…">
@@ -606,7 +611,7 @@
 				<Item id="1934" name="Sko&amp;pírovať do schránky"/>
 				<Item id="2" name="&amp;Close"/>
 			</SHA512FromTextDlg>
-			<PluginsAdminDlg title="Správa doplnkov" titleAvailable="Dostupné" titleUpdates="Aktualizácie" titleInstalled="Nainštalované" titleIncompatible="Nekompatibilné">
+			<PluginsAdminDlg title="Správa doplnkov" titleAvailable="Dostupné" titleUpdates="Aktualizácie" titleInstalled="Nainštalované" titleIncompatible="Nekompatibilné" titleDisabled="Vypnuté">
 				<ColumnPlugin name="Doplnok"/>
 				<ColumnVersion name="Verzia"/>
 				<Item id="5501" name="&amp;Hľadať:"/>
@@ -616,6 +621,8 @@
 				<Item id="5508" name="Ďa&amp;lší"/>
 				<Item id="5509" name="Verzia zoznamu doplnkov:"/>
 				<Item id="5511" name="Repozitár zoznamu doplnkov"/>
+				<Item id="5512" name="&amp;Vypnúť"/>
+				<Item id="5513" name="&amp;Zapnúť"/>
 				<Item id="2" name="Zavrieť"/>
 			</PluginsAdminDlg>
 
@@ -652,6 +659,10 @@
 				</SubDialog>
 			</StyleConfig>
 
+			<ColorPopup>
+				<Item id="1" name="Viac farieb…"/>
+			</ColorPopup>
+
 			<ShortcutMapper title="Nastavenie klávesových skratiek">
 				<Item id="2602" name="Upraviť"/>
 				<Item id="2603" name="Odstrániť"/>
@@ -675,7 +686,9 @@
 				<ClearContextMenu name="Vymazať"/>
 				<MainCommandNames>
 					<Item id="41019" name="Otvoriť priečinok súboru v Prieskumníkovi"/>
-					<Item id="41020" name="Otvoriť priečinok súboru Príkazovom riadku"/>
+					<Item id="41020" name="Otvoriť priečinok súboru v Príkazovom riadku"/>
+					<Item id="41027" name="Otvoriť priečinok súboru v PowerShelli"/>
+					<Item id="41025" name="Otvoriť priečinok súboru ako pracovný priestor"/>
 					<Item id="41021" name="Obnoviť naposledy zatvorený súbor"/>
 					<Item id="45001" name="Konvertovať do formátu Windows (CR LF)"/>
 					<Item id="45002" name="Konvertovať do formátu Unix (LF)"/>
@@ -1173,6 +1186,7 @@
 
 				<Print title="Tlač">
 					<Item id="6601" name="Tlačiť čísla &amp;riadkov"/>
+					<Item id="6616" name="Vytlačiť posun formulára ako koniec strany"/>
 					<Item id="6602" name="Možnosti &amp;farieb"/>
 					<Item id="6603" name="&amp;WYSIWYG"/>
 					<Item id="6604" name="Inv&amp;ertovať"/>
@@ -1384,6 +1398,7 @@
 					<Item id="6346" name="Náhľad na mape dokumentu"/>
 					<Item id="6360" name="Stlmiť všetky zvuky"/>
 					<Item id="6361" name="Povoliť potvrdzovacie dialógové okno Uložiť všetko"/>
+					<Item id="6366" name="Povoliť načítanie symbolických odkazov v paneli Priečinok ako pracovný priestor"/>
 				</MISC>
 			</Preference>
 			<MultiMacro title="Spustiť makro viacnásobne">
@@ -1451,6 +1466,17 @@ Toto dialógové okno môžete neskôr znovu aktivovať v Predvoľbách."/>
 				<Item id="7" name="&amp;Nie"/>
 				<Item id="4" name="&amp;Vždy áno"/>
 			</DoSaveAll><!-- HowToReproduce: Check the "Enable Save All confirm dialog" checkbox in Preference->MISC, now click "Save all" -->
+			<NetworkPathWarning title="Načítava sa relácia Notepad++" title2="Klikateľný odkaz file://" title3="Načítava sa toolbarButtonsConf.xml" title4="Načítava sa súbor XML panela projektu">
+				<Item id="1771" name="Upozornenie na sieťovú cestu:
+
+$STR_REPLACE$
+
+Jej načítaním sa systém Windows automaticky prihlási na tento server, čo môže viesť k odhaleniu vašich prihlasovacích údajov do systému Windows.
+Načítať aj tak?"/>
+				<Item id="2" name="&amp;Preskočiť"/>
+				<Item id="7" name="&amp;Vždy preskočiť sieťovú cestu"/>
+				<Item id="4" name="Vždy načítať &amp;sieťovú cestu"/>
+			</NetworkPathWarning>
 			
 			<DebugInfo title="Informácie o ladení">
 				<Item id="1752" name="&amp;Skopírovať informácie o ladení do schránky"/>
@@ -1479,10 +1505,10 @@ Pokračovať?"/>
 			
 			<NbFileToOpenImportantWarning title="Počet otváraných súborov je príliš veľký" message="Chystáte sa otvoriť $INT_REPLACE$ súborov.
 Naozaj ich chcete otvoriť?"/><!-- HowToReproduce: Check "Open all files of folder instead of launching Folder as Workspace on folder dropping" in "Default Directory" of Preferences dialog, then drop a folder which contains more then 200 files into Notepad++. -->
-			<SettingsOnCloudError title="Nastavenia v cloude" message="Zdá sa, že cesta ku cloudu s nastaveniami je nastavená na jednotku určenú len na čítanie
+			<SettingsOnCloudError title="Nastavenia v cloude" message="Zdá sa, že cesta ku cloudu s nastaveniami je nastavená na jednotku určenú iba na čítanie
 alebo na priečinok bez oprávnenia na zápis.
 Uloženie vašich nastavení do cloudu bude zrušené. Znovu, prosím, nastavte zodpovedajúcu hodnotu v ponuke &quot;Nastavenia -> Predvoľby… -> Odkaz na cloud&quot;."/>
-			<FilePathNotFoundWarning title="Otvoriť súbor" message="Súbor, ktorý sa pokúšate otvoriť, neexistuje."/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
+			<FilePathNotFoundWarning title="Otvoriť cestu" message="Cesta, ktorú sa pokúšate otvoriť, neexistuje."/><!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 			<SessionFileInvalidError title="Reláciu nie je možné načítať" message="Súbor relácie je poškodený alebo neplatný."/><!-- HowToReproduce: Save current session via menu "File -> Save Session...", use another editor to modify the session you saved to make it an invalid xml file. Then load this invalid session via menu "File -> Load Session...". -->
 			<DroppingFolderAsProjectModeWarning title="Neplatná operácia" message="Preťahovať môžete buď len súbory, alebo len adresáre. Nie oboje súčasne, pretože máte aktivovaný režim otvárania priečinka ako pracovného priestoru.
 Aby táto operácia fungovala, musíte povoliť položku &quot;Pri pretiahnutí priečinka myšou otvoriť súbory v priečinku, nie panel prac. priestoru&quot; v ponuke &quot;Nastavenia -> Predvoľby… -> Predvolený priečinok&quot;."/>
@@ -1524,7 +1550,6 @@ Chcete ho obnoviť a prísť tak o zmeny vykonané v programe Notepad++?"/>
 			<PrehistoricSystemDetected title="Zistený príliš starý systém" message="Zdá sa, že používate príliš starý systém. Ospravedlňujeme sa, ale táto funkcia je podporovaná len na novších systémoch."/>
 			<XpUpdaterProblem title="Aktualizácia programu Notepad++" message="Aktualizácia programu Notepad++ nie je kompatibilná s Windows XP z dôvodu zastaralej bezpečnostnej vrstvy tohto systému.
 Prejsť na domovskú stránku programu Notepad++, odkiaľ si môžete stiahnuť najnovšiu verziu?"/><!-- HowToReproduce: Run menu "? -> Update Notepad++" under Windows XP. -->
-			<GUpProxyConfNeedAdminMode title="Nastavenia proxy" message="Pre nastavenie proxy, spustite, prosím, Notepad++ v režime správcu."/>
 			<DocTooDirtyToMonitor title="Problém so sledovaním zmien" message="Dokument bol pozmenený. Pred sledovaním zmien, uložte všetky zmeny v dokumente."/>
 			<DocNoExistToMonitor title="Problém so sledovaním zmien" message="Súbor musí najprv existovať, aby v ňom bolo možné sledovať zmeny."/>
 			<FileTooBigToOpen title="Problém s veľkosťou súboru" message="Súbor je príliš veľký, aby mohol byť otvorený v programe Notepad++."/><!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
@@ -1586,12 +1611,12 @@ Pokračovať?"/>
 Chcete uložiť zmeny pred prepnutím motívu?"/><!-- HowToReproduce: In the Style Configurator dialog change some theme and switch to other theme without saving. -->
 			<NotEnoughRoom4Saving title="Uloženie zlyhalo" message="Nepodarilo sa uložiť súbor.
 Zdá sa, že na disku nie je dostatok miesta na uloženie súboru. Súbor sa neuložil."/>
-			<FileInaccessibleUserSession title="Nedostupný súbor" message="Niektoré súbory z manuálne uloženej relácie &quot;$STR_REPLACE$&quot; sú nedostupné. Môžete ich otvoriť ako prázdne dokumenty a len na čítanie ako zástupné karty.
+			<FileInaccessibleUserSession title="Nedostupný súbor" message="Niektoré súbory z manuálne uloženej relácie &quot;$STR_REPLACE$&quot; sú nedostupné. Môžete ich otvoriť ako prázdne dokumenty a iba na čítanie ako zástupné karty.
 			
 Chcete vytvoriť tieto zástupné karty?
 
 POZNÁMKA: Ak sa rozhodnete nevytvárať zástupné karty alebo ich neskôr zatvoríte, vaša ručne uložená relácia sa pri ukončení NEzmení."/>
-			<FileInaccessibleDefaultSessionXml title="Nedostupný súbor" message="Niektoré súbory z poslednej relácie sú nedostupné. Môžete ich otvoriť ako prázdne dokumenty a len na čítanie ako zástupné karty.
+			<FileInaccessibleDefaultSessionXml title="Nedostupný súbor" message="Niektoré súbory z poslednej relácie sú nedostupné. Môžete ich otvoriť ako prázdne dokumenty a iba na čítanie ako zástupné karty.
 			
 Chcete vytvoriť tieto zástupné karty?
 
@@ -1606,7 +1631,19 @@ Ak potrebujete funkciu spätného vyhľadávania pomocou regulárnych výrazov, 
 			<FindAutoChangeOfInSelectionWarning title="Upozornenie na vyhľadávanie" message="Stav začiarkavacieho poľa &quot;Vo výbere&quot; sa automaticky zmení.
 Prosím, overte podmienku vyhľadávania pred vykonaním akcie."/> <!-- HowToReproduce: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/14897#issuecomment-2564316224 -->
 			<Need2Restart2ShowMenuShortcuts title="Notepad++ je potrebné reštartovať" message="Notepad++ je potrebné reštartovať, aby sa zobrazili ovládacie prvky."/>
-			<NoAdminRight2ChangeReadOnlyFileAttribute title="Zmena atribútu súboru len na čítanie zlyhala" message="Na zmenu atribútu súboru spustite Notepad++ ako správca."/>
+			<NoAdminRight2ChangeReadOnlyFileAttribute title="Zmena atribútu súboru 'Iba na čítanie' zlyhala" message="Na zmenu atribútu súboru spustite Notepad++ ako správca."/>
+			<ReadOnlyFileCannotBeSaved title="Uloženie zlyhalo - Súbor je iba na čítanie" message="&quot;$STR_REPLACE$&quot;
+Súbor je iba na čítanie a nemôže byť uložený.
+Odstráňte označenie 'iba na čítanie', a potom súbor uložte."/>
+			<ShortcutsXmlHMACMissing title="Bezpečnostné upozornenie" message="V súbore config.xml chýbajú bezpečnostné informácie pre súbor shortcuts.xml.
+
+Z bezpečnostných dôvodov sa skontroluje integrita súboru shortcuts.xml. Ak chcete spustiť svoj vlastný príkaz, skontrolujte otvorený súbor shortcuts.xml. Ak je obsah súboru v poriadku, potvrďte to pomocou položky &quot;Overiť súbor shortcuts.xml&quot; v ponuke &quot;Spustiť&quot;."/>
+			<ShortcutsXmlTampered title="Bezpečnostné upozornenie" message="Zdá sa, že súbor shortcuts.xml bol upravený ručne.
+
+Z bezpečnostných dôvodov skontrolujte otvorený súbor shortcuts.xml. Ak je obsah súboru v poriadku, potvrďte to pomocou položky &quot;Overiť súbor shortcuts.xml&quot; v ponuke &quot;Spustiť&quot;."/>
+			<SymlinkLoadingWarning title="Upozornenie: Načítavanie symbolických odkazov môže spôsobiť zamrznutie systému" message="Povolenie načítavania symbolických odkazov v režime Priečinok ako pracovný priestor môže spôsobiť, že sa Notepad++zacyklí a zamrzne.
+K tomu môže dôjsť, ak sa symbolické odkazy na priečinky smerujú do nadradených priečinkov alebo vytvárajú cyklické odkazy.
+Pokračujte len vtedy, ak rozumiete rizikám."/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="História schránky"/>
@@ -1664,6 +1701,7 @@ Prosím, overte podmienku vyhľadávania pred vykonaním akcie."/> <!-- HowToRep
 				<Item id="3518" name="Otvoriť umiestnenie v Prieskumníkovi"/>
 				<Item id="3519" name="Otvoriť umiestnenie v Príkazovom riadku"/>
 				<Item id="3520" name="Kopírovať názov súboru"/>
+				<Item id="3521" name="Otvoriť priečinok v PowerShelli"/>
 			</Menu>
 		</FolderAsWorkspace>
 		<ProjectManager>
@@ -1720,10 +1758,10 @@ Prosím, overte podmienku vyhľadávania pred vykonaním akcie."/> <!-- HowToRep
 			<!-- Don't translate "(&quot;EOL custom color&quot;)" -->
 			<eol-custom-color-tip value="Pre zmenu predvolenej vlastnej farby EOL prejdite do Nastavenia štýlov (&quot;EOL custom color&quot;)."/>
 
-			<word-chars-list-warning-begin value="Pozor: V zozname znakov máte "/>
-			<word-chars-list-space-warning value="$INT_REPLACE$ medzeru(-y)"/>
+			<word-chars-list-warning-begin value="Pozor: "/>
+			<word-chars-list-space-warning value="$INT_REPLACE$ medzera(-y)"/>
 			<word-chars-list-tab-warning value="$INT_REPLACE$ tabulátor(-y)"/>
-			<word-chars-list-warning-end value="  vo vašom zozname znakov."/><!-- HowToReproduce: In "Delimiter" section of Preferences dialog, check "Add your character as part of word\r(don't choose it unless you know what you're doing)", then type a white-space in the text field. -->
+			<word-chars-list-warning-end value=" v zozname znakov."/><!-- HowToReproduce: In "Delimiter" section of Preferences dialog, check "Add your character as part of word\r(don't choose it unless you know what you're doing)", then type a white-space in the text field. -->
 			<backup-select-folder value="Vyberte priečinok na zálohovanie"/><!-- HowToReproduce: Settings > Preferences > Backup > [...] -->
 			<cloud-invalid-warning value="Neplatná cesta"/>
 			<cloud-restart-warning value="Aby sa zmeny prejavili, reštartujte, prosím, Notepad++."/>
@@ -1731,16 +1769,16 @@ Prosím, overte podmienku vyhľadávania pred vykonaním akcie."/> <!-- HowToRep
 			<default-open-save-select-folder value="Vyberte predvolený priečinok"/><!-- HowToReproduce: Settings > Preferences > Default Directory > [...] -->
 			<shift-change-direction-tip value="Na vyhľadávanie v opačnom smere použite Shift+Enter"/>
 			<two-find-buttons-tip value="Režim dvoch tlačidiel"/>
-			<find-in-files-filter-tip value="Hľadať v cpp, cxx, h, hxx &amp;&amp; hpp:
+			<find-in-files-filter-tip value="Hľadať v cpp, cxx, h, hxx a hpp:
 *.cpp *.cxx *.h *.hxx *.hpp
 
-Hľadá vo všetkých súboroch okrem exe, obj &amp;&amp; log:
+Hľadať vo všetkých súboroch okrem exe, obj a log:
 *.* !*.exe !*.obj !*.log
 
-Hľadá vo všetkých súboroch okrem priečinkov tests, bin &amp;&amp; bin64:
+Hľadať vo všetkých súboroch okrem priečinkov tests, bin a bin64:
 *.* !\tests !\bin*
 
-Hľadá vo všetkých súboroch okrem všetkých priečinkov log alebo logs rekurzívne:
+Hľadať vo všetkých súboroch okrem všetkých priečinkov log alebo logs rekurzívne:
 *.* !+\log*"/><!-- HowToReproduce: Tip of mouse hovered on "Filters" label in "Find in Files" section of Find dialog. -->
 			<find-in-files-select-folder value="Vyberte priečinok, v ktorom chcete hľadať"/><!-- HowToReproduce: Search > Find in Files > [...] -->
 			<find-in-files-dir-from-active-doc-tip value="Vyplniť pole Priečinok z aktívneho dokumentu"/><!-- HowToReproduce: Search > Find in Files > [<<] -->
@@ -1772,6 +1810,7 @@ Hľadá vo všetkých súboroch okrem všetkých priečinkov log alebo logs reku
 			<find-status-scope-all value="v celom súbore"/>
 			<find-status-scope-backward value="od začiatku súboru po kurzor"/>
 			<find-status-scope-forward value="od kurzoru po koniec súboru"/>
+			<find-status-replace-invalid-replace-chars value="Nahradiť: v dokumente ANSI nie je možné nahradiť textom, ktorý nie je v kódovaní ANSI"/>
 			<find-status-invisible-chars-findWhat value="Do poľa &quot;Hľadať&quot; alebo &quot;Nahradiť čím&quot; boli vložené neviditeľné znaky"/>
 			<find-status-invisible-chars-findWhat-tip value="Upozornenie: Neviditeľné znaky v poli vyhľadávania (alebo nahradenia).
 Text vložený do tohto poľa obsahuje neviditeľné znaky (asi znaky konca riadka). Ak ich neodstránite, budú zahrnuté do vyhľadávaného (alebo nahradzovaného) textu."/>
@@ -1788,6 +1827,7 @@ Text vložený do tohto poľa obsahuje neviditeľné znaky (asi znaky konca riad
 			<common-ok value="OK"/>
 			<common-cancel value="Zrušiť"/>
 			<common-name value="Názov"/>
+			<common-error value="Chyba"/>
 			<tabrename-title value="Premenovať aktuálnu kartu"/>
 			<tabrename-newname value="Nový názov"/>
 			<splitter-rotate-left value="Otočiť doľava"/>
@@ -1809,6 +1849,7 @@ Text vložený do tohto poľa obsahuje neviditeľné znaky (asi znaky konca riad
 			<progress-hits-title value="Nájdené:"/>
 			<progress-cancel-info value="Ruší sa operácia, čakajte, prosím…"/>
 			<find-in-files-progress-title value="Prebieha hľadanie v súboroch…"/>
+			<discover-file-candidates-title value="Vyhľadávajú sa vhodné súbory…"/>
 			<replace-in-files-confirm-title value="Naozaj?"/>
 			<replace-in-files-confirm-directory value="Naozaj chcete nahradiť všetky výskyty v:"/>
 			<replace-in-files-confirm-filetype value="Pre typ súboru:"/>
@@ -1834,7 +1875,6 @@ Text vložený do tohto poľa obsahuje neviditeľné znaky (asi znaky konca riad
 			<tab-untitled-string value="nový "/>
 			<file-save-assign-type value="&amp;Pripojiť príponu"/>
 			<close-panel-tip value="Zavrieť"/>
-			<IncrementalFind-FSFound value="Počet výskytov: $INT_REPLACE$"/>
 			<IncrementalFind-FSNotFound value="Fráza sa nenašla"/>
 			<IncrementalFind-FSTopReached value="Dosiahnutý začiatok strany, pokračovanie zdola"/>
 			<IncrementalFind-FSEndReached value="Dosiahnutý koniec strany, pokračovanie zhora"/>

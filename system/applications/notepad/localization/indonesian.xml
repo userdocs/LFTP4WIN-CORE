@@ -1363,7 +1363,6 @@ Apakah Anda ingin memuat ulangnya dan kehilangan perubahan yang dibuat di Notepa
 			<PrehistoricSystemDetected title="Sistem lama terdeteksi " message="Tampaknya Anda masih menggunakan sistem lama. Maaf, fitur ini hanya bekerja pada sistem modern."/><!-- HowToReproduce: Launch "Document Map" under Windows XP. -->
 			<XpUpdaterProblem title="Pembaru Notepad++" message="Pembaru tidak kompatibel dengan XP karena lapisan keamanan XP yang usang.
 Apakah Anda ingin pergi ke laman Notepad++ untuk mengunduh versi terbaru?"/><!-- HowToReproduce: Run menu "? -> Update Notepad++" under Windows XP. -->
-			<GUpProxyConfNeedAdminMode title="Pengaturan Proksi" message="Silakan mulai ulang Notepad++ dalam mode Admin untuk mengonfigurasi proksi"/>
 			<DocTooDirtyToMonitor title="Masalah pemantauan" message="Dokumen ini kotor. Silakan simpan perubahan sebelum memantaunya."/>
 			<DocNoExistToMonitor title="Masalah pemantauan" message="Berkas ini seharusnya ada untuk dipantau."/>
 			<FileTooBigToOpen title="Masalah ukuran berkas" message="Berkas terlalu besar untuk dibuka oleh Notepad++"/><!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
@@ -1641,7 +1640,6 @@ Temukan dalam semua berkas kecuali semua folder log atau logs secara berulang:
 			<tab-untitled-string value="baru "/>
 			<file-save-assign-type value="&amp;Tambahkan ekstensi"/>
 			<close-panel-tip value="Tutup"/>
-			<IncrementalFind-FSFound value="$INT_REPLACE$ kecocokan"/>
 			<IncrementalFind-FSNotFound value="Frasa tidak ditemukan"/>
 			<IncrementalFind-FSTopReached value="Atas halaman tercapai, dilanjutkan dari bawah"/>
 			<IncrementalFind-FSEndReached value="Bawa halaman tercapai, dilanjutkan dari atas"/>
