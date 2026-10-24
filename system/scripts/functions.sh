@@ -2,15 +2,22 @@
 
 # A function that performs some useful commands upon the script exiting.
 
+# Disable history recording immediately so this custom command's setup lines never end up in the interactive shell's history.
+[[ "$(basename "${0}")" =~ ^winscp_.*\.WinSCPextension\.sh$ ]] && set +o history
+
 export ssh_pageant_random="${RANDOM}"
 
 function openssh_known_hosts() {
 	# Make sure this folder exists. If it does not, then create it to prevent errors in the function.
 	[[ ! -d ~/.ssh ]] && mkdir ~/.ssh
-	# Create a blank known_hosts files to prevent errors.
-	[[ ! -f ~/.ssh/known_hosts ]] && touch ~/.ssh/known_hosts
-	# Compare the remote known host to those stored in the local known_hosts file. If the match fails then add the keys to the file.
-	[[ -n $(diff <(ssh-keyscan -4p "${1}" "${2}" 2> /dev/null | sort -h) <(ssh-keygen -F "${2}" | sed '/^# Host/ d' | sort -h)) ]] && ssh-keyscan -4p "${1}" "${2}" >> ~/.ssh/known_hosts 2> /dev/null
+	if [[ ! -f ~/.ssh/known_hosts ]]; then
+		# No known_hosts file yet, so populate it directly with the remote host's keys to bypass the interactive "accept host key" prompt.
+		touch ~/.ssh/known_hosts
+		ssh-keyscan -4p "${1}" "${2}" >> ~/.ssh/known_hosts 2> /dev/null
+	else
+		# Compare the remote known host to those stored in the local known_hosts file. If the match fails then add the keys to the file.
+		[[ -n $(diff <(ssh-keyscan -4p "${1}" "${2}" 2> /dev/null | sort -h) <(ssh-keygen -F "${2}" | sed '/^# Host/ d' | sort -h)) ]] && ssh-keyscan -4p "${1}" "${2}" >> ~/.ssh/known_hosts 2> /dev/null
+	fi
 	# Since it adds multiple keys and may introduce duplicates, sort the file, remove duplicates and then save it.
 	sort ~/.ssh/known_hosts | uniq > ~/.ssh/known_hosts_temp && mv -f ~/.ssh/known_hosts_temp ~/.ssh/known_hosts
 }
@@ -28,7 +35,8 @@ function finish() {
 	[[ -d /cygdrive ]] && rmdir "/cygdrive" 2> /dev/null
 	# Clean the tmp dir once the last conemu
 	pgrep ^conemu-cyg-64$ || find /tmp -type s -exec rm -f '{}' \;
-	[[ "$(basename "${0}")" =~ ^winscp_(.*).WinSCPextension.sh$ ]] && history -c
+	# Keep history disabled through to the end of this custom command's session.
+	[[ "$(basename "${0}")" =~ ^winscp_(.*).WinSCPextension.sh$ ]] && set +o history
 }
 
 function ssh_pageant() {
